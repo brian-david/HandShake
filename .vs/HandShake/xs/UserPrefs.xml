@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{5669DAD9-FBD4-4BFE-A7CD-C35C5FA75210}|Default">
+  <MonoDevelop.Ide.ItemProperties.HandShake FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HandShake/MainPage.xaml">
+    <Files>
+      <File FileName="HandShake/MainPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="HandShake/MainPage.xaml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HandShake" expanded="True">
+            <Node name="HandShake" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.HandShake.Android FirstBuild="True" PreferredExecutionTarget="Android.pixel_3_marshmallow_6_0_api_23" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.HandShake.iOS FirstBuild="True" />
+</Properties>
