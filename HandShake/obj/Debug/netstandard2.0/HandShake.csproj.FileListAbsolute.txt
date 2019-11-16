@@ -1,0 +1,15 @@
+/Users/brianirons/PORTFOLIO/HandShake/HandShake/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/brianirons/PORTFOLIO/HandShake/HandShake/obj/Debug/netstandard2.0/LoginPage.xaml.g.cs
+/Users/brianirons/PORTFOLIO/HandShake/HandShake/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/brianirons/PORTFOLIO/HandShake/HandShake/obj/Debug/netstandard2.0/RegisterPage.xaml.g.cs
+/Users/brianirons/PORTFOLIO/HandShake/HandShake/obj/Debug/netstandard2.0/HandShake.AssemblyInfoInputs.cache
+/Users/brianirons/PORTFOLIO/HandShake/HandShake/obj/Debug/netstandard2.0/HandShake.AssemblyInfo.cs
+/Users/brianirons/PORTFOLIO/HandShake/HandShake/obj/Debug/netstandard2.0/HandShake.dll
+/Users/brianirons/PORTFOLIO/HandShake/HandShake/obj/Debug/netstandard2.0/ref/HandShake.dll
+/Users/brianirons/PORTFOLIO/HandShake/HandShake/obj/Debug/netstandard2.0/HandShake.pdb
+/Users/brianirons/PORTFOLIO/HandShake/HandShake/bin/Debug/netstandard2.0/HandShake.deps.json
+/Users/brianirons/PORTFOLIO/HandShake/HandShake/bin/Debug/netstandard2.0/HandShake.dll
+/Users/brianirons/PORTFOLIO/HandShake/HandShake/bin/Debug/netstandard2.0/ref/HandShake.dll
+/Users/brianirons/PORTFOLIO/HandShake/HandShake/bin/Debug/netstandard2.0/HandShake.pdb
+/Users/brianirons/PORTFOLIO/HandShake/HandShake/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/brianirons/PORTFOLIO/HandShake/HandShake/obj/Debug/netstandard2.0/HandShake.csprojAssemblyReference.cache

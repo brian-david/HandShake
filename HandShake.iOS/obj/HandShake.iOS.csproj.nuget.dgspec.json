@@ -36,13 +36,25 @@
       "frameworks": {
         "xamarinios10": {
           "dependencies": {
+            "FirebaseAuth": {
+              "target": "Package",
+              "version": "[2.0.6, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.2.0, )"
+              "version": "[1.3.1, )"
+            },
+            "Xamarin.Firebase.iOS.Auth": {
+              "target": "Package",
+              "version": "[6.2.1.1, )"
+            },
+            "Xamarin.Firebase.iOS.Core": {
+              "target": "Package",
+              "version": "[6.1.0, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.2.0.709249, )"
+              "version": "[4.3.0.991211, )"
             }
           }
         }
@@ -94,6 +106,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "FirebaseAuth": {
+              "target": "Package",
+              "version": "[2.0.6, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -102,11 +118,15 @@
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.2.0, )"
+              "version": "[1.3.1, )"
+            },
+            "Xamarin.Firebase.Core": {
+              "target": "Package",
+              "version": "[60.1142.1, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.2.0.709249, )"
+              "version": "[4.3.0.991211, )"
             }
           },
           "imports": [

@@ -1,0 +1,151 @@
+Function=SystemNative_ConvertErrorPlatformToPal
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_ConvertErrorPalToPlatform
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_StrErrorR
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_GetNonCryptographicallySecureRandomBytes
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_OpenDir
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_GetReadDirRBufferSize
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_ReadDirR
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_CloseDir
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_ReadLink
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_Stat2
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_LStat2
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_Symlink
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_CopyFile
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_GetEGid
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_GetEUid
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_Link
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_MkDir
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_Rename
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_Unlink
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_timezone_get_local_name
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_timezone_get_data
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_GetFolderPath
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_log
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_start_wwan
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/System.dll
+Function=xamarin_find_protocol_wrapper_type
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_release_block_on_main_thread
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_get_block_descriptor
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSend_IntPtr
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=UIApplicationMain
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Xamarin.iOS.dll
+Field=FirebaseAuthVersionNum
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRAuthErrorDomain
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRAuthErrorUserInfoEmailKey
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRAuthErrorUserInfoNameKey
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRAuthErrorUserInfoUpdatedCredentialKey
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRAuthStateDidChangeNotification
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FirebaseAuthVersionStr
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRAuth
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRActionCodeInfo
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRActionCodeSettings
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRAdditionalUserInfo
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRAuthCredential
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRAuthDataResult
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRAuthSettings
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRAuthTokenResult
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIREmailAuthProviderID
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIREmailPasswordAuthSignInMethod
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIREmailAuthProvider
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRFacebookAuthProviderID
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRFacebookAuthSignInMethod
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRFacebookAuthProvider
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRGameCenterAuthProviderID
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRGameCenterAuthSignInMethod
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRGameCenterAuthProvider
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRGitHubAuthProviderID
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRGitHubAuthSignInMethod
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRGitHubAuthProvider
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRGoogleAuthProviderID
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRGoogleAuthSignInMethod
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRGoogleAuthProvider
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIROAuthCredential
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIROAuthProvider
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRPhoneAuthCredential
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRPhoneAuthProviderID
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRPhoneAuthSignInMethod
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRPhoneAuthProvider
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRTwitterAuthProviderID
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRTwitterAuthSignInMethod
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRTwitterAuthProvider
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRUser
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRUserMetadata
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRUserProfileChangeRequest
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRApp
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Core.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRConfiguration
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Core.dll
+ObjectiveCClass=OBJC_CLASS_$_FIROptions
+	/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/mtouch-cache/1-Link/Firebase.Core.dll
+Function=mono_pmip

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "862921078483",
+    "firebase_url": "https://handshake-acb8c.firebaseio.com",
+    "project_id": "handshake-acb8c",
+    "storage_bucket": "handshake-acb8c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862921078483:android:f5ece4e31d57a7a18c4626",
+        "android_client_info": {
+          "package_name": "com.brian.handshake"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "862921078483-reha2gs2b2g7mos6qi10gj7c4a1am9cf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3Kss5m5KJAmify8llyTeVee6Yww7Jm00"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "862921078483-reha2gs2b2g7mos6qi10gj7c4a1am9cf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "862921078483-qgbt1fgrdg7c02mtrd3pav2n803m0j18.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.brian.HandShake"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
