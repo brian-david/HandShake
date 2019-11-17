@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HandShake.LoginPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#BFA584"
+             xmlns:yum="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand"
+                     HorizontalOptions="FillAndExpand"
+                     Margin="25">
+            <yum:PancakeView BackgroundColor="#F2F2F2"
+                             HorizontalOptions="FillAndExpand"
+                             HasShadow="True"
+                             Padding="20">
+                <StackLayout>
+                    <Label Text="Welcome to HandShake"
+                   HorizontalOptions="Center"
+                   />
+                <Label Text="Please enter your login details"
+                       HorizontalOptions="Center"
+                       />
+                <Entry Placeholder="Email"
+                       Keyboard="Email"
+                       x:Name="EmailInput"
+                       />
+                <Entry Placeholder="Password"
+                       IsPassword="True"
+                       x:Name="PasswordInput"
+                       />
+                <Button Text="Enter"
+                        Clicked="LoginMethod"
+                        Margin="60,40"
+                        />
+                </StackLayout>
+                
+            </yum:PancakeView>
+
+            <yum:PancakeView BackgroundColor="#F2F2F2"
+                             HorizontalOptions="FillAndExpand"
+                             HasShadow="True"
+                             Padding="20">
+                <StackLayout>
+                    <Label Text="Not a member yet? Create and account here"/>
+                    <Button Text="Register"
+                            Clicked="RegisterNav"
+                            />
+                </StackLayout>
+            </yum:PancakeView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

@@ -498,6 +498,74 @@ System_Xml_Linq_XAttribute_get_Value:
 Lme_a:
 .text
 	.align 4
+	.no_dead_strip System_Xml_Linq_XAttribute_set_Value_string
+System_Xml_Linq_XAttribute_set_Value_string:
+.loc 5 163 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xa9016bb9
+.word 0xaa0003f9
+.word 0xaa0103fa
+.word 0xb400049a
+.loc 5 164 0
+.word 0xf9401720
+.word 0xaa1a03e1
+bl _p_6
+.loc 5 165 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #272]
+.word 0xf9400002
+.word 0xaa1903e0
+.word 0xaa1903e1
+bl _p_10
+.word 0x53001c00
+.loc 5 166 0
+.word 0xf9001b3a
+.word 0x9100c321
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.loc 5 167 0
+.word 0x34000100
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #272]
+.word 0xf9400002
+.word 0xaa1903e0
+.word 0xaa1903e1
+bl _p_11
+.loc 5 168 0
+.word 0xa9416bb9
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+.loc 5 163 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #0]
+.word 0xd2800161
+bl _p_7
+.word 0xaa0003e1
+.word 0xd2800f80
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_8
+
+Lme_b:
+.text
+	.align 4
 	.no_dead_strip System_Xml_Linq_XAttribute_ToString
 System_Xml_Linq_XAttribute_ToString:
 .loc 5 208 0 prologue_end
@@ -526,23 +594,23 @@ ldr x0, [x16, #248]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #272]
+ldr x0, [x16, #280]
 .word 0xd2800801
-bl _p_10
+bl _p_12
 .word 0xf94037a1
 .word 0xf90033a0
-bl _p_11
+bl _p_13
 .word 0xf94033a0
 .word 0xf90013a0
 .loc 5 210 0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #280]
+ldr x0, [x16, #288]
 .word 0xd2800f01
-bl _p_10
-.word 0xf90033a0
 bl _p_12
+.word 0xf90033a0
+bl _p_14
 .word 0xf94033a0
 .word 0xaa0003f9
 .loc 5 211 0
@@ -550,11 +618,11 @@ bl _p_12
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_13
+bl _p_15
 .loc 5 212 0
 .word 0xf94013a0
 .word 0xaa1903e1
-bl _p_14
+bl _p_16
 .word 0xf90017a0
 .loc 5 214 0
 .word 0xf94017a0
@@ -564,7 +632,7 @@ bl _p_14
 .word 0x3940003e
 .word 0xf9400801
 .word 0xaa1a03e0
-bl _p_15
+bl _p_17
 .word 0xaa0003e1
 .word 0xf94033a5
 .word 0xf9401740
@@ -581,13 +649,13 @@ bl _p_15
 .word 0xf9401b44
 .word 0xaa0503e0
 .word 0x394000be
-bl _p_16
+bl _p_18
 .loc 5 215 0
 .word 0xf9001bbf
 .word 0x94000005
 .word 0xf9401ba0
 .word 0xb4000040
-bl _p_17
+bl _p_19
 .word 0x14000010
 .word 0xf90023be
 .word 0xf94017a0
@@ -598,7 +666,7 @@ bl _p_17
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #288]
+ldr x15, [x16, #296]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -614,13 +682,13 @@ ldr x15, [x16, #288]
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_18
+bl _p_20
 .word 0xaa0003fa
 .word 0xf9001fbf
 .word 0x94000005
 .word 0xf9401fa0
 .word 0xb4000040
-bl _p_17
+bl _p_19
 .word 0x14000010
 .word 0xf9002bbe
 .word 0xf94013a0
@@ -631,7 +699,7 @@ bl _p_17
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #288]
+ldr x15, [x16, #296]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -645,7 +713,7 @@ ldr x15, [x16, #288]
 .word 0xa8c87bfd
 .word 0xd65f03c0
 
-Lme_b:
+Lme_c:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XAttribute_GetPrefixOfNamespace_System_Xml_Linq_XNamespace
@@ -666,7 +734,7 @@ System_Xml_Linq_XAttribute_GetPrefixOfNamespace_System_Xml_Linq_XNamespace:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #304]
 .word 0xf9400000
 .word 0x14000027
 .loc 5 665 0
@@ -681,26 +749,26 @@ ldr x0, [x16, #296]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #304]
+ldr x1, [x16, #312]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x540003c1
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0x3940031e
-bl _p_19
+bl _p_21
 .word 0x14000014
 .loc 5 666 0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #312]
+ldr x0, [x16, #320]
 .word 0xeb00031f
 .word 0x540000a1
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #320]
+ldr x0, [x16, #328]
 .word 0x1400000b
 .loc 5 667 0
 
@@ -721,11 +789,11 @@ ldr x0, [x16, #256]
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801940
+.word 0xd28019a0
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_c:
+Lme_d:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XAttribute_ValidateAttribute_System_Xml_Linq_XName_string
@@ -757,7 +825,7 @@ ldr x1, [x16, #264]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #312]
+ldr x1, [x16, #320]
 .word 0xaa1a03e0
 bl _p_9
 .word 0x53001c00
@@ -768,8 +836,8 @@ bl _p_9
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #320]
-bl _p_21
+ldr x1, [x16, #328]
+bl _p_23
 .word 0x53001c00
 .word 0x35000c40
 .word 0x14000031
@@ -790,7 +858,7 @@ bl _p_9
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #320]
+ldr x1, [x16, #328]
 bl _p_9
 .word 0x53001c00
 .word 0x350007a0
@@ -820,7 +888,7 @@ bl _p_9
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #312]
+ldr x1, [x16, #320]
 .word 0xaa1a03e0
 bl _p_9
 .word 0x53001c00
@@ -849,7 +917,7 @@ ldr x0, [x16, #0]
 bl _p_7
 .word 0x3940033e
 .word 0xf9400f21
-bl _p_22
+bl _p_24
 .word 0xaa0003e1
 .word 0xd2800f60
 .word 0xf2a04000
@@ -928,7 +996,7 @@ bl _p_7
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_d:
+Lme_e:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XCData__ctor_string
@@ -941,12 +1009,12 @@ System_Xml_Linq_XCData__ctor_string:
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0xf9400fa1
-bl _p_23
+bl _p_25
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_e:
+Lme_f:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XCData__ctor_System_Xml_Linq_XCData
@@ -958,12 +1026,12 @@ System_Xml_Linq_XCData__ctor_System_Xml_Linq_XCData:
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0xf9400fa1
-bl _p_24
+bl _p_26
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_f:
+Lme_10:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XCData_get_NodeType
@@ -977,7 +1045,7 @@ System_Xml_Linq_XCData_get_NodeType:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_10:
+Lme_11:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XCData_WriteTo_System_Xml_XmlWriter
@@ -1014,7 +1082,7 @@ bl _p_7
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_11:
+Lme_12:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XCData_CloneNode
@@ -1026,18 +1094,18 @@ System_Xml_Linq_XCData_CloneNode:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #328]
+ldr x0, [x16, #336]
 .word 0xd2800601
-bl _p_10
+bl _p_12
 .word 0xf90013a0
 .word 0xf9400ba1
-bl _p_25
+bl _p_27
 .word 0xf94013a0
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_12:
+Lme_13:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XComment__ctor_string
@@ -1083,7 +1151,7 @@ bl _p_7
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_13:
+Lme_14:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XComment__ctor_System_Xml_Linq_XComment
@@ -1129,7 +1197,7 @@ bl _p_7
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_14:
+Lme_15:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XComment_get_NodeType
@@ -1143,7 +1211,88 @@ System_Xml_Linq_XComment_get_NodeType:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_15:
+Lme_16:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XComment_get_Value
+System_Xml_Linq_XComment_get_Value:
+.loc 7 76 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xf9401400
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_17:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XComment_set_Value_string
+System_Xml_Linq_XComment_set_Value_string:
+.loc 7 80 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000bb9
+.word 0xaa0003f9
+.word 0xf9000fa1
+.word 0xf9400fa0
+.word 0xb4000440
+.loc 7 81 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #272]
+.word 0xf9400002
+.word 0xaa1903e0
+.word 0xaa1903e1
+bl _p_10
+.word 0x53001c00
+.loc 7 82 0
+.word 0xf9400fa1
+.word 0xf9001721
+.word 0x9100a322
+.word 0xd349fc42
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
+.loc 7 83 0
+.word 0x34000100
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #272]
+.word 0xf9400002
+.word 0xaa1903e0
+.word 0xaa1903e1
+bl _p_11
+.loc 7 84 0
+.word 0xf9400bb9
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+.loc 7 80 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #0]
+.word 0xd2800161
+bl _p_7
+.word 0xaa0003e1
+.word 0xd2800f80
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_8
+
+Lme_18:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XComment_WriteTo_System_Xml_XmlWriter
@@ -1180,7 +1329,7 @@ bl _p_7
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_16:
+Lme_19:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XComment_CloneNode
@@ -1192,18 +1341,18 @@ System_Xml_Linq_XComment_CloneNode:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #344]
 .word 0xd2800601
-bl _p_10
+bl _p_12
 .word 0xf90013a0
 .word 0xf9400ba1
-bl _p_26
+bl _p_28
 .word 0xf94013a0
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_17:
+Lme_1a:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XContainer__ctor
@@ -1217,7 +1366,7 @@ System_Xml_Linq_XContainer__ctor:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_18:
+Lme_1b:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XContainer__ctor_System_Xml_Linq_XContainer
@@ -1242,7 +1391,7 @@ System_Xml_Linq_XContainer__ctor_System_Xml_Linq_XContainer:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #344]
+ldr x1, [x16, #352]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800017
@@ -1274,7 +1423,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #352]
+ldr x1, [x16, #360]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x540003a1
@@ -1290,7 +1439,7 @@ ldr x1, [x16, #352]
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0xaa1903e0
-bl _p_27
+bl _p_29
 .loc 8 45 0
 .word 0xf9401740
 .word 0xeb0002ff
@@ -1313,11 +1462,1136 @@ bl _p_7
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_8
-.word 0xd2801940
+.word 0xd28019a0
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_19:
+Lme_1c:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XContainer_get_LastNode
+System_Xml_Linq_XContainer_get_LastNode:
+.loc 8 69 0 prologue_end
+.word 0xa9bc7bfd
+.word 0x910003fd
+.word 0xa90167b8
+.word 0xf90013ba
+.word 0xaa0003fa
+.word 0xf9401740
+.word 0xb5000060
+.word 0xd2800000
+.word 0x1400006c
+.loc 8 70 0
+.word 0xf9401759
+.word 0xaa1903f8
+.word 0xeb1f033f
+.word 0x54000160
+.word 0xf9400320
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400800
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #360]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800018
+.word 0xaa1803f9
+.loc 8 71 0
+.word 0xb4000078
+.word 0xaa1903e0
+.word 0x1400005a
+.loc 8 72 0
+.word 0xf9401759
+.word 0xaa1903f8
+.word 0xeb1f033f
+.word 0x54000160
+.word 0xf9400320
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400400
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #352]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800018
+.word 0xaa1803f9
+.loc 8 73 0
+.word 0xb40007b8
+.loc 8 75 0
+.word 0xb9801320
+.word 0x35000060
+.word 0xd2800000
+.word 0x14000046
+.loc 8 76 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #368]
+.word 0xd2800601
+bl _p_12
+.word 0xf9001ba0
+.word 0xaa1903e1
+bl _p_25
+.word 0xf9401ba0
+.word 0xaa0003f8
+.loc 8 77 0
+.word 0xaa1803e1
+.word 0xf900081a
+.word 0x91004021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.loc 8 78 0
+.word 0xf9001018
+.word 0x91008300
+.word 0xd349fc00
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0000
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #16]
+.word 0x8b010000
+.word 0xd280003e
+.word 0x3900001e
+.loc 8 79 0
+.word 0xeb1f035f
+.word 0x10000011
+.word 0x54000500
+.word 0x9100a340
+.word 0xc85f7c10
+.word 0xeb19021f
+.word 0x54000061
+.word 0xc811fc18
+.word 0x35ffff91
+.word 0xd5033bbf
+.word 0xaa1003e1
+.word 0xd349fc00
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0000
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #16]
+.word 0x8b010000
+.word 0xd280003e
+.word 0x3900001e
+.loc 8 81 0
+.word 0xf9401759
+.word 0xb4000179
+.word 0xf9400320
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400800
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #360]
+.word 0xeb01001f
+.word 0x10000011
+.word 0x540000e1
+.word 0xaa1903e0
+.word 0xa94167b8
+.word 0xf94013ba
+.word 0x910003bf
+.word 0xa8c47bfd
+.word 0xd65f03c0
+.word 0xd28019a0
+.word 0xaa1103e1
+bl _p_22
+.word 0xd2801c40
+.word 0xaa1103e1
+bl _p_22
+
+Lme_1d:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XContainer_Add_object
+System_Xml_Linq_XContainer_Add_object:
+.loc 8 138 0 prologue_end
+.word 0xa9b87bfd
+.word 0x910003fd
+.word 0xa90163b7
+.word 0xa9026bb9
+.word 0xaa0003f9
+.word 0xaa0103fa
+.word 0xf9001bbf
+.word 0xf9001fbf
+.word 0xaa1903e0
+bl _p_30
+.word 0x53001c00
+.word 0x340000a0
+.loc 8 140 0
+.word 0xaa1903e0
+.word 0xaa1a03e1
+bl _p_31
+.loc 8 141 0
+.word 0x14000103
+.loc 8 143 0
+.word 0xb400205a
+.loc 8 144 0
+.word 0xaa1a03f8
+.word 0xeb1f035f
+.word 0x54000160
+.word 0xf9400340
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400800
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #360]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800018
+.word 0xaa1803f7
+.loc 8 145 0
+.word 0xb40000b8
+.loc 8 147 0
+.word 0xaa1903e0
+.word 0xaa1703e1
+bl _p_32
+.loc 8 148 0
+.word 0x140000ef
+.loc 8 150 0
+.word 0xaa1a03f8
+.word 0xeb1f035f
+.word 0x54000160
+.word 0xf9400340
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400400
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #352]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800018
+.word 0xaa1803f7
+.loc 8 151 0
+.word 0xb40000b8
+.loc 8 153 0
+.word 0xaa1903e0
+.word 0xaa1703e1
+bl _p_33
+.loc 8 154 0
+.word 0x140000dc
+.loc 8 156 0
+.word 0xaa1a03f8
+.word 0xeb1f035f
+.word 0x54000160
+.word 0xf9400340
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400800
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #376]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800018
+.word 0xaa1803f7
+.loc 8 157 0
+.word 0xb40000f8
+.loc 8 159 0
+.word 0xaa1903e0
+.word 0xaa1703e1
+.word 0xf9400322
+.word 0xf9405c50
+.word 0xd63f0200
+.loc 8 160 0
+.word 0x140000c7
+.loc 8 162 0
+.word 0xaa1a03f8
+.word 0xeb1f035f
+.word 0x54000160
+.word 0xf9400340
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400400
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #384]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800018
+.word 0xaa1803f7
+.loc 8 163 0
+.word 0xb40001b8
+.loc 8 165 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #392]
+.word 0xd2800801
+bl _p_12
+.word 0xf9003ba0
+.word 0xaa1703e1
+bl _p_34
+.word 0xf9403ba1
+.word 0xaa1903e0
+bl _p_32
+.loc 8 166 0
+.word 0x140000ac
+.loc 8 168 0
+.word 0xaa1a03f8
+.word 0xeb1f035f
+.word 0x540002c0
+.word 0xf9400357
+.word 0xf9400b40
+.word 0xb5000240
+.word 0x3940b2e0
+.word 0xd280003e
+.word 0xeb1e001f
+.word 0x540001c1
+.word 0xf94002e0
+.word 0xf9400417
+.word 0xf94016e0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #400]
+.word 0xeb01001f
+.word 0x540000e1
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #408]
+.word 0xeb0002ff
+.word 0x54000040
+.word 0xd2800018
+.word 0xaa1803f7
+.loc 8 169 0
+.word 0xb40002b8
+.loc 8 171 0
+.word 0xaa1703fa
+.word 0xd2800018
+.word 0x1400000e
+.word 0x93407f00
+.word 0xb9801b41
+.word 0xeb00003f
+.word 0x10000011
+.word 0x540011e9
+.word 0xd37df000
+.word 0x8b000340
+.word 0x91008000
+.word 0xf9400017
+.word 0xaa1903e0
+.word 0xaa1703e1
+bl _p_35
+.word 0x11000718
+.word 0xb9801b40
+.word 0x6b00031f
+.word 0x54fffe2b
+.word 0x1400007e
+.loc 8 174 0
+.word 0xaa1a03f8
+.word 0xeb1f035f
+.word 0x540002c0
+.word 0xf9400357
+.word 0xb9402ae0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #416]
+.word 0xeb01001f
+.word 0x540001c3
+.word 0xf94012e0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #416]
+.word 0x9343fc22
+.word 0x8b020000
+.word 0x39400000
+.word 0xd28000fe
+.word 0xa1e0022
+.word 0xd2800021
+.word 0x1ac22021
+.word 0xa010000
+.word 0xb5000040
+.word 0xd2800018
+.word 0xaa1803f7
+.loc 8 175 0
+.word 0xb4000bf8
+.loc 8 177 0
+.word 0xaa1703e0
+.word 0xf94002e1
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x15, [x16, #424]
+.word 0x92800ef0
+.word 0xf2bffff0
+.word 0xf8706830
+.word 0xd63f0200
+.word 0xf9001ba0
+.word 0x1400000f
+.word 0xf9401ba1
+.word 0xaa0103e0
+.word 0xf9400021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x15, [x16, #432]
+.word 0x928003f0
+.word 0xf2bffff0
+.word 0xf8706830
+.word 0xd63f0200
+.word 0xaa0003fa
+.word 0xaa1903e0
+.word 0xaa1a03e1
+bl _p_35
+.word 0xf9401ba1
+.word 0xaa0103e0
+.word 0xf9400021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x15, [x16, #440]
+.word 0x92800ef0
+.word 0xf2bffff0
+.word 0xf8706830
+.word 0xd63f0200
+.word 0x53001c00
+.word 0x35fffce0
+.word 0xf90023bf
+.word 0x94000005
+.word 0xf94023a0
+.word 0xb4000040
+bl _p_19
+.word 0x14000039
+.word 0xf90033be
+.word 0xf9401ba0
+.word 0xf90027a0
+.word 0xf94027a0
+.word 0xf9002ba0
+.word 0xf94027a0
+.word 0xeb1f001f
+.word 0x54000380
+.word 0xf94027a0
+.word 0xf9400000
+.word 0xf9002fa0
+.word 0xf9402fa0
+.word 0xb9402800
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #448]
+.word 0xeb01001f
+.word 0x540001e3
+.word 0xf9402fa0
+.word 0xf9401000
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #448]
+.word 0x9343fc22
+.word 0x8b020000
+.word 0x39400000
+.word 0xd28000fe
+.word 0xa1e0022
+.word 0xd2800021
+.word 0x1ac22021
+.word 0xa010000
+.word 0xb5000080
+.word 0x14000001
+.word 0xf9002bbf
+.word 0x14000001
+.word 0xf9402ba0
+.word 0xf9001fa0
+.word 0xf9401fa0
+.word 0xb4000160
+.word 0xf9401fa1
+.word 0xaa0103e0
+.word 0xf9400021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x15, [x16, #296]
+.word 0x928004f0
+.word 0xf2bffff0
+.word 0xf8706830
+.word 0xd63f0200
+.word 0xf94033be
+.word 0xd61f03c0
+.loc 8 180 0
+.word 0xaa1a03e0
+bl _p_5
+.word 0xaa0003e1
+.word 0xaa1903e0
+bl _p_33
+.loc 8 181 0
+.word 0xa94163b7
+.word 0xa9426bb9
+.word 0x910003bf
+.word 0xa8c87bfd
+.word 0xd65f03c0
+.word 0xd2801900
+.word 0xaa1103e1
+bl _p_22
+
+Lme_1e:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XContainer_Nodes
+System_Xml_Linq_XContainer_Nodes:
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #456]
+.word 0xd2800601
+bl _p_12
+.word 0xf90013a0
+.word 0x92800021
+.word 0xf2bfffe1
+bl _p_36
+.word 0xf94013a3
+.word 0xaa0303e2
+.word 0xaa0203e0
+.word 0xf9400ba1
+.word 0xf9000c61
+.word 0x91006042
+.word 0xd349fc42
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_1f:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XContainer_RemoveNodes
+System_Xml_Linq_XContainer_RemoveNodes:
+.loc 8 370 0 prologue_end
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xa90167b8
+.word 0xf90013ba
+.word 0xaa0003fa
+.word 0xaa1a03e0
+bl _p_30
+.word 0x53001c00
+.word 0x34000e80
+.loc 8 372 0
+.word 0xaa1a03e0
+bl _p_37
+.loc 8 373 0
+.word 0x14000073
+.loc 8 377 0
+.word 0xf9401759
+.word 0xaa1903f8
+.word 0xeb1f033f
+.word 0x54000160
+.word 0xf9400320
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400400
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #352]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800018
+.word 0xaa1803f9
+.loc 8 378 0
+.word 0xb4000538
+.loc 8 380 0
+.word 0xb9801320
+.word 0x6b1f001f
+.word 0x5400008d
+.loc 8 382 0
+.word 0xaa1a03e0
+bl _p_38
+.loc 8 383 0
+.word 0x14000023
+.loc 8 386 0
+.word 0xaa1a03f8
+.word 0xeb1f035f
+.word 0x54000160
+.word 0xf9400340
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9401000
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #312]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800018
+.word 0xb4000298
+.loc 8 390 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #272]
+.word 0xf9400002
+.word 0xaa1a03e0
+.word 0xaa1a03e1
+bl _p_10
+.loc 8 391 0
+.word 0xf9401740
+.word 0xeb00033f
+.word 0x54000941
+.loc 8 392 0
+.word 0xf900175f
+.loc 8 393 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #272]
+.word 0xf9400002
+.word 0xaa1a03e0
+.word 0xaa1a03e1
+bl _p_11
+.loc 8 394 0
+.word 0x14000002
+.loc 8 397 0
+.word 0xf900175f
+.loc 8 401 0
+.word 0xf9401759
+.word 0xaa1903f8
+.word 0xeb1f033f
+.word 0x54000160
+.word 0xf9400320
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400800
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #360]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800018
+.word 0xaa1803f9
+.loc 8 402 0
+.word 0xb4000538
+.loc 8 404 0
+.word 0xf9401338
+.loc 8 405 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #464]
+.word 0xf9400002
+.word 0xaa1a03e0
+.word 0xaa1803e1
+bl _p_10
+.loc 8 406 0
+.word 0xf9401740
+.word 0xeb00033f
+.word 0x540005e1
+.word 0xf9401320
+.word 0xeb00031f
+.word 0x54000581
+.loc 8 407 0
+.word 0xeb19031f
+.word 0x540001e0
+.loc 8 409 0
+.word 0xf9401300
+.word 0xf9001320
+.word 0x91008321
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.loc 8 410 0
+.word 0x14000002
+.loc 8 413 0
+.word 0xf900175f
+.loc 8 415 0
+.word 0xf9000b1f
+.loc 8 416 0
+.word 0xf900131f
+.loc 8 417 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #464]
+.word 0xf9400002
+.word 0xaa1a03e0
+.word 0xaa1803e1
+bl _p_11
+.loc 8 375 0
+.word 0xf9401740
+.word 0xb5fff1e0
+.loc 8 420 0
+.word 0xa94167b8
+.word 0xf94013ba
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+.loc 8 391 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #0]
+.word 0xd28091a1
+bl _p_7
+.word 0xaa0003e1
+.word 0xd28019c0
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_8
+.loc 8 406 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #0]
+.word 0xd28091a1
+bl _p_7
+.word 0xaa0003e1
+.word 0xd28019c0
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_8
+
+Lme_20:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XContainer_AddAttribute_System_Xml_Linq_XAttribute
+System_Xml_Linq_XContainer_AddAttribute_System_Xml_Linq_XAttribute:
+.loc 8 462 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_21:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XContainer_AddAttributeSkipNotify_System_Xml_Linq_XAttribute
+System_Xml_Linq_XContainer_AddAttributeSkipNotify_System_Xml_Linq_XAttribute:
+.loc 8 466 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_22:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XContainer_AddContentSkipNotify_object
+System_Xml_Linq_XContainer_AddContentSkipNotify_object:
+.loc 8 470 0 prologue_end
+.word 0xa9b87bfd
+.word 0x910003fd
+.word 0xa90163b7
+.word 0xa9026bb9
+.word 0xaa0003f9
+.word 0xaa0103fa
+.word 0xf9001bbf
+.word 0xf9001fbf
+.word 0xb400205a
+.loc 8 471 0
+.word 0xaa1a03f8
+.word 0xeb1f035f
+.word 0x54000160
+.word 0xf9400340
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400800
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #360]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800018
+.word 0xaa1803f7
+.loc 8 472 0
+.word 0xb40000b8
+.loc 8 474 0
+.word 0xaa1903e0
+.word 0xaa1703e1
+bl _p_39
+.loc 8 475 0
+.word 0x140000ef
+.loc 8 477 0
+.word 0xaa1a03f8
+.word 0xeb1f035f
+.word 0x54000160
+.word 0xf9400340
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400400
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #352]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800018
+.word 0xaa1803f7
+.loc 8 478 0
+.word 0xb40000b8
+.loc 8 480 0
+.word 0xaa1903e0
+.word 0xaa1703e1
+bl _p_40
+.loc 8 481 0
+.word 0x140000dc
+.loc 8 483 0
+.word 0xaa1a03f8
+.word 0xeb1f035f
+.word 0x54000160
+.word 0xf9400340
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400800
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #376]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800018
+.word 0xaa1803f7
+.loc 8 484 0
+.word 0xb40000f8
+.loc 8 486 0
+.word 0xaa1903e0
+.word 0xaa1703e1
+.word 0xf9400322
+.word 0xf9405850
+.word 0xd63f0200
+.loc 8 487 0
+.word 0x140000c7
+.loc 8 489 0
+.word 0xaa1a03f8
+.word 0xeb1f035f
+.word 0x54000160
+.word 0xf9400340
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400400
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #384]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800018
+.word 0xaa1803f7
+.loc 8 490 0
+.word 0xb40001b8
+.loc 8 492 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #392]
+.word 0xd2800801
+bl _p_12
+.word 0xf9003ba0
+.word 0xaa1703e1
+bl _p_34
+.word 0xf9403ba1
+.word 0xaa1903e0
+bl _p_39
+.loc 8 493 0
+.word 0x140000ac
+.loc 8 495 0
+.word 0xaa1a03f8
+.word 0xeb1f035f
+.word 0x540002c0
+.word 0xf9400357
+.word 0xf9400b40
+.word 0xb5000240
+.word 0x3940b2e0
+.word 0xd280003e
+.word 0xeb1e001f
+.word 0x540001c1
+.word 0xf94002e0
+.word 0xf9400417
+.word 0xf94016e0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #400]
+.word 0xeb01001f
+.word 0x540000e1
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #408]
+.word 0xeb0002ff
+.word 0x54000040
+.word 0xd2800018
+.word 0xaa1803f7
+.loc 8 496 0
+.word 0xb40002b8
+.loc 8 498 0
+.word 0xaa1703fa
+.word 0xd2800018
+.word 0x1400000e
+.word 0x93407f00
+.word 0xb9801b41
+.word 0xeb00003f
+.word 0x10000011
+.word 0x540011e9
+.word 0xd37df000
+.word 0x8b000340
+.word 0x91008000
+.word 0xf9400017
+.word 0xaa1903e0
+.word 0xaa1703e1
+bl _p_31
+.word 0x11000718
+.word 0xb9801b40
+.word 0x6b00031f
+.word 0x54fffe2b
+.word 0x1400007e
+.loc 8 501 0
+.word 0xaa1a03f8
+.word 0xeb1f035f
+.word 0x540002c0
+.word 0xf9400357
+.word 0xb9402ae0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #416]
+.word 0xeb01001f
+.word 0x540001c3
+.word 0xf94012e0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #416]
+.word 0x9343fc22
+.word 0x8b020000
+.word 0x39400000
+.word 0xd28000fe
+.word 0xa1e0022
+.word 0xd2800021
+.word 0x1ac22021
+.word 0xa010000
+.word 0xb5000040
+.word 0xd2800018
+.word 0xaa1803f7
+.loc 8 502 0
+.word 0xb4000bf8
+.loc 8 504 0
+.word 0xaa1703e0
+.word 0xf94002e1
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x15, [x16, #424]
+.word 0x92800ef0
+.word 0xf2bffff0
+.word 0xf8706830
+.word 0xd63f0200
+.word 0xf9001ba0
+.word 0x1400000f
+.word 0xf9401ba1
+.word 0xaa0103e0
+.word 0xf9400021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x15, [x16, #432]
+.word 0x928003f0
+.word 0xf2bffff0
+.word 0xf8706830
+.word 0xd63f0200
+.word 0xaa0003fa
+.word 0xaa1903e0
+.word 0xaa1a03e1
+bl _p_31
+.word 0xf9401ba1
+.word 0xaa0103e0
+.word 0xf9400021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x15, [x16, #440]
+.word 0x92800ef0
+.word 0xf2bffff0
+.word 0xf8706830
+.word 0xd63f0200
+.word 0x53001c00
+.word 0x35fffce0
+.word 0xf90023bf
+.word 0x94000005
+.word 0xf94023a0
+.word 0xb4000040
+bl _p_19
+.word 0x14000039
+.word 0xf90033be
+.word 0xf9401ba0
+.word 0xf90027a0
+.word 0xf94027a0
+.word 0xf9002ba0
+.word 0xf94027a0
+.word 0xeb1f001f
+.word 0x54000380
+.word 0xf94027a0
+.word 0xf9400000
+.word 0xf9002fa0
+.word 0xf9402fa0
+.word 0xb9402800
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #448]
+.word 0xeb01001f
+.word 0x540001e3
+.word 0xf9402fa0
+.word 0xf9401000
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #448]
+.word 0x9343fc22
+.word 0x8b020000
+.word 0x39400000
+.word 0xd28000fe
+.word 0xa1e0022
+.word 0xd2800021
+.word 0x1ac22021
+.word 0xa010000
+.word 0xb5000080
+.word 0x14000001
+.word 0xf9002bbf
+.word 0x14000001
+.word 0xf9402ba0
+.word 0xf9001fa0
+.word 0xf9401fa0
+.word 0xb4000160
+.word 0xf9401fa1
+.word 0xaa0103e0
+.word 0xf9400021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x15, [x16, #296]
+.word 0x928004f0
+.word 0xf2bffff0
+.word 0xf8706830
+.word 0xd63f0200
+.word 0xf94033be
+.word 0xd61f03c0
+.loc 8 507 0
+.word 0xaa1a03e0
+bl _p_5
+.word 0xaa0003e1
+.word 0xaa1903e0
+bl _p_40
+.loc 8 508 0
+.word 0xa94163b7
+.word 0xa9426bb9
+.word 0x910003bf
+.word 0xa8c87bfd
+.word 0xd65f03c0
+.word 0xd2801900
+.word 0xaa1103e1
+bl _p_22
+
+Lme_23:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XContainer_AddNode_System_Xml_Linq_XNode
+System_Xml_Linq_XContainer_AddNode_System_Xml_Linq_XNode:
+.loc 8 512 0 prologue_end
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xa90167b8
+.word 0xf90013ba
+.word 0xaa0003f9
+.word 0xaa0103fa
+.word 0xaa1903e0
+.word 0xaa1a03e1
+.word 0xaa1903e2
+.word 0xf9400323
+.word 0xf9405470
+.word 0xd63f0200
+.loc 8 513 0
+.word 0xf9400b40
+.word 0xb40000e0
+.loc 8 515 0
+.word 0xaa1a03e0
+.word 0xf9400341
+.word 0xf9404430
+.word 0xd63f0200
+.word 0xaa0003fa
+.loc 8 516 0
+.word 0x1400000d
+.loc 8 519 0
+.word 0xaa1903f8
+.word 0x14000002
+.loc 8 520 0
+.word 0xf9400b18
+.word 0xf9400b00
+.word 0xb5ffffc0
+.loc 8 521 0
+.word 0xeb18035f
+.word 0x540000c1
+.word 0xaa1a03e0
+.word 0xf9400341
+.word 0xf9404430
+.word 0xd63f0200
+.word 0xaa0003fa
+.loc 8 523 0
+.word 0xaa1903e0
+bl _p_38
+.loc 8 524 0
+.word 0xaa1903e0
+.word 0xaa1a03e1
+bl _p_41
+.loc 8 525 0
+.word 0xa94167b8
+.word 0xf94013ba
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_24:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XContainer_AddNodeSkipNotify_System_Xml_Linq_XNode
@@ -1333,7 +2607,7 @@ System_Xml_Linq_XContainer_AddNodeSkipNotify_System_Xml_Linq_XNode:
 .word 0xaa1a03e1
 .word 0xaa1903e2
 .word 0xf9400323
-.word 0xf9405070
+.word 0xf9405470
 .word 0xd63f0200
 .loc 8 530 0
 .word 0xf9400b40
@@ -1363,11 +2637,11 @@ System_Xml_Linq_XContainer_AddNodeSkipNotify_System_Xml_Linq_XNode:
 .word 0xaa0003fa
 .loc 8 540 0
 .word 0xaa1903e0
-bl _p_28
+bl _p_38
 .loc 8 541 0
 .word 0xaa1903e0
 .word 0xaa1a03e1
-bl _p_27
+bl _p_29
 .loc 8 542 0
 .word 0xa94167b8
 .word 0xf94013ba
@@ -1375,7 +2649,199 @@ bl _p_27
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_1a:
+Lme_25:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XContainer_AddString_string
+System_Xml_Linq_XContainer_AddString_string:
+.loc 8 546 0 prologue_end
+.word 0xa9bc7bfd
+.word 0x910003fd
+.word 0xa90163b7
+.word 0xa9026bb9
+.word 0xaa0003f9
+.word 0xaa0103fa
+.word 0xaa1903e0
+.word 0xaa1a03e1
+.word 0xf9400322
+.word 0xf9405050
+.word 0xd63f0200
+.loc 8 547 0
+.word 0xf9401720
+.word 0xb5000900
+.loc 8 549 0
+.word 0xb9801340
+.word 0x6b1f001f
+.word 0x540001ad
+.loc 8 551 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #368]
+.word 0xd2800601
+bl _p_12
+.word 0xf9001ba0
+.word 0xaa1a03e1
+bl _p_25
+.word 0xf9401ba1
+.word 0xaa1903e0
+bl _p_41
+.loc 8 552 0
+.word 0x14000070
+.loc 8 555 0
+.word 0xaa1903f8
+.word 0xeb1f033f
+.word 0x54000160
+.word 0xf9400320
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9401000
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #312]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800018
+.word 0xb40003d8
+.loc 8 559 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #272]
+.word 0xf9400002
+.word 0xaa1903e0
+.word 0xaa1903e1
+bl _p_10
+.loc 8 560 0
+.word 0xf9401720
+.word 0xb5000bc0
+.loc 8 561 0
+.word 0xf900173a
+.word 0x9100a320
+.word 0xd349fc00
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0000
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #16]
+.word 0x8b010000
+.word 0xd280003e
+.word 0x3900001e
+.loc 8 562 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #272]
+.word 0xf9400002
+.word 0xaa1903e0
+.word 0xaa1903e1
+bl _p_11
+.loc 8 563 0
+.word 0x14000045
+.loc 8 566 0
+.word 0xf900173a
+.word 0x9100a320
+.word 0xd349fc00
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0000
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #16]
+.word 0x8b010000
+.word 0xd280003e
+.word 0x3900001e
+.loc 8 569 0
+.word 0x14000038
+.loc 8 570 0
+.word 0xb9801340
+.word 0x6b1f001f
+.word 0x540006ad
+.loc 8 572 0
+.word 0xaa1903e0
+bl _p_38
+.loc 8 573 0
+.word 0xf9401738
+.word 0xaa1803f7
+.word 0xeb1f031f
+.word 0x54000160
+.word 0xf9400300
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400c00
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #472]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800017
+.word 0xaa1703f8
+.loc 8 574 0
+.word 0xb4000317
+.word 0xaa1803f7
+.word 0xeb1f031f
+.word 0x54000160
+.word 0xf9400300
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9401000
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #480]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800017
+.word 0xb5000157
+.loc 8 576 0
+.word 0x3940031e
+.word 0xf9401700
+.word 0xaa1a03e1
+bl _p_42
+.word 0xaa0003e1
+.word 0xaa1803e0
+.word 0x3940031e
+bl _p_43
+.loc 8 577 0
+.word 0x1400000c
+.loc 8 580 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #368]
+.word 0xd2800601
+bl _p_12
+.word 0xf9001ba0
+.word 0xaa1a03e1
+bl _p_25
+.word 0xf9401ba1
+.word 0xaa1903e0
+bl _p_41
+.loc 8 583 0
+.word 0xa94163b7
+.word 0xa9426bb9
+.word 0x910003bf
+.word 0xa8c47bfd
+.word 0xd65f03c0
+.loc 8 560 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #0]
+.word 0xd28091a1
+bl _p_7
+.word 0xaa0003e1
+.word 0xd28019c0
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_8
+
+Lme_26:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XContainer_AddStringSkipNotify_string
@@ -1390,7 +2856,7 @@ System_Xml_Linq_XContainer_AddStringSkipNotify_string:
 .word 0xaa1903e0
 .word 0xaa1a03e1
 .word 0xf9400322
-.word 0xf9404c50
+.word 0xf9405050
 .word 0xd63f0200
 .loc 8 588 0
 .word 0xf9401720
@@ -1427,7 +2893,7 @@ ldr x1, [x16, #16]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #344]
+ldr x1, [x16, #352]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800017
@@ -1437,7 +2903,7 @@ ldr x1, [x16, #344]
 .loc 8 597 0
 .word 0xaa1803e0
 .word 0xaa1a03e1
-bl _p_29
+bl _p_42
 .word 0xf9001720
 .word 0x9100a321
 .word 0xd349fc21
@@ -1465,7 +2931,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #360]
+ldr x1, [x16, #472]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800017
@@ -1482,7 +2948,7 @@ ldr x1, [x16, #360]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #368]
+ldr x1, [x16, #480]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800017
@@ -1490,7 +2956,7 @@ ldr x1, [x16, #368]
 .loc 8 604 0
 .word 0xf9401700
 .word 0xaa1a03e1
-bl _p_29
+bl _p_42
 .word 0xf9001700
 .word 0x9100a301
 .word 0xd349fc21
@@ -1510,15 +2976,15 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #376]
+ldr x0, [x16, #368]
 .word 0xd2800601
-bl _p_10
+bl _p_12
 .word 0xf9001ba0
 .word 0xaa1a03e1
-bl _p_23
+bl _p_25
 .word 0xf9401ba1
 .word 0xaa1903e0
-bl _p_27
+bl _p_29
 .loc 8 612 0
 .word 0xa94163b7
 .word 0xa9426bb9
@@ -1526,7 +2992,66 @@ bl _p_27
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_1b:
+Lme_27:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XContainer_AppendNode_System_Xml_Linq_XNode
+System_Xml_Linq_XContainer_AppendNode_System_Xml_Linq_XNode:
+.loc 8 616 0 prologue_end
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000bba
+.word 0xf9000fa0
+.word 0xaa0103fa
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #488]
+.word 0xf9400002
+.word 0xf9400fa0
+.word 0xaa1a03e1
+bl _p_10
+.word 0x53001c01
+.loc 8 617 0
+.word 0xf9400b40
+.loc 8 616 0
+.word 0xb90023a1
+.loc 8 617 0
+.word 0xb5000220
+.word 0xf9400fa0
+.loc 8 618 0
+.word 0xaa1a03e1
+bl _p_29
+.word 0xb98023a0
+.loc 8 619 0
+.word 0x34000100
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #488]
+.word 0xf9400002
+.word 0xf9400fa0
+.word 0xaa1a03e1
+bl _p_11
+.loc 8 620 0
+.word 0xf9400bba
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+.loc 8 617 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #0]
+.word 0xd28091a1
+bl _p_7
+.word 0xaa0003e1
+.word 0xd28019c0
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_8
+
+Lme_28:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XContainer_AppendNodeSkipNotify_System_Xml_Linq_XNode
@@ -1565,7 +3090,7 @@ ldr x1, [x16, #16]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #344]
+ldr x1, [x16, #352]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800017
@@ -1596,7 +3121,7 @@ ldr x1, [x16, #16]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #352]
+ldr x1, [x16, #360]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54000581
@@ -1650,11 +3175,88 @@ ldr x1, [x16, #16]
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801940
+.word 0xd28019a0
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_1c:
+Lme_29:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XContainer_AppendText_System_Text_StringBuilder
+System_Xml_Linq_XContainer_AppendText_System_Text_StringBuilder:
+.loc 8 640 0 prologue_end
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xa90163b7
+.word 0xa9026bb9
+.word 0xaa0003f9
+.word 0xaa0103fa
+.word 0xf9401738
+.word 0xaa1803f7
+.word 0xeb1f031f
+.word 0x54000160
+.word 0xf9400300
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400400
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #352]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800017
+.word 0xaa1703f8
+.loc 8 641 0
+.word 0xb40000d7
+.loc 8 643 0
+.word 0xaa1a03e0
+.word 0xaa1803e1
+.word 0x3940035e
+bl _p_44
+.loc 8 644 0
+.word 0x14000019
+.loc 8 647 0
+.word 0xf9401738
+.word 0xb4000178
+.word 0xf9400300
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400800
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #360]
+.word 0xeb01001f
+.word 0x10000011
+.word 0x54000241
+.word 0xaa1803f7
+.loc 8 648 0
+.word 0xb4000178
+.loc 8 652 0
+.word 0xf94012f7
+.loc 8 653 0
+.word 0xaa1703e2
+.word 0xaa0203e0
+.word 0xaa1a03e1
+.word 0xf9400042
+.word 0xf9404850
+.word 0xd63f0200
+.loc 8 654 0
+.word 0xf9401720
+.word 0xeb0002ff
+.word 0x54fffee1
+.loc 8 657 0
+.word 0xa94163b7
+.word 0xa9426bb9
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+.word 0xd28019a0
+.word 0xaa1103e1
+bl _p_22
+
+Lme_2a:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XContainer_ConvertTextToNode
@@ -1676,7 +3278,7 @@ System_Xml_Linq_XContainer_ConvertTextToNode:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #344]
+ldr x1, [x16, #352]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
@@ -1696,12 +3298,12 @@ ldr x1, [x16, #344]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #376]
+ldr x0, [x16, #368]
 .word 0xd2800601
-bl _p_10
+bl _p_12
 .word 0xf9001ba0
 .word 0xaa1903e1
-bl _p_23
+bl _p_25
 .word 0xf9401ba0
 .word 0xaa0003f9
 .loc 8 739 0
@@ -1754,7 +3356,7 @@ ldr x1, [x16, #16]
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_1d:
+Lme_2b:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XContainer_GetStringValue_object
@@ -1775,7 +3377,7 @@ System_Xml_Linq_XContainer_GetStringValue_object:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #344]
+ldr x1, [x16, #352]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800019
@@ -1796,7 +3398,7 @@ ldr x1, [x16, #344]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #384]
+ldr x1, [x16, #496]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800019
@@ -1812,12 +3414,12 @@ ldr x1, [x16, #384]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #384]
+ldr x1, [x16, #496]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54002121
 .word 0xfd400b40
-bl _p_30
+bl _p_45
 .word 0xaa0003f8
 .loc 8 818 0
 .word 0x140000ea
@@ -1832,7 +3434,7 @@ bl _p_30
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #392]
+ldr x1, [x16, #504]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800019
@@ -1848,14 +3450,14 @@ ldr x1, [x16, #392]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #392]
+ldr x1, [x16, #504]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54001d41
 .word 0xbd401350
 .word 0x1e22c200
 .word 0x1e624000
-bl _p_31
+bl _p_46
 .word 0xaa0003f8
 .loc 8 822 0
 .word 0x140000c9
@@ -1870,7 +3472,7 @@ bl _p_31
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #400]
+ldr x1, [x16, #512]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800019
@@ -1886,7 +3488,7 @@ ldr x1, [x16, #400]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #400]
+ldr x1, [x16, #512]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54001921
@@ -1897,7 +3499,7 @@ ldr x1, [x16, #400]
 .word 0xf9002ba0
 .word 0xf94027a0
 .word 0xf9402ba1
-bl _p_32
+bl _p_47
 .word 0xaa0003f8
 .loc 8 826 0
 .word 0x140000a4
@@ -1912,7 +3514,7 @@ bl _p_32
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #408]
+ldr x1, [x16, #520]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800019
@@ -1928,7 +3530,7 @@ ldr x1, [x16, #408]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #408]
+ldr x1, [x16, #520]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54001481
@@ -1937,12 +3539,12 @@ ldr x1, [x16, #408]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x26, [x16, #416]
+ldr x26, [x16, #528]
 .word 0x14000004
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x26, [x16, #424]
+ldr x26, [x16, #536]
 .word 0xaa1a03f8
 .loc 8 830 0
 .word 0x1400007e
@@ -1957,7 +3559,7 @@ ldr x26, [x16, #424]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #432]
+ldr x1, [x16, #544]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800019
@@ -1973,7 +3575,7 @@ ldr x1, [x16, #432]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #432]
+ldr x1, [x16, #544]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54000fc1
@@ -1982,7 +3584,7 @@ ldr x1, [x16, #432]
 .word 0xf90023a0
 .word 0xf94023a0
 .word 0xd2800061
-bl _p_33
+bl _p_48
 .word 0xaa0003f8
 .loc 8 834 0
 .word 0x1400005b
@@ -1997,7 +3599,7 @@ bl _p_33
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #440]
+ldr x1, [x16, #552]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800019
@@ -2013,7 +3615,7 @@ ldr x1, [x16, #440]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #440]
+ldr x1, [x16, #552]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54000b61
@@ -2024,7 +3626,7 @@ ldr x1, [x16, #440]
 .word 0xf9001fa0
 .word 0xf9401ba0
 .word 0xf9401fa1
-bl _p_34
+bl _p_49
 .word 0xaa0003f8
 .loc 8 838 0
 .word 0x14000036
@@ -2039,7 +3641,7 @@ bl _p_34
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #448]
+ldr x1, [x16, #560]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800019
@@ -2055,7 +3657,7 @@ ldr x1, [x16, #448]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #448]
+ldr x1, [x16, #560]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x540006c1
@@ -2063,7 +3665,7 @@ ldr x1, [x16, #448]
 .word 0xf9400000
 .word 0xf90017a0
 .word 0xf94017a0
-bl _p_35
+bl _p_50
 .word 0xaa0003f8
 .loc 8 842 0
 .word 0x14000014
@@ -2078,7 +3680,7 @@ bl _p_35
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #456]
+ldr x1, [x16, #568]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800019
@@ -2103,7 +3705,7 @@ ldr x1, [x16, #456]
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd28091a1
+.word 0xd2809d61
 bl _p_7
 .word 0xaa0003e1
 .word 0xd2800f60
@@ -2115,18 +3717,18 @@ bl _p_8
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2809b21
+.word 0xd280a6e1
 bl _p_7
 .word 0xaa0003e1
 .word 0xd2800f60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_8
-.word 0xd2801940
+.word 0xd28019a0
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_1e:
+Lme_2c:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XContainer_ReadContentFrom_System_Xml_XmlReader
@@ -2150,9 +3752,9 @@ System_Xml_Linq_XContainer_ReadContentFrom_System_Xml_XmlReader:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #464]
+ldr x0, [x16, #576]
 .word 0xd2800901
-bl _p_10
+bl _p_12
 .word 0xf9001c19
 .word 0x9100e001
 .word 0xd349fc21
@@ -2172,7 +3774,7 @@ ldr x2, [x16, #16]
 .word 0xaa1903e1
 .word 0xaa1a03e2
 .word 0x3940031e
-bl _p_36
+bl _p_51
 .word 0x53001c00
 .word 0x340000e0
 .word 0xaa1a03e0
@@ -2192,15 +3794,15 @@ bl _p_36
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd280a6a1
+.word 0xd280b261
 bl _p_7
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd28019c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_1f:
+Lme_2d:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XContainer_ReadContentFrom_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
@@ -2219,7 +3821,7 @@ System_Xml_Linq_XContainer_ReadContentFrom_System_Xml_XmlReader_System_Xml_Linq_
 .loc 8 867 0
 .word 0xaa1803e0
 .word 0xaa1903e1
-bl _p_37
+bl _p_52
 .loc 8 868 0
 .word 0x14000023
 .loc 8 870 0
@@ -2235,14 +3837,14 @@ bl _p_37
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #464]
+ldr x0, [x16, #576]
 .word 0xd2800901
-bl _p_10
+bl _p_12
 .word 0xf9001ba0
 .word 0xaa1803e1
 .word 0xaa1903e2
 .word 0xaa1a03e3
-bl _p_38
+bl _p_53
 .word 0xf9401ba0
 .word 0xaa0003f7
 .loc 8 873 0
@@ -2251,7 +3853,7 @@ bl _p_38
 .word 0xaa1903e2
 .word 0xaa1a03e3
 .word 0x394002fe
-bl _p_39
+bl _p_54
 .word 0x53001c00
 .word 0x340000e0
 .word 0xaa1903e0
@@ -2271,15 +3873,188 @@ bl _p_39
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd280a6a1
+.word 0xd280b261
 bl _p_7
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd28019c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_20:
+Lme_2e:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XContainer_RemoveNode_System_Xml_Linq_XNode
+System_Xml_Linq_XContainer_RemoveNode_System_Xml_Linq_XNode:
+.loc 8 1103 0 prologue_end
+.word 0xa9bc7bfd
+.word 0x910003fd
+.word 0xa9015fb6
+.word 0xa9026bb9
+.word 0xaa0003f9
+.word 0xaa0103fa
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #464]
+.word 0xf9400002
+.word 0xaa1903e0
+.word 0xaa1a03e1
+bl _p_10
+.word 0x53001c00
+.word 0x3900c3a0
+.loc 8 1104 0
+.word 0xf9400b40
+.word 0xeb19001f
+.word 0x54000861
+.loc 8 1105 0
+.word 0xf9401737
+.word 0xb4000177
+.word 0xf94002e0
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400800
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #360]
+.word 0xeb01001f
+.word 0x10000011
+.word 0x54000821
+.word 0xaa1703f6
+.word 0x14000002
+.loc 8 1106 0
+.word 0xf94012d6
+.word 0xf94012c0
+.word 0xeb1a001f
+.word 0x54ffffa1
+.loc 8 1107 0
+.word 0xeb1a02df
+.word 0x54000061
+.loc 8 1109 0
+.word 0xf900173f
+.loc 8 1110 0
+.word 0x1400001d
+.loc 8 1113 0
+.word 0xf9401720
+.word 0xeb1a001f
+.word 0x540001a1
+.word 0xf9001736
+.word 0x9100a320
+.word 0xd349fc00
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0000
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #16]
+.word 0x8b010000
+.word 0xd280003e
+.word 0x3900001e
+.loc 8 1114 0
+.word 0xf9401340
+.word 0xf90012c0
+.word 0x910082c1
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.loc 8 1116 0
+.word 0xf9000b5f
+.loc 8 1117 0
+.word 0xf900135f
+.loc 8 1118 0
+.word 0x3940c3a0
+.word 0x34000100
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #464]
+.word 0xf9400002
+.word 0xaa1903e0
+.word 0xaa1a03e1
+bl _p_11
+.loc 8 1119 0
+.word 0xa9415fb6
+.word 0xa9426bb9
+.word 0x910003bf
+.word 0xa8c47bfd
+.word 0xd65f03c0
+.loc 8 1104 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #0]
+.word 0xd28091a1
+bl _p_7
+.word 0xaa0003e1
+.word 0xd28019c0
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_8
+.word 0xd28019a0
+.word 0xaa1103e1
+bl _p_22
+
+Lme_2f:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XContainer_RemoveNodesSkipNotify
+System_Xml_Linq_XContainer_RemoveNodesSkipNotify:
+.loc 8 1123 0 prologue_end
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xa90167b8
+.word 0xf90013ba
+.word 0xaa0003fa
+.word 0xf9401759
+.word 0xaa1903f8
+.word 0xeb1f033f
+.word 0x54000160
+.word 0xf9400320
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400800
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #360]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800018
+.word 0xaa1803f9
+.loc 8 1124 0
+.word 0xb4000118
+.loc 8 1128 0
+.word 0xf9401338
+.loc 8 1129 0
+.word 0xf9000b3f
+.loc 8 1130 0
+.word 0xf900133f
+.loc 8 1131 0
+.word 0xaa1803f9
+.loc 8 1132 0
+.word 0xf9401740
+.word 0xeb00031f
+.word 0x54ffff41
+.loc 8 1134 0
+.word 0xf900175f
+.loc 8 1135 0
+.word 0xa94167b8
+.word 0xf94013ba
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_30:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XContainer_ValidateNode_System_Xml_Linq_XNode_System_Xml_Linq_XNode
@@ -2294,7 +4069,7 @@ System_Xml_Linq_XContainer_ValidateNode_System_Xml_Linq_XNode_System_Xml_Linq_XN
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_21:
+Lme_31:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XContainer_ValidateString_string
@@ -2308,7 +4083,7 @@ System_Xml_Linq_XContainer_ValidateString_string:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_22:
+Lme_32:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XContainer_WriteContentTo_System_Xml_XmlWriter
@@ -2334,7 +4109,7 @@ System_Xml_Linq_XContainer_WriteContentTo_System_Xml_XmlWriter:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #344]
+ldr x1, [x16, #352]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800017
@@ -2352,7 +4127,7 @@ ldr x1, [x16, #344]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #472]
+ldr x1, [x16, #584]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800017
@@ -2383,7 +4158,7 @@ ldr x1, [x16, #472]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #352]
+ldr x1, [x16, #360]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54000221
@@ -2395,7 +4170,7 @@ ldr x1, [x16, #352]
 .word 0xaa0203e0
 .word 0xaa1a03e1
 .word 0xf9400042
-.word 0xf9404850
+.word 0xf9404c50
 .word 0xd63f0200
 .loc 8 1170 0
 .word 0xf9401720
@@ -2407,11 +4182,11 @@ ldr x1, [x16, #352]
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801940
+.word 0xd28019a0
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_23:
+Lme_33:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XContainer_ContentReader__ctor_System_Xml_Linq_XContainer
@@ -2441,7 +4216,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_24:
+Lme_34:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XContainer_ContentReader__ctor_System_Xml_Linq_XContainer_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
@@ -2509,14 +4284,14 @@ ldr x1, [x16, #16]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #480]
+ldr x1, [x16, #592]
 .word 0xeb01001f
 .word 0x540001c3
 .word 0xf94012e0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #480]
+ldr x1, [x16, #592]
 .word 0x9343fc22
 .word 0x8b020000
 .word 0x39400000
@@ -2549,7 +4324,7 @@ ldr x1, [x16, #16]
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_25:
+Lme_35:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XContainer_ContentReader_ReadContentFrom_System_Xml_Linq_XContainer_System_Xml_XmlReader
@@ -2580,7 +4355,7 @@ System_Xml_Linq_XContainer_ContentReader_ReadContentFrom_System_Xml_Linq_XContai
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #488]
+ldr x0, [x16, #600]
 .word 0x8b010000
 .word 0xf9400000
 .word 0xd61f0000
@@ -2596,7 +4371,7 @@ ldr x0, [x16, #488]
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0x910103a0
-bl _p_40
+bl _p_55
 .word 0xf90043a0
 .word 0xaa1a03e0
 .word 0xf9400341
@@ -2606,17 +4381,17 @@ bl _p_40
 .word 0xf94043a2
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_41
+bl _p_56
 .word 0xf9003fa0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #496]
+ldr x0, [x16, #392]
 .word 0xd2800801
-bl _p_10
+bl _p_12
 .word 0xf9403fa1
 .word 0xf9003ba0
-bl _p_42
+bl _p_57
 .word 0xf9403ba0
 .word 0xaa0003f9
 .loc 8 931 0
@@ -2650,13 +4425,13 @@ bl _p_42
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #304]
 .word 0xf9400000
 .word 0xaa1603f5
 .word 0xaa0003f6
 .word 0xaa1503e0
 .word 0xaa1603e1
-bl _p_40
+bl _p_55
 .word 0xf90047a0
 .word 0xaa1a03e0
 .word 0xf9400341
@@ -2666,7 +4441,7 @@ bl _p_40
 .word 0xf94047a2
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_41
+bl _p_56
 .word 0xf9003fa0
 .word 0xaa1a03e0
 .word 0xf9400341
@@ -2676,17 +4451,17 @@ bl _p_41
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #504]
+ldr x0, [x16, #608]
 .word 0xd2800701
-bl _p_10
+bl _p_12
 .word 0xf9403fa1
 .word 0xf94043a2
 .word 0xf9003ba0
-bl _p_43
+bl _p_58
 .word 0xf9403ba1
 .word 0xaa1703e0
 .word 0x394002fe
-bl _p_44
+bl _p_59
 .loc 8 936 0
 .word 0xaa1a03e0
 .word 0xf9400341
@@ -2704,7 +4479,7 @@ bl _p_44
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0x3940005e
-bl _p_45
+bl _p_39
 .loc 8 940 0
 .word 0xaa1a03e0
 .word 0xf9400341
@@ -2737,7 +4512,7 @@ ldr x1, [x16, #16]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #304]
 .word 0xf9400000
 .word 0xf9001420
 .word 0x9100a021
@@ -2787,7 +4562,7 @@ ldr x2, [x16, #16]
 .word 0xf9403ba2
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_46
+bl _p_40
 .loc 8 957 0
 .word 0x14000099
 .loc 8 959 0
@@ -2801,17 +4576,17 @@ bl _p_46
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #328]
+ldr x0, [x16, #336]
 .word 0xd2800601
-bl _p_10
+bl _p_12
 .word 0xf94043a1
 .word 0xf9003ba0
-bl _p_47
+bl _p_60
 .word 0xf9403ba1
 .word 0xf9403fa2
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_45
+bl _p_39
 .loc 8 960 0
 .word 0x14000084
 .loc 8 962 0
@@ -2825,17 +4600,17 @@ bl _p_45
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #344]
 .word 0xd2800601
-bl _p_10
+bl _p_12
 .word 0xf94043a1
 .word 0xf9003ba0
-bl _p_48
+bl _p_61
 .word 0xf9403ba1
 .word 0xf9403fa2
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_45
+bl _p_39
 .loc 8 963 0
 .word 0x1400006f
 .loc 8 965 0
@@ -2854,18 +4629,18 @@ bl _p_45
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #512]
+ldr x0, [x16, #616]
 .word 0xd2800701
-bl _p_10
+bl _p_12
 .word 0xf94043a1
 .word 0xf94047a2
 .word 0xf9003ba0
-bl _p_49
+bl _p_62
 .word 0xf9403ba1
 .word 0xf9403fa2
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_45
+bl _p_39
 .loc 8 966 0
 .word 0x14000054
 .loc 8 968 0
@@ -2879,7 +4654,7 @@ bl _p_45
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #520]
+ldr x1, [x16, #624]
 .word 0xaa1a03e0
 .word 0xf9400342
 .word 0xf940c450
@@ -2888,7 +4663,7 @@ ldr x1, [x16, #520]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #528]
+ldr x1, [x16, #632]
 .word 0xaa1a03e0
 .word 0xf9400342
 .word 0xf940c450
@@ -2902,20 +4677,20 @@ ldr x1, [x16, #528]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #536]
+ldr x0, [x16, #640]
 .word 0xd2800901
-bl _p_10
+bl _p_12
 .word 0xf94043a1
 .word 0xf94047a2
 .word 0xf9404ba3
 .word 0xf9404fa4
 .word 0xf9003ba0
-bl _p_50
+bl _p_63
 .word 0xf9403ba1
 .word 0xf9403fa2
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_45
+bl _p_39
 .loc 8 969 0
 .word 0x14000027
 .loc 8 971 0
@@ -2937,7 +4712,7 @@ bl _p_45
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd280c0e1
+.word 0xd280cca1
 bl _p_7
 .word 0xf9003ba0
 .word 0xaa1a03e0
@@ -2949,16 +4724,16 @@ bl _p_7
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #544]
+ldr x0, [x16, #648]
 .word 0xd2800281
-bl _p_10
+bl _p_12
 .word 0xaa0003e1
 .word 0xf9403ba0
 .word 0xf9403fa2
 .word 0xb9001022
-bl _p_22
+bl _p_24
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd28019c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_8
@@ -2975,15 +4750,15 @@ bl _p_8
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd280b4e1
+.word 0xd280c0a1
 bl _p_7
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd28019c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_26:
+Lme_36:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XContainer_ContentReader_ReadContentFrom_System_Xml_Linq_XContainer_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
@@ -3024,7 +4799,7 @@ System_Xml_Linq_XContainer_ContentReader_ReadContentFrom_System_Xml_Linq_XContai
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #552]
+ldr x0, [x16, #656]
 .word 0x8b010000
 .word 0xf9400000
 .word 0xd61f0000
@@ -3040,7 +4815,7 @@ ldr x0, [x16, #552]
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0x910143a0
-bl _p_40
+bl _p_55
 .word 0xf9004ba0
 .word 0xaa1a03e0
 .word 0xf9400341
@@ -3050,17 +4825,17 @@ bl _p_40
 .word 0xf9404ba2
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_41
+bl _p_56
 .word 0xf90047a0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #496]
+ldr x0, [x16, #392]
 .word 0xd2800801
-bl _p_10
+bl _p_12
 .word 0xf94047a1
 .word 0xf90043a0
-bl _p_42
+bl _p_57
 .word 0xf94043a0
 .word 0xaa0003f9
 .loc 8 992 0
@@ -3068,14 +4843,14 @@ bl _p_42
 .word 0xb4000140
 .word 0xf9402300
 .word 0xaa1603e1
-bl _p_21
+bl _p_23
 .word 0x53001c00
 .word 0x340000a0
 .loc 8 994 0
 .word 0xaa1903e0
 .word 0xaa1603e1
 .word 0x3940033e
-bl _p_51
+bl _p_64
 .loc 8 996 0
 .word 0xf9401b00
 .word 0xb4000520
@@ -3085,7 +4860,7 @@ bl _p_51
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #560]
+ldr x15, [x16, #664]
 .word 0x92800ff0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -3099,7 +4874,7 @@ ldr x15, [x16, #560]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #568]
+ldr x15, [x16, #672]
 .word 0x928008f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -3112,7 +4887,7 @@ ldr x15, [x16, #568]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #576]
+ldr x15, [x16, #680]
 .word 0x928005f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -3122,7 +4897,7 @@ ldr x15, [x16, #576]
 .word 0xf94043a1
 .word 0xaa1903e0
 .word 0x3940033e
-bl _p_52
+bl _p_65
 .loc 8 1000 0
 .word 0xaa1a03e0
 .word 0xf9400341
@@ -3153,13 +4928,13 @@ bl _p_52
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #304]
 .word 0xf9400000
 .word 0xaa1503f4
 .word 0xaa0003f5
 .word 0xaa1403e0
 .word 0xaa1503e1
-bl _p_40
+bl _p_55
 .word 0xf9004fa0
 .word 0xaa1a03e0
 .word 0xf9400341
@@ -3169,7 +4944,7 @@ bl _p_40
 .word 0xf9404fa2
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_41
+bl _p_56
 .word 0xf90047a0
 .word 0xaa1a03e0
 .word 0xf9400341
@@ -3179,13 +4954,13 @@ bl _p_41
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #504]
+ldr x0, [x16, #608]
 .word 0xd2800701
-bl _p_10
+bl _p_12
 .word 0xf94047a1
 .word 0xf9404ba2
 .word 0xf90043a0
-bl _p_43
+bl _p_58
 .word 0xf94043a0
 .word 0xaa0003f5
 .loc 8 1005 0
@@ -3197,7 +4972,7 @@ bl _p_43
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #560]
+ldr x15, [x16, #664]
 .word 0x92800ff0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -3211,7 +4986,7 @@ ldr x15, [x16, #560]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #568]
+ldr x15, [x16, #672]
 .word 0x928008f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -3224,7 +4999,7 @@ ldr x15, [x16, #568]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #576]
+ldr x15, [x16, #680]
 .word 0x928005f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -3234,12 +5009,12 @@ ldr x15, [x16, #576]
 .word 0xf94043a1
 .word 0xaa1503e0
 .word 0x394002be
-bl _p_52
+bl _p_65
 .loc 8 1009 0
 .word 0xaa1903e0
 .word 0xaa1503e1
 .word 0x3940033e
-bl _p_44
+bl _p_59
 .loc 8 1010 0
 .word 0xaa1a03e0
 .word 0xf9400341
@@ -3257,7 +5032,7 @@ bl _p_44
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0x3940005e
-bl _p_45
+bl _p_39
 .loc 8 1014 0
 .word 0xaa1a03e0
 .word 0xf9400341
@@ -3307,7 +5082,7 @@ ldr x1, [x16, #16]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #304]
 .word 0xf9400000
 .word 0xf9001420
 .word 0x9100a021
@@ -3334,7 +5109,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #304]
+ldr x1, [x16, #312]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800015
@@ -3349,7 +5124,7 @@ ldr x1, [x16, #304]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #560]
+ldr x15, [x16, #664]
 .word 0x92800ff0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -3363,7 +5138,7 @@ ldr x15, [x16, #560]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #568]
+ldr x15, [x16, #672]
 .word 0x928008f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -3376,7 +5151,7 @@ ldr x15, [x16, #568]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #576]
+ldr x15, [x16, #680]
 .word 0x928005f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -3386,7 +5161,7 @@ ldr x15, [x16, #576]
 .word 0xf94043a1
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_53
+bl _p_66
 .loc 8 1038 0
 .word 0xf9401f00
 .word 0xeb19001f
@@ -3399,7 +5174,7 @@ bl _p_53
 .word 0xf9401f01
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_54
+bl _p_67
 .word 0x53001c00
 .word 0x34000240
 .loc 8 1041 0
@@ -3407,7 +5182,7 @@ bl _p_54
 .word 0xf9400801
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_55
+bl _p_68
 .word 0xf9002300
 .word 0x91010301
 .word 0xd349fc21
@@ -3444,7 +5219,7 @@ ldr x2, [x16, #16]
 .word 0xb40000c0
 .word 0xf9402300
 .word 0xaa1603e1
-bl _p_21
+bl _p_23
 .word 0x53001c00
 .word 0x350001e0
 .word 0xf9401b00
@@ -3455,7 +5230,7 @@ bl _p_21
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #560]
+ldr x15, [x16, #664]
 .word 0x92800ff0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -3471,12 +5246,12 @@ ldr x15, [x16, #560]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #376]
+ldr x0, [x16, #368]
 .word 0xd2800601
-bl _p_10
+bl _p_12
 .word 0xf94047a1
 .word 0xf90043a0
-bl _p_23
+bl _p_25
 .word 0xf94043a0
 .word 0xaa0003f7
 .loc 8 1053 0
@@ -3492,7 +5267,7 @@ bl _p_23
 .word 0xf94043a2
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_46
+bl _p_40
 .loc 8 1058 0
 .word 0x14000085
 .loc 8 1060 0
@@ -3504,12 +5279,12 @@ bl _p_46
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #328]
+ldr x0, [x16, #336]
 .word 0xd2800601
-bl _p_10
+bl _p_12
 .word 0xf94047a1
 .word 0xf90043a0
-bl _p_47
+bl _p_60
 .word 0xf94043a0
 .word 0xaa0003f7
 .loc 8 1061 0
@@ -3523,12 +5298,12 @@ bl _p_47
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #344]
 .word 0xd2800601
-bl _p_10
+bl _p_12
 .word 0xf94047a1
 .word 0xf90043a0
-bl _p_48
+bl _p_61
 .word 0xf94043a0
 .word 0xaa0003f7
 .loc 8 1064 0
@@ -3547,13 +5322,13 @@ bl _p_48
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #512]
+ldr x0, [x16, #616]
 .word 0xd2800701
-bl _p_10
+bl _p_12
 .word 0xf94047a1
 .word 0xf9404ba2
 .word 0xf90043a0
-bl _p_49
+bl _p_62
 .word 0xf94043a0
 .word 0xaa0003f7
 .loc 8 1067 0
@@ -3567,7 +5342,7 @@ bl _p_49
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #520]
+ldr x1, [x16, #624]
 .word 0xaa1a03e0
 .word 0xf9400342
 .word 0xf940c450
@@ -3576,7 +5351,7 @@ ldr x1, [x16, #520]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #528]
+ldr x1, [x16, #632]
 .word 0xaa1a03e0
 .word 0xf9400342
 .word 0xf940c450
@@ -3590,15 +5365,15 @@ ldr x1, [x16, #528]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #536]
+ldr x0, [x16, #640]
 .word 0xd2800901
-bl _p_10
+bl _p_12
 .word 0xf94047a1
 .word 0xf9404ba2
 .word 0xf9404fa3
 .word 0xf94053a4
 .word 0xf90043a0
-bl _p_50
+bl _p_63
 .word 0xf94043a0
 .word 0xaa0003f7
 .loc 8 1070 0
@@ -3622,7 +5397,7 @@ bl _p_50
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd280c0e1
+.word 0xd280cca1
 bl _p_7
 .word 0xf90043a0
 .word 0xaa1a03e0
@@ -3634,16 +5409,16 @@ bl _p_7
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #544]
+ldr x0, [x16, #648]
 .word 0xd2800281
-bl _p_10
+bl _p_12
 .word 0xaa0003e1
 .word 0xf94043a0
 .word 0xf94047a2
 .word 0xb9001022
-bl _p_22
+bl _p_24
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd28019c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_8
@@ -3654,14 +5429,14 @@ bl _p_8
 .word 0xb4000140
 .word 0xf9402300
 .word 0xaa1603e1
-bl _p_21
+bl _p_23
 .word 0x53001c00
 .word 0x340000a0
 .loc 8 1085 0
 .word 0xaa1703e0
 .word 0xaa1603e1
 .word 0x394002fe
-bl _p_51
+bl _p_64
 .loc 8 1088 0
 .word 0xf9401b00
 .word 0xb4000520
@@ -3671,7 +5446,7 @@ bl _p_51
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #560]
+ldr x15, [x16, #664]
 .word 0x92800ff0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -3685,7 +5460,7 @@ ldr x15, [x16, #560]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #568]
+ldr x15, [x16, #672]
 .word 0x928008f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -3698,7 +5473,7 @@ ldr x15, [x16, #568]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #576]
+ldr x15, [x16, #680]
 .word 0x928005f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -3708,13 +5483,13 @@ ldr x15, [x16, #576]
 .word 0xf94043a1
 .word 0xaa1703e0
 .word 0x394002fe
-bl _p_52
+bl _p_65
 .loc 8 1093 0
 .word 0xf9401f02
 .word 0xaa0203e0
 .word 0xaa1703e1
 .word 0x3940005e
-bl _p_45
+bl _p_39
 .loc 8 1097 0
 .word 0xd2800020
 .word 0xa94157b4
@@ -3729,20 +5504,326 @@ bl _p_45
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd280b4e1
+.word 0xd280c0a1
 bl _p_7
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd28019c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_27:
+Lme_37:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XContainer__Nodesd__18__ctor_int
+System_Xml_Linq_XContainer__Nodesd__18__ctor_int:
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000bb9
+.word 0xaa0003f9
+.word 0xf9000fa1
+.word 0xb9801ba0
+.word 0xb9002b20
+bl _p_69
+.word 0x93407c00
+.word 0xb9002f20
+.word 0xf9400bb9
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_38:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XContainer__Nodesd__18_System_IDisposable_Dispose
+System_Xml_Linq_XContainer__Nodesd__18_System_IDisposable_Dispose:
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_39:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XContainer__Nodesd__18_MoveNext
+System_Xml_Linq_XContainer__Nodesd__18_MoveNext:
+.loc 8 0 0 prologue_end
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xa90167b8
+.word 0xf90013ba
+.word 0xaa0003fa
+.word 0xb9802b59
+.word 0xf9400f58
+.word 0x340000d9
+.word 0xd280003e
+.word 0x6b1e033f
+.word 0x540006a0
+.word 0xd2800000
+.word 0x1400003f
+.word 0x9280001e
+.word 0xf2bffffe
+.word 0xb9002b5e
+.loc 8 352 0
+.word 0xaa1803e0
+bl _p_70
+.word 0xf9001340
+.word 0x91008341
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.loc 8 353 0
+.word 0xf9401340
+.word 0xb4000560
+.loc 8 357 0
+.word 0xf9401340
+.word 0xf9401000
+.word 0xf9001340
+.word 0x91008341
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.loc 8 358 0
+.word 0xf9401340
+.word 0xf9000b40
+.word 0x91004341
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.word 0xd280003e
+.word 0xb9002b5e
+.word 0xd2800020
+.word 0x1400000d
+.word 0x9280001e
+.word 0xf2bffffe
+.word 0xb9002b5e
+.loc 8 359 0
+.word 0xf9401340
+.word 0xf9400800
+.word 0xeb18001f
+.word 0x540000a1
+.word 0xf9401340
+.word 0xf9401701
+.word 0xeb01001f
+.word 0x54fffae1
+.loc 8 361 0
+.word 0xd2800000
+.word 0xa94167b8
+.word 0xf94013ba
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_3a:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XContainer__Nodesd__18_System_Collections_Generic_IEnumerator_System_Xml_Linq_XNode_get_Current
+System_Xml_Linq_XContainer__Nodesd__18_System_Collections_Generic_IEnumerator_System_Xml_Linq_XNode_get_Current:
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xf9400800
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_3b:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XContainer__Nodesd__18_System_Collections_IEnumerator_Reset
+System_Xml_Linq_XContainer__Nodesd__18_System_Collections_IEnumerator_Reset:
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xd2801c20
+.word 0xf2a04000
+bl _mono_create_corlib_exception_0
+bl _p_8
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_3c:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XContainer__Nodesd__18_System_Collections_IEnumerator_get_Current
+System_Xml_Linq_XContainer__Nodesd__18_System_Collections_IEnumerator_get_Current:
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xf9400800
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_3d:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XContainer__Nodesd__18_System_Collections_Generic_IEnumerable_System_Xml_Linq_XNode_GetEnumerator
+System_Xml_Linq_XContainer__Nodesd__18_System_Collections_Generic_IEnumerable_System_Xml_Linq_XNode_GetEnumerator:
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xa9016bb9
+.word 0xaa0003fa
+.word 0xb9802b40
+.word 0x9280003e
+.word 0xf2bffffe
+.word 0x6b1e001f
+.word 0x54000181
+.word 0xb9802f40
+.word 0xf90013a0
+bl _p_69
+.word 0x93407c00
+.word 0xaa0003e1
+.word 0xf94013a0
+.word 0x6b01001f
+.word 0x54000081
+.word 0xb9002b5f
+.word 0xaa1a03f9
+.word 0x14000019
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #456]
+.word 0xd2800601
+bl _p_12
+.word 0xf90013a0
+.word 0xd2800001
+bl _p_36
+.word 0xf94013a2
+.word 0xaa0203f9
+.word 0xaa1903e1
+.word 0xf9400f40
+.word 0xf9000c40
+.word 0x91006021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.word 0xaa1903e0
+.word 0xa9416bb9
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_3e:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XContainer__Nodesd__18_System_Collections_IEnumerable_GetEnumerator
+System_Xml_Linq_XContainer__Nodesd__18_System_Collections_IEnumerable_GetEnumerator:
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+bl _p_71
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_3f:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XDeclaration__ctor_string_string_string
+System_Xml_Linq_XDeclaration__ctor_string_string_string:
+.file 9 "/Users/builder/jenkins/workspace/xamarin-macios/xamarin-macios/external/mono/external/corefx/src/System.Private.Xml.Linq/src/System/Xml/Linq/XDeclaration.cs"
+.loc 9 45 0 prologue_end
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000bb7
+.word 0xaa0003f7
+.word 0xf9000fa1
+.word 0xf90013a2
+.word 0xf90017a3
+.word 0xf9400fa0
+.word 0xf9000ae0
+.word 0x910042e1
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.loc 9 46 0
+.word 0xf94013a0
+.word 0xf9000ee0
+.word 0x910062e1
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.loc 9 47 0
+.word 0xf94017a0
+.word 0xf90012e0
+.word 0x910082e1
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.loc 9 48 0
+.word 0xf9400bb7
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_40:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XDeclaration__ctor_System_Xml_Linq_XDeclaration
 System_Xml_Linq_XDeclaration__ctor_System_Xml_Linq_XDeclaration:
-.file 9 "/Users/builder/jenkins/workspace/xamarin-macios/xamarin-macios/external/mono/external/corefx/src/System.Private.Xml.Linq/src/System/Xml/Linq/XDeclaration.cs"
 .loc 9 59 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -3813,7 +5894,51 @@ bl _p_7
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_28:
+Lme_41:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XDeclaration_get_Encoding
+System_Xml_Linq_XDeclaration_get_Encoding:
+.loc 9 78 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xf9400c00
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_42:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XDeclaration_set_Encoding_string
+System_Xml_Linq_XDeclaration_set_Encoding_string:
+.loc 9 79 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xf9400ba1
+.word 0xf9400fa0
+.word 0xf9000c20
+.word 0x91006021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_43:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XDeclaration_get_Standalone
@@ -3828,7 +5953,51 @@ System_Xml_Linq_XDeclaration_get_Standalone:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_29:
+Lme_44:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XDeclaration_set_Standalone_string
+System_Xml_Linq_XDeclaration_set_Standalone_string:
+.loc 9 91 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xf9400ba1
+.word 0xf9400fa0
+.word 0xf9001020
+.word 0x91008021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_45:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XDeclaration_get_Version
+System_Xml_Linq_XDeclaration_get_Version:
+.loc 9 102 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xf9400800
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_46:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XDeclaration_ToString
@@ -3839,17 +6008,17 @@ System_Xml_Linq_XDeclaration_ToString:
 .word 0xa9016bb9
 .word 0xaa0003fa
 .word 0xd2800200
-bl _p_56
+bl _p_72
 .word 0xaa0003f9
 .loc 9 113 0
 .word 0xaa1903e2
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #584]
+ldr x1, [x16, #688]
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_57
+bl _p_44
 .loc 9 114 0
 .word 0xf9400b40
 .word 0xb40001e0
@@ -3857,20 +6026,20 @@ bl _p_57
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #592]
+ldr x1, [x16, #696]
 .word 0xaa1903e0
 .word 0x3940033e
-bl _p_57
+bl _p_44
 .loc 9 117 0
 .word 0xf9400b41
 .word 0xaa1903e0
 .word 0x3940033e
-bl _p_57
+bl _p_44
 .loc 9 118 0
 .word 0xaa1903e0
 .word 0xd2800441
 .word 0x3940033e
-bl _p_58
+bl _p_73
 .loc 9 120 0
 .word 0xf9400f40
 .word 0xb40001e0
@@ -3878,20 +6047,20 @@ bl _p_58
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #600]
+ldr x1, [x16, #704]
 .word 0xaa1903e0
 .word 0x3940033e
-bl _p_57
+bl _p_44
 .loc 9 123 0
 .word 0xf9400f41
 .word 0xaa1903e0
 .word 0x3940033e
-bl _p_57
+bl _p_44
 .loc 9 124 0
 .word 0xaa1903e0
 .word 0xd2800441
 .word 0x3940033e
-bl _p_58
+bl _p_73
 .loc 9 126 0
 .word 0xf9401340
 .word 0xb40001e0
@@ -3899,42 +6068,55 @@ bl _p_58
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #608]
+ldr x1, [x16, #712]
 .word 0xaa1903e0
 .word 0x3940033e
-bl _p_57
+bl _p_44
 .loc 9 129 0
 .word 0xf9401341
 .word 0xaa1903e0
 .word 0x3940033e
-bl _p_57
+bl _p_44
 .loc 9 130 0
 .word 0xaa1903e0
 .word 0xd2800441
 .word 0x3940033e
-bl _p_58
+bl _p_73
 .loc 9 132 0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #616]
+ldr x1, [x16, #720]
 .word 0xaa1903e0
 .word 0x3940033e
-bl _p_57
+bl _p_44
 .loc 9 133 0
 .word 0xaa1903e0
-bl _p_59
+bl _p_74
 .word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_2a:
+Lme_47:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XDocument__ctor
+System_Xml_Linq_XDocument__ctor:
+.file 10 "/Users/builder/jenkins/workspace/xamarin-macios/xamarin-macios/external/mono/external/corefx/src/System.Private.Xml.Linq/src/System/Xml/Linq/XDocument.cs"
+.loc 10 44 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_48:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XDocument__ctor_System_Xml_Linq_XDocument
 System_Xml_Linq_XDocument__ctor_System_Xml_Linq_XDocument:
-.file 10 "/Users/builder/jenkins/workspace/xamarin-macios/xamarin-macios/external/mono/external/corefx/src/System.Private.Xml.Linq/src/System/Xml/Linq/XDocument.cs"
 .loc 10 105 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -3943,7 +6125,7 @@ System_Xml_Linq_XDocument__ctor_System_Xml_Linq_XDocument:
 .word 0xaa0103fa
 .word 0xaa1903e0
 .word 0xaa1a03e1
-bl _p_60
+bl _p_75
 .loc 10 107 0
 .word 0xf9401b40
 .word 0xb4000300
@@ -3953,12 +6135,12 @@ bl _p_60
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #624]
+ldr x0, [x16, #728]
 .word 0xd2800501
-bl _p_10
+bl _p_12
 .word 0xf94017a1
 .word 0xf90013a0
-bl _p_61
+bl _p_76
 .word 0xf94013a0
 .word 0xf9001b20
 .word 0x9100c321
@@ -3979,7 +6161,51 @@ ldr x2, [x16, #16]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_2b:
+Lme_49:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XDocument_get_Declaration
+System_Xml_Linq_XDocument_get_Declaration:
+.loc 10 118 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xf9401800
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_4a:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XDocument_set_Declaration_System_Xml_Linq_XDeclaration
+System_Xml_Linq_XDocument_set_Declaration_System_Xml_Linq_XDeclaration:
+.loc 10 119 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xf9400ba1
+.word 0xf9400fa0
+.word 0xf9001820
+.word 0x9100c021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_4b:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XDocument_get_NodeType
@@ -3993,7 +6219,26 @@ System_Xml_Linq_XDocument_get_NodeType:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_2c:
+Lme_4c:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XDocument_get_Root
+System_Xml_Linq_XDocument_get_Root:
+.loc 10 154 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x15, [x16, #736]
+.word 0xf9400ba0
+bl _p_77
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_4d:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XDocument_WriteTo_System_Xml_XmlWriter
@@ -4015,7 +6260,7 @@ System_Xml_Linq_XDocument_WriteTo_System_Xml_XmlWriter:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #632]
+ldr x1, [x16, #744]
 bl _p_9
 .word 0x53001c00
 .word 0x340000e0
@@ -4037,7 +6282,7 @@ bl _p_9
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #640]
+ldr x1, [x16, #752]
 bl _p_9
 .word 0x53001c00
 .word 0x340000e0
@@ -4057,7 +6302,7 @@ bl _p_9
 .loc 10 808 0
 .word 0xaa1903e0
 .word 0xaa1a03e1
-bl _p_62
+bl _p_78
 .loc 10 809 0
 .word 0xaa1a03e0
 .word 0xf9400341
@@ -4081,7 +6326,57 @@ bl _p_7
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_2d:
+Lme_4e:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XDocument_AddAttribute_System_Xml_Linq_XAttribute
+System_Xml_Linq_XDocument_AddAttribute_System_Xml_Linq_XAttribute:
+.loc 10 854 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #0]
+.word 0xd280e6a1
+bl _p_7
+.word 0xaa0003e1
+.word 0xd2800f60
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_8
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_4f:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XDocument_AddAttributeSkipNotify_System_Xml_Linq_XAttribute
+System_Xml_Linq_XDocument_AddAttributeSkipNotify_System_Xml_Linq_XAttribute:
+.loc 10 859 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #0]
+.word 0xd280e6a1
+bl _p_7
+.word 0xaa0003e1
+.word 0xd2800f60
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_8
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_50:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XDocument_CloneNode
@@ -4093,18 +6388,84 @@ System_Xml_Linq_XDocument_CloneNode:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #648]
+ldr x0, [x16, #760]
 .word 0xd2800701
-bl _p_10
+bl _p_12
 .word 0xf90013a0
 .word 0xf9400ba1
-bl _p_63
+bl _p_79
 .word 0xf94013a0
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_2e:
+Lme_51:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XDocument_GetFirstNode_T_REF
+System_Xml_Linq_XDocument_GetFirstNode_T_REF:
+.loc 10 880 0 prologue_end
+.word 0xa9bc7bfd
+.word 0x910003fd
+.word 0xa90167b8
+.word 0xf90013ba
+.word 0xf90017af
+.word 0xaa0003fa
+.word 0xf9401759
+.word 0xaa1903f8
+.word 0xeb1f033f
+.word 0x54000160
+.word 0xf9400320
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400800
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #360]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800018
+.word 0xaa1803f9
+.loc 10 881 0
+.word 0xb4000338
+.loc 10 885 0
+.word 0xf9401339
+.loc 10 886 0
+.word 0xaa1903e0
+.word 0xf9001fa0
+.word 0xf94017a0
+bl _p_80
+.word 0xaa0003e2
+.word 0xf9401fa0
+.word 0xf9400441
+bl _p_81
+.word 0xf9001ba0
+.word 0xf94017a0
+bl _p_80
+.word 0xaa0003e2
+.word 0xf9401ba0
+.word 0xf9400441
+bl _p_82
+.word 0xaa0003f8
+.loc 10 887 0
+.word 0xaa1803e0
+.word 0xb4000060
+.word 0xaa1803e0
+.word 0x14000005
+.loc 10 888 0
+.word 0xf9401740
+.word 0xeb00033f
+.word 0x54fffd21
+.loc 10 890 0
+.word 0xd2800000
+.word 0xa94167b8
+.word 0xf94013ba
+.word 0x910003bf
+.word 0xa8c47bfd
+.word 0xd65f03c0
+
+Lme_52:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XDocument_IsWhitespace_string
@@ -4155,11 +6516,11 @@ System_Xml_Linq_XDocument_IsWhitespace_string:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd28018a0
+.word 0xd2801900
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_2f:
+Lme_53:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XDocument_ValidateNode_System_Xml_Linq_XNode_System_Xml_Linq_XNode
@@ -4188,7 +6549,7 @@ System_Xml_Linq_XDocument_ValidateNode_System_Xml_Linq_XNode_System_Xml_Linq_XNo
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #656]
+ldr x0, [x16, #768]
 .word 0x8b010000
 .word 0xf9400000
 .word 0xd61f0000
@@ -4208,7 +6569,7 @@ ldr x0, [x16, #656]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #360]
+ldr x1, [x16, #472]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54000881
@@ -4216,7 +6577,7 @@ ldr x1, [x16, #360]
 .word 0xf9401721
 .word 0xaa1803e0
 .word 0xf9400302
-.word 0xf9404c50
+.word 0xf9405050
 .word 0xd63f0200
 .loc 10 908 0
 .word 0x14000038
@@ -4225,7 +6586,7 @@ ldr x1, [x16, #360]
 .word 0xf9401ba1
 .word 0xd2800142
 .word 0xd2800003
-bl _p_64
+bl _p_83
 .loc 10 911 0
 .word 0x14000032
 .loc 10 913 0
@@ -4233,7 +6594,7 @@ bl _p_64
 .word 0xf9401ba1
 .word 0xd2800002
 .word 0xd2800023
-bl _p_64
+bl _p_83
 .loc 10 914 0
 .word 0x1400002c
 .loc 10 916 0
@@ -4241,20 +6602,20 @@ bl _p_64
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd280dae1
+.word 0xd280f0e1
 bl _p_7
 .word 0xf90043a0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #544]
+ldr x0, [x16, #648]
 .word 0xd2800281
-bl _p_10
+bl _p_12
 .word 0xaa0003e1
 .word 0xf94043a0
 .word 0xd280009e
 .word 0xb900103e
-bl _p_22
+bl _p_24
 .word 0xaa0003e1
 .word 0xd2800f60
 .word 0xf2a04000
@@ -4266,20 +6627,20 @@ bl _p_8
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd280dae1
+.word 0xd280f0e1
 bl _p_7
 .word 0xf90043a0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #544]
+ldr x0, [x16, #648]
 .word 0xd2800281
-bl _p_10
+bl _p_12
 .word 0xaa0003e1
 .word 0xf94043a0
 .word 0xd280013e
 .word 0xb900103e
-bl _p_22
+bl _p_24
 .word 0xaa0003e1
 .word 0xd2800f60
 .word 0xf2a04000
@@ -4291,11 +6652,11 @@ bl _p_8
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2801940
+.word 0xd28019a0
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_30:
+Lme_54:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XDocument_ValidateDocument_System_Xml_Linq_XNode_System_Xml_XmlNodeType_System_Xml_XmlNodeType
@@ -4321,7 +6682,7 @@ System_Xml_Linq_XDocument_ValidateDocument_System_Xml_Linq_XNode_System_Xml_XmlN
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #352]
+ldr x1, [x16, #360]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800015
@@ -4374,15 +6735,15 @@ ldr x1, [x16, #352]
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd280e6a1
+.word 0xd280fca1
 bl _p_7
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd28019c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_31:
+Lme_55:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XDocument_ValidateString_string
@@ -4393,7 +6754,7 @@ System_Xml_Linq_XDocument_ValidateString_string:
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf9400fa0
-bl _p_65
+bl _p_84
 .word 0x53001c00
 .word 0x34000080
 .loc 10 945 0
@@ -4405,7 +6766,7 @@ bl _p_65
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd280f6a1
+.word 0xd2810ca1
 bl _p_7
 .word 0xaa0003e1
 .word 0xd2800f60
@@ -4413,7 +6774,7 @@ bl _p_7
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_32:
+Lme_56:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XDocumentType__ctor_string_string_string_string
@@ -4429,7 +6790,7 @@ System_Xml_Linq_XDocumentType__ctor_string_string_string_string:
 .word 0xf90017a3
 .word 0xf9001ba4
 .word 0xf9400fa0
-bl _p_66
+bl _p_85
 .word 0xf90016c0
 .word 0x9100a2c1
 .word 0xd349fc21
@@ -4494,7 +6855,7 @@ ldr x2, [x16, #16]
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_33:
+Lme_57:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XDocumentType__ctor_System_Xml_Linq_XDocumentType
@@ -4584,7 +6945,37 @@ bl _p_7
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_34:
+Lme_58:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XDocumentType_get_InternalSubset
+System_Xml_Linq_XDocumentType_get_InternalSubset:
+.loc 11 61 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xf9402000
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_59:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XDocumentType_get_Name
+System_Xml_Linq_XDocumentType_get_Name:
+.loc 11 78 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xf9401400
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_5a:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XDocumentType_get_NodeType
@@ -4598,7 +6989,37 @@ System_Xml_Linq_XDocumentType_get_NodeType:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_35:
+Lme_5b:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XDocumentType_get_PublicId
+System_Xml_Linq_XDocumentType_get_PublicId:
+.loc 11 110 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xf9401800
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_5c:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XDocumentType_get_SystemId
+System_Xml_Linq_XDocumentType_get_SystemId:
+.loc 11 127 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xf9401c00
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_5d:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XDocumentType_WriteTo_System_Xml_XmlWriter
@@ -4637,7 +7058,7 @@ bl _p_7
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_36:
+Lme_5e:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XDocumentType_CloneNode
@@ -4649,18 +7070,18 @@ System_Xml_Linq_XDocumentType_CloneNode:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #536]
+ldr x0, [x16, #640]
 .word 0xd2800901
-bl _p_10
+bl _p_12
 .word 0xf90013a0
 .word 0xf9400ba1
-bl _p_67
+bl _p_86
 .word 0xf94013a0
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_37:
+Lme_5f:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XElement__ctor_System_Xml_Linq_XName
@@ -4709,7 +7130,7 @@ bl _p_7
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_38:
+Lme_60:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XElement__ctor_System_Xml_Linq_XElement
@@ -4723,7 +7144,7 @@ System_Xml_Linq_XElement__ctor_System_Xml_Linq_XElement:
 .word 0xaa0103fa
 .word 0xaa1903e0
 .word 0xaa1a03e1
-bl _p_60
+bl _p_75
 .loc 12 115 0
 .word 0xf9401b40
 .word 0xf9001b20
@@ -4750,15 +7171,15 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #504]
+ldr x0, [x16, #608]
 .word 0xd2800701
-bl _p_10
+bl _p_12
 .word 0xf9001ba0
 .word 0xaa1803e1
-bl _p_68
+bl _p_87
 .word 0xf9401ba1
 .word 0xaa1903e0
-bl _p_44
+bl _p_59
 .loc 12 123 0
 .word 0xf9401f40
 .word 0xeb00031f
@@ -4770,7 +7191,56 @@ bl _p_44
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_39:
+Lme_61:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XElement__ctor_System_Xml_Linq_XStreamingElement
+System_Xml_Linq_XElement__ctor_System_Xml_Linq_XStreamingElement:
+.loc 12 136 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xa9016bb9
+.word 0xaa0003f9
+.word 0xaa0103fa
+.word 0xb40002ba
+.loc 12 137 0
+.word 0xf9400b40
+.word 0xf9001b20
+.word 0x9100c321
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.loc 12 138 0
+.word 0xf9400f41
+.word 0xaa1903e0
+bl _p_31
+.loc 12 139 0
+.word 0xa9416bb9
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+.loc 12 136 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #0]
+.word 0xd28002e1
+bl _p_7
+.word 0xaa0003e1
+.word 0xd2800f80
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_8
+
+Lme_62:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XElement__ctor_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
@@ -4784,13 +7254,47 @@ System_Xml_Linq_XElement__ctor_System_Xml_XmlReader_System_Xml_Linq_LoadOptions:
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xb98023a2
-bl _p_69
+bl _p_88
 .loc 12 171 0
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_3a:
+Lme_63:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XElement_get_HasAttributes
+System_Xml_Linq_XElement_get_HasAttributes:
+.loc 12 236 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xf9401c00
+.word 0xeb1f001f
+.word 0x9a9f97e0
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_64:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XElement_get_IsEmpty
+System_Xml_Linq_XElement_get_IsEmpty:
+.loc 12 264 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xf9401400
+.word 0xeb1f001f
+.word 0x9a9f17e0
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_65:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XElement_get_Name
@@ -4805,7 +7309,7 @@ System_Xml_Linq_XElement_get_Name:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_3b:
+Lme_66:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XElement_get_NodeType
@@ -4819,7 +7323,157 @@ System_Xml_Linq_XElement_get_NodeType:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_3c:
+Lme_67:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XElement_get_Value
+System_Xml_Linq_XElement_get_Value:
+.loc 12 318 0 prologue_end
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xa90167b8
+.word 0xf90013ba
+.word 0xaa0003fa
+.word 0xf9401740
+.word 0xb50000c0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #304]
+.word 0xf9400000
+.word 0x1400001d
+.loc 12 319 0
+.word 0xf9401759
+.word 0xaa1903f8
+.word 0xeb1f033f
+.word 0x54000160
+.word 0xf9400320
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400400
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #352]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800018
+.word 0xaa1803f9
+.loc 12 320 0
+.word 0xb4000078
+.word 0xaa1903e0
+.word 0x1400000b
+.loc 12 321 0
+.word 0xd2800200
+bl _p_72
+.word 0xaa0003f9
+.loc 12 322 0
+.word 0xaa1a03e0
+.word 0xaa1903e1
+.word 0xf9400342
+.word 0xf9404850
+.word 0xd63f0200
+.loc 12 323 0
+.word 0xaa1903e0
+bl _p_74
+.word 0xa94167b8
+.word 0xf94013ba
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_68:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XElement_set_Value_string
+System_Xml_Linq_XElement_set_Value_string:
+.loc 12 327 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xf9400fa0
+.word 0xb4000120
+.loc 12 328 0
+.word 0xf9400ba0
+bl _p_89
+.loc 12 329 0
+.word 0xf9400ba0
+.word 0xf9400fa1
+bl _p_35
+.loc 12 330 0
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+.loc 12 327 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #0]
+.word 0xd2800161
+bl _p_7
+.word 0xaa0003e1
+.word 0xd2800f80
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_8
+
+Lme_69:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XElement_Attribute_System_Xml_Linq_XName
+System_Xml_Linq_XElement_Attribute_System_Xml_Linq_XName:
+.loc 12 386 0 prologue_end
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xa90167b8
+.word 0xf90013ba
+.word 0xaa0003f9
+.word 0xaa0103fa
+.word 0xf9401f38
+.loc 12 387 0
+.word 0xaa1803e0
+.word 0xb40001a0
+.loc 12 391 0
+.word 0xf9401318
+.loc 12 392 0
+.word 0xaa1803e0
+.word 0xf9401400
+.word 0xeb1a001f
+.word 0x9a9f17e0
+.word 0x53001c00
+.word 0x34000060
+.word 0xaa1803e0
+.word 0x14000005
+.loc 12 393 0
+.word 0xf9401f20
+.word 0xeb00031f
+.word 0x54fffea1
+.loc 12 395 0
+.word 0xd2800000
+.word 0xa94167b8
+.word 0xf94013ba
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_6a:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XElement_Attributes
+System_Xml_Linq_XElement_Attributes:
+.loc 12 412 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xd2800001
+bl _p_90
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_6b:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XElement_GetPrefixOfNamespace_System_Xml_Linq_XNamespace
@@ -4858,7 +7512,7 @@ System_Xml_Linq_XElement_GetPrefixOfNamespace_System_Xml_Linq_XNamespace:
 .word 0xaa1603e1
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_70
+bl _p_91
 .word 0x53001c00
 .word 0x34000460
 .loc 12 524 0
@@ -4887,7 +7541,7 @@ bl _p_9
 .word 0xf9400c01
 .word 0xaa1903e0
 .word 0xaa1703e2
-bl _p_71
+bl _p_92
 .word 0xb50000e0
 .loc 12 530 0
 .word 0x394002de
@@ -4918,7 +7572,7 @@ bl _p_71
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #304]
+ldr x1, [x16, #312]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800017
@@ -4928,7 +7582,7 @@ ldr x1, [x16, #304]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #312]
+ldr x0, [x16, #320]
 .word 0xeb00031f
 .word 0x540001a1
 .loc 12 544 0
@@ -4936,15 +7590,15 @@ ldr x0, [x16, #312]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #320]
+ldr x1, [x16, #328]
 .word 0xaa1903e0
 .word 0xd2800002
-bl _p_71
+bl _p_92
 .word 0xb50001c0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #320]
+ldr x0, [x16, #328]
 .word 0x1400000b
 .loc 12 546 0
 
@@ -4972,7 +7626,7 @@ ldr x0, [x16, #256]
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2810421
+.word 0xd2811a21
 bl _p_7
 .word 0xaa0003e1
 .word 0xd2800f80
@@ -4980,7 +7634,7 @@ bl _p_7
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_3d:
+Lme_6c:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XElement_Load_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
@@ -5005,13 +7659,13 @@ System_Xml_Linq_XElement_Load_System_Xml_XmlReader_System_Xml_Linq_LoadOptions:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #496]
+ldr x0, [x16, #392]
 .word 0xd2800801
-bl _p_10
+bl _p_12
 .word 0xf9002ba0
 .word 0xaa1903e1
 .word 0xb98023a2
-bl _p_72
+bl _p_93
 .loc 12 825 0
 .word 0xaa1903e0
 .word 0xf9400321
@@ -5038,7 +7692,7 @@ bl _p_72
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd28104e1
+.word 0xd2811ae1
 bl _p_7
 .word 0xaa0003e1
 .word 0xd2800f80
@@ -5050,15 +7704,15 @@ bl _p_8
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd28106a1
+.word 0xd2811ca1
 bl _p_7
 .word 0xf9002ba0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #544]
+ldr x0, [x16, #648]
 .word 0xd2800281
-bl _p_10
+bl _p_12
 .word 0xd280003e
 .word 0xb900101e
 .word 0xf9002fa0
@@ -5071,17 +7725,17 @@ bl _p_10
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #544]
+ldr x0, [x16, #648]
 .word 0xd2800281
-bl _p_10
+bl _p_12
 .word 0xaa0003e2
 .word 0xf9402ba0
 .word 0xf9402fa1
 .word 0xf94033a3
 .word 0xb9001043
-bl _p_73
+bl _p_94
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd28019c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_8
@@ -5090,15 +7744,15 @@ bl _p_8
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2811981
+.word 0xd2812f81
 bl _p_7
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd28019c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_3e:
+Lme_6d:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XElement_Parse_string
@@ -5109,12 +7763,12 @@ System_Xml_Linq_XElement_Parse_string:
 .word 0xf9000ba0
 .word 0xf9400ba0
 .word 0xd2800001
-bl _p_74
+bl _p_95
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_3f:
+Lme_6e:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XElement_Parse_string_System_Xml_Linq_LoadOptions
@@ -5130,38 +7784,38 @@ System_Xml_Linq_XElement_Parse_string_System_Xml_Linq_LoadOptions:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #664]
+ldr x0, [x16, #776]
 .word 0xd2800501
-bl _p_10
+bl _p_12
 .word 0xf9003ba0
 .word 0xf94013a1
-bl _p_75
+bl _p_96
 .word 0xf9403ba0
 .word 0xf90017a0
 .loc 12 918 0
 .word 0xaa1a03e0
-bl _p_76
+bl _p_97
 .word 0xaa0003f9
 .loc 12 919 0
 .word 0xf94017a0
 .word 0xaa1903e1
-bl _p_77
+bl _p_98
 .word 0xf9001ba0
 .loc 12 921 0
 .word 0xf9401ba0
 .word 0xaa1a03e1
-bl _p_78
+bl _p_99
 .word 0xaa0003fa
 .word 0xf9001fbf
 .word 0x9400000a
 .word 0xf9401fa0
 .word 0xb4000040
-bl _p_17
+bl _p_19
 .word 0xf90023bf
 .word 0x94000014
 .word 0xf94023a0
 .word 0xb4000040
-bl _p_17
+bl _p_19
 .word 0x1400001f
 .word 0xf90027be
 .word 0xf9401ba0
@@ -5172,7 +7826,7 @@ bl _p_17
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #288]
+ldr x15, [x16, #296]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -5188,7 +7842,7 @@ ldr x15, [x16, #288]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #288]
+ldr x15, [x16, #296]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -5202,7 +7856,7 @@ ldr x15, [x16, #288]
 .word 0xa8c87bfd
 .word 0xd65f03c0
 
-Lme_40:
+Lme_6f:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XElement_WriteTo_System_Xml_XmlWriter
@@ -5227,7 +7881,7 @@ System_Xml_Linq_XElement_WriteTo_System_Xml_XmlWriter:
 .word 0xf9001fa0
 .word 0x910083a0
 .word 0xf9400fa1
-bl _p_79
+bl _p_100
 .word 0xf94013a0
 .word 0xf90023a0
 .word 0xf94017a0
@@ -5238,7 +7892,7 @@ bl _p_79
 .word 0xf9002fa0
 .word 0x910103a0
 .word 0xf9400ba1
-bl _p_80
+bl _p_101
 .loc 12 1313 0
 .word 0x910003bf
 .word 0xa8c67bfd
@@ -5256,7 +7910,7 @@ bl _p_7
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_41:
+Lme_70:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XElement_ConvertForAssignment_object
@@ -5277,7 +7931,7 @@ System_Xml_Linq_XElement_ConvertForAssignment_object:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #672]
+ldr x1, [x16, #784]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800019
@@ -5291,11 +7945,11 @@ ldr x1, [x16, #672]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #680]
+ldr x0, [x16, #792]
 .word 0xd2802601
-bl _p_10
+bl _p_12
 .word 0xf90023a0
-bl _p_81
+bl _p_102
 .word 0xf94023a3
 .loc 12 1877 0
 .word 0xaa0303e0
@@ -5305,28 +7959,28 @@ bl _p_81
 .word 0xd2800022
 .word 0xf9001fa3
 .word 0xf9400063
-.word 0xf9413070
+.word 0xf9413470
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0xf9401fa2
 .word 0xaa0203e0
 .word 0xf9400042
-.word 0xf940c050
+.word 0xf940c450
 .word 0xd63f0200
 .word 0xf9401ba1
 .loc 12 1878 0
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9408430
+.word 0xf9408830
 .word 0xd63f0200
-bl _p_82
+bl _p_103
 .word 0xa94167b8
 .word 0xf94013ba
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_42:
+Lme_71:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XElement_System_Xml_Serialization_IXmlSerializable_GetSchema
@@ -5340,7 +7994,7 @@ System_Xml_Linq_XElement_System_Xml_Serialization_IXmlSerializable_GetSchema:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_43:
+Lme_72:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XElement_System_Xml_Serialization_IXmlSerializable_ReadXml_System_Xml_XmlReader
@@ -5374,7 +8028,7 @@ System_Xml_Linq_XElement_System_Xml_Serialization_IXmlSerializable_ReadXml_Syste
 .word 0xaa1903e0
 .word 0xaa1a03e1
 .word 0xd2800002
-bl _p_69
+bl _p_88
 .loc 12 1903 0
 .word 0xa9416bb9
 .word 0x910003bf
@@ -5385,7 +8039,7 @@ bl _p_69
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd28104e1
+.word 0xd2811ae1
 bl _p_7
 .word 0xaa0003e1
 .word 0xd2800f80
@@ -5397,10 +8051,10 @@ bl _p_8
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2812901
+.word 0xd2813f01
 bl _p_7
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd28019c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_8
@@ -5409,15 +8063,15 @@ bl _p_8
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd28106a1
+.word 0xd2811ca1
 bl _p_7
 .word 0xf90023a0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #544]
+ldr x0, [x16, #648]
 .word 0xd2800281
-bl _p_10
+bl _p_12
 .word 0xd280003e
 .word 0xb900101e
 .word 0xf90027a0
@@ -5430,22 +8084,22 @@ bl _p_10
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #544]
+ldr x0, [x16, #648]
 .word 0xd2800281
-bl _p_10
+bl _p_12
 .word 0xaa0003e2
 .word 0xf94023a0
 .word 0xf94027a1
 .word 0xf9402ba3
 .word 0xb9001043
-bl _p_73
+bl _p_94
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd28019c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_44:
+Lme_73:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XElement_System_Xml_Serialization_IXmlSerializable_WriteXml_System_Xml_XmlWriter
@@ -5459,14 +8113,177 @@ System_Xml_Linq_XElement_System_Xml_Serialization_IXmlSerializable_WriteXml_Syst
 .word 0xf9400fa1
 .word 0xf9400ba2
 .word 0xf9400042
-.word 0xf9404850
+.word 0xf9404c50
 .word 0xd63f0200
 .loc 12 1915 0
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_45:
+Lme_74:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XElement_AddAttribute_System_Xml_Linq_XAttribute
+System_Xml_Linq_XElement_AddAttribute_System_Xml_Linq_XAttribute:
+.loc 12 1919 0 prologue_end
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000bba
+.word 0xf9000fa0
+.word 0xaa0103fa
+.word 0x3940035e
+.word 0xf9401741
+.word 0xf9400fa0
+bl _p_104
+.word 0xb5000280
+.loc 12 1920 0
+.word 0xf9400b40
+.word 0xb4000160
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #608]
+.word 0xd2800701
+bl _p_12
+.word 0xf90013a0
+.word 0xaa1a03e1
+bl _p_87
+.word 0xf94013a0
+.word 0xaa0003fa
+.loc 12 1921 0
+.word 0xf9400fa0
+.word 0xaa1a03e1
+bl _p_105
+.loc 12 1922 0
+.word 0xf9400bba
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+.loc 12 1919 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #0]
+.word 0xd2814881
+bl _p_7
+.word 0xaa0003e1
+.word 0xd28019c0
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_8
+
+Lme_75:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XElement_AddAttributeSkipNotify_System_Xml_Linq_XAttribute
+System_Xml_Linq_XElement_AddAttributeSkipNotify_System_Xml_Linq_XAttribute:
+.loc 12 1926 0 prologue_end
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000bba
+.word 0xf9000fa0
+.word 0xaa0103fa
+.word 0x3940035e
+.word 0xf9401741
+.word 0xf9400fa0
+bl _p_104
+.word 0xb5000280
+.loc 12 1927 0
+.word 0xf9400b40
+.word 0xb4000160
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #608]
+.word 0xd2800701
+bl _p_12
+.word 0xf90013a0
+.word 0xaa1a03e1
+bl _p_87
+.word 0xf94013a0
+.word 0xaa0003fa
+.loc 12 1928 0
+.word 0xf9400fa0
+.word 0xaa1a03e1
+bl _p_59
+.loc 12 1929 0
+.word 0xf9400bba
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+.loc 12 1926 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #0]
+.word 0xd2814881
+bl _p_7
+.word 0xaa0003e1
+.word 0xd28019c0
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_8
+
+Lme_76:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XElement_AppendAttribute_System_Xml_Linq_XAttribute
+System_Xml_Linq_XElement_AppendAttribute_System_Xml_Linq_XAttribute:
+.loc 12 1933 0 prologue_end
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000bba
+.word 0xf9000fa0
+.word 0xaa0103fa
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #488]
+.word 0xf9400002
+.word 0xf9400fa0
+.word 0xaa1a03e1
+bl _p_10
+.word 0x53001c01
+.loc 12 1934 0
+.word 0xf9400b40
+.loc 12 1933 0
+.word 0xb90023a1
+.loc 12 1934 0
+.word 0xb5000220
+.word 0xf9400fa0
+.loc 12 1935 0
+.word 0xaa1a03e1
+bl _p_59
+.word 0xb98023a0
+.loc 12 1936 0
+.word 0x34000100
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #488]
+.word 0xf9400002
+.word 0xf9400fa0
+.word 0xaa1a03e1
+bl _p_11
+.loc 12 1937 0
+.word 0xf9400bba
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+.loc 12 1934 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #0]
+.word 0xd28091a1
+bl _p_7
+.word 0xaa0003e1
+.word 0xd28019c0
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_8
+
+Lme_77:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XElement_AppendAttributeSkipNotify_System_Xml_Linq_XAttribute
@@ -5560,7 +8377,7 @@ ldr x1, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_46:
+Lme_78:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XElement_CloneNode
@@ -5572,18 +8389,72 @@ System_Xml_Linq_XElement_CloneNode:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #496]
+ldr x0, [x16, #392]
 .word 0xd2800801
-bl _p_10
+bl _p_12
 .word 0xf90013a0
 .word 0xf9400ba1
-bl _p_83
+bl _p_106
 .word 0xf94013a0
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_47:
+Lme_79:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XElement_GetAttributes_System_Xml_Linq_XName
+System_Xml_Linq_XElement_GetAttributes_System_Xml_Linq_XName:
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #800]
+.word 0xd2800801
+bl _p_12
+.word 0xf90013a0
+.word 0x92800021
+.word 0xf2bfffe1
+bl _p_107
+.word 0xf94013a3
+.word 0xaa0303e2
+.word 0xaa0203e0
+.word 0xf9400ba1
+.word 0xf9000c61
+.word 0x91006043
+.word 0xd349fc63
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0063
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x4, [x16, #16]
+.word 0x8b040063
+.word 0xd280003e
+.word 0x3900007e
+.word 0xf9400fa1
+.word 0xf9001441
+.word 0x9100a002
+.word 0xd349fc42
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_7a:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XElement_GetNamespaceOfPrefixInScope_string_System_Xml_Linq_XElement
@@ -5609,7 +8480,7 @@ System_Xml_Linq_XElement_GetNamespaceOfPrefixInScope_string_System_Xml_Linq_XEle
 .word 0xaa1803e1
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_70
+bl _p_91
 .word 0x53001c00
 .word 0x340001a0
 .word 0x3940031e
@@ -5640,7 +8511,7 @@ bl _p_9
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #304]
+ldr x1, [x16, #312]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800017
@@ -5655,7 +8526,7 @@ ldr x1, [x16, #304]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_48:
+Lme_7b:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XElement_ReadElementFrom_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
@@ -5670,7 +8541,7 @@ System_Xml_Linq_XElement_ReadElementFrom_System_Xml_XmlReader_System_Xml_Linq_Lo
 .word 0xf9400fa0
 .word 0xaa1903e1
 .word 0xb98023a2
-bl _p_84
+bl _p_108
 .loc 12 2035 0
 .word 0xaa1903e0
 .word 0xf9400321
@@ -5687,7 +8558,7 @@ bl _p_84
 .word 0xf9400fa0
 .word 0xaa1903e1
 .word 0xb98023a2
-bl _p_85
+bl _p_109
 .loc 12 2041 0
 .word 0xaa1903e0
 .word 0xf9400321
@@ -5699,7 +8570,7 @@ bl _p_85
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_49:
+Lme_7c:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XElement_ReadElementFromImpl_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
@@ -5726,7 +8597,7 @@ System_Xml_Linq_XElement_ReadElementFromImpl_System_Xml_XmlReader_System_Xml_Lin
 .word 0xf9400321
 .word 0xf9414030
 .word 0xd63f0200
-bl _p_86
+bl _p_110
 .word 0xf90023a0
 .word 0xaa1903e0
 .word 0xf9400321
@@ -5736,7 +8607,7 @@ bl _p_86
 .word 0xf94023a2
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_41
+bl _p_56
 .word 0xf9001b00
 .word 0x9100c301
 .word 0xd349fc21
@@ -5775,7 +8646,7 @@ ldr x2, [x16, #16]
 .loc 12 2072 0
 .word 0xaa1803e0
 .word 0xaa1703e1
-bl _p_51
+bl _p_64
 .loc 12 2075 0
 .word 0xd2800017
 .loc 12 2076 0
@@ -5791,14 +8662,14 @@ bl _p_51
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #480]
+ldr x1, [x16, #592]
 .word 0xeb01001f
 .word 0x540001c3
 .word 0xf94012e0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #480]
+ldr x1, [x16, #592]
 .word 0x9343fc22
 .word 0x8b020000
 .word 0x39400000
@@ -5817,7 +8688,7 @@ ldr x1, [x16, #480]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #560]
+ldr x15, [x16, #664]
 .word 0x92800ff0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -5830,7 +8701,7 @@ ldr x15, [x16, #560]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #568]
+ldr x15, [x16, #672]
 .word 0x928008f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -5842,7 +8713,7 @@ ldr x15, [x16, #568]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #576]
+ldr x15, [x16, #680]
 .word 0x928005f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -5851,7 +8722,7 @@ ldr x15, [x16, #576]
 .word 0xaa0003e2
 .word 0xf94023a1
 .word 0xaa1803e0
-bl _p_52
+bl _p_65
 .loc 12 2084 0
 .word 0xaa1903e0
 .word 0xf9400321
@@ -5875,10 +8746,10 @@ bl _p_52
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #304]
 .word 0xf940001a
 .word 0xaa1a03e0
-bl _p_86
+bl _p_110
 .word 0xf9002fa0
 .word 0xaa1903e0
 .word 0xf9400321
@@ -5888,7 +8759,7 @@ bl _p_86
 .word 0xf9402fa2
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_41
+bl _p_56
 .word 0xf90027a0
 .word 0xaa1903e0
 .word 0xf9400321
@@ -5898,13 +8769,13 @@ bl _p_41
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #504]
+ldr x0, [x16, #608]
 .word 0xd2800701
-bl _p_10
+bl _p_12
 .word 0xf94027a1
 .word 0xf9402ba2
 .word 0xf90023a0
-bl _p_43
+bl _p_58
 .word 0xf94023a0
 .word 0xaa0003fa
 .loc 12 2089 0
@@ -5914,7 +8785,7 @@ bl _p_43
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #560]
+ldr x15, [x16, #664]
 .word 0x92800ff0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -5927,7 +8798,7 @@ ldr x15, [x16, #560]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #568]
+ldr x15, [x16, #672]
 .word 0x928008f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -5939,7 +8810,7 @@ ldr x15, [x16, #568]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #576]
+ldr x15, [x16, #680]
 .word 0x928005f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -5949,11 +8820,11 @@ ldr x15, [x16, #576]
 .word 0xf94023a1
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_52
+bl _p_65
 .loc 12 2093 0
 .word 0xaa1803e0
 .word 0xaa1a03e1
-bl _p_44
+bl _p_59
 .loc 12 2094 0
 .word 0xaa1903e0
 .word 0xf9400321
@@ -5978,15 +8849,15 @@ bl _p_44
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd280a6a1
+.word 0xd280b261
 bl _p_7
 .word 0xaa0003e1
-.word 0xd2801960
+.word 0xd28019c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_4a:
+Lme_7d:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XElement_SetEndElementLineInfo_int_int
@@ -6000,22 +8871,22 @@ System_Xml_Linq_XElement_SetEndElementLineInfo_int_int:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #688]
+ldr x0, [x16, #808]
 .word 0xd2800301
-bl _p_10
+bl _p_12
 .word 0xf9001ba0
 .word 0xb9801ba1
 .word 0xb98023a2
-bl _p_87
+bl _p_111
 .word 0xf9401ba1
 .word 0xf9400ba0
-bl _p_88
+bl _p_112
 .loc 12 2138 0
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_4b:
+Lme_7e:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XElement_ValidateNode_System_Xml_Linq_XNode_System_Xml_Linq_XNode
@@ -6037,7 +8908,7 @@ System_Xml_Linq_XElement_ValidateNode_System_Xml_Linq_XNode_System_Xml_Linq_XNod
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #472]
+ldr x1, [x16, #584]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800019
@@ -6053,7 +8924,7 @@ ldr x1, [x16, #472]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #696]
+ldr x1, [x16, #816]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800019
@@ -6068,20 +8939,20 @@ ldr x1, [x16, #696]
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd280dae1
+.word 0xd280f0e1
 bl _p_7
 .word 0xf9003ba0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #544]
+ldr x0, [x16, #648]
 .word 0xd2800281
-bl _p_10
+bl _p_12
 .word 0xaa0003e1
 .word 0xf9403ba0
 .word 0xd280013e
 .word 0xb900103e
-bl _p_22
+bl _p_24
 .word 0xaa0003e1
 .word 0xd2800f60
 .word 0xf2a04000
@@ -6092,27 +8963,295 @@ bl _p_8
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd280dae1
+.word 0xd280f0e1
 bl _p_7
 .word 0xf9003ba0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #544]
+ldr x0, [x16, #648]
 .word 0xd2800281
-bl _p_10
+bl _p_12
 .word 0xaa0003e1
 .word 0xf9403ba0
 .word 0xd280015e
 .word 0xb900103e
-bl _p_22
+bl _p_24
 .word 0xaa0003e1
 .word 0xd2800f60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_4c:
+Lme_7f:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XElement__GetAttributesd__116__ctor_int
+System_Xml_Linq_XElement__GetAttributesd__116__ctor_int:
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000bb9
+.word 0xaa0003f9
+.word 0xf9000fa1
+.word 0xb9801ba0
+.word 0xb9003b20
+bl _p_69
+.word 0x93407c00
+.word 0xb9003f20
+.word 0xf9400bb9
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_80:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XElement__GetAttributesd__116_System_IDisposable_Dispose
+System_Xml_Linq_XElement__GetAttributesd__116_System_IDisposable_Dispose:
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_81:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XElement__GetAttributesd__116_MoveNext
+System_Xml_Linq_XElement__GetAttributesd__116_MoveNext:
+.loc 12 0 0 prologue_end
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xa90167b8
+.word 0xf90013ba
+.word 0xaa0003fa
+.word 0xb9803b59
+.word 0xf9400f58
+.word 0x340000d9
+.word 0xd280003e
+.word 0x6b1e033f
+.word 0x54000800
+.word 0xd2800000
+.word 0x1400004a
+.word 0x9280001e
+.word 0xf2bffffe
+.word 0xb9003b5e
+.loc 12 1984 0
+.word 0xf9401f00
+.word 0xf9001b40
+.word 0x9100c341
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.loc 12 1985 0
+.word 0xf9401b40
+.word 0xb40006e0
+.loc 12 1989 0
+.word 0xf9401b40
+.word 0xf9401000
+.word 0xf9001b40
+.word 0x9100c341
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.loc 12 1990 0
+.word 0xf9401340
+.word 0xeb1f001f
+.word 0x9a9f17e0
+.word 0x53001c00
+.word 0x35000100
+.word 0xf9401b40
+.word 0xf9401400
+.word 0xf9401341
+.word 0xeb01001f
+.word 0x9a9f17e0
+.word 0x53001c00
+.word 0x340002a0
+.word 0xf9401b40
+.word 0xf9000b40
+.word 0x91004341
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.word 0xd280003e
+.word 0xb9003b5e
+.word 0xd2800020
+.word 0x1400000d
+.word 0x9280001e
+.word 0xf2bffffe
+.word 0xb9003b5e
+.loc 12 1991 0
+.word 0xf9401b40
+.word 0xf9400800
+.word 0xeb18001f
+.word 0x540000a1
+.word 0xf9401b40
+.word 0xf9401f01
+.word 0xeb01001f
+.word 0x54fff961
+.loc 12 1993 0
+.word 0xd2800000
+.word 0xa94167b8
+.word 0xf94013ba
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_82:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_Generic_IEnumerator_System_Xml_Linq_XAttribute_get_Current
+System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_Generic_IEnumerator_System_Xml_Linq_XAttribute_get_Current:
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xf9400800
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_83:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_IEnumerator_Reset
+System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_IEnumerator_Reset:
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xd2801c20
+.word 0xf2a04000
+bl _mono_create_corlib_exception_0
+bl _p_8
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_84:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_IEnumerator_get_Current
+System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_IEnumerator_get_Current:
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xf9400800
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_85:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_Generic_IEnumerable_System_Xml_Linq_XAttribute_GetEnumerator
+System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_Generic_IEnumerable_System_Xml_Linq_XAttribute_GetEnumerator:
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xa9016bb9
+.word 0xaa0003fa
+.word 0xb9803b40
+.word 0x9280003e
+.word 0xf2bffffe
+.word 0x6b1e001f
+.word 0x54000181
+.word 0xb9803f40
+.word 0xf90013a0
+bl _p_69
+.word 0x93407c00
+.word 0xaa0003e1
+.word 0xf94013a0
+.word 0x6b01001f
+.word 0x54000081
+.word 0xb9003b5f
+.word 0xaa1a03f9
+.word 0x14000019
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #800]
+.word 0xd2800801
+bl _p_12
+.word 0xf90013a0
+.word 0xd2800001
+bl _p_107
+.word 0xf94013a2
+.word 0xaa0203f9
+.word 0xaa1903e1
+.word 0xf9400f40
+.word 0xf9000c40
+.word 0x91006021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.word 0xf9401740
+.word 0xf9001320
+.word 0x91008321
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.word 0xaa1903e0
+.word 0xa9416bb9
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_86:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_IEnumerable_GetEnumerator
+System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_IEnumerable_GetEnumerator:
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+bl _p_113
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_87:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XHashtable_1_TValue_REF__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_REF_int
@@ -6128,13 +9267,13 @@ System_Xml_Linq_XHashtable_1_TValue_REF__ctor_System_Xml_Linq_XHashtable_1_Extra
 .word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_89
+bl _p_114
 .word 0xd2800601
-bl _p_10
+bl _p_12
 .word 0xf9001ba0
 .word 0xf9400fa1
 .word 0xb98023a2
-bl _p_90
+bl _p_115
 .word 0xf9401ba0
 .word 0xf9401fa1
 .word 0xf9000820
@@ -6155,7 +9294,7 @@ ldr x2, [x16, #16]
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_4d:
+Lme_88:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XHashtable_1_TValue_REF_TryGetValue_string_int_int_TValue_REF_
@@ -6176,13 +9315,13 @@ System_Xml_Linq_XHashtable_1_TValue_REF_TryGetValue_string_int_int_TValue_REF_:
 .word 0xb9802ba3
 .word 0xf9401ba4
 .word 0x394000be
-bl _p_91
+bl _p_116
 .word 0x53001c00
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_4e:
+Lme_89:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XHashtable_1_TValue_REF_Add_TValue_REF
@@ -6203,7 +9342,7 @@ System_Xml_Linq_XHashtable_1_TValue_REF_Add_TValue_REF:
 .word 0xaa1a03e1
 .word 0x9100c3a2
 .word 0x3940007e
-bl _p_92
+bl _p_117
 .word 0x53001c00
 .word 0x34000060
 .loc 13 103 0
@@ -6222,13 +9361,13 @@ bl _mono_monitor_enter_v4_fast
 .word 0x35000080
 .word 0xaa1903e0
 .word 0xaa1803e1
-bl _p_93
+bl _p_118
 .loc 13 112 0
 .word 0xf94017a0
 .word 0xf9400801
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_94
+bl _p_119
 .word 0xaa0003f9
 .loc 13 114 0
 .word 0xd5033bbf
@@ -6252,13 +9391,13 @@ ldr x1, [x16, #16]
 .word 0x94000005
 .word 0xf94027a0
 .word 0xb4000040
-bl _p_17
+bl _p_19
 .word 0x17ffffcf
 .word 0xf9002bbe
 .word 0x394103a0
 .word 0x34000060
 .word 0xf9401fa0
-bl _p_95
+bl _p_120
 .word 0xf9402bbe
 .word 0xd61f03c0
 .word 0xa94167b8
@@ -6267,7 +9406,7 @@ bl _p_95
 .word 0xa8c67bfd
 .word 0xd65f03c0
 
-Lme_4f:
+Lme_8a:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_REF_int
@@ -6283,9 +9422,9 @@ System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF__ctor_System_Xml_Linq_XH
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #704]
+ldr x0, [x16, #824]
 .word 0xb98023a1
-bl _p_96
+bl _p_121
 .word 0xf9401fa1
 .word 0xf9000820
 .word 0x91004021
@@ -6305,9 +9444,9 @@ ldr x2, [x16, #16]
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_97
+bl _p_122
 .word 0xb98023a1
-bl _p_96
+bl _p_121
 .word 0xf9401ba1
 .word 0xf9000c20
 .word 0x91006021
@@ -6343,7 +9482,7 @@ ldr x2, [x16, #16]
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_54:
+Lme_8f:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_Resize
@@ -6518,13 +9657,13 @@ System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_Resize:
 .word 0xf90027a0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_98
+bl _p_123
 .word 0xd2800601
-bl _p_10
+bl _p_12
 .word 0xf94027a1
 .word 0xf90023a0
 .word 0xaa1a03e2
-bl _p_99
+bl _p_124
 .word 0xf94023a0
 .word 0xaa0003fa
 .loc 13 223 0
@@ -6558,7 +9697,7 @@ bl _p_99
 .word 0xaa1a03e0
 .word 0x9100c3a2
 .word 0x3940035e
-bl _p_100
+bl _p_125
 .loc 13 232 0
 .word 0xf94017a0
 .word 0xf9400c00
@@ -6589,15 +9728,15 @@ bl _p_100
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .loc 13 214 0
-.word 0xd2801d00
+.word 0xd2801d60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_8
-.word 0xd28018a0
+.word 0xd2801900
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_55:
+Lme_90:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_TryGetValue_string_int_int_TValue_REF_
@@ -6613,12 +9752,12 @@ System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_TryGetValue_string_int_i
 .word 0xb9003bbf
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_98
+bl _p_123
 .word 0xaa0003ef
 .word 0xf9400fa0
 .word 0xb98023a1
 .word 0xb9802ba2
-bl _p_101
+bl _p_126
 .word 0x93407c00
 .word 0xaa0003e1
 .loc 13 247 0
@@ -6629,7 +9768,7 @@ bl _p_101
 .word 0xb98023a3
 .word 0xb9802ba4
 .word 0x9100e3a5
-bl _p_102
+bl _p_127
 .word 0x53001c00
 .word 0x34000360
 .loc 13 252 0
@@ -6669,11 +9808,11 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd28018a0
+.word 0xd2801900
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_56:
+Lme_91:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_TryAdd_TValue_REF_TValue_REF_
@@ -6720,12 +9859,12 @@ ldr x1, [x16, #16]
 .word 0xf9002ba0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_98
+bl _p_123
 .word 0xaa0003ef
 .word 0xf9402ba2
 .word 0xaa1803e0
 .word 0xd2800001
-bl _p_101
+bl _p_126
 .word 0x93407c00
 .word 0xaa0003f7
 .loc 13 288 0
@@ -6860,7 +9999,7 @@ ldr x1, [x16, #16]
 .word 0xaa1803e2
 .word 0xd2800003
 .word 0x910103a5
-bl _p_102
+bl _p_127
 .word 0x53001c00
 .word 0x34fff820
 .loc 13 320 0
@@ -6896,14 +10035,14 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd28018a0
+.word 0xd2801900
 .word 0xaa1103e1
-bl _p_20
-.word 0xd2801be0
+bl _p_22
+.word 0xd2801c40
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_57:
+Lme_92:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_FindEntry_int_string_int_int_int_
@@ -7064,7 +10203,7 @@ System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_FindEntry_int_string_int
 .word 0xaa1303e2
 .word 0xd2800003
 .word 0xaa1903e4
-bl _p_103
+bl _p_128
 .word 0x93407c00
 .word 0x350000a0
 .loc 13 379 0
@@ -7102,11 +10241,11 @@ bl _p_103
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd28018a0
+.word 0xd2801900
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_58:
+Lme_93:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_ComputeHashCode_string_int_int
@@ -7167,13 +10306,13 @@ System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_ComputeHashCode_string_i
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd28018a0
+.word 0xd2801900
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_59:
+Lme_94:
 .text
-ut_90:
+ut_149:
 add x0, x0, 16
 b System_Xml_Linq_NamespaceCache_Get_string
 ut_end:
@@ -7181,7 +10320,7 @@ ut_end:
 _unbox_trampoline_p:
 
 	.long 0
-LDIFF_SYM3=ut_end - ut_90
+LDIFF_SYM3=ut_end - ut_149
 	.long LDIFF_SYM3
 .text
 	.align 4
@@ -7215,7 +10354,7 @@ ldr x1, [x16, #16]
 .word 0x3900001e
 .loc 14 191 0
 .word 0xaa1a03e0
-bl _p_86
+bl _p_110
 .word 0xf9000320
 .word 0xd349ff21
 .word 0xd29ffffe
@@ -7235,9 +10374,9 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_5a:
+Lme_95:
 .text
-ut_91:
+ut_150:
 add x0, x0, 16
 b System_Xml_Linq_ElementWriter__ctor_System_Xml_XmlWriter
 .text
@@ -7275,9 +10414,9 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_5b:
+Lme_96:
 .text
-ut_92:
+ut_151:
 add x0, x0, 16
 b System_Xml_Linq_ElementWriter_WriteElement_System_Xml_Linq_XElement
 .text
@@ -7294,7 +10433,7 @@ System_Xml_Linq_ElementWriter_WriteElement_System_Xml_Linq_XElement:
 .word 0xaa0103fa
 .word 0xaa1903e0
 .word 0xaa1a03e1
-bl _p_104
+bl _p_129
 .loc 14 210 0
 .word 0xaa1a03f8
 .loc 14 211 0
@@ -7310,7 +10449,7 @@ bl _p_104
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #304]
+ldr x1, [x16, #312]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd280001a
@@ -7319,13 +10458,13 @@ ldr x1, [x16, #304]
 .loc 14 217 0
 .word 0xaa1903e0
 .word 0xaa1a03e1
-bl _p_105
+bl _p_130
 .loc 14 218 0
 .word 0xf9401740
 .word 0xb5000080
 .loc 14 220 0
 .word 0xaa1903e0
-bl _p_106
+bl _p_131
 .loc 14 221 0
 .word 0x14000031
 .loc 14 224 0
@@ -7340,7 +10479,7 @@ bl _p_106
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #344]
+ldr x1, [x16, #352]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800015
@@ -7356,7 +10495,7 @@ ldr x1, [x16, #344]
 .word 0xd63f0200
 .loc 14 228 0
 .word 0xaa1903e0
-bl _p_107
+bl _p_132
 .loc 14 229 0
 .word 0x14000018
 .loc 14 232 0
@@ -7369,7 +10508,7 @@ bl _p_107
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #352]
+ldr x1, [x16, #360]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54000381
@@ -7380,14 +10519,14 @@ ldr x1, [x16, #352]
 .word 0xf9400321
 .word 0xaa1703e0
 .word 0xf94002e2
-.word 0xf9404850
+.word 0xf9404c50
 .word 0xd63f0200
 .word 0x14000004
 .loc 14 243 0
 .word 0xf9400af7
 .loc 14 244 0
 .word 0xaa1903e0
-bl _p_107
+bl _p_132
 .loc 14 241 0
 .word 0xeb1802ff
 .word 0x540000a0
@@ -7409,13 +10548,13 @@ bl _p_107
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801940
+.word 0xd28019a0
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_5c:
+Lme_97:
 .text
-ut_93:
+ut_152:
 add x0, x0, 16
 b System_Xml_Linq_ElementWriter_GetPrefixOfNamespace_System_Xml_Linq_XNamespace_bool
 .text
@@ -7439,7 +10578,7 @@ System_Xml_Linq_ElementWriter_GetPrefixOfNamespace_System_Xml_Linq_XNamespace_bo
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #304]
 .word 0xf9400000
 .word 0x1400001e
 .loc 14 300 0
@@ -7447,7 +10586,7 @@ ldr x0, [x16, #296]
 .word 0x91002000
 .word 0xaa1903e1
 .word 0xaa1a03e2
-bl _p_108
+bl _p_133
 .word 0xaa0003fa
 .loc 14 301 0
 .word 0xaa1a03e0
@@ -7458,13 +10597,13 @@ bl _p_108
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #312]
+ldr x0, [x16, #320]
 .word 0xeb0002ff
 .word 0x540000a1
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #320]
+ldr x0, [x16, #328]
 .word 0x1400000b
 .loc 14 303 0
 
@@ -7486,9 +10625,9 @@ ldr x0, [x16, #256]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_5d:
+Lme_98:
 .text
-ut_94:
+ut_153:
 add x0, x0, 16
 b System_Xml_Linq_ElementWriter_PushAncestors_System_Xml_Linq_XElement
 .text
@@ -7514,7 +10653,7 @@ System_Xml_Linq_ElementWriter_PushAncestors_System_Xml_Linq_XElement:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #304]
+ldr x1, [x16, #312]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd280001a
@@ -7531,7 +10670,7 @@ ldr x1, [x16, #304]
 .word 0xaa1803e1
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_70
+bl _p_91
 .word 0x53001c00
 .word 0x34000440
 .loc 14 321 0
@@ -7558,17 +10697,17 @@ bl _p_70
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #304]
 .word 0xf9400000
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x3940031e
 .word 0xf9401b00
-bl _p_86
+bl _p_110
 .word 0xaa0003e2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_109
+bl _p_134
 .loc 14 323 0
 .word 0xf9401f40
 .word 0xeb00031f
@@ -7582,9 +10721,9 @@ bl _p_109
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_5e:
+Lme_99:
 .text
-ut_95:
+ut_154:
 add x0, x0, 16
 b System_Xml_Linq_ElementWriter_PushElement_System_Xml_Linq_XElement
 .text
@@ -7615,7 +10754,7 @@ System_Xml_Linq_ElementWriter_PushElement_System_Xml_Linq_XElement:
 .word 0xaa1803e1
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_70
+bl _p_91
 .word 0x53001c00
 .word 0x34000440
 .loc 14 339 0
@@ -7642,17 +10781,17 @@ bl _p_70
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #304]
 .word 0xf9400000
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x3940031e
 .word 0xf9401b00
-bl _p_86
+bl _p_110
 .word 0xaa0003e2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_110
+bl _p_135
 .loc 14 341 0
 .word 0xf9401f40
 .word 0xeb00031f
@@ -7665,9 +10804,9 @@ bl _p_110
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_5f:
+Lme_9a:
 .text
-ut_96:
+ut_155:
 add x0, x0, 16
 b System_Xml_Linq_ElementWriter_WriteEndElement
 .text
@@ -7687,15 +10826,15 @@ System_Xml_Linq_ElementWriter_WriteEndElement:
 .loc 14 348 0
 .word 0xf9400ba0
 .word 0x91002000
-bl _p_111
+bl _p_136
 .loc 14 349 0
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_60:
+Lme_9b:
 .text
-ut_97:
+ut_156:
 add x0, x0, 16
 b System_Xml_Linq_ElementWriter_WriteFullEndElement
 .text
@@ -7715,15 +10854,15 @@ System_Xml_Linq_ElementWriter_WriteFullEndElement:
 .loc 14 361 0
 .word 0xf9400ba0
 .word 0x91002000
-bl _p_111
+bl _p_136
 .loc 14 362 0
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_61:
+Lme_9c:
 .text
-ut_98:
+ut_157:
 add x0, x0, 16
 b System_Xml_Linq_ElementWriter_WriteStartElement_System_Xml_Linq_XElement
 .text
@@ -7741,7 +10880,7 @@ System_Xml_Linq_ElementWriter_WriteStartElement_System_Xml_Linq_XElement:
 .word 0xaa0103fa
 .word 0xaa1903e0
 .word 0xaa1a03e1
-bl _p_112
+bl _p_137
 .loc 14 374 0
 .word 0x3940035e
 .word 0xf9401b40
@@ -7754,7 +10893,7 @@ bl _p_112
 .word 0xaa1903e0
 .word 0xaa1803e1
 .word 0xd2800022
-bl _p_113
+bl _p_138
 .word 0xaa0003e1
 .word 0xf9402ba4
 .word 0x3940035e
@@ -7798,7 +10937,7 @@ bl _p_113
 .word 0xaa1903e0
 .word 0xaa1803e1
 .word 0xd2800002
-bl _p_113
+bl _p_138
 .word 0xaa0003e1
 .word 0xf9402ba2
 .word 0xb98012a0
@@ -7827,7 +10966,7 @@ ldr x22, [x16, #264]
 .word 0xaa1303e2
 .word 0xaa1603e3
 .word 0x3940031e
-bl _p_16
+bl _p_18
 .loc 14 386 0
 .word 0xf9401f40
 .word 0xeb0002ff
@@ -7841,9 +10980,9 @@ bl _p_16
 .word 0xa8c67bfd
 .word 0xd65f03c0
 
-Lme_62:
+Lme_9d:
 .text
-ut_99:
+ut_158:
 add x0, x0, 16
 b System_Xml_Linq_NamespaceResolver_PushScope
 .text
@@ -7864,9 +11003,9 @@ System_Xml_Linq_NamespaceResolver_PushScope:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_63:
+Lme_9e:
 .text
-ut_100:
+ut_159:
 add x0, x0, 16
 b System_Xml_Linq_NamespaceResolver_PopScope
 .text
@@ -7932,9 +11071,9 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_64:
+Lme_9f:
 .text
-ut_101:
+ut_160:
 add x0, x0, 16
 b System_Xml_Linq_NamespaceResolver_Add_string_System_Xml_Linq_XNamespace
 .text
@@ -7951,9 +11090,9 @@ System_Xml_Linq_NamespaceResolver_Add_string_System_Xml_Linq_XNamespace:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #712]
+ldr x0, [x16, #832]
 .word 0xd2800601
-bl _p_10
+bl _p_12
 .word 0xaa0003f7
 .loc 14 455 0
 .word 0xf94013a1
@@ -8046,9 +11185,9 @@ ldr x1, [x16, #16]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_65:
+Lme_a0:
 .text
-ut_102:
+ut_161:
 add x0, x0, 16
 b System_Xml_Linq_NamespaceResolver_AddFirst_string_System_Xml_Linq_XNamespace
 .text
@@ -8065,9 +11204,9 @@ System_Xml_Linq_NamespaceResolver_AddFirst_string_System_Xml_Linq_XNamespace:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #712]
+ldr x0, [x16, #832]
 .word 0xd2800601
-bl _p_10
+bl _p_12
 .word 0xaa0003f7
 .loc 14 473 0
 .word 0xf94013a1
@@ -8174,9 +11313,9 @@ ldr x1, [x16, #16]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_66:
+Lme_a1:
 .text
-ut_103:
+ut_162:
 add x0, x0, 16
 b System_Xml_Linq_NamespaceResolver_GetPrefixOfNamespace_System_Xml_Linq_XNamespace_bool
 .text
@@ -8234,7 +11373,7 @@ System_Xml_Linq_NamespaceResolver_GetPrefixOfNamespace_System_Xml_Linq_XNamespac
 .word 0x540000c0
 .word 0xf9400ac0
 .word 0xf9400ae1
-bl _p_21
+bl _p_23
 .word 0x53001c00
 .word 0x35ffff20
 .loc 14 507 0
@@ -8280,7 +11419,7 @@ ldr x1, [x16, #16]
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_67:
+Lme_a2:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_NamespaceResolver_NamespaceDeclaration__ctor
@@ -8292,7 +11431,7 @@ System_Xml_Linq_NamespaceResolver_NamespaceDeclaration__ctor:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_68:
+Lme_a3:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XName__ctor_System_Xml_Linq_XNamespace_string
@@ -8321,7 +11460,7 @@ ldr x1, [x16, #16]
 .word 0x3900001e
 .loc 15 27 0
 .word 0xaa1a03e0
-bl _p_114
+bl _p_139
 .word 0xf9000f00
 .word 0x91006301
 .word 0xd349fc21
@@ -8358,7 +11497,7 @@ ldr x2, [x16, #16]
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_69:
+Lme_a4:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XName_get_LocalName
@@ -8373,7 +11512,7 @@ System_Xml_Linq_XName_get_LocalName:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_6a:
+Lme_a5:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XName_get_Namespace
@@ -8388,7 +11527,7 @@ System_Xml_Linq_XName_get_Namespace:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_6b:
+Lme_a6:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XName_get_NamespaceName
@@ -8406,7 +11545,7 @@ System_Xml_Linq_XName_get_NamespaceName:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_6c:
+Lme_a7:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XName_ToString
@@ -8428,7 +11567,7 @@ System_Xml_Linq_XName_ToString:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #720]
+ldr x0, [x16, #840]
 .word 0xf9400b41
 .word 0xaa0103e2
 .word 0x3940005e
@@ -8436,15 +11575,166 @@ ldr x0, [x16, #720]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x2, [x16, #728]
+ldr x2, [x16, #848]
 .word 0xf9400f43
-bl _p_115
+bl _p_140
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_6d:
+Lme_a8:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XName_Get_string
+System_Xml_Linq_XName_Get_string:
+.loc 15 76 0 prologue_end
+.word 0xa9ba7bfd
+.word 0x910003fd
+.word 0xa9016bb9
+.word 0xaa0003fa
+.word 0xb400097a
+.loc 15 77 0
+.word 0xb9801340
+.word 0x34000620
+.loc 15 78 0
+.word 0xb9801340
+.word 0xeb1f001f
+.word 0x10000011
+.word 0x540009e9
+.word 0xd2800000
+.word 0x8b1a0000
+.word 0x79402800
+.word 0xd2800f7e
+.word 0x6b1e001f
+.word 0x540003a1
+.loc 15 80 0
+.word 0xaa1a03e0
+.word 0xd2800fa1
+.word 0x3940035e
+bl _p_141
+.word 0x93407c00
+.word 0xaa0003f9
+.loc 15 81 0
+.word 0xaa1903e0
+.word 0xd280003e
+.word 0x6b1e001f
+.word 0x5400052d
+.word 0xb9801340
+.word 0x51000400
+.word 0x6b00033f
+.word 0x540004a0
+.loc 15 82 0
+.word 0x51000722
+.word 0xaa1a03e0
+.word 0xd2800021
+bl _p_142
+.word 0xaa0003e4
+.word 0x11000722
+.word 0xb9801340
+.word 0x4b190000
+.word 0x51000403
+.word 0xaa0403e0
+.word 0xaa1a03e1
+.word 0x3940009e
+bl _p_143
+.word 0x14000007
+.loc 15 86 0
+bl _p_144
+.word 0xaa0003e2
+.word 0xaa0203e0
+.word 0xaa1a03e1
+.word 0x3940005e
+bl _p_56
+.word 0xa9416bb9
+.word 0x910003bf
+.word 0xa8c67bfd
+.word 0xd65f03c0
+.loc 15 77 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #0]
+.word 0xd2815201
+bl _p_7
+.word 0xaa1a03e1
+bl _p_24
+.word 0xaa0003e1
+.word 0xd2800f60
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_8
+.loc 15 81 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #0]
+.word 0xd2815201
+bl _p_7
+.word 0xaa1a03e1
+bl _p_24
+.word 0xaa0003e1
+.word 0xd2800f60
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_8
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #0]
+.loc 15 76 0
+.word 0xd2814ec1
+bl _p_7
+.word 0xaa0003e1
+.word 0xd2800f80
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_8
+.word 0xd2801900
+.word 0xaa1103e1
+bl _p_22
+
+Lme_a9:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XName_Get_string_string
+System_Xml_Linq_XName_Get_string_string:
+.loc 15 98 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xf9400fa0
+bl _p_110
+.word 0xaa0003e2
+.word 0xaa0203e0
+.word 0xf9400ba1
+.word 0x3940005e
+bl _p_56
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_aa:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XName_op_Implicit_string
+System_Xml_Linq_XName_op_Implicit_string:
+.loc 15 109 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xb5000060
+.word 0xd2800000
+.word 0x14000003
+.word 0xf9400ba0
+bl _p_145
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_ab:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XName_Equals_object
@@ -8462,7 +11752,7 @@ System_Xml_Linq_XName_Equals_object:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_6e:
+Lme_ac:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XName_GetHashCode
@@ -8477,7 +11767,7 @@ System_Xml_Linq_XName_GetHashCode:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_6f:
+Lme_ad:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XName_op_Equality_System_Xml_Linq_XName_System_Xml_Linq_XName
@@ -8495,7 +11785,7 @@ System_Xml_Linq_XName_op_Equality_System_Xml_Linq_XName_System_Xml_Linq_XName:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_70:
+Lme_ae:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XName_System_IEquatable_System_Xml_Linq_XName_Equals_System_Xml_Linq_XName
@@ -8513,7 +11803,7 @@ System_Xml_Linq_XName_System_IEquatable_System_Xml_Linq_XName_Equals_System_Xml_
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_71:
+Lme_af:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XName_System_Runtime_Serialization_ISerializable_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext
@@ -8525,7 +11815,7 @@ System_Xml_Linq_XName_System_Runtime_Serialization_ISerializable_GetObjectData_S
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xf90017a3
-.word 0xd2801d80
+.word 0xd2801de0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_8
@@ -8533,7 +11823,7 @@ bl _p_8
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_72:
+Lme_b0:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XNamespace__ctor_string
@@ -8569,23 +11859,23 @@ ldr x1, [x16, #16]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #736]
+ldr x0, [x16, #856]
 .word 0xd2801001
-bl _p_10
+bl _p_12
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #744]
+ldr x1, [x16, #864]
 .word 0xf9001401
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #752]
+ldr x1, [x16, #872]
 .word 0xf9002001
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #760]
+ldr x1, [x16, #880]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -8595,13 +11885,13 @@ ldr x1, [x16, #760]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #768]
+ldr x0, [x16, #888]
 .word 0xd2800301
-bl _p_10
+bl _p_12
 .word 0xf94017a1
 .word 0xf90013a0
 .word 0xd2800102
-bl _p_116
+bl _p_146
 .word 0xf94013a0
 .word 0xf9000f20
 .word 0x91006321
@@ -8622,7 +11912,7 @@ ldr x2, [x16, #16]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_73:
+Lme_b1:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XNamespace_get_NamespaceName
@@ -8637,7 +11927,7 @@ System_Xml_Linq_XNamespace_get_NamespaceName:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_74:
+Lme_b2:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XNamespace_GetName_string
@@ -8654,7 +11944,7 @@ System_Xml_Linq_XNamespace_GetName_string:
 .word 0xf9400fa0
 .word 0xaa1a03e1
 .word 0xd2800002
-bl _p_117
+bl _p_143
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -8664,7 +11954,7 @@ bl _p_117
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2813381
+.word 0xd2815ac1
 bl _p_7
 .word 0xaa0003e1
 .word 0xd2800f80
@@ -8672,7 +11962,7 @@ bl _p_7
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_75:
+Lme_b3:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XNamespace_ToString
@@ -8687,7 +11977,7 @@ System_Xml_Linq_XNamespace_ToString:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_76:
+Lme_b4:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XNamespace_get_None
@@ -8698,18 +11988,18 @@ System_Xml_Linq_XNamespace_get_None:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #776]
+ldr x0, [x16, #896]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #296]
+ldr x1, [x16, #304]
 .word 0xf9400021
-bl _p_118
+bl _p_147
 .word 0x910003bf
 .word 0xa8c17bfd
 .word 0xd65f03c0
 
-Lme_77:
+Lme_b5:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XNamespace_get_Xml
@@ -8720,17 +12010,17 @@ System_Xml_Linq_XNamespace_get_Xml:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #784]
+ldr x0, [x16, #904]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #312]
-bl _p_118
+ldr x1, [x16, #320]
+bl _p_147
 .word 0x910003bf
 .word 0xa8c17bfd
 .word 0xd65f03c0
 
-Lme_78:
+Lme_b6:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XNamespace_get_Xmlns
@@ -8741,17 +12031,17 @@ System_Xml_Linq_XNamespace_get_Xmlns:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #792]
+ldr x0, [x16, #912]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x1, [x16, #264]
-bl _p_118
+bl _p_147
 .word 0x910003bf
 .word 0xa8c17bfd
 .word 0xd65f03c0
 
-Lme_79:
+Lme_b7:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XNamespace_Get_string
@@ -8766,7 +12056,7 @@ System_Xml_Linq_XNamespace_Get_string:
 .word 0xb9801342
 .word 0xaa1a03e0
 .word 0xd2800001
-bl _p_119
+bl _p_142
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -8776,7 +12066,7 @@ bl _p_119
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2813601
+.word 0xd2815d41
 bl _p_7
 .word 0xaa0003e1
 .word 0xd2800f80
@@ -8784,7 +12074,26 @@ bl _p_7
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_7a:
+Lme_b8:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XNamespace_op_Implicit_string
+System_Xml_Linq_XNamespace_op_Implicit_string:
+.loc 16 129 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xb5000060
+.word 0xd2800000
+.word 0x14000003
+.word 0xf9400ba0
+bl _p_110
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_b9:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XNamespace_Equals_object
@@ -8802,7 +12111,7 @@ System_Xml_Linq_XNamespace_Equals_object:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_7b:
+Lme_ba:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XNamespace_GetHashCode
@@ -8817,7 +12126,7 @@ System_Xml_Linq_XNamespace_GetHashCode:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_7c:
+Lme_bb:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XNamespace_op_Equality_System_Xml_Linq_XNamespace_System_Xml_Linq_XNamespace
@@ -8835,7 +12144,7 @@ System_Xml_Linq_XNamespace_op_Equality_System_Xml_Linq_XNamespace_System_Xml_Lin
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_7d:
+Lme_bc:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XNamespace_op_Inequality_System_Xml_Linq_XNamespace_System_Xml_Linq_XNamespace
@@ -8855,7 +12164,7 @@ System_Xml_Linq_XNamespace_op_Inequality_System_Xml_Linq_XNamespace_System_Xml_L
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_7e:
+Lme_bd:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XNamespace_GetName_string_int_int
@@ -8876,7 +12185,7 @@ System_Xml_Linq_XNamespace_GetName_string_int_int:
 .word 0xb9802ba3
 .word 0x9100c3a4
 .word 0x394000be
-bl _p_120
+bl _p_148
 .word 0x53001c00
 .word 0x34000060
 .loc 16 220 0
@@ -8889,29 +12198,29 @@ bl _p_120
 .word 0xb98023a1
 .word 0xb9802ba2
 .word 0x3940031e
-bl _p_121
+bl _p_149
 .word 0xf9002ba0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #800]
+ldr x0, [x16, #920]
 .word 0xd2800501
-bl _p_10
+bl _p_12
 .word 0xf9402ba2
 .word 0xf90023a0
 .word 0xaa1703e1
-bl _p_122
+bl _p_150
 .word 0xf94023a1
 .word 0xf94027a2
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_123
+bl _p_151
 .word 0xa94163b7
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
 
-Lme_7f:
+Lme_be:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XNamespace_Get_string_int_int
@@ -8927,41 +12236,41 @@ System_Xml_Linq_XNamespace_Get_string_int_int:
 .word 0xaa0203fa
 .word 0xf9001fbf
 .word 0x3500007a
-bl _p_124
+bl _p_144
 .word 0x140000aa
 .loc 16 238 0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #808]
+ldr x0, [x16, #928]
 .word 0xf9400000
 .word 0xb5000700
 .loc 16 239 0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #808]
+ldr x0, [x16, #928]
 .word 0xf90027a0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #816]
+ldr x0, [x16, #936]
 .word 0xd2801001
-bl _p_10
+bl _p_12
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #824]
+ldr x1, [x16, #944]
 .word 0xf9001401
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #832]
+ldr x1, [x16, #952]
 .word 0xf9002001
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #840]
+ldr x1, [x16, #960]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -8971,13 +12280,13 @@ ldr x1, [x16, #840]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #848]
+ldr x0, [x16, #968]
 .word 0xd2800301
-bl _p_10
+bl _p_12
 .word 0xf9402ba1
 .word 0xf90023a0
 .word 0xd2800402
-bl _p_125
+bl _p_152
 .word 0xf94023a0
 .word 0xf94027a1
 .word 0xd2800002
@@ -9003,7 +12312,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #808]
+ldr x0, [x16, #928]
 .word 0xf9400005
 .word 0xaa0503e0
 .word 0xaa1803e1
@@ -9011,29 +12320,29 @@ ldr x0, [x16, #808]
 .word 0xaa1a03e3
 .word 0x9100e3a4
 .word 0x394000be
-bl _p_126
+bl _p_153
 .word 0x53001c00
 .word 0x350008a0
 .loc 16 251 0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #312]
+ldr x0, [x16, #320]
 .word 0xb9801000
 .word 0x6b00035f
 .word 0x540001a1
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x2, [x16, #312]
+ldr x2, [x16, #320]
 .word 0xaa1803e0
 .word 0xaa1903e1
 .word 0xd2800003
 .word 0xaa1a03e4
-bl _p_103
+bl _p_128
 .word 0x93407c00
 .word 0x35000060
-bl _p_127
+bl _p_154
 .word 0x1400004f
 .loc 16 252 0
 
@@ -9051,46 +12360,46 @@ ldr x2, [x16, #264]
 .word 0xaa1903e1
 .word 0xd2800003
 .word 0xaa1a03e4
-bl _p_103
+bl _p_128
 .word 0x93407c00
 .word 0x35000060
-bl _p_128
+bl _p_155
 .word 0x1400003d
 .loc 16 255 0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #808]
+ldr x0, [x16, #928]
 .word 0xf9400000
 .word 0xf90027a0
 .word 0xaa1803e0
 .word 0xaa1903e1
 .word 0xaa1a03e2
 .word 0x3940031e
-bl _p_121
+bl _p_149
 .word 0xf9002fa0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #856]
+ldr x0, [x16, #976]
 .word 0xd2800501
-bl _p_10
+bl _p_12
 .word 0xf9402fa1
 .word 0xf9002ba0
-bl _p_129
+bl _p_156
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #864]
-bl _p_130
+ldr x0, [x16, #984]
+bl _p_157
 .word 0xf9402ba1
 .word 0xf90023a0
-bl _p_131
+bl _p_158
 .word 0xf94023a1
 .word 0xf94027a2
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_132
+bl _p_159
 .word 0xf9001fa0
 .loc 16 258 0
 .word 0xf9401fa0
@@ -9111,7 +12420,7 @@ bl _p_132
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #872]
+ldr x1, [x16, #992]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x540001c1
@@ -9130,11 +12439,11 @@ ldr x1, [x16, #872]
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801940
+.word 0xd28019a0
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_80:
+Lme_bf:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XNamespace_ExtractLocalName_System_Xml_Linq_XName
@@ -9151,7 +12460,7 @@ System_Xml_Linq_XNamespace_ExtractLocalName_System_Xml_Linq_XName:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_81:
+Lme_c0:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XNamespace_ExtractNamespace_System_WeakReference
@@ -9175,7 +12484,7 @@ System_Xml_Linq_XNamespace_ExtractNamespace_System_WeakReference:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #872]
+ldr x1, [x16, #992]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x540001a1
@@ -9193,11 +12502,11 @@ ldr x1, [x16, #872]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801940
+.word 0xd28019a0
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_82:
+Lme_c1:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XNamespace_EnsureNamespace_System_WeakReference__string
@@ -9228,7 +12537,7 @@ System_Xml_Linq_XNamespace_EnsureNamespace_System_WeakReference__string:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #872]
+ldr x1, [x16, #992]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54000641
@@ -9246,20 +12555,20 @@ ldr x1, [x16, #872]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #856]
+ldr x0, [x16, #976]
 .word 0xd2800501
-bl _p_10
+bl _p_12
 .word 0xf90027a0
 .word 0xaa1a03e1
-bl _p_129
+bl _p_156
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #864]
-bl _p_130
+ldr x0, [x16, #984]
+bl _p_157
 .word 0xf94027a1
 .word 0xf90023a0
-bl _p_131
+bl _p_158
 .word 0xf94023a0
 .word 0xc85f7f30
 .word 0xeb18021f
@@ -9287,11 +12596,11 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2801940
+.word 0xd28019a0
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_83:
+Lme_c2:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XNode__ctor
@@ -9305,7 +12614,43 @@ System_Xml_Linq_XNode__ctor:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_84:
+Lme_c3:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XNode_Remove
+System_Xml_Linq_XNode_Remove:
+.loc 17 540 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000bba
+.word 0xaa0003fa
+.word 0xf9400b40
+.word 0xb4000140
+.loc 17 541 0
+.word 0xf9400b42
+.word 0xaa0203e0
+.word 0xaa1a03e1
+.word 0x3940005e
+bl _p_160
+.loc 17 542 0
+.word 0xf9400bba
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+.loc 17 540 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #0]
+.word 0xd28160c1
+bl _p_7
+.word 0xaa0003e1
+.word 0xd28019c0
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_8
+
+Lme_c4:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XNode_ToString
@@ -9315,16 +12660,30 @@ System_Xml_Linq_XNode_ToString:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_133
+bl _p_161
 .word 0x93407c00
 .word 0xaa0003e1
 .word 0xf9400ba0
-bl _p_134
+bl _p_162
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_85:
+Lme_c5:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XNode_AppendText_System_Text_StringBuilder
+System_Xml_Linq_XNode_AppendText_System_Text_StringBuilder:
+.loc 17 639 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_c7:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XNode_GetXmlReaderSettings_System_Xml_Linq_LoadOptions
@@ -9337,11 +12696,11 @@ System_Xml_Linq_XNode_GetXmlReaderSettings_System_Xml_Linq_LoadOptions:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #880]
+ldr x0, [x16, #1000]
 .word 0xd2800e01
-bl _p_10
+bl _p_12
 .word 0xf90013a0
-bl _p_135
+bl _p_163
 .word 0xf94013a0
 .word 0xaa0003f9
 .loc 17 690 0
@@ -9352,18 +12711,18 @@ bl _p_135
 .word 0xaa1903e0
 .word 0xd2800021
 .word 0x3940033e
-bl _p_136
+bl _p_164
 .loc 17 693 0
 .word 0xaa1903e0
 .word 0xd2800041
 .word 0x3940033e
-bl _p_137
+bl _p_165
 .loc 17 694 0
 .word 0xaa1903e0
 .word 0xd292d001
 .word 0xf2a01301
 .word 0x3940033e
-bl _p_138
+bl _p_166
 .loc 17 696 0
 .word 0xaa1903e0
 .word 0xf9400bb9
@@ -9371,7 +12730,7 @@ bl _p_138
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_88:
+Lme_c9:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XNode_GetXmlString_System_Xml_Linq_SaveOptions
@@ -9404,23 +12763,23 @@ ldr x0, [x16, #248]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #272]
+ldr x0, [x16, #280]
 .word 0xd2800801
-bl _p_10
+bl _p_12
 .word 0xf9403fa1
 .word 0xf9003ba0
-bl _p_11
+bl _p_13
 .word 0xf9403ba0
 .word 0xf90017a0
 .loc 17 711 0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #280]
+ldr x0, [x16, #288]
 .word 0xd2800f01
-bl _p_10
-.word 0xf9003ba0
 bl _p_12
+.word 0xf9003ba0
+bl _p_14
 .word 0xf9403ba0
 .word 0xaa0003f8
 .loc 17 712 0
@@ -9428,7 +12787,7 @@ bl _p_12
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0x3940005e
-bl _p_139
+bl _p_167
 .loc 17 713 0
 .word 0xd280003e
 .word 0xa1e0340
@@ -9436,7 +12795,7 @@ bl _p_139
 .word 0xaa1803e0
 .word 0xd2800021
 .word 0x3940031e
-bl _p_140
+bl _p_168
 .loc 17 714 0
 .word 0xd280005e
 .word 0xa1e0340
@@ -9447,7 +12806,7 @@ bl _p_140
 .word 0x2a1e0001
 .word 0xaa1803e0
 .word 0x3940031e
-bl _p_141
+bl _p_169
 .loc 17 715 0
 .word 0xaa1903fa
 .word 0xeb1f033f
@@ -9459,7 +12818,7 @@ bl _p_141
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #360]
+ldr x1, [x16, #472]
 .word 0xeb01001f
 .word 0x54000060
 .word 0xd280001a
@@ -9468,11 +12827,11 @@ ldr x1, [x16, #360]
 .word 0xaa1803e0
 .word 0xd2800021
 .word 0x3940031e
-bl _p_13
+bl _p_15
 .loc 17 716 0
 .word 0xf94017a0
 .word 0xaa1803e1
-bl _p_14
+bl _p_16
 .word 0xf9001ba0
 .loc 17 718 0
 .word 0xaa1903fa
@@ -9485,7 +12844,7 @@ bl _p_14
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #472]
+ldr x1, [x16, #584]
 .word 0xeb01001f
 .word 0x54000060
 .word 0xd280001a
@@ -9497,26 +12856,26 @@ ldr x1, [x16, #472]
 .word 0xf9401ba1
 .word 0xaa1803e0
 .word 0x3940031e
-bl _p_62
+bl _p_78
 .loc 17 722 0
 .word 0xf9001fbf
 .word 0x94000010
 .word 0xf9401fa0
 .word 0xb4000040
-bl _p_17
+bl _p_19
 .word 0x1400001b
 .loc 17 725 0
 .word 0xf9401ba1
 .word 0xaa1903e0
 .word 0xf9400322
-.word 0xf9404850
+.word 0xf9404c50
 .word 0xd63f0200
 .loc 17 727 0
 .word 0xf9001fbf
 .word 0x94000005
 .word 0xf9401fa0
 .word 0xb4000040
-bl _p_17
+bl _p_19
 .word 0x14000010
 .word 0xf90027be
 .word 0xf9401ba0
@@ -9527,7 +12886,7 @@ bl _p_17
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #288]
+ldr x15, [x16, #296]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -9545,7 +12904,7 @@ ldr x15, [x16, #288]
 .word 0x94000005
 .word 0xf94023a0
 .word 0xb4000040
-bl _p_17
+bl _p_19
 .word 0x14000010
 .word 0xf9002fbe
 .word 0xf94017a0
@@ -9556,7 +12915,7 @@ bl _p_17
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #288]
+ldr x15, [x16, #296]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -9571,7 +12930,7 @@ ldr x15, [x16, #288]
 .word 0xa8c97bfd
 .word 0xd65f03c0
 
-Lme_89:
+Lme_ca:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XObject__ctor
@@ -9585,7 +12944,7 @@ System_Xml_Linq_XObject__ctor:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_8a:
+Lme_cb:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XObject_get_BaseUri
@@ -9609,10 +12968,10 @@ System_Xml_Linq_XObject_get_BaseUri:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #888]
+ldr x15, [x16, #1008]
 .word 0x3940033e
 .word 0xaa1903e0
-bl _p_142
+bl _p_170
 .word 0xaa0003fa
 .loc 18 39 0
 .word 0xaa1a03e0
@@ -9627,14 +12986,45 @@ bl _p_142
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #304]
 .word 0xf9400000
 .word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_8b:
+Lme_cc:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XObject_get_Parent
+System_Xml_Linq_XObject_get_Parent:
+.loc 18 72 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xa9016bb9
+.word 0xaa0003fa
+.word 0xf9400b59
+.word 0xaa1903fa
+.word 0xeb1f033f
+.word 0x54000160
+.word 0xf9400320
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9401000
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #312]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd280001a
+.word 0xaa1a03e0
+.word 0xa9416bb9
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_ce:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XObject_AddAnnotation_object
@@ -9669,13 +13059,13 @@ System_Xml_Linq_XObject_AddAnnotation_object:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #896]
+ldr x1, [x16, #400]
 .word 0xeb01001f
 .word 0x540000e1
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #904]
+ldr x0, [x16, #408]
 .word 0xeb0002ff
 .word 0x54000040
 .word 0xd2800018
@@ -9686,9 +13076,9 @@ ldr x0, [x16, #904]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #912]
+ldr x0, [x16, #1016]
 .word 0xd2800021
-bl _p_96
+bl _p_121
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xf90023a0
@@ -9733,13 +13123,13 @@ ldr x1, [x16, #16]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #896]
+ldr x1, [x16, #400]
 .word 0xeb01001f
 .word 0x540000e1
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #904]
+ldr x0, [x16, #408]
 .word 0xeb00031f
 .word 0x54000040
 .word 0xd2800017
@@ -9751,9 +13141,9 @@ ldr x0, [x16, #904]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #912]
+ldr x0, [x16, #1016]
 .word 0xd2800041
-bl _p_96
+bl _p_121
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xf90027a0
@@ -9818,9 +13208,9 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #920]
+ldr x15, [x16, #1024]
 .word 0x9100e3a0
-bl _p_143
+bl _p_171
 .loc 18 100 0
 .word 0xf9401fa0
 .word 0xf9000f20
@@ -9856,18 +13246,18 @@ ldr x2, [x16, #16]
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2813981
+.word 0xd2816681
 bl _p_7
 .word 0xaa0003e1
 .word 0xd2800f80
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_8
-.word 0xd28018a0
+.word 0xd2801900
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_8d:
+Lme_cf:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XObject_AnnotationForSealedType_System_Type
@@ -9900,13 +13290,13 @@ System_Xml_Linq_XObject_AnnotationForSealedType_System_Type:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #896]
+ldr x1, [x16, #400]
 .word 0xeb01001f
 .word 0x540000e1
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #904]
+ldr x0, [x16, #408]
 .word 0xeb00031f
 .word 0x54000040
 .word 0xd2800017
@@ -9959,11 +13349,11 @@ ldr x0, [x16, #904]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd28018a0
+.word 0xd2801900
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_8e:
+Lme_d0:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XObject_Annotation_T_REF
@@ -9995,13 +13385,13 @@ System_Xml_Linq_XObject_Annotation_T_REF:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #896]
+ldr x1, [x16, #400]
 .word 0xeb01001f
 .word 0x540000e1
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #904]
+ldr x0, [x16, #408]
 .word 0xeb00033f
 .word 0x54000040
 .word 0xd2800018
@@ -10011,18 +13401,18 @@ ldr x0, [x16, #904]
 .word 0xf9400f40
 .word 0xf90027a0
 .word 0xf9401ba0
-bl _p_144
+bl _p_172
 .word 0xaa0003e2
 .word 0xf94027a0
 .word 0xf9400441
-bl _p_145
+bl _p_81
 .word 0xf90023a0
 .word 0xf9401ba0
-bl _p_144
+bl _p_172
 .word 0xaa0003e2
 .word 0xf94023a0
 .word 0xf9400441
-bl _p_146
+bl _p_82
 .word 0x14000025
 .loc 18 178 0
 .word 0xd280001a
@@ -10042,18 +13432,18 @@ bl _p_146
 .word 0xb40002e0
 .loc 18 182 0
 .word 0xf9401ba0
-bl _p_144
+bl _p_172
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xaa1803e0
-bl _p_145
+bl _p_81
 .word 0xf90023a0
 .word 0xf9401ba0
-bl _p_144
+bl _p_172
 .word 0xaa0003e2
 .word 0xf94023a0
 .word 0xf9400441
-bl _p_146
+bl _p_82
 .word 0xaa0003f8
 .loc 18 183 0
 .word 0xaa1803e0
@@ -10072,11 +13462,11 @@ bl _p_146
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd28018a0
+.word 0xd2801900
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_8f:
+Lme_d1:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XObject_System_Xml_IXmlLineInfo_HasLineInfo
@@ -10088,16 +13478,16 @@ System_Xml_Linq_XObject_System_Xml_IXmlLineInfo_HasLineInfo:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #928]
+ldr x15, [x16, #1032]
 .word 0xf9400ba0
-bl _p_147
+bl _p_173
 .word 0xeb1f001f
 .word 0x9a9f97e0
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_90:
+Lme_d2:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XObject_System_Xml_IXmlLineInfo_get_LineNumber
@@ -10110,9 +13500,9 @@ System_Xml_Linq_XObject_System_Xml_IXmlLineInfo_get_LineNumber:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #928]
+ldr x15, [x16, #1032]
 .word 0xaa1a03e0
-bl _p_147
+bl _p_173
 .word 0xaa0003fa
 .loc 18 390 0
 .word 0xaa1a03e0
@@ -10126,7 +13516,7 @@ bl _p_147
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_91:
+Lme_d3:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XObject_System_Xml_IXmlLineInfo_get_LinePosition
@@ -10139,9 +13529,9 @@ System_Xml_Linq_XObject_System_Xml_IXmlLineInfo_get_LinePosition:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #928]
+ldr x15, [x16, #1032]
 .word 0xaa1a03e0
-bl _p_147
+bl _p_173
 .word 0xaa0003fa
 .loc 18 400 0
 .word 0xaa1a03e0
@@ -10155,7 +13545,7 @@ bl _p_147
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_92:
+Lme_d4:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XObject_get_HasBaseUri
@@ -10167,16 +13557,150 @@ System_Xml_Linq_XObject_get_HasBaseUri:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x15, [x16, #888]
+ldr x15, [x16, #1008]
 .word 0xf9400ba0
-bl _p_142
+bl _p_170
 .word 0xeb1f001f
 .word 0x9a9f97e0
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_93:
+Lme_d5:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XObject_NotifyChanged_object_System_Xml_Linq_XObjectChangeEventArgs
+System_Xml_Linq_XObject_NotifyChanged_object_System_Xml_Linq_XObjectChangeEventArgs:
+.loc 18 415 0 prologue_end
+.word 0xa9bb7bfd
+.word 0x910003fd
+.word 0xa9015fb6
+.word 0xa90267b8
+.word 0xf9001bba
+.word 0xaa0003f8
+.word 0xaa0103f9
+.word 0xaa0203fa
+.word 0xd2800000
+.word 0x53001c17
+.loc 18 416 0
+.word 0xaa1803f6
+.word 0x14000002
+.loc 18 421 0
+.word 0xf9400ad6
+.loc 18 419 0
+.word 0xb4000076
+.word 0xf9400ec0
+.word 0xb4ffffa0
+.loc 18 423 0
+.word 0xb4000316
+.loc 18 424 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x15, [x16, #1040]
+.word 0x394002de
+.word 0xaa1603e0
+bl _p_174
+.word 0xaa0003f8
+.loc 18 425 0
+.word 0xaa1803e0
+.word 0xb40001a0
+.loc 18 427 0
+.word 0xd2800020
+.word 0x53001c17
+.loc 18 428 0
+.word 0xf9400f00
+.word 0xb4000120
+.loc 18 430 0
+.word 0xf9400f03
+.word 0xaa0303e0
+.word 0xaa1903e1
+.word 0xaa1a03e2
+.word 0xf90023a3
+.word 0xf9400c70
+.word 0xd63f0200
+.word 0xf94023a0
+.loc 18 433 0
+.word 0xf9400ad6
+.loc 18 417 0
+.word 0x17ffffe6
+.loc 18 435 0
+.word 0xaa1703e0
+.word 0xa9415fb6
+.word 0xa94267b8
+.word 0xf9401bba
+.word 0x910003bf
+.word 0xa8c57bfd
+.word 0xd65f03c0
+
+Lme_d6:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XObject_NotifyChanging_object_System_Xml_Linq_XObjectChangeEventArgs
+System_Xml_Linq_XObject_NotifyChanging_object_System_Xml_Linq_XObjectChangeEventArgs:
+.loc 18 440 0 prologue_end
+.word 0xa9bb7bfd
+.word 0x910003fd
+.word 0xa9015fb6
+.word 0xa90267b8
+.word 0xf9001bba
+.word 0xaa0003f8
+.word 0xaa0103f9
+.word 0xaa0203fa
+.word 0xd2800000
+.word 0x53001c17
+.loc 18 441 0
+.word 0xaa1803f6
+.word 0x14000002
+.loc 18 446 0
+.word 0xf9400ad6
+.loc 18 444 0
+.word 0xb4000076
+.word 0xf9400ec0
+.word 0xb4ffffa0
+.loc 18 448 0
+.word 0xb4000316
+.loc 18 449 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x15, [x16, #1040]
+.word 0x394002de
+.word 0xaa1603e0
+bl _p_174
+.word 0xaa0003f8
+.loc 18 450 0
+.word 0xaa1803e0
+.word 0xb40001a0
+.loc 18 452 0
+.word 0xd2800020
+.word 0x53001c17
+.loc 18 453 0
+.word 0xf9400b00
+.word 0xb4000120
+.loc 18 455 0
+.word 0xf9400b03
+.word 0xaa0303e0
+.word 0xaa1903e1
+.word 0xaa1a03e2
+.word 0xf90023a3
+.word 0xf9400c70
+.word 0xd63f0200
+.word 0xf94023a0
+.loc 18 458 0
+.word 0xf9400ad6
+.loc 18 442 0
+.word 0x17ffffe6
+.loc 18 460 0
+.word 0xaa1703e0
+.word 0xa9415fb6
+.word 0xa94267b8
+.word 0xf9401bba
+.word 0x910003bf
+.word 0xa8c57bfd
+.word 0xd65f03c0
+
+Lme_d7:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XObject_SetBaseUri_string
@@ -10189,9 +13713,9 @@ System_Xml_Linq_XObject_SetBaseUri_string:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #936]
+ldr x0, [x16, #1048]
 .word 0xd2800301
-bl _p_10
+bl _p_12
 .word 0xaa0003e1
 .word 0xf9400fa0
 .word 0xf9000820
@@ -10208,13 +13732,13 @@ ldr x3, [x16, #16]
 .word 0xd280003e
 .word 0x3900005e
 .word 0xf9400ba0
-bl _p_88
+bl _p_112
 .loc 18 466 0
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_94:
+Lme_d8:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XObject_SetLineInfo_int_int
@@ -10228,22 +13752,64 @@ System_Xml_Linq_XObject_SetLineInfo_int_int:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #944]
+ldr x0, [x16, #1056]
 .word 0xd2800301
-bl _p_10
+bl _p_12
 .word 0xf9001ba0
 .word 0xb9801ba1
 .word 0xb98023a2
 bl _p_4
 .word 0xf9401ba1
 .word 0xf9400ba0
-bl _p_88
+bl _p_112
 .loc 18 471 0
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_95:
+Lme_d9:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XObject_SkipNotify
+System_Xml_Linq_XObject_SkipNotify:
+.loc 18 475 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000bb9
+.word 0xf9000fa0
+.word 0xf9400fb9
+.word 0x14000002
+.loc 18 480 0
+.word 0xf9400b39
+.loc 18 478 0
+.word 0xb4000079
+.word 0xf9400f20
+.word 0xb4ffffa0
+.loc 18 482 0
+.word 0xb5000079
+.word 0xd2800020
+.word 0x1400000c
+.loc 18 483 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x15, [x16, #1040]
+.word 0x3940033e
+.word 0xaa1903e0
+bl _p_174
+.word 0xb4000060
+.word 0xd2800000
+.word 0x14000003
+.loc 18 484 0
+.word 0xf9400b39
+.loc 18 476 0
+.word 0x17fffff0
+.word 0xf9400bb9
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_da:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XObject_GetSaveOptionsFromAnnotations
@@ -10270,10 +13836,10 @@ System_Xml_Linq_XObject_GetSaveOptionsFromAnnotations:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #952]
+ldr x1, [x16, #1064]
 .word 0xaa1903e0
 .word 0x3940033e
-bl _p_148
+bl _p_175
 .word 0xaa0003fa
 .loc 18 507 0
 .word 0xaa1a03e0
@@ -10289,7 +13855,7 @@ bl _p_148
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #960]
+ldr x1, [x16, #1072]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54000121
@@ -10303,17 +13869,106 @@ ldr x1, [x16, #960]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801940
+.word 0xd28019a0
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_96:
+Lme_db:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XObjectChangeEventArgs__ctor_System_Xml_Linq_XObjectChange
+System_Xml_Linq_XObjectChangeEventArgs__ctor_System_Xml_Linq_XObjectChange:
+.file 19 "/Users/builder/jenkins/workspace/xamarin-macios/xamarin-macios/external/mono/external/corefx/src/System.Private.Xml.Linq/src/System/Xml/Linq/XObjectChangeEventArgs.cs"
+.loc 19 45 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xf9400ba0
+.word 0xb9801ba1
+.word 0xb9001001
+.loc 19 46 0
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_dc:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XObjectChangeEventArgs__cctor
+System_Xml_Linq_XObjectChangeEventArgs__cctor:
+.loc 19 20 0 prologue_end
+.word 0xa9bf7bfd
+.word 0x910003fd
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #1080]
+.word 0xd2800281
+bl _p_12
+.word 0xaa0003e1
+.word 0xb900103f
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #488]
+.word 0xf9000001
+.loc 19 26 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #1080]
+.word 0xd2800281
+bl _p_12
+.word 0xaa0003e1
+.word 0xd280003e
+.word 0xb900103e
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #464]
+.word 0xf9000001
+.loc 19 32 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #1080]
+.word 0xd2800281
+bl _p_12
+.word 0xaa0003e1
+.word 0xd280005e
+.word 0xb900103e
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #1088]
+.word 0xf9000001
+.loc 19 38 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #1080]
+.word 0xd2800281
+bl _p_12
+.word 0xaa0003e1
+.word 0xd280007e
+.word 0xb900103e
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #272]
+.word 0xf9000001
+.word 0x910003bf
+.word 0xa8c17bfd
+.word 0xd65f03c0
+
+Lme_dd:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XProcessingInstruction__ctor_string_string
 System_Xml_Linq_XProcessingInstruction__ctor_string_string:
-.file 19 "/Users/builder/jenkins/workspace/xamarin-macios/xamarin-macios/external/mono/external/corefx/src/System.Private.Xml.Linq/src/System/Xml/Linq/XProcessingInstruction.cs"
-.loc 19 32 0 prologue_end
+.file 20 "/Users/builder/jenkins/workspace/xamarin-macios/xamarin-macios/external/mono/external/corefx/src/System.Private.Xml.Linq/src/System/Xml/Linq/XProcessingInstruction.cs"
+.loc 20 32 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000bb8
@@ -10322,10 +13977,10 @@ System_Xml_Linq_XProcessingInstruction__ctor_string_string:
 .word 0xf90013a2
 .word 0xf94013a0
 .word 0xb4000420
-.loc 19 33 0
+.loc 20 33 0
 .word 0xf9400fa0
-bl _p_149
-.loc 19 34 0
+bl _p_176
+.loc 20 34 0
 .word 0xf9400fa0
 .word 0xf9001700
 .word 0x9100a301
@@ -10340,7 +13995,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.loc 19 35 0
+.loc 20 35 0
 .word 0xf94013a0
 .word 0xf9001b00
 .word 0x9100c301
@@ -10355,17 +14010,17 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.loc 19 36 0
+.loc 20 36 0
 .word 0xf9400bb8
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.loc 19 32 0
+.loc 20 32 0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2813c41
+.word 0xd2816941
 bl _p_7
 .word 0xaa0003e1
 .word 0xd2800f80
@@ -10373,19 +14028,19 @@ bl _p_7
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_97:
+Lme_de:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XProcessingInstruction__ctor_System_Xml_Linq_XProcessingInstruction
 System_Xml_Linq_XProcessingInstruction__ctor_System_Xml_Linq_XProcessingInstruction:
-.loc 19 45 0 prologue_end
+.loc 20 45 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xa9016bb9
 .word 0xaa0003f9
 .word 0xaa0103fa
 .word 0xb40003fa
-.loc 19 46 0
+.loc 20 46 0
 .word 0xf9401740
 .word 0xf9001720
 .word 0x9100a321
@@ -10400,7 +14055,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.loc 19 47 0
+.loc 20 47 0
 .word 0xf9401b40
 .word 0xf9001b20
 .word 0x9100c321
@@ -10415,12 +14070,12 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.loc 19 48 0
+.loc 20 48 0
 .word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.loc 19 45 0
+.loc 20 45 0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
@@ -10433,154 +14088,75 @@ bl _p_7
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_98:
+Lme_df:
 .text
 	.align 4
-	.no_dead_strip System_Xml_Linq_XProcessingInstruction_get_NodeType
-System_Xml_Linq_XProcessingInstruction_get_NodeType:
-.loc 19 88 0 prologue_end
+	.no_dead_strip System_Xml_Linq_XProcessingInstruction_get_Data
+System_Xml_Linq_XProcessingInstruction_get_Data:
+.loc 20 67 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd28000e0
+.word 0xf9400ba0
+.word 0xf9401800
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_99:
+Lme_e0:
 .text
 	.align 4
-	.no_dead_strip System_Xml_Linq_XProcessingInstruction_WriteTo_System_Xml_XmlWriter
-System_Xml_Linq_XProcessingInstruction_WriteTo_System_Xml_XmlWriter:
-.loc 19 121 0 prologue_end
+	.no_dead_strip System_Xml_Linq_XProcessingInstruction_set_Data_string
+System_Xml_Linq_XProcessingInstruction_set_Data_string:
+.loc 20 71 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
-.word 0xa9016bb9
+.word 0xf9000bb9
 .word 0xaa0003f9
-.word 0xaa0103fa
-.word 0xb400017a
-.loc 19 122 0
-.word 0xf9401721
-.word 0xf9401b22
-.word 0xaa1a03e0
-.word 0xf9400343
-.word 0xf940ac70
-.word 0xd63f0200
-.loc 19 123 0
-.word 0xa9416bb9
-.word 0x910003bf
-.word 0xa8c27bfd
-.word 0xd65f03c0
-.loc 19 121 0
-
-adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
-add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #0]
-.word 0xd2808fe1
-bl _p_7
-.word 0xaa0003e1
-.word 0xd2800f80
-.word 0xf2a04000
-bl _mono_create_corlib_exception_1
-bl _p_8
-
-Lme_9a:
-.text
-	.align 4
-	.no_dead_strip System_Xml_Linq_XProcessingInstruction_CloneNode
-System_Xml_Linq_XProcessingInstruction_CloneNode:
-.loc 19 143 0 prologue_end
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-
-adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
-add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #512]
-.word 0xd2800701
-bl _p_10
-.word 0xf90013a0
-.word 0xf9400ba1
-bl _p_150
-.word 0xf94013a0
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_9b:
-.text
-	.align 4
-	.no_dead_strip System_Xml_Linq_XProcessingInstruction_ValidateName_string
-System_Xml_Linq_XProcessingInstruction_ValidateName_string:
-.loc 19 159 0 prologue_end
-.word 0xa9bc7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-.word 0xf9400ba0
-bl _p_114
-.loc 19 160 0
-
-adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
-add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #320]
-.word 0xf9400ba0
-.word 0xd28000a2
-bl _p_151
-.word 0x53001c00
-.word 0x35000080
-.loc 19 161 0
-.word 0x910003bf
-.word 0xa8c47bfd
-.word 0xd65f03c0
-.loc 19 160 0
-
-adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
-add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #0]
-.word 0xd2813d81
-bl _p_7
-.word 0xf9400ba1
-bl _p_22
-.word 0xaa0003e1
-.word 0xd2800f60
-.word 0xf2a04000
-bl _mono_create_corlib_exception_1
-bl _p_8
-
-Lme_9c:
-.text
-	.align 4
-	.no_dead_strip System_Xml_Linq_XText__ctor_string
-System_Xml_Linq_XText__ctor_string:
-.file 20 "/Users/builder/jenkins/workspace/xamarin-macios/xamarin-macios/external/mono/external/corefx/src/System.Private.Xml.Linq/src/System/Xml/Linq/XText.cs"
-.loc 20 24 0 prologue_end
-.word 0xa9be7bfd
-.word 0x910003fd
-.word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf9400fa0
-.word 0xb4000240
-.loc 20 25 0
-.word 0xf9400ba1
-.word 0xf9400fa0
-.word 0xf9001420
-.word 0x9100a021
-.word 0xd349fc21
-.word 0xd29ffffe
-.word 0xf2a00ffe
-.word 0x8a1e0021
+.word 0xb4000440
+.loc 20 72 0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x2, [x16, #16]
-.word 0x8b020021
+ldr x0, [x16, #272]
+.word 0xf9400002
+.word 0xaa1903e0
+.word 0xaa1903e1
+bl _p_10
+.word 0x53001c00
+.loc 20 73 0
+.word 0xf9400fa1
+.word 0xf9001b21
+.word 0x9100c322
+.word 0xd349fc42
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
 .word 0xd280003e
-.word 0x3900003e
-.loc 20 26 0
+.word 0x3900005e
+.loc 20 74 0
+.word 0x34000100
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #272]
+.word 0xf9400002
+.word 0xaa1903e0
+.word 0xaa1903e1
+bl _p_11
+.loc 20 75 0
+.word 0xf9400bb9
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.loc 20 24 0
+.loc 20 71 0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
@@ -10593,19 +14169,194 @@ bl _p_7
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_9d:
+Lme_e1:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XProcessingInstruction_get_NodeType
+System_Xml_Linq_XProcessingInstruction_get_NodeType:
+.loc 20 88 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xd28000e0
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_e2:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XProcessingInstruction_get_Target
+System_Xml_Linq_XProcessingInstruction_get_Target:
+.loc 20 102 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xf9401400
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_e3:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XProcessingInstruction_WriteTo_System_Xml_XmlWriter
+System_Xml_Linq_XProcessingInstruction_WriteTo_System_Xml_XmlWriter:
+.loc 20 121 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xa9016bb9
+.word 0xaa0003f9
+.word 0xaa0103fa
+.word 0xb400017a
+.loc 20 122 0
+.word 0xf9401721
+.word 0xf9401b22
+.word 0xaa1a03e0
+.word 0xf9400343
+.word 0xf940ac70
+.word 0xd63f0200
+.loc 20 123 0
+.word 0xa9416bb9
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+.loc 20 121 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #0]
+.word 0xd2808fe1
+bl _p_7
+.word 0xaa0003e1
+.word 0xd2800f80
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_8
+
+Lme_e4:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XProcessingInstruction_CloneNode
+System_Xml_Linq_XProcessingInstruction_CloneNode:
+.loc 20 143 0 prologue_end
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #616]
+.word 0xd2800701
+bl _p_12
+.word 0xf90013a0
+.word 0xf9400ba1
+bl _p_177
+.word 0xf94013a0
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_e5:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XProcessingInstruction_ValidateName_string
+System_Xml_Linq_XProcessingInstruction_ValidateName_string:
+.loc 20 159 0 prologue_end
+.word 0xa9bc7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+bl _p_139
+.loc 20 160 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #328]
+.word 0xf9400ba0
+.word 0xd28000a2
+bl _p_178
+.word 0x53001c00
+.word 0x35000080
+.loc 20 161 0
+.word 0x910003bf
+.word 0xa8c47bfd
+.word 0xd65f03c0
+.loc 20 160 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #0]
+.word 0xd2816a81
+bl _p_7
+.word 0xf9400ba1
+bl _p_24
+.word 0xaa0003e1
+.word 0xd2800f60
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_8
+
+Lme_e6:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XText__ctor_string
+System_Xml_Linq_XText__ctor_string:
+.file 21 "/Users/builder/jenkins/workspace/xamarin-macios/xamarin-macios/external/mono/external/corefx/src/System.Private.Xml.Linq/src/System/Xml/Linq/XText.cs"
+.loc 21 24 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xf9400fa0
+.word 0xb4000240
+.loc 21 25 0
+.word 0xf9400ba1
+.word 0xf9400fa0
+.word 0xf9001420
+.word 0x9100a021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.loc 21 26 0
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+.loc 21 24 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #0]
+.word 0xd2800161
+bl _p_7
+.word 0xaa0003e1
+.word 0xd2800f80
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_8
+
+Lme_e7:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XText__ctor_System_Xml_Linq_XText
 System_Xml_Linq_XText__ctor_System_Xml_Linq_XText:
-.loc 20 34 0 prologue_end
+.loc 21 34 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf9400fa0
 .word 0xb4000260
-.loc 20 35 0
+.loc 21 35 0
 .word 0xf9400fa0
 .word 0xf9401400
 .word 0xf9400ba1
@@ -10622,11 +14373,11 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.loc 20 36 0
+.loc 21 36 0
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.loc 20 34 0
+.loc 21 34 0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
@@ -10639,12 +14390,12 @@ bl _p_7
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_9e:
+Lme_e8:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XText_get_NodeType
 System_Xml_Linq_XText_get_NodeType:
-.loc 20 54 0 prologue_end
+.loc 21 54 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
@@ -10653,12 +14404,12 @@ System_Xml_Linq_XText_get_NodeType:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_9f:
+Lme_e9:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XText_get_Value
 System_Xml_Linq_XText_get_Value:
-.loc 20 65 0 prologue_end
+.loc 21 65 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
@@ -10668,12 +14419,78 @@ System_Xml_Linq_XText_get_Value:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_a0:
+Lme_ea:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XText_set_Value_string
+System_Xml_Linq_XText_set_Value_string:
+.loc 21 69 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000bb9
+.word 0xaa0003f9
+.word 0xf9000fa1
+.word 0xf9400fa0
+.word 0xb4000440
+.loc 21 70 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #272]
+.word 0xf9400002
+.word 0xaa1903e0
+.word 0xaa1903e1
+bl _p_10
+.word 0x53001c00
+.loc 21 71 0
+.word 0xf9400fa1
+.word 0xf9001721
+.word 0x9100a322
+.word 0xd349fc42
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
+.loc 21 72 0
+.word 0x34000100
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #272]
+.word 0xf9400002
+.word 0xaa1903e0
+.word 0xaa1903e1
+bl _p_11
+.loc 21 73 0
+.word 0xf9400bb9
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+.loc 21 69 0
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #0]
+.word 0xd2800161
+bl _p_7
+.word 0xaa0003e1
+.word 0xd2800f80
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_8
+
+Lme_eb:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XText_WriteTo_System_Xml_XmlWriter
 System_Xml_Linq_XText_WriteTo_System_Xml_XmlWriter:
-.loc 20 84 0 prologue_end
+.loc 21 84 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xa90163b7
@@ -10681,7 +14498,7 @@ System_Xml_Linq_XText_WriteTo_System_Xml_XmlWriter:
 .word 0xaa0003f9
 .word 0xaa0103fa
 .word 0xb400041a
-.loc 20 85 0
+.loc 21 85 0
 .word 0xf9400b38
 .word 0xaa1803f7
 .word 0xeb1f031f
@@ -10693,32 +14510,32 @@ System_Xml_Linq_XText_WriteTo_System_Xml_XmlWriter:
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #472]
+ldr x1, [x16, #584]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800017
 .word 0xb40000f7
-.loc 20 87 0
+.loc 21 87 0
 .word 0xf9401721
 .word 0xaa1a03e0
 .word 0xf9400342
 .word 0xf940a050
 .word 0xd63f0200
-.loc 20 88 0
+.loc 21 88 0
 .word 0x14000006
-.loc 20 91 0
+.loc 21 91 0
 .word 0xf9401721
 .word 0xaa1a03e0
 .word 0xf9400342
 .word 0xf9409c50
 .word 0xd63f0200
-.loc 20 93 0
+.loc 21 93 0
 .word 0xa94163b7
 .word 0xa9426bb9
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.loc 20 84 0
+.loc 21 84 0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
@@ -10731,36 +14548,57 @@ bl _p_7
 bl _mono_create_corlib_exception_1
 bl _p_8
 
-Lme_a1:
+Lme_ec:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XText_AppendText_System_Text_StringBuilder
+System_Xml_Linq_XText_AppendText_System_Text_StringBuilder:
+.loc 21 118 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xf9400ba0
+.word 0xf9401401
+.word 0xf9400fa0
+.word 0xf9400fa2
+.word 0x3940005e
+bl _p_44
+.loc 21 119 0
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_ed:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XText_CloneNode
 System_Xml_Linq_XText_CloneNode:
-.loc 20 123 0 prologue_end
+.loc 21 123 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #376]
+ldr x0, [x16, #368]
 .word 0xd2800601
-bl _p_10
+bl _p_12
 .word 0xf90013a0
 .word 0xf9400ba1
-bl _p_24
+bl _p_26
 .word 0xf94013a0
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_a2:
+Lme_ee:
 .text
 	.align 4
 	.no_dead_strip System_Text_StringBuilderCache_Acquire_int
 System_Text_StringBuilderCache_Acquire_int:
-.file 21 "/Users/builder/jenkins/workspace/xamarin-macios/xamarin-macios/external/mono/external/corefx/src/Common/src/CoreLib/System/Text/StringBuilderCache.cs"
-.loc 21 27 0 prologue_end
+.file 22 "/Users/builder/jenkins/workspace/xamarin-macios/xamarin-macios/external/mono/external/corefx/src/Common/src/CoreLib/System/Text/StringBuilderCache.cs"
+.loc 22 27 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000bb9
@@ -10769,7 +14607,7 @@ System_Text_StringBuilderCache_Acquire_int:
 .word 0xd2802d1e
 .word 0x6b1e001f
 .word 0x5400078c
-.loc 21 29 0
+.loc 22 29 0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
@@ -10779,7 +14617,7 @@ ldr x0, [x16, #64]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #968]
+ldr x1, [x16, #1096]
 .word 0xd29ffffe
 .word 0xf2affffe
 .word 0xa1e0021
@@ -10794,10 +14632,10 @@ ldr x1, [x16, #968]
 .word 0xa1e0021
 .word 0x8b010000
 .word 0xf9400019
-.loc 21 30 0
+.loc 22 30 0
 .word 0xaa1903e0
 .word 0xb4000480
-.loc 21 34 0
+.loc 22 34 0
 .word 0x3940033e
 .word 0xf9400b20
 .word 0xb9801800
@@ -10806,7 +14644,7 @@ ldr x1, [x16, #968]
 .word 0xb9801ba0
 .word 0x6b01001f
 .word 0x5400038c
-.loc 21 36 0
+.loc 22 36 0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
@@ -10816,7 +14654,7 @@ ldr x0, [x16, #64]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #968]
+ldr x1, [x16, #1096]
 .word 0xd29ffffe
 .word 0xf2affffe
 .word 0xa1e0021
@@ -10831,35 +14669,35 @@ ldr x1, [x16, #968]
 .word 0xa1e0021
 .word 0x8b010000
 .word 0xf900001f
-.loc 21 37 0
+.loc 22 37 0
 .word 0xaa1903e0
 .word 0x3940033e
-bl _p_152
-.loc 21 38 0
+bl _p_179
+.loc 22 38 0
 .word 0xaa1903e0
 .word 0x1400000a
-.loc 21 42 0
+.loc 22 42 0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #976]
+ldr x0, [x16, #1104]
 .word 0xd2800601
-bl _p_10
+bl _p_12
 .word 0xf90013a0
 .word 0xb9801ba1
-bl _p_153
+bl _p_180
 .word 0xf94013a0
 .word 0xf9400bb9
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_a3:
+Lme_ef:
 .text
 	.align 4
 	.no_dead_strip System_Text_StringBuilderCache_Release_System_Text_StringBuilder
 System_Text_StringBuilderCache_Release_System_Text_StringBuilder:
-.loc 21 48 0 prologue_end
+.loc 22 48 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000bba
@@ -10872,7 +14710,7 @@ System_Text_StringBuilderCache_Release_System_Text_StringBuilder:
 .word 0xd2802d1e
 .word 0x6b1e001f
 .word 0x540002ec
-.loc 21 50 0
+.loc 22 50 0
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
@@ -10882,7 +14720,7 @@ ldr x0, [x16, #64]
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #968]
+ldr x1, [x16, #1096]
 .word 0xd29ffffe
 .word 0xf2affffe
 .word 0xa1e0021
@@ -10897,18 +14735,18 @@ ldr x1, [x16, #968]
 .word 0xa1e0021
 .word 0x8b010000
 .word 0xf900001a
-.loc 21 52 0
+.loc 22 52 0
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
-Lme_a4:
+Lme_f0:
 .text
 	.align 4
 	.no_dead_strip System_Text_StringBuilderCache_GetStringAndRelease_System_Text_StringBuilder
 System_Text_StringBuilderCache_GetStringAndRelease_System_Text_StringBuilder:
-.loc 21 57 0 prologue_end
+.loc 22 57 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000bba
@@ -10918,17 +14756,214 @@ System_Text_StringBuilderCache_GetStringAndRelease_System_Text_StringBuilder:
 .word 0xf9402430
 .word 0xd63f0200
 .word 0xf90013a0
-.loc 21 58 0
+.loc 22 58 0
 .word 0xaa1a03e0
-bl _p_154
+bl _p_181
 .word 0xf94013a0
-.loc 21 59 0
+.loc 22 59 0
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_a5:
+Lme_f1:
+.text
+	.align 4
+	.no_dead_strip System_Xml_Linq_XDocument_GetFirstNode_T_GSHAREDVT
+System_Xml_Linq_XDocument_GetFirstNode_T_GSHAREDVT:
+.loc 10 880 0 prologue_end
+.word 0xa9b97bfd
+.word 0x910003fd
+.word 0xa9015bb5
+.word 0xa90263b7
+.word 0xa9036bb9
+.word 0xf90023a8
+.word 0xf90027af
+.word 0xaa0003fa
+.word 0xf94027a0
+bl _p_182
+.word 0xaa0003f9
+.word 0xb9800320
+.word 0x91003c10
+.word 0x928001f1
+.word 0xf2bffff1
+.word 0x8a110210
+.word 0x910003f1
+.word 0xcb100231
+.word 0x9100023f
+.word 0x8b100230
+.word 0xeb10023f
+.word 0x54000080
+.word 0xa9007e3f
+.word 0x91004231
+.word 0x17fffffc
+.word 0x910003f8
+.word 0xb9804320
+.word 0x8b000300
+.word 0xf9401721
+.word 0xf9401b22
+.word 0xd63f0040
+.word 0xb9804b21
+.word 0xaa1803e0
+.word 0x8b010000
+.word 0xf9401721
+.word 0xf9401b22
+.word 0xd63f0040
+.word 0xf9401757
+.word 0xaa1703f6
+.word 0xeb1f02ff
+.word 0x54000160
+.word 0xf94002e0
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400800
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x1, [x16, #360]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800016
+.word 0xaa1603f7
+.loc 10 881 0
+.word 0xb4000c96
+.loc 10 885 0
+.word 0xf94012f7
+.loc 10 886 0
+.word 0xaa1703e0
+.word 0xf9002ba0
+.word 0xf94027a0
+bl _p_183
+.word 0xaa0003e2
+.word 0xf9402ba0
+.word 0xf9400441
+bl _p_81
+.word 0xf9400721
+bl _p_184
+.word 0xaa0003f6
+.word 0xf9400b35
+.word 0xd280005e
+.word 0xeb1e02bf
+.word 0x540000c0
+.word 0xd280007e
+.word 0xeb1e02bf
+.word 0x540000e0
+.word 0x910042d5
+.word 0x1400000c
+.word 0xb9805320
+.word 0x8b000315
+.word 0xf90002b6
+.word 0x14000008
+.word 0xf9400f21
+.word 0xb9805b20
+.word 0x8b000308
+.word 0xaa1603e0
+.word 0xd63f0020
+.word 0xb9805b20
+.word 0x8b000315
+.word 0xb9804320
+.word 0x8b000300
+.word 0xf9401722
+.word 0xf9401f23
+.word 0xaa1503e1
+.word 0xd63f0060
+.loc 10 887 0
+.word 0xb9804320
+.word 0x8b000301
+.word 0xb9806320
+.word 0x8b000300
+.word 0xf9401722
+.word 0xf9401f23
+.word 0xd63f0060
+.word 0xf9400b36
+.word 0xd280005e
+.word 0xeb1e02df
+.word 0x54000300
+.word 0xd280007e
+.word 0xeb1e02df
+.word 0x54000320
+.word 0xf94027a0
+bl _p_185
+bl _p_186
+.word 0xb9806321
+.word 0x8b010301
+.word 0xf90033a1
+.word 0xf9002ba0
+.word 0x91004000
+.word 0xf9002fa0
+.word 0xf9401720
+.word 0xf9401f20
+.word 0xf94027a0
+bl _p_187
+.word 0xaa0003e2
+.word 0xf9402fa0
+.word 0xf94033a1
+bl _mono_gsharedvt_value_copy
+.word 0xf9402ba0
+.word 0xaa0003f6
+.word 0x1400000a
+.word 0xb9806320
+.word 0x8b000300
+.word 0xf9400016
+.word 0x14000006
+.word 0xf9401321
+.word 0xb9806320
+.word 0x8b000300
+.word 0xd63f0020
+.word 0xaa0003f6
+.word 0xb40001f6
+.word 0xf94023a0
+.word 0xb9804321
+.word 0x8b010301
+.word 0xf9002fa1
+.word 0xf9002ba0
+.word 0xf9401720
+.word 0xf9401f20
+.word 0xf94027a0
+bl _p_187
+.word 0xaa0003e2
+.word 0xf9402ba0
+.word 0xf9402fa1
+bl _mono_gsharedvt_value_copy
+.word 0x1400001d
+.loc 10 888 0
+.word 0xf9401740
+.word 0xeb0002ff
+.word 0x54fff3c1
+.loc 10 890 0
+.word 0xb9804b20
+.word 0x8b000300
+.word 0xf9401721
+.word 0xf9401b22
+.word 0xd63f0040
+.word 0xb9804b20
+.word 0x8b000301
+.word 0xb9806b20
+.word 0x8b000300
+.word 0xf9401722
+.word 0xf9401f23
+.word 0xd63f0060
+.word 0xf94023a0
+.word 0xb9806b21
+.word 0x8b010301
+.word 0xf9002fa1
+.word 0xf9002ba0
+.word 0xf9401720
+.word 0xf9401f20
+.word 0xf94027a0
+bl _p_187
+.word 0xaa0003e2
+.word 0xf9402ba0
+.word 0xf9402fa1
+bl _mono_gsharedvt_value_copy
+.word 0xa9415bb5
+.word 0xa94263b7
+.word 0xa9436bb9
+.word 0x910003bf
+.word 0xa8c77bfd
+.word 0xd65f03c0
+
+Lme_f3:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XHashtable_1_TValue_GSHAREDVT__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_int
@@ -10942,7 +14977,7 @@ System_Xml_Linq_XHashtable_1_TValue_GSHAREDVT__ctor_System_Xml_Linq_XHashtable_1
 .word 0xf90017a2
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_155
+bl _p_188
 .word 0xaa0003f8
 .word 0xb9800300
 .word 0xf9001bbf
@@ -10951,12 +14986,12 @@ bl _p_155
 .word 0xf90027a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_156
-bl _p_157
+bl _p_189
+bl _p_186
 .word 0xf9002ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_158
+bl _p_190
 .word 0xaa0003e3
 .word 0xf9402ba0
 .word 0xf90023a0
@@ -10986,7 +15021,7 @@ ldr x2, [x16, #16]
 .word 0xa8c67bfd
 .word 0xd65f03c0
 
-Lme_a7:
+Lme_f4:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XHashtable_1_TValue_GSHAREDVT_TryGetValue_string_int_int_TValue_GSHAREDVT_
@@ -11002,7 +15037,7 @@ System_Xml_Linq_XHashtable_1_TValue_GSHAREDVT_TryGetValue_string_int_int_TValue_
 .word 0xf9001fa4
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_159
+bl _p_191
 .word 0xaa0003f6
 .word 0xb98002c0
 .word 0xf90023bf
@@ -11014,7 +15049,7 @@ bl _p_159
 .word 0xf9002ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_160
+bl _p_192
 .word 0xaa0003e5
 .word 0xf9402ba0
 .word 0xf94013a1
@@ -11028,7 +15063,7 @@ bl _p_160
 .word 0xa8c67bfd
 .word 0xd65f03c0
 
-Lme_a8:
+Lme_f5:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XHashtable_1_TValue_GSHAREDVT_Add_TValue_GSHAREDVT
@@ -11043,7 +15078,7 @@ System_Xml_Linq_XHashtable_1_TValue_GSHAREDVT_Add_TValue_GSHAREDVT:
 .word 0xf90023a1
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_161
+bl _p_193
 .word 0xaa0003fa
 .word 0xb9800340
 .word 0x91003c10
@@ -11075,7 +15110,7 @@ bl _p_161
 .word 0xf9003ba0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_162
+bl _p_194
 .word 0xaa0003e3
 .word 0xf9403ba0
 .word 0xf94023a1
@@ -11101,7 +15136,7 @@ bl _p_162
 .word 0xf9401340
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_163
+bl _p_195
 .word 0xaa0003e2
 .word 0xf9403ba0
 .word 0xf9403fa1
@@ -11120,7 +15155,7 @@ bl _mono_monitor_enter_v4_fast
 .word 0x35000080
 .word 0xaa1803e0
 .word 0xaa1703e1
-bl _p_93
+bl _p_118
 .loc 13 112 0
 .word 0xf9401fa0
 .word 0xf9400741
@@ -11130,7 +15165,7 @@ bl _p_93
 .word 0xf9003ba0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_164
+bl _p_196
 .word 0xaa0003e1
 .word 0xf9403ba0
 .word 0xd63f0020
@@ -11159,13 +15194,13 @@ ldr x1, [x16, #16]
 .word 0x94000005
 .word 0xf9402fa0
 .word 0xb4000040
-bl _p_17
+bl _p_19
 .word 0x17ffffaa
 .word 0xf90033be
 .word 0x394143a0
 .word 0x34000060
 .word 0xf94027a0
-bl _p_95
+bl _p_120
 .word 0xf94033be
 .word 0xd61f03c0
 .word 0xa94163b7
@@ -11174,7 +15209,7 @@ bl _p_95
 .word 0xa8c87bfd
 .word 0xd65f03c0
 
-Lme_a9:
+Lme_f6:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_int
@@ -11188,7 +15223,7 @@ System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT__ctor_System_Xml_L
 .word 0xf90017a2
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_165
+bl _p_197
 .word 0xaa0003f8
 .word 0xb9800300
 .word 0xf9001bbf
@@ -11198,9 +15233,9 @@ bl _p_165
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #704]
+ldr x0, [x16, #824]
 .word 0xb9802ba1
-bl _p_96
+bl _p_121
 .word 0xf94027a1
 .word 0xf9400702
 .word 0xd1000442
@@ -11222,9 +15257,9 @@ ldr x2, [x16, #16]
 .word 0xf90023a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_166
+bl _p_198
 .word 0xb9802ba1
-bl _p_96
+bl _p_121
 .word 0xf94023a1
 .word 0xf9400b02
 .word 0xd1000442
@@ -11265,7 +15300,7 @@ ldr x2, [x16, #16]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_ae:
+Lme_fb:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_Resize
@@ -11279,7 +15314,7 @@ System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_Resize:
 .word 0xf9001fa0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_167
+bl _p_199
 .word 0xaa0003fa
 .word 0xb9800340
 .word 0x91003c10
@@ -11396,7 +15431,7 @@ bl _p_167
 .word 0xd63f0060
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_168
+bl _p_200
 .word 0xaa0003e2
 .word 0xf94027a0
 .word 0xf90023a0
@@ -11531,12 +15566,12 @@ bl _p_168
 .word 0xf9002ba0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_169
-bl _p_157
+bl _p_201
+bl _p_186
 .word 0xf90027a0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_170
+bl _p_202
 .word 0xaa0003e3
 .word 0xf94027a0
 .word 0xf9402ba1
@@ -11589,7 +15624,7 @@ bl _p_170
 .word 0xd63f0060
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_171
+bl _p_203
 .word 0xaa0003e3
 .word 0xaa1803e0
 .word 0xb9806b41
@@ -11638,15 +15673,15 @@ bl _p_171
 .word 0xa8c67bfd
 .word 0xd65f03c0
 .loc 13 214 0
-.word 0xd2801d00
+.word 0xd2801d60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_8
-.word 0xd28018a0
+.word 0xd2801900
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_af:
+Lme_fc:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_TryGetValue_string_int_int_TValue_GSHAREDVT_
@@ -11662,7 +15697,7 @@ System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_TryGetValue_string
 .word 0xf90023a4
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_172
+bl _p_204
 .word 0xaa0003f6
 .word 0xb98002c0
 .word 0x91003c10
@@ -11682,11 +15717,11 @@ bl _p_172
 .word 0xb9004bbf
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_169
+bl _p_201
 .word 0xf90033a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_173
+bl _p_205
 .word 0xaa0003e3
 .word 0xf94033af
 .word 0xf94017a0
@@ -11702,7 +15737,7 @@ bl _p_173
 .word 0xf9002ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_174
+bl _p_206
 .word 0xaa0003e6
 .word 0xf9402ba0
 .word 0xf9402fa1
@@ -11746,7 +15781,7 @@ bl _p_174
 .word 0xf9401ac0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_175
+bl _p_207
 .word 0xaa0003e2
 .word 0xf9402ba0
 .word 0xf9402fa1
@@ -11765,11 +15800,11 @@ bl _mono_gsharedvt_value_copy
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd28018a0
+.word 0xd2801900
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_b0:
+Lme_fd:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_TryAdd_TValue_GSHAREDVT_TValue_GSHAREDVT_
@@ -11785,7 +15820,7 @@ System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_TryAdd_TValue_GSHA
 .word 0xf90027a2
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_176
+bl _p_208
 .word 0xaa0003f9
 .word 0xb9800320
 .word 0x91003c10
@@ -11811,7 +15846,7 @@ bl _p_176
 .word 0xf9402b20
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_175
+bl _p_207
 .word 0xaa0003e2
 .word 0xf9403ba0
 .word 0xf9403fa1
@@ -11825,7 +15860,7 @@ bl _mono_gsharedvt_value_copy
 .word 0xf90037a0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_168
+bl _p_200
 .word 0xaa0003e2
 .word 0xf94037a0
 .word 0xf90033a0
@@ -11843,11 +15878,11 @@ bl _p_168
 .word 0xf90033a0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_169
+bl _p_201
 .word 0xf90037a0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_173
+bl _p_205
 .word 0xaa0003e3
 .word 0xf94033a2
 .word 0xf94037af
@@ -11911,7 +15946,7 @@ bl _p_173
 .word 0xf9402b20
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_175
+bl _p_207
 .word 0xaa0003e2
 .word 0xf94033a0
 .word 0xf94037a1
@@ -12019,7 +16054,7 @@ bl _mono_gsharedvt_value_copy
 .word 0xf90037a0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_174
+bl _p_206
 .word 0xaa0003e6
 .word 0xf94033a0
 .word 0xf94037a4
@@ -12063,7 +16098,7 @@ bl _p_174
 .word 0xf9402b20
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_175
+bl _p_207
 .word 0xaa0003e2
 .word 0xf94033a0
 .word 0xf94037a1
@@ -12076,14 +16111,14 @@ bl _mono_gsharedvt_value_copy
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd28018a0
+.word 0xd2801900
 .word 0xaa1103e1
-bl _p_20
-.word 0xd2801be0
+bl _p_22
+.word 0xd2801c40
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_b1:
+Lme_fe:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_FindEntry_int_string_int_int_int_
@@ -12103,7 +16138,7 @@ System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_FindEntry_int_stri
 .word 0xf9002fa5
 .word 0xf9402ba0
 .word 0xf9400000
-bl _p_177
+bl _p_209
 .word 0xaa0003f5
 .word 0xb98002a0
 .word 0x91003c10
@@ -12207,7 +16242,7 @@ bl _p_177
 .word 0xd63f0060
 .word 0xf9402ba0
 .word 0xf9400000
-bl _p_168
+bl _p_200
 .word 0xaa0003e2
 .word 0xf9403fa0
 .word 0xf9003ba0
@@ -12341,7 +16376,7 @@ bl _p_168
 .word 0xaa1a03e2
 .word 0xd2800003
 .word 0xaa1903e4
-bl _p_103
+bl _p_128
 .word 0x93407c00
 .word 0x350000c0
 .loc 13 379 0
@@ -12390,11 +16425,11 @@ bl _p_103
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd28018a0
+.word 0xd2801900
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_b2:
+Lme_ff:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_ComputeHashCode_string_int_int
@@ -12410,7 +16445,7 @@ System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_ComputeHashCode_st
 .word 0xf9001ba1
 .word 0xaa0203fa
 .word 0xf9401fa0
-bl _p_178
+bl _p_210
 .word 0xaa0003f7
 .word 0xb98002e0
 .word 0xf90023bf
@@ -12460,11 +16495,11 @@ bl _p_178
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd28018a0
+.word 0xd2801900
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_b3:
+Lme_100:
 .text
 	.align 4
 	.no_dead_strip System_Xml_Linq_XObject_Annotation_T_GSHAREDVT
@@ -12479,7 +16514,7 @@ System_Xml_Linq_XObject_Annotation_T_GSHAREDVT:
 .word 0xf90027af
 .word 0xaa0003fa
 .word 0xf94027a0
-bl _p_179
+bl _p_211
 .word 0xaa0003f9
 .word 0xb9800320
 .word 0x91003c10
@@ -12527,13 +16562,13 @@ bl _p_179
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x1, [x16, #896]
+ldr x1, [x16, #400]
 .word 0xeb01001f
 .word 0x540000e1
 
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x0, [x16, #904]
+ldr x0, [x16, #408]
 .word 0xeb0002ff
 .word 0x54000040
 .word 0xd2800016
@@ -12543,13 +16578,13 @@ ldr x0, [x16, #904]
 .word 0xf9400f40
 .word 0xf9002ba0
 .word 0xf94027a0
-bl _p_180
+bl _p_212
 .word 0xaa0003e2
 .word 0xf9402ba0
 .word 0xf9400441
-bl _p_145
+bl _p_81
 .word 0xf9400721
-bl _p_181
+bl _p_184
 .word 0xaa0003fa
 .word 0xf9400b37
 .word 0xd280005e
@@ -12585,7 +16620,7 @@ bl _p_181
 .word 0xf9401720
 .word 0xf9401f20
 .word 0xf94027a0
-bl _p_182
+bl _p_213
 .word 0xaa0003e2
 .word 0xf9402ba0
 .word 0xf9402fa1
@@ -12609,13 +16644,13 @@ bl _mono_gsharedvt_value_copy
 .word 0xb4000c40
 .loc 18 182 0
 .word 0xf94027a0
-bl _p_180
+bl _p_212
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xaa1603e0
-bl _p_145
+bl _p_81
 .word 0xf9400721
-bl _p_181
+bl _p_184
 .word 0xaa0003f6
 .word 0xf9400b35
 .word 0xd280005e
@@ -12659,8 +16694,8 @@ bl _p_181
 .word 0xeb1e02df
 .word 0x54000320
 .word 0xf94027a0
-bl _p_183
-bl _p_157
+bl _p_214
+bl _p_186
 .word 0xb9807321
 .word 0x8b010301
 .word 0xf90033a1
@@ -12670,7 +16705,7 @@ bl _p_157
 .word 0xf9401720
 .word 0xf9401f20
 .word 0xf94027a0
-bl _p_182
+bl _p_213
 .word 0xaa0003e2
 .word 0xf9402fa0
 .word 0xf94033a1
@@ -12696,7 +16731,7 @@ bl _mono_gsharedvt_value_copy
 .word 0xf9401720
 .word 0xf9401f20
 .word 0xf94027a0
-bl _p_182
+bl _p_213
 .word 0xaa0003e2
 .word 0xf9402ba0
 .word 0xf9402fa1
@@ -12728,7 +16763,7 @@ bl _mono_gsharedvt_value_copy
 .word 0xf9401720
 .word 0xf9401f20
 .word 0xf94027a0
-bl _p_182
+bl _p_213
 .word 0xaa0003e2
 .word 0xf9402ba0
 .word 0xf9402fa1
@@ -12739,11 +16774,11 @@ bl _mono_gsharedvt_value_copy
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd28018a0
+.word 0xd2801900
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_b4:
+Lme_101:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_System_Xml_Linq_XName_invoke_string_TValue_System_Xml_Linq_XName
@@ -12813,16 +16848,16 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1803e0
-bl _p_184
-bl _p_185
+bl _p_215
+bl _p_216
 .word 0xaa0003f8
 .word 0xb5ffff20
 .word 0x17ffffc9
-.word 0xd28018a0
+.word 0xd2801900
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_b5:
+Lme_102:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_System_WeakReference_invoke_string_TValue_System_WeakReference
@@ -12892,16 +16927,97 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1803e0
-bl _p_184
-bl _p_185
+bl _p_215
+bl _p_216
 .word 0xaa0003f8
 .word 0xb5ffff20
 .word 0x17ffffc9
-.word 0xd28018a0
+.word 0xd2801900
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_b6:
+Lme_103:
+.text
+	.align 4
+	.no_dead_strip wrapper_delegate_invoke_System_EventHandler_1_System_Xml_Linq_XObjectChangeEventArgs_invoke_void_object_TEventArgs_object_System_Xml_Linq_XObjectChangeEventArgs
+wrapper_delegate_invoke_System_EventHandler_1_System_Xml_Linq_XObjectChangeEventArgs_invoke_void_object_TEventArgs_object_System_Xml_Linq_XObjectChangeEventArgs:
+.word 0xa9bb7bfd
+.word 0x910003fd
+.word 0xa9015bb5
+.word 0xa90263b7
+.word 0xa9036bb9
+.word 0xaa0003f8
+.word 0xaa0103f9
+.word 0xaa0203fa
+
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x0, [x16, #48]
+.word 0xb9400000
+.word 0x350006e0
+.word 0x14000001
+.word 0xf9403f17
+.word 0xaa1703e0
+.word 0xb5000220
+.word 0xf9401317
+.word 0xaa1703e0
+.word 0xb4000100
+.word 0xf9401f00
+.word 0xf9400b03
+.word 0xaa1703e0
+.word 0xaa1903e1
+.word 0xaa1a03e2
+.word 0xd63f0060
+.word 0x1400001e
+.word 0xf9401f00
+.word 0xf9400b02
+.word 0xaa1903e0
+.word 0xaa1a03e1
+.word 0xd63f0040
+.word 0x14000018
+.word 0xb9801af8
+.word 0xd2800016
+.word 0x93407ec0
+.word 0xb9801ae1
+.word 0xeb00003f
+.word 0x10000011
+.word 0x54000409
+.word 0xd37df000
+.word 0x8b0002e0
+.word 0x91008000
+.word 0xf9400015
+.word 0xaa1503e3
+.word 0xaa0303e0
+.word 0xaa1903e1
+.word 0xaa1a03e2
+.word 0xf90023a3
+.word 0xf9400c70
+.word 0xd63f0200
+.word 0xf94023a0
+.word 0x110006d6
+.word 0xaa1603e0
+.word 0x6b18001f
+.word 0x54fffd8b
+.word 0xa9415bb5
+.word 0xa94263b7
+.word 0xa9436bb9
+.word 0x910003bf
+.word 0xa8c57bfd
+.word 0xd65f03c0
+.word 0x910222e0
+.word 0xd280003e
+.word 0xb900001e
+.word 0xaa1703e0
+bl _p_215
+bl _p_216
+.word 0xaa0003f7
+.word 0xb5ffff20
+.word 0x17ffffc8
+.word 0xd2801900
+.word 0xaa1103e1
+bl _p_22
+
+Lme_104:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_invoke_string_TValue_TValue_GSHAREDVT
@@ -12915,7 +17031,7 @@ wrapper_delegate_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_G
 .word 0xf90027a1
 .word 0xf94023a0
 .word 0xf9400000
-bl _p_186
+bl _p_217
 .word 0xaa0003fa
 .word 0xb9800340
 .word 0xd2800019
@@ -12941,7 +17057,7 @@ ldr x0, [x16, #48]
 .word 0xf9002ba0
 .word 0xf94023a0
 .word 0xf9400000
-bl _p_187
+bl _p_218
 .word 0xaa0003e2
 .word 0xf9402baf
 .word 0xaa1803e0
@@ -12955,7 +17071,7 @@ bl _p_187
 .word 0xf9002ba0
 .word 0xf94023a0
 .word 0xf9400000
-bl _p_188
+bl _p_219
 .word 0xaa0003e1
 .word 0xf9402baf
 .word 0xf94027a0
@@ -12976,7 +17092,7 @@ bl _p_188
 .word 0xf9002fa0
 .word 0xf94023a0
 .word 0xf9400000
-bl _p_189
+bl _p_220
 .word 0xaa0003e2
 .word 0xf9402fa0
 .word 0xf9002ba0
@@ -12999,16 +17115,16 @@ bl _p_189
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1803e0
-bl _p_184
-bl _p_185
+bl _p_215
+bl _p_216
 .word 0xaa0003f8
 .word 0xb5ffff20
 .word 0x17ffffb3
-.word 0xd28018a0
+.word 0xd2801900
 .word 0xaa1103e1
-bl _p_20
+bl _p_22
 
-Lme_b7:
+Lme_105:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_begin_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_begin_invoke_IAsyncResult__this___TValue_AsyncCallback_object_TValue_GSHAREDVT_System_AsyncCallback_object
@@ -13023,7 +17139,7 @@ wrapper_delegate_begin_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TV
 .word 0xf90023a3
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_190
+bl _p_221
 .word 0xaa0003fa
 .word 0xb9800340
 .word 0xf90027bf
@@ -13057,14 +17173,14 @@ bl _p_190
 .word 0xf9000340
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_191
+bl _p_222
 .word 0xa94163b7
 .word 0xf94013ba
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_b8:
+Lme_106:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_end_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_end_invoke_string__this___IAsyncResult_System_IAsyncResult
@@ -13076,7 +17192,7 @@ wrapper_delegate_end_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TVal
 .word 0xf90017a1
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_192
+bl _p_223
 .word 0xaa0003fa
 .word 0xb9800340
 .word 0xf9001bbf
@@ -13104,13 +17220,13 @@ bl _p_192
 .word 0xf9000320
 .word 0xf94013a0
 .word 0xaa1903e1
-bl _p_193
+bl _p_224
 .word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_b9:
+Lme_107:
 .text
 	.align 3
 jit_code_end:
@@ -13131,6 +17247,7 @@ bl System_Xml_Linq_XAttribute_get_IsNamespaceDeclaration
 bl System_Xml_Linq_XAttribute_get_Name
 bl System_Xml_Linq_XAttribute_get_NodeType
 bl System_Xml_Linq_XAttribute_get_Value
+bl System_Xml_Linq_XAttribute_set_Value_string
 bl System_Xml_Linq_XAttribute_ToString
 bl System_Xml_Linq_XAttribute_GetPrefixOfNamespace_System_Xml_Linq_XNamespace
 bl System_Xml_Linq_XAttribute_ValidateAttribute_System_Xml_Linq_XName_string
@@ -13142,17 +17259,32 @@ bl System_Xml_Linq_XCData_CloneNode
 bl System_Xml_Linq_XComment__ctor_string
 bl System_Xml_Linq_XComment__ctor_System_Xml_Linq_XComment
 bl System_Xml_Linq_XComment_get_NodeType
+bl System_Xml_Linq_XComment_get_Value
+bl System_Xml_Linq_XComment_set_Value_string
 bl System_Xml_Linq_XComment_WriteTo_System_Xml_XmlWriter
 bl System_Xml_Linq_XComment_CloneNode
 bl System_Xml_Linq_XContainer__ctor
 bl System_Xml_Linq_XContainer__ctor_System_Xml_Linq_XContainer
+bl System_Xml_Linq_XContainer_get_LastNode
+bl System_Xml_Linq_XContainer_Add_object
+bl System_Xml_Linq_XContainer_Nodes
+bl System_Xml_Linq_XContainer_RemoveNodes
+bl System_Xml_Linq_XContainer_AddAttribute_System_Xml_Linq_XAttribute
+bl System_Xml_Linq_XContainer_AddAttributeSkipNotify_System_Xml_Linq_XAttribute
+bl System_Xml_Linq_XContainer_AddContentSkipNotify_object
+bl System_Xml_Linq_XContainer_AddNode_System_Xml_Linq_XNode
 bl System_Xml_Linq_XContainer_AddNodeSkipNotify_System_Xml_Linq_XNode
+bl System_Xml_Linq_XContainer_AddString_string
 bl System_Xml_Linq_XContainer_AddStringSkipNotify_string
+bl System_Xml_Linq_XContainer_AppendNode_System_Xml_Linq_XNode
 bl System_Xml_Linq_XContainer_AppendNodeSkipNotify_System_Xml_Linq_XNode
+bl System_Xml_Linq_XContainer_AppendText_System_Text_StringBuilder
 bl System_Xml_Linq_XContainer_ConvertTextToNode
 bl System_Xml_Linq_XContainer_GetStringValue_object
 bl System_Xml_Linq_XContainer_ReadContentFrom_System_Xml_XmlReader
 bl System_Xml_Linq_XContainer_ReadContentFrom_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
+bl System_Xml_Linq_XContainer_RemoveNode_System_Xml_Linq_XNode
+bl System_Xml_Linq_XContainer_RemoveNodesSkipNotify
 bl System_Xml_Linq_XContainer_ValidateNode_System_Xml_Linq_XNode_System_Xml_Linq_XNode
 bl System_Xml_Linq_XContainer_ValidateString_string
 bl System_Xml_Linq_XContainer_WriteContentTo_System_Xml_XmlWriter
@@ -13160,27 +17292,58 @@ bl System_Xml_Linq_XContainer_ContentReader__ctor_System_Xml_Linq_XContainer
 bl System_Xml_Linq_XContainer_ContentReader__ctor_System_Xml_Linq_XContainer_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
 bl System_Xml_Linq_XContainer_ContentReader_ReadContentFrom_System_Xml_Linq_XContainer_System_Xml_XmlReader
 bl System_Xml_Linq_XContainer_ContentReader_ReadContentFrom_System_Xml_Linq_XContainer_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
+bl System_Xml_Linq_XContainer__Nodesd__18__ctor_int
+bl System_Xml_Linq_XContainer__Nodesd__18_System_IDisposable_Dispose
+bl System_Xml_Linq_XContainer__Nodesd__18_MoveNext
+bl System_Xml_Linq_XContainer__Nodesd__18_System_Collections_Generic_IEnumerator_System_Xml_Linq_XNode_get_Current
+bl System_Xml_Linq_XContainer__Nodesd__18_System_Collections_IEnumerator_Reset
+bl System_Xml_Linq_XContainer__Nodesd__18_System_Collections_IEnumerator_get_Current
+bl System_Xml_Linq_XContainer__Nodesd__18_System_Collections_Generic_IEnumerable_System_Xml_Linq_XNode_GetEnumerator
+bl System_Xml_Linq_XContainer__Nodesd__18_System_Collections_IEnumerable_GetEnumerator
+bl System_Xml_Linq_XDeclaration__ctor_string_string_string
 bl System_Xml_Linq_XDeclaration__ctor_System_Xml_Linq_XDeclaration
+bl System_Xml_Linq_XDeclaration_get_Encoding
+bl System_Xml_Linq_XDeclaration_set_Encoding_string
 bl System_Xml_Linq_XDeclaration_get_Standalone
+bl System_Xml_Linq_XDeclaration_set_Standalone_string
+bl System_Xml_Linq_XDeclaration_get_Version
 bl System_Xml_Linq_XDeclaration_ToString
+bl System_Xml_Linq_XDocument__ctor
 bl System_Xml_Linq_XDocument__ctor_System_Xml_Linq_XDocument
+bl System_Xml_Linq_XDocument_get_Declaration
+bl System_Xml_Linq_XDocument_set_Declaration_System_Xml_Linq_XDeclaration
 bl System_Xml_Linq_XDocument_get_NodeType
+bl System_Xml_Linq_XDocument_get_Root
 bl System_Xml_Linq_XDocument_WriteTo_System_Xml_XmlWriter
+bl System_Xml_Linq_XDocument_AddAttribute_System_Xml_Linq_XAttribute
+bl System_Xml_Linq_XDocument_AddAttributeSkipNotify_System_Xml_Linq_XAttribute
 bl System_Xml_Linq_XDocument_CloneNode
+bl System_Xml_Linq_XDocument_GetFirstNode_T_REF
 bl System_Xml_Linq_XDocument_IsWhitespace_string
 bl System_Xml_Linq_XDocument_ValidateNode_System_Xml_Linq_XNode_System_Xml_Linq_XNode
 bl System_Xml_Linq_XDocument_ValidateDocument_System_Xml_Linq_XNode_System_Xml_XmlNodeType_System_Xml_XmlNodeType
 bl System_Xml_Linq_XDocument_ValidateString_string
 bl System_Xml_Linq_XDocumentType__ctor_string_string_string_string
 bl System_Xml_Linq_XDocumentType__ctor_System_Xml_Linq_XDocumentType
+bl System_Xml_Linq_XDocumentType_get_InternalSubset
+bl System_Xml_Linq_XDocumentType_get_Name
 bl System_Xml_Linq_XDocumentType_get_NodeType
+bl System_Xml_Linq_XDocumentType_get_PublicId
+bl System_Xml_Linq_XDocumentType_get_SystemId
 bl System_Xml_Linq_XDocumentType_WriteTo_System_Xml_XmlWriter
 bl System_Xml_Linq_XDocumentType_CloneNode
 bl System_Xml_Linq_XElement__ctor_System_Xml_Linq_XName
 bl System_Xml_Linq_XElement__ctor_System_Xml_Linq_XElement
+bl System_Xml_Linq_XElement__ctor_System_Xml_Linq_XStreamingElement
 bl System_Xml_Linq_XElement__ctor_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
+bl System_Xml_Linq_XElement_get_HasAttributes
+bl System_Xml_Linq_XElement_get_IsEmpty
 bl System_Xml_Linq_XElement_get_Name
 bl System_Xml_Linq_XElement_get_NodeType
+bl System_Xml_Linq_XElement_get_Value
+bl System_Xml_Linq_XElement_set_Value_string
+bl System_Xml_Linq_XElement_Attribute_System_Xml_Linq_XName
+bl System_Xml_Linq_XElement_Attributes
 bl System_Xml_Linq_XElement_GetPrefixOfNamespace_System_Xml_Linq_XNamespace
 bl System_Xml_Linq_XElement_Load_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
 bl System_Xml_Linq_XElement_Parse_string
@@ -13190,13 +17353,25 @@ bl System_Xml_Linq_XElement_ConvertForAssignment_object
 bl System_Xml_Linq_XElement_System_Xml_Serialization_IXmlSerializable_GetSchema
 bl System_Xml_Linq_XElement_System_Xml_Serialization_IXmlSerializable_ReadXml_System_Xml_XmlReader
 bl System_Xml_Linq_XElement_System_Xml_Serialization_IXmlSerializable_WriteXml_System_Xml_XmlWriter
+bl System_Xml_Linq_XElement_AddAttribute_System_Xml_Linq_XAttribute
+bl System_Xml_Linq_XElement_AddAttributeSkipNotify_System_Xml_Linq_XAttribute
+bl System_Xml_Linq_XElement_AppendAttribute_System_Xml_Linq_XAttribute
 bl System_Xml_Linq_XElement_AppendAttributeSkipNotify_System_Xml_Linq_XAttribute
 bl System_Xml_Linq_XElement_CloneNode
+bl System_Xml_Linq_XElement_GetAttributes_System_Xml_Linq_XName
 bl System_Xml_Linq_XElement_GetNamespaceOfPrefixInScope_string_System_Xml_Linq_XElement
 bl System_Xml_Linq_XElement_ReadElementFrom_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
 bl System_Xml_Linq_XElement_ReadElementFromImpl_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
 bl System_Xml_Linq_XElement_SetEndElementLineInfo_int_int
 bl System_Xml_Linq_XElement_ValidateNode_System_Xml_Linq_XNode_System_Xml_Linq_XNode
+bl System_Xml_Linq_XElement__GetAttributesd__116__ctor_int
+bl System_Xml_Linq_XElement__GetAttributesd__116_System_IDisposable_Dispose
+bl System_Xml_Linq_XElement__GetAttributesd__116_MoveNext
+bl System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_Generic_IEnumerator_System_Xml_Linq_XAttribute_get_Current
+bl System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_IEnumerator_Reset
+bl System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_IEnumerator_get_Current
+bl System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_Generic_IEnumerable_System_Xml_Linq_XAttribute_GetEnumerator
+bl System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_IEnumerable_GetEnumerator
 bl System_Xml_Linq_XHashtable_1_TValue_REF__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_REF_int
 bl System_Xml_Linq_XHashtable_1_TValue_REF_TryGetValue_string_int_int_TValue_REF_
 bl System_Xml_Linq_XHashtable_1_TValue_REF_Add_TValue_REF
@@ -13230,6 +17405,9 @@ bl System_Xml_Linq_XName_get_LocalName
 bl System_Xml_Linq_XName_get_Namespace
 bl System_Xml_Linq_XName_get_NamespaceName
 bl System_Xml_Linq_XName_ToString
+bl System_Xml_Linq_XName_Get_string
+bl System_Xml_Linq_XName_Get_string_string
+bl System_Xml_Linq_XName_op_Implicit_string
 bl System_Xml_Linq_XName_Equals_object
 bl System_Xml_Linq_XName_GetHashCode
 bl System_Xml_Linq_XName_op_Equality_System_Xml_Linq_XName_System_Xml_Linq_XName
@@ -13243,6 +17421,7 @@ bl System_Xml_Linq_XNamespace_get_None
 bl System_Xml_Linq_XNamespace_get_Xml
 bl System_Xml_Linq_XNamespace_get_Xmlns
 bl System_Xml_Linq_XNamespace_Get_string
+bl System_Xml_Linq_XNamespace_op_Implicit_string
 bl System_Xml_Linq_XNamespace_Equals_object
 bl System_Xml_Linq_XNamespace_GetHashCode
 bl System_Xml_Linq_XNamespace_op_Equality_System_Xml_Linq_XNamespace_System_Xml_Linq_XNamespace
@@ -13253,14 +17432,17 @@ bl System_Xml_Linq_XNamespace_ExtractLocalName_System_Xml_Linq_XName
 bl System_Xml_Linq_XNamespace_ExtractNamespace_System_WeakReference
 bl System_Xml_Linq_XNamespace_EnsureNamespace_System_WeakReference__string
 bl System_Xml_Linq_XNode__ctor
+bl System_Xml_Linq_XNode_Remove
 bl System_Xml_Linq_XNode_ToString
 bl method_addresses
+bl System_Xml_Linq_XNode_AppendText_System_Text_StringBuilder
 bl method_addresses
 bl System_Xml_Linq_XNode_GetXmlReaderSettings_System_Xml_Linq_LoadOptions
 bl System_Xml_Linq_XNode_GetXmlString_System_Xml_Linq_SaveOptions
 bl System_Xml_Linq_XObject__ctor
 bl System_Xml_Linq_XObject_get_BaseUri
 bl method_addresses
+bl System_Xml_Linq_XObject_get_Parent
 bl System_Xml_Linq_XObject_AddAnnotation_object
 bl System_Xml_Linq_XObject_AnnotationForSealedType_System_Type
 bl System_Xml_Linq_XObject_Annotation_T_REF
@@ -13268,12 +17450,20 @@ bl System_Xml_Linq_XObject_System_Xml_IXmlLineInfo_HasLineInfo
 bl System_Xml_Linq_XObject_System_Xml_IXmlLineInfo_get_LineNumber
 bl System_Xml_Linq_XObject_System_Xml_IXmlLineInfo_get_LinePosition
 bl System_Xml_Linq_XObject_get_HasBaseUri
+bl System_Xml_Linq_XObject_NotifyChanged_object_System_Xml_Linq_XObjectChangeEventArgs
+bl System_Xml_Linq_XObject_NotifyChanging_object_System_Xml_Linq_XObjectChangeEventArgs
 bl System_Xml_Linq_XObject_SetBaseUri_string
 bl System_Xml_Linq_XObject_SetLineInfo_int_int
+bl System_Xml_Linq_XObject_SkipNotify
 bl System_Xml_Linq_XObject_GetSaveOptionsFromAnnotations
+bl System_Xml_Linq_XObjectChangeEventArgs__ctor_System_Xml_Linq_XObjectChange
+bl System_Xml_Linq_XObjectChangeEventArgs__cctor
 bl System_Xml_Linq_XProcessingInstruction__ctor_string_string
 bl System_Xml_Linq_XProcessingInstruction__ctor_System_Xml_Linq_XProcessingInstruction
+bl System_Xml_Linq_XProcessingInstruction_get_Data
+bl System_Xml_Linq_XProcessingInstruction_set_Data_string
 bl System_Xml_Linq_XProcessingInstruction_get_NodeType
+bl System_Xml_Linq_XProcessingInstruction_get_Target
 bl System_Xml_Linq_XProcessingInstruction_WriteTo_System_Xml_XmlWriter
 bl System_Xml_Linq_XProcessingInstruction_CloneNode
 bl System_Xml_Linq_XProcessingInstruction_ValidateName_string
@@ -13281,12 +17471,15 @@ bl System_Xml_Linq_XText__ctor_string
 bl System_Xml_Linq_XText__ctor_System_Xml_Linq_XText
 bl System_Xml_Linq_XText_get_NodeType
 bl System_Xml_Linq_XText_get_Value
+bl System_Xml_Linq_XText_set_Value_string
 bl System_Xml_Linq_XText_WriteTo_System_Xml_XmlWriter
+bl System_Xml_Linq_XText_AppendText_System_Text_StringBuilder
 bl System_Xml_Linq_XText_CloneNode
 bl System_Text_StringBuilderCache_Acquire_int
 bl System_Text_StringBuilderCache_Release_System_Text_StringBuilder
 bl System_Text_StringBuilderCache_GetStringAndRelease_System_Text_StringBuilder
 bl method_addresses
+bl System_Xml_Linq_XDocument_GetFirstNode_T_GSHAREDVT
 bl System_Xml_Linq_XHashtable_1_TValue_GSHAREDVT__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_int
 bl System_Xml_Linq_XHashtable_1_TValue_GSHAREDVT_TryGetValue_string_int_int_TValue_GSHAREDVT_
 bl System_Xml_Linq_XHashtable_1_TValue_GSHAREDVT_Add_TValue_GSHAREDVT
@@ -13303,6 +17496,7 @@ bl System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_ComputeHashCode
 bl System_Xml_Linq_XObject_Annotation_T_GSHAREDVT
 bl wrapper_delegate_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_System_Xml_Linq_XName_invoke_string_TValue_System_Xml_Linq_XName
 bl wrapper_delegate_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_System_WeakReference_invoke_string_TValue_System_WeakReference
+bl wrapper_delegate_invoke_System_EventHandler_1_System_Xml_Linq_XObjectChangeEventArgs_invoke_void_object_TEventArgs_object_System_Xml_Linq_XObjectChangeEventArgs
 bl wrapper_delegate_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_invoke_string_TValue_TValue_GSHAREDVT
 bl wrapper_delegate_begin_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_begin_invoke_IAsyncResult__this___TValue_AsyncCallback_object_TValue_GSHAREDVT_System_AsyncCallback_object
 bl wrapper_delegate_end_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_end_invoke_string__this___IAsyncResult_System_IAsyncResult
@@ -13312,28 +17506,28 @@ method_addresses_end:
 	.align 3
 unbox_trampolines:
 
-	.long 90,91,92,93,94,95,96,97
-	.long 98,99,100,101,102,103
+	.long 149,150,151,152,153,154,155,156
+	.long 157,158,159,160,161,162
 unbox_trampolines_end:
 
 	.long 0
 .text
 	.align 3
 unbox_trampoline_addresses:
-bl ut_90
-bl ut_91
-bl ut_92
-bl ut_93
-bl ut_94
-bl ut_95
-bl ut_96
-bl ut_97
-bl ut_98
-bl ut_99
-bl ut_100
-bl ut_101
-bl ut_102
-bl ut_103
+bl ut_149
+bl ut_150
+bl ut_151
+bl ut_152
+bl ut_153
+bl ut_154
+bl ut_155
+bl ut_156
+bl ut_157
+bl ut_158
+bl ut_159
+bl ut_160
+bl ut_161
+bl ut_162
 
 	.long 0
 .section __TEXT, __const
@@ -13345,36 +17539,39 @@ unwind_info:
 	.byte 68,14,48,157,6,158,5,68,13,29,21,12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,68,154,2
 	.byte 18,12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1,19,12,31,0,68,14,128,1,157,16,158,15,68
 	.byte 13,29,68,153,14,154,13,21,12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153,7,68,154,6,16,12,31
-	.byte 0,68,14,32,157,4,158,3,68,13,29,68,154,2,23,12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,152
-	.byte 3,68,153,2,154,1,23,12,31,0,68,14,64,157,8,158,7,68,13,29,68,151,6,152,5,68,153,4,154,3,21,12
-	.byte 31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5,68,154,4,21,12,31,0,68,14,112,157,14,158,13,68
-	.byte 13,29,68,152,12,153,11,68,154,10,26,12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4
-	.byte 153,3,68,154,2,29,12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,149,18,150,17,68,151,16,152,15,68,153
-	.byte 14,154,13,32,12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,148,20,149,19,68,150,18,151,17,68,152,16,153
-	.byte 15,68,154,14,18,12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3,24,12,31,0,68,14,144,1,157
-	.byte 18,158,17,68,13,29,68,150,16,151,15,68,152,14,153,13,28,12,31,0,68,14,64,157,8,158,7,68,13,29,68,149
-	.byte 6,150,5,68,151,4,152,3,68,153,2,154,1,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,18,12
-	.byte 31,0,68,14,112,157,14,158,13,68,13,29,68,153,12,154,11,18,12,31,0,68,14,96,157,12,158,11,68,13,29,68
-	.byte 153,10,154,9,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,26,12,31,0,68,14,96,157,12,158,11
-	.byte 68,13,29,68,150,10,151,9,68,152,8,153,7,68,154,6,13,12,31,0,68,14,64,157,8,158,7,68,13,29,21,12
-	.byte 31,0,68,14,96,157,12,158,11,68,13,29,68,152,10,153,9,68,154,8,31,12,31,0,68,14,112,157,14,158,13,68
-	.byte 13,29,68,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6,24,12,31,0,68,14,64,157,8,158,7,68
-	.byte 13,29,68,150,6,151,5,68,152,4,68,154,3,16,12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,21,12
-	.byte 31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,68,153,3,154,2,33,12,31,0,68,14,96,157,12,158,11,68
-	.byte 13,29,68,147,10,148,9,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3,18,12,31,0,68,14,48,157,6,158
-	.byte 5,68,13,29,68,151,4,152,3,13,12,31,0,68,14,16,157,2,158,1,68,13,29,18,12,31,0,68,14,96,157,12
-	.byte 158,11,68,13,29,68,151,10,152,9,26,12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6
-	.byte 153,5,68,154,4,22,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,152,16,153,15,68,154,14,23,12,31,0
-	.byte 68,14,80,157,10,158,9,68,13,29,68,151,8,152,7,68,153,6,154,5,16,12,31,0,68,14,48,157,6,158,5,68
-	.byte 13,29,68,154,4,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10,16,12,31,0,68,14,96,157,12,158
-	.byte 11,68,13,29,68,150,10,24,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,151,14,152,13,68,153,12,154,11
-	.byte 16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,18,12,31,0,68,14,112,157,14,158,13,68,13,29,68
-	.byte 149,12,150,11,27,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,149,14,150,13,68,151,12,152,11,68,153,10
-	.byte 34,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153
-	.byte 8,154,7,24,12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,68,154,5,28,12,31,0
-	.byte 68,14,112,157,14,158,13,68,13,29,68,149,12,150,11,68,151,10,152,9,68,153,8,154,7,28,12,31,0,68,14,96
-	.byte 157,12,158,11,68,13,29,68,149,10,150,9,68,151,8,152,7,68,153,6,154,5,21,12,31,0,68,14,80,157,10,158
-	.byte 9,68,13,29,68,151,8,152,7,68,154,6,18,12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6,154,5
+	.byte 0,68,14,32,157,4,158,3,68,13,29,68,154,2,16,12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,23
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,152,3,68,153,2,154,1,21,12,31,0,68,14,64,157,8
+	.byte 158,7,68,13,29,68,152,6,153,5,68,154,4,24,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,151,14,152
+	.byte 13,68,153,12,154,11,23,12,31,0,68,14,64,157,8,158,7,68,13,29,68,151,6,152,5,68,153,4,154,3,16,12
+	.byte 31,0,68,14,48,157,6,158,5,68,13,29,68,154,4,21,12,31,0,68,14,112,157,14,158,13,68,13,29,68,152,12
+	.byte 153,11,68,154,10,23,12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,153,4,154,3,26,12,31
+	.byte 0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,153,3,68,154,2,29,12,31,0,68,14,160,1
+	.byte 157,20,158,19,68,13,29,68,149,18,150,17,68,151,16,152,15,68,153,14,154,13,32,12,31,0,68,14,176,1,157,22
+	.byte 158,21,68,13,29,68,148,20,149,19,68,150,18,151,17,68,152,16,153,15,68,154,14,18,12,31,0,68,14,48,157,6
+	.byte 158,5,68,13,29,68,153,4,154,3,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,24,12,31,0,68
+	.byte 14,144,1,157,18,158,17,68,13,29,68,150,16,151,15,68,152,14,153,13,28,12,31,0,68,14,64,157,8,158,7,68
+	.byte 13,29,68,149,6,150,5,68,151,4,152,3,68,153,2,154,1,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68
+	.byte 150,6,18,12,31,0,68,14,112,157,14,158,13,68,13,29,68,153,12,154,11,18,12,31,0,68,14,96,157,12,158,11
+	.byte 68,13,29,68,153,10,154,9,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,26,12,31,0,68,14,96
+	.byte 157,12,158,11,68,13,29,68,150,10,151,9,68,152,8,153,7,68,154,6,13,12,31,0,68,14,64,157,8,158,7,68
+	.byte 13,29,21,12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10,153,9,68,154,8,31,12,31,0,68,14,112,157
+	.byte 14,158,13,68,13,29,68,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6,24,12,31,0,68,14,64,157
+	.byte 8,158,7,68,13,29,68,150,6,151,5,68,152,4,68,154,3,21,12,31,0,68,14,48,157,6,158,5,68,13,29,68
+	.byte 151,4,68,153,3,154,2,33,12,31,0,68,14,96,157,12,158,11,68,13,29,68,147,10,148,9,68,149,8,150,7,68
+	.byte 151,6,152,5,68,153,4,154,3,18,12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,152,3,13,12,31,0
+	.byte 68,14,16,157,2,158,1,68,13,29,18,12,31,0,68,14,96,157,12,158,11,68,13,29,68,151,10,152,9,26,12,31
+	.byte 0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4,22,12,31,0,68,14,144,1
+	.byte 157,18,158,17,68,13,29,68,152,16,153,15,68,154,14,23,12,31,0,68,14,80,157,10,158,9,68,13,29,68,151,8
+	.byte 152,7,68,153,6,154,5,28,12,31,0,68,14,112,157,14,158,13,68,13,29,68,149,12,150,11,68,151,10,152,9,68
+	.byte 153,8,154,7,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10,16,12,31,0,68,14,96,157,12,158,11
+	.byte 68,13,29,68,150,10,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,18,12,31,0,68,14,112,157,14
+	.byte 158,13,68,13,29,68,149,12,150,11,27,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,149,14,150,13,68,151
+	.byte 12,152,11,68,153,10,34,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,147,14,148,13,68,149,12,150,11,68
+	.byte 151,10,152,9,68,153,8,154,7,24,12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,68
+	.byte 154,5,28,12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3,28
+	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,149,10,150,9,68,151,8,152,7,68,153,6,154,5,21,12,31,0
+	.byte 68,14,80,157,10,158,9,68,13,29,68,151,8,152,7,68,154,6,18,12,31,0,68,14,64,157,8,158,7,68,13,29
+	.byte 68,153,6,154,5
 
 .text
 	.align 4
@@ -13385,1549 +17582,1797 @@ plt__jit_icall_mono_generic_class_init:
 _p_1:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x16, [x16, #992]
+ldr x16, [x16, #1120]
 br x16
-.word 1333
+.word 1691
 	.no_dead_strip plt_string_Format_System_IFormatProvider_string_object
 plt_string_Format_System_IFormatProvider_string_object:
 _p_2:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x16, [x16, #1000]
+ldr x16, [x16, #1128]
 br x16
-.word 1336
+.word 1694
 	.no_dead_strip plt_string_Format_System_IFormatProvider_string_object_object
 plt_string_Format_System_IFormatProvider_string_object_object:
 _p_3:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x16, [x16, #1008]
+ldr x16, [x16, #1136]
 br x16
-.word 1341
+.word 1699
 	.no_dead_strip plt_System_Xml_Linq_LineInfoAnnotation__ctor_int_int
 plt_System_Xml_Linq_LineInfoAnnotation__ctor_int_int:
 _p_4:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x16, [x16, #1016]
+ldr x16, [x16, #1144]
 br x16
-.word 1346
+.word 1704
 	.no_dead_strip plt_System_Xml_Linq_XContainer_GetStringValue_object
 plt_System_Xml_Linq_XContainer_GetStringValue_object:
 _p_5:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x16, [x16, #1024]
+ldr x16, [x16, #1152]
 br x16
-.word 1348
+.word 1706
 	.no_dead_strip plt_System_Xml_Linq_XAttribute_ValidateAttribute_System_Xml_Linq_XName_string
 plt_System_Xml_Linq_XAttribute_ValidateAttribute_System_Xml_Linq_XName_string:
 _p_6:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x16, [x16, #1032]
+ldr x16, [x16, #1160]
 br x16
-.word 1350
+.word 1708
 	.no_dead_strip plt__jit_icall_mono_helper_ldstr
 plt__jit_icall_mono_helper_ldstr:
 _p_7:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x16, [x16, #1040]
+ldr x16, [x16, #1168]
 br x16
-.word 1352
+.word 1710
 	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
 plt__jit_icall_mono_arch_throw_exception:
 _p_8:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x16, [x16, #1048]
+ldr x16, [x16, #1176]
 br x16
-.word 1355
+.word 1713
 	.no_dead_strip plt_string_op_Equality_string_string
 plt_string_op_Equality_string_string:
 _p_9:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x16, [x16, #1056]
-br x16
-.word 1357
-	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
-plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
-_p_10:
-adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
-add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x16, [x16, #1064]
-br x16
-.word 1362
-	.no_dead_strip plt_System_IO_StringWriter__ctor_System_IFormatProvider
-plt_System_IO_StringWriter__ctor_System_IFormatProvider:
-_p_11:
-adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
-add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x16, [x16, #1072]
-br x16
-.word 1370
-	.no_dead_strip plt_System_Xml_XmlWriterSettings__ctor
-plt_System_Xml_XmlWriterSettings__ctor:
-_p_12:
-adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
-add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x16, [x16, #1080]
-br x16
-.word 1375
-	.no_dead_strip plt_System_Xml_XmlWriterSettings_set_ConformanceLevel_System_Xml_ConformanceLevel
-plt_System_Xml_XmlWriterSettings_set_ConformanceLevel_System_Xml_ConformanceLevel:
-_p_13:
-adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
-add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x16, [x16, #1088]
-br x16
-.word 1380
-	.no_dead_strip plt_System_Xml_XmlWriter_Create_System_IO_TextWriter_System_Xml_XmlWriterSettings
-plt_System_Xml_XmlWriter_Create_System_IO_TextWriter_System_Xml_XmlWriterSettings:
-_p_14:
-adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
-add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x16, [x16, #1096]
-br x16
-.word 1385
-	.no_dead_strip plt_System_Xml_Linq_XAttribute_GetPrefixOfNamespace_System_Xml_Linq_XNamespace
-plt_System_Xml_Linq_XAttribute_GetPrefixOfNamespace_System_Xml_Linq_XNamespace:
-_p_15:
-adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
-add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x16, [x16, #1104]
-br x16
-.word 1390
-	.no_dead_strip plt_System_Xml_XmlWriter_WriteAttributeString_string_string_string_string
-plt_System_Xml_XmlWriter_WriteAttributeString_string_string_string_string:
-_p_16:
-adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
-add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x16, [x16, #1112]
-br x16
-.word 1392
-	.no_dead_strip plt__jit_icall_ves_icall_thread_finish_async_abort
-plt__jit_icall_ves_icall_thread_finish_async_abort:
-_p_17:
-adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
-add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x16, [x16, #1120]
-br x16
-.word 1397
-	.no_dead_strip plt_string_Trim
-plt_string_Trim:
-_p_18:
-adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
-add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x16, [x16, #1128]
-br x16
-.word 1400
-	.no_dead_strip plt_System_Xml_Linq_XElement_GetPrefixOfNamespace_System_Xml_Linq_XNamespace
-plt_System_Xml_Linq_XElement_GetPrefixOfNamespace_System_Xml_Linq_XNamespace:
-_p_19:
-adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
-add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x16, [x16, #1136]
-br x16
-.word 1405
-	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
-plt__jit_icall_mono_arch_throw_corlib_exception:
-_p_20:
-adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
-add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x16, [x16, #1144]
-br x16
-.word 1407
-	.no_dead_strip plt_string_op_Inequality_string_string
-plt_string_op_Inequality_string_string:
-_p_21:
-adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
-add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x16, [x16, #1152]
-br x16
-.word 1409
-	.no_dead_strip plt_SR_Format_string_object
-plt_SR_Format_string_object:
-_p_22:
-adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
-add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x16, [x16, #1160]
-br x16
-.word 1414
-	.no_dead_strip plt_System_Xml_Linq_XText__ctor_string
-plt_System_Xml_Linq_XText__ctor_string:
-_p_23:
-adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
-add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x16, [x16, #1168]
-br x16
-.word 1416
-	.no_dead_strip plt_System_Xml_Linq_XText__ctor_System_Xml_Linq_XText
-plt_System_Xml_Linq_XText__ctor_System_Xml_Linq_XText:
-_p_24:
-adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
-add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
-ldr x16, [x16, #1176]
-br x16
-.word 1419
-	.no_dead_strip plt_System_Xml_Linq_XCData__ctor_System_Xml_Linq_XCData
-plt_System_Xml_Linq_XCData__ctor_System_Xml_Linq_XCData:
-_p_25:
-adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
-add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 1422
-	.no_dead_strip plt_System_Xml_Linq_XComment__ctor_System_Xml_Linq_XComment
-plt_System_Xml_Linq_XComment__ctor_System_Xml_Linq_XComment:
-_p_26:
+.word 1715
+	.no_dead_strip plt_System_Xml_Linq_XObject_NotifyChanging_object_System_Xml_Linq_XObjectChangeEventArgs
+plt_System_Xml_Linq_XObject_NotifyChanging_object_System_Xml_Linq_XObjectChangeEventArgs:
+_p_10:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 1424
-	.no_dead_strip plt_System_Xml_Linq_XContainer_AppendNodeSkipNotify_System_Xml_Linq_XNode
-plt_System_Xml_Linq_XContainer_AppendNodeSkipNotify_System_Xml_Linq_XNode:
-_p_27:
+.word 1720
+	.no_dead_strip plt_System_Xml_Linq_XObject_NotifyChanged_object_System_Xml_Linq_XObjectChangeEventArgs
+plt_System_Xml_Linq_XObject_NotifyChanged_object_System_Xml_Linq_XObjectChangeEventArgs:
+_p_11:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 1426
-	.no_dead_strip plt_System_Xml_Linq_XContainer_ConvertTextToNode
-plt_System_Xml_Linq_XContainer_ConvertTextToNode:
-_p_28:
+.word 1723
+	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
+plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
+_p_12:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 1428
-	.no_dead_strip plt_string_Concat_string_string
-plt_string_Concat_string_string:
-_p_29:
+.word 1726
+	.no_dead_strip plt_System_IO_StringWriter__ctor_System_IFormatProvider
+plt_System_IO_StringWriter__ctor_System_IFormatProvider:
+_p_13:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 1430
-	.no_dead_strip plt_System_Xml_XmlConvert_ToString_double
-plt_System_Xml_XmlConvert_ToString_double:
-_p_30:
+.word 1734
+	.no_dead_strip plt_System_Xml_XmlWriterSettings__ctor
+plt_System_Xml_XmlWriterSettings__ctor:
+_p_14:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 1435
-	.no_dead_strip plt_System_Xml_XmlConvert_ToString_single
-plt_System_Xml_XmlConvert_ToString_single:
-_p_31:
+.word 1739
+	.no_dead_strip plt_System_Xml_XmlWriterSettings_set_ConformanceLevel_System_Xml_ConformanceLevel
+plt_System_Xml_XmlWriterSettings_set_ConformanceLevel_System_Xml_ConformanceLevel:
+_p_15:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 1440
-	.no_dead_strip plt_System_Xml_XmlConvert_ToString_System_Decimal
-plt_System_Xml_XmlConvert_ToString_System_Decimal:
-_p_32:
+.word 1744
+	.no_dead_strip plt_System_Xml_XmlWriter_Create_System_IO_TextWriter_System_Xml_XmlWriterSettings
+plt_System_Xml_XmlWriter_Create_System_IO_TextWriter_System_Xml_XmlWriterSettings:
+_p_16:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 1445
-	.no_dead_strip plt_System_Xml_XmlConvert_ToString_System_DateTime_System_Xml_XmlDateTimeSerializationMode
-plt_System_Xml_XmlConvert_ToString_System_DateTime_System_Xml_XmlDateTimeSerializationMode:
-_p_33:
+.word 1749
+	.no_dead_strip plt_System_Xml_Linq_XAttribute_GetPrefixOfNamespace_System_Xml_Linq_XNamespace
+plt_System_Xml_Linq_XAttribute_GetPrefixOfNamespace_System_Xml_Linq_XNamespace:
+_p_17:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 1450
-	.no_dead_strip plt_System_Xml_XmlConvert_ToString_System_DateTimeOffset
-plt_System_Xml_XmlConvert_ToString_System_DateTimeOffset:
-_p_34:
+.word 1754
+	.no_dead_strip plt_System_Xml_XmlWriter_WriteAttributeString_string_string_string_string
+plt_System_Xml_XmlWriter_WriteAttributeString_string_string_string_string:
+_p_18:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 1455
-	.no_dead_strip plt_System_Xml_XmlConvert_ToString_System_TimeSpan
-plt_System_Xml_XmlConvert_ToString_System_TimeSpan:
-_p_35:
+.word 1756
+	.no_dead_strip plt__jit_icall_ves_icall_thread_finish_async_abort
+plt__jit_icall_ves_icall_thread_finish_async_abort:
+_p_19:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 1460
-	.no_dead_strip plt_System_Xml_Linq_XContainer_ContentReader_ReadContentFrom_System_Xml_Linq_XContainer_System_Xml_XmlReader
-plt_System_Xml_Linq_XContainer_ContentReader_ReadContentFrom_System_Xml_Linq_XContainer_System_Xml_XmlReader:
-_p_36:
+.word 1761
+	.no_dead_strip plt_string_Trim
+plt_string_Trim:
+_p_20:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 1465
-	.no_dead_strip plt_System_Xml_Linq_XContainer_ReadContentFrom_System_Xml_XmlReader
-plt_System_Xml_Linq_XContainer_ReadContentFrom_System_Xml_XmlReader:
-_p_37:
+.word 1764
+	.no_dead_strip plt_System_Xml_Linq_XElement_GetPrefixOfNamespace_System_Xml_Linq_XNamespace
+plt_System_Xml_Linq_XElement_GetPrefixOfNamespace_System_Xml_Linq_XNamespace:
+_p_21:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 1467
-	.no_dead_strip plt_System_Xml_Linq_XContainer_ContentReader__ctor_System_Xml_Linq_XContainer_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
-plt_System_Xml_Linq_XContainer_ContentReader__ctor_System_Xml_Linq_XContainer_System_Xml_XmlReader_System_Xml_Linq_LoadOptions:
-_p_38:
+.word 1769
+	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
+plt__jit_icall_mono_arch_throw_corlib_exception:
+_p_22:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 1469
-	.no_dead_strip plt_System_Xml_Linq_XContainer_ContentReader_ReadContentFrom_System_Xml_Linq_XContainer_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
-plt_System_Xml_Linq_XContainer_ContentReader_ReadContentFrom_System_Xml_Linq_XContainer_System_Xml_XmlReader_System_Xml_Linq_LoadOptions:
-_p_39:
+.word 1771
+	.no_dead_strip plt_string_op_Inequality_string_string
+plt_string_op_Inequality_string_string:
+_p_23:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 1471
-	.no_dead_strip plt_System_Xml_Linq_NamespaceCache_Get_string
-plt_System_Xml_Linq_NamespaceCache_Get_string:
-_p_40:
+.word 1773
+	.no_dead_strip plt_SR_Format_string_object
+plt_SR_Format_string_object:
+_p_24:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 1473
-	.no_dead_strip plt_System_Xml_Linq_XNamespace_GetName_string
-plt_System_Xml_Linq_XNamespace_GetName_string:
-_p_41:
+.word 1778
+	.no_dead_strip plt_System_Xml_Linq_XText__ctor_string
+plt_System_Xml_Linq_XText__ctor_string:
+_p_25:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 1475
-	.no_dead_strip plt_System_Xml_Linq_XElement__ctor_System_Xml_Linq_XName
-plt_System_Xml_Linq_XElement__ctor_System_Xml_Linq_XName:
-_p_42:
+.word 1780
+	.no_dead_strip plt_System_Xml_Linq_XText__ctor_System_Xml_Linq_XText
+plt_System_Xml_Linq_XText__ctor_System_Xml_Linq_XText:
+_p_26:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 1477
-	.no_dead_strip plt_System_Xml_Linq_XAttribute__ctor_System_Xml_Linq_XName_object
-plt_System_Xml_Linq_XAttribute__ctor_System_Xml_Linq_XName_object:
-_p_43:
+.word 1783
+	.no_dead_strip plt_System_Xml_Linq_XCData__ctor_System_Xml_Linq_XCData
+plt_System_Xml_Linq_XCData__ctor_System_Xml_Linq_XCData:
+_p_27:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 1479
-	.no_dead_strip plt_System_Xml_Linq_XElement_AppendAttributeSkipNotify_System_Xml_Linq_XAttribute
-plt_System_Xml_Linq_XElement_AppendAttributeSkipNotify_System_Xml_Linq_XAttribute:
-_p_44:
+.word 1786
+	.no_dead_strip plt_System_Xml_Linq_XComment__ctor_System_Xml_Linq_XComment
+plt_System_Xml_Linq_XComment__ctor_System_Xml_Linq_XComment:
+_p_28:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 1481
-	.no_dead_strip plt_System_Xml_Linq_XContainer_AddNodeSkipNotify_System_Xml_Linq_XNode
-plt_System_Xml_Linq_XContainer_AddNodeSkipNotify_System_Xml_Linq_XNode:
-_p_45:
+.word 1788
+	.no_dead_strip plt_System_Xml_Linq_XContainer_AppendNodeSkipNotify_System_Xml_Linq_XNode
+plt_System_Xml_Linq_XContainer_AppendNodeSkipNotify_System_Xml_Linq_XNode:
+_p_29:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 1483
-	.no_dead_strip plt_System_Xml_Linq_XContainer_AddStringSkipNotify_string
-plt_System_Xml_Linq_XContainer_AddStringSkipNotify_string:
-_p_46:
+.word 1790
+	.no_dead_strip plt_System_Xml_Linq_XObject_SkipNotify
+plt_System_Xml_Linq_XObject_SkipNotify:
+_p_30:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 1485
-	.no_dead_strip plt_System_Xml_Linq_XCData__ctor_string
-plt_System_Xml_Linq_XCData__ctor_string:
-_p_47:
+.word 1792
+	.no_dead_strip plt_System_Xml_Linq_XContainer_AddContentSkipNotify_object
+plt_System_Xml_Linq_XContainer_AddContentSkipNotify_object:
+_p_31:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 1487
-	.no_dead_strip plt_System_Xml_Linq_XComment__ctor_string
-plt_System_Xml_Linq_XComment__ctor_string:
-_p_48:
+.word 1795
+	.no_dead_strip plt_System_Xml_Linq_XContainer_AddNode_System_Xml_Linq_XNode
+plt_System_Xml_Linq_XContainer_AddNode_System_Xml_Linq_XNode:
+_p_32:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 1489
-	.no_dead_strip plt_System_Xml_Linq_XProcessingInstruction__ctor_string_string
-plt_System_Xml_Linq_XProcessingInstruction__ctor_string_string:
-_p_49:
+.word 1797
+	.no_dead_strip plt_System_Xml_Linq_XContainer_AddString_string
+plt_System_Xml_Linq_XContainer_AddString_string:
+_p_33:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 1491
-	.no_dead_strip plt_System_Xml_Linq_XDocumentType__ctor_string_string_string_string
-plt_System_Xml_Linq_XDocumentType__ctor_string_string_string_string:
-_p_50:
+.word 1799
+	.no_dead_strip plt_System_Xml_Linq_XElement__ctor_System_Xml_Linq_XStreamingElement
+plt_System_Xml_Linq_XElement__ctor_System_Xml_Linq_XStreamingElement:
+_p_34:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 1494
-	.no_dead_strip plt_System_Xml_Linq_XObject_SetBaseUri_string
-plt_System_Xml_Linq_XObject_SetBaseUri_string:
-_p_51:
+.word 1801
+	.no_dead_strip plt_System_Xml_Linq_XContainer_Add_object
+plt_System_Xml_Linq_XContainer_Add_object:
+_p_35:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 1496
-	.no_dead_strip plt_System_Xml_Linq_XObject_SetLineInfo_int_int
-plt_System_Xml_Linq_XObject_SetLineInfo_int_int:
-_p_52:
+.word 1803
+	.no_dead_strip plt_System_Xml_Linq_XContainer__Nodesd__18__ctor_int
+plt_System_Xml_Linq_XContainer__Nodesd__18__ctor_int:
+_p_36:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 1499
-	.no_dead_strip plt_System_Xml_Linq_XElement_SetEndElementLineInfo_int_int
-plt_System_Xml_Linq_XElement_SetEndElementLineInfo_int_int:
-_p_53:
+.word 1805
+	.no_dead_strip plt_System_Xml_Linq_XContainer_RemoveNodesSkipNotify
+plt_System_Xml_Linq_XContainer_RemoveNodesSkipNotify:
+_p_37:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 1502
-	.no_dead_strip plt_System_Xml_Linq_XObject_get_HasBaseUri
-plt_System_Xml_Linq_XObject_get_HasBaseUri:
-_p_54:
+.word 1807
+	.no_dead_strip plt_System_Xml_Linq_XContainer_ConvertTextToNode
+plt_System_Xml_Linq_XContainer_ConvertTextToNode:
+_p_38:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 1504
-	.no_dead_strip plt_System_Xml_Linq_XObject_get_BaseUri
-plt_System_Xml_Linq_XObject_get_BaseUri:
-_p_55:
+.word 1809
+	.no_dead_strip plt_System_Xml_Linq_XContainer_AddNodeSkipNotify_System_Xml_Linq_XNode
+plt_System_Xml_Linq_XContainer_AddNodeSkipNotify_System_Xml_Linq_XNode:
+_p_39:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 1507
-	.no_dead_strip plt_System_Text_StringBuilderCache_Acquire_int
-plt_System_Text_StringBuilderCache_Acquire_int:
-_p_56:
+.word 1811
+	.no_dead_strip plt_System_Xml_Linq_XContainer_AddStringSkipNotify_string
+plt_System_Xml_Linq_XContainer_AddStringSkipNotify_string:
+_p_40:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 1510
-	.no_dead_strip plt_System_Text_StringBuilder_Append_string
-plt_System_Text_StringBuilder_Append_string:
-_p_57:
+.word 1813
+	.no_dead_strip plt_System_Xml_Linq_XContainer_AppendNode_System_Xml_Linq_XNode
+plt_System_Xml_Linq_XContainer_AppendNode_System_Xml_Linq_XNode:
+_p_41:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 1513
-	.no_dead_strip plt_System_Text_StringBuilder_Append_char
-plt_System_Text_StringBuilder_Append_char:
-_p_58:
+.word 1815
+	.no_dead_strip plt_string_Concat_string_string
+plt_string_Concat_string_string:
+_p_42:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 1518
-	.no_dead_strip plt_System_Text_StringBuilderCache_GetStringAndRelease_System_Text_StringBuilder
-plt_System_Text_StringBuilderCache_GetStringAndRelease_System_Text_StringBuilder:
-_p_59:
+.word 1817
+	.no_dead_strip plt_System_Xml_Linq_XText_set_Value_string
+plt_System_Xml_Linq_XText_set_Value_string:
+_p_43:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 1523
-	.no_dead_strip plt_System_Xml_Linq_XContainer__ctor_System_Xml_Linq_XContainer
-plt_System_Xml_Linq_XContainer__ctor_System_Xml_Linq_XContainer:
-_p_60:
+.word 1822
+	.no_dead_strip plt_System_Text_StringBuilder_Append_string
+plt_System_Text_StringBuilder_Append_string:
+_p_44:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 1526
-	.no_dead_strip plt_System_Xml_Linq_XDeclaration__ctor_System_Xml_Linq_XDeclaration
-plt_System_Xml_Linq_XDeclaration__ctor_System_Xml_Linq_XDeclaration:
-_p_61:
+.word 1825
+	.no_dead_strip plt_System_Xml_XmlConvert_ToString_double
+plt_System_Xml_XmlConvert_ToString_double:
+_p_45:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
-.word 1528
-	.no_dead_strip plt_System_Xml_Linq_XContainer_WriteContentTo_System_Xml_XmlWriter
-plt_System_Xml_Linq_XContainer_WriteContentTo_System_Xml_XmlWriter:
-_p_62:
+.word 1830
+	.no_dead_strip plt_System_Xml_XmlConvert_ToString_single
+plt_System_Xml_XmlConvert_ToString_single:
+_p_46:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
-.word 1530
-	.no_dead_strip plt_System_Xml_Linq_XDocument__ctor_System_Xml_Linq_XDocument
-plt_System_Xml_Linq_XDocument__ctor_System_Xml_Linq_XDocument:
-_p_63:
+.word 1835
+	.no_dead_strip plt_System_Xml_XmlConvert_ToString_System_Decimal
+plt_System_Xml_XmlConvert_ToString_System_Decimal:
+_p_47:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 1532
-	.no_dead_strip plt_System_Xml_Linq_XDocument_ValidateDocument_System_Xml_Linq_XNode_System_Xml_XmlNodeType_System_Xml_XmlNodeType
-plt_System_Xml_Linq_XDocument_ValidateDocument_System_Xml_Linq_XNode_System_Xml_XmlNodeType_System_Xml_XmlNodeType:
-_p_64:
+.word 1840
+	.no_dead_strip plt_System_Xml_XmlConvert_ToString_System_DateTime_System_Xml_XmlDateTimeSerializationMode
+plt_System_Xml_XmlConvert_ToString_System_DateTime_System_Xml_XmlDateTimeSerializationMode:
+_p_48:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 1534
-	.no_dead_strip plt_System_Xml_Linq_XDocument_IsWhitespace_string
-plt_System_Xml_Linq_XDocument_IsWhitespace_string:
-_p_65:
+.word 1845
+	.no_dead_strip plt_System_Xml_XmlConvert_ToString_System_DateTimeOffset
+plt_System_Xml_XmlConvert_ToString_System_DateTimeOffset:
+_p_49:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 1536
-	.no_dead_strip plt_System_Xml_XmlConvert_VerifyName_string
-plt_System_Xml_XmlConvert_VerifyName_string:
-_p_66:
+.word 1850
+	.no_dead_strip plt_System_Xml_XmlConvert_ToString_System_TimeSpan
+plt_System_Xml_XmlConvert_ToString_System_TimeSpan:
+_p_50:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 1538
-	.no_dead_strip plt_System_Xml_Linq_XDocumentType__ctor_System_Xml_Linq_XDocumentType
-plt_System_Xml_Linq_XDocumentType__ctor_System_Xml_Linq_XDocumentType:
-_p_67:
+.word 1855
+	.no_dead_strip plt_System_Xml_Linq_XContainer_ContentReader_ReadContentFrom_System_Xml_Linq_XContainer_System_Xml_XmlReader
+plt_System_Xml_Linq_XContainer_ContentReader_ReadContentFrom_System_Xml_Linq_XContainer_System_Xml_XmlReader:
+_p_51:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 1543
-	.no_dead_strip plt_System_Xml_Linq_XAttribute__ctor_System_Xml_Linq_XAttribute
-plt_System_Xml_Linq_XAttribute__ctor_System_Xml_Linq_XAttribute:
-_p_68:
+.word 1860
+	.no_dead_strip plt_System_Xml_Linq_XContainer_ReadContentFrom_System_Xml_XmlReader
+plt_System_Xml_Linq_XContainer_ReadContentFrom_System_Xml_XmlReader:
+_p_52:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 1545
-	.no_dead_strip plt_System_Xml_Linq_XElement_ReadElementFrom_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
-plt_System_Xml_Linq_XElement_ReadElementFrom_System_Xml_XmlReader_System_Xml_Linq_LoadOptions:
-_p_69:
+.word 1862
+	.no_dead_strip plt_System_Xml_Linq_XContainer_ContentReader__ctor_System_Xml_Linq_XContainer_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
+plt_System_Xml_Linq_XContainer_ContentReader__ctor_System_Xml_Linq_XContainer_System_Xml_XmlReader_System_Xml_Linq_LoadOptions:
+_p_53:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 1547
-	.no_dead_strip plt_System_Xml_Linq_XAttribute_get_IsNamespaceDeclaration
-plt_System_Xml_Linq_XAttribute_get_IsNamespaceDeclaration:
-_p_70:
+.word 1864
+	.no_dead_strip plt_System_Xml_Linq_XContainer_ContentReader_ReadContentFrom_System_Xml_Linq_XContainer_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
+plt_System_Xml_Linq_XContainer_ContentReader_ReadContentFrom_System_Xml_Linq_XContainer_System_Xml_XmlReader_System_Xml_Linq_LoadOptions:
+_p_54:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 1549
-	.no_dead_strip plt_System_Xml_Linq_XElement_GetNamespaceOfPrefixInScope_string_System_Xml_Linq_XElement
-plt_System_Xml_Linq_XElement_GetNamespaceOfPrefixInScope_string_System_Xml_Linq_XElement:
-_p_71:
+.word 1866
+	.no_dead_strip plt_System_Xml_Linq_NamespaceCache_Get_string
+plt_System_Xml_Linq_NamespaceCache_Get_string:
+_p_55:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 1551
-	.no_dead_strip plt_System_Xml_Linq_XElement__ctor_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
-plt_System_Xml_Linq_XElement__ctor_System_Xml_XmlReader_System_Xml_Linq_LoadOptions:
-_p_72:
+.word 1868
+	.no_dead_strip plt_System_Xml_Linq_XNamespace_GetName_string
+plt_System_Xml_Linq_XNamespace_GetName_string:
+_p_56:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
-.word 1553
-	.no_dead_strip plt_SR_Format_string_object_object
-plt_SR_Format_string_object_object:
-_p_73:
+.word 1871
+	.no_dead_strip plt_System_Xml_Linq_XElement__ctor_System_Xml_Linq_XName
+plt_System_Xml_Linq_XElement__ctor_System_Xml_Linq_XName:
+_p_57:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 1555
-	.no_dead_strip plt_System_Xml_Linq_XElement_Parse_string_System_Xml_Linq_LoadOptions
-plt_System_Xml_Linq_XElement_Parse_string_System_Xml_Linq_LoadOptions:
-_p_74:
+.word 1874
+	.no_dead_strip plt_System_Xml_Linq_XAttribute__ctor_System_Xml_Linq_XName_object
+plt_System_Xml_Linq_XAttribute__ctor_System_Xml_Linq_XName_object:
+_p_58:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
-.word 1557
-	.no_dead_strip plt_System_IO_StringReader__ctor_string
-plt_System_IO_StringReader__ctor_string:
-_p_75:
+.word 1876
+	.no_dead_strip plt_System_Xml_Linq_XElement_AppendAttributeSkipNotify_System_Xml_Linq_XAttribute
+plt_System_Xml_Linq_XElement_AppendAttributeSkipNotify_System_Xml_Linq_XAttribute:
+_p_59:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 1559
-	.no_dead_strip plt_System_Xml_Linq_XNode_GetXmlReaderSettings_System_Xml_Linq_LoadOptions
-plt_System_Xml_Linq_XNode_GetXmlReaderSettings_System_Xml_Linq_LoadOptions:
-_p_76:
+.word 1878
+	.no_dead_strip plt_System_Xml_Linq_XCData__ctor_string
+plt_System_Xml_Linq_XCData__ctor_string:
+_p_60:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 1564
-	.no_dead_strip plt_System_Xml_XmlReader_Create_System_IO_TextReader_System_Xml_XmlReaderSettings
-plt_System_Xml_XmlReader_Create_System_IO_TextReader_System_Xml_XmlReaderSettings:
-_p_77:
+.word 1880
+	.no_dead_strip plt_System_Xml_Linq_XComment__ctor_string
+plt_System_Xml_Linq_XComment__ctor_string:
+_p_61:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 1567
-	.no_dead_strip plt_System_Xml_Linq_XElement_Load_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
-plt_System_Xml_Linq_XElement_Load_System_Xml_XmlReader_System_Xml_Linq_LoadOptions:
-_p_78:
+.word 1882
+	.no_dead_strip plt_System_Xml_Linq_XProcessingInstruction__ctor_string_string
+plt_System_Xml_Linq_XProcessingInstruction__ctor_string_string:
+_p_62:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 1572
-	.no_dead_strip plt_System_Xml_Linq_ElementWriter__ctor_System_Xml_XmlWriter
-plt_System_Xml_Linq_ElementWriter__ctor_System_Xml_XmlWriter:
-_p_79:
+.word 1884
+	.no_dead_strip plt_System_Xml_Linq_XDocumentType__ctor_string_string_string_string
+plt_System_Xml_Linq_XDocumentType__ctor_string_string_string_string:
+_p_63:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 1574
-	.no_dead_strip plt_System_Xml_Linq_ElementWriter_WriteElement_System_Xml_Linq_XElement
-plt_System_Xml_Linq_ElementWriter_WriteElement_System_Xml_Linq_XElement:
-_p_80:
+.word 1887
+	.no_dead_strip plt_System_Xml_Linq_XObject_SetBaseUri_string
+plt_System_Xml_Linq_XObject_SetBaseUri_string:
+_p_64:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 1576
-	.no_dead_strip plt_System_Xml_XmlDocument__ctor
-plt_System_Xml_XmlDocument__ctor:
-_p_81:
+.word 1889
+	.no_dead_strip plt_System_Xml_Linq_XObject_SetLineInfo_int_int
+plt_System_Xml_Linq_XObject_SetLineInfo_int_int:
+_p_65:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 1578
-	.no_dead_strip plt_System_Xml_Linq_XElement_Parse_string
-plt_System_Xml_Linq_XElement_Parse_string:
-_p_82:
+.word 1892
+	.no_dead_strip plt_System_Xml_Linq_XElement_SetEndElementLineInfo_int_int
+plt_System_Xml_Linq_XElement_SetEndElementLineInfo_int_int:
+_p_66:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
-.word 1583
-	.no_dead_strip plt_System_Xml_Linq_XElement__ctor_System_Xml_Linq_XElement
-plt_System_Xml_Linq_XElement__ctor_System_Xml_Linq_XElement:
-_p_83:
+.word 1895
+	.no_dead_strip plt_System_Xml_Linq_XObject_get_HasBaseUri
+plt_System_Xml_Linq_XObject_get_HasBaseUri:
+_p_67:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 1585
-	.no_dead_strip plt_System_Xml_Linq_XElement_ReadElementFromImpl_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
-plt_System_Xml_Linq_XElement_ReadElementFromImpl_System_Xml_XmlReader_System_Xml_Linq_LoadOptions:
-_p_84:
+.word 1897
+	.no_dead_strip plt_System_Xml_Linq_XObject_get_BaseUri
+plt_System_Xml_Linq_XObject_get_BaseUri:
+_p_68:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 1587
-	.no_dead_strip plt_System_Xml_Linq_XContainer_ReadContentFrom_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
-plt_System_Xml_Linq_XContainer_ReadContentFrom_System_Xml_XmlReader_System_Xml_Linq_LoadOptions:
-_p_85:
+.word 1900
+	.no_dead_strip plt_System_Environment_get_CurrentManagedThreadId
+plt_System_Environment_get_CurrentManagedThreadId:
+_p_69:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1664]
 br x16
-.word 1589
-	.no_dead_strip plt_System_Xml_Linq_XNamespace_Get_string
-plt_System_Xml_Linq_XNamespace_Get_string:
-_p_86:
+.word 1903
+	.no_dead_strip plt_System_Xml_Linq_XContainer_get_LastNode
+plt_System_Xml_Linq_XContainer_get_LastNode:
+_p_70:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1672]
 br x16
-.word 1591
-	.no_dead_strip plt_System_Xml_Linq_LineInfoEndElementAnnotation__ctor_int_int
-plt_System_Xml_Linq_LineInfoEndElementAnnotation__ctor_int_int:
-_p_87:
+.word 1908
+	.no_dead_strip plt_System_Xml_Linq_XContainer__Nodesd__18_System_Collections_Generic_IEnumerable_System_Xml_Linq_XNode_GetEnumerator
+plt_System_Xml_Linq_XContainer__Nodesd__18_System_Collections_Generic_IEnumerable_System_Xml_Linq_XNode_GetEnumerator:
+_p_71:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1680]
 br x16
-.word 1593
-	.no_dead_strip plt_System_Xml_Linq_XObject_AddAnnotation_object
-plt_System_Xml_Linq_XObject_AddAnnotation_object:
-_p_88:
+.word 1910
+	.no_dead_strip plt_System_Text_StringBuilderCache_Acquire_int
+plt_System_Text_StringBuilderCache_Acquire_int:
+_p_72:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1688]
 br x16
-.word 1595
-	.no_dead_strip plt__rgctx_fetch_0
-plt__rgctx_fetch_0:
-_p_89:
+.word 1912
+	.no_dead_strip plt_System_Text_StringBuilder_Append_char
+plt_System_Text_StringBuilder_Append_char:
+_p_73:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1696]
 br x16
-.word 1618
-	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_REF_int
-plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_REF_int:
-_p_90:
+.word 1915
+	.no_dead_strip plt_System_Text_StringBuilderCache_GetStringAndRelease_System_Text_StringBuilder
+plt_System_Text_StringBuilderCache_GetStringAndRelease_System_Text_StringBuilder:
+_p_74:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1704]
 br x16
-.word 1626
-	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_TryGetValue_string_int_int_TValue_REF_
-plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_TryGetValue_string_int_int_TValue_REF_:
-_p_91:
+.word 1920
+	.no_dead_strip plt_System_Xml_Linq_XContainer__ctor_System_Xml_Linq_XContainer
+plt_System_Xml_Linq_XContainer__ctor_System_Xml_Linq_XContainer:
+_p_75:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1712]
 br x16
-.word 1640
-	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_TryAdd_TValue_REF_TValue_REF_
-plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_TryAdd_TValue_REF_TValue_REF_:
-_p_92:
+.word 1923
+	.no_dead_strip plt_System_Xml_Linq_XDeclaration__ctor_System_Xml_Linq_XDeclaration
+plt_System_Xml_Linq_XDeclaration__ctor_System_Xml_Linq_XDeclaration:
+_p_76:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1720]
 br x16
-.word 1654
-	.no_dead_strip plt__jit_icall_mono_monitor_enter_v4_internal
-plt__jit_icall_mono_monitor_enter_v4_internal:
-_p_93:
+.word 1925
+	.no_dead_strip plt_System_Xml_Linq_XDocument_GetFirstNode_System_Xml_Linq_XElement
+plt_System_Xml_Linq_XDocument_GetFirstNode_System_Xml_Linq_XElement:
+_p_77:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1728]
 br x16
-.word 1668
-	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_Resize
-plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_Resize:
-_p_94:
+.word 1927
+	.no_dead_strip plt_System_Xml_Linq_XContainer_WriteContentTo_System_Xml_XmlWriter
+plt_System_Xml_Linq_XContainer_WriteContentTo_System_Xml_XmlWriter:
+_p_78:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1736]
 br x16
-.word 1671
-	.no_dead_strip plt_System_Threading_Monitor_Exit_object
-plt_System_Threading_Monitor_Exit_object:
-_p_95:
+.word 1939
+	.no_dead_strip plt_System_Xml_Linq_XDocument__ctor_System_Xml_Linq_XDocument
+plt_System_Xml_Linq_XDocument__ctor_System_Xml_Linq_XDocument:
+_p_79:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1744]
 br x16
-.word 1685
-	.no_dead_strip plt_wrapper_alloc_object_AllocVector_intptr_intptr
-plt_wrapper_alloc_object_AllocVector_intptr_intptr:
-_p_96:
+.word 1941
+	.no_dead_strip plt__rgctx_fetch_0
+plt__rgctx_fetch_0:
+_p_80:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1752]
 br x16
-.word 1690
-	.no_dead_strip plt__rgctx_fetch_1
-plt__rgctx_fetch_1:
-_p_97:
+.word 1965
+	.no_dead_strip plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
+plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
+_p_81:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1760]
 br x16
-.word 1718
-	.no_dead_strip plt__rgctx_fetch_2
-plt__rgctx_fetch_2:
-_p_98:
+.word 1973
+	.no_dead_strip plt_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr
+plt_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr:
+_p_82:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1768]
 br x16
-.word 1728
-	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_REF_int_0
-plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_REF_int_0:
-_p_99:
+.word 1981
+	.no_dead_strip plt_System_Xml_Linq_XDocument_ValidateDocument_System_Xml_Linq_XNode_System_Xml_XmlNodeType_System_Xml_XmlNodeType
+plt_System_Xml_Linq_XDocument_ValidateDocument_System_Xml_Linq_XNode_System_Xml_XmlNodeType_System_Xml_XmlNodeType:
+_p_83:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1776]
 br x16
-.word 1736
-	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_TryAdd_TValue_REF_TValue_REF__0
-plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_TryAdd_TValue_REF_TValue_REF__0:
-_p_100:
+.word 1989
+	.no_dead_strip plt_System_Xml_Linq_XDocument_IsWhitespace_string
+plt_System_Xml_Linq_XDocument_IsWhitespace_string:
+_p_84:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1784]
 br x16
-.word 1750
-	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_ComputeHashCode_string_int_int
-plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_ComputeHashCode_string_int_int:
-_p_101:
+.word 1991
+	.no_dead_strip plt_System_Xml_XmlConvert_VerifyName_string
+plt_System_Xml_XmlConvert_VerifyName_string:
+_p_85:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1792]
 br x16
-.word 1764
-	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_FindEntry_int_string_int_int_int_
-plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_FindEntry_int_string_int_int_int_:
-_p_102:
+.word 1993
+	.no_dead_strip plt_System_Xml_Linq_XDocumentType__ctor_System_Xml_Linq_XDocumentType
+plt_System_Xml_Linq_XDocumentType__ctor_System_Xml_Linq_XDocumentType:
+_p_86:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1800]
 br x16
-.word 1778
-	.no_dead_strip plt_string_CompareOrdinal_string_int_string_int_int
-plt_string_CompareOrdinal_string_int_string_int_int:
-_p_103:
+.word 1998
+	.no_dead_strip plt_System_Xml_Linq_XAttribute__ctor_System_Xml_Linq_XAttribute
+plt_System_Xml_Linq_XAttribute__ctor_System_Xml_Linq_XAttribute:
+_p_87:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1808]
 br x16
-.word 1792
-	.no_dead_strip plt_System_Xml_Linq_ElementWriter_PushAncestors_System_Xml_Linq_XElement
-plt_System_Xml_Linq_ElementWriter_PushAncestors_System_Xml_Linq_XElement:
-_p_104:
+.word 2000
+	.no_dead_strip plt_System_Xml_Linq_XElement_ReadElementFrom_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
+plt_System_Xml_Linq_XElement_ReadElementFrom_System_Xml_XmlReader_System_Xml_Linq_LoadOptions:
+_p_88:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1816]
 br x16
-.word 1797
-	.no_dead_strip plt_System_Xml_Linq_ElementWriter_WriteStartElement_System_Xml_Linq_XElement
-plt_System_Xml_Linq_ElementWriter_WriteStartElement_System_Xml_Linq_XElement:
-_p_105:
+.word 2002
+	.no_dead_strip plt_System_Xml_Linq_XContainer_RemoveNodes
+plt_System_Xml_Linq_XContainer_RemoveNodes:
+_p_89:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1824]
 br x16
-.word 1799
-	.no_dead_strip plt_System_Xml_Linq_ElementWriter_WriteEndElement
-plt_System_Xml_Linq_ElementWriter_WriteEndElement:
-_p_106:
+.word 2004
+	.no_dead_strip plt_System_Xml_Linq_XElement_GetAttributes_System_Xml_Linq_XName
+plt_System_Xml_Linq_XElement_GetAttributes_System_Xml_Linq_XName:
+_p_90:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1832]
 br x16
-.word 1801
-	.no_dead_strip plt_System_Xml_Linq_ElementWriter_WriteFullEndElement
-plt_System_Xml_Linq_ElementWriter_WriteFullEndElement:
-_p_107:
+.word 2006
+	.no_dead_strip plt_System_Xml_Linq_XAttribute_get_IsNamespaceDeclaration
+plt_System_Xml_Linq_XAttribute_get_IsNamespaceDeclaration:
+_p_91:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1840]
 br x16
-.word 1803
-	.no_dead_strip plt_System_Xml_Linq_NamespaceResolver_GetPrefixOfNamespace_System_Xml_Linq_XNamespace_bool
-plt_System_Xml_Linq_NamespaceResolver_GetPrefixOfNamespace_System_Xml_Linq_XNamespace_bool:
-_p_108:
+.word 2008
+	.no_dead_strip plt_System_Xml_Linq_XElement_GetNamespaceOfPrefixInScope_string_System_Xml_Linq_XElement
+plt_System_Xml_Linq_XElement_GetNamespaceOfPrefixInScope_string_System_Xml_Linq_XElement:
+_p_92:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1848]
 br x16
-.word 1805
-	.no_dead_strip plt_System_Xml_Linq_NamespaceResolver_AddFirst_string_System_Xml_Linq_XNamespace
-plt_System_Xml_Linq_NamespaceResolver_AddFirst_string_System_Xml_Linq_XNamespace:
-_p_109:
+.word 2010
+	.no_dead_strip plt_System_Xml_Linq_XElement__ctor_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
+plt_System_Xml_Linq_XElement__ctor_System_Xml_XmlReader_System_Xml_Linq_LoadOptions:
+_p_93:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1856]
 br x16
-.word 1807
-	.no_dead_strip plt_System_Xml_Linq_NamespaceResolver_Add_string_System_Xml_Linq_XNamespace
-plt_System_Xml_Linq_NamespaceResolver_Add_string_System_Xml_Linq_XNamespace:
-_p_110:
+.word 2012
+	.no_dead_strip plt_SR_Format_string_object_object
+plt_SR_Format_string_object_object:
+_p_94:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1864]
 br x16
-.word 1809
-	.no_dead_strip plt_System_Xml_Linq_NamespaceResolver_PopScope
-plt_System_Xml_Linq_NamespaceResolver_PopScope:
-_p_111:
+.word 2014
+	.no_dead_strip plt_System_Xml_Linq_XElement_Parse_string_System_Xml_Linq_LoadOptions
+plt_System_Xml_Linq_XElement_Parse_string_System_Xml_Linq_LoadOptions:
+_p_95:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1872]
 br x16
-.word 1811
-	.no_dead_strip plt_System_Xml_Linq_ElementWriter_PushElement_System_Xml_Linq_XElement
-plt_System_Xml_Linq_ElementWriter_PushElement_System_Xml_Linq_XElement:
-_p_112:
+.word 2016
+	.no_dead_strip plt_System_IO_StringReader__ctor_string
+plt_System_IO_StringReader__ctor_string:
+_p_96:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1880]
 br x16
-.word 1813
-	.no_dead_strip plt_System_Xml_Linq_ElementWriter_GetPrefixOfNamespace_System_Xml_Linq_XNamespace_bool
-plt_System_Xml_Linq_ElementWriter_GetPrefixOfNamespace_System_Xml_Linq_XNamespace_bool:
-_p_113:
+.word 2018
+	.no_dead_strip plt_System_Xml_Linq_XNode_GetXmlReaderSettings_System_Xml_Linq_LoadOptions
+plt_System_Xml_Linq_XNode_GetXmlReaderSettings_System_Xml_Linq_LoadOptions:
+_p_97:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1888]
 br x16
-.word 1815
-	.no_dead_strip plt_System_Xml_XmlConvert_VerifyNCName_string
-plt_System_Xml_XmlConvert_VerifyNCName_string:
-_p_114:
+.word 2023
+	.no_dead_strip plt_System_Xml_XmlReader_Create_System_IO_TextReader_System_Xml_XmlReaderSettings
+plt_System_Xml_XmlReader_Create_System_IO_TextReader_System_Xml_XmlReaderSettings:
+_p_98:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1896]
 br x16
-.word 1817
-	.no_dead_strip plt_string_Concat_string_string_string_string
-plt_string_Concat_string_string_string_string:
-_p_115:
+.word 2026
+	.no_dead_strip plt_System_Xml_Linq_XElement_Load_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
+plt_System_Xml_Linq_XElement_Load_System_Xml_XmlReader_System_Xml_Linq_LoadOptions:
+_p_99:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1904]
 br x16
-.word 1822
-	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_System_Xml_Linq_XName__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_System_Xml_Linq_XName_int
-plt_System_Xml_Linq_XHashtable_1_System_Xml_Linq_XName__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_System_Xml_Linq_XName_int:
-_p_116:
+.word 2031
+	.no_dead_strip plt_System_Xml_Linq_ElementWriter__ctor_System_Xml_XmlWriter
+plt_System_Xml_Linq_ElementWriter__ctor_System_Xml_XmlWriter:
+_p_100:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1912]
 br x16
-.word 1827
-	.no_dead_strip plt_System_Xml_Linq_XNamespace_GetName_string_int_int
-plt_System_Xml_Linq_XNamespace_GetName_string_int_int:
-_p_117:
+.word 2033
+	.no_dead_strip plt_System_Xml_Linq_ElementWriter_WriteElement_System_Xml_Linq_XElement
+plt_System_Xml_Linq_ElementWriter_WriteElement_System_Xml_Linq_XElement:
+_p_101:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1920]
 br x16
-.word 1838
-	.no_dead_strip plt_System_Xml_Linq_XNamespace_EnsureNamespace_System_WeakReference__string
-plt_System_Xml_Linq_XNamespace_EnsureNamespace_System_WeakReference__string:
-_p_118:
+.word 2036
+	.no_dead_strip plt_System_Xml_XmlDocument__ctor
+plt_System_Xml_XmlDocument__ctor:
+_p_102:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1928]
 br x16
-.word 1841
-	.no_dead_strip plt_System_Xml_Linq_XNamespace_Get_string_int_int
-plt_System_Xml_Linq_XNamespace_Get_string_int_int:
-_p_119:
+.word 2039
+	.no_dead_strip plt_System_Xml_Linq_XElement_Parse_string
+plt_System_Xml_Linq_XElement_Parse_string:
+_p_103:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1936]
 br x16
-.word 1844
-	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_System_Xml_Linq_XName_TryGetValue_string_int_int_System_Xml_Linq_XName_
-plt_System_Xml_Linq_XHashtable_1_System_Xml_Linq_XName_TryGetValue_string_int_int_System_Xml_Linq_XName_:
-_p_120:
+.word 2044
+	.no_dead_strip plt_System_Xml_Linq_XElement_Attribute_System_Xml_Linq_XName
+plt_System_Xml_Linq_XElement_Attribute_System_Xml_Linq_XName:
+_p_104:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1944]
 br x16
-.word 1847
-	.no_dead_strip plt_string_Substring_int_int
-plt_string_Substring_int_int:
-_p_121:
+.word 2046
+	.no_dead_strip plt_System_Xml_Linq_XElement_AppendAttribute_System_Xml_Linq_XAttribute
+plt_System_Xml_Linq_XElement_AppendAttribute_System_Xml_Linq_XAttribute:
+_p_105:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1952]
 br x16
-.word 1858
-	.no_dead_strip plt_System_Xml_Linq_XName__ctor_System_Xml_Linq_XNamespace_string
-plt_System_Xml_Linq_XName__ctor_System_Xml_Linq_XNamespace_string:
-_p_122:
+.word 2048
+	.no_dead_strip plt_System_Xml_Linq_XElement__ctor_System_Xml_Linq_XElement
+plt_System_Xml_Linq_XElement__ctor_System_Xml_Linq_XElement:
+_p_106:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1960]
 br x16
-.word 1863
-	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_System_Xml_Linq_XName_Add_System_Xml_Linq_XName
-plt_System_Xml_Linq_XHashtable_1_System_Xml_Linq_XName_Add_System_Xml_Linq_XName:
-_p_123:
+.word 2050
+	.no_dead_strip plt_System_Xml_Linq_XElement__GetAttributesd__116__ctor_int
+plt_System_Xml_Linq_XElement__GetAttributesd__116__ctor_int:
+_p_107:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1968]
 br x16
-.word 1865
-	.no_dead_strip plt_System_Xml_Linq_XNamespace_get_None
-plt_System_Xml_Linq_XNamespace_get_None:
-_p_124:
+.word 2052
+	.no_dead_strip plt_System_Xml_Linq_XElement_ReadElementFromImpl_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
+plt_System_Xml_Linq_XElement_ReadElementFromImpl_System_Xml_XmlReader_System_Xml_Linq_LoadOptions:
+_p_108:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1976]
 br x16
-.word 1876
-	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_System_WeakReference__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_System_WeakReference_int
-plt_System_Xml_Linq_XHashtable_1_System_WeakReference__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_System_WeakReference_int:
-_p_125:
+.word 2055
+	.no_dead_strip plt_System_Xml_Linq_XContainer_ReadContentFrom_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
+plt_System_Xml_Linq_XContainer_ReadContentFrom_System_Xml_XmlReader_System_Xml_Linq_LoadOptions:
+_p_109:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1984]
 br x16
-.word 1878
-	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_System_WeakReference_TryGetValue_string_int_int_System_WeakReference_
-plt_System_Xml_Linq_XHashtable_1_System_WeakReference_TryGetValue_string_int_int_System_WeakReference_:
-_p_126:
+.word 2057
+	.no_dead_strip plt_System_Xml_Linq_XNamespace_Get_string
+plt_System_Xml_Linq_XNamespace_Get_string:
+_p_110:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #1992]
 br x16
-.word 1889
-	.no_dead_strip plt_System_Xml_Linq_XNamespace_get_Xml
-plt_System_Xml_Linq_XNamespace_get_Xml:
-_p_127:
+.word 2059
+	.no_dead_strip plt_System_Xml_Linq_LineInfoEndElementAnnotation__ctor_int_int
+plt_System_Xml_Linq_LineInfoEndElementAnnotation__ctor_int_int:
+_p_111:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2000]
 br x16
-.word 1900
-	.no_dead_strip plt_System_Xml_Linq_XNamespace_get_Xmlns
-plt_System_Xml_Linq_XNamespace_get_Xmlns:
-_p_128:
+.word 2062
+	.no_dead_strip plt_System_Xml_Linq_XObject_AddAnnotation_object
+plt_System_Xml_Linq_XObject_AddAnnotation_object:
+_p_112:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2008]
 br x16
-.word 1902
-	.no_dead_strip plt_System_Xml_Linq_XNamespace__ctor_string
-plt_System_Xml_Linq_XNamespace__ctor_string:
-_p_129:
+.word 2064
+	.no_dead_strip plt_System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_Generic_IEnumerable_System_Xml_Linq_XAttribute_GetEnumerator
+plt_System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_Generic_IEnumerable_System_Xml_Linq_XAttribute_GetEnumerator:
+_p_113:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2016]
 br x16
-.word 1904
-	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
-plt__jit_icall_ves_icall_object_new_specific:
-_p_130:
+.word 2067
+	.no_dead_strip plt__rgctx_fetch_1
+plt__rgctx_fetch_1:
+_p_114:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2024]
 br x16
-.word 1906
-	.no_dead_strip plt_System_WeakReference__ctor_object
-plt_System_WeakReference__ctor_object:
-_p_131:
+.word 2090
+	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_REF_int
+plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_REF_int:
+_p_115:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2032]
 br x16
-.word 1909
-	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_System_WeakReference_Add_System_WeakReference
-plt_System_Xml_Linq_XHashtable_1_System_WeakReference_Add_System_WeakReference:
-_p_132:
+.word 2098
+	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_TryGetValue_string_int_int_TValue_REF_
+plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_TryGetValue_string_int_int_TValue_REF_:
+_p_116:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2040]
 br x16
-.word 1914
-	.no_dead_strip plt_System_Xml_Linq_XObject_GetSaveOptionsFromAnnotations
-plt_System_Xml_Linq_XObject_GetSaveOptionsFromAnnotations:
-_p_133:
+.word 2113
+	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_TryAdd_TValue_REF_TValue_REF_
+plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_TryAdd_TValue_REF_TValue_REF_:
+_p_117:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2048]
 br x16
-.word 1925
-	.no_dead_strip plt_System_Xml_Linq_XNode_GetXmlString_System_Xml_Linq_SaveOptions
-plt_System_Xml_Linq_XNode_GetXmlString_System_Xml_Linq_SaveOptions:
-_p_134:
+.word 2128
+	.no_dead_strip plt__jit_icall_mono_monitor_enter_v4_internal
+plt__jit_icall_mono_monitor_enter_v4_internal:
+_p_118:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2056]
 br x16
-.word 1928
-	.no_dead_strip plt_System_Xml_XmlReaderSettings__ctor
-plt_System_Xml_XmlReaderSettings__ctor:
-_p_135:
+.word 2143
+	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_Resize
+plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_Resize:
+_p_119:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2064]
 br x16
-.word 1931
-	.no_dead_strip plt_System_Xml_XmlReaderSettings_set_IgnoreWhitespace_bool
-plt_System_Xml_XmlReaderSettings_set_IgnoreWhitespace_bool:
-_p_136:
+.word 2146
+	.no_dead_strip plt_System_Threading_Monitor_Exit_object
+plt_System_Threading_Monitor_Exit_object:
+_p_120:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2072]
 br x16
-.word 1936
-	.no_dead_strip plt_System_Xml_XmlReaderSettings_set_DtdProcessing_System_Xml_DtdProcessing
-plt_System_Xml_XmlReaderSettings_set_DtdProcessing_System_Xml_DtdProcessing:
-_p_137:
+.word 2161
+	.no_dead_strip plt_wrapper_alloc_object_AllocVector_intptr_intptr
+plt_wrapper_alloc_object_AllocVector_intptr_intptr:
+_p_121:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2080]
 br x16
-.word 1941
-	.no_dead_strip plt_System_Xml_XmlReaderSettings_set_MaxCharactersFromEntities_long
-plt_System_Xml_XmlReaderSettings_set_MaxCharactersFromEntities_long:
-_p_138:
+.word 2166
+	.no_dead_strip plt__rgctx_fetch_2
+plt__rgctx_fetch_2:
+_p_122:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2088]
 br x16
-.word 1946
-	.no_dead_strip plt_System_Xml_XmlWriterSettings_set_OmitXmlDeclaration_bool
-plt_System_Xml_XmlWriterSettings_set_OmitXmlDeclaration_bool:
-_p_139:
+.word 2194
+	.no_dead_strip plt__rgctx_fetch_3
+plt__rgctx_fetch_3:
+_p_123:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2096]
 br x16
-.word 1951
-	.no_dead_strip plt_System_Xml_XmlWriterSettings_set_Indent_bool
-plt_System_Xml_XmlWriterSettings_set_Indent_bool:
-_p_140:
+.word 2204
+	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_REF_int_0
+plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_REF_int_0:
+_p_124:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2104]
 br x16
-.word 1956
-	.no_dead_strip plt_System_Xml_XmlWriterSettings_set_NamespaceHandling_System_Xml_NamespaceHandling
-plt_System_Xml_XmlWriterSettings_set_NamespaceHandling_System_Xml_NamespaceHandling:
-_p_141:
+.word 2212
+	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_TryAdd_TValue_REF_TValue_REF__0
+plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_TryAdd_TValue_REF_TValue_REF__0:
+_p_125:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2112]
 br x16
-.word 1961
-	.no_dead_strip plt_System_Xml_Linq_XObject_Annotation_System_Xml_Linq_BaseUriAnnotation
-plt_System_Xml_Linq_XObject_Annotation_System_Xml_Linq_BaseUriAnnotation:
-_p_142:
+.word 2227
+	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_ComputeHashCode_string_int_int
+plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_ComputeHashCode_string_int_int:
+_p_126:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2120]
 br x16
-.word 1966
-	.no_dead_strip plt_System_Array_Resize_object_object____int
-plt_System_Array_Resize_object_object____int:
-_p_143:
+.word 2242
+	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_FindEntry_int_string_int_int_int_
+plt_System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_FindEntry_int_string_int_int_int_:
+_p_127:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2128]
 br x16
-.word 1978
-	.no_dead_strip plt__rgctx_fetch_3
-plt__rgctx_fetch_3:
-_p_144:
+.word 2257
+	.no_dead_strip plt_string_CompareOrdinal_string_int_string_int_int
+plt_string_CompareOrdinal_string_int_string_int_int:
+_p_128:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2136]
 br x16
-.word 2013
-	.no_dead_strip plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
-plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
-_p_145:
+.word 2272
+	.no_dead_strip plt_System_Xml_Linq_ElementWriter_PushAncestors_System_Xml_Linq_XElement
+plt_System_Xml_Linq_ElementWriter_PushAncestors_System_Xml_Linq_XElement:
+_p_129:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2144]
 br x16
-.word 2021
-	.no_dead_strip plt_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr
-plt_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr:
-_p_146:
+.word 2277
+	.no_dead_strip plt_System_Xml_Linq_ElementWriter_WriteStartElement_System_Xml_Linq_XElement
+plt_System_Xml_Linq_ElementWriter_WriteStartElement_System_Xml_Linq_XElement:
+_p_130:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2152]
 br x16
-.word 2029
-	.no_dead_strip plt_System_Xml_Linq_XObject_Annotation_System_Xml_Linq_LineInfoAnnotation
-plt_System_Xml_Linq_XObject_Annotation_System_Xml_Linq_LineInfoAnnotation:
-_p_147:
+.word 2280
+	.no_dead_strip plt_System_Xml_Linq_ElementWriter_WriteEndElement
+plt_System_Xml_Linq_ElementWriter_WriteEndElement:
+_p_131:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2160]
 br x16
-.word 2037
-	.no_dead_strip plt_System_Xml_Linq_XObject_AnnotationForSealedType_System_Type
-plt_System_Xml_Linq_XObject_AnnotationForSealedType_System_Type:
-_p_148:
+.word 2283
+	.no_dead_strip plt_System_Xml_Linq_ElementWriter_WriteFullEndElement
+plt_System_Xml_Linq_ElementWriter_WriteFullEndElement:
+_p_132:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2168]
 br x16
-.word 2049
-	.no_dead_strip plt_System_Xml_Linq_XProcessingInstruction_ValidateName_string
-plt_System_Xml_Linq_XProcessingInstruction_ValidateName_string:
-_p_149:
+.word 2286
+	.no_dead_strip plt_System_Xml_Linq_NamespaceResolver_GetPrefixOfNamespace_System_Xml_Linq_XNamespace_bool
+plt_System_Xml_Linq_NamespaceResolver_GetPrefixOfNamespace_System_Xml_Linq_XNamespace_bool:
+_p_133:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2176]
 br x16
-.word 2052
-	.no_dead_strip plt_System_Xml_Linq_XProcessingInstruction__ctor_System_Xml_Linq_XProcessingInstruction
-plt_System_Xml_Linq_XProcessingInstruction__ctor_System_Xml_Linq_XProcessingInstruction:
-_p_150:
+.word 2289
+	.no_dead_strip plt_System_Xml_Linq_NamespaceResolver_AddFirst_string_System_Xml_Linq_XNamespace
+plt_System_Xml_Linq_NamespaceResolver_AddFirst_string_System_Xml_Linq_XNamespace:
+_p_134:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2184]
 br x16
-.word 2055
-	.no_dead_strip plt_string_Equals_string_string_System_StringComparison
-plt_string_Equals_string_string_System_StringComparison:
-_p_151:
+.word 2292
+	.no_dead_strip plt_System_Xml_Linq_NamespaceResolver_Add_string_System_Xml_Linq_XNamespace
+plt_System_Xml_Linq_NamespaceResolver_Add_string_System_Xml_Linq_XNamespace:
+_p_135:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2192]
 br x16
-.word 2058
-	.no_dead_strip plt_System_Text_StringBuilder_Clear
-plt_System_Text_StringBuilder_Clear:
-_p_152:
+.word 2295
+	.no_dead_strip plt_System_Xml_Linq_NamespaceResolver_PopScope
+plt_System_Xml_Linq_NamespaceResolver_PopScope:
+_p_136:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2200]
 br x16
-.word 2063
-	.no_dead_strip plt_System_Text_StringBuilder__ctor_int
-plt_System_Text_StringBuilder__ctor_int:
-_p_153:
+.word 2298
+	.no_dead_strip plt_System_Xml_Linq_ElementWriter_PushElement_System_Xml_Linq_XElement
+plt_System_Xml_Linq_ElementWriter_PushElement_System_Xml_Linq_XElement:
+_p_137:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2208]
 br x16
-.word 2068
-	.no_dead_strip plt_System_Text_StringBuilderCache_Release_System_Text_StringBuilder
-plt_System_Text_StringBuilderCache_Release_System_Text_StringBuilder:
-_p_154:
+.word 2301
+	.no_dead_strip plt_System_Xml_Linq_ElementWriter_GetPrefixOfNamespace_System_Xml_Linq_XNamespace_bool
+plt_System_Xml_Linq_ElementWriter_GetPrefixOfNamespace_System_Xml_Linq_XNamespace_bool:
+_p_138:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2216]
 br x16
-.word 2073
-	.no_dead_strip plt__rgctx_fetch_4
-plt__rgctx_fetch_4:
-_p_155:
+.word 2304
+	.no_dead_strip plt_System_Xml_XmlConvert_VerifyNCName_string
+plt_System_Xml_XmlConvert_VerifyNCName_string:
+_p_139:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2224]
 br x16
-.word 2076
-	.no_dead_strip plt__rgctx_fetch_5
-plt__rgctx_fetch_5:
-_p_156:
+.word 2307
+	.no_dead_strip plt_string_Concat_string_string_string_string
+plt_string_Concat_string_string_string_string:
+_p_140:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2232]
 br x16
-.word 2107
-	.no_dead_strip plt_wrapper_alloc_object_Alloc_intptr
-plt_wrapper_alloc_object_Alloc_intptr:
-_p_157:
+.word 2312
+	.no_dead_strip plt_string_LastIndexOf_char
+plt_string_LastIndexOf_char:
+_p_141:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2240]
 br x16
-.word 2115
-	.no_dead_strip plt__rgctx_fetch_6
-plt__rgctx_fetch_6:
-_p_158:
+.word 2317
+	.no_dead_strip plt_System_Xml_Linq_XNamespace_Get_string_int_int
+plt_System_Xml_Linq_XNamespace_Get_string_int_int:
+_p_142:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2248]
 br x16
-.word 2123
-	.no_dead_strip plt__rgctx_fetch_7
-plt__rgctx_fetch_7:
-_p_159:
+.word 2322
+	.no_dead_strip plt_System_Xml_Linq_XNamespace_GetName_string_int_int
+plt_System_Xml_Linq_XNamespace_GetName_string_int_int:
+_p_143:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2256]
 br x16
-.word 2154
-	.no_dead_strip plt__rgctx_fetch_8
-plt__rgctx_fetch_8:
-_p_160:
+.word 2325
+	.no_dead_strip plt_System_Xml_Linq_XNamespace_get_None
+plt_System_Xml_Linq_XNamespace_get_None:
+_p_144:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2264]
 br x16
-.word 2180
-	.no_dead_strip plt__rgctx_fetch_9
-plt__rgctx_fetch_9:
-_p_161:
+.word 2328
+	.no_dead_strip plt_System_Xml_Linq_XName_Get_string
+plt_System_Xml_Linq_XName_Get_string:
+_p_145:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2272]
 br x16
-.word 2211
-	.no_dead_strip plt__rgctx_fetch_10
-plt__rgctx_fetch_10:
-_p_162:
+.word 2331
+	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_System_Xml_Linq_XName__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_System_Xml_Linq_XName_int
+plt_System_Xml_Linq_XHashtable_1_System_Xml_Linq_XName__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_System_Xml_Linq_XName_int:
+_p_146:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2280]
 br x16
-.word 2257
-	.no_dead_strip plt__rgctx_fetch_11
-plt__rgctx_fetch_11:
-_p_163:
+.word 2334
+	.no_dead_strip plt_System_Xml_Linq_XNamespace_EnsureNamespace_System_WeakReference__string
+plt_System_Xml_Linq_XNamespace_EnsureNamespace_System_WeakReference__string:
+_p_147:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2288]
 br x16
-.word 2289
-	.no_dead_strip plt__rgctx_fetch_12
-plt__rgctx_fetch_12:
-_p_164:
+.word 2345
+	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_System_Xml_Linq_XName_TryGetValue_string_int_int_System_Xml_Linq_XName_
+plt_System_Xml_Linq_XHashtable_1_System_Xml_Linq_XName_TryGetValue_string_int_int_System_Xml_Linq_XName_:
+_p_148:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2296]
 br x16
-.word 2297
-	.no_dead_strip plt__rgctx_fetch_13
-plt__rgctx_fetch_13:
-_p_165:
+.word 2348
+	.no_dead_strip plt_string_Substring_int_int
+plt_string_Substring_int_int:
+_p_149:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2304]
 br x16
-.word 2326
-	.no_dead_strip plt__rgctx_fetch_14
-plt__rgctx_fetch_14:
-_p_166:
+.word 2359
+	.no_dead_strip plt_System_Xml_Linq_XName__ctor_System_Xml_Linq_XNamespace_string
+plt_System_Xml_Linq_XName__ctor_System_Xml_Linq_XNamespace_string:
+_p_150:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2312]
 br x16
-.word 2367
-	.no_dead_strip plt__rgctx_fetch_15
-plt__rgctx_fetch_15:
-_p_167:
+.word 2364
+	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_System_Xml_Linq_XName_Add_System_Xml_Linq_XName
+plt_System_Xml_Linq_XHashtable_1_System_Xml_Linq_XName_Add_System_Xml_Linq_XName:
+_p_151:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2320]
 br x16
-.word 2377
-	.no_dead_strip plt__rgctx_fetch_16
-plt__rgctx_fetch_16:
-_p_168:
+.word 2367
+	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_System_WeakReference__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_System_WeakReference_int
+plt_System_Xml_Linq_XHashtable_1_System_WeakReference__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_System_WeakReference_int:
+_p_152:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2328]
 br x16
-.word 2461
-	.no_dead_strip plt__rgctx_fetch_17
-plt__rgctx_fetch_17:
-_p_169:
+.word 2378
+	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_System_WeakReference_TryGetValue_string_int_int_System_WeakReference_
+plt_System_Xml_Linq_XHashtable_1_System_WeakReference_TryGetValue_string_int_int_System_WeakReference_:
+_p_153:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2336]
 br x16
-.word 2488
-	.no_dead_strip plt__rgctx_fetch_18
-plt__rgctx_fetch_18:
-_p_170:
+.word 2389
+	.no_dead_strip plt_System_Xml_Linq_XNamespace_get_Xml
+plt_System_Xml_Linq_XNamespace_get_Xml:
+_p_154:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2344]
 br x16
-.word 2496
-	.no_dead_strip plt__rgctx_fetch_19
-plt__rgctx_fetch_19:
-_p_171:
+.word 2400
+	.no_dead_strip plt_System_Xml_Linq_XNamespace_get_Xmlns
+plt_System_Xml_Linq_XNamespace_get_Xmlns:
+_p_155:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2352]
 br x16
-.word 2527
-	.no_dead_strip plt__rgctx_fetch_20
-plt__rgctx_fetch_20:
-_p_172:
+.word 2403
+	.no_dead_strip plt_System_Xml_Linq_XNamespace__ctor_string
+plt_System_Xml_Linq_XNamespace__ctor_string:
+_p_156:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2360]
 br x16
-.word 2559
-	.no_dead_strip plt__rgctx_fetch_21
-plt__rgctx_fetch_21:
-_p_173:
+.word 2406
+	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
+plt__jit_icall_ves_icall_object_new_specific:
+_p_157:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2368]
 br x16
-.word 2610
-	.no_dead_strip plt__rgctx_fetch_22
-plt__rgctx_fetch_22:
-_p_174:
+.word 2409
+	.no_dead_strip plt_System_WeakReference__ctor_object
+plt_System_WeakReference__ctor_object:
+_p_158:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2376]
 br x16
-.word 2636
-	.no_dead_strip plt__rgctx_fetch_23
-plt__rgctx_fetch_23:
-_p_175:
+.word 2412
+	.no_dead_strip plt_System_Xml_Linq_XHashtable_1_System_WeakReference_Add_System_WeakReference
+plt_System_Xml_Linq_XHashtable_1_System_WeakReference_Add_System_WeakReference:
+_p_159:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2384]
 br x16
-.word 2665
-	.no_dead_strip plt__rgctx_fetch_24
-plt__rgctx_fetch_24:
-_p_176:
+.word 2417
+	.no_dead_strip plt_System_Xml_Linq_XContainer_RemoveNode_System_Xml_Linq_XNode
+plt_System_Xml_Linq_XContainer_RemoveNode_System_Xml_Linq_XNode:
+_p_160:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2392]
 br x16
-.word 2673
-	.no_dead_strip plt__rgctx_fetch_25
-plt__rgctx_fetch_25:
-_p_177:
+.word 2428
+	.no_dead_strip plt_System_Xml_Linq_XObject_GetSaveOptionsFromAnnotations
+plt_System_Xml_Linq_XObject_GetSaveOptionsFromAnnotations:
+_p_161:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2400]
 br x16
-.word 2745
-	.no_dead_strip plt__rgctx_fetch_26
-plt__rgctx_fetch_26:
-_p_178:
+.word 2430
+	.no_dead_strip plt_System_Xml_Linq_XNode_GetXmlString_System_Xml_Linq_SaveOptions
+plt_System_Xml_Linq_XNode_GetXmlString_System_Xml_Linq_SaveOptions:
+_p_162:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2408]
 br x16
-.word 2816
-	.no_dead_strip plt__rgctx_fetch_27
-plt__rgctx_fetch_27:
-_p_179:
+.word 2433
+	.no_dead_strip plt_System_Xml_XmlReaderSettings__ctor
+plt_System_Xml_XmlReaderSettings__ctor:
+_p_163:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2416]
 br x16
-.word 2850
-	.no_dead_strip plt__rgctx_fetch_28
-plt__rgctx_fetch_28:
-_p_180:
+.word 2436
+	.no_dead_strip plt_System_Xml_XmlReaderSettings_set_IgnoreWhitespace_bool
+plt_System_Xml_XmlReaderSettings_set_IgnoreWhitespace_bool:
+_p_164:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2424]
 br x16
-.word 2929
-	.no_dead_strip plt__jit_icall_mono_object_castclass_unbox
-plt__jit_icall_mono_object_castclass_unbox:
-_p_181:
+.word 2441
+	.no_dead_strip plt_System_Xml_XmlReaderSettings_set_DtdProcessing_System_Xml_DtdProcessing
+plt_System_Xml_XmlReaderSettings_set_DtdProcessing_System_Xml_DtdProcessing:
+_p_165:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2432]
 br x16
-.word 2937
-	.no_dead_strip plt__rgctx_fetch_29
-plt__rgctx_fetch_29:
-_p_182:
+.word 2446
+	.no_dead_strip plt_System_Xml_XmlReaderSettings_set_MaxCharactersFromEntities_long
+plt_System_Xml_XmlReaderSettings_set_MaxCharactersFromEntities_long:
+_p_166:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2440]
 br x16
-.word 2940
-	.no_dead_strip plt__rgctx_fetch_30
-plt__rgctx_fetch_30:
-_p_183:
+.word 2451
+	.no_dead_strip plt_System_Xml_XmlWriterSettings_set_OmitXmlDeclaration_bool
+plt_System_Xml_XmlWriterSettings_set_OmitXmlDeclaration_bool:
+_p_167:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2448]
 br x16
-.word 2948
-	.no_dead_strip plt__jit_icall_mono_arch_rethrow_exception
-plt__jit_icall_mono_arch_rethrow_exception:
-_p_184:
+.word 2456
+	.no_dead_strip plt_System_Xml_XmlWriterSettings_set_Indent_bool
+plt_System_Xml_XmlWriterSettings_set_Indent_bool:
+_p_168:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2456]
 br x16
-.word 2956
-	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
-plt__jit_icall_mono_thread_interruption_checkpoint:
-_p_185:
+.word 2461
+	.no_dead_strip plt_System_Xml_XmlWriterSettings_set_NamespaceHandling_System_Xml_NamespaceHandling
+plt_System_Xml_XmlWriterSettings_set_NamespaceHandling_System_Xml_NamespaceHandling:
+_p_169:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2464]
 br x16
-.word 2958
-	.no_dead_strip plt__rgctx_fetch_31
-plt__rgctx_fetch_31:
-_p_186:
+.word 2466
+	.no_dead_strip plt_System_Xml_Linq_XObject_Annotation_System_Xml_Linq_BaseUriAnnotation
+plt_System_Xml_Linq_XObject_Annotation_System_Xml_Linq_BaseUriAnnotation:
+_p_170:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2472]
 br x16
-.word 2961
-	.no_dead_strip plt__rgctx_fetch_32
-plt__rgctx_fetch_32:
-_p_187:
+.word 2471
+	.no_dead_strip plt_System_Array_Resize_object_object____int
+plt_System_Array_Resize_object_object____int:
+_p_171:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2480]
 br x16
-.word 2979
-	.no_dead_strip plt__rgctx_fetch_33
-plt__rgctx_fetch_33:
-_p_188:
+.word 2483
+	.no_dead_strip plt__rgctx_fetch_4
+plt__rgctx_fetch_4:
+_p_172:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2488]
 br x16
-.word 2993
-	.no_dead_strip plt__rgctx_fetch_34
-plt__rgctx_fetch_34:
-_p_189:
+.word 2518
+	.no_dead_strip plt_System_Xml_Linq_XObject_Annotation_System_Xml_Linq_LineInfoAnnotation
+plt_System_Xml_Linq_XObject_Annotation_System_Xml_Linq_LineInfoAnnotation:
+_p_173:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2496]
 br x16
-.word 3007
-	.no_dead_strip plt__rgctx_fetch_35
-plt__rgctx_fetch_35:
-_p_190:
+.word 2526
+	.no_dead_strip plt_System_Xml_Linq_XObject_Annotation_System_Xml_Linq_XObjectChangeAnnotation
+plt_System_Xml_Linq_XObject_Annotation_System_Xml_Linq_XObjectChangeAnnotation:
+_p_174:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2504]
 br x16
-.word 3034
-	.no_dead_strip plt__jit_icall_mono_delegate_begin_invoke
-plt__jit_icall_mono_delegate_begin_invoke:
-_p_191:
+.word 2538
+	.no_dead_strip plt_System_Xml_Linq_XObject_AnnotationForSealedType_System_Type
+plt_System_Xml_Linq_XObject_AnnotationForSealedType_System_Type:
+_p_175:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2512]
 br x16
-.word 3052
-	.no_dead_strip plt__rgctx_fetch_36
-plt__rgctx_fetch_36:
-_p_192:
+.word 2550
+	.no_dead_strip plt_System_Xml_Linq_XProcessingInstruction_ValidateName_string
+plt_System_Xml_Linq_XProcessingInstruction_ValidateName_string:
+_p_176:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2520]
 br x16
-.word 3055
-	.no_dead_strip plt__jit_icall_mono_delegate_end_invoke
-plt__jit_icall_mono_delegate_end_invoke:
-_p_193:
+.word 2553
+	.no_dead_strip plt_System_Xml_Linq_XProcessingInstruction__ctor_System_Xml_Linq_XProcessingInstruction
+plt_System_Xml_Linq_XProcessingInstruction__ctor_System_Xml_Linq_XProcessingInstruction:
+_p_177:
 adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
 add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
 ldr x16, [x16, #2528]
 br x16
-.word 3073
+.word 2556
+	.no_dead_strip plt_string_Equals_string_string_System_StringComparison
+plt_string_Equals_string_string_System_StringComparison:
+_p_178:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2536]
+br x16
+.word 2559
+	.no_dead_strip plt_System_Text_StringBuilder_Clear
+plt_System_Text_StringBuilder_Clear:
+_p_179:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2544]
+br x16
+.word 2564
+	.no_dead_strip plt_System_Text_StringBuilder__ctor_int
+plt_System_Text_StringBuilder__ctor_int:
+_p_180:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2552]
+br x16
+.word 2569
+	.no_dead_strip plt_System_Text_StringBuilderCache_Release_System_Text_StringBuilder
+plt_System_Text_StringBuilderCache_Release_System_Text_StringBuilder:
+_p_181:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2560]
+br x16
+.word 2574
+	.no_dead_strip plt__rgctx_fetch_5
+plt__rgctx_fetch_5:
+_p_182:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2568]
+br x16
+.word 2589
+	.no_dead_strip plt__rgctx_fetch_6
+plt__rgctx_fetch_6:
+_p_183:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2576]
+br x16
+.word 2656
+	.no_dead_strip plt__jit_icall_mono_object_castclass_unbox
+plt__jit_icall_mono_object_castclass_unbox:
+_p_184:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2584]
+br x16
+.word 2664
+	.no_dead_strip plt__rgctx_fetch_7
+plt__rgctx_fetch_7:
+_p_185:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2592]
+br x16
+.word 2667
+	.no_dead_strip plt_wrapper_alloc_object_Alloc_intptr
+plt_wrapper_alloc_object_Alloc_intptr:
+_p_186:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2600]
+br x16
+.word 2675
+	.no_dead_strip plt__rgctx_fetch_8
+plt__rgctx_fetch_8:
+_p_187:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2608]
+br x16
+.word 2683
+	.no_dead_strip plt__rgctx_fetch_9
+plt__rgctx_fetch_9:
+_p_188:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2616]
+br x16
+.word 2691
+	.no_dead_strip plt__rgctx_fetch_10
+plt__rgctx_fetch_10:
+_p_189:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2624]
+br x16
+.word 2723
+	.no_dead_strip plt__rgctx_fetch_11
+plt__rgctx_fetch_11:
+_p_190:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2632]
+br x16
+.word 2731
+	.no_dead_strip plt__rgctx_fetch_12
+plt__rgctx_fetch_12:
+_p_191:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2640]
+br x16
+.word 2763
+	.no_dead_strip plt__rgctx_fetch_13
+plt__rgctx_fetch_13:
+_p_192:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2648]
+br x16
+.word 2790
+	.no_dead_strip plt__rgctx_fetch_14
+plt__rgctx_fetch_14:
+_p_193:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2656]
+br x16
+.word 2822
+	.no_dead_strip plt__rgctx_fetch_15
+plt__rgctx_fetch_15:
+_p_194:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2664]
+br x16
+.word 2869
+	.no_dead_strip plt__rgctx_fetch_16
+plt__rgctx_fetch_16:
+_p_195:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2672]
+br x16
+.word 2902
+	.no_dead_strip plt__rgctx_fetch_17
+plt__rgctx_fetch_17:
+_p_196:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2680]
+br x16
+.word 2910
+	.no_dead_strip plt__rgctx_fetch_18
+plt__rgctx_fetch_18:
+_p_197:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2688]
+br x16
+.word 2940
+	.no_dead_strip plt__rgctx_fetch_19
+plt__rgctx_fetch_19:
+_p_198:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2696]
+br x16
+.word 2982
+	.no_dead_strip plt__rgctx_fetch_20
+plt__rgctx_fetch_20:
+_p_199:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2704]
+br x16
+.word 2992
+	.no_dead_strip plt__rgctx_fetch_21
+plt__rgctx_fetch_21:
+_p_200:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2712]
+br x16
+.word 3077
+	.no_dead_strip plt__rgctx_fetch_22
+plt__rgctx_fetch_22:
+_p_201:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2720]
+br x16
+.word 3105
+	.no_dead_strip plt__rgctx_fetch_23
+plt__rgctx_fetch_23:
+_p_202:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2728]
+br x16
+.word 3113
+	.no_dead_strip plt__rgctx_fetch_24
+plt__rgctx_fetch_24:
+_p_203:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2736]
+br x16
+.word 3145
+	.no_dead_strip plt__rgctx_fetch_25
+plt__rgctx_fetch_25:
+_p_204:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2744]
+br x16
+.word 3178
+	.no_dead_strip plt__rgctx_fetch_26
+plt__rgctx_fetch_26:
+_p_205:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2752]
+br x16
+.word 3230
+	.no_dead_strip plt__rgctx_fetch_27
+plt__rgctx_fetch_27:
+_p_206:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2760]
+br x16
+.word 3257
+	.no_dead_strip plt__rgctx_fetch_28
+plt__rgctx_fetch_28:
+_p_207:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2768]
+br x16
+.word 3287
+	.no_dead_strip plt__rgctx_fetch_29
+plt__rgctx_fetch_29:
+_p_208:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2776]
+br x16
+.word 3295
+	.no_dead_strip plt__rgctx_fetch_30
+plt__rgctx_fetch_30:
+_p_209:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2784]
+br x16
+.word 3368
+	.no_dead_strip plt__rgctx_fetch_31
+plt__rgctx_fetch_31:
+_p_210:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2792]
+br x16
+.word 3440
+	.no_dead_strip plt__rgctx_fetch_32
+plt__rgctx_fetch_32:
+_p_211:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2800]
+br x16
+.word 3475
+	.no_dead_strip plt__rgctx_fetch_33
+plt__rgctx_fetch_33:
+_p_212:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2808]
+br x16
+.word 3554
+	.no_dead_strip plt__rgctx_fetch_34
+plt__rgctx_fetch_34:
+_p_213:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2816]
+br x16
+.word 3562
+	.no_dead_strip plt__rgctx_fetch_35
+plt__rgctx_fetch_35:
+_p_214:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2824]
+br x16
+.word 3570
+	.no_dead_strip plt__jit_icall_mono_arch_rethrow_exception
+plt__jit_icall_mono_arch_rethrow_exception:
+_p_215:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2832]
+br x16
+.word 3578
+	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
+plt__jit_icall_mono_thread_interruption_checkpoint:
+_p_216:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2840]
+br x16
+.word 3580
+	.no_dead_strip plt__rgctx_fetch_36
+plt__rgctx_fetch_36:
+_p_217:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2848]
+br x16
+.word 3583
+	.no_dead_strip plt__rgctx_fetch_37
+plt__rgctx_fetch_37:
+_p_218:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2856]
+br x16
+.word 3601
+	.no_dead_strip plt__rgctx_fetch_38
+plt__rgctx_fetch_38:
+_p_219:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2864]
+br x16
+.word 3615
+	.no_dead_strip plt__rgctx_fetch_39
+plt__rgctx_fetch_39:
+_p_220:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2872]
+br x16
+.word 3629
+	.no_dead_strip plt__rgctx_fetch_40
+plt__rgctx_fetch_40:
+_p_221:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2880]
+br x16
+.word 3657
+	.no_dead_strip plt__jit_icall_mono_delegate_begin_invoke
+plt__jit_icall_mono_delegate_begin_invoke:
+_p_222:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2888]
+br x16
+.word 3675
+	.no_dead_strip plt__rgctx_fetch_41
+plt__rgctx_fetch_41:
+_p_223:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2896]
+br x16
+.word 3678
+	.no_dead_strip plt__jit_icall_mono_delegate_end_invoke
+plt__jit_icall_mono_delegate_end_invoke:
+_p_224:
+adrp x16, mono_aot_System_Xml_Linq_got@PAGE+0
+add x16, x16, mono_aot_System_Xml_Linq_got@PAGEOFF
+ldr x16, [x16, #2904]
+br x16
+.word 3696
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_System_Xml_Linq_got, 2536
+.lcomm mono_aot_System_Xml_Linq_got, 2912
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -15045,14 +19490,14 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 123,2536,194,186,5,98,387000831,0
-	.long 27565,128,8,8,8,9,8388607,0
-	.long 30,29744,0,0,2168,1880,960,0
-	.long 1456,1808,1272,0,800,272,2160,0
+	.long 139,2912,225,264,6,98,387000831,0
+	.long 35560,128,8,8,8,9,8388607,0
+	.long 30,38048,0,0,2480,2192,1096,0
+	.long 1616,2112,1416,0,920,384,2472,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0
-	.byte 229,132,225,179,161,29,125,39,184,65,13,229,4,66,236,21
+	.byte 169,38,145,218,165,81,212,40,231,133,28,245,255,229,232,180
 	.globl _mono_aot_module_System_Xml_Linq_info
 	.align 3
 _mono_aot_module_System_Xml_Linq_info:
@@ -16224,34 +20669,73 @@ LDIFF_SYM181=Lme_a - System_Xml_Linq_XAttribute_get_Value
 Lfde10_end:
 
 .section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XAttribute:set_Value"
+	.asciz "System_Xml_Linq_XAttribute_set_Value_string"
+
+	.byte 5,163,1
+	.quad System_Xml_Linq_XAttribute_set_Value_string
+	.quad Lme_b
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM182=LTDIE_6_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM182
+	.byte 1,105,3
+	.asciz "value"
+
+LDIFF_SYM183=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM183
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM184=Lfde11_end - Lfde11_start
+	.long LDIFF_SYM184
+Lfde11_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XAttribute_set_Value_string
+
+LDIFF_SYM185=Lme_b - System_Xml_Linq_XAttribute_set_Value_string
+	.long LDIFF_SYM185
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
+	.align 3
+Lfde11_end:
+
+.section __DWARF, __debug_info,regular,debug
 LTDIE_25:
 
 	.byte 5
 	.asciz "System_MarshalByRefObject"
 
 	.byte 24,16
-LDIFF_SYM182=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM182
+LDIFF_SYM186=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM186
 	.byte 2,35,0,6
 	.asciz "_identity"
 
-LDIFF_SYM183=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM183
+LDIFF_SYM187=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM187
 	.byte 2,35,16,0,7
 	.asciz "System_MarshalByRefObject"
 
-LDIFF_SYM184=LTDIE_25 - Ldebug_info_start
-	.long LDIFF_SYM184
+LDIFF_SYM188=LTDIE_25 - Ldebug_info_start
+	.long LDIFF_SYM188
 LTDIE_25_POINTER:
 
 	.byte 13
-LDIFF_SYM185=LTDIE_25 - Ldebug_info_start
-	.long LDIFF_SYM185
+LDIFF_SYM189=LTDIE_25 - Ldebug_info_start
+	.long LDIFF_SYM189
 LTDIE_25_REFERENCE:
 
 	.byte 14
-LDIFF_SYM186=LTDIE_25 - Ldebug_info_start
-	.long LDIFF_SYM186
+LDIFF_SYM190=LTDIE_25 - Ldebug_info_start
+	.long LDIFF_SYM190
 LTDIE_26:
 
 	.byte 17
@@ -16260,315 +20744,315 @@ LTDIE_26:
 	.byte 16,7
 	.asciz "System_IFormatProvider"
 
-LDIFF_SYM187=LTDIE_26 - Ldebug_info_start
-	.long LDIFF_SYM187
+LDIFF_SYM191=LTDIE_26 - Ldebug_info_start
+	.long LDIFF_SYM191
 LTDIE_26_POINTER:
 
 	.byte 13
-LDIFF_SYM188=LTDIE_26 - Ldebug_info_start
-	.long LDIFF_SYM188
+LDIFF_SYM192=LTDIE_26 - Ldebug_info_start
+	.long LDIFF_SYM192
 LTDIE_26_REFERENCE:
 
 	.byte 14
-LDIFF_SYM189=LTDIE_26 - Ldebug_info_start
-	.long LDIFF_SYM189
+LDIFF_SYM193=LTDIE_26 - Ldebug_info_start
+	.long LDIFF_SYM193
 LTDIE_24:
 
 	.byte 5
 	.asciz "System_IO_TextWriter"
 
 	.byte 48,16
-LDIFF_SYM190=LTDIE_25 - Ldebug_info_start
-	.long LDIFF_SYM190
+LDIFF_SYM194=LTDIE_25 - Ldebug_info_start
+	.long LDIFF_SYM194
 	.byte 2,35,0,6
 	.asciz "CoreNewLine"
 
-LDIFF_SYM191=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM191
+LDIFF_SYM195=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM195
 	.byte 2,35,24,6
 	.asciz "CoreNewLineStr"
 
-LDIFF_SYM192=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM192
+LDIFF_SYM196=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM196
 	.byte 2,35,32,6
 	.asciz "_internalFormatProvider"
 
-LDIFF_SYM193=LTDIE_26_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM193
+LDIFF_SYM197=LTDIE_26_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM197
 	.byte 2,35,40,0,7
 	.asciz "System_IO_TextWriter"
 
-LDIFF_SYM194=LTDIE_24 - Ldebug_info_start
-	.long LDIFF_SYM194
+LDIFF_SYM198=LTDIE_24 - Ldebug_info_start
+	.long LDIFF_SYM198
 LTDIE_24_POINTER:
 
 	.byte 13
-LDIFF_SYM195=LTDIE_24 - Ldebug_info_start
-	.long LDIFF_SYM195
+LDIFF_SYM199=LTDIE_24 - Ldebug_info_start
+	.long LDIFF_SYM199
 LTDIE_24_REFERENCE:
 
 	.byte 14
-LDIFF_SYM196=LTDIE_24 - Ldebug_info_start
-	.long LDIFF_SYM196
+LDIFF_SYM200=LTDIE_24 - Ldebug_info_start
+	.long LDIFF_SYM200
 LTDIE_27:
 
 	.byte 5
 	.asciz "System_Text_StringBuilder"
 
 	.byte 48,16
-LDIFF_SYM197=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM197
+LDIFF_SYM201=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM201
 	.byte 2,35,0,6
 	.asciz "m_ChunkChars"
 
-LDIFF_SYM198=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM198
+LDIFF_SYM202=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM202
 	.byte 2,35,16,6
 	.asciz "m_ChunkPrevious"
 
-LDIFF_SYM199=LTDIE_27_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM199
+LDIFF_SYM203=LTDIE_27_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM203
 	.byte 2,35,24,6
 	.asciz "m_ChunkLength"
 
-LDIFF_SYM200=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM200
+LDIFF_SYM204=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM204
 	.byte 2,35,32,6
 	.asciz "m_ChunkOffset"
 
-LDIFF_SYM201=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM201
+LDIFF_SYM205=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM205
 	.byte 2,35,36,6
 	.asciz "m_MaxCapacity"
 
-LDIFF_SYM202=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM202
+LDIFF_SYM206=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM206
 	.byte 2,35,40,0,7
 	.asciz "System_Text_StringBuilder"
 
-LDIFF_SYM203=LTDIE_27 - Ldebug_info_start
-	.long LDIFF_SYM203
+LDIFF_SYM207=LTDIE_27 - Ldebug_info_start
+	.long LDIFF_SYM207
 LTDIE_27_POINTER:
 
 	.byte 13
-LDIFF_SYM204=LTDIE_27 - Ldebug_info_start
-	.long LDIFF_SYM204
+LDIFF_SYM208=LTDIE_27 - Ldebug_info_start
+	.long LDIFF_SYM208
 LTDIE_27_REFERENCE:
 
 	.byte 14
-LDIFF_SYM205=LTDIE_27 - Ldebug_info_start
-	.long LDIFF_SYM205
+LDIFF_SYM209=LTDIE_27 - Ldebug_info_start
+	.long LDIFF_SYM209
 LTDIE_23:
 
 	.byte 5
 	.asciz "System_IO_StringWriter"
 
 	.byte 64,16
-LDIFF_SYM206=LTDIE_24 - Ldebug_info_start
-	.long LDIFF_SYM206
+LDIFF_SYM210=LTDIE_24 - Ldebug_info_start
+	.long LDIFF_SYM210
 	.byte 2,35,0,6
 	.asciz "_sb"
 
-LDIFF_SYM207=LTDIE_27_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM207
+LDIFF_SYM211=LTDIE_27_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM211
 	.byte 2,35,48,6
 	.asciz "_isOpen"
 
-LDIFF_SYM208=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM208
+LDIFF_SYM212=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM212
 	.byte 2,35,56,0,7
 	.asciz "System_IO_StringWriter"
 
-LDIFF_SYM209=LTDIE_23 - Ldebug_info_start
-	.long LDIFF_SYM209
+LDIFF_SYM213=LTDIE_23 - Ldebug_info_start
+	.long LDIFF_SYM213
 LTDIE_23_POINTER:
 
 	.byte 13
-LDIFF_SYM210=LTDIE_23 - Ldebug_info_start
-	.long LDIFF_SYM210
+LDIFF_SYM214=LTDIE_23 - Ldebug_info_start
+	.long LDIFF_SYM214
 LTDIE_23_REFERENCE:
 
 	.byte 14
-LDIFF_SYM211=LTDIE_23 - Ldebug_info_start
-	.long LDIFF_SYM211
+LDIFF_SYM215=LTDIE_23 - Ldebug_info_start
+	.long LDIFF_SYM215
 LTDIE_31:
 
 	.byte 5
 	.asciz "System_UInt32"
 
 	.byte 20,16
-LDIFF_SYM212=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM212
+LDIFF_SYM216=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM216
 	.byte 2,35,0,6
 	.asciz "m_value"
 
-LDIFF_SYM213=LDIE_U4 - Ldebug_info_start
-	.long LDIFF_SYM213
+LDIFF_SYM217=LDIE_U4 - Ldebug_info_start
+	.long LDIFF_SYM217
 	.byte 2,35,16,0,7
 	.asciz "System_UInt32"
 
-LDIFF_SYM214=LTDIE_31 - Ldebug_info_start
-	.long LDIFF_SYM214
+LDIFF_SYM218=LTDIE_31 - Ldebug_info_start
+	.long LDIFF_SYM218
 LTDIE_31_POINTER:
 
 	.byte 13
-LDIFF_SYM215=LTDIE_31 - Ldebug_info_start
-	.long LDIFF_SYM215
+LDIFF_SYM219=LTDIE_31 - Ldebug_info_start
+	.long LDIFF_SYM219
 LTDIE_31_REFERENCE:
 
 	.byte 14
-LDIFF_SYM216=LTDIE_31 - Ldebug_info_start
-	.long LDIFF_SYM216
+LDIFF_SYM220=LTDIE_31 - Ldebug_info_start
+	.long LDIFF_SYM220
 LTDIE_30:
 
 	.byte 5
 	.asciz "System_Globalization_CodePageDataItem"
 
 	.byte 40,16
-LDIFF_SYM217=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM217
+LDIFF_SYM221=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM221
 	.byte 2,35,0,6
 	.asciz "m_dataIndex"
 
-LDIFF_SYM218=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM218
+LDIFF_SYM222=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM222
 	.byte 2,35,24,6
 	.asciz "m_uiFamilyCodePage"
 
-LDIFF_SYM219=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM219
+LDIFF_SYM223=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM223
 	.byte 2,35,28,6
 	.asciz "m_webName"
 
-LDIFF_SYM220=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM220
+LDIFF_SYM224=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM224
 	.byte 2,35,16,6
 	.asciz "m_flags"
 
-LDIFF_SYM221=LDIE_U4 - Ldebug_info_start
-	.long LDIFF_SYM221
+LDIFF_SYM225=LDIE_U4 - Ldebug_info_start
+	.long LDIFF_SYM225
 	.byte 2,35,32,0,7
 	.asciz "System_Globalization_CodePageDataItem"
 
-LDIFF_SYM222=LTDIE_30 - Ldebug_info_start
-	.long LDIFF_SYM222
+LDIFF_SYM226=LTDIE_30 - Ldebug_info_start
+	.long LDIFF_SYM226
 LTDIE_30_POINTER:
 
 	.byte 13
-LDIFF_SYM223=LTDIE_30 - Ldebug_info_start
-	.long LDIFF_SYM223
+LDIFF_SYM227=LTDIE_30 - Ldebug_info_start
+	.long LDIFF_SYM227
 LTDIE_30_REFERENCE:
 
 	.byte 14
-LDIFF_SYM224=LTDIE_30 - Ldebug_info_start
-	.long LDIFF_SYM224
+LDIFF_SYM228=LTDIE_30 - Ldebug_info_start
+	.long LDIFF_SYM228
 LTDIE_32:
 
 	.byte 5
 	.asciz "System_Text_EncoderFallback"
 
 	.byte 16,16
-LDIFF_SYM225=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM225
+LDIFF_SYM229=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM229
 	.byte 2,35,0,0,7
 	.asciz "System_Text_EncoderFallback"
 
-LDIFF_SYM226=LTDIE_32 - Ldebug_info_start
-	.long LDIFF_SYM226
+LDIFF_SYM230=LTDIE_32 - Ldebug_info_start
+	.long LDIFF_SYM230
 LTDIE_32_POINTER:
 
 	.byte 13
-LDIFF_SYM227=LTDIE_32 - Ldebug_info_start
-	.long LDIFF_SYM227
+LDIFF_SYM231=LTDIE_32 - Ldebug_info_start
+	.long LDIFF_SYM231
 LTDIE_32_REFERENCE:
 
 	.byte 14
-LDIFF_SYM228=LTDIE_32 - Ldebug_info_start
-	.long LDIFF_SYM228
+LDIFF_SYM232=LTDIE_32 - Ldebug_info_start
+	.long LDIFF_SYM232
 LTDIE_33:
 
 	.byte 5
 	.asciz "System_Text_DecoderFallback"
 
 	.byte 16,16
-LDIFF_SYM229=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM229
+LDIFF_SYM233=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM233
 	.byte 2,35,0,0,7
 	.asciz "System_Text_DecoderFallback"
 
-LDIFF_SYM230=LTDIE_33 - Ldebug_info_start
-	.long LDIFF_SYM230
+LDIFF_SYM234=LTDIE_33 - Ldebug_info_start
+	.long LDIFF_SYM234
 LTDIE_33_POINTER:
 
 	.byte 13
-LDIFF_SYM231=LTDIE_33 - Ldebug_info_start
-	.long LDIFF_SYM231
+LDIFF_SYM235=LTDIE_33 - Ldebug_info_start
+	.long LDIFF_SYM235
 LTDIE_33_REFERENCE:
 
 	.byte 14
-LDIFF_SYM232=LTDIE_33 - Ldebug_info_start
-	.long LDIFF_SYM232
+LDIFF_SYM236=LTDIE_33 - Ldebug_info_start
+	.long LDIFF_SYM236
 LTDIE_29:
 
 	.byte 5
 	.asciz "System_Text_Encoding"
 
 	.byte 48,16
-LDIFF_SYM233=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM233
+LDIFF_SYM237=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM237
 	.byte 2,35,0,6
 	.asciz "m_codePage"
 
-LDIFF_SYM234=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM234
+LDIFF_SYM238=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM238
 	.byte 2,35,40,6
 	.asciz "dataItem"
 
-LDIFF_SYM235=LTDIE_30_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM235
+LDIFF_SYM239=LTDIE_30_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM239
 	.byte 2,35,16,6
 	.asciz "m_deserializedFromEverett"
 
-LDIFF_SYM236=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM236
+LDIFF_SYM240=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM240
 	.byte 2,35,44,6
 	.asciz "m_isReadOnly"
 
-LDIFF_SYM237=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM237
+LDIFF_SYM241=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM241
 	.byte 2,35,45,6
 	.asciz "encoderFallback"
 
-LDIFF_SYM238=LTDIE_32_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM238
+LDIFF_SYM242=LTDIE_32_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM242
 	.byte 2,35,24,6
 	.asciz "decoderFallback"
 
-LDIFF_SYM239=LTDIE_33_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM239
+LDIFF_SYM243=LTDIE_33_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM243
 	.byte 2,35,32,0,7
 	.asciz "System_Text_Encoding"
 
-LDIFF_SYM240=LTDIE_29 - Ldebug_info_start
-	.long LDIFF_SYM240
+LDIFF_SYM244=LTDIE_29 - Ldebug_info_start
+	.long LDIFF_SYM244
 LTDIE_29_POINTER:
 
 	.byte 13
-LDIFF_SYM241=LTDIE_29 - Ldebug_info_start
-	.long LDIFF_SYM241
+LDIFF_SYM245=LTDIE_29 - Ldebug_info_start
+	.long LDIFF_SYM245
 LTDIE_29_REFERENCE:
 
 	.byte 14
-LDIFF_SYM242=LTDIE_29 - Ldebug_info_start
-	.long LDIFF_SYM242
+LDIFF_SYM246=LTDIE_29 - Ldebug_info_start
+	.long LDIFF_SYM246
 LTDIE_34:
 
 	.byte 8
 	.asciz "System_Xml_NewLineHandling"
 
 	.byte 4
-LDIFF_SYM243=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM243
+LDIFF_SYM247=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM247
 	.byte 9
 	.asciz "Replace"
 
@@ -16581,26 +21065,26 @@ LDIFF_SYM243=LDIE_I4 - Ldebug_info_start
 	.byte 2,0,7
 	.asciz "System_Xml_NewLineHandling"
 
-LDIFF_SYM244=LTDIE_34 - Ldebug_info_start
-	.long LDIFF_SYM244
+LDIFF_SYM248=LTDIE_34 - Ldebug_info_start
+	.long LDIFF_SYM248
 LTDIE_34_POINTER:
 
 	.byte 13
-LDIFF_SYM245=LTDIE_34 - Ldebug_info_start
-	.long LDIFF_SYM245
+LDIFF_SYM249=LTDIE_34 - Ldebug_info_start
+	.long LDIFF_SYM249
 LTDIE_34_REFERENCE:
 
 	.byte 14
-LDIFF_SYM246=LTDIE_34 - Ldebug_info_start
-	.long LDIFF_SYM246
+LDIFF_SYM250=LTDIE_34 - Ldebug_info_start
+	.long LDIFF_SYM250
 LTDIE_35:
 
 	.byte 8
 	.asciz "System_Xml_TriState"
 
 	.byte 4
-LDIFF_SYM247=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM247
+LDIFF_SYM251=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM251
 	.byte 9
 	.asciz "Unknown"
 
@@ -16613,26 +21097,26 @@ LDIFF_SYM247=LDIE_I4 - Ldebug_info_start
 	.byte 1,0,7
 	.asciz "System_Xml_TriState"
 
-LDIFF_SYM248=LTDIE_35 - Ldebug_info_start
-	.long LDIFF_SYM248
+LDIFF_SYM252=LTDIE_35 - Ldebug_info_start
+	.long LDIFF_SYM252
 LTDIE_35_POINTER:
 
 	.byte 13
-LDIFF_SYM249=LTDIE_35 - Ldebug_info_start
-	.long LDIFF_SYM249
+LDIFF_SYM253=LTDIE_35 - Ldebug_info_start
+	.long LDIFF_SYM253
 LTDIE_35_REFERENCE:
 
 	.byte 14
-LDIFF_SYM250=LTDIE_35 - Ldebug_info_start
-	.long LDIFF_SYM250
+LDIFF_SYM254=LTDIE_35 - Ldebug_info_start
+	.long LDIFF_SYM254
 LTDIE_36:
 
 	.byte 8
 	.asciz "System_Xml_NamespaceHandling"
 
 	.byte 4
-LDIFF_SYM251=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM251
+LDIFF_SYM255=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM255
 	.byte 9
 	.asciz "Default"
 
@@ -16642,26 +21126,26 @@ LDIFF_SYM251=LDIE_I4 - Ldebug_info_start
 	.byte 1,0,7
 	.asciz "System_Xml_NamespaceHandling"
 
-LDIFF_SYM252=LTDIE_36 - Ldebug_info_start
-	.long LDIFF_SYM252
+LDIFF_SYM256=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM256
 LTDIE_36_POINTER:
 
 	.byte 13
-LDIFF_SYM253=LTDIE_36 - Ldebug_info_start
-	.long LDIFF_SYM253
+LDIFF_SYM257=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM257
 LTDIE_36_REFERENCE:
 
 	.byte 14
-LDIFF_SYM254=LTDIE_36 - Ldebug_info_start
-	.long LDIFF_SYM254
+LDIFF_SYM258=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM258
 LTDIE_37:
 
 	.byte 8
 	.asciz "System_Xml_ConformanceLevel"
 
 	.byte 4
-LDIFF_SYM255=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM255
+LDIFF_SYM259=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM259
 	.byte 9
 	.asciz "Auto"
 
@@ -16674,26 +21158,26 @@ LDIFF_SYM255=LDIE_I4 - Ldebug_info_start
 	.byte 2,0,7
 	.asciz "System_Xml_ConformanceLevel"
 
-LDIFF_SYM256=LTDIE_37 - Ldebug_info_start
-	.long LDIFF_SYM256
+LDIFF_SYM260=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM260
 LTDIE_37_POINTER:
 
 	.byte 13
-LDIFF_SYM257=LTDIE_37 - Ldebug_info_start
-	.long LDIFF_SYM257
+LDIFF_SYM261=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM261
 LTDIE_37_REFERENCE:
 
 	.byte 14
-LDIFF_SYM258=LTDIE_37 - Ldebug_info_start
-	.long LDIFF_SYM258
+LDIFF_SYM262=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM262
 LTDIE_38:
 
 	.byte 8
 	.asciz "System_Xml_XmlOutputMethod"
 
 	.byte 4
-LDIFF_SYM259=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM259
+LDIFF_SYM263=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM263
 	.byte 9
 	.asciz "Xml"
 
@@ -16709,69 +21193,69 @@ LDIFF_SYM259=LDIE_I4 - Ldebug_info_start
 	.byte 3,0,7
 	.asciz "System_Xml_XmlOutputMethod"
 
-LDIFF_SYM260=LTDIE_38 - Ldebug_info_start
-	.long LDIFF_SYM260
+LDIFF_SYM264=LTDIE_38 - Ldebug_info_start
+	.long LDIFF_SYM264
 LTDIE_38_POINTER:
 
 	.byte 13
-LDIFF_SYM261=LTDIE_38 - Ldebug_info_start
-	.long LDIFF_SYM261
+LDIFF_SYM265=LTDIE_38 - Ldebug_info_start
+	.long LDIFF_SYM265
 LTDIE_38_REFERENCE:
 
 	.byte 14
-LDIFF_SYM262=LTDIE_38 - Ldebug_info_start
-	.long LDIFF_SYM262
+LDIFF_SYM266=LTDIE_38 - Ldebug_info_start
+	.long LDIFF_SYM266
 LTDIE_39:
 
 	.byte 5
 	.asciz "System_Collections_Generic_List`1"
 
 	.byte 40,16
-LDIFF_SYM263=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM263
+LDIFF_SYM267=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM267
 	.byte 2,35,0,6
 	.asciz "_items"
 
-LDIFF_SYM264=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM264
+LDIFF_SYM268=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM268
 	.byte 2,35,16,6
 	.asciz "_size"
 
-LDIFF_SYM265=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM265
+LDIFF_SYM269=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM269
 	.byte 2,35,32,6
 	.asciz "_version"
 
-LDIFF_SYM266=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM266
+LDIFF_SYM270=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM270
 	.byte 2,35,36,6
 	.asciz "_syncRoot"
 
-LDIFF_SYM267=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM267
+LDIFF_SYM271=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM271
 	.byte 2,35,24,0,7
 	.asciz "System_Collections_Generic_List`1"
 
-LDIFF_SYM268=LTDIE_39 - Ldebug_info_start
-	.long LDIFF_SYM268
+LDIFF_SYM272=LTDIE_39 - Ldebug_info_start
+	.long LDIFF_SYM272
 LTDIE_39_POINTER:
 
 	.byte 13
-LDIFF_SYM269=LTDIE_39 - Ldebug_info_start
-	.long LDIFF_SYM269
+LDIFF_SYM273=LTDIE_39 - Ldebug_info_start
+	.long LDIFF_SYM273
 LTDIE_39_REFERENCE:
 
 	.byte 14
-LDIFF_SYM270=LTDIE_39 - Ldebug_info_start
-	.long LDIFF_SYM270
+LDIFF_SYM274=LTDIE_39 - Ldebug_info_start
+	.long LDIFF_SYM274
 LTDIE_40:
 
 	.byte 8
 	.asciz "System_Xml_XmlStandalone"
 
 	.byte 4
-LDIFF_SYM271=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM271
+LDIFF_SYM275=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM275
 	.byte 9
 	.asciz "Omit"
 
@@ -16784,235 +21268,235 @@ LDIFF_SYM271=LDIE_I4 - Ldebug_info_start
 	.byte 2,0,7
 	.asciz "System_Xml_XmlStandalone"
 
-LDIFF_SYM272=LTDIE_40 - Ldebug_info_start
-	.long LDIFF_SYM272
+LDIFF_SYM276=LTDIE_40 - Ldebug_info_start
+	.long LDIFF_SYM276
 LTDIE_40_POINTER:
 
 	.byte 13
-LDIFF_SYM273=LTDIE_40 - Ldebug_info_start
-	.long LDIFF_SYM273
+LDIFF_SYM277=LTDIE_40 - Ldebug_info_start
+	.long LDIFF_SYM277
 LTDIE_40_REFERENCE:
 
 	.byte 14
-LDIFF_SYM274=LTDIE_40 - Ldebug_info_start
-	.long LDIFF_SYM274
+LDIFF_SYM278=LTDIE_40 - Ldebug_info_start
+	.long LDIFF_SYM278
 LTDIE_28:
 
 	.byte 5
 	.asciz "System_Xml_XmlWriterSettings"
 
 	.byte 120,16
-LDIFF_SYM275=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM275
+LDIFF_SYM279=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM279
 	.byte 2,35,0,6
 	.asciz "useAsync"
 
-LDIFF_SYM276=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM276
+LDIFF_SYM280=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM280
 	.byte 2,35,72,6
 	.asciz "encoding"
 
-LDIFF_SYM277=LTDIE_29_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM277
+LDIFF_SYM281=LTDIE_29_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM281
 	.byte 2,35,16,6
 	.asciz "omitXmlDecl"
 
-LDIFF_SYM278=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM278
+LDIFF_SYM282=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM282
 	.byte 2,35,73,6
 	.asciz "newLineHandling"
 
-LDIFF_SYM279=LTDIE_34 - Ldebug_info_start
-	.long LDIFF_SYM279
+LDIFF_SYM283=LTDIE_34 - Ldebug_info_start
+	.long LDIFF_SYM283
 	.byte 2,35,76,6
 	.asciz "newLineChars"
 
-LDIFF_SYM280=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM280
+LDIFF_SYM284=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM284
 	.byte 2,35,24,6
 	.asciz "indent"
 
-LDIFF_SYM281=LTDIE_35 - Ldebug_info_start
-	.long LDIFF_SYM281
+LDIFF_SYM285=LTDIE_35 - Ldebug_info_start
+	.long LDIFF_SYM285
 	.byte 2,35,80,6
 	.asciz "indentChars"
 
-LDIFF_SYM282=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM282
+LDIFF_SYM286=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM286
 	.byte 2,35,32,6
 	.asciz "newLineOnAttributes"
 
-LDIFF_SYM283=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM283
+LDIFF_SYM287=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM287
 	.byte 2,35,84,6
 	.asciz "closeOutput"
 
-LDIFF_SYM284=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM284
+LDIFF_SYM288=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM288
 	.byte 2,35,85,6
 	.asciz "namespaceHandling"
 
-LDIFF_SYM285=LTDIE_36 - Ldebug_info_start
-	.long LDIFF_SYM285
+LDIFF_SYM289=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM289
 	.byte 2,35,88,6
 	.asciz "conformanceLevel"
 
-LDIFF_SYM286=LTDIE_37 - Ldebug_info_start
-	.long LDIFF_SYM286
+LDIFF_SYM290=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM290
 	.byte 2,35,92,6
 	.asciz "checkCharacters"
 
-LDIFF_SYM287=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM287
+LDIFF_SYM291=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM291
 	.byte 2,35,96,6
 	.asciz "writeEndDocumentOnClose"
 
-LDIFF_SYM288=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM288
+LDIFF_SYM292=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM292
 	.byte 2,35,97,6
 	.asciz "outputMethod"
 
-LDIFF_SYM289=LTDIE_38 - Ldebug_info_start
-	.long LDIFF_SYM289
+LDIFF_SYM293=LTDIE_38 - Ldebug_info_start
+	.long LDIFF_SYM293
 	.byte 2,35,100,6
 	.asciz "cdataSections"
 
-LDIFF_SYM290=LTDIE_39_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM290
+LDIFF_SYM294=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM294
 	.byte 2,35,40,6
 	.asciz "doNotEscapeUriAttributes"
 
-LDIFF_SYM291=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM291
+LDIFF_SYM295=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM295
 	.byte 2,35,104,6
 	.asciz "mergeCDataSections"
 
-LDIFF_SYM292=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM292
+LDIFF_SYM296=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM296
 	.byte 2,35,105,6
 	.asciz "mediaType"
 
-LDIFF_SYM293=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM293
+LDIFF_SYM297=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM297
 	.byte 2,35,48,6
 	.asciz "docTypeSystem"
 
-LDIFF_SYM294=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM294
+LDIFF_SYM298=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM298
 	.byte 2,35,56,6
 	.asciz "docTypePublic"
 
-LDIFF_SYM295=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM295
+LDIFF_SYM299=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM299
 	.byte 2,35,64,6
 	.asciz "standalone"
 
-LDIFF_SYM296=LTDIE_40 - Ldebug_info_start
-	.long LDIFF_SYM296
+LDIFF_SYM300=LTDIE_40 - Ldebug_info_start
+	.long LDIFF_SYM300
 	.byte 2,35,108,6
 	.asciz "autoXmlDecl"
 
-LDIFF_SYM297=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM297
+LDIFF_SYM301=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM301
 	.byte 2,35,112,6
 	.asciz "isReadOnly"
 
-LDIFF_SYM298=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM298
+LDIFF_SYM302=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM302
 	.byte 2,35,113,0,7
 	.asciz "System_Xml_XmlWriterSettings"
 
-LDIFF_SYM299=LTDIE_28 - Ldebug_info_start
-	.long LDIFF_SYM299
+LDIFF_SYM303=LTDIE_28 - Ldebug_info_start
+	.long LDIFF_SYM303
 LTDIE_28_POINTER:
 
 	.byte 13
-LDIFF_SYM300=LTDIE_28 - Ldebug_info_start
-	.long LDIFF_SYM300
+LDIFF_SYM304=LTDIE_28 - Ldebug_info_start
+	.long LDIFF_SYM304
 LTDIE_28_REFERENCE:
 
 	.byte 14
-LDIFF_SYM301=LTDIE_28 - Ldebug_info_start
-	.long LDIFF_SYM301
+LDIFF_SYM305=LTDIE_28 - Ldebug_info_start
+	.long LDIFF_SYM305
 LTDIE_41:
 
 	.byte 5
 	.asciz "System_Xml_XmlWriter"
 
 	.byte 24,16
-LDIFF_SYM302=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM302
+LDIFF_SYM306=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM306
 	.byte 2,35,0,6
 	.asciz "writeNodeBuffer"
 
-LDIFF_SYM303=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM303
+LDIFF_SYM307=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM307
 	.byte 2,35,16,0,7
 	.asciz "System_Xml_XmlWriter"
 
-LDIFF_SYM304=LTDIE_41 - Ldebug_info_start
-	.long LDIFF_SYM304
+LDIFF_SYM308=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM308
 LTDIE_41_POINTER:
 
 	.byte 13
-LDIFF_SYM305=LTDIE_41 - Ldebug_info_start
-	.long LDIFF_SYM305
+LDIFF_SYM309=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM309
 LTDIE_41_REFERENCE:
 
 	.byte 14
-LDIFF_SYM306=LTDIE_41 - Ldebug_info_start
-	.long LDIFF_SYM306
+LDIFF_SYM310=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM310
 	.byte 2
 	.asciz "System.Xml.Linq.XAttribute:ToString"
 	.asciz "System_Xml_Linq_XAttribute_ToString"
 
 	.byte 5,208,1
 	.quad System_Xml_Linq_XAttribute_ToString
-	.quad Lme_b
+	.quad Lme_c
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM307=LTDIE_6_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM307
+LDIFF_SYM311=LTDIE_6_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM311
 	.byte 1,106,11
 	.asciz "sw"
 
-LDIFF_SYM308=LTDIE_23_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM308
+LDIFF_SYM312=LTDIE_23_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM312
 	.byte 2,141,32,11
 	.asciz "ws"
 
-LDIFF_SYM309=LTDIE_28_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM309
+LDIFF_SYM313=LTDIE_28_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM313
 	.byte 1,105,11
 	.asciz "w"
 
-LDIFF_SYM310=LTDIE_41_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM310
+LDIFF_SYM314=LTDIE_41_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM314
 	.byte 2,141,40,11
 	.asciz "V_3"
 
-LDIFF_SYM311=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM311
+LDIFF_SYM315=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM315
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM312=Lfde11_end - Lfde11_start
-	.long LDIFF_SYM312
-Lfde11_start:
+LDIFF_SYM316=Lfde12_end - Lfde12_start
+	.long LDIFF_SYM316
+Lfde12_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XAttribute_ToString
 
-LDIFF_SYM313=Lme_b - System_Xml_Linq_XAttribute_ToString
-	.long LDIFF_SYM313
+LDIFF_SYM317=Lme_c - System_Xml_Linq_XAttribute_ToString
+	.long LDIFF_SYM317
 	.long 0
 	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,153,14,154,13
 	.align 3
-Lfde11_end:
+Lfde12_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -17022,41 +21506,41 @@ Lfde11_end:
 
 	.byte 5,151,5
 	.quad System_Xml_Linq_XAttribute_GetPrefixOfNamespace_System_Xml_Linq_XNamespace
-	.quad Lme_c
+	.quad Lme_d
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM314=LTDIE_6_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM314
+LDIFF_SYM318=LTDIE_6_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM318
 	.byte 1,105,3
 	.asciz "ns"
 
-LDIFF_SYM315=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM315
+LDIFF_SYM319=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM319
 	.byte 1,106,11
 	.asciz "namespaceName"
 
-LDIFF_SYM316=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM316
+LDIFF_SYM320=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM320
 	.byte 1,104,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM317=Lfde12_end - Lfde12_start
-	.long LDIFF_SYM317
-Lfde12_start:
+LDIFF_SYM321=Lfde13_end - Lfde13_start
+	.long LDIFF_SYM321
+Lfde13_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XAttribute_GetPrefixOfNamespace_System_Xml_Linq_XNamespace
 
-LDIFF_SYM318=Lme_c - System_Xml_Linq_XAttribute_GetPrefixOfNamespace_System_Xml_Linq_XNamespace
-	.long LDIFF_SYM318
+LDIFF_SYM322=Lme_d - System_Xml_Linq_XAttribute_GetPrefixOfNamespace_System_Xml_Linq_XNamespace
+	.long LDIFF_SYM322
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,68,154,2
 	.align 3
-Lfde12_end:
+Lfde13_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -17066,46 +21550,46 @@ Lfde12_end:
 
 	.byte 5,162,5
 	.quad System_Xml_Linq_XAttribute_ValidateAttribute_System_Xml_Linq_XName_string
-	.quad Lme_d
+	.quad Lme_e
 
 	.byte 2,118,16,3
 	.asciz "name"
 
-LDIFF_SYM319=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM319
+LDIFF_SYM323=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM323
 	.byte 1,105,3
 	.asciz "value"
 
-LDIFF_SYM320=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM320
+LDIFF_SYM324=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM324
 	.byte 1,106,11
 	.asciz "namespaceName"
 
-LDIFF_SYM321=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM321
+LDIFF_SYM325=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM325
 	.byte 1,104,11
 	.asciz "localName"
 
-LDIFF_SYM322=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM322
+LDIFF_SYM326=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM326
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM323=Lfde13_end - Lfde13_start
-	.long LDIFF_SYM323
-Lfde13_start:
+LDIFF_SYM327=Lfde14_end - Lfde14_start
+	.long LDIFF_SYM327
+Lfde14_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XAttribute_ValidateAttribute_System_Xml_Linq_XName_string
 
-LDIFF_SYM324=Lme_d - System_Xml_Linq_XAttribute_ValidateAttribute_System_Xml_Linq_XName_string
-	.long LDIFF_SYM324
+LDIFF_SYM328=Lme_e - System_Xml_Linq_XAttribute_ValidateAttribute_System_Xml_Linq_XName_string
+	.long LDIFF_SYM328
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153,7,68,154,6
 	.align 3
-Lfde13_end:
+Lfde14_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_43:
@@ -17114,96 +21598,57 @@ LTDIE_43:
 	.asciz "System_Xml_Linq_XText"
 
 	.byte 48,16
-LDIFF_SYM325=LTDIE_9 - Ldebug_info_start
-	.long LDIFF_SYM325
+LDIFF_SYM329=LTDIE_9 - Ldebug_info_start
+	.long LDIFF_SYM329
 	.byte 2,35,0,6
 	.asciz "text"
 
-LDIFF_SYM326=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM326
+LDIFF_SYM330=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM330
 	.byte 2,35,40,0,7
 	.asciz "System_Xml_Linq_XText"
 
-LDIFF_SYM327=LTDIE_43 - Ldebug_info_start
-	.long LDIFF_SYM327
+LDIFF_SYM331=LTDIE_43 - Ldebug_info_start
+	.long LDIFF_SYM331
 LTDIE_43_POINTER:
 
 	.byte 13
-LDIFF_SYM328=LTDIE_43 - Ldebug_info_start
-	.long LDIFF_SYM328
+LDIFF_SYM332=LTDIE_43 - Ldebug_info_start
+	.long LDIFF_SYM332
 LTDIE_43_REFERENCE:
 
 	.byte 14
-LDIFF_SYM329=LTDIE_43 - Ldebug_info_start
-	.long LDIFF_SYM329
+LDIFF_SYM333=LTDIE_43 - Ldebug_info_start
+	.long LDIFF_SYM333
 LTDIE_42:
 
 	.byte 5
 	.asciz "System_Xml_Linq_XCData"
 
 	.byte 48,16
-LDIFF_SYM330=LTDIE_43 - Ldebug_info_start
-	.long LDIFF_SYM330
+LDIFF_SYM334=LTDIE_43 - Ldebug_info_start
+	.long LDIFF_SYM334
 	.byte 2,35,0,0,7
 	.asciz "System_Xml_Linq_XCData"
 
-LDIFF_SYM331=LTDIE_42 - Ldebug_info_start
-	.long LDIFF_SYM331
+LDIFF_SYM335=LTDIE_42 - Ldebug_info_start
+	.long LDIFF_SYM335
 LTDIE_42_POINTER:
 
 	.byte 13
-LDIFF_SYM332=LTDIE_42 - Ldebug_info_start
-	.long LDIFF_SYM332
+LDIFF_SYM336=LTDIE_42 - Ldebug_info_start
+	.long LDIFF_SYM336
 LTDIE_42_REFERENCE:
 
 	.byte 14
-LDIFF_SYM333=LTDIE_42 - Ldebug_info_start
-	.long LDIFF_SYM333
+LDIFF_SYM337=LTDIE_42 - Ldebug_info_start
+	.long LDIFF_SYM337
 	.byte 2
 	.asciz "System.Xml.Linq.XCData:.ctor"
 	.asciz "System_Xml_Linq_XCData__ctor_string"
 
 	.byte 6,19
 	.quad System_Xml_Linq_XCData__ctor_string
-	.quad Lme_e
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM334=LTDIE_42_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM334
-	.byte 2,141,16,3
-	.asciz "value"
-
-LDIFF_SYM335=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM335
-	.byte 2,141,24,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM336=Lfde14_end - Lfde14_start
-	.long LDIFF_SYM336
-Lfde14_start:
-
-	.long 0
-	.align 3
-	.quad System_Xml_Linq_XCData__ctor_string
-
-LDIFF_SYM337=Lme_e - System_Xml_Linq_XCData__ctor_string
-	.long LDIFF_SYM337
-	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
-	.align 3
-Lfde14_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Xml.Linq.XCData:.ctor"
-	.asciz "System_Xml_Linq_XCData__ctor_System_Xml_Linq_XCData"
-
-	.byte 6,25
-	.quad System_Xml_Linq_XCData__ctor_System_Xml_Linq_XCData
 	.quad Lme_f
 
 	.byte 2,118,16,3
@@ -17212,9 +21657,9 @@ Lfde14_end:
 LDIFF_SYM338=LTDIE_42_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM338
 	.byte 2,141,16,3
-	.asciz "other"
+	.asciz "value"
 
-LDIFF_SYM339=LTDIE_42_REFERENCE - Ldebug_info_start
+LDIFF_SYM339=LDIE_STRING - Ldebug_info_start
 	.long LDIFF_SYM339
 	.byte 2,141,24,0
 
@@ -17226,9 +21671,9 @@ Lfde15_start:
 
 	.long 0
 	.align 3
-	.quad System_Xml_Linq_XCData__ctor_System_Xml_Linq_XCData
+	.quad System_Xml_Linq_XCData__ctor_string
 
-LDIFF_SYM341=Lme_f - System_Xml_Linq_XCData__ctor_System_Xml_Linq_XCData
+LDIFF_SYM341=Lme_f - System_Xml_Linq_XCData__ctor_string
 	.long LDIFF_SYM341
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
@@ -17238,32 +21683,37 @@ Lfde15_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Xml.Linq.XCData:get_NodeType"
-	.asciz "System_Xml_Linq_XCData_get_NodeType"
+	.asciz "System.Xml.Linq.XCData:.ctor"
+	.asciz "System_Xml_Linq_XCData__ctor_System_Xml_Linq_XCData"
 
-	.byte 6,39
-	.quad System_Xml_Linq_XCData_get_NodeType
+	.byte 6,25
+	.quad System_Xml_Linq_XCData__ctor_System_Xml_Linq_XCData
 	.quad Lme_10
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM342=LDIE_I4 - Ldebug_info_start
+LDIFF_SYM342=LTDIE_42_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM342
-	.byte 0,0
+	.byte 2,141,16,3
+	.asciz "other"
+
+LDIFF_SYM343=LTDIE_42_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM343
+	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM343=Lfde16_end - Lfde16_start
-	.long LDIFF_SYM343
+LDIFF_SYM344=Lfde16_end - Lfde16_start
+	.long LDIFF_SYM344
 Lfde16_start:
 
 	.long 0
 	.align 3
-	.quad System_Xml_Linq_XCData_get_NodeType
+	.quad System_Xml_Linq_XCData__ctor_System_Xml_Linq_XCData
 
-LDIFF_SYM344=Lme_10 - System_Xml_Linq_XCData_get_NodeType
-	.long LDIFF_SYM344
+LDIFF_SYM345=Lme_10 - System_Xml_Linq_XCData__ctor_System_Xml_Linq_XCData
+	.long LDIFF_SYM345
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
@@ -17272,24 +21722,19 @@ Lfde16_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Xml.Linq.XCData:WriteTo"
-	.asciz "System_Xml_Linq_XCData_WriteTo_System_Xml_XmlWriter"
+	.asciz "System.Xml.Linq.XCData:get_NodeType"
+	.asciz "System_Xml_Linq_XCData_get_NodeType"
 
-	.byte 6,51
-	.quad System_Xml_Linq_XCData_WriteTo_System_Xml_XmlWriter
+	.byte 6,39
+	.quad System_Xml_Linq_XCData_get_NodeType
 	.quad Lme_11
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM345=LTDIE_42_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM345
-	.byte 2,141,24,3
-	.asciz "writer"
-
-LDIFF_SYM346=LTDIE_41_REFERENCE - Ldebug_info_start
+LDIFF_SYM346=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM346
-	.byte 1,106,0
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -17299,14 +21744,53 @@ Lfde17_start:
 
 	.long 0
 	.align 3
+	.quad System_Xml_Linq_XCData_get_NodeType
+
+LDIFF_SYM348=Lme_11 - System_Xml_Linq_XCData_get_NodeType
+	.long LDIFF_SYM348
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde17_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XCData:WriteTo"
+	.asciz "System_Xml_Linq_XCData_WriteTo_System_Xml_XmlWriter"
+
+	.byte 6,51
+	.quad System_Xml_Linq_XCData_WriteTo_System_Xml_XmlWriter
+	.quad Lme_12
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM349=LTDIE_42_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM349
+	.byte 2,141,24,3
+	.asciz "writer"
+
+LDIFF_SYM350=LTDIE_41_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM350
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM351=Lfde18_end - Lfde18_start
+	.long LDIFF_SYM351
+Lfde18_start:
+
+	.long 0
+	.align 3
 	.quad System_Xml_Linq_XCData_WriteTo_System_Xml_XmlWriter
 
-LDIFF_SYM348=Lme_11 - System_Xml_Linq_XCData_WriteTo_System_Xml_XmlWriter
-	.long LDIFF_SYM348
+LDIFF_SYM352=Lme_12 - System_Xml_Linq_XCData_WriteTo_System_Xml_XmlWriter
+	.long LDIFF_SYM352
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde17_end:
+Lfde18_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -17316,31 +21800,31 @@ Lfde17_end:
 
 	.byte 6,78
 	.quad System_Xml_Linq_XCData_CloneNode
-	.quad Lme_12
+	.quad Lme_13
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM349=LTDIE_42_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM349
+LDIFF_SYM353=LTDIE_42_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM353
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM350=Lfde18_end - Lfde18_start
-	.long LDIFF_SYM350
-Lfde18_start:
+LDIFF_SYM354=Lfde19_end - Lfde19_start
+	.long LDIFF_SYM354
+Lfde19_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XCData_CloneNode
 
-LDIFF_SYM351=Lme_12 - System_Xml_Linq_XCData_CloneNode
-	.long LDIFF_SYM351
+LDIFF_SYM355=Lme_13 - System_Xml_Linq_XCData_CloneNode
+	.long LDIFF_SYM355
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde18_end:
+Lfde19_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_44:
@@ -17349,73 +21833,34 @@ LTDIE_44:
 	.asciz "System_Xml_Linq_XComment"
 
 	.byte 48,16
-LDIFF_SYM352=LTDIE_9 - Ldebug_info_start
-	.long LDIFF_SYM352
+LDIFF_SYM356=LTDIE_9 - Ldebug_info_start
+	.long LDIFF_SYM356
 	.byte 2,35,0,6
 	.asciz "value"
 
-LDIFF_SYM353=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM353
+LDIFF_SYM357=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM357
 	.byte 2,35,40,0,7
 	.asciz "System_Xml_Linq_XComment"
 
-LDIFF_SYM354=LTDIE_44 - Ldebug_info_start
-	.long LDIFF_SYM354
+LDIFF_SYM358=LTDIE_44 - Ldebug_info_start
+	.long LDIFF_SYM358
 LTDIE_44_POINTER:
 
 	.byte 13
-LDIFF_SYM355=LTDIE_44 - Ldebug_info_start
-	.long LDIFF_SYM355
+LDIFF_SYM359=LTDIE_44 - Ldebug_info_start
+	.long LDIFF_SYM359
 LTDIE_44_REFERENCE:
 
 	.byte 14
-LDIFF_SYM356=LTDIE_44 - Ldebug_info_start
-	.long LDIFF_SYM356
+LDIFF_SYM360=LTDIE_44 - Ldebug_info_start
+	.long LDIFF_SYM360
 	.byte 2
 	.asciz "System.Xml.Linq.XComment:.ctor"
 	.asciz "System_Xml_Linq_XComment__ctor_string"
 
 	.byte 7,30
 	.quad System_Xml_Linq_XComment__ctor_string
-	.quad Lme_13
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM357=LTDIE_44_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM357
-	.byte 2,141,16,3
-	.asciz "value"
-
-LDIFF_SYM358=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM358
-	.byte 2,141,24,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM359=Lfde19_end - Lfde19_start
-	.long LDIFF_SYM359
-Lfde19_start:
-
-	.long 0
-	.align 3
-	.quad System_Xml_Linq_XComment__ctor_string
-
-LDIFF_SYM360=Lme_13 - System_Xml_Linq_XComment__ctor_string
-	.long LDIFF_SYM360
-	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
-	.align 3
-Lfde19_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Xml.Linq.XComment:.ctor"
-	.asciz "System_Xml_Linq_XComment__ctor_System_Xml_Linq_XComment"
-
-	.byte 7,40
-	.quad System_Xml_Linq_XComment__ctor_System_Xml_Linq_XComment
 	.quad Lme_14
 
 	.byte 2,118,16,3
@@ -17424,9 +21869,9 @@ Lfde19_end:
 LDIFF_SYM361=LTDIE_44_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM361
 	.byte 2,141,16,3
-	.asciz "other"
+	.asciz "value"
 
-LDIFF_SYM362=LTDIE_44_REFERENCE - Ldebug_info_start
+LDIFF_SYM362=LDIE_STRING - Ldebug_info_start
 	.long LDIFF_SYM362
 	.byte 2,141,24,0
 
@@ -17438,9 +21883,9 @@ Lfde20_start:
 
 	.long 0
 	.align 3
-	.quad System_Xml_Linq_XComment__ctor_System_Xml_Linq_XComment
+	.quad System_Xml_Linq_XComment__ctor_string
 
-LDIFF_SYM364=Lme_14 - System_Xml_Linq_XComment__ctor_System_Xml_Linq_XComment
+LDIFF_SYM364=Lme_14 - System_Xml_Linq_XComment__ctor_string
 	.long LDIFF_SYM364
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
@@ -17450,32 +21895,37 @@ Lfde20_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Xml.Linq.XComment:get_NodeType"
-	.asciz "System_Xml_Linq_XComment_get_NodeType"
+	.asciz "System.Xml.Linq.XComment:.ctor"
+	.asciz "System_Xml_Linq_XComment__ctor_System_Xml_Linq_XComment"
 
-	.byte 7,62
-	.quad System_Xml_Linq_XComment_get_NodeType
+	.byte 7,40
+	.quad System_Xml_Linq_XComment__ctor_System_Xml_Linq_XComment
 	.quad Lme_15
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM365=LDIE_I4 - Ldebug_info_start
+LDIFF_SYM365=LTDIE_44_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM365
-	.byte 0,0
+	.byte 2,141,16,3
+	.asciz "other"
+
+LDIFF_SYM366=LTDIE_44_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM366
+	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM366=Lfde21_end - Lfde21_start
-	.long LDIFF_SYM366
+LDIFF_SYM367=Lfde21_end - Lfde21_start
+	.long LDIFF_SYM367
 Lfde21_start:
 
 	.long 0
 	.align 3
-	.quad System_Xml_Linq_XComment_get_NodeType
+	.quad System_Xml_Linq_XComment__ctor_System_Xml_Linq_XComment
 
-LDIFF_SYM367=Lme_15 - System_Xml_Linq_XComment_get_NodeType
-	.long LDIFF_SYM367
+LDIFF_SYM368=Lme_15 - System_Xml_Linq_XComment__ctor_System_Xml_Linq_XComment
+	.long LDIFF_SYM368
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
@@ -17484,24 +21934,19 @@ Lfde21_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Xml.Linq.XComment:WriteTo"
-	.asciz "System_Xml_Linq_XComment_WriteTo_System_Xml_XmlWriter"
+	.asciz "System.Xml.Linq.XComment:get_NodeType"
+	.asciz "System_Xml_Linq_XComment_get_NodeType"
 
-	.byte 7,95
-	.quad System_Xml_Linq_XComment_WriteTo_System_Xml_XmlWriter
+	.byte 7,62
+	.quad System_Xml_Linq_XComment_get_NodeType
 	.quad Lme_16
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM368=LTDIE_44_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM368
-	.byte 2,141,24,3
-	.asciz "writer"
-
-LDIFF_SYM369=LTDIE_41_REFERENCE - Ldebug_info_start
+LDIFF_SYM369=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM369
-	.byte 1,106,0
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -17511,23 +21956,23 @@ Lfde22_start:
 
 	.long 0
 	.align 3
-	.quad System_Xml_Linq_XComment_WriteTo_System_Xml_XmlWriter
+	.quad System_Xml_Linq_XComment_get_NodeType
 
-LDIFF_SYM371=Lme_16 - System_Xml_Linq_XComment_WriteTo_System_Xml_XmlWriter
+LDIFF_SYM371=Lme_16 - System_Xml_Linq_XComment_get_NodeType
 	.long LDIFF_SYM371
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
 Lfde22_end:
 
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Xml.Linq.XComment:CloneNode"
-	.asciz "System_Xml_Linq_XComment_CloneNode"
+	.asciz "System.Xml.Linq.XComment:get_Value"
+	.asciz "System_Xml_Linq_XComment_get_Value"
 
-	.byte 7,117
-	.quad System_Xml_Linq_XComment_CloneNode
+	.byte 7,76
+	.quad System_Xml_Linq_XComment_get_Value
 	.quad Lme_17
 
 	.byte 2,118,16,3
@@ -17545,75 +21990,75 @@ Lfde23_start:
 
 	.long 0
 	.align 3
-	.quad System_Xml_Linq_XComment_CloneNode
+	.quad System_Xml_Linq_XComment_get_Value
 
-LDIFF_SYM374=Lme_17 - System_Xml_Linq_XComment_CloneNode
+LDIFF_SYM374=Lme_17 - System_Xml_Linq_XComment_get_Value
 	.long LDIFF_SYM374
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
 Lfde23_end:
 
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Xml.Linq.XContainer:.ctor"
-	.asciz "System_Xml_Linq_XContainer__ctor"
+	.asciz "System.Xml.Linq.XComment:set_Value"
+	.asciz "System_Xml_Linq_XComment_set_Value_string"
 
-	.byte 8,27
-	.quad System_Xml_Linq_XContainer__ctor
+	.byte 7,80
+	.quad System_Xml_Linq_XComment_set_Value_string
 	.quad Lme_18
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM375=LDIE_I4 - Ldebug_info_start
+LDIFF_SYM375=LTDIE_44_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM375
-	.byte 0,0
+	.byte 1,105,3
+	.asciz "value"
+
+LDIFF_SYM376=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM376
+	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM376=Lfde24_end - Lfde24_start
-	.long LDIFF_SYM376
+LDIFF_SYM377=Lfde24_end - Lfde24_start
+	.long LDIFF_SYM377
 Lfde24_start:
 
 	.long 0
 	.align 3
-	.quad System_Xml_Linq_XContainer__ctor
+	.quad System_Xml_Linq_XComment_set_Value_string
 
-LDIFF_SYM377=Lme_18 - System_Xml_Linq_XContainer__ctor
-	.long LDIFF_SYM377
+LDIFF_SYM378=Lme_18 - System_Xml_Linq_XComment_set_Value_string
+	.long LDIFF_SYM378
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
 	.align 3
 Lfde24_end:
 
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Xml.Linq.XContainer:.ctor"
-	.asciz "System_Xml_Linq_XContainer__ctor_System_Xml_Linq_XContainer"
+	.asciz "System.Xml.Linq.XComment:WriteTo"
+	.asciz "System_Xml_Linq_XComment_WriteTo_System_Xml_XmlWriter"
 
-	.byte 8,29
-	.quad System_Xml_Linq_XContainer__ctor_System_Xml_Linq_XContainer
+	.byte 7,95
+	.quad System_Xml_Linq_XComment_WriteTo_System_Xml_XmlWriter
 	.quad Lme_19
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM378=LTDIE_8_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM378
-	.byte 1,105,3
-	.asciz "other"
-
-LDIFF_SYM379=LTDIE_8_REFERENCE - Ldebug_info_start
+LDIFF_SYM379=LTDIE_44_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM379
-	.byte 1,106,11
-	.asciz "n"
+	.byte 2,141,24,3
+	.asciz "writer"
 
-LDIFF_SYM380=LTDIE_9_REFERENCE - Ldebug_info_start
+LDIFF_SYM380=LTDIE_41_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM380
-	.byte 1,103,0
+	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -17623,14 +22068,670 @@ Lfde25_start:
 
 	.long 0
 	.align 3
+	.quad System_Xml_Linq_XComment_WriteTo_System_Xml_XmlWriter
+
+LDIFF_SYM382=Lme_19 - System_Xml_Linq_XComment_WriteTo_System_Xml_XmlWriter
+	.long LDIFF_SYM382
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
+	.align 3
+Lfde25_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XComment:CloneNode"
+	.asciz "System_Xml_Linq_XComment_CloneNode"
+
+	.byte 7,117
+	.quad System_Xml_Linq_XComment_CloneNode
+	.quad Lme_1a
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM383=LTDIE_44_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM383
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM384=Lfde26_end - Lfde26_start
+	.long LDIFF_SYM384
+Lfde26_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XComment_CloneNode
+
+LDIFF_SYM385=Lme_1a - System_Xml_Linq_XComment_CloneNode
+	.long LDIFF_SYM385
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.align 3
+Lfde26_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XContainer:.ctor"
+	.asciz "System_Xml_Linq_XContainer__ctor"
+
+	.byte 8,27
+	.quad System_Xml_Linq_XContainer__ctor
+	.quad Lme_1b
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM386=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM386
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM387=Lfde27_end - Lfde27_start
+	.long LDIFF_SYM387
+Lfde27_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XContainer__ctor
+
+LDIFF_SYM388=Lme_1b - System_Xml_Linq_XContainer__ctor
+	.long LDIFF_SYM388
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde27_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XContainer:.ctor"
+	.asciz "System_Xml_Linq_XContainer__ctor_System_Xml_Linq_XContainer"
+
+	.byte 8,29
+	.quad System_Xml_Linq_XContainer__ctor_System_Xml_Linq_XContainer
+	.quad Lme_1c
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM389=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM389
+	.byte 1,105,3
+	.asciz "other"
+
+LDIFF_SYM390=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM390
+	.byte 1,106,11
+	.asciz "n"
+
+LDIFF_SYM391=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM391
+	.byte 1,103,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM392=Lfde28_end - Lfde28_start
+	.long LDIFF_SYM392
+Lfde28_start:
+
+	.long 0
+	.align 3
 	.quad System_Xml_Linq_XContainer__ctor_System_Xml_Linq_XContainer
 
-LDIFF_SYM382=Lme_19 - System_Xml_Linq_XContainer__ctor_System_Xml_Linq_XContainer
-	.long LDIFF_SYM382
+LDIFF_SYM393=Lme_1c - System_Xml_Linq_XContainer__ctor_System_Xml_Linq_XContainer
+	.long LDIFF_SYM393
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,152,3,68,153,2,154,1
 	.align 3
-Lfde25_end:
+Lfde28_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XContainer:get_LastNode"
+	.asciz "System_Xml_Linq_XContainer_get_LastNode"
+
+	.byte 8,69
+	.quad System_Xml_Linq_XContainer_get_LastNode
+	.quad Lme_1d
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM394=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM394
+	.byte 1,106,11
+	.asciz "n"
+
+LDIFF_SYM395=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM395
+	.byte 1,105,11
+	.asciz "s"
+
+LDIFF_SYM396=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM396
+	.byte 1,105,11
+	.asciz "t"
+
+LDIFF_SYM397=LTDIE_43_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM397
+	.byte 1,104,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM398=Lfde29_end - Lfde29_start
+	.long LDIFF_SYM398
+Lfde29_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XContainer_get_LastNode
+
+LDIFF_SYM399=Lme_1d - System_Xml_Linq_XContainer_get_LastNode
+	.long LDIFF_SYM399
+	.long 0
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5,68,154,4
+	.align 3
+Lfde29_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_45:
+
+	.byte 5
+	.asciz "System_Xml_Linq_XStreamingElement"
+
+	.byte 32,16
+LDIFF_SYM400=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM400
+	.byte 2,35,0,6
+	.asciz "name"
+
+LDIFF_SYM401=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM401
+	.byte 2,35,16,6
+	.asciz "content"
+
+LDIFF_SYM402=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM402
+	.byte 2,35,24,0,7
+	.asciz "System_Xml_Linq_XStreamingElement"
+
+LDIFF_SYM403=LTDIE_45 - Ldebug_info_start
+	.long LDIFF_SYM403
+LTDIE_45_POINTER:
+
+	.byte 13
+LDIFF_SYM404=LTDIE_45 - Ldebug_info_start
+	.long LDIFF_SYM404
+LTDIE_45_REFERENCE:
+
+	.byte 14
+LDIFF_SYM405=LTDIE_45 - Ldebug_info_start
+	.long LDIFF_SYM405
+LTDIE_46:
+
+	.byte 17
+	.asciz "System_Collections_IEnumerable"
+
+	.byte 16,7
+	.asciz "System_Collections_IEnumerable"
+
+LDIFF_SYM406=LTDIE_46 - Ldebug_info_start
+	.long LDIFF_SYM406
+LTDIE_46_POINTER:
+
+	.byte 13
+LDIFF_SYM407=LTDIE_46 - Ldebug_info_start
+	.long LDIFF_SYM407
+LTDIE_46_REFERENCE:
+
+	.byte 14
+LDIFF_SYM408=LTDIE_46 - Ldebug_info_start
+	.long LDIFF_SYM408
+LTDIE_47:
+
+	.byte 17
+	.asciz "System_Collections_IEnumerator"
+
+	.byte 16,7
+	.asciz "System_Collections_IEnumerator"
+
+LDIFF_SYM409=LTDIE_47 - Ldebug_info_start
+	.long LDIFF_SYM409
+LTDIE_47_POINTER:
+
+	.byte 13
+LDIFF_SYM410=LTDIE_47 - Ldebug_info_start
+	.long LDIFF_SYM410
+LTDIE_47_REFERENCE:
+
+	.byte 14
+LDIFF_SYM411=LTDIE_47 - Ldebug_info_start
+	.long LDIFF_SYM411
+LTDIE_48:
+
+	.byte 17
+	.asciz "System_IDisposable"
+
+	.byte 16,7
+	.asciz "System_IDisposable"
+
+LDIFF_SYM412=LTDIE_48 - Ldebug_info_start
+	.long LDIFF_SYM412
+LTDIE_48_POINTER:
+
+	.byte 13
+LDIFF_SYM413=LTDIE_48 - Ldebug_info_start
+	.long LDIFF_SYM413
+LTDIE_48_REFERENCE:
+
+	.byte 14
+LDIFF_SYM414=LTDIE_48 - Ldebug_info_start
+	.long LDIFF_SYM414
+	.byte 2
+	.asciz "System.Xml.Linq.XContainer:Add"
+	.asciz "System_Xml_Linq_XContainer_Add_object"
+
+	.byte 8,138,1
+	.quad System_Xml_Linq_XContainer_Add_object
+	.quad Lme_1e
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM415=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM415
+	.byte 1,105,3
+	.asciz "content"
+
+LDIFF_SYM416=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM416
+	.byte 1,106,11
+	.asciz "n"
+
+LDIFF_SYM417=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM417
+	.byte 1,103,11
+	.asciz "s"
+
+LDIFF_SYM418=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM418
+	.byte 1,103,11
+	.asciz "a"
+
+LDIFF_SYM419=LTDIE_6_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM419
+	.byte 1,103,11
+	.asciz "x"
+
+LDIFF_SYM420=LTDIE_45_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM420
+	.byte 1,103,11
+	.asciz "o"
+
+LDIFF_SYM421=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM421
+	.byte 1,103,11
+	.asciz "e"
+
+LDIFF_SYM422=LTDIE_46_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM422
+	.byte 1,103,11
+	.asciz "V_6"
+
+LDIFF_SYM423=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM423
+	.byte 1,106,11
+	.asciz "V_7"
+
+LDIFF_SYM424=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM424
+	.byte 1,104,11
+	.asciz "obj"
+
+LDIFF_SYM425=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM425
+	.byte 1,103,11
+	.asciz "V_9"
+
+LDIFF_SYM426=LTDIE_47_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM426
+	.byte 2,141,48,11
+	.asciz "obj"
+
+LDIFF_SYM427=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM427
+	.byte 1,106,11
+	.asciz "V_11"
+
+LDIFF_SYM428=LTDIE_48_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM428
+	.byte 2,141,56,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM429=Lfde30_end - Lfde30_start
+	.long LDIFF_SYM429
+Lfde30_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XContainer_Add_object
+
+LDIFF_SYM430=Lme_1e - System_Xml_Linq_XContainer_Add_object
+	.long LDIFF_SYM430
+	.long 0
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,151,14,152,13,68,153,12,154,11
+	.align 3
+Lfde30_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XContainer:Nodes"
+	.asciz "System_Xml_Linq_XContainer_Nodes"
+
+	.byte 0,0
+	.quad System_Xml_Linq_XContainer_Nodes
+	.quad Lme_1f
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM431=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM431
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM432=Lfde31_end - Lfde31_start
+	.long LDIFF_SYM432
+Lfde31_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XContainer_Nodes
+
+LDIFF_SYM433=Lme_1f - System_Xml_Linq_XContainer_Nodes
+	.long LDIFF_SYM433
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.align 3
+Lfde31_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XContainer:RemoveNodes"
+	.asciz "System_Xml_Linq_XContainer_RemoveNodes"
+
+	.byte 8,242,2
+	.quad System_Xml_Linq_XContainer_RemoveNodes
+	.quad Lme_20
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM434=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM434
+	.byte 1,106,11
+	.asciz "s"
+
+LDIFF_SYM435=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM435
+	.byte 1,105,11
+	.asciz "last"
+
+LDIFF_SYM436=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM436
+	.byte 1,105,11
+	.asciz "n"
+
+LDIFF_SYM437=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM437
+	.byte 1,104,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM438=Lfde32_end - Lfde32_start
+	.long LDIFF_SYM438
+Lfde32_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XContainer_RemoveNodes
+
+LDIFF_SYM439=Lme_20 - System_Xml_Linq_XContainer_RemoveNodes
+	.long LDIFF_SYM439
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,68,154,2
+	.align 3
+Lfde32_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XContainer:AddAttribute"
+	.asciz "System_Xml_Linq_XContainer_AddAttribute_System_Xml_Linq_XAttribute"
+
+	.byte 8,206,3
+	.quad System_Xml_Linq_XContainer_AddAttribute_System_Xml_Linq_XAttribute
+	.quad Lme_21
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM440=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM440
+	.byte 0,3
+	.asciz "a"
+
+LDIFF_SYM441=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM441
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM442=Lfde33_end - Lfde33_start
+	.long LDIFF_SYM442
+Lfde33_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XContainer_AddAttribute_System_Xml_Linq_XAttribute
+
+LDIFF_SYM443=Lme_21 - System_Xml_Linq_XContainer_AddAttribute_System_Xml_Linq_XAttribute
+	.long LDIFF_SYM443
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde33_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XContainer:AddAttributeSkipNotify"
+	.asciz "System_Xml_Linq_XContainer_AddAttributeSkipNotify_System_Xml_Linq_XAttribute"
+
+	.byte 8,210,3
+	.quad System_Xml_Linq_XContainer_AddAttributeSkipNotify_System_Xml_Linq_XAttribute
+	.quad Lme_22
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM444=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM444
+	.byte 0,3
+	.asciz "a"
+
+LDIFF_SYM445=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM445
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM446=Lfde34_end - Lfde34_start
+	.long LDIFF_SYM446
+Lfde34_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XContainer_AddAttributeSkipNotify_System_Xml_Linq_XAttribute
+
+LDIFF_SYM447=Lme_22 - System_Xml_Linq_XContainer_AddAttributeSkipNotify_System_Xml_Linq_XAttribute
+	.long LDIFF_SYM447
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde34_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XContainer:AddContentSkipNotify"
+	.asciz "System_Xml_Linq_XContainer_AddContentSkipNotify_object"
+
+	.byte 8,214,3
+	.quad System_Xml_Linq_XContainer_AddContentSkipNotify_object
+	.quad Lme_23
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM448=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM448
+	.byte 1,105,3
+	.asciz "content"
+
+LDIFF_SYM449=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM449
+	.byte 1,106,11
+	.asciz "n"
+
+LDIFF_SYM450=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM450
+	.byte 1,103,11
+	.asciz "s"
+
+LDIFF_SYM451=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM451
+	.byte 1,103,11
+	.asciz "a"
+
+LDIFF_SYM452=LTDIE_6_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM452
+	.byte 1,103,11
+	.asciz "x"
+
+LDIFF_SYM453=LTDIE_45_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM453
+	.byte 1,103,11
+	.asciz "o"
+
+LDIFF_SYM454=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM454
+	.byte 1,103,11
+	.asciz "e"
+
+LDIFF_SYM455=LTDIE_46_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM455
+	.byte 1,103,11
+	.asciz "V_6"
+
+LDIFF_SYM456=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM456
+	.byte 1,106,11
+	.asciz "V_7"
+
+LDIFF_SYM457=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM457
+	.byte 1,104,11
+	.asciz "obj"
+
+LDIFF_SYM458=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM458
+	.byte 1,103,11
+	.asciz "V_9"
+
+LDIFF_SYM459=LTDIE_47_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM459
+	.byte 2,141,48,11
+	.asciz "obj"
+
+LDIFF_SYM460=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM460
+	.byte 1,106,11
+	.asciz "V_11"
+
+LDIFF_SYM461=LTDIE_48_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM461
+	.byte 2,141,56,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM462=Lfde35_end - Lfde35_start
+	.long LDIFF_SYM462
+Lfde35_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XContainer_AddContentSkipNotify_object
+
+LDIFF_SYM463=Lme_23 - System_Xml_Linq_XContainer_AddContentSkipNotify_object
+	.long LDIFF_SYM463
+	.long 0
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,151,14,152,13,68,153,12,154,11
+	.align 3
+Lfde35_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XContainer:AddNode"
+	.asciz "System_Xml_Linq_XContainer_AddNode_System_Xml_Linq_XNode"
+
+	.byte 8,128,4
+	.quad System_Xml_Linq_XContainer_AddNode_System_Xml_Linq_XNode
+	.quad Lme_24
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM464=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM464
+	.byte 1,105,3
+	.asciz "n"
+
+LDIFF_SYM465=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM465
+	.byte 1,106,11
+	.asciz "p"
+
+LDIFF_SYM466=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM466
+	.byte 1,104,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM467=Lfde36_end - Lfde36_start
+	.long LDIFF_SYM467
+Lfde36_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XContainer_AddNode_System_Xml_Linq_XNode
+
+LDIFF_SYM468=Lme_24 - System_Xml_Linq_XContainer_AddNode_System_Xml_Linq_XNode
+	.long LDIFF_SYM468
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,68,154,2
+	.align 3
+Lfde36_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -17640,41 +22741,85 @@ Lfde25_end:
 
 	.byte 8,145,4
 	.quad System_Xml_Linq_XContainer_AddNodeSkipNotify_System_Xml_Linq_XNode
-	.quad Lme_1a
+	.quad Lme_25
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM383=LTDIE_8_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM383
+LDIFF_SYM469=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM469
 	.byte 1,105,3
 	.asciz "n"
 
-LDIFF_SYM384=LTDIE_9_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM384
+LDIFF_SYM470=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM470
 	.byte 1,106,11
 	.asciz "p"
 
-LDIFF_SYM385=LTDIE_9_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM385
+LDIFF_SYM471=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM471
 	.byte 1,104,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM386=Lfde26_end - Lfde26_start
-	.long LDIFF_SYM386
-Lfde26_start:
+LDIFF_SYM472=Lfde37_end - Lfde37_start
+	.long LDIFF_SYM472
+Lfde37_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XContainer_AddNodeSkipNotify_System_Xml_Linq_XNode
 
-LDIFF_SYM387=Lme_1a - System_Xml_Linq_XContainer_AddNodeSkipNotify_System_Xml_Linq_XNode
-	.long LDIFF_SYM387
+LDIFF_SYM473=Lme_25 - System_Xml_Linq_XContainer_AddNodeSkipNotify_System_Xml_Linq_XNode
+	.long LDIFF_SYM473
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,68,154,2
 	.align 3
-Lfde26_end:
+Lfde37_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XContainer:AddString"
+	.asciz "System_Xml_Linq_XContainer_AddString_string"
+
+	.byte 8,162,4
+	.quad System_Xml_Linq_XContainer_AddString_string
+	.quad Lme_26
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM474=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM474
+	.byte 1,105,3
+	.asciz "s"
+
+LDIFF_SYM475=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM475
+	.byte 1,106,11
+	.asciz "tn"
+
+LDIFF_SYM476=LTDIE_43_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM476
+	.byte 1,104,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM477=Lfde38_end - Lfde38_start
+	.long LDIFF_SYM477
+Lfde38_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XContainer_AddString_string
+
+LDIFF_SYM478=Lme_26 - System_Xml_Linq_XContainer_AddString_string
+	.long LDIFF_SYM478
+	.long 0
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,151,6,152,5,68,153,4,154,3
+	.align 3
+Lfde38_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -17684,46 +22829,85 @@ Lfde26_end:
 
 	.byte 8,203,4
 	.quad System_Xml_Linq_XContainer_AddStringSkipNotify_string
-	.quad Lme_1b
+	.quad Lme_27
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM388=LTDIE_8_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM388
+LDIFF_SYM479=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM479
 	.byte 1,105,3
 	.asciz "s"
 
-LDIFF_SYM389=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM389
+LDIFF_SYM480=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM480
 	.byte 1,106,11
 	.asciz "stringContent"
 
-LDIFF_SYM390=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM390
+LDIFF_SYM481=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM481
 	.byte 1,104,11
 	.asciz "tn"
 
-LDIFF_SYM391=LTDIE_43_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM391
+LDIFF_SYM482=LTDIE_43_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM482
 	.byte 1,104,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM392=Lfde27_end - Lfde27_start
-	.long LDIFF_SYM392
-Lfde27_start:
+LDIFF_SYM483=Lfde39_end - Lfde39_start
+	.long LDIFF_SYM483
+Lfde39_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XContainer_AddStringSkipNotify_string
 
-LDIFF_SYM393=Lme_1b - System_Xml_Linq_XContainer_AddStringSkipNotify_string
-	.long LDIFF_SYM393
+LDIFF_SYM484=Lme_27 - System_Xml_Linq_XContainer_AddStringSkipNotify_string
+	.long LDIFF_SYM484
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,151,6,152,5,68,153,4,154,3
 	.align 3
-Lfde27_end:
+Lfde39_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XContainer:AppendNode"
+	.asciz "System_Xml_Linq_XContainer_AppendNode_System_Xml_Linq_XNode"
+
+	.byte 8,232,4
+	.quad System_Xml_Linq_XContainer_AppendNode_System_Xml_Linq_XNode
+	.quad Lme_28
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM485=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM485
+	.byte 2,141,24,3
+	.asciz "n"
+
+LDIFF_SYM486=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM486
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM487=Lfde40_end - Lfde40_start
+	.long LDIFF_SYM487
+Lfde40_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XContainer_AppendNode_System_Xml_Linq_XNode
+
+LDIFF_SYM488=Lme_28 - System_Xml_Linq_XContainer_AppendNode_System_Xml_Linq_XNode
+	.long LDIFF_SYM488
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
+	.align 3
+Lfde40_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -17733,41 +22917,90 @@ Lfde27_end:
 
 	.byte 8,240,4
 	.quad System_Xml_Linq_XContainer_AppendNodeSkipNotify_System_Xml_Linq_XNode
-	.quad Lme_1c
+	.quad Lme_29
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM394=LTDIE_8_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM394
+LDIFF_SYM489=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM489
 	.byte 1,105,3
 	.asciz "n"
 
-LDIFF_SYM395=LTDIE_9_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM395
+LDIFF_SYM490=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM490
 	.byte 1,106,11
 	.asciz "x"
 
-LDIFF_SYM396=LTDIE_9_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM396
+LDIFF_SYM491=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM491
 	.byte 1,103,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM397=Lfde28_end - Lfde28_start
-	.long LDIFF_SYM397
-Lfde28_start:
+LDIFF_SYM492=Lfde41_end - Lfde41_start
+	.long LDIFF_SYM492
+Lfde41_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XContainer_AppendNodeSkipNotify_System_Xml_Linq_XNode
 
-LDIFF_SYM398=Lme_1c - System_Xml_Linq_XContainer_AppendNodeSkipNotify_System_Xml_Linq_XNode
-	.long LDIFF_SYM398
+LDIFF_SYM493=Lme_29 - System_Xml_Linq_XContainer_AppendNodeSkipNotify_System_Xml_Linq_XNode
+	.long LDIFF_SYM493
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,152,3,68,153,2,154,1
 	.align 3
-Lfde28_end:
+Lfde41_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XContainer:AppendText"
+	.asciz "System_Xml_Linq_XContainer_AppendText_System_Text_StringBuilder"
+
+	.byte 8,128,5
+	.quad System_Xml_Linq_XContainer_AppendText_System_Text_StringBuilder
+	.quad Lme_2a
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM494=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM494
+	.byte 1,105,3
+	.asciz "sb"
+
+LDIFF_SYM495=LTDIE_27_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM495
+	.byte 1,106,11
+	.asciz "s"
+
+LDIFF_SYM496=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM496
+	.byte 1,104,11
+	.asciz "n"
+
+LDIFF_SYM497=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM497
+	.byte 1,103,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM498=Lfde42_end - Lfde42_start
+	.long LDIFF_SYM498
+Lfde42_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XContainer_AppendText_System_Text_StringBuilder
+
+LDIFF_SYM499=Lme_2a - System_Xml_Linq_XContainer_AppendText_System_Text_StringBuilder
+	.long LDIFF_SYM499
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,152,3,68,153,2,154,1
+	.align 3
+Lfde42_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -17777,41 +23010,41 @@ Lfde28_end:
 
 	.byte 8,223,5
 	.quad System_Xml_Linq_XContainer_ConvertTextToNode
-	.quad Lme_1d
+	.quad Lme_2b
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM399=LTDIE_8_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM399
+LDIFF_SYM500=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM500
 	.byte 1,106,11
 	.asciz "s"
 
-LDIFF_SYM400=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM400
+LDIFF_SYM501=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM501
 	.byte 1,105,11
 	.asciz "t"
 
-LDIFF_SYM401=LTDIE_43_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM401
+LDIFF_SYM502=LTDIE_43_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM502
 	.byte 1,105,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM402=Lfde29_end - Lfde29_start
-	.long LDIFF_SYM402
-Lfde29_start:
+LDIFF_SYM503=Lfde43_end - Lfde43_start
+	.long LDIFF_SYM503
+Lfde43_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XContainer_ConvertTextToNode
 
-LDIFF_SYM403=Lme_1d - System_Xml_Linq_XContainer_ConvertTextToNode
-	.long LDIFF_SYM403
+LDIFF_SYM504=Lme_2b - System_Xml_Linq_XContainer_ConvertTextToNode
+	.long LDIFF_SYM504
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5,68,154,4
 	.align 3
-Lfde29_end:
+Lfde43_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -17821,62 +23054,62 @@ Lfde29_end:
 
 	.byte 8,170,6
 	.quad System_Xml_Linq_XContainer_GetStringValue_object
-	.quad Lme_1e
+	.quad Lme_2c
 
 	.byte 2,118,16,3
 	.asciz "value"
 
-LDIFF_SYM404=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM404
+LDIFF_SYM505=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM505
 	.byte 1,106,11
 	.asciz "s"
 
-LDIFF_SYM405=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM405
+LDIFF_SYM506=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM506
 	.byte 1,104,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM406=Lfde30_end - Lfde30_start
-	.long LDIFF_SYM406
-Lfde30_start:
+LDIFF_SYM507=Lfde44_end - Lfde44_start
+	.long LDIFF_SYM507
+Lfde44_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XContainer_GetStringValue_object
 
-LDIFF_SYM407=Lme_1e - System_Xml_Linq_XContainer_GetStringValue_object
-	.long LDIFF_SYM407
+LDIFF_SYM508=Lme_2c - System_Xml_Linq_XContainer_GetStringValue_object
+	.long LDIFF_SYM508
 	.long 0
 	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,152,12,153,11,68,154,10
 	.align 3
-Lfde30_end:
+Lfde44_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_45:
+LTDIE_49:
 
 	.byte 5
 	.asciz "System_Xml_XmlReader"
 
 	.byte 16,16
-LDIFF_SYM408=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM408
+LDIFF_SYM509=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM509
 	.byte 2,35,0,0,7
 	.asciz "System_Xml_XmlReader"
 
-LDIFF_SYM409=LTDIE_45 - Ldebug_info_start
-	.long LDIFF_SYM409
-LTDIE_45_POINTER:
+LDIFF_SYM510=LTDIE_49 - Ldebug_info_start
+	.long LDIFF_SYM510
+LTDIE_49_POINTER:
 
 	.byte 13
-LDIFF_SYM410=LTDIE_45 - Ldebug_info_start
-	.long LDIFF_SYM410
-LTDIE_45_REFERENCE:
+LDIFF_SYM511=LTDIE_49 - Ldebug_info_start
+	.long LDIFF_SYM511
+LTDIE_49_REFERENCE:
 
 	.byte 14
-LDIFF_SYM411=LTDIE_45 - Ldebug_info_start
-	.long LDIFF_SYM411
-LTDIE_47:
+LDIFF_SYM512=LTDIE_49 - Ldebug_info_start
+	.long LDIFF_SYM512
+LTDIE_51:
 
 	.byte 17
 	.asciz "System_Xml_IXmlLineInfo"
@@ -17884,117 +23117,117 @@ LTDIE_47:
 	.byte 16,7
 	.asciz "System_Xml_IXmlLineInfo"
 
-LDIFF_SYM412=LTDIE_47 - Ldebug_info_start
-	.long LDIFF_SYM412
-LTDIE_47_POINTER:
+LDIFF_SYM513=LTDIE_51 - Ldebug_info_start
+	.long LDIFF_SYM513
+LTDIE_51_POINTER:
 
 	.byte 13
-LDIFF_SYM413=LTDIE_47 - Ldebug_info_start
-	.long LDIFF_SYM413
-LTDIE_47_REFERENCE:
+LDIFF_SYM514=LTDIE_51 - Ldebug_info_start
+	.long LDIFF_SYM514
+LTDIE_51_REFERENCE:
 
 	.byte 14
-LDIFF_SYM414=LTDIE_47 - Ldebug_info_start
-	.long LDIFF_SYM414
-LTDIE_46:
+LDIFF_SYM515=LTDIE_51 - Ldebug_info_start
+	.long LDIFF_SYM515
+LTDIE_50:
 
 	.byte 5
 	.asciz "_ContentReader"
 
 	.byte 72,16
-LDIFF_SYM415=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM415
+LDIFF_SYM516=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM516
 	.byte 2,35,0,6
 	.asciz "_eCache"
 
-LDIFF_SYM416=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM416
+LDIFF_SYM517=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM517
 	.byte 2,35,16,6
 	.asciz "_aCache"
 
-LDIFF_SYM417=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM417
+LDIFF_SYM518=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM518
 	.byte 2,35,32,6
 	.asciz "_lineInfo"
 
-LDIFF_SYM418=LTDIE_47_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM418
+LDIFF_SYM519=LTDIE_51_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM519
 	.byte 2,35,48,6
 	.asciz "_currentContainer"
 
-LDIFF_SYM419=LTDIE_8_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM419
+LDIFF_SYM520=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM520
 	.byte 2,35,56,6
 	.asciz "_baseUri"
 
-LDIFF_SYM420=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM420
+LDIFF_SYM521=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM521
 	.byte 2,35,64,0,7
 	.asciz "_ContentReader"
 
-LDIFF_SYM421=LTDIE_46 - Ldebug_info_start
-	.long LDIFF_SYM421
-LTDIE_46_POINTER:
+LDIFF_SYM522=LTDIE_50 - Ldebug_info_start
+	.long LDIFF_SYM522
+LTDIE_50_POINTER:
 
 	.byte 13
-LDIFF_SYM422=LTDIE_46 - Ldebug_info_start
-	.long LDIFF_SYM422
-LTDIE_46_REFERENCE:
+LDIFF_SYM523=LTDIE_50 - Ldebug_info_start
+	.long LDIFF_SYM523
+LTDIE_50_REFERENCE:
 
 	.byte 14
-LDIFF_SYM423=LTDIE_46 - Ldebug_info_start
-	.long LDIFF_SYM423
+LDIFF_SYM524=LTDIE_50 - Ldebug_info_start
+	.long LDIFF_SYM524
 	.byte 2
 	.asciz "System.Xml.Linq.XContainer:ReadContentFrom"
 	.asciz "System_Xml_Linq_XContainer_ReadContentFrom_System_Xml_XmlReader"
 
 	.byte 8,217,6
 	.quad System_Xml_Linq_XContainer_ReadContentFrom_System_Xml_XmlReader
-	.quad Lme_1f
+	.quad Lme_2d
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM424=LTDIE_8_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM424
+LDIFF_SYM525=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM525
 	.byte 1,105,3
 	.asciz "r"
 
-LDIFF_SYM425=LTDIE_45_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM425
+LDIFF_SYM526=LTDIE_49_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM526
 	.byte 1,106,11
 	.asciz "cr"
 
-LDIFF_SYM426=LTDIE_46_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM426
+LDIFF_SYM527=LTDIE_50_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM527
 	.byte 1,104,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM427=Lfde31_end - Lfde31_start
-	.long LDIFF_SYM427
-Lfde31_start:
+LDIFF_SYM528=Lfde45_end - Lfde45_start
+	.long LDIFF_SYM528
+Lfde45_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XContainer_ReadContentFrom_System_Xml_XmlReader
 
-LDIFF_SYM428=Lme_1f - System_Xml_Linq_XContainer_ReadContentFrom_System_Xml_XmlReader
-	.long LDIFF_SYM428
+LDIFF_SYM529=Lme_2d - System_Xml_Linq_XContainer_ReadContentFrom_System_Xml_XmlReader
+	.long LDIFF_SYM529
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,68,154,2
 	.align 3
-Lfde31_end:
+Lfde45_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_48:
+LTDIE_52:
 
 	.byte 8
 	.asciz "System_Xml_Linq_LoadOptions"
 
 	.byte 4
-LDIFF_SYM429=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM429
+LDIFF_SYM530=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM530
 	.byte 9
 	.asciz "None"
 
@@ -18010,64 +23243,157 @@ LDIFF_SYM429=LDIE_I4 - Ldebug_info_start
 	.byte 4,0,7
 	.asciz "System_Xml_Linq_LoadOptions"
 
-LDIFF_SYM430=LTDIE_48 - Ldebug_info_start
-	.long LDIFF_SYM430
-LTDIE_48_POINTER:
+LDIFF_SYM531=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM531
+LTDIE_52_POINTER:
 
 	.byte 13
-LDIFF_SYM431=LTDIE_48 - Ldebug_info_start
-	.long LDIFF_SYM431
-LTDIE_48_REFERENCE:
+LDIFF_SYM532=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM532
+LTDIE_52_REFERENCE:
 
 	.byte 14
-LDIFF_SYM432=LTDIE_48 - Ldebug_info_start
-	.long LDIFF_SYM432
+LDIFF_SYM533=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM533
 	.byte 2
 	.asciz "System.Xml.Linq.XContainer:ReadContentFrom"
 	.asciz "System_Xml_Linq_XContainer_ReadContentFrom_System_Xml_XmlReader_System_Xml_Linq_LoadOptions"
 
 	.byte 8,225,6
 	.quad System_Xml_Linq_XContainer_ReadContentFrom_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
-	.quad Lme_20
+	.quad Lme_2e
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM433=LTDIE_8_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM433
+LDIFF_SYM534=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM534
 	.byte 1,104,3
 	.asciz "r"
 
-LDIFF_SYM434=LTDIE_45_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM434
+LDIFF_SYM535=LTDIE_49_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM535
 	.byte 1,105,3
 	.asciz "o"
 
-LDIFF_SYM435=LTDIE_48 - Ldebug_info_start
-	.long LDIFF_SYM435
+LDIFF_SYM536=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM536
 	.byte 1,106,11
 	.asciz "cr"
 
-LDIFF_SYM436=LTDIE_46_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM436
+LDIFF_SYM537=LTDIE_50_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM537
 	.byte 1,103,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM437=Lfde32_end - Lfde32_start
-	.long LDIFF_SYM437
-Lfde32_start:
+LDIFF_SYM538=Lfde46_end - Lfde46_start
+	.long LDIFF_SYM538
+Lfde46_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XContainer_ReadContentFrom_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
 
-LDIFF_SYM438=Lme_20 - System_Xml_Linq_XContainer_ReadContentFrom_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
-	.long LDIFF_SYM438
+LDIFF_SYM539=Lme_2e - System_Xml_Linq_XContainer_ReadContentFrom_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
+	.long LDIFF_SYM539
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,151,6,152,5,68,153,4,154,3
 	.align 3
-Lfde32_end:
+Lfde46_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XContainer:RemoveNode"
+	.asciz "System_Xml_Linq_XContainer_RemoveNode_System_Xml_Linq_XNode"
+
+	.byte 8,207,8
+	.quad System_Xml_Linq_XContainer_RemoveNode_System_Xml_Linq_XNode
+	.quad Lme_2f
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM540=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM540
+	.byte 1,105,3
+	.asciz "n"
+
+LDIFF_SYM541=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM541
+	.byte 1,106,11
+	.asciz "notify"
+
+LDIFF_SYM542=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM542
+	.byte 2,141,48,11
+	.asciz "p"
+
+LDIFF_SYM543=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM543
+	.byte 1,102,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM544=Lfde47_end - Lfde47_start
+	.long LDIFF_SYM544
+Lfde47_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XContainer_RemoveNode_System_Xml_Linq_XNode
+
+LDIFF_SYM545=Lme_2f - System_Xml_Linq_XContainer_RemoveNode_System_Xml_Linq_XNode
+	.long LDIFF_SYM545
+	.long 0
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,153,4,154,3
+	.align 3
+Lfde47_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XContainer:RemoveNodesSkipNotify"
+	.asciz "System_Xml_Linq_XContainer_RemoveNodesSkipNotify"
+
+	.byte 8,227,8
+	.quad System_Xml_Linq_XContainer_RemoveNodesSkipNotify
+	.quad Lme_30
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM546=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM546
+	.byte 1,106,11
+	.asciz "n"
+
+LDIFF_SYM547=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM547
+	.byte 1,105,11
+	.asciz "next"
+
+LDIFF_SYM548=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM548
+	.byte 1,104,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM549=Lfde48_end - Lfde48_start
+	.long LDIFF_SYM549
+Lfde48_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XContainer_RemoveNodesSkipNotify
+
+LDIFF_SYM550=Lme_30 - System_Xml_Linq_XContainer_RemoveNodesSkipNotify
+	.long LDIFF_SYM550
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,68,154,2
+	.align 3
+Lfde48_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -18077,41 +23403,41 @@ Lfde32_end:
 
 	.byte 8,245,8
 	.quad System_Xml_Linq_XContainer_ValidateNode_System_Xml_Linq_XNode_System_Xml_Linq_XNode
-	.quad Lme_21
+	.quad Lme_31
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM439=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM439
+LDIFF_SYM551=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM551
 	.byte 0,3
 	.asciz "node"
 
-LDIFF_SYM440=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM440
+LDIFF_SYM552=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM552
 	.byte 0,3
 	.asciz "previous"
 
-LDIFF_SYM441=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM441
+LDIFF_SYM553=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM553
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM442=Lfde33_end - Lfde33_start
-	.long LDIFF_SYM442
-Lfde33_start:
+LDIFF_SYM554=Lfde49_end - Lfde49_start
+	.long LDIFF_SYM554
+Lfde49_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XContainer_ValidateNode_System_Xml_Linq_XNode_System_Xml_Linq_XNode
 
-LDIFF_SYM443=Lme_21 - System_Xml_Linq_XContainer_ValidateNode_System_Xml_Linq_XNode_System_Xml_Linq_XNode
-	.long LDIFF_SYM443
+LDIFF_SYM555=Lme_31 - System_Xml_Linq_XContainer_ValidateNode_System_Xml_Linq_XNode_System_Xml_Linq_XNode
+	.long LDIFF_SYM555
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde33_end:
+Lfde49_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -18121,36 +23447,36 @@ Lfde33_end:
 
 	.byte 8,249,8
 	.quad System_Xml_Linq_XContainer_ValidateString_string
-	.quad Lme_22
+	.quad Lme_32
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM444=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM444
+LDIFF_SYM556=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM556
 	.byte 0,3
 	.asciz "s"
 
-LDIFF_SYM445=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM445
+LDIFF_SYM557=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM557
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM446=Lfde34_end - Lfde34_start
-	.long LDIFF_SYM446
-Lfde34_start:
+LDIFF_SYM558=Lfde50_end - Lfde50_start
+	.long LDIFF_SYM558
+Lfde50_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XContainer_ValidateString_string
 
-LDIFF_SYM447=Lme_22 - System_Xml_Linq_XContainer_ValidateString_string
-	.long LDIFF_SYM447
+LDIFF_SYM559=Lme_32 - System_Xml_Linq_XContainer_ValidateString_string
+	.long LDIFF_SYM559
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde34_end:
+Lfde50_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -18160,46 +23486,46 @@ Lfde34_end:
 
 	.byte 8,253,8
 	.quad System_Xml_Linq_XContainer_WriteContentTo_System_Xml_XmlWriter
-	.quad Lme_23
+	.quad Lme_33
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM448=LTDIE_8_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM448
+LDIFF_SYM560=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM560
 	.byte 1,105,3
 	.asciz "writer"
 
-LDIFF_SYM449=LTDIE_41_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM449
+LDIFF_SYM561=LTDIE_41_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM561
 	.byte 1,106,11
 	.asciz "stringContent"
 
-LDIFF_SYM450=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM450
+LDIFF_SYM562=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM562
 	.byte 1,104,11
 	.asciz "n"
 
-LDIFF_SYM451=LTDIE_9_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM451
+LDIFF_SYM563=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM563
 	.byte 1,103,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM452=Lfde35_end - Lfde35_start
-	.long LDIFF_SYM452
-Lfde35_start:
+LDIFF_SYM564=Lfde51_end - Lfde51_start
+	.long LDIFF_SYM564
+Lfde51_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XContainer_WriteContentTo_System_Xml_XmlWriter
 
-LDIFF_SYM453=Lme_23 - System_Xml_Linq_XContainer_WriteContentTo_System_Xml_XmlWriter
-	.long LDIFF_SYM453
+LDIFF_SYM565=Lme_33 - System_Xml_Linq_XContainer_WriteContentTo_System_Xml_XmlWriter
+	.long LDIFF_SYM565
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,152,3,68,153,2,154,1
 	.align 3
-Lfde35_end:
+Lfde51_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -18209,36 +23535,36 @@ Lfde35_end:
 
 	.byte 8,145,7
 	.quad System_Xml_Linq_XContainer_ContentReader__ctor_System_Xml_Linq_XContainer
-	.quad Lme_24
+	.quad Lme_34
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM454=LTDIE_46_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM454
+LDIFF_SYM566=LTDIE_50_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM566
 	.byte 2,141,16,3
 	.asciz "rootContainer"
 
-LDIFF_SYM455=LTDIE_8_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM455
+LDIFF_SYM567=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM567
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM456=Lfde36_end - Lfde36_start
-	.long LDIFF_SYM456
-Lfde36_start:
+LDIFF_SYM568=Lfde52_end - Lfde52_start
+	.long LDIFF_SYM568
+Lfde52_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XContainer_ContentReader__ctor_System_Xml_Linq_XContainer
 
-LDIFF_SYM457=Lme_24 - System_Xml_Linq_XContainer_ContentReader__ctor_System_Xml_Linq_XContainer
-	.long LDIFF_SYM457
+LDIFF_SYM569=Lme_34 - System_Xml_Linq_XContainer_ContentReader__ctor_System_Xml_Linq_XContainer
+	.long LDIFF_SYM569
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde36_end:
+Lfde52_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -18248,89 +23574,89 @@ Lfde36_end:
 
 	.byte 8,150,7
 	.quad System_Xml_Linq_XContainer_ContentReader__ctor_System_Xml_Linq_XContainer_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
-	.quad Lme_25
+	.quad Lme_35
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM458=LTDIE_46_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM458
+LDIFF_SYM570=LTDIE_50_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM570
 	.byte 1,103,3
 	.asciz "rootContainer"
 
-LDIFF_SYM459=LTDIE_8_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM459
+LDIFF_SYM571=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM571
 	.byte 1,104,3
 	.asciz "r"
 
-LDIFF_SYM460=LTDIE_45_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM460
+LDIFF_SYM572=LTDIE_49_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM572
 	.byte 1,105,3
 	.asciz "o"
 
-LDIFF_SYM461=LTDIE_48 - Ldebug_info_start
-	.long LDIFF_SYM461
+LDIFF_SYM573=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM573
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM462=Lfde37_end - Lfde37_start
-	.long LDIFF_SYM462
-Lfde37_start:
+LDIFF_SYM574=Lfde53_end - Lfde53_start
+	.long LDIFF_SYM574
+Lfde53_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XContainer_ContentReader__ctor_System_Xml_Linq_XContainer_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
 
-LDIFF_SYM463=Lme_25 - System_Xml_Linq_XContainer_ContentReader__ctor_System_Xml_Linq_XContainer_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
-	.long LDIFF_SYM463
+LDIFF_SYM575=Lme_35 - System_Xml_Linq_XContainer_ContentReader__ctor_System_Xml_Linq_XContainer_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
+	.long LDIFF_SYM575
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,153,3,68,154,2
 	.align 3
-Lfde37_end:
+Lfde53_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_49:
+LTDIE_53:
 
 	.byte 5
 	.asciz "System_Xml_Linq_XElement"
 
 	.byte 64,16
-LDIFF_SYM464=LTDIE_8 - Ldebug_info_start
-	.long LDIFF_SYM464
+LDIFF_SYM576=LTDIE_8 - Ldebug_info_start
+	.long LDIFF_SYM576
 	.byte 2,35,0,6
 	.asciz "name"
 
-LDIFF_SYM465=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM465
+LDIFF_SYM577=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM577
 	.byte 2,35,48,6
 	.asciz "lastAttr"
 
-LDIFF_SYM466=LTDIE_6_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM466
+LDIFF_SYM578=LTDIE_6_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM578
 	.byte 2,35,56,0,7
 	.asciz "System_Xml_Linq_XElement"
 
-LDIFF_SYM467=LTDIE_49 - Ldebug_info_start
-	.long LDIFF_SYM467
-LTDIE_49_POINTER:
+LDIFF_SYM579=LTDIE_53 - Ldebug_info_start
+	.long LDIFF_SYM579
+LTDIE_53_POINTER:
 
 	.byte 13
-LDIFF_SYM468=LTDIE_49 - Ldebug_info_start
-	.long LDIFF_SYM468
-LTDIE_49_REFERENCE:
+LDIFF_SYM580=LTDIE_53 - Ldebug_info_start
+	.long LDIFF_SYM580
+LTDIE_53_REFERENCE:
 
 	.byte 14
-LDIFF_SYM469=LTDIE_49 - Ldebug_info_start
-	.long LDIFF_SYM469
-LTDIE_50:
+LDIFF_SYM581=LTDIE_53 - Ldebug_info_start
+	.long LDIFF_SYM581
+LTDIE_54:
 
 	.byte 8
 	.asciz "System_Xml_XmlNodeType"
 
 	.byte 4
-LDIFF_SYM470=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM470
+LDIFF_SYM582=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM582
 	.byte 9
 	.asciz "None"
 
@@ -18388,74 +23714,74 @@ LDIFF_SYM470=LDIE_I4 - Ldebug_info_start
 	.byte 17,0,7
 	.asciz "System_Xml_XmlNodeType"
 
-LDIFF_SYM471=LTDIE_50 - Ldebug_info_start
-	.long LDIFF_SYM471
-LTDIE_50_POINTER:
+LDIFF_SYM583=LTDIE_54 - Ldebug_info_start
+	.long LDIFF_SYM583
+LTDIE_54_POINTER:
 
 	.byte 13
-LDIFF_SYM472=LTDIE_50 - Ldebug_info_start
-	.long LDIFF_SYM472
-LTDIE_50_REFERENCE:
+LDIFF_SYM584=LTDIE_54 - Ldebug_info_start
+	.long LDIFF_SYM584
+LTDIE_54_REFERENCE:
 
 	.byte 14
-LDIFF_SYM473=LTDIE_50 - Ldebug_info_start
-	.long LDIFF_SYM473
+LDIFF_SYM585=LTDIE_54 - Ldebug_info_start
+	.long LDIFF_SYM585
 	.byte 2
 	.asciz "System.Xml.Linq.XContainer/ContentReader:ReadContentFrom"
 	.asciz "System_Xml_Linq_XContainer_ContentReader_ReadContentFrom_System_Xml_Linq_XContainer_System_Xml_XmlReader"
 
 	.byte 8,159,7
 	.quad System_Xml_Linq_XContainer_ContentReader_ReadContentFrom_System_Xml_Linq_XContainer_System_Xml_XmlReader
-	.quad Lme_26
+	.quad Lme_36
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM474=LTDIE_46_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM474
+LDIFF_SYM586=LTDIE_50_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM586
 	.byte 1,104,3
 	.asciz "rootContainer"
 
-LDIFF_SYM475=LTDIE_8_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM475
+LDIFF_SYM587=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM587
 	.byte 1,105,3
 	.asciz "r"
 
-LDIFF_SYM476=LTDIE_45_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM476
+LDIFF_SYM588=LTDIE_49_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM588
 	.byte 1,106,11
 	.asciz "e"
 
-LDIFF_SYM477=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM477
+LDIFF_SYM589=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM589
 	.byte 1,105,11
 	.asciz "V_1"
 
-LDIFF_SYM478=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM478
+LDIFF_SYM590=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM590
 	.byte 0,11
 	.asciz "V_2"
 
-LDIFF_SYM479=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM479
+LDIFF_SYM591=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM591
 	.byte 3,141,192,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM480=Lfde38_end - Lfde38_start
-	.long LDIFF_SYM480
-Lfde38_start:
+LDIFF_SYM592=Lfde54_end - Lfde54_start
+	.long LDIFF_SYM592
+Lfde54_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XContainer_ContentReader_ReadContentFrom_System_Xml_Linq_XContainer_System_Xml_XmlReader
 
-LDIFF_SYM481=Lme_26 - System_Xml_Linq_XContainer_ContentReader_ReadContentFrom_System_Xml_Linq_XContainer_System_Xml_XmlReader
-	.long LDIFF_SYM481
+LDIFF_SYM593=Lme_36 - System_Xml_Linq_XContainer_ContentReader_ReadContentFrom_System_Xml_Linq_XContainer_System_Xml_XmlReader
+	.long LDIFF_SYM593
 	.long 0
 	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,149,18,150,17,68,151,16,152,15,68,153,14,154,13
 	.align 3
-Lfde38_end:
+Lfde54_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -18465,1025 +23791,275 @@ Lfde38_end:
 
 	.byte 8,216,7
 	.quad System_Xml_Linq_XContainer_ContentReader_ReadContentFrom_System_Xml_Linq_XContainer_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
-	.quad Lme_27
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM482=LTDIE_46_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM482
-	.byte 1,104,3
-	.asciz "rootContainer"
-
-LDIFF_SYM483=LTDIE_8_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM483
-	.byte 1,105,3
-	.asciz "r"
-
-LDIFF_SYM484=LTDIE_45_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM484
-	.byte 1,106,3
-	.asciz "o"
-
-LDIFF_SYM485=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM485
-	.byte 0,11
-	.asciz "newNode"
-
-LDIFF_SYM486=LTDIE_9_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM486
-	.byte 1,103,11
-	.asciz "baseUri"
-
-LDIFF_SYM487=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM487
-	.byte 1,102,11
-	.asciz "V_2"
-
-LDIFF_SYM488=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM488
-	.byte 0,11
-	.asciz "e"
-
-LDIFF_SYM489=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM489
-	.byte 1,105,11
-	.asciz "V_4"
-
-LDIFF_SYM490=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM490
-	.byte 3,141,208,0,11
-	.asciz "a"
-
-LDIFF_SYM491=LTDIE_6_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM491
-	.byte 1,101,11
-	.asciz "e"
-
-LDIFF_SYM492=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM492
-	.byte 1,106,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM493=Lfde39_end - Lfde39_start
-	.long LDIFF_SYM493
-Lfde39_start:
-
-	.long 0
-	.align 3
-	.quad System_Xml_Linq_XContainer_ContentReader_ReadContentFrom_System_Xml_Linq_XContainer_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
-
-LDIFF_SYM494=Lme_27 - System_Xml_Linq_XContainer_ContentReader_ReadContentFrom_System_Xml_Linq_XContainer_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
-	.long LDIFF_SYM494
-	.long 0
-	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,148,20,149,19,68,150,18,151,17,68,152,16,153,15,68,154,14
-	.align 3
-Lfde39_end:
-
-.section __DWARF, __debug_info,regular,debug
-LTDIE_51:
-
-	.byte 5
-	.asciz "System_Xml_Linq_XDeclaration"
-
-	.byte 40,16
-LDIFF_SYM495=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM495
-	.byte 2,35,0,6
-	.asciz "_version"
-
-LDIFF_SYM496=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM496
-	.byte 2,35,16,6
-	.asciz "_encoding"
-
-LDIFF_SYM497=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM497
-	.byte 2,35,24,6
-	.asciz "_standalone"
-
-LDIFF_SYM498=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM498
-	.byte 2,35,32,0,7
-	.asciz "System_Xml_Linq_XDeclaration"
-
-LDIFF_SYM499=LTDIE_51 - Ldebug_info_start
-	.long LDIFF_SYM499
-LTDIE_51_POINTER:
-
-	.byte 13
-LDIFF_SYM500=LTDIE_51 - Ldebug_info_start
-	.long LDIFF_SYM500
-LTDIE_51_REFERENCE:
-
-	.byte 14
-LDIFF_SYM501=LTDIE_51 - Ldebug_info_start
-	.long LDIFF_SYM501
-	.byte 2
-	.asciz "System.Xml.Linq.XDeclaration:.ctor"
-	.asciz "System_Xml_Linq_XDeclaration__ctor_System_Xml_Linq_XDeclaration"
-
-	.byte 9,57
-	.quad System_Xml_Linq_XDeclaration__ctor_System_Xml_Linq_XDeclaration
-	.quad Lme_28
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM502=LTDIE_51_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM502
-	.byte 1,105,3
-	.asciz "other"
-
-LDIFF_SYM503=LTDIE_51_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM503
-	.byte 1,106,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM504=Lfde40_end - Lfde40_start
-	.long LDIFF_SYM504
-Lfde40_start:
-
-	.long 0
-	.align 3
-	.quad System_Xml_Linq_XDeclaration__ctor_System_Xml_Linq_XDeclaration
-
-LDIFF_SYM505=Lme_28 - System_Xml_Linq_XDeclaration__ctor_System_Xml_Linq_XDeclaration
-	.long LDIFF_SYM505
-	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
-	.align 3
-Lfde40_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Xml.Linq.XDeclaration:get_Standalone"
-	.asciz "System_Xml_Linq_XDeclaration_get_Standalone"
-
-	.byte 9,90
-	.quad System_Xml_Linq_XDeclaration_get_Standalone
-	.quad Lme_29
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM506=LTDIE_51_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM506
-	.byte 2,141,16,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM507=Lfde41_end - Lfde41_start
-	.long LDIFF_SYM507
-Lfde41_start:
-
-	.long 0
-	.align 3
-	.quad System_Xml_Linq_XDeclaration_get_Standalone
-
-LDIFF_SYM508=Lme_29 - System_Xml_Linq_XDeclaration_get_Standalone
-	.long LDIFF_SYM508
-	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
-	.align 3
-Lfde41_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Xml.Linq.XDeclaration:ToString"
-	.asciz "System_Xml_Linq_XDeclaration_ToString"
-
-	.byte 9,112
-	.quad System_Xml_Linq_XDeclaration_ToString
-	.quad Lme_2a
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM509=LTDIE_51_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM509
-	.byte 1,106,11
-	.asciz "sb"
-
-LDIFF_SYM510=LTDIE_27_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM510
-	.byte 1,105,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM511=Lfde42_end - Lfde42_start
-	.long LDIFF_SYM511
-Lfde42_start:
-
-	.long 0
-	.align 3
-	.quad System_Xml_Linq_XDeclaration_ToString
-
-LDIFF_SYM512=Lme_2a - System_Xml_Linq_XDeclaration_ToString
-	.long LDIFF_SYM512
-	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
-	.align 3
-Lfde42_end:
-
-.section __DWARF, __debug_info,regular,debug
-LTDIE_52:
-
-	.byte 5
-	.asciz "System_Xml_Linq_XDocument"
-
-	.byte 56,16
-LDIFF_SYM513=LTDIE_8 - Ldebug_info_start
-	.long LDIFF_SYM513
-	.byte 2,35,0,6
-	.asciz "_declaration"
-
-LDIFF_SYM514=LTDIE_51_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM514
-	.byte 2,35,48,0,7
-	.asciz "System_Xml_Linq_XDocument"
-
-LDIFF_SYM515=LTDIE_52 - Ldebug_info_start
-	.long LDIFF_SYM515
-LTDIE_52_POINTER:
-
-	.byte 13
-LDIFF_SYM516=LTDIE_52 - Ldebug_info_start
-	.long LDIFF_SYM516
-LTDIE_52_REFERENCE:
-
-	.byte 14
-LDIFF_SYM517=LTDIE_52 - Ldebug_info_start
-	.long LDIFF_SYM517
-	.byte 2
-	.asciz "System.Xml.Linq.XDocument:.ctor"
-	.asciz "System_Xml_Linq_XDocument__ctor_System_Xml_Linq_XDocument"
-
-	.byte 10,105
-	.quad System_Xml_Linq_XDocument__ctor_System_Xml_Linq_XDocument
-	.quad Lme_2b
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM518=LTDIE_52_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM518
-	.byte 1,105,3
-	.asciz "other"
-
-LDIFF_SYM519=LTDIE_52_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM519
-	.byte 1,106,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM520=Lfde43_end - Lfde43_start
-	.long LDIFF_SYM520
-Lfde43_start:
-
-	.long 0
-	.align 3
-	.quad System_Xml_Linq_XDocument__ctor_System_Xml_Linq_XDocument
-
-LDIFF_SYM521=Lme_2b - System_Xml_Linq_XDocument__ctor_System_Xml_Linq_XDocument
-	.long LDIFF_SYM521
-	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3
-	.align 3
-Lfde43_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Xml.Linq.XDocument:get_NodeType"
-	.asciz "System_Xml_Linq_XDocument_get_NodeType"
-
-	.byte 10,143,1
-	.quad System_Xml_Linq_XDocument_get_NodeType
-	.quad Lme_2c
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM522=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM522
-	.byte 0,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM523=Lfde44_end - Lfde44_start
-	.long LDIFF_SYM523
-Lfde44_start:
-
-	.long 0
-	.align 3
-	.quad System_Xml_Linq_XDocument_get_NodeType
-
-LDIFF_SYM524=Lme_2c - System_Xml_Linq_XDocument_get_NodeType
-	.long LDIFF_SYM524
-	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
-	.align 3
-Lfde44_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Xml.Linq.XDocument:WriteTo"
-	.asciz "System_Xml_Linq_XDocument_WriteTo_System_Xml_XmlWriter"
-
-	.byte 10,155,6
-	.quad System_Xml_Linq_XDocument_WriteTo_System_Xml_XmlWriter
-	.quad Lme_2d
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM525=LTDIE_52_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM525
-	.byte 1,105,3
-	.asciz "writer"
-
-LDIFF_SYM526=LTDIE_41_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM526
-	.byte 1,106,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM527=Lfde45_end - Lfde45_start
-	.long LDIFF_SYM527
-Lfde45_start:
-
-	.long 0
-	.align 3
-	.quad System_Xml_Linq_XDocument_WriteTo_System_Xml_XmlWriter
-
-LDIFF_SYM528=Lme_2d - System_Xml_Linq_XDocument_WriteTo_System_Xml_XmlWriter
-	.long LDIFF_SYM528
-	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
-	.align 3
-Lfde45_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Xml.Linq.XDocument:CloneNode"
-	.asciz "System_Xml_Linq_XDocument_CloneNode"
-
-	.byte 10,224,6
-	.quad System_Xml_Linq_XDocument_CloneNode
-	.quad Lme_2e
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM529=LTDIE_52_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM529
-	.byte 2,141,16,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM530=Lfde46_end - Lfde46_start
-	.long LDIFF_SYM530
-Lfde46_start:
-
-	.long 0
-	.align 3
-	.quad System_Xml_Linq_XDocument_CloneNode
-
-LDIFF_SYM531=Lme_2e - System_Xml_Linq_XDocument_CloneNode
-	.long LDIFF_SYM531
-	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
-	.align 3
-Lfde46_end:
-
-.section __DWARF, __debug_info,regular,debug
-LTDIE_53:
-
-	.byte 5
-	.asciz "System_Char"
-
-	.byte 18,16
-LDIFF_SYM532=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM532
-	.byte 2,35,0,6
-	.asciz "m_value"
-
-LDIFF_SYM533=LDIE_CHAR - Ldebug_info_start
-	.long LDIFF_SYM533
-	.byte 2,35,16,0,7
-	.asciz "System_Char"
-
-LDIFF_SYM534=LTDIE_53 - Ldebug_info_start
-	.long LDIFF_SYM534
-LTDIE_53_POINTER:
-
-	.byte 13
-LDIFF_SYM535=LTDIE_53 - Ldebug_info_start
-	.long LDIFF_SYM535
-LTDIE_53_REFERENCE:
-
-	.byte 14
-LDIFF_SYM536=LTDIE_53 - Ldebug_info_start
-	.long LDIFF_SYM536
-	.byte 2
-	.asciz "System.Xml.Linq.XDocument:IsWhitespace"
-	.asciz "System_Xml_Linq_XDocument_IsWhitespace_string"
-
-	.byte 10,255,6
-	.quad System_Xml_Linq_XDocument_IsWhitespace_string
-	.quad Lme_2f
-
-	.byte 2,118,16,3
-	.asciz "s"
-
-LDIFF_SYM537=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM537
-	.byte 1,106,11
-	.asciz "V_0"
-
-LDIFF_SYM538=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM538
-	.byte 1,105,11
-	.asciz "V_1"
-
-LDIFF_SYM539=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM539
-	.byte 1,106,11
-	.asciz "ch"
-
-LDIFF_SYM540=LDIE_CHAR - Ldebug_info_start
-	.long LDIFF_SYM540
-	.byte 1,104,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM541=Lfde47_end - Lfde47_start
-	.long LDIFF_SYM541
-Lfde47_start:
-
-	.long 0
-	.align 3
-	.quad System_Xml_Linq_XDocument_IsWhitespace_string
-
-LDIFF_SYM542=Lme_2f - System_Xml_Linq_XDocument_IsWhitespace_string
-	.long LDIFF_SYM542
-	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,68,154,2
-	.align 3
-Lfde47_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Xml.Linq.XDocument:ValidateNode"
-	.asciz "System_Xml_Linq_XDocument_ValidateNode_System_Xml_Linq_XNode_System_Xml_Linq_XNode"
-
-	.byte 10,136,7
-	.quad System_Xml_Linq_XDocument_ValidateNode_System_Xml_Linq_XNode_System_Xml_Linq_XNode
-	.quad Lme_30
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM543=LTDIE_52_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM543
-	.byte 1,104,3
-	.asciz "node"
-
-LDIFF_SYM544=LTDIE_9_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM544
-	.byte 1,105,3
-	.asciz "previous"
-
-LDIFF_SYM545=LTDIE_9_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM545
-	.byte 2,141,48,11
-	.asciz "V_0"
-
-LDIFF_SYM546=LTDIE_50 - Ldebug_info_start
-	.long LDIFF_SYM546
-	.byte 1,103,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM547=Lfde48_end - Lfde48_start
-	.long LDIFF_SYM547
-Lfde48_start:
-
-	.long 0
-	.align 3
-	.quad System_Xml_Linq_XDocument_ValidateNode_System_Xml_Linq_XNode_System_Xml_Linq_XNode
-
-LDIFF_SYM548=Lme_30 - System_Xml_Linq_XDocument_ValidateNode_System_Xml_Linq_XNode_System_Xml_Linq_XNode
-	.long LDIFF_SYM548
-	.long 0
-	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,150,16,151,15,68,152,14,153,13
-	.align 3
-Lfde48_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Xml.Linq.XDocument:ValidateDocument"
-	.asciz "System_Xml_Linq_XDocument_ValidateDocument_System_Xml_Linq_XNode_System_Xml_XmlNodeType_System_Xml_XmlNodeType"
-
-	.byte 10,156,7
-	.quad System_Xml_Linq_XDocument_ValidateDocument_System_Xml_Linq_XNode_System_Xml_XmlNodeType_System_Xml_XmlNodeType
-	.quad Lme_31
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM549=LTDIE_52_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM549
-	.byte 1,103,3
-	.asciz "previous"
-
-LDIFF_SYM550=LTDIE_9_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM550
-	.byte 1,104,3
-	.asciz "allowBefore"
-
-LDIFF_SYM551=LTDIE_50 - Ldebug_info_start
-	.long LDIFF_SYM551
-	.byte 1,105,3
-	.asciz "allowAfter"
-
-LDIFF_SYM552=LTDIE_50 - Ldebug_info_start
-	.long LDIFF_SYM552
-	.byte 1,106,11
-	.asciz "n"
-
-LDIFF_SYM553=LTDIE_9_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM553
-	.byte 1,102,11
-	.asciz "nt"
-
-LDIFF_SYM554=LTDIE_50 - Ldebug_info_start
-	.long LDIFF_SYM554
-	.byte 1,101,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM555=Lfde49_end - Lfde49_start
-	.long LDIFF_SYM555
-Lfde49_start:
-
-	.long 0
-	.align 3
-	.quad System_Xml_Linq_XDocument_ValidateDocument_System_Xml_Linq_XNode_System_Xml_XmlNodeType_System_Xml_XmlNodeType
-
-LDIFF_SYM556=Lme_31 - System_Xml_Linq_XDocument_ValidateDocument_System_Xml_Linq_XNode_System_Xml_XmlNodeType_System_Xml_XmlNodeType
-	.long LDIFF_SYM556
-	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,149,6,150,5,68,151,4,152,3,68,153,2,154,1
-	.align 3
-Lfde49_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Xml.Linq.XDocument:ValidateString"
-	.asciz "System_Xml_Linq_XDocument_ValidateString_string"
-
-	.byte 10,176,7
-	.quad System_Xml_Linq_XDocument_ValidateString_string
-	.quad Lme_32
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM557=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM557
-	.byte 0,3
-	.asciz "s"
-
-LDIFF_SYM558=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM558
-	.byte 2,141,24,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM559=Lfde50_end - Lfde50_start
-	.long LDIFF_SYM559
-Lfde50_start:
-
-	.long 0
-	.align 3
-	.quad System_Xml_Linq_XDocument_ValidateString_string
-
-LDIFF_SYM560=Lme_32 - System_Xml_Linq_XDocument_ValidateString_string
-	.long LDIFF_SYM560
-	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
-	.align 3
-Lfde50_end:
-
-.section __DWARF, __debug_info,regular,debug
-LTDIE_54:
-
-	.byte 5
-	.asciz "System_Xml_Linq_XDocumentType"
-
-	.byte 72,16
-LDIFF_SYM561=LTDIE_9 - Ldebug_info_start
-	.long LDIFF_SYM561
-	.byte 2,35,0,6
-	.asciz "_name"
-
-LDIFF_SYM562=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM562
-	.byte 2,35,40,6
-	.asciz "_publicId"
-
-LDIFF_SYM563=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM563
-	.byte 2,35,48,6
-	.asciz "_systemId"
-
-LDIFF_SYM564=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM564
-	.byte 2,35,56,6
-	.asciz "_internalSubset"
-
-LDIFF_SYM565=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM565
-	.byte 2,35,64,0,7
-	.asciz "System_Xml_Linq_XDocumentType"
-
-LDIFF_SYM566=LTDIE_54 - Ldebug_info_start
-	.long LDIFF_SYM566
-LTDIE_54_POINTER:
-
-	.byte 13
-LDIFF_SYM567=LTDIE_54 - Ldebug_info_start
-	.long LDIFF_SYM567
-LTDIE_54_REFERENCE:
-
-	.byte 14
-LDIFF_SYM568=LTDIE_54 - Ldebug_info_start
-	.long LDIFF_SYM568
-	.byte 2
-	.asciz "System.Xml.Linq.XDocumentType:.ctor"
-	.asciz "System_Xml_Linq_XDocumentType__ctor_string_string_string_string"
-
-	.byte 11,23
-	.quad System_Xml_Linq_XDocumentType__ctor_string_string_string_string
-	.quad Lme_33
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM569=LTDIE_54_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM569
-	.byte 1,102,3
-	.asciz "name"
-
-LDIFF_SYM570=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM570
-	.byte 2,141,24,3
-	.asciz "publicId"
-
-LDIFF_SYM571=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM571
-	.byte 2,141,32,3
-	.asciz "systemId"
-
-LDIFF_SYM572=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM572
-	.byte 2,141,40,3
-	.asciz "internalSubset"
-
-LDIFF_SYM573=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM573
-	.byte 2,141,48,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM574=Lfde51_end - Lfde51_start
-	.long LDIFF_SYM574
-Lfde51_start:
-
-	.long 0
-	.align 3
-	.quad System_Xml_Linq_XDocumentType__ctor_string_string_string_string
-
-LDIFF_SYM575=Lme_33 - System_Xml_Linq_XDocumentType__ctor_string_string_string_string
-	.long LDIFF_SYM575
-	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6
-	.align 3
-Lfde51_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Xml.Linq.XDocumentType:.ctor"
-	.asciz "System_Xml_Linq_XDocumentType__ctor_System_Xml_Linq_XDocumentType"
-
-	.byte 11,36
-	.quad System_Xml_Linq_XDocumentType__ctor_System_Xml_Linq_XDocumentType
-	.quad Lme_34
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM576=LTDIE_54_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM576
-	.byte 1,105,3
-	.asciz "other"
-
-LDIFF_SYM577=LTDIE_54_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM577
-	.byte 1,106,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM578=Lfde52_end - Lfde52_start
-	.long LDIFF_SYM578
-Lfde52_start:
-
-	.long 0
-	.align 3
-	.quad System_Xml_Linq_XDocumentType__ctor_System_Xml_Linq_XDocumentType
-
-LDIFF_SYM579=Lme_34 - System_Xml_Linq_XDocumentType__ctor_System_Xml_Linq_XDocumentType
-	.long LDIFF_SYM579
-	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
-	.align 3
-Lfde52_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Xml.Linq.XDocumentType:get_NodeType"
-	.asciz "System_Xml_Linq_XDocumentType_get_NodeType"
-
-	.byte 11,99
-	.quad System_Xml_Linq_XDocumentType_get_NodeType
-	.quad Lme_35
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM580=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM580
-	.byte 0,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM581=Lfde53_end - Lfde53_start
-	.long LDIFF_SYM581
-Lfde53_start:
-
-	.long 0
-	.align 3
-	.quad System_Xml_Linq_XDocumentType_get_NodeType
-
-LDIFF_SYM582=Lme_35 - System_Xml_Linq_XDocumentType_get_NodeType
-	.long LDIFF_SYM582
-	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
-	.align 3
-Lfde53_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Xml.Linq.XDocumentType:WriteTo"
-	.asciz "System_Xml_Linq_XDocumentType_WriteTo_System_Xml_XmlWriter"
-
-	.byte 11,145,1
-	.quad System_Xml_Linq_XDocumentType_WriteTo_System_Xml_XmlWriter
-	.quad Lme_36
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM583=LTDIE_54_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM583
-	.byte 1,105,3
-	.asciz "writer"
-
-LDIFF_SYM584=LTDIE_41_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM584
-	.byte 1,106,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM585=Lfde54_end - Lfde54_start
-	.long LDIFF_SYM585
-Lfde54_start:
-
-	.long 0
-	.align 3
-	.quad System_Xml_Linq_XDocumentType_WriteTo_System_Xml_XmlWriter
-
-LDIFF_SYM586=Lme_36 - System_Xml_Linq_XDocumentType_WriteTo_System_Xml_XmlWriter
-	.long LDIFF_SYM586
-	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
-	.align 3
-Lfde54_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Xml.Linq.XDocumentType:CloneNode"
-	.asciz "System_Xml_Linq_XDocumentType_CloneNode"
-
-	.byte 11,169,1
-	.quad System_Xml_Linq_XDocumentType_CloneNode
 	.quad Lme_37
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM587=LTDIE_54_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM587
-	.byte 2,141,16,0
+LDIFF_SYM594=LTDIE_50_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM594
+	.byte 1,104,3
+	.asciz "rootContainer"
+
+LDIFF_SYM595=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM595
+	.byte 1,105,3
+	.asciz "r"
+
+LDIFF_SYM596=LTDIE_49_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM596
+	.byte 1,106,3
+	.asciz "o"
+
+LDIFF_SYM597=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM597
+	.byte 0,11
+	.asciz "newNode"
+
+LDIFF_SYM598=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM598
+	.byte 1,103,11
+	.asciz "baseUri"
+
+LDIFF_SYM599=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM599
+	.byte 1,102,11
+	.asciz "V_2"
+
+LDIFF_SYM600=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM600
+	.byte 0,11
+	.asciz "e"
+
+LDIFF_SYM601=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM601
+	.byte 1,105,11
+	.asciz "V_4"
+
+LDIFF_SYM602=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM602
+	.byte 3,141,208,0,11
+	.asciz "a"
+
+LDIFF_SYM603=LTDIE_6_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM603
+	.byte 1,101,11
+	.asciz "e"
+
+LDIFF_SYM604=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM604
+	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM588=Lfde55_end - Lfde55_start
-	.long LDIFF_SYM588
+LDIFF_SYM605=Lfde55_end - Lfde55_start
+	.long LDIFF_SYM605
 Lfde55_start:
 
 	.long 0
 	.align 3
-	.quad System_Xml_Linq_XDocumentType_CloneNode
+	.quad System_Xml_Linq_XContainer_ContentReader_ReadContentFrom_System_Xml_Linq_XContainer_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
 
-LDIFF_SYM589=Lme_37 - System_Xml_Linq_XDocumentType_CloneNode
-	.long LDIFF_SYM589
+LDIFF_SYM606=Lme_37 - System_Xml_Linq_XContainer_ContentReader_ReadContentFrom_System_Xml_Linq_XContainer_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
+	.long LDIFF_SYM606
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,148,20,149,19,68,150,18,151,17,68,152,16,153,15,68,154,14
 	.align 3
 Lfde55_end:
 
 .section __DWARF, __debug_info,regular,debug
+LTDIE_55:
 
+	.byte 5
+	.asciz "_<Nodes>d__18"
+
+	.byte 48,16
+LDIFF_SYM607=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM607
+	.byte 2,35,0,6
+	.asciz "<>1__state"
+
+LDIFF_SYM608=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM608
+	.byte 2,35,40,6
+	.asciz "<>2__current"
+
+LDIFF_SYM609=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM609
+	.byte 2,35,16,6
+	.asciz "<>l__initialThreadId"
+
+LDIFF_SYM610=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM610
+	.byte 2,35,44,6
+	.asciz "<>4__this"
+
+LDIFF_SYM611=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM611
+	.byte 2,35,24,6
+	.asciz "<n>5__2"
+
+LDIFF_SYM612=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM612
+	.byte 2,35,32,0,7
+	.asciz "_<Nodes>d__18"
+
+LDIFF_SYM613=LTDIE_55 - Ldebug_info_start
+	.long LDIFF_SYM613
+LTDIE_55_POINTER:
+
+	.byte 13
+LDIFF_SYM614=LTDIE_55 - Ldebug_info_start
+	.long LDIFF_SYM614
+LTDIE_55_REFERENCE:
+
+	.byte 14
+LDIFF_SYM615=LTDIE_55 - Ldebug_info_start
+	.long LDIFF_SYM615
 	.byte 2
-	.asciz "System.Xml.Linq.XElement:.ctor"
-	.asciz "System_Xml_Linq_XElement__ctor_System_Xml_Linq_XName"
+	.asciz "System.Xml.Linq.XContainer/<Nodes>d__18:.ctor"
+	.asciz "System_Xml_Linq_XContainer__Nodesd__18__ctor_int"
 
-	.byte 12,65
-	.quad System_Xml_Linq_XElement__ctor_System_Xml_Linq_XName
+	.byte 0,0
+	.quad System_Xml_Linq_XContainer__Nodesd__18__ctor_int
 	.quad Lme_38
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM590=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM590
-	.byte 2,141,16,3
-	.asciz "name"
+LDIFF_SYM616=LTDIE_55_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM616
+	.byte 1,105,3
+	.asciz "<>1__state"
 
-LDIFF_SYM591=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM591
+LDIFF_SYM617=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM617
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM592=Lfde56_end - Lfde56_start
-	.long LDIFF_SYM592
+LDIFF_SYM618=Lfde56_end - Lfde56_start
+	.long LDIFF_SYM618
 Lfde56_start:
 
 	.long 0
 	.align 3
-	.quad System_Xml_Linq_XElement__ctor_System_Xml_Linq_XName
+	.quad System_Xml_Linq_XContainer__Nodesd__18__ctor_int
 
-LDIFF_SYM593=Lme_38 - System_Xml_Linq_XElement__ctor_System_Xml_Linq_XName
-	.long LDIFF_SYM593
+LDIFF_SYM619=Lme_38 - System_Xml_Linq_XContainer__Nodesd__18__ctor_int
+	.long LDIFF_SYM619
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
 	.align 3
 Lfde56_end:
 
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Xml.Linq.XElement:.ctor"
-	.asciz "System_Xml_Linq_XElement__ctor_System_Xml_Linq_XElement"
+	.asciz "System.Xml.Linq.XContainer/<Nodes>d__18:System.IDisposable.Dispose"
+	.asciz "System_Xml_Linq_XContainer__Nodesd__18_System_IDisposable_Dispose"
 
-	.byte 12,113
-	.quad System_Xml_Linq_XElement__ctor_System_Xml_Linq_XElement
+	.byte 0,0
+	.quad System_Xml_Linq_XContainer__Nodesd__18_System_IDisposable_Dispose
 	.quad Lme_39
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM594=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM594
-	.byte 1,105,3
-	.asciz "other"
-
-LDIFF_SYM595=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM595
-	.byte 1,106,11
-	.asciz "a"
-
-LDIFF_SYM596=LTDIE_6_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM596
-	.byte 1,104,0
+LDIFF_SYM620=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM620
+	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM597=Lfde57_end - Lfde57_start
-	.long LDIFF_SYM597
+LDIFF_SYM621=Lfde57_end - Lfde57_start
+	.long LDIFF_SYM621
 Lfde57_start:
 
 	.long 0
 	.align 3
-	.quad System_Xml_Linq_XElement__ctor_System_Xml_Linq_XElement
+	.quad System_Xml_Linq_XContainer__Nodesd__18_System_IDisposable_Dispose
 
-LDIFF_SYM598=Lme_39 - System_Xml_Linq_XElement__ctor_System_Xml_Linq_XElement
-	.long LDIFF_SYM598
+LDIFF_SYM622=Lme_39 - System_Xml_Linq_XContainer__Nodesd__18_System_IDisposable_Dispose
+	.long LDIFF_SYM622
 	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5,68,154,4
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
 Lfde57_end:
 
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Xml.Linq.XElement:.ctor"
-	.asciz "System_Xml_Linq_XElement__ctor_System_Xml_XmlReader_System_Xml_Linq_LoadOptions"
+	.asciz "System.Xml.Linq.XContainer/<Nodes>d__18:MoveNext"
+	.asciz "System_Xml_Linq_XContainer__Nodesd__18_MoveNext"
 
-	.byte 12,168,1
-	.quad System_Xml_Linq_XElement__ctor_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
+	.byte 8,0
+	.quad System_Xml_Linq_XContainer__Nodesd__18_MoveNext
 	.quad Lme_3a
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM599=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM599
-	.byte 2,141,16,3
-	.asciz "r"
+LDIFF_SYM623=LTDIE_55_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM623
+	.byte 1,106,11
+	.asciz "V_0"
 
-LDIFF_SYM600=LTDIE_45_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM600
-	.byte 2,141,24,3
-	.asciz "o"
+LDIFF_SYM624=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM624
+	.byte 1,105,11
+	.asciz "V_1"
 
-LDIFF_SYM601=LTDIE_48 - Ldebug_info_start
-	.long LDIFF_SYM601
-	.byte 2,141,32,0
+LDIFF_SYM625=LTDIE_8_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM625
+	.byte 1,104,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM602=Lfde58_end - Lfde58_start
-	.long LDIFF_SYM602
+LDIFF_SYM626=Lfde58_end - Lfde58_start
+	.long LDIFF_SYM626
 Lfde58_start:
 
 	.long 0
 	.align 3
-	.quad System_Xml_Linq_XElement__ctor_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
+	.quad System_Xml_Linq_XContainer__Nodesd__18_MoveNext
 
-LDIFF_SYM603=Lme_3a - System_Xml_Linq_XElement__ctor_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
-	.long LDIFF_SYM603
+LDIFF_SYM627=Lme_3a - System_Xml_Linq_XContainer__Nodesd__18_MoveNext
+	.long LDIFF_SYM627
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,68,154,2
 	.align 3
 Lfde58_end:
 
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Xml.Linq.XElement:get_Name"
-	.asciz "System_Xml_Linq_XElement_get_Name"
+	.asciz "System.Xml.Linq.XContainer/<Nodes>d__18:System.Collections.Generic.IEnumerator<System.Xml.Linq.XNode>.get_Current"
+	.asciz "System_Xml_Linq_XContainer__Nodesd__18_System_Collections_Generic_IEnumerator_System_Xml_Linq_XNode_get_Current"
 
-	.byte 12,154,2
-	.quad System_Xml_Linq_XElement_get_Name
+	.byte 0,0
+	.quad System_Xml_Linq_XContainer__Nodesd__18_System_Collections_Generic_IEnumerator_System_Xml_Linq_XNode_get_Current
 	.quad Lme_3b
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM604=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM604
+LDIFF_SYM628=LTDIE_55_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM628
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM605=Lfde59_end - Lfde59_start
-	.long LDIFF_SYM605
+LDIFF_SYM629=Lfde59_end - Lfde59_start
+	.long LDIFF_SYM629
 Lfde59_start:
 
 	.long 0
 	.align 3
-	.quad System_Xml_Linq_XElement_get_Name
+	.quad System_Xml_Linq_XContainer__Nodesd__18_System_Collections_Generic_IEnumerator_System_Xml_Linq_XNode_get_Current
 
-LDIFF_SYM606=Lme_3b - System_Xml_Linq_XElement_get_Name
-	.long LDIFF_SYM606
+LDIFF_SYM630=Lme_3b - System_Xml_Linq_XContainer__Nodesd__18_System_Collections_Generic_IEnumerator_System_Xml_Linq_XNode_get_Current
+	.long LDIFF_SYM630
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
@@ -19492,32 +24068,32 @@ Lfde59_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Xml.Linq.XElement:get_NodeType"
-	.asciz "System_Xml_Linq_XElement_get_NodeType"
+	.asciz "System.Xml.Linq.XContainer/<Nodes>d__18:System.Collections.IEnumerator.Reset"
+	.asciz "System_Xml_Linq_XContainer__Nodesd__18_System_Collections_IEnumerator_Reset"
 
-	.byte 12,175,2
-	.quad System_Xml_Linq_XElement_get_NodeType
+	.byte 0,0
+	.quad System_Xml_Linq_XContainer__Nodesd__18_System_Collections_IEnumerator_Reset
 	.quad Lme_3c
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM607=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM607
+LDIFF_SYM631=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM631
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM608=Lfde60_end - Lfde60_start
-	.long LDIFF_SYM608
+LDIFF_SYM632=Lfde60_end - Lfde60_start
+	.long LDIFF_SYM632
 Lfde60_start:
 
 	.long 0
 	.align 3
-	.quad System_Xml_Linq_XElement_get_NodeType
+	.quad System_Xml_Linq_XContainer__Nodesd__18_System_Collections_IEnumerator_Reset
 
-LDIFF_SYM609=Lme_3c - System_Xml_Linq_XElement_get_NodeType
-	.long LDIFF_SYM609
+LDIFF_SYM633=Lme_3c - System_Xml_Linq_XContainer__Nodesd__18_System_Collections_IEnumerator_Reset
+	.long LDIFF_SYM633
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
@@ -19526,135 +24102,105 @@ Lfde60_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Xml.Linq.XElement:GetPrefixOfNamespace"
-	.asciz "System_Xml_Linq_XElement_GetPrefixOfNamespace_System_Xml_Linq_XNamespace"
+	.asciz "System.Xml.Linq.XContainer/<Nodes>d__18:System.Collections.IEnumerator.get_Current"
+	.asciz "System_Xml_Linq_XContainer__Nodesd__18_System_Collections_IEnumerator_get_Current"
 
-	.byte 12,253,3
-	.quad System_Xml_Linq_XElement_GetPrefixOfNamespace_System_Xml_Linq_XNamespace
+	.byte 0,0
+	.quad System_Xml_Linq_XContainer__Nodesd__18_System_Collections_IEnumerator_get_Current
 	.quad Lme_3d
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM610=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM610
-	.byte 1,105,3
-	.asciz "ns"
-
-LDIFF_SYM611=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM611
-	.byte 1,106,11
-	.asciz "namespaceName"
-
-LDIFF_SYM612=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM612
-	.byte 1,104,11
-	.asciz "hasInScopeNamespace"
-
-LDIFF_SYM613=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM613
-	.byte 1,106,11
-	.asciz "e"
-
-LDIFF_SYM614=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM614
-	.byte 1,103,11
-	.asciz "a"
-
-LDIFF_SYM615=LTDIE_6_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM615
-	.byte 1,102,11
-	.asciz "hasLocalNamespace"
-
-LDIFF_SYM616=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM616
-	.byte 1,101,0
+LDIFF_SYM634=LTDIE_55_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM634
+	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM617=Lfde61_end - Lfde61_start
-	.long LDIFF_SYM617
+LDIFF_SYM635=Lfde61_end - Lfde61_start
+	.long LDIFF_SYM635
 Lfde61_start:
 
 	.long 0
 	.align 3
-	.quad System_Xml_Linq_XElement_GetPrefixOfNamespace_System_Xml_Linq_XNamespace
+	.quad System_Xml_Linq_XContainer__Nodesd__18_System_Collections_IEnumerator_get_Current
 
-LDIFF_SYM618=Lme_3d - System_Xml_Linq_XElement_GetPrefixOfNamespace_System_Xml_Linq_XNamespace
-	.long LDIFF_SYM618
+LDIFF_SYM636=Lme_3d - System_Xml_Linq_XContainer__Nodesd__18_System_Collections_IEnumerator_get_Current
+	.long LDIFF_SYM636
 	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,149,6,150,5,68,151,4,152,3,68,153,2,154,1
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
 Lfde61_end:
 
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Xml.Linq.XElement:Load"
-	.asciz "System_Xml_Linq_XElement_Load_System_Xml_XmlReader_System_Xml_Linq_LoadOptions"
+	.asciz "System.Xml.Linq.XContainer/<Nodes>d__18:System.Collections.Generic.IEnumerable<System.Xml.Linq.XNode>.GetEnumerator"
+	.asciz "System_Xml_Linq_XContainer__Nodesd__18_System_Collections_Generic_IEnumerable_System_Xml_Linq_XNode_GetEnumerator"
 
-	.byte 12,182,6
-	.quad System_Xml_Linq_XElement_Load_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
+	.byte 0,0
+	.quad System_Xml_Linq_XContainer__Nodesd__18_System_Collections_Generic_IEnumerable_System_Xml_Linq_XNode_GetEnumerator
 	.quad Lme_3e
 
 	.byte 2,118,16,3
-	.asciz "reader"
+	.asciz "this"
 
-LDIFF_SYM619=LTDIE_45_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM619
-	.byte 1,105,3
-	.asciz "options"
+LDIFF_SYM637=LTDIE_55_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM637
+	.byte 1,106,11
+	.asciz "V_0"
 
-LDIFF_SYM620=LTDIE_48 - Ldebug_info_start
-	.long LDIFF_SYM620
-	.byte 2,141,32,0
+LDIFF_SYM638=LTDIE_55_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM638
+	.byte 1,105,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM621=Lfde62_end - Lfde62_start
-	.long LDIFF_SYM621
+LDIFF_SYM639=Lfde62_end - Lfde62_start
+	.long LDIFF_SYM639
 Lfde62_start:
 
 	.long 0
 	.align 3
-	.quad System_Xml_Linq_XElement_Load_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
+	.quad System_Xml_Linq_XContainer__Nodesd__18_System_Collections_Generic_IEnumerable_System_Xml_Linq_XNode_GetEnumerator
 
-LDIFF_SYM622=Lme_3e - System_Xml_Linq_XElement_Load_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
-	.long LDIFF_SYM622
+LDIFF_SYM640=Lme_3e - System_Xml_Linq_XContainer__Nodesd__18_System_Collections_Generic_IEnumerable_System_Xml_Linq_XNode_GetEnumerator
+	.long LDIFF_SYM640
 	.long 0
-	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,153,12,154,11
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3
 	.align 3
 Lfde62_end:
 
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Xml.Linq.XElement:Parse"
-	.asciz "System_Xml_Linq_XElement_Parse_string"
+	.asciz "System.Xml.Linq.XContainer/<Nodes>d__18:System.Collections.IEnumerable.GetEnumerator"
+	.asciz "System_Xml_Linq_XContainer__Nodesd__18_System_Collections_IEnumerable_GetEnumerator"
 
-	.byte 12,248,6
-	.quad System_Xml_Linq_XElement_Parse_string
+	.byte 0,0
+	.quad System_Xml_Linq_XContainer__Nodesd__18_System_Collections_IEnumerable_GetEnumerator
 	.quad Lme_3f
 
 	.byte 2,118,16,3
-	.asciz "text"
+	.asciz "this"
 
-LDIFF_SYM623=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM623
+LDIFF_SYM641=LTDIE_55_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM641
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM624=Lfde63_end - Lfde63_start
-	.long LDIFF_SYM624
+LDIFF_SYM642=Lfde63_end - Lfde63_start
+	.long LDIFF_SYM642
 Lfde63_start:
 
 	.long 0
 	.align 3
-	.quad System_Xml_Linq_XElement_Parse_string
+	.quad System_Xml_Linq_XContainer__Nodesd__18_System_Collections_IEnumerable_GetEnumerator
 
-LDIFF_SYM625=Lme_3f - System_Xml_Linq_XElement_Parse_string
-	.long LDIFF_SYM625
+LDIFF_SYM643=Lme_3f - System_Xml_Linq_XContainer__Nodesd__18_System_Collections_IEnumerable_GetEnumerator
+	.long LDIFF_SYM643
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
@@ -19664,146 +24210,2132 @@ Lfde63_end:
 LTDIE_56:
 
 	.byte 5
-	.asciz "System_IO_TextReader"
+	.asciz "System_Xml_Linq_XDeclaration"
 
-	.byte 24,16
-LDIFF_SYM626=LTDIE_25 - Ldebug_info_start
-	.long LDIFF_SYM626
-	.byte 2,35,0,0,7
-	.asciz "System_IO_TextReader"
+	.byte 40,16
+LDIFF_SYM644=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM644
+	.byte 2,35,0,6
+	.asciz "_version"
 
-LDIFF_SYM627=LTDIE_56 - Ldebug_info_start
-	.long LDIFF_SYM627
+LDIFF_SYM645=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM645
+	.byte 2,35,16,6
+	.asciz "_encoding"
+
+LDIFF_SYM646=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM646
+	.byte 2,35,24,6
+	.asciz "_standalone"
+
+LDIFF_SYM647=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM647
+	.byte 2,35,32,0,7
+	.asciz "System_Xml_Linq_XDeclaration"
+
+LDIFF_SYM648=LTDIE_56 - Ldebug_info_start
+	.long LDIFF_SYM648
 LTDIE_56_POINTER:
 
 	.byte 13
-LDIFF_SYM628=LTDIE_56 - Ldebug_info_start
-	.long LDIFF_SYM628
+LDIFF_SYM649=LTDIE_56 - Ldebug_info_start
+	.long LDIFF_SYM649
 LTDIE_56_REFERENCE:
 
 	.byte 14
-LDIFF_SYM629=LTDIE_56 - Ldebug_info_start
-	.long LDIFF_SYM629
-LTDIE_55:
+LDIFF_SYM650=LTDIE_56 - Ldebug_info_start
+	.long LDIFF_SYM650
+	.byte 2
+	.asciz "System.Xml.Linq.XDeclaration:.ctor"
+	.asciz "System_Xml_Linq_XDeclaration__ctor_string_string_string"
+
+	.byte 9,43
+	.quad System_Xml_Linq_XDeclaration__ctor_string_string_string
+	.quad Lme_40
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM651=LTDIE_56_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM651
+	.byte 1,103,3
+	.asciz "version"
+
+LDIFF_SYM652=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM652
+	.byte 2,141,24,3
+	.asciz "encoding"
+
+LDIFF_SYM653=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM653
+	.byte 2,141,32,3
+	.asciz "standalone"
+
+LDIFF_SYM654=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM654
+	.byte 2,141,40,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM655=Lfde64_end - Lfde64_start
+	.long LDIFF_SYM655
+Lfde64_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDeclaration__ctor_string_string_string
+
+LDIFF_SYM656=Lme_40 - System_Xml_Linq_XDeclaration__ctor_string_string_string
+	.long LDIFF_SYM656
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4
+	.align 3
+Lfde64_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDeclaration:.ctor"
+	.asciz "System_Xml_Linq_XDeclaration__ctor_System_Xml_Linq_XDeclaration"
+
+	.byte 9,57
+	.quad System_Xml_Linq_XDeclaration__ctor_System_Xml_Linq_XDeclaration
+	.quad Lme_41
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM657=LTDIE_56_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM657
+	.byte 1,105,3
+	.asciz "other"
+
+LDIFF_SYM658=LTDIE_56_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM658
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM659=Lfde65_end - Lfde65_start
+	.long LDIFF_SYM659
+Lfde65_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDeclaration__ctor_System_Xml_Linq_XDeclaration
+
+LDIFF_SYM660=Lme_41 - System_Xml_Linq_XDeclaration__ctor_System_Xml_Linq_XDeclaration
+	.long LDIFF_SYM660
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
+	.align 3
+Lfde65_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDeclaration:get_Encoding"
+	.asciz "System_Xml_Linq_XDeclaration_get_Encoding"
+
+	.byte 9,78
+	.quad System_Xml_Linq_XDeclaration_get_Encoding
+	.quad Lme_42
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM661=LTDIE_56_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM661
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM662=Lfde66_end - Lfde66_start
+	.long LDIFF_SYM662
+Lfde66_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDeclaration_get_Encoding
+
+LDIFF_SYM663=Lme_42 - System_Xml_Linq_XDeclaration_get_Encoding
+	.long LDIFF_SYM663
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde66_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDeclaration:set_Encoding"
+	.asciz "System_Xml_Linq_XDeclaration_set_Encoding_string"
+
+	.byte 9,79
+	.quad System_Xml_Linq_XDeclaration_set_Encoding_string
+	.quad Lme_43
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM664=LTDIE_56_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM664
+	.byte 2,141,16,3
+	.asciz "value"
+
+LDIFF_SYM665=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM665
+	.byte 2,141,24,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM666=Lfde67_end - Lfde67_start
+	.long LDIFF_SYM666
+Lfde67_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDeclaration_set_Encoding_string
+
+LDIFF_SYM667=Lme_43 - System_Xml_Linq_XDeclaration_set_Encoding_string
+	.long LDIFF_SYM667
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde67_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDeclaration:get_Standalone"
+	.asciz "System_Xml_Linq_XDeclaration_get_Standalone"
+
+	.byte 9,90
+	.quad System_Xml_Linq_XDeclaration_get_Standalone
+	.quad Lme_44
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM668=LTDIE_56_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM668
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM669=Lfde68_end - Lfde68_start
+	.long LDIFF_SYM669
+Lfde68_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDeclaration_get_Standalone
+
+LDIFF_SYM670=Lme_44 - System_Xml_Linq_XDeclaration_get_Standalone
+	.long LDIFF_SYM670
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde68_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDeclaration:set_Standalone"
+	.asciz "System_Xml_Linq_XDeclaration_set_Standalone_string"
+
+	.byte 9,91
+	.quad System_Xml_Linq_XDeclaration_set_Standalone_string
+	.quad Lme_45
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM671=LTDIE_56_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM671
+	.byte 2,141,16,3
+	.asciz "value"
+
+LDIFF_SYM672=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM672
+	.byte 2,141,24,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM673=Lfde69_end - Lfde69_start
+	.long LDIFF_SYM673
+Lfde69_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDeclaration_set_Standalone_string
+
+LDIFF_SYM674=Lme_45 - System_Xml_Linq_XDeclaration_set_Standalone_string
+	.long LDIFF_SYM674
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde69_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDeclaration:get_Version"
+	.asciz "System_Xml_Linq_XDeclaration_get_Version"
+
+	.byte 9,102
+	.quad System_Xml_Linq_XDeclaration_get_Version
+	.quad Lme_46
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM675=LTDIE_56_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM675
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM676=Lfde70_end - Lfde70_start
+	.long LDIFF_SYM676
+Lfde70_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDeclaration_get_Version
+
+LDIFF_SYM677=Lme_46 - System_Xml_Linq_XDeclaration_get_Version
+	.long LDIFF_SYM677
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde70_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDeclaration:ToString"
+	.asciz "System_Xml_Linq_XDeclaration_ToString"
+
+	.byte 9,112
+	.quad System_Xml_Linq_XDeclaration_ToString
+	.quad Lme_47
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM678=LTDIE_56_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM678
+	.byte 1,106,11
+	.asciz "sb"
+
+LDIFF_SYM679=LTDIE_27_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM679
+	.byte 1,105,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM680=Lfde71_end - Lfde71_start
+	.long LDIFF_SYM680
+Lfde71_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDeclaration_ToString
+
+LDIFF_SYM681=Lme_47 - System_Xml_Linq_XDeclaration_ToString
+	.long LDIFF_SYM681
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
+	.align 3
+Lfde71_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_57:
+
+	.byte 5
+	.asciz "System_Xml_Linq_XDocument"
+
+	.byte 56,16
+LDIFF_SYM682=LTDIE_8 - Ldebug_info_start
+	.long LDIFF_SYM682
+	.byte 2,35,0,6
+	.asciz "_declaration"
+
+LDIFF_SYM683=LTDIE_56_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM683
+	.byte 2,35,48,0,7
+	.asciz "System_Xml_Linq_XDocument"
+
+LDIFF_SYM684=LTDIE_57 - Ldebug_info_start
+	.long LDIFF_SYM684
+LTDIE_57_POINTER:
+
+	.byte 13
+LDIFF_SYM685=LTDIE_57 - Ldebug_info_start
+	.long LDIFF_SYM685
+LTDIE_57_REFERENCE:
+
+	.byte 14
+LDIFF_SYM686=LTDIE_57 - Ldebug_info_start
+	.long LDIFF_SYM686
+	.byte 2
+	.asciz "System.Xml.Linq.XDocument:.ctor"
+	.asciz "System_Xml_Linq_XDocument__ctor"
+
+	.byte 10,42
+	.quad System_Xml_Linq_XDocument__ctor
+	.quad Lme_48
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM687=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM687
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM688=Lfde72_end - Lfde72_start
+	.long LDIFF_SYM688
+Lfde72_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDocument__ctor
+
+LDIFF_SYM689=Lme_48 - System_Xml_Linq_XDocument__ctor
+	.long LDIFF_SYM689
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde72_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDocument:.ctor"
+	.asciz "System_Xml_Linq_XDocument__ctor_System_Xml_Linq_XDocument"
+
+	.byte 10,105
+	.quad System_Xml_Linq_XDocument__ctor_System_Xml_Linq_XDocument
+	.quad Lme_49
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM690=LTDIE_57_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM690
+	.byte 1,105,3
+	.asciz "other"
+
+LDIFF_SYM691=LTDIE_57_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM691
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM692=Lfde73_end - Lfde73_start
+	.long LDIFF_SYM692
+Lfde73_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDocument__ctor_System_Xml_Linq_XDocument
+
+LDIFF_SYM693=Lme_49 - System_Xml_Linq_XDocument__ctor_System_Xml_Linq_XDocument
+	.long LDIFF_SYM693
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3
+	.align 3
+Lfde73_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDocument:get_Declaration"
+	.asciz "System_Xml_Linq_XDocument_get_Declaration"
+
+	.byte 10,118
+	.quad System_Xml_Linq_XDocument_get_Declaration
+	.quad Lme_4a
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM694=LTDIE_57_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM694
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM695=Lfde74_end - Lfde74_start
+	.long LDIFF_SYM695
+Lfde74_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDocument_get_Declaration
+
+LDIFF_SYM696=Lme_4a - System_Xml_Linq_XDocument_get_Declaration
+	.long LDIFF_SYM696
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde74_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDocument:set_Declaration"
+	.asciz "System_Xml_Linq_XDocument_set_Declaration_System_Xml_Linq_XDeclaration"
+
+	.byte 10,119
+	.quad System_Xml_Linq_XDocument_set_Declaration_System_Xml_Linq_XDeclaration
+	.quad Lme_4b
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM697=LTDIE_57_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM697
+	.byte 2,141,16,3
+	.asciz "value"
+
+LDIFF_SYM698=LTDIE_56_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM698
+	.byte 2,141,24,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM699=Lfde75_end - Lfde75_start
+	.long LDIFF_SYM699
+Lfde75_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDocument_set_Declaration_System_Xml_Linq_XDeclaration
+
+LDIFF_SYM700=Lme_4b - System_Xml_Linq_XDocument_set_Declaration_System_Xml_Linq_XDeclaration
+	.long LDIFF_SYM700
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde75_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDocument:get_NodeType"
+	.asciz "System_Xml_Linq_XDocument_get_NodeType"
+
+	.byte 10,143,1
+	.quad System_Xml_Linq_XDocument_get_NodeType
+	.quad Lme_4c
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM701=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM701
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM702=Lfde76_end - Lfde76_start
+	.long LDIFF_SYM702
+Lfde76_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDocument_get_NodeType
+
+LDIFF_SYM703=Lme_4c - System_Xml_Linq_XDocument_get_NodeType
+	.long LDIFF_SYM703
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde76_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDocument:get_Root"
+	.asciz "System_Xml_Linq_XDocument_get_Root"
+
+	.byte 10,154,1
+	.quad System_Xml_Linq_XDocument_get_Root
+	.quad Lme_4d
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM704=LTDIE_57_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM704
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM705=Lfde77_end - Lfde77_start
+	.long LDIFF_SYM705
+Lfde77_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDocument_get_Root
+
+LDIFF_SYM706=Lme_4d - System_Xml_Linq_XDocument_get_Root
+	.long LDIFF_SYM706
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde77_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDocument:WriteTo"
+	.asciz "System_Xml_Linq_XDocument_WriteTo_System_Xml_XmlWriter"
+
+	.byte 10,155,6
+	.quad System_Xml_Linq_XDocument_WriteTo_System_Xml_XmlWriter
+	.quad Lme_4e
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM707=LTDIE_57_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM707
+	.byte 1,105,3
+	.asciz "writer"
+
+LDIFF_SYM708=LTDIE_41_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM708
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM709=Lfde78_end - Lfde78_start
+	.long LDIFF_SYM709
+Lfde78_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDocument_WriteTo_System_Xml_XmlWriter
+
+LDIFF_SYM710=Lme_4e - System_Xml_Linq_XDocument_WriteTo_System_Xml_XmlWriter
+	.long LDIFF_SYM710
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
+	.align 3
+Lfde78_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDocument:AddAttribute"
+	.asciz "System_Xml_Linq_XDocument_AddAttribute_System_Xml_Linq_XAttribute"
+
+	.byte 10,214,6
+	.quad System_Xml_Linq_XDocument_AddAttribute_System_Xml_Linq_XAttribute
+	.quad Lme_4f
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM711=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM711
+	.byte 0,3
+	.asciz "a"
+
+LDIFF_SYM712=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM712
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM713=Lfde79_end - Lfde79_start
+	.long LDIFF_SYM713
+Lfde79_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDocument_AddAttribute_System_Xml_Linq_XAttribute
+
+LDIFF_SYM714=Lme_4f - System_Xml_Linq_XDocument_AddAttribute_System_Xml_Linq_XAttribute
+	.long LDIFF_SYM714
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde79_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDocument:AddAttributeSkipNotify"
+	.asciz "System_Xml_Linq_XDocument_AddAttributeSkipNotify_System_Xml_Linq_XAttribute"
+
+	.byte 10,219,6
+	.quad System_Xml_Linq_XDocument_AddAttributeSkipNotify_System_Xml_Linq_XAttribute
+	.quad Lme_50
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM715=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM715
+	.byte 0,3
+	.asciz "a"
+
+LDIFF_SYM716=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM716
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM717=Lfde80_end - Lfde80_start
+	.long LDIFF_SYM717
+Lfde80_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDocument_AddAttributeSkipNotify_System_Xml_Linq_XAttribute
+
+LDIFF_SYM718=Lme_50 - System_Xml_Linq_XDocument_AddAttributeSkipNotify_System_Xml_Linq_XAttribute
+	.long LDIFF_SYM718
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde80_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDocument:CloneNode"
+	.asciz "System_Xml_Linq_XDocument_CloneNode"
+
+	.byte 10,224,6
+	.quad System_Xml_Linq_XDocument_CloneNode
+	.quad Lme_51
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM719=LTDIE_57_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM719
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM720=Lfde81_end - Lfde81_start
+	.long LDIFF_SYM720
+Lfde81_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDocument_CloneNode
+
+LDIFF_SYM721=Lme_51 - System_Xml_Linq_XDocument_CloneNode
+	.long LDIFF_SYM721
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.align 3
+Lfde81_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDocument:GetFirstNode<T_REF>"
+	.asciz "System_Xml_Linq_XDocument_GetFirstNode_T_REF"
+
+	.byte 10,240,6
+	.quad System_Xml_Linq_XDocument_GetFirstNode_T_REF
+	.quad Lme_52
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM722=LTDIE_57_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM722
+	.byte 1,106,11
+	.asciz "n"
+
+LDIFF_SYM723=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM723
+	.byte 1,105,11
+	.asciz "e"
+
+LDIFF_SYM724=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM724
+	.byte 1,104,11
+	.asciz "V_2"
+
+LDIFF_SYM725=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM725
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM726=Lfde82_end - Lfde82_start
+	.long LDIFF_SYM726
+Lfde82_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDocument_GetFirstNode_T_REF
+
+LDIFF_SYM727=Lme_52 - System_Xml_Linq_XDocument_GetFirstNode_T_REF
+	.long LDIFF_SYM727
+	.long 0
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5,68,154,4
+	.align 3
+Lfde82_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_58:
+
+	.byte 5
+	.asciz "System_Char"
+
+	.byte 18,16
+LDIFF_SYM728=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM728
+	.byte 2,35,0,6
+	.asciz "m_value"
+
+LDIFF_SYM729=LDIE_CHAR - Ldebug_info_start
+	.long LDIFF_SYM729
+	.byte 2,35,16,0,7
+	.asciz "System_Char"
+
+LDIFF_SYM730=LTDIE_58 - Ldebug_info_start
+	.long LDIFF_SYM730
+LTDIE_58_POINTER:
+
+	.byte 13
+LDIFF_SYM731=LTDIE_58 - Ldebug_info_start
+	.long LDIFF_SYM731
+LTDIE_58_REFERENCE:
+
+	.byte 14
+LDIFF_SYM732=LTDIE_58 - Ldebug_info_start
+	.long LDIFF_SYM732
+	.byte 2
+	.asciz "System.Xml.Linq.XDocument:IsWhitespace"
+	.asciz "System_Xml_Linq_XDocument_IsWhitespace_string"
+
+	.byte 10,255,6
+	.quad System_Xml_Linq_XDocument_IsWhitespace_string
+	.quad Lme_53
+
+	.byte 2,118,16,3
+	.asciz "s"
+
+LDIFF_SYM733=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM733
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM734=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM734
+	.byte 1,105,11
+	.asciz "V_1"
+
+LDIFF_SYM735=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM735
+	.byte 1,106,11
+	.asciz "ch"
+
+LDIFF_SYM736=LDIE_CHAR - Ldebug_info_start
+	.long LDIFF_SYM736
+	.byte 1,104,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM737=Lfde83_end - Lfde83_start
+	.long LDIFF_SYM737
+Lfde83_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDocument_IsWhitespace_string
+
+LDIFF_SYM738=Lme_53 - System_Xml_Linq_XDocument_IsWhitespace_string
+	.long LDIFF_SYM738
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,68,154,2
+	.align 3
+Lfde83_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDocument:ValidateNode"
+	.asciz "System_Xml_Linq_XDocument_ValidateNode_System_Xml_Linq_XNode_System_Xml_Linq_XNode"
+
+	.byte 10,136,7
+	.quad System_Xml_Linq_XDocument_ValidateNode_System_Xml_Linq_XNode_System_Xml_Linq_XNode
+	.quad Lme_54
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM739=LTDIE_57_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM739
+	.byte 1,104,3
+	.asciz "node"
+
+LDIFF_SYM740=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM740
+	.byte 1,105,3
+	.asciz "previous"
+
+LDIFF_SYM741=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM741
+	.byte 2,141,48,11
+	.asciz "V_0"
+
+LDIFF_SYM742=LTDIE_54 - Ldebug_info_start
+	.long LDIFF_SYM742
+	.byte 1,103,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM743=Lfde84_end - Lfde84_start
+	.long LDIFF_SYM743
+Lfde84_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDocument_ValidateNode_System_Xml_Linq_XNode_System_Xml_Linq_XNode
+
+LDIFF_SYM744=Lme_54 - System_Xml_Linq_XDocument_ValidateNode_System_Xml_Linq_XNode_System_Xml_Linq_XNode
+	.long LDIFF_SYM744
+	.long 0
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,150,16,151,15,68,152,14,153,13
+	.align 3
+Lfde84_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDocument:ValidateDocument"
+	.asciz "System_Xml_Linq_XDocument_ValidateDocument_System_Xml_Linq_XNode_System_Xml_XmlNodeType_System_Xml_XmlNodeType"
+
+	.byte 10,156,7
+	.quad System_Xml_Linq_XDocument_ValidateDocument_System_Xml_Linq_XNode_System_Xml_XmlNodeType_System_Xml_XmlNodeType
+	.quad Lme_55
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM745=LTDIE_57_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM745
+	.byte 1,103,3
+	.asciz "previous"
+
+LDIFF_SYM746=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM746
+	.byte 1,104,3
+	.asciz "allowBefore"
+
+LDIFF_SYM747=LTDIE_54 - Ldebug_info_start
+	.long LDIFF_SYM747
+	.byte 1,105,3
+	.asciz "allowAfter"
+
+LDIFF_SYM748=LTDIE_54 - Ldebug_info_start
+	.long LDIFF_SYM748
+	.byte 1,106,11
+	.asciz "n"
+
+LDIFF_SYM749=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM749
+	.byte 1,102,11
+	.asciz "nt"
+
+LDIFF_SYM750=LTDIE_54 - Ldebug_info_start
+	.long LDIFF_SYM750
+	.byte 1,101,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM751=Lfde85_end - Lfde85_start
+	.long LDIFF_SYM751
+Lfde85_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDocument_ValidateDocument_System_Xml_Linq_XNode_System_Xml_XmlNodeType_System_Xml_XmlNodeType
+
+LDIFF_SYM752=Lme_55 - System_Xml_Linq_XDocument_ValidateDocument_System_Xml_Linq_XNode_System_Xml_XmlNodeType_System_Xml_XmlNodeType
+	.long LDIFF_SYM752
+	.long 0
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,149,6,150,5,68,151,4,152,3,68,153,2,154,1
+	.align 3
+Lfde85_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDocument:ValidateString"
+	.asciz "System_Xml_Linq_XDocument_ValidateString_string"
+
+	.byte 10,176,7
+	.quad System_Xml_Linq_XDocument_ValidateString_string
+	.quad Lme_56
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM753=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM753
+	.byte 0,3
+	.asciz "s"
+
+LDIFF_SYM754=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM754
+	.byte 2,141,24,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM755=Lfde86_end - Lfde86_start
+	.long LDIFF_SYM755
+Lfde86_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDocument_ValidateString_string
+
+LDIFF_SYM756=Lme_56 - System_Xml_Linq_XDocument_ValidateString_string
+	.long LDIFF_SYM756
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde86_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_59:
+
+	.byte 5
+	.asciz "System_Xml_Linq_XDocumentType"
+
+	.byte 72,16
+LDIFF_SYM757=LTDIE_9 - Ldebug_info_start
+	.long LDIFF_SYM757
+	.byte 2,35,0,6
+	.asciz "_name"
+
+LDIFF_SYM758=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM758
+	.byte 2,35,40,6
+	.asciz "_publicId"
+
+LDIFF_SYM759=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM759
+	.byte 2,35,48,6
+	.asciz "_systemId"
+
+LDIFF_SYM760=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM760
+	.byte 2,35,56,6
+	.asciz "_internalSubset"
+
+LDIFF_SYM761=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM761
+	.byte 2,35,64,0,7
+	.asciz "System_Xml_Linq_XDocumentType"
+
+LDIFF_SYM762=LTDIE_59 - Ldebug_info_start
+	.long LDIFF_SYM762
+LTDIE_59_POINTER:
+
+	.byte 13
+LDIFF_SYM763=LTDIE_59 - Ldebug_info_start
+	.long LDIFF_SYM763
+LTDIE_59_REFERENCE:
+
+	.byte 14
+LDIFF_SYM764=LTDIE_59 - Ldebug_info_start
+	.long LDIFF_SYM764
+	.byte 2
+	.asciz "System.Xml.Linq.XDocumentType:.ctor"
+	.asciz "System_Xml_Linq_XDocumentType__ctor_string_string_string_string"
+
+	.byte 11,23
+	.quad System_Xml_Linq_XDocumentType__ctor_string_string_string_string
+	.quad Lme_57
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM765=LTDIE_59_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM765
+	.byte 1,102,3
+	.asciz "name"
+
+LDIFF_SYM766=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM766
+	.byte 2,141,24,3
+	.asciz "publicId"
+
+LDIFF_SYM767=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM767
+	.byte 2,141,32,3
+	.asciz "systemId"
+
+LDIFF_SYM768=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM768
+	.byte 2,141,40,3
+	.asciz "internalSubset"
+
+LDIFF_SYM769=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM769
+	.byte 2,141,48,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM770=Lfde87_end - Lfde87_start
+	.long LDIFF_SYM770
+Lfde87_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDocumentType__ctor_string_string_string_string
+
+LDIFF_SYM771=Lme_57 - System_Xml_Linq_XDocumentType__ctor_string_string_string_string
+	.long LDIFF_SYM771
+	.long 0
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6
+	.align 3
+Lfde87_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDocumentType:.ctor"
+	.asciz "System_Xml_Linq_XDocumentType__ctor_System_Xml_Linq_XDocumentType"
+
+	.byte 11,36
+	.quad System_Xml_Linq_XDocumentType__ctor_System_Xml_Linq_XDocumentType
+	.quad Lme_58
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM772=LTDIE_59_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM772
+	.byte 1,105,3
+	.asciz "other"
+
+LDIFF_SYM773=LTDIE_59_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM773
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM774=Lfde88_end - Lfde88_start
+	.long LDIFF_SYM774
+Lfde88_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDocumentType__ctor_System_Xml_Linq_XDocumentType
+
+LDIFF_SYM775=Lme_58 - System_Xml_Linq_XDocumentType__ctor_System_Xml_Linq_XDocumentType
+	.long LDIFF_SYM775
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
+	.align 3
+Lfde88_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDocumentType:get_InternalSubset"
+	.asciz "System_Xml_Linq_XDocumentType_get_InternalSubset"
+
+	.byte 11,61
+	.quad System_Xml_Linq_XDocumentType_get_InternalSubset
+	.quad Lme_59
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM776=LTDIE_59_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM776
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM777=Lfde89_end - Lfde89_start
+	.long LDIFF_SYM777
+Lfde89_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDocumentType_get_InternalSubset
+
+LDIFF_SYM778=Lme_59 - System_Xml_Linq_XDocumentType_get_InternalSubset
+	.long LDIFF_SYM778
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde89_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDocumentType:get_Name"
+	.asciz "System_Xml_Linq_XDocumentType_get_Name"
+
+	.byte 11,78
+	.quad System_Xml_Linq_XDocumentType_get_Name
+	.quad Lme_5a
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM779=LTDIE_59_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM779
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM780=Lfde90_end - Lfde90_start
+	.long LDIFF_SYM780
+Lfde90_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDocumentType_get_Name
+
+LDIFF_SYM781=Lme_5a - System_Xml_Linq_XDocumentType_get_Name
+	.long LDIFF_SYM781
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde90_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDocumentType:get_NodeType"
+	.asciz "System_Xml_Linq_XDocumentType_get_NodeType"
+
+	.byte 11,99
+	.quad System_Xml_Linq_XDocumentType_get_NodeType
+	.quad Lme_5b
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM782=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM782
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM783=Lfde91_end - Lfde91_start
+	.long LDIFF_SYM783
+Lfde91_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDocumentType_get_NodeType
+
+LDIFF_SYM784=Lme_5b - System_Xml_Linq_XDocumentType_get_NodeType
+	.long LDIFF_SYM784
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde91_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDocumentType:get_PublicId"
+	.asciz "System_Xml_Linq_XDocumentType_get_PublicId"
+
+	.byte 11,110
+	.quad System_Xml_Linq_XDocumentType_get_PublicId
+	.quad Lme_5c
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM785=LTDIE_59_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM785
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM786=Lfde92_end - Lfde92_start
+	.long LDIFF_SYM786
+Lfde92_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDocumentType_get_PublicId
+
+LDIFF_SYM787=Lme_5c - System_Xml_Linq_XDocumentType_get_PublicId
+	.long LDIFF_SYM787
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde92_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDocumentType:get_SystemId"
+	.asciz "System_Xml_Linq_XDocumentType_get_SystemId"
+
+	.byte 11,127
+	.quad System_Xml_Linq_XDocumentType_get_SystemId
+	.quad Lme_5d
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM788=LTDIE_59_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM788
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM789=Lfde93_end - Lfde93_start
+	.long LDIFF_SYM789
+Lfde93_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDocumentType_get_SystemId
+
+LDIFF_SYM790=Lme_5d - System_Xml_Linq_XDocumentType_get_SystemId
+	.long LDIFF_SYM790
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde93_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDocumentType:WriteTo"
+	.asciz "System_Xml_Linq_XDocumentType_WriteTo_System_Xml_XmlWriter"
+
+	.byte 11,145,1
+	.quad System_Xml_Linq_XDocumentType_WriteTo_System_Xml_XmlWriter
+	.quad Lme_5e
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM791=LTDIE_59_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM791
+	.byte 1,105,3
+	.asciz "writer"
+
+LDIFF_SYM792=LTDIE_41_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM792
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM793=Lfde94_end - Lfde94_start
+	.long LDIFF_SYM793
+Lfde94_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDocumentType_WriteTo_System_Xml_XmlWriter
+
+LDIFF_SYM794=Lme_5e - System_Xml_Linq_XDocumentType_WriteTo_System_Xml_XmlWriter
+	.long LDIFF_SYM794
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
+	.align 3
+Lfde94_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDocumentType:CloneNode"
+	.asciz "System_Xml_Linq_XDocumentType_CloneNode"
+
+	.byte 11,169,1
+	.quad System_Xml_Linq_XDocumentType_CloneNode
+	.quad Lme_5f
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM795=LTDIE_59_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM795
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM796=Lfde95_end - Lfde95_start
+	.long LDIFF_SYM796
+Lfde95_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDocumentType_CloneNode
+
+LDIFF_SYM797=Lme_5f - System_Xml_Linq_XDocumentType_CloneNode
+	.long LDIFF_SYM797
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.align 3
+Lfde95_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement:.ctor"
+	.asciz "System_Xml_Linq_XElement__ctor_System_Xml_Linq_XName"
+
+	.byte 12,65
+	.quad System_Xml_Linq_XElement__ctor_System_Xml_Linq_XName
+	.quad Lme_60
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM798=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM798
+	.byte 2,141,16,3
+	.asciz "name"
+
+LDIFF_SYM799=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM799
+	.byte 2,141,24,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM800=Lfde96_end - Lfde96_start
+	.long LDIFF_SYM800
+Lfde96_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement__ctor_System_Xml_Linq_XName
+
+LDIFF_SYM801=Lme_60 - System_Xml_Linq_XElement__ctor_System_Xml_Linq_XName
+	.long LDIFF_SYM801
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde96_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement:.ctor"
+	.asciz "System_Xml_Linq_XElement__ctor_System_Xml_Linq_XElement"
+
+	.byte 12,113
+	.quad System_Xml_Linq_XElement__ctor_System_Xml_Linq_XElement
+	.quad Lme_61
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM802=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM802
+	.byte 1,105,3
+	.asciz "other"
+
+LDIFF_SYM803=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM803
+	.byte 1,106,11
+	.asciz "a"
+
+LDIFF_SYM804=LTDIE_6_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM804
+	.byte 1,104,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM805=Lfde97_end - Lfde97_start
+	.long LDIFF_SYM805
+Lfde97_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement__ctor_System_Xml_Linq_XElement
+
+LDIFF_SYM806=Lme_61 - System_Xml_Linq_XElement__ctor_System_Xml_Linq_XElement
+	.long LDIFF_SYM806
+	.long 0
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5,68,154,4
+	.align 3
+Lfde97_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement:.ctor"
+	.asciz "System_Xml_Linq_XElement__ctor_System_Xml_Linq_XStreamingElement"
+
+	.byte 12,134,1
+	.quad System_Xml_Linq_XElement__ctor_System_Xml_Linq_XStreamingElement
+	.quad Lme_62
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM807=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM807
+	.byte 1,105,3
+	.asciz "other"
+
+LDIFF_SYM808=LTDIE_45_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM808
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM809=Lfde98_end - Lfde98_start
+	.long LDIFF_SYM809
+Lfde98_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement__ctor_System_Xml_Linq_XStreamingElement
+
+LDIFF_SYM810=Lme_62 - System_Xml_Linq_XElement__ctor_System_Xml_Linq_XStreamingElement
+	.long LDIFF_SYM810
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
+	.align 3
+Lfde98_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement:.ctor"
+	.asciz "System_Xml_Linq_XElement__ctor_System_Xml_XmlReader_System_Xml_Linq_LoadOptions"
+
+	.byte 12,168,1
+	.quad System_Xml_Linq_XElement__ctor_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
+	.quad Lme_63
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM811=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM811
+	.byte 2,141,16,3
+	.asciz "r"
+
+LDIFF_SYM812=LTDIE_49_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM812
+	.byte 2,141,24,3
+	.asciz "o"
+
+LDIFF_SYM813=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM813
+	.byte 2,141,32,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM814=Lfde99_end - Lfde99_start
+	.long LDIFF_SYM814
+Lfde99_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement__ctor_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
+
+LDIFF_SYM815=Lme_63 - System_Xml_Linq_XElement__ctor_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
+	.long LDIFF_SYM815
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.align 3
+Lfde99_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement:get_HasAttributes"
+	.asciz "System_Xml_Linq_XElement_get_HasAttributes"
+
+	.byte 12,236,1
+	.quad System_Xml_Linq_XElement_get_HasAttributes
+	.quad Lme_64
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM816=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM816
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM817=Lfde100_end - Lfde100_start
+	.long LDIFF_SYM817
+Lfde100_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement_get_HasAttributes
+
+LDIFF_SYM818=Lme_64 - System_Xml_Linq_XElement_get_HasAttributes
+	.long LDIFF_SYM818
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde100_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement:get_IsEmpty"
+	.asciz "System_Xml_Linq_XElement_get_IsEmpty"
+
+	.byte 12,136,2
+	.quad System_Xml_Linq_XElement_get_IsEmpty
+	.quad Lme_65
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM819=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM819
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM820=Lfde101_end - Lfde101_start
+	.long LDIFF_SYM820
+Lfde101_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement_get_IsEmpty
+
+LDIFF_SYM821=Lme_65 - System_Xml_Linq_XElement_get_IsEmpty
+	.long LDIFF_SYM821
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde101_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement:get_Name"
+	.asciz "System_Xml_Linq_XElement_get_Name"
+
+	.byte 12,154,2
+	.quad System_Xml_Linq_XElement_get_Name
+	.quad Lme_66
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM822=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM822
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM823=Lfde102_end - Lfde102_start
+	.long LDIFF_SYM823
+Lfde102_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement_get_Name
+
+LDIFF_SYM824=Lme_66 - System_Xml_Linq_XElement_get_Name
+	.long LDIFF_SYM824
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde102_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement:get_NodeType"
+	.asciz "System_Xml_Linq_XElement_get_NodeType"
+
+	.byte 12,175,2
+	.quad System_Xml_Linq_XElement_get_NodeType
+	.quad Lme_67
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM825=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM825
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM826=Lfde103_end - Lfde103_start
+	.long LDIFF_SYM826
+Lfde103_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement_get_NodeType
+
+LDIFF_SYM827=Lme_67 - System_Xml_Linq_XElement_get_NodeType
+	.long LDIFF_SYM827
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde103_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement:get_Value"
+	.asciz "System_Xml_Linq_XElement_get_Value"
+
+	.byte 12,190,2
+	.quad System_Xml_Linq_XElement_get_Value
+	.quad Lme_68
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM828=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM828
+	.byte 1,106,11
+	.asciz "s"
+
+LDIFF_SYM829=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM829
+	.byte 1,105,11
+	.asciz "sb"
+
+LDIFF_SYM830=LTDIE_27_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM830
+	.byte 1,105,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM831=Lfde104_end - Lfde104_start
+	.long LDIFF_SYM831
+Lfde104_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement_get_Value
+
+LDIFF_SYM832=Lme_68 - System_Xml_Linq_XElement_get_Value
+	.long LDIFF_SYM832
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,68,154,2
+	.align 3
+Lfde104_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement:set_Value"
+	.asciz "System_Xml_Linq_XElement_set_Value_string"
+
+	.byte 12,199,2
+	.quad System_Xml_Linq_XElement_set_Value_string
+	.quad Lme_69
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM833=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM833
+	.byte 2,141,16,3
+	.asciz "value"
+
+LDIFF_SYM834=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM834
+	.byte 2,141,24,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM835=Lfde105_end - Lfde105_start
+	.long LDIFF_SYM835
+Lfde105_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement_set_Value_string
+
+LDIFF_SYM836=Lme_69 - System_Xml_Linq_XElement_set_Value_string
+	.long LDIFF_SYM836
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde105_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement:Attribute"
+	.asciz "System_Xml_Linq_XElement_Attribute_System_Xml_Linq_XName"
+
+	.byte 12,130,3
+	.quad System_Xml_Linq_XElement_Attribute_System_Xml_Linq_XName
+	.quad Lme_6a
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM837=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM837
+	.byte 1,105,3
+	.asciz "name"
+
+LDIFF_SYM838=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM838
+	.byte 1,106,11
+	.asciz "a"
+
+LDIFF_SYM839=LTDIE_6_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM839
+	.byte 1,104,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM840=Lfde106_end - Lfde106_start
+	.long LDIFF_SYM840
+Lfde106_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement_Attribute_System_Xml_Linq_XName
+
+LDIFF_SYM841=Lme_6a - System_Xml_Linq_XElement_Attribute_System_Xml_Linq_XName
+	.long LDIFF_SYM841
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,68,154,2
+	.align 3
+Lfde106_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement:Attributes"
+	.asciz "System_Xml_Linq_XElement_Attributes"
+
+	.byte 12,156,3
+	.quad System_Xml_Linq_XElement_Attributes
+	.quad Lme_6b
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM842=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM842
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM843=Lfde107_end - Lfde107_start
+	.long LDIFF_SYM843
+Lfde107_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement_Attributes
+
+LDIFF_SYM844=Lme_6b - System_Xml_Linq_XElement_Attributes
+	.long LDIFF_SYM844
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde107_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement:GetPrefixOfNamespace"
+	.asciz "System_Xml_Linq_XElement_GetPrefixOfNamespace_System_Xml_Linq_XNamespace"
+
+	.byte 12,253,3
+	.quad System_Xml_Linq_XElement_GetPrefixOfNamespace_System_Xml_Linq_XNamespace
+	.quad Lme_6c
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM845=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM845
+	.byte 1,105,3
+	.asciz "ns"
+
+LDIFF_SYM846=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM846
+	.byte 1,106,11
+	.asciz "namespaceName"
+
+LDIFF_SYM847=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM847
+	.byte 1,104,11
+	.asciz "hasInScopeNamespace"
+
+LDIFF_SYM848=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM848
+	.byte 1,106,11
+	.asciz "e"
+
+LDIFF_SYM849=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM849
+	.byte 1,103,11
+	.asciz "a"
+
+LDIFF_SYM850=LTDIE_6_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM850
+	.byte 1,102,11
+	.asciz "hasLocalNamespace"
+
+LDIFF_SYM851=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM851
+	.byte 1,101,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM852=Lfde108_end - Lfde108_start
+	.long LDIFF_SYM852
+Lfde108_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement_GetPrefixOfNamespace_System_Xml_Linq_XNamespace
+
+LDIFF_SYM853=Lme_6c - System_Xml_Linq_XElement_GetPrefixOfNamespace_System_Xml_Linq_XNamespace
+	.long LDIFF_SYM853
+	.long 0
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,149,6,150,5,68,151,4,152,3,68,153,2,154,1
+	.align 3
+Lfde108_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement:Load"
+	.asciz "System_Xml_Linq_XElement_Load_System_Xml_XmlReader_System_Xml_Linq_LoadOptions"
+
+	.byte 12,182,6
+	.quad System_Xml_Linq_XElement_Load_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
+	.quad Lme_6d
+
+	.byte 2,118,16,3
+	.asciz "reader"
+
+LDIFF_SYM854=LTDIE_49_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM854
+	.byte 1,105,3
+	.asciz "options"
+
+LDIFF_SYM855=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM855
+	.byte 2,141,32,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM856=Lfde109_end - Lfde109_start
+	.long LDIFF_SYM856
+Lfde109_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement_Load_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
+
+LDIFF_SYM857=Lme_6d - System_Xml_Linq_XElement_Load_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
+	.long LDIFF_SYM857
+	.long 0
+	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,153,12,154,11
+	.align 3
+Lfde109_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement:Parse"
+	.asciz "System_Xml_Linq_XElement_Parse_string"
+
+	.byte 12,248,6
+	.quad System_Xml_Linq_XElement_Parse_string
+	.quad Lme_6e
+
+	.byte 2,118,16,3
+	.asciz "text"
+
+LDIFF_SYM858=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM858
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM859=Lfde110_end - Lfde110_start
+	.long LDIFF_SYM859
+Lfde110_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement_Parse_string
+
+LDIFF_SYM860=Lme_6e - System_Xml_Linq_XElement_Parse_string
+	.long LDIFF_SYM860
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde110_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_61:
+
+	.byte 5
+	.asciz "System_IO_TextReader"
+
+	.byte 24,16
+LDIFF_SYM861=LTDIE_25 - Ldebug_info_start
+	.long LDIFF_SYM861
+	.byte 2,35,0,0,7
+	.asciz "System_IO_TextReader"
+
+LDIFF_SYM862=LTDIE_61 - Ldebug_info_start
+	.long LDIFF_SYM862
+LTDIE_61_POINTER:
+
+	.byte 13
+LDIFF_SYM863=LTDIE_61 - Ldebug_info_start
+	.long LDIFF_SYM863
+LTDIE_61_REFERENCE:
+
+	.byte 14
+LDIFF_SYM864=LTDIE_61 - Ldebug_info_start
+	.long LDIFF_SYM864
+LTDIE_60:
 
 	.byte 5
 	.asciz "System_IO_StringReader"
 
 	.byte 40,16
-LDIFF_SYM630=LTDIE_56 - Ldebug_info_start
-	.long LDIFF_SYM630
+LDIFF_SYM865=LTDIE_61 - Ldebug_info_start
+	.long LDIFF_SYM865
 	.byte 2,35,0,6
 	.asciz "_s"
 
-LDIFF_SYM631=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM631
+LDIFF_SYM866=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM866
 	.byte 2,35,24,6
 	.asciz "_pos"
 
-LDIFF_SYM632=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM632
+LDIFF_SYM867=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM867
 	.byte 2,35,32,6
 	.asciz "_length"
 
-LDIFF_SYM633=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM633
+LDIFF_SYM868=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM868
 	.byte 2,35,36,0,7
 	.asciz "System_IO_StringReader"
 
-LDIFF_SYM634=LTDIE_55 - Ldebug_info_start
-	.long LDIFF_SYM634
-LTDIE_55_POINTER:
+LDIFF_SYM869=LTDIE_60 - Ldebug_info_start
+	.long LDIFF_SYM869
+LTDIE_60_POINTER:
 
 	.byte 13
-LDIFF_SYM635=LTDIE_55 - Ldebug_info_start
-	.long LDIFF_SYM635
-LTDIE_55_REFERENCE:
+LDIFF_SYM870=LTDIE_60 - Ldebug_info_start
+	.long LDIFF_SYM870
+LTDIE_60_REFERENCE:
 
 	.byte 14
-LDIFF_SYM636=LTDIE_55 - Ldebug_info_start
-	.long LDIFF_SYM636
-LTDIE_58:
+LDIFF_SYM871=LTDIE_60 - Ldebug_info_start
+	.long LDIFF_SYM871
+LTDIE_63:
 
 	.byte 5
 	.asciz "System_Xml_XmlNameTable"
 
 	.byte 16,16
-LDIFF_SYM637=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM637
+LDIFF_SYM872=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM872
 	.byte 2,35,0,0,7
 	.asciz "System_Xml_XmlNameTable"
 
-LDIFF_SYM638=LTDIE_58 - Ldebug_info_start
-	.long LDIFF_SYM638
-LTDIE_58_POINTER:
+LDIFF_SYM873=LTDIE_63 - Ldebug_info_start
+	.long LDIFF_SYM873
+LTDIE_63_POINTER:
 
 	.byte 13
-LDIFF_SYM639=LTDIE_58 - Ldebug_info_start
-	.long LDIFF_SYM639
-LTDIE_58_REFERENCE:
+LDIFF_SYM874=LTDIE_63 - Ldebug_info_start
+	.long LDIFF_SYM874
+LTDIE_63_REFERENCE:
 
 	.byte 14
-LDIFF_SYM640=LTDIE_58 - Ldebug_info_start
-	.long LDIFF_SYM640
-LTDIE_59:
+LDIFF_SYM875=LTDIE_63 - Ldebug_info_start
+	.long LDIFF_SYM875
+LTDIE_64:
 
 	.byte 5
 	.asciz "System_Xml_XmlResolver"
 
 	.byte 16,16
-LDIFF_SYM641=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM641
+LDIFF_SYM876=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM876
 	.byte 2,35,0,0,7
 	.asciz "System_Xml_XmlResolver"
 
-LDIFF_SYM642=LTDIE_59 - Ldebug_info_start
-	.long LDIFF_SYM642
-LTDIE_59_POINTER:
+LDIFF_SYM877=LTDIE_64 - Ldebug_info_start
+	.long LDIFF_SYM877
+LTDIE_64_POINTER:
 
 	.byte 13
-LDIFF_SYM643=LTDIE_59 - Ldebug_info_start
-	.long LDIFF_SYM643
-LTDIE_59_REFERENCE:
+LDIFF_SYM878=LTDIE_64 - Ldebug_info_start
+	.long LDIFF_SYM878
+LTDIE_64_REFERENCE:
 
 	.byte 14
-LDIFF_SYM644=LTDIE_59 - Ldebug_info_start
-	.long LDIFF_SYM644
-LTDIE_60:
+LDIFF_SYM879=LTDIE_64 - Ldebug_info_start
+	.long LDIFF_SYM879
+LTDIE_65:
 
 	.byte 5
 	.asciz "System_Int64"
 
 	.byte 24,16
-LDIFF_SYM645=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM645
+LDIFF_SYM880=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM880
 	.byte 2,35,0,6
 	.asciz "m_value"
 
-LDIFF_SYM646=LDIE_I8 - Ldebug_info_start
-	.long LDIFF_SYM646
+LDIFF_SYM881=LDIE_I8 - Ldebug_info_start
+	.long LDIFF_SYM881
 	.byte 2,35,16,0,7
 	.asciz "System_Int64"
 
-LDIFF_SYM647=LTDIE_60 - Ldebug_info_start
-	.long LDIFF_SYM647
-LTDIE_60_POINTER:
+LDIFF_SYM882=LTDIE_65 - Ldebug_info_start
+	.long LDIFF_SYM882
+LTDIE_65_POINTER:
 
 	.byte 13
-LDIFF_SYM648=LTDIE_60 - Ldebug_info_start
-	.long LDIFF_SYM648
-LTDIE_60_REFERENCE:
+LDIFF_SYM883=LTDIE_65 - Ldebug_info_start
+	.long LDIFF_SYM883
+LTDIE_65_REFERENCE:
 
 	.byte 14
-LDIFF_SYM649=LTDIE_60 - Ldebug_info_start
-	.long LDIFF_SYM649
-LTDIE_61:
+LDIFF_SYM884=LTDIE_65 - Ldebug_info_start
+	.long LDIFF_SYM884
+LTDIE_66:
 
 	.byte 8
 	.asciz "System_Xml_DtdProcessing"
 
 	.byte 4
-LDIFF_SYM650=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM650
+LDIFF_SYM885=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM885
 	.byte 9
 	.asciz "Prohibit"
 
@@ -19816,26 +26348,26 @@ LDIFF_SYM650=LDIE_I4 - Ldebug_info_start
 	.byte 2,0,7
 	.asciz "System_Xml_DtdProcessing"
 
-LDIFF_SYM651=LTDIE_61 - Ldebug_info_start
-	.long LDIFF_SYM651
-LTDIE_61_POINTER:
+LDIFF_SYM886=LTDIE_66 - Ldebug_info_start
+	.long LDIFF_SYM886
+LTDIE_66_POINTER:
 
 	.byte 13
-LDIFF_SYM652=LTDIE_61 - Ldebug_info_start
-	.long LDIFF_SYM652
-LTDIE_61_REFERENCE:
+LDIFF_SYM887=LTDIE_66 - Ldebug_info_start
+	.long LDIFF_SYM887
+LTDIE_66_REFERENCE:
 
 	.byte 14
-LDIFF_SYM653=LTDIE_61 - Ldebug_info_start
-	.long LDIFF_SYM653
-LTDIE_62:
+LDIFF_SYM888=LTDIE_66 - Ldebug_info_start
+	.long LDIFF_SYM888
+LTDIE_67:
 
 	.byte 8
 	.asciz "System_Xml_ValidationType"
 
 	.byte 4
-LDIFF_SYM654=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM654
+LDIFF_SYM889=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM889
 	.byte 9
 	.asciz "None"
 
@@ -19854,26 +26386,26 @@ LDIFF_SYM654=LDIE_I4 - Ldebug_info_start
 	.byte 4,0,7
 	.asciz "System_Xml_ValidationType"
 
-LDIFF_SYM655=LTDIE_62 - Ldebug_info_start
-	.long LDIFF_SYM655
-LTDIE_62_POINTER:
+LDIFF_SYM890=LTDIE_67 - Ldebug_info_start
+	.long LDIFF_SYM890
+LTDIE_67_POINTER:
 
 	.byte 13
-LDIFF_SYM656=LTDIE_62 - Ldebug_info_start
-	.long LDIFF_SYM656
-LTDIE_62_REFERENCE:
+LDIFF_SYM891=LTDIE_67 - Ldebug_info_start
+	.long LDIFF_SYM891
+LTDIE_67_REFERENCE:
 
 	.byte 14
-LDIFF_SYM657=LTDIE_62 - Ldebug_info_start
-	.long LDIFF_SYM657
-LTDIE_63:
+LDIFF_SYM892=LTDIE_67 - Ldebug_info_start
+	.long LDIFF_SYM892
+LTDIE_68:
 
 	.byte 8
 	.asciz "System_Xml_Schema_XmlSchemaValidationFlags"
 
 	.byte 4
-LDIFF_SYM658=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM658
+LDIFF_SYM893=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM893
 	.byte 9
 	.asciz "None"
 
@@ -19895,785 +26427,785 @@ LDIFF_SYM658=LDIE_I4 - Ldebug_info_start
 	.byte 16,0,7
 	.asciz "System_Xml_Schema_XmlSchemaValidationFlags"
 
-LDIFF_SYM659=LTDIE_63 - Ldebug_info_start
-	.long LDIFF_SYM659
-LTDIE_63_POINTER:
+LDIFF_SYM894=LTDIE_68 - Ldebug_info_start
+	.long LDIFF_SYM894
+LTDIE_68_POINTER:
 
 	.byte 13
-LDIFF_SYM660=LTDIE_63 - Ldebug_info_start
-	.long LDIFF_SYM660
-LTDIE_63_REFERENCE:
+LDIFF_SYM895=LTDIE_68 - Ldebug_info_start
+	.long LDIFF_SYM895
+LTDIE_68_REFERENCE:
 
 	.byte 14
-LDIFF_SYM661=LTDIE_63 - Ldebug_info_start
-	.long LDIFF_SYM661
-LTDIE_66:
+LDIFF_SYM896=LTDIE_68 - Ldebug_info_start
+	.long LDIFF_SYM896
+LTDIE_71:
 
 	.byte 5
 	.asciz "System_Xml_XmlQualifiedName"
 
 	.byte 40,16
-LDIFF_SYM662=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM662
+LDIFF_SYM897=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM897
 	.byte 2,35,0,6
 	.asciz "name"
 
-LDIFF_SYM663=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM663
+LDIFF_SYM898=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM898
 	.byte 2,35,16,6
 	.asciz "ns"
 
-LDIFF_SYM664=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM664
+LDIFF_SYM899=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM899
 	.byte 2,35,24,6
 	.asciz "hash"
 
-LDIFF_SYM665=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM665
+LDIFF_SYM900=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM900
 	.byte 2,35,32,0,7
 	.asciz "System_Xml_XmlQualifiedName"
 
-LDIFF_SYM666=LTDIE_66 - Ldebug_info_start
-	.long LDIFF_SYM666
-LTDIE_66_POINTER:
+LDIFF_SYM901=LTDIE_71 - Ldebug_info_start
+	.long LDIFF_SYM901
+LTDIE_71_POINTER:
 
 	.byte 13
-LDIFF_SYM667=LTDIE_66 - Ldebug_info_start
-	.long LDIFF_SYM667
-LTDIE_66_REFERENCE:
+LDIFF_SYM902=LTDIE_71 - Ldebug_info_start
+	.long LDIFF_SYM902
+LTDIE_71_REFERENCE:
 
 	.byte 14
-LDIFF_SYM668=LTDIE_66 - Ldebug_info_start
-	.long LDIFF_SYM668
-LTDIE_65:
+LDIFF_SYM903=LTDIE_71 - Ldebug_info_start
+	.long LDIFF_SYM903
+LTDIE_70:
 
 	.byte 5
 	.asciz "System_Xml_Schema_SchemaNames"
 
 	.byte 248,8,16
-LDIFF_SYM669=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM669
+LDIFF_SYM904=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM904
 	.byte 2,35,0,6
 	.asciz "nameTable"
 
-LDIFF_SYM670=LTDIE_58_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM670
+LDIFF_SYM905=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM905
 	.byte 2,35,16,6
 	.asciz "NsDataType"
 
-LDIFF_SYM671=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM671
+LDIFF_SYM906=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM906
 	.byte 2,35,24,6
 	.asciz "NsDataTypeAlias"
 
-LDIFF_SYM672=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM672
+LDIFF_SYM907=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM907
 	.byte 2,35,32,6
 	.asciz "NsDataTypeOld"
 
-LDIFF_SYM673=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM673
+LDIFF_SYM908=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM908
 	.byte 2,35,40,6
 	.asciz "NsXml"
 
-LDIFF_SYM674=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM674
+LDIFF_SYM909=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM909
 	.byte 2,35,48,6
 	.asciz "NsXmlNs"
 
-LDIFF_SYM675=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM675
+LDIFF_SYM910=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM910
 	.byte 2,35,56,6
 	.asciz "NsXdr"
 
-LDIFF_SYM676=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM676
+LDIFF_SYM911=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM911
 	.byte 2,35,64,6
 	.asciz "NsXdrAlias"
 
-LDIFF_SYM677=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM677
+LDIFF_SYM912=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM912
 	.byte 2,35,72,6
 	.asciz "NsXs"
 
-LDIFF_SYM678=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM678
+LDIFF_SYM913=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM913
 	.byte 2,35,80,6
 	.asciz "NsXsi"
 
-LDIFF_SYM679=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM679
+LDIFF_SYM914=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM914
 	.byte 2,35,88,6
 	.asciz "XsiType"
 
-LDIFF_SYM680=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM680
+LDIFF_SYM915=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM915
 	.byte 2,35,96,6
 	.asciz "XsiNil"
 
-LDIFF_SYM681=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM681
+LDIFF_SYM916=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM916
 	.byte 2,35,104,6
 	.asciz "XsiSchemaLocation"
 
-LDIFF_SYM682=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM682
+LDIFF_SYM917=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM917
 	.byte 2,35,112,6
 	.asciz "XsiNoNamespaceSchemaLocation"
 
-LDIFF_SYM683=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM683
+LDIFF_SYM918=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM918
 	.byte 2,35,120,6
 	.asciz "XsdSchema"
 
-LDIFF_SYM684=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM684
+LDIFF_SYM919=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM919
 	.byte 3,35,128,1,6
 	.asciz "XdrSchema"
 
-LDIFF_SYM685=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM685
+LDIFF_SYM920=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM920
 	.byte 3,35,136,1,6
 	.asciz "QnPCData"
 
-LDIFF_SYM686=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM686
+LDIFF_SYM921=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM921
 	.byte 3,35,144,1,6
 	.asciz "QnXml"
 
-LDIFF_SYM687=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM687
+LDIFF_SYM922=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM922
 	.byte 3,35,152,1,6
 	.asciz "QnXmlNs"
 
-LDIFF_SYM688=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM688
+LDIFF_SYM923=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM923
 	.byte 3,35,160,1,6
 	.asciz "QnDtDt"
 
-LDIFF_SYM689=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM689
+LDIFF_SYM924=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM924
 	.byte 3,35,168,1,6
 	.asciz "QnXmlLang"
 
-LDIFF_SYM690=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM690
+LDIFF_SYM925=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM925
 	.byte 3,35,176,1,6
 	.asciz "QnName"
 
-LDIFF_SYM691=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM691
+LDIFF_SYM926=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM926
 	.byte 3,35,184,1,6
 	.asciz "QnType"
 
-LDIFF_SYM692=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM692
+LDIFF_SYM927=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM927
 	.byte 3,35,192,1,6
 	.asciz "QnMaxOccurs"
 
-LDIFF_SYM693=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM693
+LDIFF_SYM928=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM928
 	.byte 3,35,200,1,6
 	.asciz "QnMinOccurs"
 
-LDIFF_SYM694=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM694
+LDIFF_SYM929=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM929
 	.byte 3,35,208,1,6
 	.asciz "QnInfinite"
 
-LDIFF_SYM695=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM695
+LDIFF_SYM930=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM930
 	.byte 3,35,216,1,6
 	.asciz "QnModel"
 
-LDIFF_SYM696=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM696
+LDIFF_SYM931=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM931
 	.byte 3,35,224,1,6
 	.asciz "QnOpen"
 
-LDIFF_SYM697=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM697
+LDIFF_SYM932=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM932
 	.byte 3,35,232,1,6
 	.asciz "QnClosed"
 
-LDIFF_SYM698=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM698
+LDIFF_SYM933=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM933
 	.byte 3,35,240,1,6
 	.asciz "QnContent"
 
-LDIFF_SYM699=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM699
+LDIFF_SYM934=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM934
 	.byte 3,35,248,1,6
 	.asciz "QnMixed"
 
-LDIFF_SYM700=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM700
+LDIFF_SYM935=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM935
 	.byte 3,35,128,2,6
 	.asciz "QnEmpty"
 
-LDIFF_SYM701=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM701
+LDIFF_SYM936=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM936
 	.byte 3,35,136,2,6
 	.asciz "QnEltOnly"
 
-LDIFF_SYM702=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM702
+LDIFF_SYM937=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM937
 	.byte 3,35,144,2,6
 	.asciz "QnTextOnly"
 
-LDIFF_SYM703=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM703
+LDIFF_SYM938=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM938
 	.byte 3,35,152,2,6
 	.asciz "QnOrder"
 
-LDIFF_SYM704=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM704
+LDIFF_SYM939=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM939
 	.byte 3,35,160,2,6
 	.asciz "QnSeq"
 
-LDIFF_SYM705=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM705
+LDIFF_SYM940=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM940
 	.byte 3,35,168,2,6
 	.asciz "QnOne"
 
-LDIFF_SYM706=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM706
+LDIFF_SYM941=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM941
 	.byte 3,35,176,2,6
 	.asciz "QnMany"
 
-LDIFF_SYM707=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM707
+LDIFF_SYM942=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM942
 	.byte 3,35,184,2,6
 	.asciz "QnRequired"
 
-LDIFF_SYM708=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM708
+LDIFF_SYM943=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM943
 	.byte 3,35,192,2,6
 	.asciz "QnYes"
 
-LDIFF_SYM709=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM709
+LDIFF_SYM944=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM944
 	.byte 3,35,200,2,6
 	.asciz "QnNo"
 
-LDIFF_SYM710=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM710
+LDIFF_SYM945=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM945
 	.byte 3,35,208,2,6
 	.asciz "QnString"
 
-LDIFF_SYM711=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM711
+LDIFF_SYM946=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM946
 	.byte 3,35,216,2,6
 	.asciz "QnID"
 
-LDIFF_SYM712=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM712
+LDIFF_SYM947=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM947
 	.byte 3,35,224,2,6
 	.asciz "QnIDRef"
 
-LDIFF_SYM713=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM713
+LDIFF_SYM948=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM948
 	.byte 3,35,232,2,6
 	.asciz "QnIDRefs"
 
-LDIFF_SYM714=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM714
+LDIFF_SYM949=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM949
 	.byte 3,35,240,2,6
 	.asciz "QnEntity"
 
-LDIFF_SYM715=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM715
+LDIFF_SYM950=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM950
 	.byte 3,35,248,2,6
 	.asciz "QnEntities"
 
-LDIFF_SYM716=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM716
+LDIFF_SYM951=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM951
 	.byte 3,35,128,3,6
 	.asciz "QnNmToken"
 
-LDIFF_SYM717=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM717
+LDIFF_SYM952=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM952
 	.byte 3,35,136,3,6
 	.asciz "QnNmTokens"
 
-LDIFF_SYM718=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM718
+LDIFF_SYM953=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM953
 	.byte 3,35,144,3,6
 	.asciz "QnEnumeration"
 
-LDIFF_SYM719=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM719
+LDIFF_SYM954=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM954
 	.byte 3,35,152,3,6
 	.asciz "QnDefault"
 
-LDIFF_SYM720=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM720
+LDIFF_SYM955=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM955
 	.byte 3,35,160,3,6
 	.asciz "QnXdrSchema"
 
-LDIFF_SYM721=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM721
+LDIFF_SYM956=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM956
 	.byte 3,35,168,3,6
 	.asciz "QnXdrElementType"
 
-LDIFF_SYM722=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM722
+LDIFF_SYM957=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM957
 	.byte 3,35,176,3,6
 	.asciz "QnXdrElement"
 
-LDIFF_SYM723=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM723
+LDIFF_SYM958=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM958
 	.byte 3,35,184,3,6
 	.asciz "QnXdrGroup"
 
-LDIFF_SYM724=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM724
+LDIFF_SYM959=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM959
 	.byte 3,35,192,3,6
 	.asciz "QnXdrAttributeType"
 
-LDIFF_SYM725=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM725
+LDIFF_SYM960=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM960
 	.byte 3,35,200,3,6
 	.asciz "QnXdrAttribute"
 
-LDIFF_SYM726=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM726
+LDIFF_SYM961=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM961
 	.byte 3,35,208,3,6
 	.asciz "QnXdrDataType"
 
-LDIFF_SYM727=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM727
+LDIFF_SYM962=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM962
 	.byte 3,35,216,3,6
 	.asciz "QnXdrDescription"
 
-LDIFF_SYM728=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM728
+LDIFF_SYM963=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM963
 	.byte 3,35,224,3,6
 	.asciz "QnXdrExtends"
 
-LDIFF_SYM729=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM729
+LDIFF_SYM964=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM964
 	.byte 3,35,232,3,6
 	.asciz "QnXdrAliasSchema"
 
-LDIFF_SYM730=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM730
+LDIFF_SYM965=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM965
 	.byte 3,35,240,3,6
 	.asciz "QnDtType"
 
-LDIFF_SYM731=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM731
+LDIFF_SYM966=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM966
 	.byte 3,35,248,3,6
 	.asciz "QnDtValues"
 
-LDIFF_SYM732=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM732
+LDIFF_SYM967=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM967
 	.byte 3,35,128,4,6
 	.asciz "QnDtMaxLength"
 
-LDIFF_SYM733=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM733
+LDIFF_SYM968=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM968
 	.byte 3,35,136,4,6
 	.asciz "QnDtMinLength"
 
-LDIFF_SYM734=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM734
+LDIFF_SYM969=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM969
 	.byte 3,35,144,4,6
 	.asciz "QnDtMax"
 
-LDIFF_SYM735=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM735
+LDIFF_SYM970=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM970
 	.byte 3,35,152,4,6
 	.asciz "QnDtMin"
 
-LDIFF_SYM736=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM736
+LDIFF_SYM971=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM971
 	.byte 3,35,160,4,6
 	.asciz "QnDtMinExclusive"
 
-LDIFF_SYM737=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM737
+LDIFF_SYM972=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM972
 	.byte 3,35,168,4,6
 	.asciz "QnDtMaxExclusive"
 
-LDIFF_SYM738=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM738
+LDIFF_SYM973=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM973
 	.byte 3,35,176,4,6
 	.asciz "QnTargetNamespace"
 
-LDIFF_SYM739=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM739
+LDIFF_SYM974=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM974
 	.byte 3,35,184,4,6
 	.asciz "QnVersion"
 
-LDIFF_SYM740=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM740
+LDIFF_SYM975=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM975
 	.byte 3,35,192,4,6
 	.asciz "QnFinalDefault"
 
-LDIFF_SYM741=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM741
+LDIFF_SYM976=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM976
 	.byte 3,35,200,4,6
 	.asciz "QnBlockDefault"
 
-LDIFF_SYM742=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM742
+LDIFF_SYM977=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM977
 	.byte 3,35,208,4,6
 	.asciz "QnFixed"
 
-LDIFF_SYM743=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM743
+LDIFF_SYM978=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM978
 	.byte 3,35,216,4,6
 	.asciz "QnAbstract"
 
-LDIFF_SYM744=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM744
+LDIFF_SYM979=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM979
 	.byte 3,35,224,4,6
 	.asciz "QnBlock"
 
-LDIFF_SYM745=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM745
+LDIFF_SYM980=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM980
 	.byte 3,35,232,4,6
 	.asciz "QnSubstitutionGroup"
 
-LDIFF_SYM746=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM746
+LDIFF_SYM981=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM981
 	.byte 3,35,240,4,6
 	.asciz "QnFinal"
 
-LDIFF_SYM747=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM747
+LDIFF_SYM982=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM982
 	.byte 3,35,248,4,6
 	.asciz "QnNillable"
 
-LDIFF_SYM748=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM748
+LDIFF_SYM983=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM983
 	.byte 3,35,128,5,6
 	.asciz "QnRef"
 
-LDIFF_SYM749=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM749
+LDIFF_SYM984=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM984
 	.byte 3,35,136,5,6
 	.asciz "QnBase"
 
-LDIFF_SYM750=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM750
+LDIFF_SYM985=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM985
 	.byte 3,35,144,5,6
 	.asciz "QnDerivedBy"
 
-LDIFF_SYM751=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM751
+LDIFF_SYM986=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM986
 	.byte 3,35,152,5,6
 	.asciz "QnNamespace"
 
-LDIFF_SYM752=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM752
+LDIFF_SYM987=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM987
 	.byte 3,35,160,5,6
 	.asciz "QnProcessContents"
 
-LDIFF_SYM753=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM753
+LDIFF_SYM988=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM988
 	.byte 3,35,168,5,6
 	.asciz "QnRefer"
 
-LDIFF_SYM754=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM754
+LDIFF_SYM989=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM989
 	.byte 3,35,176,5,6
 	.asciz "QnPublic"
 
-LDIFF_SYM755=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM755
+LDIFF_SYM990=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM990
 	.byte 3,35,184,5,6
 	.asciz "QnSystem"
 
-LDIFF_SYM756=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM756
+LDIFF_SYM991=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM991
 	.byte 3,35,192,5,6
 	.asciz "QnSchemaLocation"
 
-LDIFF_SYM757=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM757
+LDIFF_SYM992=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM992
 	.byte 3,35,200,5,6
 	.asciz "QnValue"
 
-LDIFF_SYM758=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM758
+LDIFF_SYM993=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM993
 	.byte 3,35,208,5,6
 	.asciz "QnUse"
 
-LDIFF_SYM759=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM759
+LDIFF_SYM994=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM994
 	.byte 3,35,216,5,6
 	.asciz "QnForm"
 
-LDIFF_SYM760=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM760
+LDIFF_SYM995=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM995
 	.byte 3,35,224,5,6
 	.asciz "QnElementFormDefault"
 
-LDIFF_SYM761=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM761
+LDIFF_SYM996=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM996
 	.byte 3,35,232,5,6
 	.asciz "QnAttributeFormDefault"
 
-LDIFF_SYM762=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM762
+LDIFF_SYM997=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM997
 	.byte 3,35,240,5,6
 	.asciz "QnItemType"
 
-LDIFF_SYM763=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM763
+LDIFF_SYM998=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM998
 	.byte 3,35,248,5,6
 	.asciz "QnMemberTypes"
 
-LDIFF_SYM764=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM764
+LDIFF_SYM999=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM999
 	.byte 3,35,128,6,6
 	.asciz "QnXPath"
 
-LDIFF_SYM765=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM765
+LDIFF_SYM1000=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1000
 	.byte 3,35,136,6,6
 	.asciz "QnXsdSchema"
 
-LDIFF_SYM766=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM766
+LDIFF_SYM1001=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1001
 	.byte 3,35,144,6,6
 	.asciz "QnXsdAnnotation"
 
-LDIFF_SYM767=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM767
+LDIFF_SYM1002=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1002
 	.byte 3,35,152,6,6
 	.asciz "QnXsdInclude"
 
-LDIFF_SYM768=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM768
+LDIFF_SYM1003=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1003
 	.byte 3,35,160,6,6
 	.asciz "QnXsdImport"
 
-LDIFF_SYM769=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM769
+LDIFF_SYM1004=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1004
 	.byte 3,35,168,6,6
 	.asciz "QnXsdElement"
 
-LDIFF_SYM770=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM770
+LDIFF_SYM1005=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1005
 	.byte 3,35,176,6,6
 	.asciz "QnXsdAttribute"
 
-LDIFF_SYM771=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM771
+LDIFF_SYM1006=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1006
 	.byte 3,35,184,6,6
 	.asciz "QnXsdAttributeGroup"
 
-LDIFF_SYM772=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM772
+LDIFF_SYM1007=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1007
 	.byte 3,35,192,6,6
 	.asciz "QnXsdAnyAttribute"
 
-LDIFF_SYM773=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM773
+LDIFF_SYM1008=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1008
 	.byte 3,35,200,6,6
 	.asciz "QnXsdGroup"
 
-LDIFF_SYM774=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM774
+LDIFF_SYM1009=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1009
 	.byte 3,35,208,6,6
 	.asciz "QnXsdAll"
 
-LDIFF_SYM775=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM775
+LDIFF_SYM1010=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1010
 	.byte 3,35,216,6,6
 	.asciz "QnXsdChoice"
 
-LDIFF_SYM776=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM776
+LDIFF_SYM1011=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1011
 	.byte 3,35,224,6,6
 	.asciz "QnXsdSequence"
 
-LDIFF_SYM777=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM777
+LDIFF_SYM1012=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1012
 	.byte 3,35,232,6,6
 	.asciz "QnXsdAny"
 
-LDIFF_SYM778=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM778
+LDIFF_SYM1013=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1013
 	.byte 3,35,240,6,6
 	.asciz "QnXsdNotation"
 
-LDIFF_SYM779=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM779
+LDIFF_SYM1014=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1014
 	.byte 3,35,248,6,6
 	.asciz "QnXsdSimpleType"
 
-LDIFF_SYM780=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM780
+LDIFF_SYM1015=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1015
 	.byte 3,35,128,7,6
 	.asciz "QnXsdComplexType"
 
-LDIFF_SYM781=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM781
+LDIFF_SYM1016=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1016
 	.byte 3,35,136,7,6
 	.asciz "QnXsdUnique"
 
-LDIFF_SYM782=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM782
+LDIFF_SYM1017=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1017
 	.byte 3,35,144,7,6
 	.asciz "QnXsdKey"
 
-LDIFF_SYM783=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM783
+LDIFF_SYM1018=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1018
 	.byte 3,35,152,7,6
 	.asciz "QnXsdKeyRef"
 
-LDIFF_SYM784=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM784
+LDIFF_SYM1019=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1019
 	.byte 3,35,160,7,6
 	.asciz "QnXsdSelector"
 
-LDIFF_SYM785=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM785
+LDIFF_SYM1020=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1020
 	.byte 3,35,168,7,6
 	.asciz "QnXsdField"
 
-LDIFF_SYM786=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM786
+LDIFF_SYM1021=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1021
 	.byte 3,35,176,7,6
 	.asciz "QnXsdMinExclusive"
 
-LDIFF_SYM787=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM787
+LDIFF_SYM1022=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1022
 	.byte 3,35,184,7,6
 	.asciz "QnXsdMinInclusive"
 
-LDIFF_SYM788=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM788
+LDIFF_SYM1023=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1023
 	.byte 3,35,192,7,6
 	.asciz "QnXsdMaxInclusive"
 
-LDIFF_SYM789=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM789
+LDIFF_SYM1024=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1024
 	.byte 3,35,200,7,6
 	.asciz "QnXsdMaxExclusive"
 
-LDIFF_SYM790=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM790
+LDIFF_SYM1025=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1025
 	.byte 3,35,208,7,6
 	.asciz "QnXsdTotalDigits"
 
-LDIFF_SYM791=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM791
+LDIFF_SYM1026=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1026
 	.byte 3,35,216,7,6
 	.asciz "QnXsdFractionDigits"
 
-LDIFF_SYM792=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM792
+LDIFF_SYM1027=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1027
 	.byte 3,35,224,7,6
 	.asciz "QnXsdLength"
 
-LDIFF_SYM793=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM793
+LDIFF_SYM1028=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1028
 	.byte 3,35,232,7,6
 	.asciz "QnXsdMinLength"
 
-LDIFF_SYM794=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM794
+LDIFF_SYM1029=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1029
 	.byte 3,35,240,7,6
 	.asciz "QnXsdMaxLength"
 
-LDIFF_SYM795=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM795
+LDIFF_SYM1030=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1030
 	.byte 3,35,248,7,6
 	.asciz "QnXsdEnumeration"
 
-LDIFF_SYM796=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM796
+LDIFF_SYM1031=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1031
 	.byte 3,35,128,8,6
 	.asciz "QnXsdPattern"
 
-LDIFF_SYM797=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM797
+LDIFF_SYM1032=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1032
 	.byte 3,35,136,8,6
 	.asciz "QnXsdDocumentation"
 
-LDIFF_SYM798=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM798
+LDIFF_SYM1033=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1033
 	.byte 3,35,144,8,6
 	.asciz "QnXsdAppinfo"
 
-LDIFF_SYM799=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM799
+LDIFF_SYM1034=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1034
 	.byte 3,35,152,8,6
 	.asciz "QnSource"
 
-LDIFF_SYM800=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM800
+LDIFF_SYM1035=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1035
 	.byte 3,35,160,8,6
 	.asciz "QnXsdComplexContent"
 
-LDIFF_SYM801=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM801
+LDIFF_SYM1036=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1036
 	.byte 3,35,168,8,6
 	.asciz "QnXsdSimpleContent"
 
-LDIFF_SYM802=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM802
+LDIFF_SYM1037=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1037
 	.byte 3,35,176,8,6
 	.asciz "QnXsdRestriction"
 
-LDIFF_SYM803=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM803
+LDIFF_SYM1038=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1038
 	.byte 3,35,184,8,6
 	.asciz "QnXsdExtension"
 
-LDIFF_SYM804=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM804
+LDIFF_SYM1039=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1039
 	.byte 3,35,192,8,6
 	.asciz "QnXsdUnion"
 
-LDIFF_SYM805=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM805
+LDIFF_SYM1040=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1040
 	.byte 3,35,200,8,6
 	.asciz "QnXsdList"
 
-LDIFF_SYM806=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM806
+LDIFF_SYM1041=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1041
 	.byte 3,35,208,8,6
 	.asciz "QnXsdWhiteSpace"
 
-LDIFF_SYM807=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM807
+LDIFF_SYM1042=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1042
 	.byte 3,35,216,8,6
 	.asciz "QnXsdRedefine"
 
-LDIFF_SYM808=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM808
+LDIFF_SYM1043=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1043
 	.byte 3,35,224,8,6
 	.asciz "QnXsdAnyType"
 
-LDIFF_SYM809=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM809
+LDIFF_SYM1044=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1044
 	.byte 3,35,232,8,6
 	.asciz "TokenToQName"
 
-LDIFF_SYM810=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM810
+LDIFF_SYM1045=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1045
 	.byte 3,35,240,8,0,7
 	.asciz "System_Xml_Schema_SchemaNames"
 
-LDIFF_SYM811=LTDIE_65 - Ldebug_info_start
-	.long LDIFF_SYM811
-LTDIE_65_POINTER:
+LDIFF_SYM1046=LTDIE_70 - Ldebug_info_start
+	.long LDIFF_SYM1046
+LTDIE_70_POINTER:
 
 	.byte 13
-LDIFF_SYM812=LTDIE_65 - Ldebug_info_start
-	.long LDIFF_SYM812
-LTDIE_65_REFERENCE:
+LDIFF_SYM1047=LTDIE_70 - Ldebug_info_start
+	.long LDIFF_SYM1047
+LTDIE_70_REFERENCE:
 
 	.byte 14
-LDIFF_SYM813=LTDIE_65 - Ldebug_info_start
-	.long LDIFF_SYM813
-LTDIE_68:
+LDIFF_SYM1048=LTDIE_70 - Ldebug_info_start
+	.long LDIFF_SYM1048
+LTDIE_73:
 
 	.byte 17
 	.asciz "System_Collections_IComparer"
@@ -20681,585 +27213,307 @@ LTDIE_68:
 	.byte 16,7
 	.asciz "System_Collections_IComparer"
 
-LDIFF_SYM814=LTDIE_68 - Ldebug_info_start
-	.long LDIFF_SYM814
-LTDIE_68_POINTER:
+LDIFF_SYM1049=LTDIE_73 - Ldebug_info_start
+	.long LDIFF_SYM1049
+LTDIE_73_POINTER:
 
 	.byte 13
-LDIFF_SYM815=LTDIE_68 - Ldebug_info_start
-	.long LDIFF_SYM815
-LTDIE_68_REFERENCE:
+LDIFF_SYM1050=LTDIE_73 - Ldebug_info_start
+	.long LDIFF_SYM1050
+LTDIE_73_REFERENCE:
 
 	.byte 14
-LDIFF_SYM816=LTDIE_68 - Ldebug_info_start
-	.long LDIFF_SYM816
-LTDIE_69:
+LDIFF_SYM1051=LTDIE_73 - Ldebug_info_start
+	.long LDIFF_SYM1051
+LTDIE_74:
 
 	.byte 5
 	.asciz "_KeyList"
 
 	.byte 24,16
-LDIFF_SYM817=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM817
+LDIFF_SYM1052=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1052
 	.byte 2,35,0,6
 	.asciz "sortedList"
 
-LDIFF_SYM818=LTDIE_67_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM818
+LDIFF_SYM1053=LTDIE_72_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1053
 	.byte 2,35,16,0,7
 	.asciz "_KeyList"
 
-LDIFF_SYM819=LTDIE_69 - Ldebug_info_start
-	.long LDIFF_SYM819
-LTDIE_69_POINTER:
+LDIFF_SYM1054=LTDIE_74 - Ldebug_info_start
+	.long LDIFF_SYM1054
+LTDIE_74_POINTER:
 
 	.byte 13
-LDIFF_SYM820=LTDIE_69 - Ldebug_info_start
-	.long LDIFF_SYM820
-LTDIE_69_REFERENCE:
+LDIFF_SYM1055=LTDIE_74 - Ldebug_info_start
+	.long LDIFF_SYM1055
+LTDIE_74_REFERENCE:
 
 	.byte 14
-LDIFF_SYM821=LTDIE_69 - Ldebug_info_start
-	.long LDIFF_SYM821
-LTDIE_70:
+LDIFF_SYM1056=LTDIE_74 - Ldebug_info_start
+	.long LDIFF_SYM1056
+LTDIE_75:
 
 	.byte 5
 	.asciz "_ValueList"
 
 	.byte 24,16
-LDIFF_SYM822=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM822
+LDIFF_SYM1057=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1057
 	.byte 2,35,0,6
 	.asciz "sortedList"
 
-LDIFF_SYM823=LTDIE_67_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM823
+LDIFF_SYM1058=LTDIE_72_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1058
 	.byte 2,35,16,0,7
 	.asciz "_ValueList"
 
-LDIFF_SYM824=LTDIE_70 - Ldebug_info_start
-	.long LDIFF_SYM824
-LTDIE_70_POINTER:
+LDIFF_SYM1059=LTDIE_75 - Ldebug_info_start
+	.long LDIFF_SYM1059
+LTDIE_75_POINTER:
 
 	.byte 13
-LDIFF_SYM825=LTDIE_70 - Ldebug_info_start
-	.long LDIFF_SYM825
-LTDIE_70_REFERENCE:
+LDIFF_SYM1060=LTDIE_75 - Ldebug_info_start
+	.long LDIFF_SYM1060
+LTDIE_75_REFERENCE:
 
 	.byte 14
-LDIFF_SYM826=LTDIE_70 - Ldebug_info_start
-	.long LDIFF_SYM826
-LTDIE_67:
+LDIFF_SYM1061=LTDIE_75 - Ldebug_info_start
+	.long LDIFF_SYM1061
+LTDIE_72:
 
 	.byte 5
 	.asciz "System_Collections_SortedList"
 
 	.byte 72,16
-LDIFF_SYM827=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM827
+LDIFF_SYM1062=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1062
 	.byte 2,35,0,6
 	.asciz "keys"
 
-LDIFF_SYM828=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM828
+LDIFF_SYM1063=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1063
 	.byte 2,35,16,6
 	.asciz "values"
 
-LDIFF_SYM829=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM829
+LDIFF_SYM1064=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1064
 	.byte 2,35,24,6
 	.asciz "_size"
 
-LDIFF_SYM830=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM830
+LDIFF_SYM1065=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1065
 	.byte 2,35,64,6
 	.asciz "version"
 
-LDIFF_SYM831=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM831
+LDIFF_SYM1066=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1066
 	.byte 2,35,68,6
 	.asciz "comparer"
 
-LDIFF_SYM832=LTDIE_68_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM832
+LDIFF_SYM1067=LTDIE_73_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1067
 	.byte 2,35,32,6
 	.asciz "keyList"
 
-LDIFF_SYM833=LTDIE_69_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM833
+LDIFF_SYM1068=LTDIE_74_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1068
 	.byte 2,35,40,6
 	.asciz "valueList"
 
-LDIFF_SYM834=LTDIE_70_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM834
+LDIFF_SYM1069=LTDIE_75_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1069
 	.byte 2,35,48,6
 	.asciz "_syncRoot"
 
-LDIFF_SYM835=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM835
+LDIFF_SYM1070=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1070
 	.byte 2,35,56,0,7
 	.asciz "System_Collections_SortedList"
 
-LDIFF_SYM836=LTDIE_67 - Ldebug_info_start
-	.long LDIFF_SYM836
-LTDIE_67_POINTER:
+LDIFF_SYM1071=LTDIE_72 - Ldebug_info_start
+	.long LDIFF_SYM1071
+LTDIE_72_POINTER:
 
 	.byte 13
-LDIFF_SYM837=LTDIE_67 - Ldebug_info_start
-	.long LDIFF_SYM837
-LTDIE_67_REFERENCE:
+LDIFF_SYM1072=LTDIE_72 - Ldebug_info_start
+	.long LDIFF_SYM1072
+LTDIE_72_REFERENCE:
 
 	.byte 14
-LDIFF_SYM838=LTDIE_67 - Ldebug_info_start
-	.long LDIFF_SYM838
-LTDIE_71:
+LDIFF_SYM1073=LTDIE_72 - Ldebug_info_start
+	.long LDIFF_SYM1073
+LTDIE_76:
 
 	.byte 5
 	.asciz "System_Xml_Schema_ValidationEventHandler"
 
 	.byte 128,1,16
-LDIFF_SYM839=LTDIE_15 - Ldebug_info_start
-	.long LDIFF_SYM839
+LDIFF_SYM1074=LTDIE_15 - Ldebug_info_start
+	.long LDIFF_SYM1074
 	.byte 2,35,0,0,7
 	.asciz "System_Xml_Schema_ValidationEventHandler"
 
-LDIFF_SYM840=LTDIE_71 - Ldebug_info_start
-	.long LDIFF_SYM840
-LTDIE_71_POINTER:
+LDIFF_SYM1075=LTDIE_76 - Ldebug_info_start
+	.long LDIFF_SYM1075
+LTDIE_76_POINTER:
 
 	.byte 13
-LDIFF_SYM841=LTDIE_71 - Ldebug_info_start
-	.long LDIFF_SYM841
-LTDIE_71_REFERENCE:
+LDIFF_SYM1076=LTDIE_76 - Ldebug_info_start
+	.long LDIFF_SYM1076
+LTDIE_76_REFERENCE:
 
 	.byte 14
-LDIFF_SYM842=LTDIE_71 - Ldebug_info_start
-	.long LDIFF_SYM842
-LTDIE_73:
+LDIFF_SYM1077=LTDIE_76 - Ldebug_info_start
+	.long LDIFF_SYM1077
+LTDIE_78:
 
 	.byte 5
 	.asciz "System_Single"
 
 	.byte 20,16
-LDIFF_SYM843=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM843
+LDIFF_SYM1078=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM1078
 	.byte 2,35,0,6
 	.asciz "m_value"
 
-LDIFF_SYM844=LDIE_R4 - Ldebug_info_start
-	.long LDIFF_SYM844
+LDIFF_SYM1079=LDIE_R4 - Ldebug_info_start
+	.long LDIFF_SYM1079
 	.byte 2,35,16,0,7
 	.asciz "System_Single"
 
-LDIFF_SYM845=LTDIE_73 - Ldebug_info_start
-	.long LDIFF_SYM845
-LTDIE_73_POINTER:
-
-	.byte 13
-LDIFF_SYM846=LTDIE_73 - Ldebug_info_start
-	.long LDIFF_SYM846
-LTDIE_73_REFERENCE:
-
-	.byte 14
-LDIFF_SYM847=LTDIE_73 - Ldebug_info_start
-	.long LDIFF_SYM847
-LTDIE_74:
-
-	.byte 17
-	.asciz "System_Collections_ICollection"
-
-	.byte 16,7
-	.asciz "System_Collections_ICollection"
-
-LDIFF_SYM848=LTDIE_74 - Ldebug_info_start
-	.long LDIFF_SYM848
-LTDIE_74_POINTER:
-
-	.byte 13
-LDIFF_SYM849=LTDIE_74 - Ldebug_info_start
-	.long LDIFF_SYM849
-LTDIE_74_REFERENCE:
-
-	.byte 14
-LDIFF_SYM850=LTDIE_74 - Ldebug_info_start
-	.long LDIFF_SYM850
-LTDIE_75:
-
-	.byte 17
-	.asciz "System_Collections_IEqualityComparer"
-
-	.byte 16,7
-	.asciz "System_Collections_IEqualityComparer"
-
-LDIFF_SYM851=LTDIE_75 - Ldebug_info_start
-	.long LDIFF_SYM851
-LTDIE_75_POINTER:
-
-	.byte 13
-LDIFF_SYM852=LTDIE_75 - Ldebug_info_start
-	.long LDIFF_SYM852
-LTDIE_75_REFERENCE:
-
-	.byte 14
-LDIFF_SYM853=LTDIE_75 - Ldebug_info_start
-	.long LDIFF_SYM853
-LTDIE_72:
-
-	.byte 5
-	.asciz "System_Collections_Hashtable"
-
-	.byte 80,16
-LDIFF_SYM854=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM854
-	.byte 2,35,0,6
-	.asciz "_buckets"
-
-LDIFF_SYM855=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM855
-	.byte 2,35,16,6
-	.asciz "_count"
-
-LDIFF_SYM856=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM856
-	.byte 2,35,56,6
-	.asciz "_occupancy"
-
-LDIFF_SYM857=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM857
-	.byte 2,35,60,6
-	.asciz "_loadsize"
-
-LDIFF_SYM858=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM858
-	.byte 2,35,64,6
-	.asciz "_loadFactor"
-
-LDIFF_SYM859=LDIE_R4 - Ldebug_info_start
-	.long LDIFF_SYM859
-	.byte 2,35,68,6
-	.asciz "_version"
-
-LDIFF_SYM860=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM860
-	.byte 2,35,72,6
-	.asciz "_isWriterInProgress"
-
-LDIFF_SYM861=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM861
-	.byte 2,35,76,6
-	.asciz "_keys"
-
-LDIFF_SYM862=LTDIE_74_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM862
-	.byte 2,35,24,6
-	.asciz "_values"
-
-LDIFF_SYM863=LTDIE_74_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM863
-	.byte 2,35,32,6
-	.asciz "_keycomparer"
-
-LDIFF_SYM864=LTDIE_75_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM864
-	.byte 2,35,40,6
-	.asciz "_syncRoot"
-
-LDIFF_SYM865=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM865
-	.byte 2,35,48,0,7
-	.asciz "System_Collections_Hashtable"
-
-LDIFF_SYM866=LTDIE_72 - Ldebug_info_start
-	.long LDIFF_SYM866
-LTDIE_72_POINTER:
-
-	.byte 13
-LDIFF_SYM867=LTDIE_72 - Ldebug_info_start
-	.long LDIFF_SYM867
-LTDIE_72_REFERENCE:
-
-	.byte 14
-LDIFF_SYM868=LTDIE_72 - Ldebug_info_start
-	.long LDIFF_SYM868
-LTDIE_78:
-
-	.byte 17
-	.asciz "System_Collections_Generic_IEqualityComparer`1"
-
-	.byte 16,7
-	.asciz "System_Collections_Generic_IEqualityComparer`1"
-
-LDIFF_SYM869=LTDIE_78 - Ldebug_info_start
-	.long LDIFF_SYM869
+LDIFF_SYM1080=LTDIE_78 - Ldebug_info_start
+	.long LDIFF_SYM1080
 LTDIE_78_POINTER:
 
 	.byte 13
-LDIFF_SYM870=LTDIE_78 - Ldebug_info_start
-	.long LDIFF_SYM870
+LDIFF_SYM1081=LTDIE_78 - Ldebug_info_start
+	.long LDIFF_SYM1081
 LTDIE_78_REFERENCE:
 
 	.byte 14
-LDIFF_SYM871=LTDIE_78 - Ldebug_info_start
-	.long LDIFF_SYM871
+LDIFF_SYM1082=LTDIE_78 - Ldebug_info_start
+	.long LDIFF_SYM1082
 LTDIE_79:
 
-	.byte 5
-	.asciz "_KeyCollection"
+	.byte 17
+	.asciz "System_Collections_ICollection"
 
-	.byte 24,16
-LDIFF_SYM872=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM872
-	.byte 2,35,0,6
-	.asciz "_dictionary"
+	.byte 16,7
+	.asciz "System_Collections_ICollection"
 
-LDIFF_SYM873=LTDIE_77_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM873
-	.byte 2,35,16,0,7
-	.asciz "_KeyCollection"
-
-LDIFF_SYM874=LTDIE_79 - Ldebug_info_start
-	.long LDIFF_SYM874
+LDIFF_SYM1083=LTDIE_79 - Ldebug_info_start
+	.long LDIFF_SYM1083
 LTDIE_79_POINTER:
 
 	.byte 13
-LDIFF_SYM875=LTDIE_79 - Ldebug_info_start
-	.long LDIFF_SYM875
+LDIFF_SYM1084=LTDIE_79 - Ldebug_info_start
+	.long LDIFF_SYM1084
 LTDIE_79_REFERENCE:
 
 	.byte 14
-LDIFF_SYM876=LTDIE_79 - Ldebug_info_start
-	.long LDIFF_SYM876
+LDIFF_SYM1085=LTDIE_79 - Ldebug_info_start
+	.long LDIFF_SYM1085
 LTDIE_80:
 
-	.byte 5
-	.asciz "_ValueCollection"
+	.byte 17
+	.asciz "System_Collections_IEqualityComparer"
 
-	.byte 24,16
-LDIFF_SYM877=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM877
-	.byte 2,35,0,6
-	.asciz "_dictionary"
+	.byte 16,7
+	.asciz "System_Collections_IEqualityComparer"
 
-LDIFF_SYM878=LTDIE_77_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM878
-	.byte 2,35,16,0,7
-	.asciz "_ValueCollection"
-
-LDIFF_SYM879=LTDIE_80 - Ldebug_info_start
-	.long LDIFF_SYM879
+LDIFF_SYM1086=LTDIE_80 - Ldebug_info_start
+	.long LDIFF_SYM1086
 LTDIE_80_POINTER:
 
 	.byte 13
-LDIFF_SYM880=LTDIE_80 - Ldebug_info_start
-	.long LDIFF_SYM880
+LDIFF_SYM1087=LTDIE_80 - Ldebug_info_start
+	.long LDIFF_SYM1087
 LTDIE_80_REFERENCE:
 
 	.byte 14
-LDIFF_SYM881=LTDIE_80 - Ldebug_info_start
-	.long LDIFF_SYM881
+LDIFF_SYM1088=LTDIE_80 - Ldebug_info_start
+	.long LDIFF_SYM1088
 LTDIE_77:
 
 	.byte 5
-	.asciz "System_Collections_Generic_Dictionary`2"
+	.asciz "System_Collections_Hashtable"
 
 	.byte 80,16
-LDIFF_SYM882=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM882
+LDIFF_SYM1089=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1089
 	.byte 2,35,0,6
 	.asciz "_buckets"
 
-LDIFF_SYM883=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM883
+LDIFF_SYM1090=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1090
 	.byte 2,35,16,6
-	.asciz "_entries"
-
-LDIFF_SYM884=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM884
-	.byte 2,35,24,6
 	.asciz "_count"
 
-LDIFF_SYM885=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM885
+LDIFF_SYM1091=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1091
+	.byte 2,35,56,6
+	.asciz "_occupancy"
+
+LDIFF_SYM1092=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1092
+	.byte 2,35,60,6
+	.asciz "_loadsize"
+
+LDIFF_SYM1093=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1093
 	.byte 2,35,64,6
-	.asciz "_freeList"
+	.asciz "_loadFactor"
 
-LDIFF_SYM886=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM886
+LDIFF_SYM1094=LDIE_R4 - Ldebug_info_start
+	.long LDIFF_SYM1094
 	.byte 2,35,68,6
-	.asciz "_freeCount"
-
-LDIFF_SYM887=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM887
-	.byte 2,35,72,6
 	.asciz "_version"
 
-LDIFF_SYM888=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM888
-	.byte 2,35,76,6
-	.asciz "_comparer"
+LDIFF_SYM1095=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1095
+	.byte 2,35,72,6
+	.asciz "_isWriterInProgress"
 
-LDIFF_SYM889=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM889
-	.byte 2,35,32,6
+LDIFF_SYM1096=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1096
+	.byte 2,35,76,6
 	.asciz "_keys"
 
-LDIFF_SYM890=LTDIE_79_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM890
-	.byte 2,35,40,6
+LDIFF_SYM1097=LTDIE_79_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1097
+	.byte 2,35,24,6
 	.asciz "_values"
 
-LDIFF_SYM891=LTDIE_80_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM891
-	.byte 2,35,48,6
+LDIFF_SYM1098=LTDIE_79_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1098
+	.byte 2,35,32,6
+	.asciz "_keycomparer"
+
+LDIFF_SYM1099=LTDIE_80_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1099
+	.byte 2,35,40,6
 	.asciz "_syncRoot"
 
-LDIFF_SYM892=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM892
-	.byte 2,35,56,0,7
-	.asciz "System_Collections_Generic_Dictionary`2"
+LDIFF_SYM1100=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1100
+	.byte 2,35,48,0,7
+	.asciz "System_Collections_Hashtable"
 
-LDIFF_SYM893=LTDIE_77 - Ldebug_info_start
-	.long LDIFF_SYM893
+LDIFF_SYM1101=LTDIE_77 - Ldebug_info_start
+	.long LDIFF_SYM1101
 LTDIE_77_POINTER:
 
 	.byte 13
-LDIFF_SYM894=LTDIE_77 - Ldebug_info_start
-	.long LDIFF_SYM894
+LDIFF_SYM1102=LTDIE_77 - Ldebug_info_start
+	.long LDIFF_SYM1102
 LTDIE_77_REFERENCE:
 
 	.byte 14
-LDIFF_SYM895=LTDIE_77 - Ldebug_info_start
-	.long LDIFF_SYM895
-LTDIE_82:
-
-	.byte 5
-	.asciz "_KeyCollection"
-
-	.byte 24,16
-LDIFF_SYM896=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM896
-	.byte 2,35,0,6
-	.asciz "_dictionary"
-
-LDIFF_SYM897=LTDIE_81_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM897
-	.byte 2,35,16,0,7
-	.asciz "_KeyCollection"
-
-LDIFF_SYM898=LTDIE_82 - Ldebug_info_start
-	.long LDIFF_SYM898
-LTDIE_82_POINTER:
-
-	.byte 13
-LDIFF_SYM899=LTDIE_82 - Ldebug_info_start
-	.long LDIFF_SYM899
-LTDIE_82_REFERENCE:
-
-	.byte 14
-LDIFF_SYM900=LTDIE_82 - Ldebug_info_start
-	.long LDIFF_SYM900
+LDIFF_SYM1103=LTDIE_77 - Ldebug_info_start
+	.long LDIFF_SYM1103
 LTDIE_83:
-
-	.byte 5
-	.asciz "_ValueCollection"
-
-	.byte 24,16
-LDIFF_SYM901=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM901
-	.byte 2,35,0,6
-	.asciz "_dictionary"
-
-LDIFF_SYM902=LTDIE_81_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM902
-	.byte 2,35,16,0,7
-	.asciz "_ValueCollection"
-
-LDIFF_SYM903=LTDIE_83 - Ldebug_info_start
-	.long LDIFF_SYM903
-LTDIE_83_POINTER:
-
-	.byte 13
-LDIFF_SYM904=LTDIE_83 - Ldebug_info_start
-	.long LDIFF_SYM904
-LTDIE_83_REFERENCE:
-
-	.byte 14
-LDIFF_SYM905=LTDIE_83 - Ldebug_info_start
-	.long LDIFF_SYM905
-LTDIE_81:
-
-	.byte 5
-	.asciz "System_Collections_Generic_Dictionary`2"
-
-	.byte 80,16
-LDIFF_SYM906=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM906
-	.byte 2,35,0,6
-	.asciz "_buckets"
-
-LDIFF_SYM907=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM907
-	.byte 2,35,16,6
-	.asciz "_entries"
-
-LDIFF_SYM908=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM908
-	.byte 2,35,24,6
-	.asciz "_count"
-
-LDIFF_SYM909=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM909
-	.byte 2,35,64,6
-	.asciz "_freeList"
-
-LDIFF_SYM910=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM910
-	.byte 2,35,68,6
-	.asciz "_freeCount"
-
-LDIFF_SYM911=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM911
-	.byte 2,35,72,6
-	.asciz "_version"
-
-LDIFF_SYM912=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM912
-	.byte 2,35,76,6
-	.asciz "_comparer"
-
-LDIFF_SYM913=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM913
-	.byte 2,35,32,6
-	.asciz "_keys"
-
-LDIFF_SYM914=LTDIE_82_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM914
-	.byte 2,35,40,6
-	.asciz "_values"
-
-LDIFF_SYM915=LTDIE_83_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM915
-	.byte 2,35,48,6
-	.asciz "_syncRoot"
-
-LDIFF_SYM916=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM916
-	.byte 2,35,56,0,7
-	.asciz "System_Collections_Generic_Dictionary`2"
-
-LDIFF_SYM917=LTDIE_81 - Ldebug_info_start
-	.long LDIFF_SYM917
-LTDIE_81_POINTER:
-
-	.byte 13
-LDIFF_SYM918=LTDIE_81 - Ldebug_info_start
-	.long LDIFF_SYM918
-LTDIE_81_REFERENCE:
-
-	.byte 14
-LDIFF_SYM919=LTDIE_81 - Ldebug_info_start
-	.long LDIFF_SYM919
-LTDIE_85:
 
 	.byte 17
 	.asciz "System_Collections_Generic_IEqualityComparer`1"
@@ -21267,284 +27521,562 @@ LTDIE_85:
 	.byte 16,7
 	.asciz "System_Collections_Generic_IEqualityComparer`1"
 
-LDIFF_SYM920=LTDIE_85 - Ldebug_info_start
-	.long LDIFF_SYM920
-LTDIE_85_POINTER:
+LDIFF_SYM1104=LTDIE_83 - Ldebug_info_start
+	.long LDIFF_SYM1104
+LTDIE_83_POINTER:
 
 	.byte 13
-LDIFF_SYM921=LTDIE_85 - Ldebug_info_start
-	.long LDIFF_SYM921
-LTDIE_85_REFERENCE:
+LDIFF_SYM1105=LTDIE_83 - Ldebug_info_start
+	.long LDIFF_SYM1105
+LTDIE_83_REFERENCE:
 
 	.byte 14
-LDIFF_SYM922=LTDIE_85 - Ldebug_info_start
-	.long LDIFF_SYM922
-LTDIE_86:
-
-	.byte 5
-	.asciz "_KeyCollection"
-
-	.byte 24,16
-LDIFF_SYM923=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM923
-	.byte 2,35,0,6
-	.asciz "_dictionary"
-
-LDIFF_SYM924=LTDIE_84_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM924
-	.byte 2,35,16,0,7
-	.asciz "_KeyCollection"
-
-LDIFF_SYM925=LTDIE_86 - Ldebug_info_start
-	.long LDIFF_SYM925
-LTDIE_86_POINTER:
-
-	.byte 13
-LDIFF_SYM926=LTDIE_86 - Ldebug_info_start
-	.long LDIFF_SYM926
-LTDIE_86_REFERENCE:
-
-	.byte 14
-LDIFF_SYM927=LTDIE_86 - Ldebug_info_start
-	.long LDIFF_SYM927
-LTDIE_87:
-
-	.byte 5
-	.asciz "_ValueCollection"
-
-	.byte 24,16
-LDIFF_SYM928=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM928
-	.byte 2,35,0,6
-	.asciz "_dictionary"
-
-LDIFF_SYM929=LTDIE_84_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM929
-	.byte 2,35,16,0,7
-	.asciz "_ValueCollection"
-
-LDIFF_SYM930=LTDIE_87 - Ldebug_info_start
-	.long LDIFF_SYM930
-LTDIE_87_POINTER:
-
-	.byte 13
-LDIFF_SYM931=LTDIE_87 - Ldebug_info_start
-	.long LDIFF_SYM931
-LTDIE_87_REFERENCE:
-
-	.byte 14
-LDIFF_SYM932=LTDIE_87 - Ldebug_info_start
-	.long LDIFF_SYM932
+LDIFF_SYM1106=LTDIE_83 - Ldebug_info_start
+	.long LDIFF_SYM1106
 LTDIE_84:
 
 	.byte 5
-	.asciz "System_Collections_Generic_Dictionary`2"
+	.asciz "_KeyCollection"
 
-	.byte 80,16
-LDIFF_SYM933=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM933
+	.byte 24,16
+LDIFF_SYM1107=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1107
 	.byte 2,35,0,6
-	.asciz "_buckets"
+	.asciz "_dictionary"
 
-LDIFF_SYM934=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM934
-	.byte 2,35,16,6
-	.asciz "_entries"
+LDIFF_SYM1108=LTDIE_82_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1108
+	.byte 2,35,16,0,7
+	.asciz "_KeyCollection"
 
-LDIFF_SYM935=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM935
-	.byte 2,35,24,6
-	.asciz "_count"
-
-LDIFF_SYM936=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM936
-	.byte 2,35,64,6
-	.asciz "_freeList"
-
-LDIFF_SYM937=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM937
-	.byte 2,35,68,6
-	.asciz "_freeCount"
-
-LDIFF_SYM938=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM938
-	.byte 2,35,72,6
-	.asciz "_version"
-
-LDIFF_SYM939=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM939
-	.byte 2,35,76,6
-	.asciz "_comparer"
-
-LDIFF_SYM940=LTDIE_85_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM940
-	.byte 2,35,32,6
-	.asciz "_keys"
-
-LDIFF_SYM941=LTDIE_86_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM941
-	.byte 2,35,40,6
-	.asciz "_values"
-
-LDIFF_SYM942=LTDIE_87_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM942
-	.byte 2,35,48,6
-	.asciz "_syncRoot"
-
-LDIFF_SYM943=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM943
-	.byte 2,35,56,0,7
-	.asciz "System_Collections_Generic_Dictionary`2"
-
-LDIFF_SYM944=LTDIE_84 - Ldebug_info_start
-	.long LDIFF_SYM944
+LDIFF_SYM1109=LTDIE_84 - Ldebug_info_start
+	.long LDIFF_SYM1109
 LTDIE_84_POINTER:
 
 	.byte 13
-LDIFF_SYM945=LTDIE_84 - Ldebug_info_start
-	.long LDIFF_SYM945
+LDIFF_SYM1110=LTDIE_84 - Ldebug_info_start
+	.long LDIFF_SYM1110
 LTDIE_84_REFERENCE:
 
 	.byte 14
-LDIFF_SYM946=LTDIE_84 - Ldebug_info_start
-	.long LDIFF_SYM946
-LTDIE_89:
-
-	.byte 5
-	.asciz "_KeyCollection"
-
-	.byte 24,16
-LDIFF_SYM947=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM947
-	.byte 2,35,0,6
-	.asciz "_dictionary"
-
-LDIFF_SYM948=LTDIE_88_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM948
-	.byte 2,35,16,0,7
-	.asciz "_KeyCollection"
-
-LDIFF_SYM949=LTDIE_89 - Ldebug_info_start
-	.long LDIFF_SYM949
-LTDIE_89_POINTER:
-
-	.byte 13
-LDIFF_SYM950=LTDIE_89 - Ldebug_info_start
-	.long LDIFF_SYM950
-LTDIE_89_REFERENCE:
-
-	.byte 14
-LDIFF_SYM951=LTDIE_89 - Ldebug_info_start
-	.long LDIFF_SYM951
-LTDIE_90:
+LDIFF_SYM1111=LTDIE_84 - Ldebug_info_start
+	.long LDIFF_SYM1111
+LTDIE_85:
 
 	.byte 5
 	.asciz "_ValueCollection"
 
 	.byte 24,16
-LDIFF_SYM952=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM952
+LDIFF_SYM1112=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1112
 	.byte 2,35,0,6
 	.asciz "_dictionary"
 
-LDIFF_SYM953=LTDIE_88_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM953
+LDIFF_SYM1113=LTDIE_82_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1113
 	.byte 2,35,16,0,7
 	.asciz "_ValueCollection"
 
-LDIFF_SYM954=LTDIE_90 - Ldebug_info_start
-	.long LDIFF_SYM954
-LTDIE_90_POINTER:
+LDIFF_SYM1114=LTDIE_85 - Ldebug_info_start
+	.long LDIFF_SYM1114
+LTDIE_85_POINTER:
 
 	.byte 13
-LDIFF_SYM955=LTDIE_90 - Ldebug_info_start
-	.long LDIFF_SYM955
-LTDIE_90_REFERENCE:
+LDIFF_SYM1115=LTDIE_85 - Ldebug_info_start
+	.long LDIFF_SYM1115
+LTDIE_85_REFERENCE:
 
 	.byte 14
-LDIFF_SYM956=LTDIE_90 - Ldebug_info_start
-	.long LDIFF_SYM956
-LTDIE_88:
+LDIFF_SYM1116=LTDIE_85 - Ldebug_info_start
+	.long LDIFF_SYM1116
+LTDIE_82:
 
 	.byte 5
 	.asciz "System_Collections_Generic_Dictionary`2"
 
 	.byte 80,16
-LDIFF_SYM957=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM957
+LDIFF_SYM1117=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1117
 	.byte 2,35,0,6
 	.asciz "_buckets"
 
-LDIFF_SYM958=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM958
+LDIFF_SYM1118=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1118
 	.byte 2,35,16,6
 	.asciz "_entries"
 
-LDIFF_SYM959=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM959
+LDIFF_SYM1119=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1119
 	.byte 2,35,24,6
 	.asciz "_count"
 
-LDIFF_SYM960=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM960
+LDIFF_SYM1120=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1120
 	.byte 2,35,64,6
 	.asciz "_freeList"
 
-LDIFF_SYM961=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM961
+LDIFF_SYM1121=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1121
 	.byte 2,35,68,6
 	.asciz "_freeCount"
 
-LDIFF_SYM962=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM962
+LDIFF_SYM1122=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1122
 	.byte 2,35,72,6
 	.asciz "_version"
 
-LDIFF_SYM963=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM963
+LDIFF_SYM1123=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1123
 	.byte 2,35,76,6
 	.asciz "_comparer"
 
-LDIFF_SYM964=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM964
+LDIFF_SYM1124=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1124
 	.byte 2,35,32,6
 	.asciz "_keys"
 
-LDIFF_SYM965=LTDIE_89_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM965
+LDIFF_SYM1125=LTDIE_84_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1125
 	.byte 2,35,40,6
 	.asciz "_values"
 
-LDIFF_SYM966=LTDIE_90_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM966
+LDIFF_SYM1126=LTDIE_85_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1126
 	.byte 2,35,48,6
 	.asciz "_syncRoot"
 
-LDIFF_SYM967=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM967
+LDIFF_SYM1127=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1127
 	.byte 2,35,56,0,7
 	.asciz "System_Collections_Generic_Dictionary`2"
 
-LDIFF_SYM968=LTDIE_88 - Ldebug_info_start
-	.long LDIFF_SYM968
+LDIFF_SYM1128=LTDIE_82 - Ldebug_info_start
+	.long LDIFF_SYM1128
+LTDIE_82_POINTER:
+
+	.byte 13
+LDIFF_SYM1129=LTDIE_82 - Ldebug_info_start
+	.long LDIFF_SYM1129
+LTDIE_82_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1130=LTDIE_82 - Ldebug_info_start
+	.long LDIFF_SYM1130
+LTDIE_87:
+
+	.byte 5
+	.asciz "_KeyCollection"
+
+	.byte 24,16
+LDIFF_SYM1131=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1131
+	.byte 2,35,0,6
+	.asciz "_dictionary"
+
+LDIFF_SYM1132=LTDIE_86_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1132
+	.byte 2,35,16,0,7
+	.asciz "_KeyCollection"
+
+LDIFF_SYM1133=LTDIE_87 - Ldebug_info_start
+	.long LDIFF_SYM1133
+LTDIE_87_POINTER:
+
+	.byte 13
+LDIFF_SYM1134=LTDIE_87 - Ldebug_info_start
+	.long LDIFF_SYM1134
+LTDIE_87_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1135=LTDIE_87 - Ldebug_info_start
+	.long LDIFF_SYM1135
+LTDIE_88:
+
+	.byte 5
+	.asciz "_ValueCollection"
+
+	.byte 24,16
+LDIFF_SYM1136=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1136
+	.byte 2,35,0,6
+	.asciz "_dictionary"
+
+LDIFF_SYM1137=LTDIE_86_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1137
+	.byte 2,35,16,0,7
+	.asciz "_ValueCollection"
+
+LDIFF_SYM1138=LTDIE_88 - Ldebug_info_start
+	.long LDIFF_SYM1138
 LTDIE_88_POINTER:
 
 	.byte 13
-LDIFF_SYM969=LTDIE_88 - Ldebug_info_start
-	.long LDIFF_SYM969
+LDIFF_SYM1139=LTDIE_88 - Ldebug_info_start
+	.long LDIFF_SYM1139
 LTDIE_88_REFERENCE:
 
 	.byte 14
-LDIFF_SYM970=LTDIE_88 - Ldebug_info_start
-	.long LDIFF_SYM970
+LDIFF_SYM1140=LTDIE_88 - Ldebug_info_start
+	.long LDIFF_SYM1140
+LTDIE_86:
+
+	.byte 5
+	.asciz "System_Collections_Generic_Dictionary`2"
+
+	.byte 80,16
+LDIFF_SYM1141=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1141
+	.byte 2,35,0,6
+	.asciz "_buckets"
+
+LDIFF_SYM1142=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1142
+	.byte 2,35,16,6
+	.asciz "_entries"
+
+LDIFF_SYM1143=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1143
+	.byte 2,35,24,6
+	.asciz "_count"
+
+LDIFF_SYM1144=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1144
+	.byte 2,35,64,6
+	.asciz "_freeList"
+
+LDIFF_SYM1145=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1145
+	.byte 2,35,68,6
+	.asciz "_freeCount"
+
+LDIFF_SYM1146=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1146
+	.byte 2,35,72,6
+	.asciz "_version"
+
+LDIFF_SYM1147=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1147
+	.byte 2,35,76,6
+	.asciz "_comparer"
+
+LDIFF_SYM1148=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1148
+	.byte 2,35,32,6
+	.asciz "_keys"
+
+LDIFF_SYM1149=LTDIE_87_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1149
+	.byte 2,35,40,6
+	.asciz "_values"
+
+LDIFF_SYM1150=LTDIE_88_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1150
+	.byte 2,35,48,6
+	.asciz "_syncRoot"
+
+LDIFF_SYM1151=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1151
+	.byte 2,35,56,0,7
+	.asciz "System_Collections_Generic_Dictionary`2"
+
+LDIFF_SYM1152=LTDIE_86 - Ldebug_info_start
+	.long LDIFF_SYM1152
+LTDIE_86_POINTER:
+
+	.byte 13
+LDIFF_SYM1153=LTDIE_86 - Ldebug_info_start
+	.long LDIFF_SYM1153
+LTDIE_86_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1154=LTDIE_86 - Ldebug_info_start
+	.long LDIFF_SYM1154
+LTDIE_90:
+
+	.byte 17
+	.asciz "System_Collections_Generic_IEqualityComparer`1"
+
+	.byte 16,7
+	.asciz "System_Collections_Generic_IEqualityComparer`1"
+
+LDIFF_SYM1155=LTDIE_90 - Ldebug_info_start
+	.long LDIFF_SYM1155
+LTDIE_90_POINTER:
+
+	.byte 13
+LDIFF_SYM1156=LTDIE_90 - Ldebug_info_start
+	.long LDIFF_SYM1156
+LTDIE_90_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1157=LTDIE_90 - Ldebug_info_start
+	.long LDIFF_SYM1157
 LTDIE_91:
+
+	.byte 5
+	.asciz "_KeyCollection"
+
+	.byte 24,16
+LDIFF_SYM1158=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1158
+	.byte 2,35,0,6
+	.asciz "_dictionary"
+
+LDIFF_SYM1159=LTDIE_89_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1159
+	.byte 2,35,16,0,7
+	.asciz "_KeyCollection"
+
+LDIFF_SYM1160=LTDIE_91 - Ldebug_info_start
+	.long LDIFF_SYM1160
+LTDIE_91_POINTER:
+
+	.byte 13
+LDIFF_SYM1161=LTDIE_91 - Ldebug_info_start
+	.long LDIFF_SYM1161
+LTDIE_91_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1162=LTDIE_91 - Ldebug_info_start
+	.long LDIFF_SYM1162
+LTDIE_92:
+
+	.byte 5
+	.asciz "_ValueCollection"
+
+	.byte 24,16
+LDIFF_SYM1163=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1163
+	.byte 2,35,0,6
+	.asciz "_dictionary"
+
+LDIFF_SYM1164=LTDIE_89_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1164
+	.byte 2,35,16,0,7
+	.asciz "_ValueCollection"
+
+LDIFF_SYM1165=LTDIE_92 - Ldebug_info_start
+	.long LDIFF_SYM1165
+LTDIE_92_POINTER:
+
+	.byte 13
+LDIFF_SYM1166=LTDIE_92 - Ldebug_info_start
+	.long LDIFF_SYM1166
+LTDIE_92_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1167=LTDIE_92 - Ldebug_info_start
+	.long LDIFF_SYM1167
+LTDIE_89:
+
+	.byte 5
+	.asciz "System_Collections_Generic_Dictionary`2"
+
+	.byte 80,16
+LDIFF_SYM1168=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1168
+	.byte 2,35,0,6
+	.asciz "_buckets"
+
+LDIFF_SYM1169=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1169
+	.byte 2,35,16,6
+	.asciz "_entries"
+
+LDIFF_SYM1170=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1170
+	.byte 2,35,24,6
+	.asciz "_count"
+
+LDIFF_SYM1171=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1171
+	.byte 2,35,64,6
+	.asciz "_freeList"
+
+LDIFF_SYM1172=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1172
+	.byte 2,35,68,6
+	.asciz "_freeCount"
+
+LDIFF_SYM1173=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1173
+	.byte 2,35,72,6
+	.asciz "_version"
+
+LDIFF_SYM1174=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1174
+	.byte 2,35,76,6
+	.asciz "_comparer"
+
+LDIFF_SYM1175=LTDIE_90_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1175
+	.byte 2,35,32,6
+	.asciz "_keys"
+
+LDIFF_SYM1176=LTDIE_91_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1176
+	.byte 2,35,40,6
+	.asciz "_values"
+
+LDIFF_SYM1177=LTDIE_92_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1177
+	.byte 2,35,48,6
+	.asciz "_syncRoot"
+
+LDIFF_SYM1178=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1178
+	.byte 2,35,56,0,7
+	.asciz "System_Collections_Generic_Dictionary`2"
+
+LDIFF_SYM1179=LTDIE_89 - Ldebug_info_start
+	.long LDIFF_SYM1179
+LTDIE_89_POINTER:
+
+	.byte 13
+LDIFF_SYM1180=LTDIE_89 - Ldebug_info_start
+	.long LDIFF_SYM1180
+LTDIE_89_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1181=LTDIE_89 - Ldebug_info_start
+	.long LDIFF_SYM1181
+LTDIE_94:
+
+	.byte 5
+	.asciz "_KeyCollection"
+
+	.byte 24,16
+LDIFF_SYM1182=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1182
+	.byte 2,35,0,6
+	.asciz "_dictionary"
+
+LDIFF_SYM1183=LTDIE_93_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1183
+	.byte 2,35,16,0,7
+	.asciz "_KeyCollection"
+
+LDIFF_SYM1184=LTDIE_94 - Ldebug_info_start
+	.long LDIFF_SYM1184
+LTDIE_94_POINTER:
+
+	.byte 13
+LDIFF_SYM1185=LTDIE_94 - Ldebug_info_start
+	.long LDIFF_SYM1185
+LTDIE_94_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1186=LTDIE_94 - Ldebug_info_start
+	.long LDIFF_SYM1186
+LTDIE_95:
+
+	.byte 5
+	.asciz "_ValueCollection"
+
+	.byte 24,16
+LDIFF_SYM1187=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1187
+	.byte 2,35,0,6
+	.asciz "_dictionary"
+
+LDIFF_SYM1188=LTDIE_93_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1188
+	.byte 2,35,16,0,7
+	.asciz "_ValueCollection"
+
+LDIFF_SYM1189=LTDIE_95 - Ldebug_info_start
+	.long LDIFF_SYM1189
+LTDIE_95_POINTER:
+
+	.byte 13
+LDIFF_SYM1190=LTDIE_95 - Ldebug_info_start
+	.long LDIFF_SYM1190
+LTDIE_95_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1191=LTDIE_95 - Ldebug_info_start
+	.long LDIFF_SYM1191
+LTDIE_93:
+
+	.byte 5
+	.asciz "System_Collections_Generic_Dictionary`2"
+
+	.byte 80,16
+LDIFF_SYM1192=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1192
+	.byte 2,35,0,6
+	.asciz "_buckets"
+
+LDIFF_SYM1193=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1193
+	.byte 2,35,16,6
+	.asciz "_entries"
+
+LDIFF_SYM1194=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1194
+	.byte 2,35,24,6
+	.asciz "_count"
+
+LDIFF_SYM1195=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1195
+	.byte 2,35,64,6
+	.asciz "_freeList"
+
+LDIFF_SYM1196=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1196
+	.byte 2,35,68,6
+	.asciz "_freeCount"
+
+LDIFF_SYM1197=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1197
+	.byte 2,35,72,6
+	.asciz "_version"
+
+LDIFF_SYM1198=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1198
+	.byte 2,35,76,6
+	.asciz "_comparer"
+
+LDIFF_SYM1199=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1199
+	.byte 2,35,32,6
+	.asciz "_keys"
+
+LDIFF_SYM1200=LTDIE_94_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1200
+	.byte 2,35,40,6
+	.asciz "_values"
+
+LDIFF_SYM1201=LTDIE_95_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1201
+	.byte 2,35,48,6
+	.asciz "_syncRoot"
+
+LDIFF_SYM1202=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1202
+	.byte 2,35,56,0,7
+	.asciz "System_Collections_Generic_Dictionary`2"
+
+LDIFF_SYM1203=LTDIE_93 - Ldebug_info_start
+	.long LDIFF_SYM1203
+LTDIE_93_POINTER:
+
+	.byte 13
+LDIFF_SYM1204=LTDIE_93 - Ldebug_info_start
+	.long LDIFF_SYM1204
+LTDIE_93_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1205=LTDIE_93 - Ldebug_info_start
+	.long LDIFF_SYM1205
+LTDIE_96:
 
 	.byte 8
 	.asciz "System_Xml_Schema_SchemaType"
 
 	.byte 4
-LDIFF_SYM971=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM971
+LDIFF_SYM1206=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1206
 	.byte 9
 	.asciz "None"
 
@@ -21560,329 +28092,329 @@ LDIFF_SYM971=LDIE_I4 - Ldebug_info_start
 	.byte 3,0,7
 	.asciz "System_Xml_Schema_SchemaType"
 
-LDIFF_SYM972=LTDIE_91 - Ldebug_info_start
-	.long LDIFF_SYM972
-LTDIE_91_POINTER:
+LDIFF_SYM1207=LTDIE_96 - Ldebug_info_start
+	.long LDIFF_SYM1207
+LTDIE_96_POINTER:
 
 	.byte 13
-LDIFF_SYM973=LTDIE_91 - Ldebug_info_start
-	.long LDIFF_SYM973
-LTDIE_91_REFERENCE:
+LDIFF_SYM1208=LTDIE_96 - Ldebug_info_start
+	.long LDIFF_SYM1208
+LTDIE_96_REFERENCE:
 
 	.byte 14
-LDIFF_SYM974=LTDIE_91 - Ldebug_info_start
-	.long LDIFF_SYM974
-LTDIE_93:
+LDIFF_SYM1209=LTDIE_96 - Ldebug_info_start
+	.long LDIFF_SYM1209
+LTDIE_98:
 
 	.byte 5
 	.asciz "_KeyCollection"
 
 	.byte 24,16
-LDIFF_SYM975=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM975
+LDIFF_SYM1210=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1210
 	.byte 2,35,0,6
 	.asciz "_dictionary"
 
-LDIFF_SYM976=LTDIE_92_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM976
+LDIFF_SYM1211=LTDIE_97_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1211
 	.byte 2,35,16,0,7
 	.asciz "_KeyCollection"
 
-LDIFF_SYM977=LTDIE_93 - Ldebug_info_start
-	.long LDIFF_SYM977
-LTDIE_93_POINTER:
+LDIFF_SYM1212=LTDIE_98 - Ldebug_info_start
+	.long LDIFF_SYM1212
+LTDIE_98_POINTER:
 
 	.byte 13
-LDIFF_SYM978=LTDIE_93 - Ldebug_info_start
-	.long LDIFF_SYM978
-LTDIE_93_REFERENCE:
+LDIFF_SYM1213=LTDIE_98 - Ldebug_info_start
+	.long LDIFF_SYM1213
+LTDIE_98_REFERENCE:
 
 	.byte 14
-LDIFF_SYM979=LTDIE_93 - Ldebug_info_start
-	.long LDIFF_SYM979
-LTDIE_94:
+LDIFF_SYM1214=LTDIE_98 - Ldebug_info_start
+	.long LDIFF_SYM1214
+LTDIE_99:
 
 	.byte 5
 	.asciz "_ValueCollection"
 
 	.byte 24,16
-LDIFF_SYM980=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM980
+LDIFF_SYM1215=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1215
 	.byte 2,35,0,6
 	.asciz "_dictionary"
 
-LDIFF_SYM981=LTDIE_92_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM981
+LDIFF_SYM1216=LTDIE_97_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1216
 	.byte 2,35,16,0,7
 	.asciz "_ValueCollection"
 
-LDIFF_SYM982=LTDIE_94 - Ldebug_info_start
-	.long LDIFF_SYM982
-LTDIE_94_POINTER:
+LDIFF_SYM1217=LTDIE_99 - Ldebug_info_start
+	.long LDIFF_SYM1217
+LTDIE_99_POINTER:
 
 	.byte 13
-LDIFF_SYM983=LTDIE_94 - Ldebug_info_start
-	.long LDIFF_SYM983
-LTDIE_94_REFERENCE:
+LDIFF_SYM1218=LTDIE_99 - Ldebug_info_start
+	.long LDIFF_SYM1218
+LTDIE_99_REFERENCE:
 
 	.byte 14
-LDIFF_SYM984=LTDIE_94 - Ldebug_info_start
-	.long LDIFF_SYM984
-LTDIE_92:
+LDIFF_SYM1219=LTDIE_99 - Ldebug_info_start
+	.long LDIFF_SYM1219
+LTDIE_97:
 
 	.byte 5
 	.asciz "System_Collections_Generic_Dictionary`2"
 
 	.byte 80,16
-LDIFF_SYM985=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM985
+LDIFF_SYM1220=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1220
 	.byte 2,35,0,6
 	.asciz "_buckets"
 
-LDIFF_SYM986=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM986
+LDIFF_SYM1221=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1221
 	.byte 2,35,16,6
 	.asciz "_entries"
 
-LDIFF_SYM987=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM987
+LDIFF_SYM1222=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1222
 	.byte 2,35,24,6
 	.asciz "_count"
 
-LDIFF_SYM988=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM988
+LDIFF_SYM1223=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1223
 	.byte 2,35,64,6
 	.asciz "_freeList"
 
-LDIFF_SYM989=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM989
+LDIFF_SYM1224=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1224
 	.byte 2,35,68,6
 	.asciz "_freeCount"
 
-LDIFF_SYM990=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM990
+LDIFF_SYM1225=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1225
 	.byte 2,35,72,6
 	.asciz "_version"
 
-LDIFF_SYM991=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM991
+LDIFF_SYM1226=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1226
 	.byte 2,35,76,6
 	.asciz "_comparer"
 
-LDIFF_SYM992=LTDIE_85_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM992
+LDIFF_SYM1227=LTDIE_90_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1227
 	.byte 2,35,32,6
 	.asciz "_keys"
 
-LDIFF_SYM993=LTDIE_93_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM993
+LDIFF_SYM1228=LTDIE_98_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1228
 	.byte 2,35,40,6
 	.asciz "_values"
 
-LDIFF_SYM994=LTDIE_94_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM994
+LDIFF_SYM1229=LTDIE_99_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1229
 	.byte 2,35,48,6
 	.asciz "_syncRoot"
 
-LDIFF_SYM995=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM995
+LDIFF_SYM1230=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1230
 	.byte 2,35,56,0,7
 	.asciz "System_Collections_Generic_Dictionary`2"
 
-LDIFF_SYM996=LTDIE_92 - Ldebug_info_start
-	.long LDIFF_SYM996
-LTDIE_92_POINTER:
+LDIFF_SYM1231=LTDIE_97 - Ldebug_info_start
+	.long LDIFF_SYM1231
+LTDIE_97_POINTER:
 
 	.byte 13
-LDIFF_SYM997=LTDIE_92 - Ldebug_info_start
-	.long LDIFF_SYM997
-LTDIE_92_REFERENCE:
+LDIFF_SYM1232=LTDIE_97 - Ldebug_info_start
+	.long LDIFF_SYM1232
+LTDIE_97_REFERENCE:
 
 	.byte 14
-LDIFF_SYM998=LTDIE_92 - Ldebug_info_start
-	.long LDIFF_SYM998
-LTDIE_76:
+LDIFF_SYM1233=LTDIE_97 - Ldebug_info_start
+	.long LDIFF_SYM1233
+LTDIE_81:
 
 	.byte 5
 	.asciz "System_Xml_Schema_SchemaInfo"
 
 	.byte 112,16
-LDIFF_SYM999=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM999
+LDIFF_SYM1234=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1234
 	.byte 2,35,0,6
 	.asciz "elementDecls"
 
-LDIFF_SYM1000=LTDIE_77_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1000
+LDIFF_SYM1235=LTDIE_82_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1235
 	.byte 2,35,16,6
 	.asciz "undeclaredElementDecls"
 
-LDIFF_SYM1001=LTDIE_77_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1001
+LDIFF_SYM1236=LTDIE_82_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1236
 	.byte 2,35,24,6
 	.asciz "generalEntities"
 
-LDIFF_SYM1002=LTDIE_81_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1002
+LDIFF_SYM1237=LTDIE_86_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1237
 	.byte 2,35,32,6
 	.asciz "parameterEntities"
 
-LDIFF_SYM1003=LTDIE_81_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1003
+LDIFF_SYM1238=LTDIE_86_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1238
 	.byte 2,35,40,6
 	.asciz "docTypeName"
 
-LDIFF_SYM1004=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1004
+LDIFF_SYM1239=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1239
 	.byte 2,35,48,6
 	.asciz "internalDtdSubset"
 
-LDIFF_SYM1005=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1005
+LDIFF_SYM1240=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1240
 	.byte 2,35,56,6
 	.asciz "hasNonCDataAttributes"
 
-LDIFF_SYM1006=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1006
+LDIFF_SYM1241=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1241
 	.byte 2,35,96,6
 	.asciz "hasDefaultAttributes"
 
-LDIFF_SYM1007=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1007
+LDIFF_SYM1242=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1242
 	.byte 2,35,97,6
 	.asciz "targetNamespaces"
 
-LDIFF_SYM1008=LTDIE_84_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1008
+LDIFF_SYM1243=LTDIE_89_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1243
 	.byte 2,35,64,6
 	.asciz "attributeDecls"
 
-LDIFF_SYM1009=LTDIE_88_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1009
+LDIFF_SYM1244=LTDIE_93_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1244
 	.byte 2,35,72,6
 	.asciz "errorCount"
 
-LDIFF_SYM1010=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1010
+LDIFF_SYM1245=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1245
 	.byte 2,35,100,6
 	.asciz "schemaType"
 
-LDIFF_SYM1011=LTDIE_91 - Ldebug_info_start
-	.long LDIFF_SYM1011
+LDIFF_SYM1246=LTDIE_96 - Ldebug_info_start
+	.long LDIFF_SYM1246
 	.byte 2,35,104,6
 	.asciz "elementDeclsByType"
 
-LDIFF_SYM1012=LTDIE_77_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1012
+LDIFF_SYM1247=LTDIE_82_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1247
 	.byte 2,35,80,6
 	.asciz "notations"
 
-LDIFF_SYM1013=LTDIE_92_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1013
+LDIFF_SYM1248=LTDIE_97_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1248
 	.byte 2,35,88,0,7
 	.asciz "System_Xml_Schema_SchemaInfo"
 
-LDIFF_SYM1014=LTDIE_76 - Ldebug_info_start
-	.long LDIFF_SYM1014
-LTDIE_76_POINTER:
+LDIFF_SYM1249=LTDIE_81 - Ldebug_info_start
+	.long LDIFF_SYM1249
+LTDIE_81_POINTER:
 
 	.byte 13
-LDIFF_SYM1015=LTDIE_76 - Ldebug_info_start
-	.long LDIFF_SYM1015
-LTDIE_76_REFERENCE:
+LDIFF_SYM1250=LTDIE_81 - Ldebug_info_start
+	.long LDIFF_SYM1250
+LTDIE_81_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1016=LTDIE_76 - Ldebug_info_start
-	.long LDIFF_SYM1016
-LTDIE_97:
+LDIFF_SYM1251=LTDIE_81 - Ldebug_info_start
+	.long LDIFF_SYM1251
+LTDIE_102:
 
 	.byte 5
 	.asciz "System_Xml_Serialization_XmlSerializerNamespaces"
 
 	.byte 24,16
-LDIFF_SYM1017=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1017
+LDIFF_SYM1252=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1252
 	.byte 2,35,0,6
 	.asciz "namespaces"
 
-LDIFF_SYM1018=LTDIE_72_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1018
+LDIFF_SYM1253=LTDIE_77_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1253
 	.byte 2,35,16,0,7
 	.asciz "System_Xml_Serialization_XmlSerializerNamespaces"
 
-LDIFF_SYM1019=LTDIE_97 - Ldebug_info_start
-	.long LDIFF_SYM1019
-LTDIE_97_POINTER:
+LDIFF_SYM1254=LTDIE_102 - Ldebug_info_start
+	.long LDIFF_SYM1254
+LTDIE_102_POINTER:
 
 	.byte 13
-LDIFF_SYM1020=LTDIE_97 - Ldebug_info_start
-	.long LDIFF_SYM1020
-LTDIE_97_REFERENCE:
+LDIFF_SYM1255=LTDIE_102 - Ldebug_info_start
+	.long LDIFF_SYM1255
+LTDIE_102_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1021=LTDIE_97 - Ldebug_info_start
-	.long LDIFF_SYM1021
-LTDIE_96:
+LDIFF_SYM1256=LTDIE_102 - Ldebug_info_start
+	.long LDIFF_SYM1256
+LTDIE_101:
 
 	.byte 5
 	.asciz "System_Xml_Schema_XmlSchemaObject"
 
 	.byte 56,16
-LDIFF_SYM1022=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1022
+LDIFF_SYM1257=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1257
 	.byte 2,35,0,6
 	.asciz "lineNum"
 
-LDIFF_SYM1023=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1023
+LDIFF_SYM1258=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1258
 	.byte 2,35,40,6
 	.asciz "linePos"
 
-LDIFF_SYM1024=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1024
+LDIFF_SYM1259=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1259
 	.byte 2,35,44,6
 	.asciz "sourceUri"
 
-LDIFF_SYM1025=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1025
+LDIFF_SYM1260=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1260
 	.byte 2,35,16,6
 	.asciz "namespaces"
 
-LDIFF_SYM1026=LTDIE_97_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1026
+LDIFF_SYM1261=LTDIE_102_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1261
 	.byte 2,35,24,6
 	.asciz "parent"
 
-LDIFF_SYM1027=LTDIE_96_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1027
+LDIFF_SYM1262=LTDIE_101_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1262
 	.byte 2,35,32,6
 	.asciz "isProcessing"
 
-LDIFF_SYM1028=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1028
+LDIFF_SYM1263=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1263
 	.byte 2,35,48,0,7
 	.asciz "System_Xml_Schema_XmlSchemaObject"
 
-LDIFF_SYM1029=LTDIE_96 - Ldebug_info_start
-	.long LDIFF_SYM1029
-LTDIE_96_POINTER:
+LDIFF_SYM1264=LTDIE_101 - Ldebug_info_start
+	.long LDIFF_SYM1264
+LTDIE_101_POINTER:
 
 	.byte 13
-LDIFF_SYM1030=LTDIE_96 - Ldebug_info_start
-	.long LDIFF_SYM1030
-LTDIE_96_REFERENCE:
+LDIFF_SYM1265=LTDIE_101 - Ldebug_info_start
+	.long LDIFF_SYM1265
+LTDIE_101_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1031=LTDIE_96 - Ldebug_info_start
-	.long LDIFF_SYM1031
-LTDIE_98:
+LDIFF_SYM1266=LTDIE_101 - Ldebug_info_start
+	.long LDIFF_SYM1266
+LTDIE_103:
 
 	.byte 8
 	.asciz "System_Xml_Schema_XmlSchemaForm"
 
 	.byte 4
-LDIFF_SYM1032=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1032
+LDIFF_SYM1267=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1267
 	.byte 9
 	.asciz "None"
 
@@ -21895,26 +28427,26 @@ LDIFF_SYM1032=LDIE_I4 - Ldebug_info_start
 	.byte 2,0,7
 	.asciz "System_Xml_Schema_XmlSchemaForm"
 
-LDIFF_SYM1033=LTDIE_98 - Ldebug_info_start
-	.long LDIFF_SYM1033
-LTDIE_98_POINTER:
+LDIFF_SYM1268=LTDIE_103 - Ldebug_info_start
+	.long LDIFF_SYM1268
+LTDIE_103_POINTER:
 
 	.byte 13
-LDIFF_SYM1034=LTDIE_98 - Ldebug_info_start
-	.long LDIFF_SYM1034
-LTDIE_98_REFERENCE:
+LDIFF_SYM1269=LTDIE_103 - Ldebug_info_start
+	.long LDIFF_SYM1269
+LTDIE_103_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1035=LTDIE_98 - Ldebug_info_start
-	.long LDIFF_SYM1035
-LTDIE_99:
+LDIFF_SYM1270=LTDIE_103 - Ldebug_info_start
+	.long LDIFF_SYM1270
+LTDIE_104:
 
 	.byte 8
 	.asciz "System_Xml_Schema_XmlSchemaDerivationMethod"
 
 	.byte 4
-LDIFF_SYM1036=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1036
+LDIFF_SYM1271=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1271
 	.byte 9
 	.asciz "Empty"
 
@@ -21942,330 +28474,330 @@ LDIFF_SYM1036=LDIE_I4 - Ldebug_info_start
 	.byte 128,2,0,7
 	.asciz "System_Xml_Schema_XmlSchemaDerivationMethod"
 
-LDIFF_SYM1037=LTDIE_99 - Ldebug_info_start
-	.long LDIFF_SYM1037
-LTDIE_99_POINTER:
+LDIFF_SYM1272=LTDIE_104 - Ldebug_info_start
+	.long LDIFF_SYM1272
+LTDIE_104_POINTER:
 
 	.byte 13
-LDIFF_SYM1038=LTDIE_99 - Ldebug_info_start
-	.long LDIFF_SYM1038
-LTDIE_99_REFERENCE:
+LDIFF_SYM1273=LTDIE_104 - Ldebug_info_start
+	.long LDIFF_SYM1273
+LTDIE_104_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1039=LTDIE_99 - Ldebug_info_start
-	.long LDIFF_SYM1039
-LTDIE_102:
+LDIFF_SYM1274=LTDIE_104 - Ldebug_info_start
+	.long LDIFF_SYM1274
+LTDIE_107:
 
 	.byte 5
 	.asciz "System_Collections_ArrayList"
 
 	.byte 40,16
-LDIFF_SYM1040=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1040
+LDIFF_SYM1275=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1275
 	.byte 2,35,0,6
 	.asciz "_items"
 
-LDIFF_SYM1041=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1041
+LDIFF_SYM1276=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1276
 	.byte 2,35,16,6
 	.asciz "_size"
 
-LDIFF_SYM1042=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1042
+LDIFF_SYM1277=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1277
 	.byte 2,35,32,6
 	.asciz "_version"
 
-LDIFF_SYM1043=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1043
+LDIFF_SYM1278=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1278
 	.byte 2,35,36,6
 	.asciz "_syncRoot"
 
-LDIFF_SYM1044=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1044
+LDIFF_SYM1279=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1279
 	.byte 2,35,24,0,7
 	.asciz "System_Collections_ArrayList"
 
-LDIFF_SYM1045=LTDIE_102 - Ldebug_info_start
-	.long LDIFF_SYM1045
-LTDIE_102_POINTER:
+LDIFF_SYM1280=LTDIE_107 - Ldebug_info_start
+	.long LDIFF_SYM1280
+LTDIE_107_POINTER:
 
 	.byte 13
-LDIFF_SYM1046=LTDIE_102 - Ldebug_info_start
-	.long LDIFF_SYM1046
-LTDIE_102_REFERENCE:
+LDIFF_SYM1281=LTDIE_107 - Ldebug_info_start
+	.long LDIFF_SYM1281
+LTDIE_107_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1047=LTDIE_102 - Ldebug_info_start
-	.long LDIFF_SYM1047
-LTDIE_101:
+LDIFF_SYM1282=LTDIE_107 - Ldebug_info_start
+	.long LDIFF_SYM1282
+LTDIE_106:
 
 	.byte 5
 	.asciz "System_Collections_CollectionBase"
 
 	.byte 24,16
-LDIFF_SYM1048=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1048
+LDIFF_SYM1283=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1283
 	.byte 2,35,0,6
 	.asciz "_list"
 
-LDIFF_SYM1049=LTDIE_102_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1049
+LDIFF_SYM1284=LTDIE_107_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1284
 	.byte 2,35,16,0,7
 	.asciz "System_Collections_CollectionBase"
 
-LDIFF_SYM1050=LTDIE_101 - Ldebug_info_start
-	.long LDIFF_SYM1050
-LTDIE_101_POINTER:
+LDIFF_SYM1285=LTDIE_106 - Ldebug_info_start
+	.long LDIFF_SYM1285
+LTDIE_106_POINTER:
 
 	.byte 13
-LDIFF_SYM1051=LTDIE_101 - Ldebug_info_start
-	.long LDIFF_SYM1051
-LTDIE_101_REFERENCE:
+LDIFF_SYM1286=LTDIE_106 - Ldebug_info_start
+	.long LDIFF_SYM1286
+LTDIE_106_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1052=LTDIE_101 - Ldebug_info_start
-	.long LDIFF_SYM1052
-LTDIE_100:
+LDIFF_SYM1287=LTDIE_106 - Ldebug_info_start
+	.long LDIFF_SYM1287
+LTDIE_105:
 
 	.byte 5
 	.asciz "System_Xml_Schema_XmlSchemaObjectCollection"
 
 	.byte 32,16
-LDIFF_SYM1053=LTDIE_101 - Ldebug_info_start
-	.long LDIFF_SYM1053
+LDIFF_SYM1288=LTDIE_106 - Ldebug_info_start
+	.long LDIFF_SYM1288
 	.byte 2,35,0,6
 	.asciz "parent"
 
-LDIFF_SYM1054=LTDIE_96_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1054
+LDIFF_SYM1289=LTDIE_101_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1289
 	.byte 2,35,24,0,7
 	.asciz "System_Xml_Schema_XmlSchemaObjectCollection"
 
-LDIFF_SYM1055=LTDIE_100 - Ldebug_info_start
-	.long LDIFF_SYM1055
-LTDIE_100_POINTER:
-
-	.byte 13
-LDIFF_SYM1056=LTDIE_100 - Ldebug_info_start
-	.long LDIFF_SYM1056
-LTDIE_100_REFERENCE:
-
-	.byte 14
-LDIFF_SYM1057=LTDIE_100 - Ldebug_info_start
-	.long LDIFF_SYM1057
-LTDIE_105:
-
-	.byte 5
-	.asciz "_KeyCollection"
-
-	.byte 24,16
-LDIFF_SYM1058=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1058
-	.byte 2,35,0,6
-	.asciz "_dictionary"
-
-LDIFF_SYM1059=LTDIE_104_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1059
-	.byte 2,35,16,0,7
-	.asciz "_KeyCollection"
-
-LDIFF_SYM1060=LTDIE_105 - Ldebug_info_start
-	.long LDIFF_SYM1060
+LDIFF_SYM1290=LTDIE_105 - Ldebug_info_start
+	.long LDIFF_SYM1290
 LTDIE_105_POINTER:
 
 	.byte 13
-LDIFF_SYM1061=LTDIE_105 - Ldebug_info_start
-	.long LDIFF_SYM1061
+LDIFF_SYM1291=LTDIE_105 - Ldebug_info_start
+	.long LDIFF_SYM1291
 LTDIE_105_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1062=LTDIE_105 - Ldebug_info_start
-	.long LDIFF_SYM1062
-LTDIE_106:
+LDIFF_SYM1292=LTDIE_105 - Ldebug_info_start
+	.long LDIFF_SYM1292
+LTDIE_110:
+
+	.byte 5
+	.asciz "_KeyCollection"
+
+	.byte 24,16
+LDIFF_SYM1293=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1293
+	.byte 2,35,0,6
+	.asciz "_dictionary"
+
+LDIFF_SYM1294=LTDIE_109_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1294
+	.byte 2,35,16,0,7
+	.asciz "_KeyCollection"
+
+LDIFF_SYM1295=LTDIE_110 - Ldebug_info_start
+	.long LDIFF_SYM1295
+LTDIE_110_POINTER:
+
+	.byte 13
+LDIFF_SYM1296=LTDIE_110 - Ldebug_info_start
+	.long LDIFF_SYM1296
+LTDIE_110_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1297=LTDIE_110 - Ldebug_info_start
+	.long LDIFF_SYM1297
+LTDIE_111:
 
 	.byte 5
 	.asciz "_ValueCollection"
 
 	.byte 24,16
-LDIFF_SYM1063=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1063
+LDIFF_SYM1298=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1298
 	.byte 2,35,0,6
 	.asciz "_dictionary"
 
-LDIFF_SYM1064=LTDIE_104_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1064
+LDIFF_SYM1299=LTDIE_109_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1299
 	.byte 2,35,16,0,7
 	.asciz "_ValueCollection"
 
-LDIFF_SYM1065=LTDIE_106 - Ldebug_info_start
-	.long LDIFF_SYM1065
-LTDIE_106_POINTER:
+LDIFF_SYM1300=LTDIE_111 - Ldebug_info_start
+	.long LDIFF_SYM1300
+LTDIE_111_POINTER:
 
 	.byte 13
-LDIFF_SYM1066=LTDIE_106 - Ldebug_info_start
-	.long LDIFF_SYM1066
-LTDIE_106_REFERENCE:
+LDIFF_SYM1301=LTDIE_111 - Ldebug_info_start
+	.long LDIFF_SYM1301
+LTDIE_111_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1067=LTDIE_106 - Ldebug_info_start
-	.long LDIFF_SYM1067
-LTDIE_104:
+LDIFF_SYM1302=LTDIE_111 - Ldebug_info_start
+	.long LDIFF_SYM1302
+LTDIE_109:
 
 	.byte 5
 	.asciz "System_Collections_Generic_Dictionary`2"
 
 	.byte 80,16
-LDIFF_SYM1068=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1068
+LDIFF_SYM1303=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1303
 	.byte 2,35,0,6
 	.asciz "_buckets"
 
-LDIFF_SYM1069=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1069
+LDIFF_SYM1304=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1304
 	.byte 2,35,16,6
 	.asciz "_entries"
 
-LDIFF_SYM1070=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1070
+LDIFF_SYM1305=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1305
 	.byte 2,35,24,6
 	.asciz "_count"
 
-LDIFF_SYM1071=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1071
+LDIFF_SYM1306=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1306
 	.byte 2,35,64,6
 	.asciz "_freeList"
 
-LDIFF_SYM1072=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1072
+LDIFF_SYM1307=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1307
 	.byte 2,35,68,6
 	.asciz "_freeCount"
 
-LDIFF_SYM1073=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1073
+LDIFF_SYM1308=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1308
 	.byte 2,35,72,6
 	.asciz "_version"
 
-LDIFF_SYM1074=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1074
+LDIFF_SYM1309=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1309
 	.byte 2,35,76,6
 	.asciz "_comparer"
 
-LDIFF_SYM1075=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1075
+LDIFF_SYM1310=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1310
 	.byte 2,35,32,6
 	.asciz "_keys"
 
-LDIFF_SYM1076=LTDIE_105_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1076
+LDIFF_SYM1311=LTDIE_110_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1311
 	.byte 2,35,40,6
 	.asciz "_values"
 
-LDIFF_SYM1077=LTDIE_106_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1077
+LDIFF_SYM1312=LTDIE_111_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1312
 	.byte 2,35,48,6
 	.asciz "_syncRoot"
 
-LDIFF_SYM1078=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1078
+LDIFF_SYM1313=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1313
 	.byte 2,35,56,0,7
 	.asciz "System_Collections_Generic_Dictionary`2"
 
-LDIFF_SYM1079=LTDIE_104 - Ldebug_info_start
-	.long LDIFF_SYM1079
-LTDIE_104_POINTER:
+LDIFF_SYM1314=LTDIE_109 - Ldebug_info_start
+	.long LDIFF_SYM1314
+LTDIE_109_POINTER:
 
 	.byte 13
-LDIFF_SYM1080=LTDIE_104 - Ldebug_info_start
-	.long LDIFF_SYM1080
-LTDIE_104_REFERENCE:
+LDIFF_SYM1315=LTDIE_109 - Ldebug_info_start
+	.long LDIFF_SYM1315
+LTDIE_109_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1081=LTDIE_104 - Ldebug_info_start
-	.long LDIFF_SYM1081
-LTDIE_107:
+LDIFF_SYM1316=LTDIE_109 - Ldebug_info_start
+	.long LDIFF_SYM1316
+LTDIE_112:
 
 	.byte 5
 	.asciz "System_Collections_Generic_List`1"
 
 	.byte 40,16
-LDIFF_SYM1082=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1082
+LDIFF_SYM1317=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1317
 	.byte 2,35,0,6
 	.asciz "_items"
 
-LDIFF_SYM1083=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1083
+LDIFF_SYM1318=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1318
 	.byte 2,35,16,6
 	.asciz "_size"
 
-LDIFF_SYM1084=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1084
+LDIFF_SYM1319=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1319
 	.byte 2,35,32,6
 	.asciz "_version"
 
-LDIFF_SYM1085=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1085
+LDIFF_SYM1320=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1320
 	.byte 2,35,36,6
 	.asciz "_syncRoot"
 
-LDIFF_SYM1086=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1086
+LDIFF_SYM1321=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1321
 	.byte 2,35,24,0,7
 	.asciz "System_Collections_Generic_List`1"
 
-LDIFF_SYM1087=LTDIE_107 - Ldebug_info_start
-	.long LDIFF_SYM1087
-LTDIE_107_POINTER:
+LDIFF_SYM1322=LTDIE_112 - Ldebug_info_start
+	.long LDIFF_SYM1322
+LTDIE_112_POINTER:
 
 	.byte 13
-LDIFF_SYM1088=LTDIE_107 - Ldebug_info_start
-	.long LDIFF_SYM1088
-LTDIE_107_REFERENCE:
+LDIFF_SYM1323=LTDIE_112 - Ldebug_info_start
+	.long LDIFF_SYM1323
+LTDIE_112_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1089=LTDIE_107 - Ldebug_info_start
-	.long LDIFF_SYM1089
-LTDIE_103:
+LDIFF_SYM1324=LTDIE_112 - Ldebug_info_start
+	.long LDIFF_SYM1324
+LTDIE_108:
 
 	.byte 5
 	.asciz "System_Xml_Schema_XmlSchemaObjectTable"
 
 	.byte 32,16
-LDIFF_SYM1090=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1090
+LDIFF_SYM1325=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1325
 	.byte 2,35,0,6
 	.asciz "table"
 
-LDIFF_SYM1091=LTDIE_104_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1091
+LDIFF_SYM1326=LTDIE_109_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1326
 	.byte 2,35,16,6
 	.asciz "entries"
 
-LDIFF_SYM1092=LTDIE_107_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1092
+LDIFF_SYM1327=LTDIE_112_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1327
 	.byte 2,35,24,0,7
 	.asciz "System_Xml_Schema_XmlSchemaObjectTable"
 
-LDIFF_SYM1093=LTDIE_103 - Ldebug_info_start
-	.long LDIFF_SYM1093
-LTDIE_103_POINTER:
+LDIFF_SYM1328=LTDIE_108 - Ldebug_info_start
+	.long LDIFF_SYM1328
+LTDIE_108_POINTER:
 
 	.byte 13
-LDIFF_SYM1094=LTDIE_103 - Ldebug_info_start
-	.long LDIFF_SYM1094
-LTDIE_103_REFERENCE:
+LDIFF_SYM1329=LTDIE_108 - Ldebug_info_start
+	.long LDIFF_SYM1329
+LTDIE_108_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1095=LTDIE_103 - Ldebug_info_start
-	.long LDIFF_SYM1095
-LTDIE_110:
+LDIFF_SYM1330=LTDIE_108 - Ldebug_info_start
+	.long LDIFF_SYM1330
+LTDIE_115:
 
 	.byte 8
 	.asciz "System_UriSyntaxFlags"
 
 	.byte 4
-LDIFF_SYM1096=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1096
+LDIFF_SYM1331=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1331
 	.byte 9
 	.asciz "None"
 
@@ -22356,74 +28888,74 @@ LDIFF_SYM1096=LDIE_I4 - Ldebug_info_start
 	.byte 128,128,128,128,1,0,7
 	.asciz "System_UriSyntaxFlags"
 
-LDIFF_SYM1097=LTDIE_110 - Ldebug_info_start
-	.long LDIFF_SYM1097
-LTDIE_110_POINTER:
+LDIFF_SYM1332=LTDIE_115 - Ldebug_info_start
+	.long LDIFF_SYM1332
+LTDIE_115_POINTER:
 
 	.byte 13
-LDIFF_SYM1098=LTDIE_110 - Ldebug_info_start
-	.long LDIFF_SYM1098
-LTDIE_110_REFERENCE:
+LDIFF_SYM1333=LTDIE_115 - Ldebug_info_start
+	.long LDIFF_SYM1333
+LTDIE_115_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1099=LTDIE_110 - Ldebug_info_start
-	.long LDIFF_SYM1099
-LTDIE_109:
+LDIFF_SYM1334=LTDIE_115 - Ldebug_info_start
+	.long LDIFF_SYM1334
+LTDIE_114:
 
 	.byte 5
 	.asciz "System_UriParser"
 
 	.byte 40,16
-LDIFF_SYM1100=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1100
+LDIFF_SYM1335=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1335
 	.byte 2,35,0,6
 	.asciz "m_Flags"
 
-LDIFF_SYM1101=LTDIE_110 - Ldebug_info_start
-	.long LDIFF_SYM1101
+LDIFF_SYM1336=LTDIE_115 - Ldebug_info_start
+	.long LDIFF_SYM1336
 	.byte 2,35,24,6
 	.asciz "m_UpdatableFlags"
 
-LDIFF_SYM1102=LTDIE_110 - Ldebug_info_start
-	.long LDIFF_SYM1102
+LDIFF_SYM1337=LTDIE_115 - Ldebug_info_start
+	.long LDIFF_SYM1337
 	.byte 2,35,28,6
 	.asciz "m_UpdatableFlagsUsed"
 
-LDIFF_SYM1103=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1103
+LDIFF_SYM1338=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1338
 	.byte 2,35,32,6
 	.asciz "m_Port"
 
-LDIFF_SYM1104=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1104
+LDIFF_SYM1339=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1339
 	.byte 2,35,36,6
 	.asciz "m_Scheme"
 
-LDIFF_SYM1105=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1105
+LDIFF_SYM1340=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1340
 	.byte 2,35,16,0,7
 	.asciz "System_UriParser"
 
-LDIFF_SYM1106=LTDIE_109 - Ldebug_info_start
-	.long LDIFF_SYM1106
-LTDIE_109_POINTER:
+LDIFF_SYM1341=LTDIE_114 - Ldebug_info_start
+	.long LDIFF_SYM1341
+LTDIE_114_POINTER:
 
 	.byte 13
-LDIFF_SYM1107=LTDIE_109 - Ldebug_info_start
-	.long LDIFF_SYM1107
-LTDIE_109_REFERENCE:
+LDIFF_SYM1342=LTDIE_114 - Ldebug_info_start
+	.long LDIFF_SYM1342
+LTDIE_114_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1108=LTDIE_109 - Ldebug_info_start
-	.long LDIFF_SYM1108
-LTDIE_111:
+LDIFF_SYM1343=LTDIE_114 - Ldebug_info_start
+	.long LDIFF_SYM1343
+LTDIE_116:
 
 	.byte 8
 	.asciz "_Flags"
 
 	.byte 8
-LDIFF_SYM1109=LDIE_U8 - Ldebug_info_start
-	.long LDIFF_SYM1109
+LDIFF_SYM1344=LDIE_U8 - Ldebug_info_start
+	.long LDIFF_SYM1344
 	.byte 9
 	.asciz "Zero"
 
@@ -22592,1187 +29124,1187 @@ LDIFF_SYM1109=LDIE_U8 - Ldebug_info_start
 	.byte 128,128,128,128,128,128,4,0,7
 	.asciz "_Flags"
 
-LDIFF_SYM1110=LTDIE_111 - Ldebug_info_start
-	.long LDIFF_SYM1110
-LTDIE_111_POINTER:
+LDIFF_SYM1345=LTDIE_116 - Ldebug_info_start
+	.long LDIFF_SYM1345
+LTDIE_116_POINTER:
 
 	.byte 13
-LDIFF_SYM1111=LTDIE_111 - Ldebug_info_start
-	.long LDIFF_SYM1111
-LTDIE_111_REFERENCE:
+LDIFF_SYM1346=LTDIE_116 - Ldebug_info_start
+	.long LDIFF_SYM1346
+LTDIE_116_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1112=LTDIE_111 - Ldebug_info_start
-	.long LDIFF_SYM1112
-LTDIE_113:
+LDIFF_SYM1347=LTDIE_116 - Ldebug_info_start
+	.long LDIFF_SYM1347
+LTDIE_118:
 
 	.byte 5
 	.asciz "_MoreInfo"
 
 	.byte 64,16
-LDIFF_SYM1113=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1113
+LDIFF_SYM1348=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1348
 	.byte 2,35,0,6
 	.asciz "Path"
 
-LDIFF_SYM1114=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1114
+LDIFF_SYM1349=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1349
 	.byte 2,35,16,6
 	.asciz "Query"
 
-LDIFF_SYM1115=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1115
+LDIFF_SYM1350=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1350
 	.byte 2,35,24,6
 	.asciz "Fragment"
 
-LDIFF_SYM1116=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1116
+LDIFF_SYM1351=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1351
 	.byte 2,35,32,6
 	.asciz "AbsoluteUri"
 
-LDIFF_SYM1117=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1117
+LDIFF_SYM1352=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1352
 	.byte 2,35,40,6
 	.asciz "Hash"
 
-LDIFF_SYM1118=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1118
+LDIFF_SYM1353=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1353
 	.byte 2,35,56,6
 	.asciz "RemoteUrl"
 
-LDIFF_SYM1119=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1119
+LDIFF_SYM1354=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1354
 	.byte 2,35,48,0,7
 	.asciz "_MoreInfo"
 
-LDIFF_SYM1120=LTDIE_113 - Ldebug_info_start
-	.long LDIFF_SYM1120
-LTDIE_113_POINTER:
+LDIFF_SYM1355=LTDIE_118 - Ldebug_info_start
+	.long LDIFF_SYM1355
+LTDIE_118_POINTER:
 
 	.byte 13
-LDIFF_SYM1121=LTDIE_113 - Ldebug_info_start
-	.long LDIFF_SYM1121
-LTDIE_113_REFERENCE:
+LDIFF_SYM1356=LTDIE_118 - Ldebug_info_start
+	.long LDIFF_SYM1356
+LTDIE_118_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1122=LTDIE_113 - Ldebug_info_start
-	.long LDIFF_SYM1122
-LTDIE_112:
+LDIFF_SYM1357=LTDIE_118 - Ldebug_info_start
+	.long LDIFF_SYM1357
+LTDIE_117:
 
 	.byte 5
 	.asciz "_UriInfo"
 
 	.byte 72,16
-LDIFF_SYM1123=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1123
+LDIFF_SYM1358=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1358
 	.byte 2,35,0,6
 	.asciz "Host"
 
-LDIFF_SYM1124=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1124
+LDIFF_SYM1359=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1359
 	.byte 2,35,16,6
 	.asciz "ScopeId"
 
-LDIFF_SYM1125=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1125
+LDIFF_SYM1360=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1360
 	.byte 2,35,24,6
 	.asciz "String"
 
-LDIFF_SYM1126=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1126
+LDIFF_SYM1361=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1361
 	.byte 2,35,32,6
 	.asciz "Offset"
 
-LDIFF_SYM1127=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1127
+LDIFF_SYM1362=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1362
 	.byte 2,35,56,6
 	.asciz "DnsSafeHost"
 
-LDIFF_SYM1128=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1128
+LDIFF_SYM1363=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1363
 	.byte 2,35,40,6
 	.asciz "MoreInfo"
 
-LDIFF_SYM1129=LTDIE_113_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1129
+LDIFF_SYM1364=LTDIE_118_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1364
 	.byte 2,35,48,0,7
 	.asciz "_UriInfo"
 
-LDIFF_SYM1130=LTDIE_112 - Ldebug_info_start
-	.long LDIFF_SYM1130
-LTDIE_112_POINTER:
+LDIFF_SYM1365=LTDIE_117 - Ldebug_info_start
+	.long LDIFF_SYM1365
+LTDIE_117_POINTER:
 
 	.byte 13
-LDIFF_SYM1131=LTDIE_112 - Ldebug_info_start
-	.long LDIFF_SYM1131
-LTDIE_112_REFERENCE:
+LDIFF_SYM1366=LTDIE_117 - Ldebug_info_start
+	.long LDIFF_SYM1366
+LTDIE_117_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1132=LTDIE_112 - Ldebug_info_start
-	.long LDIFF_SYM1132
-LTDIE_108:
+LDIFF_SYM1367=LTDIE_117 - Ldebug_info_start
+	.long LDIFF_SYM1367
+LTDIE_113:
 
 	.byte 5
 	.asciz "System_Uri"
 
 	.byte 72,16
-LDIFF_SYM1133=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1133
+LDIFF_SYM1368=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1368
 	.byte 2,35,0,6
 	.asciz "m_String"
 
-LDIFF_SYM1134=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1134
+LDIFF_SYM1369=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1369
 	.byte 2,35,16,6
 	.asciz "m_originalUnicodeString"
 
-LDIFF_SYM1135=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1135
+LDIFF_SYM1370=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1370
 	.byte 2,35,24,6
 	.asciz "m_Syntax"
 
-LDIFF_SYM1136=LTDIE_109_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1136
+LDIFF_SYM1371=LTDIE_114_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1371
 	.byte 2,35,32,6
 	.asciz "m_DnsSafeHost"
 
-LDIFF_SYM1137=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1137
+LDIFF_SYM1372=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1372
 	.byte 2,35,40,6
 	.asciz "m_Flags"
 
-LDIFF_SYM1138=LTDIE_111 - Ldebug_info_start
-	.long LDIFF_SYM1138
+LDIFF_SYM1373=LTDIE_116 - Ldebug_info_start
+	.long LDIFF_SYM1373
 	.byte 2,35,56,6
 	.asciz "m_Info"
 
-LDIFF_SYM1139=LTDIE_112_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1139
+LDIFF_SYM1374=LTDIE_117_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1374
 	.byte 2,35,48,6
 	.asciz "m_iriParsing"
 
-LDIFF_SYM1140=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1140
+LDIFF_SYM1375=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1375
 	.byte 2,35,64,0,7
 	.asciz "System_Uri"
 
-LDIFF_SYM1141=LTDIE_108 - Ldebug_info_start
-	.long LDIFF_SYM1141
-LTDIE_108_POINTER:
+LDIFF_SYM1376=LTDIE_113 - Ldebug_info_start
+	.long LDIFF_SYM1376
+LTDIE_113_POINTER:
 
 	.byte 13
-LDIFF_SYM1142=LTDIE_108 - Ldebug_info_start
-	.long LDIFF_SYM1142
-LTDIE_108_REFERENCE:
+LDIFF_SYM1377=LTDIE_113 - Ldebug_info_start
+	.long LDIFF_SYM1377
+LTDIE_113_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1143=LTDIE_108 - Ldebug_info_start
-	.long LDIFF_SYM1143
-LTDIE_115:
+LDIFF_SYM1378=LTDIE_113 - Ldebug_info_start
+	.long LDIFF_SYM1378
+LTDIE_120:
 
 	.byte 5
 	.asciz "System_Xml_XmlNode"
 
 	.byte 24,16
-LDIFF_SYM1144=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1144
+LDIFF_SYM1379=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1379
 	.byte 2,35,0,6
 	.asciz "parentNode"
 
-LDIFF_SYM1145=LTDIE_115_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1145
+LDIFF_SYM1380=LTDIE_120_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1380
 	.byte 2,35,16,0,7
 	.asciz "System_Xml_XmlNode"
 
-LDIFF_SYM1146=LTDIE_115 - Ldebug_info_start
-	.long LDIFF_SYM1146
-LTDIE_115_POINTER:
+LDIFF_SYM1381=LTDIE_120 - Ldebug_info_start
+	.long LDIFF_SYM1381
+LTDIE_120_POINTER:
 
 	.byte 13
-LDIFF_SYM1147=LTDIE_115 - Ldebug_info_start
-	.long LDIFF_SYM1147
-LTDIE_115_REFERENCE:
+LDIFF_SYM1382=LTDIE_120 - Ldebug_info_start
+	.long LDIFF_SYM1382
+LTDIE_120_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1148=LTDIE_115 - Ldebug_info_start
-	.long LDIFF_SYM1148
-LTDIE_116:
+LDIFF_SYM1383=LTDIE_120 - Ldebug_info_start
+	.long LDIFF_SYM1383
+LTDIE_121:
 
 	.byte 5
 	.asciz "System_Xml_XmlImplementation"
 
 	.byte 24,16
-LDIFF_SYM1149=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1149
+LDIFF_SYM1384=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1384
 	.byte 2,35,0,6
 	.asciz "nameTable"
 
-LDIFF_SYM1150=LTDIE_58_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1150
+LDIFF_SYM1385=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1385
 	.byte 2,35,16,0,7
 	.asciz "System_Xml_XmlImplementation"
 
-LDIFF_SYM1151=LTDIE_116 - Ldebug_info_start
-	.long LDIFF_SYM1151
-LTDIE_116_POINTER:
+LDIFF_SYM1386=LTDIE_121 - Ldebug_info_start
+	.long LDIFF_SYM1386
+LTDIE_121_POINTER:
 
 	.byte 13
-LDIFF_SYM1152=LTDIE_116 - Ldebug_info_start
-	.long LDIFF_SYM1152
-LTDIE_116_REFERENCE:
+LDIFF_SYM1387=LTDIE_121 - Ldebug_info_start
+	.long LDIFF_SYM1387
+LTDIE_121_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1153=LTDIE_116 - Ldebug_info_start
-	.long LDIFF_SYM1153
-LTDIE_117:
+LDIFF_SYM1388=LTDIE_121 - Ldebug_info_start
+	.long LDIFF_SYM1388
+LTDIE_122:
 
 	.byte 5
 	.asciz "System_Xml_DomNameTable"
 
 	.byte 48,16
-LDIFF_SYM1154=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1154
+LDIFF_SYM1389=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1389
 	.byte 2,35,0,6
 	.asciz "entries"
 
-LDIFF_SYM1155=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1155
+LDIFF_SYM1390=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1390
 	.byte 2,35,16,6
 	.asciz "count"
 
-LDIFF_SYM1156=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1156
+LDIFF_SYM1391=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1391
 	.byte 2,35,40,6
 	.asciz "mask"
 
-LDIFF_SYM1157=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1157
+LDIFF_SYM1392=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1392
 	.byte 2,35,44,6
 	.asciz "ownerDocument"
 
-LDIFF_SYM1158=LTDIE_114_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1158
+LDIFF_SYM1393=LTDIE_119_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1393
 	.byte 2,35,24,6
 	.asciz "nameTable"
 
-LDIFF_SYM1159=LTDIE_58_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1159
+LDIFF_SYM1394=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1394
 	.byte 2,35,32,0,7
 	.asciz "System_Xml_DomNameTable"
 
-LDIFF_SYM1160=LTDIE_117 - Ldebug_info_start
-	.long LDIFF_SYM1160
-LTDIE_117_POINTER:
+LDIFF_SYM1395=LTDIE_122 - Ldebug_info_start
+	.long LDIFF_SYM1395
+LTDIE_122_POINTER:
 
 	.byte 13
-LDIFF_SYM1161=LTDIE_117 - Ldebug_info_start
-	.long LDIFF_SYM1161
-LTDIE_117_REFERENCE:
+LDIFF_SYM1396=LTDIE_122 - Ldebug_info_start
+	.long LDIFF_SYM1396
+LTDIE_122_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1162=LTDIE_117 - Ldebug_info_start
-	.long LDIFF_SYM1162
-LTDIE_118:
+LDIFF_SYM1397=LTDIE_122 - Ldebug_info_start
+	.long LDIFF_SYM1397
+LTDIE_123:
 
 	.byte 5
 	.asciz "System_Xml_XmlLinkedNode"
 
 	.byte 32,16
-LDIFF_SYM1163=LTDIE_115 - Ldebug_info_start
-	.long LDIFF_SYM1163
+LDIFF_SYM1398=LTDIE_120 - Ldebug_info_start
+	.long LDIFF_SYM1398
 	.byte 2,35,0,6
 	.asciz "next"
 
-LDIFF_SYM1164=LTDIE_118_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1164
+LDIFF_SYM1399=LTDIE_123_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1399
 	.byte 2,35,24,0,7
 	.asciz "System_Xml_XmlLinkedNode"
 
-LDIFF_SYM1165=LTDIE_118 - Ldebug_info_start
-	.long LDIFF_SYM1165
-LTDIE_118_POINTER:
+LDIFF_SYM1400=LTDIE_123 - Ldebug_info_start
+	.long LDIFF_SYM1400
+LTDIE_123_POINTER:
 
 	.byte 13
-LDIFF_SYM1166=LTDIE_118 - Ldebug_info_start
-	.long LDIFF_SYM1166
-LTDIE_118_REFERENCE:
+LDIFF_SYM1401=LTDIE_123 - Ldebug_info_start
+	.long LDIFF_SYM1401
+LTDIE_123_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1167=LTDIE_118 - Ldebug_info_start
-	.long LDIFF_SYM1167
-LTDIE_119:
+LDIFF_SYM1402=LTDIE_123 - Ldebug_info_start
+	.long LDIFF_SYM1402
+LTDIE_124:
 
 	.byte 5
 	.asciz "System_Xml_XmlNamedNodeMap"
 
 	.byte 32,16
-LDIFF_SYM1168=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1168
+LDIFF_SYM1403=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1403
 	.byte 2,35,0,6
 	.asciz "parent"
 
-LDIFF_SYM1169=LTDIE_115_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1169
+LDIFF_SYM1404=LTDIE_120_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1404
 	.byte 2,35,16,6
 	.asciz "nodes"
 
-LDIFF_SYM1170=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1170
+LDIFF_SYM1405=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1405
 	.byte 2,35,24,0,7
 	.asciz "System_Xml_XmlNamedNodeMap"
 
-LDIFF_SYM1171=LTDIE_119 - Ldebug_info_start
-	.long LDIFF_SYM1171
-LTDIE_119_POINTER:
+LDIFF_SYM1406=LTDIE_124 - Ldebug_info_start
+	.long LDIFF_SYM1406
+LTDIE_124_POINTER:
 
 	.byte 13
-LDIFF_SYM1172=LTDIE_119 - Ldebug_info_start
-	.long LDIFF_SYM1172
-LTDIE_119_REFERENCE:
+LDIFF_SYM1407=LTDIE_124 - Ldebug_info_start
+	.long LDIFF_SYM1407
+LTDIE_124_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1173=LTDIE_119 - Ldebug_info_start
-	.long LDIFF_SYM1173
-LTDIE_120:
+LDIFF_SYM1408=LTDIE_124 - Ldebug_info_start
+	.long LDIFF_SYM1408
+LTDIE_125:
 
 	.byte 5
 	.asciz "System_Xml_XmlNodeChangedEventHandler"
 
 	.byte 128,1,16
-LDIFF_SYM1174=LTDIE_15 - Ldebug_info_start
-	.long LDIFF_SYM1174
+LDIFF_SYM1409=LTDIE_15 - Ldebug_info_start
+	.long LDIFF_SYM1409
 	.byte 2,35,0,0,7
 	.asciz "System_Xml_XmlNodeChangedEventHandler"
 
-LDIFF_SYM1175=LTDIE_120 - Ldebug_info_start
-	.long LDIFF_SYM1175
-LTDIE_120_POINTER:
+LDIFF_SYM1410=LTDIE_125 - Ldebug_info_start
+	.long LDIFF_SYM1410
+LTDIE_125_POINTER:
 
 	.byte 13
-LDIFF_SYM1176=LTDIE_120 - Ldebug_info_start
-	.long LDIFF_SYM1176
-LTDIE_120_REFERENCE:
+LDIFF_SYM1411=LTDIE_125 - Ldebug_info_start
+	.long LDIFF_SYM1411
+LTDIE_125_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1177=LTDIE_120 - Ldebug_info_start
-	.long LDIFF_SYM1177
-LTDIE_122:
+LDIFF_SYM1412=LTDIE_125 - Ldebug_info_start
+	.long LDIFF_SYM1412
+LTDIE_127:
 
 	.byte 5
 	.asciz "System_Xml_XmlName"
 
 	.byte 72,16
-LDIFF_SYM1178=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1178
+LDIFF_SYM1413=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1413
 	.byte 2,35,0,6
 	.asciz "prefix"
 
-LDIFF_SYM1179=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1179
+LDIFF_SYM1414=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1414
 	.byte 2,35,16,6
 	.asciz "localName"
 
-LDIFF_SYM1180=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1180
+LDIFF_SYM1415=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1415
 	.byte 2,35,24,6
 	.asciz "ns"
 
-LDIFF_SYM1181=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1181
+LDIFF_SYM1416=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1416
 	.byte 2,35,32,6
 	.asciz "name"
 
-LDIFF_SYM1182=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1182
+LDIFF_SYM1417=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1417
 	.byte 2,35,40,6
 	.asciz "hashCode"
 
-LDIFF_SYM1183=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1183
+LDIFF_SYM1418=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1418
 	.byte 2,35,64,6
 	.asciz "ownerDoc"
 
-LDIFF_SYM1184=LTDIE_114_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1184
+LDIFF_SYM1419=LTDIE_119_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1419
 	.byte 2,35,48,6
 	.asciz "next"
 
-LDIFF_SYM1185=LTDIE_122_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1185
+LDIFF_SYM1420=LTDIE_127_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1420
 	.byte 2,35,56,0,7
 	.asciz "System_Xml_XmlName"
 
-LDIFF_SYM1186=LTDIE_122 - Ldebug_info_start
-	.long LDIFF_SYM1186
-LTDIE_122_POINTER:
+LDIFF_SYM1421=LTDIE_127 - Ldebug_info_start
+	.long LDIFF_SYM1421
+LTDIE_127_POINTER:
 
 	.byte 13
-LDIFF_SYM1187=LTDIE_122 - Ldebug_info_start
-	.long LDIFF_SYM1187
-LTDIE_122_REFERENCE:
+LDIFF_SYM1422=LTDIE_127 - Ldebug_info_start
+	.long LDIFF_SYM1422
+LTDIE_127_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1188=LTDIE_122 - Ldebug_info_start
-	.long LDIFF_SYM1188
-LTDIE_121:
+LDIFF_SYM1423=LTDIE_127 - Ldebug_info_start
+	.long LDIFF_SYM1423
+LTDIE_126:
 
 	.byte 5
 	.asciz "System_Xml_XmlAttribute"
 
 	.byte 40,16
-LDIFF_SYM1189=LTDIE_115 - Ldebug_info_start
-	.long LDIFF_SYM1189
+LDIFF_SYM1424=LTDIE_120 - Ldebug_info_start
+	.long LDIFF_SYM1424
 	.byte 2,35,0,6
 	.asciz "name"
 
-LDIFF_SYM1190=LTDIE_122_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1190
+LDIFF_SYM1425=LTDIE_127_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1425
 	.byte 2,35,24,6
 	.asciz "lastChild"
 
-LDIFF_SYM1191=LTDIE_118_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1191
+LDIFF_SYM1426=LTDIE_123_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1426
 	.byte 2,35,32,0,7
 	.asciz "System_Xml_XmlAttribute"
 
-LDIFF_SYM1192=LTDIE_121 - Ldebug_info_start
-	.long LDIFF_SYM1192
-LTDIE_121_POINTER:
+LDIFF_SYM1427=LTDIE_126 - Ldebug_info_start
+	.long LDIFF_SYM1427
+LTDIE_126_POINTER:
 
 	.byte 13
-LDIFF_SYM1193=LTDIE_121 - Ldebug_info_start
-	.long LDIFF_SYM1193
-LTDIE_121_REFERENCE:
+LDIFF_SYM1428=LTDIE_126 - Ldebug_info_start
+	.long LDIFF_SYM1428
+LTDIE_126_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1194=LTDIE_121 - Ldebug_info_start
-	.long LDIFF_SYM1194
-LTDIE_114:
+LDIFF_SYM1429=LTDIE_126 - Ldebug_info_start
+	.long LDIFF_SYM1429
+LTDIE_119:
 
 	.byte 5
 	.asciz "System_Xml_XmlDocument"
 
 	.byte 176,2,16
-LDIFF_SYM1195=LTDIE_115 - Ldebug_info_start
-	.long LDIFF_SYM1195
+LDIFF_SYM1430=LTDIE_120 - Ldebug_info_start
+	.long LDIFF_SYM1430
 	.byte 2,35,0,6
 	.asciz "implementation"
 
-LDIFF_SYM1196=LTDIE_116_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1196
+LDIFF_SYM1431=LTDIE_121_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1431
 	.byte 2,35,24,6
 	.asciz "domNameTable"
 
-LDIFF_SYM1197=LTDIE_117_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1197
+LDIFF_SYM1432=LTDIE_122_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1432
 	.byte 2,35,32,6
 	.asciz "lastChild"
 
-LDIFF_SYM1198=LTDIE_118_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1198
+LDIFF_SYM1433=LTDIE_123_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1433
 	.byte 2,35,40,6
 	.asciz "entities"
 
-LDIFF_SYM1199=LTDIE_119_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1199
+LDIFF_SYM1434=LTDIE_124_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1434
 	.byte 2,35,48,6
 	.asciz "htElementIdMap"
 
-LDIFF_SYM1200=LTDIE_72_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1200
+LDIFF_SYM1435=LTDIE_77_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1435
 	.byte 2,35,56,6
 	.asciz "htElementIDAttrDecl"
 
-LDIFF_SYM1201=LTDIE_72_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1201
+LDIFF_SYM1436=LTDIE_77_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1436
 	.byte 2,35,64,6
 	.asciz "schemaInfo"
 
-LDIFF_SYM1202=LTDIE_76_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1202
+LDIFF_SYM1437=LTDIE_81_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1437
 	.byte 2,35,72,6
 	.asciz "schemas"
 
-LDIFF_SYM1203=LTDIE_64_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1203
+LDIFF_SYM1438=LTDIE_69_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1438
 	.byte 2,35,80,6
 	.asciz "reportValidity"
 
-LDIFF_SYM1204=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1204
+LDIFF_SYM1439=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1439
 	.byte 3,35,168,2,6
 	.asciz "actualLoadingStatus"
 
-LDIFF_SYM1205=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1205
+LDIFF_SYM1440=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1440
 	.byte 3,35,169,2,6
 	.asciz "onNodeInsertingDelegate"
 
-LDIFF_SYM1206=LTDIE_120_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1206
+LDIFF_SYM1441=LTDIE_125_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1441
 	.byte 2,35,88,6
 	.asciz "onNodeInsertedDelegate"
 
-LDIFF_SYM1207=LTDIE_120_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1207
+LDIFF_SYM1442=LTDIE_125_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1442
 	.byte 2,35,96,6
 	.asciz "onNodeRemovingDelegate"
 
-LDIFF_SYM1208=LTDIE_120_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1208
+LDIFF_SYM1443=LTDIE_125_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1443
 	.byte 2,35,104,6
 	.asciz "onNodeRemovedDelegate"
 
-LDIFF_SYM1209=LTDIE_120_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1209
+LDIFF_SYM1444=LTDIE_125_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1444
 	.byte 2,35,112,6
 	.asciz "onNodeChangingDelegate"
 
-LDIFF_SYM1210=LTDIE_120_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1210
+LDIFF_SYM1445=LTDIE_125_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1445
 	.byte 2,35,120,6
 	.asciz "onNodeChangedDelegate"
 
-LDIFF_SYM1211=LTDIE_120_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1211
+LDIFF_SYM1446=LTDIE_125_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1446
 	.byte 3,35,128,1,6
 	.asciz "fEntRefNodesPresent"
 
-LDIFF_SYM1212=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1212
+LDIFF_SYM1447=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1447
 	.byte 3,35,170,2,6
 	.asciz "fCDataNodesPresent"
 
-LDIFF_SYM1213=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1213
+LDIFF_SYM1448=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1448
 	.byte 3,35,171,2,6
 	.asciz "preserveWhitespace"
 
-LDIFF_SYM1214=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1214
+LDIFF_SYM1449=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1449
 	.byte 3,35,172,2,6
 	.asciz "isLoading"
 
-LDIFF_SYM1215=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1215
+LDIFF_SYM1450=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1450
 	.byte 3,35,173,2,6
 	.asciz "strDocumentName"
 
-LDIFF_SYM1216=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1216
+LDIFF_SYM1451=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1451
 	.byte 3,35,136,1,6
 	.asciz "strDocumentFragmentName"
 
-LDIFF_SYM1217=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1217
+LDIFF_SYM1452=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1452
 	.byte 3,35,144,1,6
 	.asciz "strCommentName"
 
-LDIFF_SYM1218=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1218
+LDIFF_SYM1453=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1453
 	.byte 3,35,152,1,6
 	.asciz "strTextName"
 
-LDIFF_SYM1219=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1219
+LDIFF_SYM1454=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1454
 	.byte 3,35,160,1,6
 	.asciz "strCDataSectionName"
 
-LDIFF_SYM1220=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1220
+LDIFF_SYM1455=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1455
 	.byte 3,35,168,1,6
 	.asciz "strEntityName"
 
-LDIFF_SYM1221=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1221
+LDIFF_SYM1456=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1456
 	.byte 3,35,176,1,6
 	.asciz "strID"
 
-LDIFF_SYM1222=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1222
+LDIFF_SYM1457=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1457
 	.byte 3,35,184,1,6
 	.asciz "strXmlns"
 
-LDIFF_SYM1223=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1223
+LDIFF_SYM1458=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1458
 	.byte 3,35,192,1,6
 	.asciz "strXml"
 
-LDIFF_SYM1224=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1224
+LDIFF_SYM1459=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1459
 	.byte 3,35,200,1,6
 	.asciz "strSpace"
 
-LDIFF_SYM1225=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1225
+LDIFF_SYM1460=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1460
 	.byte 3,35,208,1,6
 	.asciz "strLang"
 
-LDIFF_SYM1226=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1226
+LDIFF_SYM1461=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1461
 	.byte 3,35,216,1,6
 	.asciz "strEmpty"
 
-LDIFF_SYM1227=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1227
+LDIFF_SYM1462=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1462
 	.byte 3,35,224,1,6
 	.asciz "strNonSignificantWhitespaceName"
 
-LDIFF_SYM1228=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1228
+LDIFF_SYM1463=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1463
 	.byte 3,35,232,1,6
 	.asciz "strSignificantWhitespaceName"
 
-LDIFF_SYM1229=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1229
+LDIFF_SYM1464=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1464
 	.byte 3,35,240,1,6
 	.asciz "strReservedXmlns"
 
-LDIFF_SYM1230=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1230
+LDIFF_SYM1465=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1465
 	.byte 3,35,248,1,6
 	.asciz "strReservedXml"
 
-LDIFF_SYM1231=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1231
+LDIFF_SYM1466=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1466
 	.byte 3,35,128,2,6
 	.asciz "baseURI"
 
-LDIFF_SYM1232=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1232
+LDIFF_SYM1467=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1467
 	.byte 3,35,136,2,6
 	.asciz "resolver"
 
-LDIFF_SYM1233=LTDIE_59_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1233
+LDIFF_SYM1468=LTDIE_64_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1468
 	.byte 3,35,144,2,6
 	.asciz "bSetResolver"
 
-LDIFF_SYM1234=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1234
+LDIFF_SYM1469=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1469
 	.byte 3,35,174,2,6
 	.asciz "objLock"
 
-LDIFF_SYM1235=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1235
+LDIFF_SYM1470=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1470
 	.byte 3,35,152,2,6
 	.asciz "namespaceXml"
 
-LDIFF_SYM1236=LTDIE_121_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1236
+LDIFF_SYM1471=LTDIE_126_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1471
 	.byte 3,35,160,2,0,7
 	.asciz "System_Xml_XmlDocument"
 
-LDIFF_SYM1237=LTDIE_114 - Ldebug_info_start
-	.long LDIFF_SYM1237
-LTDIE_114_POINTER:
+LDIFF_SYM1472=LTDIE_119 - Ldebug_info_start
+	.long LDIFF_SYM1472
+LTDIE_119_POINTER:
 
 	.byte 13
-LDIFF_SYM1238=LTDIE_114 - Ldebug_info_start
-	.long LDIFF_SYM1238
-LTDIE_114_REFERENCE:
+LDIFF_SYM1473=LTDIE_119 - Ldebug_info_start
+	.long LDIFF_SYM1473
+LTDIE_119_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1239=LTDIE_114 - Ldebug_info_start
-	.long LDIFF_SYM1239
-LTDIE_95:
+LDIFF_SYM1474=LTDIE_119 - Ldebug_info_start
+	.long LDIFF_SYM1474
+LTDIE_100:
 
 	.byte 5
 	.asciz "System_Xml_Schema_XmlSchema"
 
 	.byte 232,1,16
-LDIFF_SYM1240=LTDIE_96 - Ldebug_info_start
-	.long LDIFF_SYM1240
+LDIFF_SYM1475=LTDIE_101 - Ldebug_info_start
+	.long LDIFF_SYM1475
 	.byte 2,35,0,6
 	.asciz "attributeFormDefault"
 
-LDIFF_SYM1241=LTDIE_98 - Ldebug_info_start
-	.long LDIFF_SYM1241
+LDIFF_SYM1476=LTDIE_103 - Ldebug_info_start
+	.long LDIFF_SYM1476
 	.byte 3,35,200,1,6
 	.asciz "elementFormDefault"
 
-LDIFF_SYM1242=LTDIE_98 - Ldebug_info_start
-	.long LDIFF_SYM1242
+LDIFF_SYM1477=LTDIE_103 - Ldebug_info_start
+	.long LDIFF_SYM1477
 	.byte 3,35,204,1,6
 	.asciz "blockDefault"
 
-LDIFF_SYM1243=LTDIE_99 - Ldebug_info_start
-	.long LDIFF_SYM1243
+LDIFF_SYM1478=LTDIE_104 - Ldebug_info_start
+	.long LDIFF_SYM1478
 	.byte 3,35,208,1,6
 	.asciz "finalDefault"
 
-LDIFF_SYM1244=LTDIE_99 - Ldebug_info_start
-	.long LDIFF_SYM1244
+LDIFF_SYM1479=LTDIE_104 - Ldebug_info_start
+	.long LDIFF_SYM1479
 	.byte 3,35,212,1,6
 	.asciz "targetNs"
 
-LDIFF_SYM1245=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1245
+LDIFF_SYM1480=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1480
 	.byte 2,35,56,6
 	.asciz "version"
 
-LDIFF_SYM1246=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1246
+LDIFF_SYM1481=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1481
 	.byte 2,35,64,6
 	.asciz "includes"
 
-LDIFF_SYM1247=LTDIE_100_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1247
+LDIFF_SYM1482=LTDIE_105_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1482
 	.byte 2,35,72,6
 	.asciz "items"
 
-LDIFF_SYM1248=LTDIE_100_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1248
+LDIFF_SYM1483=LTDIE_105_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1483
 	.byte 2,35,80,6
 	.asciz "id"
 
-LDIFF_SYM1249=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1249
+LDIFF_SYM1484=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1484
 	.byte 2,35,88,6
 	.asciz "moreAttributes"
 
-LDIFF_SYM1250=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1250
+LDIFF_SYM1485=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1485
 	.byte 2,35,96,6
 	.asciz "isCompiled"
 
-LDIFF_SYM1251=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1251
+LDIFF_SYM1486=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1486
 	.byte 3,35,216,1,6
 	.asciz "isCompiledBySet"
 
-LDIFF_SYM1252=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1252
+LDIFF_SYM1487=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1487
 	.byte 3,35,217,1,6
 	.asciz "isPreprocessed"
 
-LDIFF_SYM1253=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1253
+LDIFF_SYM1488=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1488
 	.byte 3,35,218,1,6
 	.asciz "isRedefined"
 
-LDIFF_SYM1254=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1254
+LDIFF_SYM1489=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1489
 	.byte 3,35,219,1,6
 	.asciz "errorCount"
 
-LDIFF_SYM1255=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1255
+LDIFF_SYM1490=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1490
 	.byte 3,35,220,1,6
 	.asciz "attributes"
 
-LDIFF_SYM1256=LTDIE_103_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1256
+LDIFF_SYM1491=LTDIE_108_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1491
 	.byte 2,35,104,6
 	.asciz "attributeGroups"
 
-LDIFF_SYM1257=LTDIE_103_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1257
+LDIFF_SYM1492=LTDIE_108_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1492
 	.byte 2,35,112,6
 	.asciz "elements"
 
-LDIFF_SYM1258=LTDIE_103_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1258
+LDIFF_SYM1493=LTDIE_108_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1493
 	.byte 2,35,120,6
 	.asciz "types"
 
-LDIFF_SYM1259=LTDIE_103_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1259
+LDIFF_SYM1494=LTDIE_108_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1494
 	.byte 3,35,128,1,6
 	.asciz "groups"
 
-LDIFF_SYM1260=LTDIE_103_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1260
+LDIFF_SYM1495=LTDIE_108_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1495
 	.byte 3,35,136,1,6
 	.asciz "notations"
 
-LDIFF_SYM1261=LTDIE_103_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1261
+LDIFF_SYM1496=LTDIE_108_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1496
 	.byte 3,35,144,1,6
 	.asciz "identityConstraints"
 
-LDIFF_SYM1262=LTDIE_103_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1262
+LDIFF_SYM1497=LTDIE_108_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1497
 	.byte 3,35,152,1,6
 	.asciz "importedSchemas"
 
-LDIFF_SYM1263=LTDIE_102_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1263
+LDIFF_SYM1498=LTDIE_107_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1498
 	.byte 3,35,160,1,6
 	.asciz "importedNamespaces"
 
-LDIFF_SYM1264=LTDIE_102_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1264
+LDIFF_SYM1499=LTDIE_107_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1499
 	.byte 3,35,168,1,6
 	.asciz "schemaId"
 
-LDIFF_SYM1265=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1265
+LDIFF_SYM1500=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1500
 	.byte 3,35,224,1,6
 	.asciz "baseUri"
 
-LDIFF_SYM1266=LTDIE_108_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1266
+LDIFF_SYM1501=LTDIE_113_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1501
 	.byte 3,35,176,1,6
 	.asciz "isChameleon"
 
-LDIFF_SYM1267=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1267
+LDIFF_SYM1502=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1502
 	.byte 3,35,228,1,6
 	.asciz "ids"
 
-LDIFF_SYM1268=LTDIE_72_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1268
+LDIFF_SYM1503=LTDIE_77_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1503
 	.byte 3,35,184,1,6
 	.asciz "document"
 
-LDIFF_SYM1269=LTDIE_114_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1269
+LDIFF_SYM1504=LTDIE_119_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1504
 	.byte 3,35,192,1,0,7
 	.asciz "System_Xml_Schema_XmlSchema"
 
-LDIFF_SYM1270=LTDIE_95 - Ldebug_info_start
-	.long LDIFF_SYM1270
-LTDIE_95_POINTER:
+LDIFF_SYM1505=LTDIE_100 - Ldebug_info_start
+	.long LDIFF_SYM1505
+LTDIE_100_POINTER:
 
 	.byte 13
-LDIFF_SYM1271=LTDIE_95 - Ldebug_info_start
-	.long LDIFF_SYM1271
-LTDIE_95_REFERENCE:
+LDIFF_SYM1506=LTDIE_100 - Ldebug_info_start
+	.long LDIFF_SYM1506
+LTDIE_100_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1272=LTDIE_95 - Ldebug_info_start
-	.long LDIFF_SYM1272
-LTDIE_123:
+LDIFF_SYM1507=LTDIE_100 - Ldebug_info_start
+	.long LDIFF_SYM1507
+LTDIE_128:
 
 	.byte 5
 	.asciz "System_Xml_Schema_XmlSchemaCompilationSettings"
 
 	.byte 17,16
-LDIFF_SYM1273=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1273
+LDIFF_SYM1508=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1508
 	.byte 2,35,0,6
 	.asciz "enableUpaCheck"
 
-LDIFF_SYM1274=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1274
+LDIFF_SYM1509=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1509
 	.byte 2,35,16,0,7
 	.asciz "System_Xml_Schema_XmlSchemaCompilationSettings"
 
-LDIFF_SYM1275=LTDIE_123 - Ldebug_info_start
-	.long LDIFF_SYM1275
-LTDIE_123_POINTER:
+LDIFF_SYM1510=LTDIE_128 - Ldebug_info_start
+	.long LDIFF_SYM1510
+LTDIE_128_POINTER:
 
 	.byte 13
-LDIFF_SYM1276=LTDIE_123 - Ldebug_info_start
-	.long LDIFF_SYM1276
-LTDIE_123_REFERENCE:
+LDIFF_SYM1511=LTDIE_128 - Ldebug_info_start
+	.long LDIFF_SYM1511
+LTDIE_128_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1277=LTDIE_123 - Ldebug_info_start
-	.long LDIFF_SYM1277
-LTDIE_64:
+LDIFF_SYM1512=LTDIE_128 - Ldebug_info_start
+	.long LDIFF_SYM1512
+LTDIE_69:
 
 	.byte 5
 	.asciz "System_Xml_Schema_XmlSchemaSet"
 
 	.byte 168,1,16
-LDIFF_SYM1278=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1278
+LDIFF_SYM1513=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1513
 	.byte 2,35,0,6
 	.asciz "nameTable"
 
-LDIFF_SYM1279=LTDIE_58_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1279
+LDIFF_SYM1514=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1514
 	.byte 2,35,16,6
 	.asciz "schemaNames"
 
-LDIFF_SYM1280=LTDIE_65_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1280
+LDIFF_SYM1515=LTDIE_70_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1515
 	.byte 2,35,24,6
 	.asciz "schemas"
 
-LDIFF_SYM1281=LTDIE_67_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1281
+LDIFF_SYM1516=LTDIE_72_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1516
 	.byte 2,35,32,6
 	.asciz "internalEventHandler"
 
-LDIFF_SYM1282=LTDIE_71_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1282
+LDIFF_SYM1517=LTDIE_76_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1517
 	.byte 2,35,40,6
 	.asciz "eventHandler"
 
-LDIFF_SYM1283=LTDIE_71_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1283
+LDIFF_SYM1518=LTDIE_76_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1518
 	.byte 2,35,48,6
 	.asciz "isCompiled"
 
-LDIFF_SYM1284=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1284
+LDIFF_SYM1519=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1519
 	.byte 3,35,160,1,6
 	.asciz "schemaLocations"
 
-LDIFF_SYM1285=LTDIE_72_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1285
+LDIFF_SYM1520=LTDIE_77_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1520
 	.byte 2,35,56,6
 	.asciz "chameleonSchemas"
 
-LDIFF_SYM1286=LTDIE_72_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1286
+LDIFF_SYM1521=LTDIE_77_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1521
 	.byte 2,35,64,6
 	.asciz "targetNamespaces"
 
-LDIFF_SYM1287=LTDIE_72_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1287
+LDIFF_SYM1522=LTDIE_77_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1522
 	.byte 2,35,72,6
 	.asciz "compileAll"
 
-LDIFF_SYM1288=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1288
+LDIFF_SYM1523=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1523
 	.byte 3,35,161,1,6
 	.asciz "cachedCompiledInfo"
 
-LDIFF_SYM1289=LTDIE_76_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1289
+LDIFF_SYM1524=LTDIE_81_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1524
 	.byte 2,35,80,6
 	.asciz "readerSettings"
 
-LDIFF_SYM1290=LTDIE_57_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1290
+LDIFF_SYM1525=LTDIE_62_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1525
 	.byte 2,35,88,6
 	.asciz "schemaForSchema"
 
-LDIFF_SYM1291=LTDIE_95_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1291
+LDIFF_SYM1526=LTDIE_100_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1526
 	.byte 2,35,96,6
 	.asciz "compilationSettings"
 
-LDIFF_SYM1292=LTDIE_123_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1292
+LDIFF_SYM1527=LTDIE_128_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1527
 	.byte 2,35,104,6
 	.asciz "elements"
 
-LDIFF_SYM1293=LTDIE_103_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1293
+LDIFF_SYM1528=LTDIE_108_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1528
 	.byte 2,35,112,6
 	.asciz "attributes"
 
-LDIFF_SYM1294=LTDIE_103_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1294
+LDIFF_SYM1529=LTDIE_108_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1529
 	.byte 2,35,120,6
 	.asciz "schemaTypes"
 
-LDIFF_SYM1295=LTDIE_103_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1295
+LDIFF_SYM1530=LTDIE_108_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1530
 	.byte 3,35,128,1,6
 	.asciz "substitutionGroups"
 
-LDIFF_SYM1296=LTDIE_103_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1296
+LDIFF_SYM1531=LTDIE_108_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1531
 	.byte 3,35,136,1,6
 	.asciz "typeExtensions"
 
-LDIFF_SYM1297=LTDIE_103_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1297
+LDIFF_SYM1532=LTDIE_108_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1532
 	.byte 3,35,144,1,6
 	.asciz "internalSyncObject"
 
-LDIFF_SYM1298=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1298
+LDIFF_SYM1533=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1533
 	.byte 3,35,152,1,0,7
 	.asciz "System_Xml_Schema_XmlSchemaSet"
 
-LDIFF_SYM1299=LTDIE_64 - Ldebug_info_start
-	.long LDIFF_SYM1299
-LTDIE_64_POINTER:
+LDIFF_SYM1534=LTDIE_69 - Ldebug_info_start
+	.long LDIFF_SYM1534
+LTDIE_69_POINTER:
 
 	.byte 13
-LDIFF_SYM1300=LTDIE_64 - Ldebug_info_start
-	.long LDIFF_SYM1300
-LTDIE_64_REFERENCE:
+LDIFF_SYM1535=LTDIE_69 - Ldebug_info_start
+	.long LDIFF_SYM1535
+LTDIE_69_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1301=LTDIE_64 - Ldebug_info_start
-	.long LDIFF_SYM1301
-LTDIE_57:
+LDIFF_SYM1536=LTDIE_69 - Ldebug_info_start
+	.long LDIFF_SYM1536
+LTDIE_62:
 
 	.byte 5
 	.asciz "System_Xml_XmlReaderSettings"
 
 	.byte 112,16
-LDIFF_SYM1302=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1302
+LDIFF_SYM1537=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1537
 	.byte 2,35,0,6
 	.asciz "useAsync"
 
-LDIFF_SYM1303=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1303
+LDIFF_SYM1538=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1538
 	.byte 2,35,48,6
 	.asciz "nameTable"
 
-LDIFF_SYM1304=LTDIE_58_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1304
+LDIFF_SYM1539=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1539
 	.byte 2,35,16,6
 	.asciz "xmlResolver"
 
-LDIFF_SYM1305=LTDIE_59_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1305
+LDIFF_SYM1540=LTDIE_64_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1540
 	.byte 2,35,24,6
 	.asciz "lineNumberOffset"
 
-LDIFF_SYM1306=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1306
+LDIFF_SYM1541=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1541
 	.byte 2,35,52,6
 	.asciz "linePositionOffset"
 
-LDIFF_SYM1307=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1307
+LDIFF_SYM1542=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1542
 	.byte 2,35,56,6
 	.asciz "conformanceLevel"
 
-LDIFF_SYM1308=LTDIE_37 - Ldebug_info_start
-	.long LDIFF_SYM1308
+LDIFF_SYM1543=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM1543
 	.byte 2,35,60,6
 	.asciz "checkCharacters"
 
-LDIFF_SYM1309=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1309
+LDIFF_SYM1544=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1544
 	.byte 2,35,64,6
 	.asciz "maxCharactersInDocument"
 
-LDIFF_SYM1310=LDIE_I8 - Ldebug_info_start
-	.long LDIFF_SYM1310
+LDIFF_SYM1545=LDIE_I8 - Ldebug_info_start
+	.long LDIFF_SYM1545
 	.byte 2,35,72,6
 	.asciz "maxCharactersFromEntities"
 
-LDIFF_SYM1311=LDIE_I8 - Ldebug_info_start
-	.long LDIFF_SYM1311
+LDIFF_SYM1546=LDIE_I8 - Ldebug_info_start
+	.long LDIFF_SYM1546
 	.byte 2,35,80,6
 	.asciz "ignoreWhitespace"
 
-LDIFF_SYM1312=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1312
+LDIFF_SYM1547=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1547
 	.byte 2,35,88,6
 	.asciz "ignorePIs"
 
-LDIFF_SYM1313=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1313
+LDIFF_SYM1548=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1548
 	.byte 2,35,89,6
 	.asciz "ignoreComments"
 
-LDIFF_SYM1314=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1314
+LDIFF_SYM1549=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1549
 	.byte 2,35,90,6
 	.asciz "dtdProcessing"
 
-LDIFF_SYM1315=LTDIE_61 - Ldebug_info_start
-	.long LDIFF_SYM1315
+LDIFF_SYM1550=LTDIE_66 - Ldebug_info_start
+	.long LDIFF_SYM1550
 	.byte 2,35,92,6
 	.asciz "validationType"
 
-LDIFF_SYM1316=LTDIE_62 - Ldebug_info_start
-	.long LDIFF_SYM1316
+LDIFF_SYM1551=LTDIE_67 - Ldebug_info_start
+	.long LDIFF_SYM1551
 	.byte 2,35,96,6
 	.asciz "validationFlags"
 
-LDIFF_SYM1317=LTDIE_63 - Ldebug_info_start
-	.long LDIFF_SYM1317
+LDIFF_SYM1552=LTDIE_68 - Ldebug_info_start
+	.long LDIFF_SYM1552
 	.byte 2,35,100,6
 	.asciz "schemas"
 
-LDIFF_SYM1318=LTDIE_64_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1318
+LDIFF_SYM1553=LTDIE_69_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1553
 	.byte 2,35,32,6
 	.asciz "valEventHandler"
 
-LDIFF_SYM1319=LTDIE_71_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1319
+LDIFF_SYM1554=LTDIE_76_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1554
 	.byte 2,35,40,6
 	.asciz "closeInput"
 
-LDIFF_SYM1320=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1320
+LDIFF_SYM1555=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1555
 	.byte 2,35,104,6
 	.asciz "isReadOnly"
 
-LDIFF_SYM1321=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1321
+LDIFF_SYM1556=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1556
 	.byte 2,35,105,6
 	.asciz "<IsXmlResolverSet>k__BackingField"
 
-LDIFF_SYM1322=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1322
+LDIFF_SYM1557=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1557
 	.byte 2,35,106,0,7
 	.asciz "System_Xml_XmlReaderSettings"
 
-LDIFF_SYM1323=LTDIE_57 - Ldebug_info_start
-	.long LDIFF_SYM1323
-LTDIE_57_POINTER:
+LDIFF_SYM1558=LTDIE_62 - Ldebug_info_start
+	.long LDIFF_SYM1558
+LTDIE_62_POINTER:
 
 	.byte 13
-LDIFF_SYM1324=LTDIE_57 - Ldebug_info_start
-	.long LDIFF_SYM1324
-LTDIE_57_REFERENCE:
+LDIFF_SYM1559=LTDIE_62 - Ldebug_info_start
+	.long LDIFF_SYM1559
+LTDIE_62_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1325=LTDIE_57 - Ldebug_info_start
-	.long LDIFF_SYM1325
+LDIFF_SYM1560=LTDIE_62 - Ldebug_info_start
+	.long LDIFF_SYM1560
 	.byte 2
 	.asciz "System.Xml.Linq.XElement:Parse"
 	.asciz "System_Xml_Linq_XElement_Parse_string_System_Xml_Linq_LoadOptions"
 
 	.byte 12,148,7
 	.quad System_Xml_Linq_XElement_Parse_string_System_Xml_Linq_LoadOptions
-	.quad Lme_40
+	.quad Lme_6f
 
 	.byte 2,118,16,3
 	.asciz "text"
 
-LDIFF_SYM1326=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1326
+LDIFF_SYM1561=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1561
 	.byte 2,141,32,3
 	.asciz "options"
 
-LDIFF_SYM1327=LTDIE_48 - Ldebug_info_start
-	.long LDIFF_SYM1327
+LDIFF_SYM1562=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM1562
 	.byte 1,106,11
 	.asciz "sr"
 
-LDIFF_SYM1328=LTDIE_55_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1328
+LDIFF_SYM1563=LTDIE_60_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1563
 	.byte 2,141,40,11
 	.asciz "rs"
 
-LDIFF_SYM1329=LTDIE_57_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1329
+LDIFF_SYM1564=LTDIE_62_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1564
 	.byte 1,105,11
 	.asciz "r"
 
-LDIFF_SYM1330=LTDIE_45_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1330
+LDIFF_SYM1565=LTDIE_49_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1565
 	.byte 2,141,48,11
 	.asciz "V_3"
 
-LDIFF_SYM1331=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1331
+LDIFF_SYM1566=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1566
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1332=Lfde64_end - Lfde64_start
-	.long LDIFF_SYM1332
-Lfde64_start:
+LDIFF_SYM1567=Lfde111_end - Lfde111_start
+	.long LDIFF_SYM1567
+Lfde111_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XElement_Parse_string_System_Xml_Linq_LoadOptions
 
-LDIFF_SYM1333=Lme_40 - System_Xml_Linq_XElement_Parse_string_System_Xml_Linq_LoadOptions
-	.long LDIFF_SYM1333
+LDIFF_SYM1568=Lme_6f - System_Xml_Linq_XElement_Parse_string_System_Xml_Linq_LoadOptions
+	.long LDIFF_SYM1568
 	.long 0
 	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,153,14,154,13
 	.align 3
-Lfde64_end:
+Lfde111_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -23782,41 +30314,41 @@ Lfde64_end:
 
 	.byte 12,159,10
 	.quad System_Xml_Linq_XElement_WriteTo_System_Xml_XmlWriter
-	.quad Lme_41
+	.quad Lme_70
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1334=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1334
+LDIFF_SYM1569=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1569
 	.byte 2,141,16,3
 	.asciz "writer"
 
-LDIFF_SYM1335=LTDIE_41_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1335
+LDIFF_SYM1570=LTDIE_41_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1570
 	.byte 2,141,24,11
 	.asciz "V_0"
 
-LDIFF_SYM1336=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1336
+LDIFF_SYM1571=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1571
 	.byte 3,141,192,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1337=Lfde65_end - Lfde65_start
-	.long LDIFF_SYM1337
-Lfde65_start:
+LDIFF_SYM1572=Lfde112_end - Lfde112_start
+	.long LDIFF_SYM1572
+Lfde112_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XElement_WriteTo_System_Xml_XmlWriter
 
-LDIFF_SYM1338=Lme_41 - System_Xml_Linq_XElement_WriteTo_System_Xml_XmlWriter
-	.long LDIFF_SYM1338
+LDIFF_SYM1573=Lme_70 - System_Xml_Linq_XElement_WriteTo_System_Xml_XmlWriter
+	.long LDIFF_SYM1573
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29
 	.align 3
-Lfde65_end:
+Lfde112_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -23826,36 +30358,36 @@ Lfde65_end:
 
 	.byte 12,209,14
 	.quad System_Xml_Linq_XElement_ConvertForAssignment_object
-	.quad Lme_42
+	.quad Lme_71
 
 	.byte 2,118,16,3
 	.asciz "value"
 
-LDIFF_SYM1339=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1339
+LDIFF_SYM1574=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1574
 	.byte 1,106,11
 	.asciz "node"
 
-LDIFF_SYM1340=LTDIE_115_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1340
+LDIFF_SYM1575=LTDIE_120_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1575
 	.byte 1,104,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1341=Lfde66_end - Lfde66_start
-	.long LDIFF_SYM1341
-Lfde66_start:
+LDIFF_SYM1576=Lfde113_end - Lfde113_start
+	.long LDIFF_SYM1576
+Lfde113_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XElement_ConvertForAssignment_object
 
-LDIFF_SYM1342=Lme_42 - System_Xml_Linq_XElement_ConvertForAssignment_object
-	.long LDIFF_SYM1342
+LDIFF_SYM1577=Lme_71 - System_Xml_Linq_XElement_ConvertForAssignment_object
+	.long LDIFF_SYM1577
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153,7,68,154,6
 	.align 3
-Lfde66_end:
+Lfde113_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -23865,31 +30397,31 @@ Lfde66_end:
 
 	.byte 12,223,14
 	.quad System_Xml_Linq_XElement_System_Xml_Serialization_IXmlSerializable_GetSchema
-	.quad Lme_43
+	.quad Lme_72
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1343=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1343
+LDIFF_SYM1578=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1578
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1344=Lfde67_end - Lfde67_start
-	.long LDIFF_SYM1344
-Lfde67_start:
+LDIFF_SYM1579=Lfde114_end - Lfde114_start
+	.long LDIFF_SYM1579
+Lfde114_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XElement_System_Xml_Serialization_IXmlSerializable_GetSchema
 
-LDIFF_SYM1345=Lme_43 - System_Xml_Linq_XElement_System_Xml_Serialization_IXmlSerializable_GetSchema
-	.long LDIFF_SYM1345
+LDIFF_SYM1580=Lme_72 - System_Xml_Linq_XElement_System_Xml_Serialization_IXmlSerializable_GetSchema
+	.long LDIFF_SYM1580
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde67_end:
+Lfde114_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -23899,36 +30431,36 @@ Lfde67_end:
 
 	.byte 12,235,14
 	.quad System_Xml_Linq_XElement_System_Xml_Serialization_IXmlSerializable_ReadXml_System_Xml_XmlReader
-	.quad Lme_44
+	.quad Lme_73
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1346=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1346
+LDIFF_SYM1581=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1581
 	.byte 1,105,3
 	.asciz "reader"
 
-LDIFF_SYM1347=LTDIE_45_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1347
+LDIFF_SYM1582=LTDIE_49_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1582
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1348=Lfde68_end - Lfde68_start
-	.long LDIFF_SYM1348
-Lfde68_start:
+LDIFF_SYM1583=Lfde115_end - Lfde115_start
+	.long LDIFF_SYM1583
+Lfde115_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XElement_System_Xml_Serialization_IXmlSerializable_ReadXml_System_Xml_XmlReader
 
-LDIFF_SYM1349=Lme_44 - System_Xml_Linq_XElement_System_Xml_Serialization_IXmlSerializable_ReadXml_System_Xml_XmlReader
-	.long LDIFF_SYM1349
+LDIFF_SYM1584=Lme_73 - System_Xml_Linq_XElement_System_Xml_Serialization_IXmlSerializable_ReadXml_System_Xml_XmlReader
+	.long LDIFF_SYM1584
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,153,10,154,9
 	.align 3
-Lfde68_end:
+Lfde115_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -23938,36 +30470,153 @@ Lfde68_end:
 
 	.byte 12,250,14
 	.quad System_Xml_Linq_XElement_System_Xml_Serialization_IXmlSerializable_WriteXml_System_Xml_XmlWriter
-	.quad Lme_45
+	.quad Lme_74
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1350=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1350
+LDIFF_SYM1585=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1585
 	.byte 2,141,16,3
 	.asciz "writer"
 
-LDIFF_SYM1351=LTDIE_41_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1351
+LDIFF_SYM1586=LTDIE_41_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1586
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1352=Lfde69_end - Lfde69_start
-	.long LDIFF_SYM1352
-Lfde69_start:
+LDIFF_SYM1587=Lfde116_end - Lfde116_start
+	.long LDIFF_SYM1587
+Lfde116_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XElement_System_Xml_Serialization_IXmlSerializable_WriteXml_System_Xml_XmlWriter
 
-LDIFF_SYM1353=Lme_45 - System_Xml_Linq_XElement_System_Xml_Serialization_IXmlSerializable_WriteXml_System_Xml_XmlWriter
-	.long LDIFF_SYM1353
+LDIFF_SYM1588=Lme_74 - System_Xml_Linq_XElement_System_Xml_Serialization_IXmlSerializable_WriteXml_System_Xml_XmlWriter
+	.long LDIFF_SYM1588
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde69_end:
+Lfde116_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement:AddAttribute"
+	.asciz "System_Xml_Linq_XElement_AddAttribute_System_Xml_Linq_XAttribute"
+
+	.byte 12,255,14
+	.quad System_Xml_Linq_XElement_AddAttribute_System_Xml_Linq_XAttribute
+	.quad Lme_75
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1589=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1589
+	.byte 2,141,24,3
+	.asciz "a"
+
+LDIFF_SYM1590=LTDIE_6_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1590
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1591=Lfde117_end - Lfde117_start
+	.long LDIFF_SYM1591
+Lfde117_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement_AddAttribute_System_Xml_Linq_XAttribute
+
+LDIFF_SYM1592=Lme_75 - System_Xml_Linq_XElement_AddAttribute_System_Xml_Linq_XAttribute
+	.long LDIFF_SYM1592
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
+	.align 3
+Lfde117_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement:AddAttributeSkipNotify"
+	.asciz "System_Xml_Linq_XElement_AddAttributeSkipNotify_System_Xml_Linq_XAttribute"
+
+	.byte 12,134,15
+	.quad System_Xml_Linq_XElement_AddAttributeSkipNotify_System_Xml_Linq_XAttribute
+	.quad Lme_76
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1593=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1593
+	.byte 2,141,24,3
+	.asciz "a"
+
+LDIFF_SYM1594=LTDIE_6_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1594
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1595=Lfde118_end - Lfde118_start
+	.long LDIFF_SYM1595
+Lfde118_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement_AddAttributeSkipNotify_System_Xml_Linq_XAttribute
+
+LDIFF_SYM1596=Lme_76 - System_Xml_Linq_XElement_AddAttributeSkipNotify_System_Xml_Linq_XAttribute
+	.long LDIFF_SYM1596
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
+	.align 3
+Lfde118_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement:AppendAttribute"
+	.asciz "System_Xml_Linq_XElement_AppendAttribute_System_Xml_Linq_XAttribute"
+
+	.byte 12,141,15
+	.quad System_Xml_Linq_XElement_AppendAttribute_System_Xml_Linq_XAttribute
+	.quad Lme_77
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1597=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1597
+	.byte 2,141,24,3
+	.asciz "a"
+
+LDIFF_SYM1598=LTDIE_6_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1598
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1599=Lfde119_end - Lfde119_start
+	.long LDIFF_SYM1599
+Lfde119_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement_AppendAttribute_System_Xml_Linq_XAttribute
+
+LDIFF_SYM1600=Lme_77 - System_Xml_Linq_XElement_AppendAttribute_System_Xml_Linq_XAttribute
+	.long LDIFF_SYM1600
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
+	.align 3
+Lfde119_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -23977,36 +30626,36 @@ Lfde69_end:
 
 	.byte 12,149,15
 	.quad System_Xml_Linq_XElement_AppendAttributeSkipNotify_System_Xml_Linq_XAttribute
-	.quad Lme_46
+	.quad Lme_78
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1354=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1354
+LDIFF_SYM1601=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1601
 	.byte 1,105,3
 	.asciz "a"
 
-LDIFF_SYM1355=LTDIE_6_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1355
+LDIFF_SYM1602=LTDIE_6_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1602
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1356=Lfde70_end - Lfde70_start
-	.long LDIFF_SYM1356
-Lfde70_start:
+LDIFF_SYM1603=Lfde120_end - Lfde120_start
+	.long LDIFF_SYM1603
+Lfde120_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XElement_AppendAttributeSkipNotify_System_Xml_Linq_XAttribute
 
-LDIFF_SYM1357=Lme_46 - System_Xml_Linq_XElement_AppendAttributeSkipNotify_System_Xml_Linq_XAttribute
-	.long LDIFF_SYM1357
+LDIFF_SYM1604=Lme_78 - System_Xml_Linq_XElement_AppendAttributeSkipNotify_System_Xml_Linq_XAttribute
+	.long LDIFF_SYM1604
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
 	.align 3
-Lfde70_end:
+Lfde120_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24016,31 +30665,70 @@ Lfde70_end:
 
 	.byte 12,181,15
 	.quad System_Xml_Linq_XElement_CloneNode
-	.quad Lme_47
+	.quad Lme_79
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1358=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1358
+LDIFF_SYM1605=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1605
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1359=Lfde71_end - Lfde71_start
-	.long LDIFF_SYM1359
-Lfde71_start:
+LDIFF_SYM1606=Lfde121_end - Lfde121_start
+	.long LDIFF_SYM1606
+Lfde121_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XElement_CloneNode
 
-LDIFF_SYM1360=Lme_47 - System_Xml_Linq_XElement_CloneNode
-	.long LDIFF_SYM1360
+LDIFF_SYM1607=Lme_79 - System_Xml_Linq_XElement_CloneNode
+	.long LDIFF_SYM1607
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde71_end:
+Lfde121_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement:GetAttributes"
+	.asciz "System_Xml_Linq_XElement_GetAttributes_System_Xml_Linq_XName"
+
+	.byte 0,0
+	.quad System_Xml_Linq_XElement_GetAttributes_System_Xml_Linq_XName
+	.quad Lme_7a
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1608=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1608
+	.byte 2,141,16,3
+	.asciz "name"
+
+LDIFF_SYM1609=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1609
+	.byte 2,141,24,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1610=Lfde122_end - Lfde122_start
+	.long LDIFF_SYM1610
+Lfde122_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement_GetAttributes_System_Xml_Linq_XName
+
+LDIFF_SYM1611=Lme_7a - System_Xml_Linq_XElement_GetAttributes_System_Xml_Linq_XName
+	.long LDIFF_SYM1611
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.align 3
+Lfde122_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24050,51 +30738,51 @@ Lfde71_end:
 
 	.byte 12,205,15
 	.quad System_Xml_Linq_XElement_GetNamespaceOfPrefixInScope_string_System_Xml_Linq_XElement
-	.quad Lme_48
+	.quad Lme_7b
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1361=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1361
+LDIFF_SYM1612=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1612
 	.byte 1,104,3
 	.asciz "prefix"
 
-LDIFF_SYM1362=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1362
+LDIFF_SYM1613=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1613
 	.byte 1,105,3
 	.asciz "outOfScope"
 
-LDIFF_SYM1363=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1363
+LDIFF_SYM1614=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1614
 	.byte 1,106,11
 	.asciz "e"
 
-LDIFF_SYM1364=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1364
+LDIFF_SYM1615=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1615
 	.byte 1,103,11
 	.asciz "a"
 
-LDIFF_SYM1365=LTDIE_6_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1365
+LDIFF_SYM1616=LTDIE_6_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1616
 	.byte 1,104,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1366=Lfde72_end - Lfde72_start
-	.long LDIFF_SYM1366
-Lfde72_start:
+LDIFF_SYM1617=Lfde123_end - Lfde123_start
+	.long LDIFF_SYM1617
+Lfde123_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XElement_GetNamespaceOfPrefixInScope_string_System_Xml_Linq_XElement
 
-LDIFF_SYM1367=Lme_48 - System_Xml_Linq_XElement_GetNamespaceOfPrefixInScope_string_System_Xml_Linq_XElement
-	.long LDIFF_SYM1367
+LDIFF_SYM1618=Lme_7b - System_Xml_Linq_XElement_GetNamespaceOfPrefixInScope_string_System_Xml_Linq_XElement
+	.long LDIFF_SYM1618
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,152,3,68,153,2,154,1
 	.align 3
-Lfde72_end:
+Lfde123_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24104,41 +30792,41 @@ Lfde72_end:
 
 	.byte 12,241,15
 	.quad System_Xml_Linq_XElement_ReadElementFrom_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
-	.quad Lme_49
+	.quad Lme_7c
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1368=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1368
+LDIFF_SYM1619=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1619
 	.byte 2,141,24,3
 	.asciz "r"
 
-LDIFF_SYM1369=LTDIE_45_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1369
+LDIFF_SYM1620=LTDIE_49_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1620
 	.byte 1,105,3
 	.asciz "o"
 
-LDIFF_SYM1370=LTDIE_48 - Ldebug_info_start
-	.long LDIFF_SYM1370
+LDIFF_SYM1621=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM1621
 	.byte 2,141,32,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1371=Lfde73_end - Lfde73_start
-	.long LDIFF_SYM1371
-Lfde73_start:
+LDIFF_SYM1622=Lfde124_end - Lfde124_start
+	.long LDIFF_SYM1622
+Lfde124_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XElement_ReadElementFrom_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
 
-LDIFF_SYM1372=Lme_49 - System_Xml_Linq_XElement_ReadElementFrom_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
-	.long LDIFF_SYM1372
+LDIFF_SYM1623=Lme_7c - System_Xml_Linq_XElement_ReadElementFrom_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
+	.long LDIFF_SYM1623
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4
 	.align 3
-Lfde73_end:
+Lfde124_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24148,56 +30836,56 @@ Lfde73_end:
 
 	.byte 12,145,16
 	.quad System_Xml_Linq_XElement_ReadElementFromImpl_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
-	.quad Lme_4a
+	.quad Lme_7d
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1373=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1373
+LDIFF_SYM1624=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1624
 	.byte 1,104,3
 	.asciz "r"
 
-LDIFF_SYM1374=LTDIE_45_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1374
+LDIFF_SYM1625=LTDIE_49_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1625
 	.byte 1,105,3
 	.asciz "o"
 
-LDIFF_SYM1375=LTDIE_48 - Ldebug_info_start
-	.long LDIFF_SYM1375
+LDIFF_SYM1626=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM1626
 	.byte 1,106,11
 	.asciz "li"
 
-LDIFF_SYM1376=LTDIE_47_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1376
+LDIFF_SYM1627=LTDIE_51_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1627
 	.byte 1,103,11
 	.asciz "baseUri"
 
-LDIFF_SYM1377=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1377
+LDIFF_SYM1628=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1628
 	.byte 1,103,11
 	.asciz "a"
 
-LDIFF_SYM1378=LTDIE_6_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1378
+LDIFF_SYM1629=LTDIE_6_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1629
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1379=Lfde74_end - Lfde74_start
-	.long LDIFF_SYM1379
-Lfde74_start:
+LDIFF_SYM1630=Lfde125_end - Lfde125_start
+	.long LDIFF_SYM1630
+Lfde125_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XElement_ReadElementFromImpl_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
 
-LDIFF_SYM1380=Lme_4a - System_Xml_Linq_XElement_ReadElementFromImpl_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
-	.long LDIFF_SYM1380
+LDIFF_SYM1631=Lme_7d - System_Xml_Linq_XElement_ReadElementFromImpl_System_Xml_XmlReader_System_Xml_Linq_LoadOptions
+	.long LDIFF_SYM1631
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,150,10,151,9,68,152,8,153,7,68,154,6
 	.align 3
-Lfde74_end:
+Lfde125_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24207,41 +30895,41 @@ Lfde74_end:
 
 	.byte 12,217,16
 	.quad System_Xml_Linq_XElement_SetEndElementLineInfo_int_int
-	.quad Lme_4b
+	.quad Lme_7e
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1381=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1381
+LDIFF_SYM1632=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1632
 	.byte 2,141,16,3
 	.asciz "lineNumber"
 
-LDIFF_SYM1382=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1382
+LDIFF_SYM1633=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1633
 	.byte 2,141,24,3
 	.asciz "linePosition"
 
-LDIFF_SYM1383=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1383
+LDIFF_SYM1634=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1634
 	.byte 2,141,32,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1384=Lfde75_end - Lfde75_start
-	.long LDIFF_SYM1384
-Lfde75_start:
+LDIFF_SYM1635=Lfde126_end - Lfde126_start
+	.long LDIFF_SYM1635
+Lfde126_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XElement_SetEndElementLineInfo_int_int
 
-LDIFF_SYM1385=Lme_4b - System_Xml_Linq_XElement_SetEndElementLineInfo_int_int
-	.long LDIFF_SYM1385
+LDIFF_SYM1636=Lme_7e - System_Xml_Linq_XElement_SetEndElementLineInfo_int_int
+	.long LDIFF_SYM1636
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
-Lfde75_end:
+Lfde126_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24251,178 +30939,527 @@ Lfde75_end:
 
 	.byte 12,222,16
 	.quad System_Xml_Linq_XElement_ValidateNode_System_Xml_Linq_XNode_System_Xml_Linq_XNode
-	.quad Lme_4c
+	.quad Lme_7f
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1386=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1386
+LDIFF_SYM1637=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1637
 	.byte 0,3
 	.asciz "node"
 
-LDIFF_SYM1387=LTDIE_9_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1387
+LDIFF_SYM1638=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1638
 	.byte 1,106,3
 	.asciz "previous"
 
-LDIFF_SYM1388=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1388
+LDIFF_SYM1639=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1639
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1389=Lfde76_end - Lfde76_start
-	.long LDIFF_SYM1389
-Lfde76_start:
+LDIFF_SYM1640=Lfde127_end - Lfde127_start
+	.long LDIFF_SYM1640
+Lfde127_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XElement_ValidateNode_System_Xml_Linq_XNode_System_Xml_Linq_XNode
 
-LDIFF_SYM1390=Lme_4c - System_Xml_Linq_XElement_ValidateNode_System_Xml_Linq_XNode_System_Xml_Linq_XNode
-	.long LDIFF_SYM1390
+LDIFF_SYM1641=Lme_7f - System_Xml_Linq_XElement_ValidateNode_System_Xml_Linq_XNode_System_Xml_Linq_XNode
+	.long LDIFF_SYM1641
 	.long 0
 	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,153,14,154,13
 	.align 3
-Lfde76_end:
+Lfde127_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_126:
+LTDIE_129:
+
+	.byte 5
+	.asciz "_<GetAttributes>d__116"
+
+	.byte 64,16
+LDIFF_SYM1642=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1642
+	.byte 2,35,0,6
+	.asciz "<>1__state"
+
+LDIFF_SYM1643=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1643
+	.byte 2,35,56,6
+	.asciz "<>2__current"
+
+LDIFF_SYM1644=LTDIE_6_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1644
+	.byte 2,35,16,6
+	.asciz "<>l__initialThreadId"
+
+LDIFF_SYM1645=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1645
+	.byte 2,35,60,6
+	.asciz "<>4__this"
+
+LDIFF_SYM1646=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1646
+	.byte 2,35,24,6
+	.asciz "name"
+
+LDIFF_SYM1647=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1647
+	.byte 2,35,32,6
+	.asciz "<>3__name"
+
+LDIFF_SYM1648=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1648
+	.byte 2,35,40,6
+	.asciz "<a>5__2"
+
+LDIFF_SYM1649=LTDIE_6_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1649
+	.byte 2,35,48,0,7
+	.asciz "_<GetAttributes>d__116"
+
+LDIFF_SYM1650=LTDIE_129 - Ldebug_info_start
+	.long LDIFF_SYM1650
+LTDIE_129_POINTER:
+
+	.byte 13
+LDIFF_SYM1651=LTDIE_129 - Ldebug_info_start
+	.long LDIFF_SYM1651
+LTDIE_129_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1652=LTDIE_129 - Ldebug_info_start
+	.long LDIFF_SYM1652
+	.byte 2
+	.asciz "System.Xml.Linq.XElement/<GetAttributes>d__116:.ctor"
+	.asciz "System_Xml_Linq_XElement__GetAttributesd__116__ctor_int"
+
+	.byte 0,0
+	.quad System_Xml_Linq_XElement__GetAttributesd__116__ctor_int
+	.quad Lme_80
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1653=LTDIE_129_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1653
+	.byte 1,105,3
+	.asciz "<>1__state"
+
+LDIFF_SYM1654=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1654
+	.byte 2,141,24,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1655=Lfde128_end - Lfde128_start
+	.long LDIFF_SYM1655
+Lfde128_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement__GetAttributesd__116__ctor_int
+
+LDIFF_SYM1656=Lme_80 - System_Xml_Linq_XElement__GetAttributesd__116__ctor_int
+	.long LDIFF_SYM1656
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
+	.align 3
+Lfde128_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement/<GetAttributes>d__116:System.IDisposable.Dispose"
+	.asciz "System_Xml_Linq_XElement__GetAttributesd__116_System_IDisposable_Dispose"
+
+	.byte 0,0
+	.quad System_Xml_Linq_XElement__GetAttributesd__116_System_IDisposable_Dispose
+	.quad Lme_81
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1657=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1657
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1658=Lfde129_end - Lfde129_start
+	.long LDIFF_SYM1658
+Lfde129_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement__GetAttributesd__116_System_IDisposable_Dispose
+
+LDIFF_SYM1659=Lme_81 - System_Xml_Linq_XElement__GetAttributesd__116_System_IDisposable_Dispose
+	.long LDIFF_SYM1659
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde129_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement/<GetAttributes>d__116:MoveNext"
+	.asciz "System_Xml_Linq_XElement__GetAttributesd__116_MoveNext"
+
+	.byte 12,0
+	.quad System_Xml_Linq_XElement__GetAttributesd__116_MoveNext
+	.quad Lme_82
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1660=LTDIE_129_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1660
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM1661=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1661
+	.byte 1,105,11
+	.asciz "V_1"
+
+LDIFF_SYM1662=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1662
+	.byte 1,104,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1663=Lfde130_end - Lfde130_start
+	.long LDIFF_SYM1663
+Lfde130_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement__GetAttributesd__116_MoveNext
+
+LDIFF_SYM1664=Lme_82 - System_Xml_Linq_XElement__GetAttributesd__116_MoveNext
+	.long LDIFF_SYM1664
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,68,154,2
+	.align 3
+Lfde130_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement/<GetAttributes>d__116:System.Collections.Generic.IEnumerator<System.Xml.Linq.XAttribute>.get_Current"
+	.asciz "System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_Generic_IEnumerator_System_Xml_Linq_XAttribute_get_Current"
+
+	.byte 0,0
+	.quad System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_Generic_IEnumerator_System_Xml_Linq_XAttribute_get_Current
+	.quad Lme_83
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1665=LTDIE_129_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1665
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1666=Lfde131_end - Lfde131_start
+	.long LDIFF_SYM1666
+Lfde131_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_Generic_IEnumerator_System_Xml_Linq_XAttribute_get_Current
+
+LDIFF_SYM1667=Lme_83 - System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_Generic_IEnumerator_System_Xml_Linq_XAttribute_get_Current
+	.long LDIFF_SYM1667
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde131_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement/<GetAttributes>d__116:System.Collections.IEnumerator.Reset"
+	.asciz "System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_IEnumerator_Reset"
+
+	.byte 0,0
+	.quad System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_IEnumerator_Reset
+	.quad Lme_84
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1668=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1668
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1669=Lfde132_end - Lfde132_start
+	.long LDIFF_SYM1669
+Lfde132_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_IEnumerator_Reset
+
+LDIFF_SYM1670=Lme_84 - System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_IEnumerator_Reset
+	.long LDIFF_SYM1670
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde132_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement/<GetAttributes>d__116:System.Collections.IEnumerator.get_Current"
+	.asciz "System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_IEnumerator_get_Current"
+
+	.byte 0,0
+	.quad System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_IEnumerator_get_Current
+	.quad Lme_85
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1671=LTDIE_129_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1671
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1672=Lfde133_end - Lfde133_start
+	.long LDIFF_SYM1672
+Lfde133_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_IEnumerator_get_Current
+
+LDIFF_SYM1673=Lme_85 - System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_IEnumerator_get_Current
+	.long LDIFF_SYM1673
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde133_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement/<GetAttributes>d__116:System.Collections.Generic.IEnumerable<System.Xml.Linq.XAttribute>.GetEnumerator"
+	.asciz "System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_Generic_IEnumerable_System_Xml_Linq_XAttribute_GetEnumerator"
+
+	.byte 0,0
+	.quad System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_Generic_IEnumerable_System_Xml_Linq_XAttribute_GetEnumerator
+	.quad Lme_86
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1674=LTDIE_129_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1674
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM1675=LTDIE_129_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1675
+	.byte 1,105,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1676=Lfde134_end - Lfde134_start
+	.long LDIFF_SYM1676
+Lfde134_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_Generic_IEnumerable_System_Xml_Linq_XAttribute_GetEnumerator
+
+LDIFF_SYM1677=Lme_86 - System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_Generic_IEnumerable_System_Xml_Linq_XAttribute_GetEnumerator
+	.long LDIFF_SYM1677
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3
+	.align 3
+Lfde134_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XElement/<GetAttributes>d__116:System.Collections.IEnumerable.GetEnumerator"
+	.asciz "System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_IEnumerable_GetEnumerator"
+
+	.byte 0,0
+	.quad System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_IEnumerable_GetEnumerator
+	.quad Lme_87
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1678=LTDIE_129_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1678
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1679=Lfde135_end - Lfde135_start
+	.long LDIFF_SYM1679
+Lfde135_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_IEnumerable_GetEnumerator
+
+LDIFF_SYM1680=Lme_87 - System_Xml_Linq_XElement__GetAttributesd__116_System_Collections_IEnumerable_GetEnumerator
+	.long LDIFF_SYM1680
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde135_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_132:
 
 	.byte 5
 	.asciz "_ExtractKeyDelegate"
 
 	.byte 128,1,16
-LDIFF_SYM1391=LTDIE_15 - Ldebug_info_start
-	.long LDIFF_SYM1391
+LDIFF_SYM1681=LTDIE_15 - Ldebug_info_start
+	.long LDIFF_SYM1681
 	.byte 2,35,0,0,7
 	.asciz "_ExtractKeyDelegate"
 
-LDIFF_SYM1392=LTDIE_126 - Ldebug_info_start
-	.long LDIFF_SYM1392
-LTDIE_126_POINTER:
+LDIFF_SYM1682=LTDIE_132 - Ldebug_info_start
+	.long LDIFF_SYM1682
+LTDIE_132_POINTER:
 
 	.byte 13
-LDIFF_SYM1393=LTDIE_126 - Ldebug_info_start
-	.long LDIFF_SYM1393
-LTDIE_126_REFERENCE:
+LDIFF_SYM1683=LTDIE_132 - Ldebug_info_start
+	.long LDIFF_SYM1683
+LTDIE_132_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1394=LTDIE_126 - Ldebug_info_start
-	.long LDIFF_SYM1394
-LTDIE_125:
+LDIFF_SYM1684=LTDIE_132 - Ldebug_info_start
+	.long LDIFF_SYM1684
+LTDIE_131:
 
 	.byte 5
 	.asciz "_XHashtableState"
 
 	.byte 48,16
-LDIFF_SYM1395=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1395
+LDIFF_SYM1685=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1685
 	.byte 2,35,0,6
 	.asciz "_buckets"
 
-LDIFF_SYM1396=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1396
+LDIFF_SYM1686=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1686
 	.byte 2,35,16,6
 	.asciz "_entries"
 
-LDIFF_SYM1397=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1397
+LDIFF_SYM1687=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1687
 	.byte 2,35,24,6
 	.asciz "_numEntries"
 
-LDIFF_SYM1398=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1398
+LDIFF_SYM1688=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1688
 	.byte 2,35,40,6
 	.asciz "_extractKey"
 
-LDIFF_SYM1399=LTDIE_126_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1399
+LDIFF_SYM1689=LTDIE_132_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1689
 	.byte 2,35,32,0,7
 	.asciz "_XHashtableState"
 
-LDIFF_SYM1400=LTDIE_125 - Ldebug_info_start
-	.long LDIFF_SYM1400
-LTDIE_125_POINTER:
+LDIFF_SYM1690=LTDIE_131 - Ldebug_info_start
+	.long LDIFF_SYM1690
+LTDIE_131_POINTER:
 
 	.byte 13
-LDIFF_SYM1401=LTDIE_125 - Ldebug_info_start
-	.long LDIFF_SYM1401
-LTDIE_125_REFERENCE:
+LDIFF_SYM1691=LTDIE_131 - Ldebug_info_start
+	.long LDIFF_SYM1691
+LTDIE_131_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1402=LTDIE_125 - Ldebug_info_start
-	.long LDIFF_SYM1402
-LTDIE_124:
+LDIFF_SYM1692=LTDIE_131 - Ldebug_info_start
+	.long LDIFF_SYM1692
+LTDIE_130:
 
 	.byte 5
 	.asciz "System_Xml_Linq_XHashtable`1"
 
 	.byte 24,16
-LDIFF_SYM1403=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1403
+LDIFF_SYM1693=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1693
 	.byte 2,35,0,6
 	.asciz "_state"
 
-LDIFF_SYM1404=LTDIE_125_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1404
+LDIFF_SYM1694=LTDIE_131_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1694
 	.byte 2,35,16,0,7
 	.asciz "System_Xml_Linq_XHashtable`1"
 
-LDIFF_SYM1405=LTDIE_124 - Ldebug_info_start
-	.long LDIFF_SYM1405
-LTDIE_124_POINTER:
+LDIFF_SYM1695=LTDIE_130 - Ldebug_info_start
+	.long LDIFF_SYM1695
+LTDIE_130_POINTER:
 
 	.byte 13
-LDIFF_SYM1406=LTDIE_124 - Ldebug_info_start
-	.long LDIFF_SYM1406
-LTDIE_124_REFERENCE:
+LDIFF_SYM1696=LTDIE_130 - Ldebug_info_start
+	.long LDIFF_SYM1696
+LTDIE_130_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1407=LTDIE_124 - Ldebug_info_start
-	.long LDIFF_SYM1407
+LDIFF_SYM1697=LTDIE_130 - Ldebug_info_start
+	.long LDIFF_SYM1697
 	.byte 2
 	.asciz "System.Xml.Linq.XHashtable`1<TValue_REF>:.ctor"
 	.asciz "System_Xml_Linq_XHashtable_1_TValue_REF__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_REF_int"
 
 	.byte 13,77
 	.quad System_Xml_Linq_XHashtable_1_TValue_REF__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_REF_int
-	.quad Lme_4d
+	.quad Lme_88
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1408=LTDIE_124_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1408
+LDIFF_SYM1698=LTDIE_130_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1698
 	.byte 2,141,16,3
 	.asciz "extractKey"
 
-LDIFF_SYM1409=LTDIE_126_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1409
+LDIFF_SYM1699=LTDIE_132_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1699
 	.byte 2,141,24,3
 	.asciz "capacity"
 
-LDIFF_SYM1410=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1410
+LDIFF_SYM1700=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1700
 	.byte 2,141,32,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1411=Lfde77_end - Lfde77_start
-	.long LDIFF_SYM1411
-Lfde77_start:
+LDIFF_SYM1701=Lfde136_end - Lfde136_start
+	.long LDIFF_SYM1701
+Lfde136_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XHashtable_1_TValue_REF__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_REF_int
 
-LDIFF_SYM1412=Lme_4d - System_Xml_Linq_XHashtable_1_TValue_REF__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_REF_int
-	.long LDIFF_SYM1412
+LDIFF_SYM1702=Lme_88 - System_Xml_Linq_XHashtable_1_TValue_REF__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_REF_int
+	.long LDIFF_SYM1702
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
-Lfde77_end:
+Lfde136_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24432,51 +31469,51 @@ Lfde77_end:
 
 	.byte 13,87
 	.quad System_Xml_Linq_XHashtable_1_TValue_REF_TryGetValue_string_int_int_TValue_REF_
-	.quad Lme_4e
+	.quad Lme_89
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1413=LTDIE_124_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1413
+LDIFF_SYM1703=LTDIE_130_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1703
 	.byte 2,141,16,3
 	.asciz "key"
 
-LDIFF_SYM1414=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1414
+LDIFF_SYM1704=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1704
 	.byte 2,141,24,3
 	.asciz "index"
 
-LDIFF_SYM1415=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1415
+LDIFF_SYM1705=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1705
 	.byte 2,141,32,3
 	.asciz "count"
 
-LDIFF_SYM1416=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1416
+LDIFF_SYM1706=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1706
 	.byte 2,141,40,3
 	.asciz "value"
 
-LDIFF_SYM1417=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1417
+LDIFF_SYM1707=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1707
 	.byte 2,141,48,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1418=Lfde78_end - Lfde78_start
-	.long LDIFF_SYM1418
-Lfde78_start:
+LDIFF_SYM1708=Lfde137_end - Lfde137_start
+	.long LDIFF_SYM1708
+Lfde137_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XHashtable_1_TValue_REF_TryGetValue_string_int_int_TValue_REF_
 
-LDIFF_SYM1419=Lme_4e - System_Xml_Linq_XHashtable_1_TValue_REF_TryGetValue_string_int_int_TValue_REF_
-	.long LDIFF_SYM1419
+LDIFF_SYM1709=Lme_89 - System_Xml_Linq_XHashtable_1_TValue_REF_TryGetValue_string_int_int_TValue_REF_
+	.long LDIFF_SYM1709
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
-Lfde78_end:
+Lfde137_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24486,165 +31523,165 @@ Lfde78_end:
 
 	.byte 13,102
 	.quad System_Xml_Linq_XHashtable_1_TValue_REF_Add_TValue_REF
-	.quad Lme_4f
+	.quad Lme_8a
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1420=LTDIE_124_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1420
+LDIFF_SYM1710=LTDIE_130_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1710
 	.byte 2,141,40,3
 	.asciz "value"
 
-LDIFF_SYM1421=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1421
+LDIFF_SYM1711=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1711
 	.byte 1,106,11
 	.asciz "newValue"
 
-LDIFF_SYM1422=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1422
+LDIFF_SYM1712=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1712
 	.byte 2,141,48,11
 	.asciz "V_1"
 
-LDIFF_SYM1423=LTDIE_124_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1423
+LDIFF_SYM1713=LTDIE_130_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1713
 	.byte 2,141,56,11
 	.asciz "V_2"
 
-LDIFF_SYM1424=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1424
+LDIFF_SYM1714=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1714
 	.byte 3,141,192,0,11
 	.asciz "newState"
 
-LDIFF_SYM1425=LTDIE_125_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1425
+LDIFF_SYM1715=LTDIE_131_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1715
 	.byte 1,105,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1426=Lfde79_end - Lfde79_start
-	.long LDIFF_SYM1426
-Lfde79_start:
+LDIFF_SYM1716=Lfde138_end - Lfde138_start
+	.long LDIFF_SYM1716
+Lfde138_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XHashtable_1_TValue_REF_Add_TValue_REF
 
-LDIFF_SYM1427=Lme_4f - System_Xml_Linq_XHashtable_1_TValue_REF_Add_TValue_REF
-	.long LDIFF_SYM1427
+LDIFF_SYM1717=Lme_8a - System_Xml_Linq_XHashtable_1_TValue_REF_Add_TValue_REF
+	.long LDIFF_SYM1717
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10,153,9,68,154,8
 	.align 3
-Lfde79_end:
+Lfde138_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_128:
+LTDIE_134:
 
 	.byte 5
 	.asciz "_ExtractKeyDelegate"
 
 	.byte 128,1,16
-LDIFF_SYM1428=LTDIE_15 - Ldebug_info_start
-	.long LDIFF_SYM1428
+LDIFF_SYM1718=LTDIE_15 - Ldebug_info_start
+	.long LDIFF_SYM1718
 	.byte 2,35,0,0,7
 	.asciz "_ExtractKeyDelegate"
 
-LDIFF_SYM1429=LTDIE_128 - Ldebug_info_start
-	.long LDIFF_SYM1429
-LTDIE_128_POINTER:
+LDIFF_SYM1719=LTDIE_134 - Ldebug_info_start
+	.long LDIFF_SYM1719
+LTDIE_134_POINTER:
 
 	.byte 13
-LDIFF_SYM1430=LTDIE_128 - Ldebug_info_start
-	.long LDIFF_SYM1430
-LTDIE_128_REFERENCE:
+LDIFF_SYM1720=LTDIE_134 - Ldebug_info_start
+	.long LDIFF_SYM1720
+LTDIE_134_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1431=LTDIE_128 - Ldebug_info_start
-	.long LDIFF_SYM1431
-LTDIE_127:
+LDIFF_SYM1721=LTDIE_134 - Ldebug_info_start
+	.long LDIFF_SYM1721
+LTDIE_133:
 
 	.byte 5
 	.asciz "_XHashtableState"
 
 	.byte 48,16
-LDIFF_SYM1432=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1432
+LDIFF_SYM1722=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1722
 	.byte 2,35,0,6
 	.asciz "_buckets"
 
-LDIFF_SYM1433=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1433
+LDIFF_SYM1723=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1723
 	.byte 2,35,16,6
 	.asciz "_entries"
 
-LDIFF_SYM1434=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1434
+LDIFF_SYM1724=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1724
 	.byte 2,35,24,6
 	.asciz "_numEntries"
 
-LDIFF_SYM1435=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1435
+LDIFF_SYM1725=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1725
 	.byte 2,35,40,6
 	.asciz "_extractKey"
 
-LDIFF_SYM1436=LTDIE_128_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1436
+LDIFF_SYM1726=LTDIE_134_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1726
 	.byte 2,35,32,0,7
 	.asciz "_XHashtableState"
 
-LDIFF_SYM1437=LTDIE_127 - Ldebug_info_start
-	.long LDIFF_SYM1437
-LTDIE_127_POINTER:
+LDIFF_SYM1727=LTDIE_133 - Ldebug_info_start
+	.long LDIFF_SYM1727
+LTDIE_133_POINTER:
 
 	.byte 13
-LDIFF_SYM1438=LTDIE_127 - Ldebug_info_start
-	.long LDIFF_SYM1438
-LTDIE_127_REFERENCE:
+LDIFF_SYM1728=LTDIE_133 - Ldebug_info_start
+	.long LDIFF_SYM1728
+LTDIE_133_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1439=LTDIE_127 - Ldebug_info_start
-	.long LDIFF_SYM1439
+LDIFF_SYM1729=LTDIE_133 - Ldebug_info_start
+	.long LDIFF_SYM1729
 	.byte 2
 	.asciz "System.Xml.Linq.XHashtable`1/XHashtableState<TValue_REF>:.ctor"
 	.asciz "System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_REF_int"
 
 	.byte 13,146,1
 	.quad System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_REF_int
-	.quad Lme_54
+	.quad Lme_8f
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1440=LTDIE_127_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1440
+LDIFF_SYM1730=LTDIE_133_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1730
 	.byte 2,141,16,3
 	.asciz "extractKey"
 
-LDIFF_SYM1441=LTDIE_128_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1441
+LDIFF_SYM1731=LTDIE_134_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1731
 	.byte 2,141,24,3
 	.asciz "capacity"
 
-LDIFF_SYM1442=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1442
+LDIFF_SYM1732=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1732
 	.byte 2,141,32,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1443=Lfde80_end - Lfde80_start
-	.long LDIFF_SYM1443
-Lfde80_start:
+LDIFF_SYM1733=Lfde139_end - Lfde139_start
+	.long LDIFF_SYM1733
+Lfde139_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_REF_int
 
-LDIFF_SYM1444=Lme_54 - System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_REF_int
-	.long LDIFF_SYM1444
+LDIFF_SYM1734=Lme_8f - System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_REF_int
+	.long LDIFF_SYM1734
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
-Lfde80_end:
+Lfde139_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24654,66 +31691,66 @@ Lfde80_end:
 
 	.byte 13,166,1
 	.quad System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_Resize
-	.quad Lme_55
+	.quad Lme_90
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1445=LTDIE_127_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1445
+LDIFF_SYM1735=LTDIE_133_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1735
 	.byte 2,141,40,11
 	.asciz "newSize"
 
-LDIFF_SYM1446=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1446
+LDIFF_SYM1736=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1736
 	.byte 1,106,11
 	.asciz "newHashtable"
 
-LDIFF_SYM1447=LTDIE_127_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1447
+LDIFF_SYM1737=LTDIE_133_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1737
 	.byte 1,106,11
 	.asciz "bucketIdx"
 
-LDIFF_SYM1448=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1448
+LDIFF_SYM1738=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1738
 	.byte 1,105,11
 	.asciz "entryIdx"
 
-LDIFF_SYM1449=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1449
+LDIFF_SYM1739=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1739
 	.byte 1,104,11
 	.asciz "bucketIdx"
 
-LDIFF_SYM1450=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1450
+LDIFF_SYM1740=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1740
 	.byte 1,105,11
 	.asciz "entryIdx"
 
-LDIFF_SYM1451=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1451
+LDIFF_SYM1741=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1741
 	.byte 1,104,11
 	.asciz "newValue"
 
-LDIFF_SYM1452=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1452
+LDIFF_SYM1742=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1742
 	.byte 2,141,48,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1453=Lfde81_end - Lfde81_start
-	.long LDIFF_SYM1453
-Lfde81_start:
+LDIFF_SYM1743=Lfde140_end - Lfde140_start
+	.long LDIFF_SYM1743
+Lfde140_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_Resize
 
-LDIFF_SYM1454=Lme_55 - System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_Resize
-	.long LDIFF_SYM1454
+LDIFF_SYM1744=Lme_90 - System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_Resize
+	.long LDIFF_SYM1744
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153,7,68,154,6
 	.align 3
-Lfde81_end:
+Lfde140_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24723,61 +31760,61 @@ Lfde81_end:
 
 	.byte 13,246,1
 	.quad System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_TryGetValue_string_int_int_TValue_REF_
-	.quad Lme_56
+	.quad Lme_91
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1455=LTDIE_127_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1455
+LDIFF_SYM1745=LTDIE_133_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1745
 	.byte 2,141,16,3
 	.asciz "key"
 
-LDIFF_SYM1456=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1456
+LDIFF_SYM1746=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1746
 	.byte 2,141,24,3
 	.asciz "index"
 
-LDIFF_SYM1457=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1457
+LDIFF_SYM1747=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1747
 	.byte 2,141,32,3
 	.asciz "count"
 
-LDIFF_SYM1458=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1458
+LDIFF_SYM1748=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1748
 	.byte 2,141,40,3
 	.asciz "value"
 
-LDIFF_SYM1459=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1459
+LDIFF_SYM1749=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1749
 	.byte 2,141,48,11
 	.asciz "hashCode"
 
-LDIFF_SYM1460=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1460
+LDIFF_SYM1750=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1750
 	.byte 0,11
 	.asciz "entryIndex"
 
-LDIFF_SYM1461=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1461
+LDIFF_SYM1751=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1751
 	.byte 2,141,56,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1462=Lfde82_end - Lfde82_start
-	.long LDIFF_SYM1462
-Lfde82_start:
+LDIFF_SYM1752=Lfde141_end - Lfde141_start
+	.long LDIFF_SYM1752
+Lfde141_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_TryGetValue_string_int_int_TValue_REF_
 
-LDIFF_SYM1463=Lme_56 - System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_TryGetValue_string_int_int_TValue_REF_
-	.long LDIFF_SYM1463
+LDIFF_SYM1753=Lme_91 - System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_TryGetValue_string_int_int_TValue_REF_
+	.long LDIFF_SYM1753
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
-Lfde82_end:
+Lfde141_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24787,61 +31824,61 @@ Lfde82_end:
 
 	.byte 13,146,2
 	.quad System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_TryAdd_TValue_REF_TValue_REF_
-	.quad Lme_57
+	.quad Lme_92
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1464=LTDIE_127_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1464
+LDIFF_SYM1754=LTDIE_133_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1754
 	.byte 2,141,56,3
 	.asciz "value"
 
-LDIFF_SYM1465=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1465
+LDIFF_SYM1755=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1755
 	.byte 1,105,3
 	.asciz "newValue"
 
-LDIFF_SYM1466=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1466
+LDIFF_SYM1756=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1756
 	.byte 1,106,11
 	.asciz "newEntry"
 
-LDIFF_SYM1467=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1467
+LDIFF_SYM1757=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1757
 	.byte 1,102,11
 	.asciz "entryIndex"
 
-LDIFF_SYM1468=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1468
+LDIFF_SYM1758=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1758
 	.byte 3,141,192,0,11
 	.asciz "key"
 
-LDIFF_SYM1469=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1469
+LDIFF_SYM1759=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1759
 	.byte 1,104,11
 	.asciz "hashCode"
 
-LDIFF_SYM1470=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1470
+LDIFF_SYM1760=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1760
 	.byte 1,103,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1471=Lfde83_end - Lfde83_start
-	.long LDIFF_SYM1471
-Lfde83_start:
+LDIFF_SYM1761=Lfde142_end - Lfde142_start
+	.long LDIFF_SYM1761
+Lfde142_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_TryAdd_TValue_REF_TValue_REF_
 
-LDIFF_SYM1472=Lme_57 - System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_TryAdd_TValue_REF_TValue_REF_
-	.long LDIFF_SYM1472
+LDIFF_SYM1762=Lme_92 - System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_TryAdd_TValue_REF_TValue_REF_
+	.long LDIFF_SYM1762
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,150,10,151,9,68,152,8,153,7,68,154,6
 	.align 3
-Lfde83_end:
+Lfde142_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24851,71 +31888,71 @@ Lfde83_end:
 
 	.byte 13,208,2
 	.quad System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_FindEntry_int_string_int_int_int_
-	.quad Lme_58
+	.quad Lme_93
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1473=LTDIE_127_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1473
+LDIFF_SYM1763=LTDIE_133_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1763
 	.byte 3,141,200,0,3
 	.asciz "hashCode"
 
-LDIFF_SYM1474=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1474
+LDIFF_SYM1764=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1764
 	.byte 1,102,3
 	.asciz "key"
 
-LDIFF_SYM1475=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1475
+LDIFF_SYM1765=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1765
 	.byte 1,103,3
 	.asciz "index"
 
-LDIFF_SYM1476=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1476
+LDIFF_SYM1766=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1766
 	.byte 1,104,3
 	.asciz "count"
 
-LDIFF_SYM1477=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1477
+LDIFF_SYM1767=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1767
 	.byte 1,105,3
 	.asciz "entryIndex"
 
-LDIFF_SYM1478=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1478
+LDIFF_SYM1768=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1768
 	.byte 3,141,208,0,11
 	.asciz "previousIndex"
 
-LDIFF_SYM1479=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1479
+LDIFF_SYM1769=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1769
 	.byte 1,101,11
 	.asciz "currentIndex"
 
-LDIFF_SYM1480=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1480
+LDIFF_SYM1770=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1770
 	.byte 1,100,11
 	.asciz "keyCompare"
 
-LDIFF_SYM1481=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1481
+LDIFF_SYM1771=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1771
 	.byte 1,99,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1482=Lfde84_end - Lfde84_start
-	.long LDIFF_SYM1482
-Lfde84_start:
+LDIFF_SYM1772=Lfde143_end - Lfde143_start
+	.long LDIFF_SYM1772
+Lfde143_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_FindEntry_int_string_int_int_int_
 
-LDIFF_SYM1483=Lme_58 - System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_FindEntry_int_string_int_int_int_
-	.long LDIFF_SYM1483
+LDIFF_SYM1773=Lme_93 - System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_FindEntry_int_string_int_int_int_
+	.long LDIFF_SYM1773
 	.long 0
 	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
 	.align 3
-Lfde84_end:
+Lfde143_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24925,198 +31962,198 @@ Lfde84_end:
 
 	.byte 13,144,3
 	.quad System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_ComputeHashCode_string_int_int
-	.quad Lme_59
+	.quad Lme_94
 
 	.byte 2,118,16,3
 	.asciz "key"
 
-LDIFF_SYM1484=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1484
+LDIFF_SYM1774=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1774
 	.byte 1,104,3
 	.asciz "index"
 
-LDIFF_SYM1485=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1485
+LDIFF_SYM1775=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1775
 	.byte 2,141,48,3
 	.asciz "count"
 
-LDIFF_SYM1486=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1486
+LDIFF_SYM1776=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1776
 	.byte 1,106,11
 	.asciz "hashCode"
 
-LDIFF_SYM1487=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1487
+LDIFF_SYM1777=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1777
 	.byte 1,103,11
 	.asciz "end"
 
-LDIFF_SYM1488=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1488
+LDIFF_SYM1778=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1778
 	.byte 1,102,11
 	.asciz "i"
 
-LDIFF_SYM1489=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1489
+LDIFF_SYM1779=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1779
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1490=Lfde85_end - Lfde85_start
-	.long LDIFF_SYM1490
-Lfde85_start:
+LDIFF_SYM1780=Lfde144_end - Lfde144_start
+	.long LDIFF_SYM1780
+Lfde144_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_ComputeHashCode_string_int_int
 
-LDIFF_SYM1491=Lme_59 - System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_ComputeHashCode_string_int_int
-	.long LDIFF_SYM1491
+LDIFF_SYM1781=Lme_94 - System_Xml_Linq_XHashtable_1_XHashtableState_TValue_REF_ComputeHashCode_string_int_int
+	.long LDIFF_SYM1781
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,68,154,3
 	.align 3
-Lfde85_end:
+Lfde144_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_129:
+LTDIE_135:
 
 	.byte 5
 	.asciz "System_Xml_Linq_NamespaceCache"
 
 	.byte 32,16
-LDIFF_SYM1492=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM1492
+LDIFF_SYM1782=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM1782
 	.byte 2,35,0,6
 	.asciz "_ns"
 
-LDIFF_SYM1493=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1493
+LDIFF_SYM1783=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1783
 	.byte 2,35,0,6
 	.asciz "_namespaceName"
 
-LDIFF_SYM1494=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1494
+LDIFF_SYM1784=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1784
 	.byte 2,35,8,0,7
 	.asciz "System_Xml_Linq_NamespaceCache"
 
-LDIFF_SYM1495=LTDIE_129 - Ldebug_info_start
-	.long LDIFF_SYM1495
-LTDIE_129_POINTER:
+LDIFF_SYM1785=LTDIE_135 - Ldebug_info_start
+	.long LDIFF_SYM1785
+LTDIE_135_POINTER:
 
 	.byte 13
-LDIFF_SYM1496=LTDIE_129 - Ldebug_info_start
-	.long LDIFF_SYM1496
-LTDIE_129_REFERENCE:
+LDIFF_SYM1786=LTDIE_135 - Ldebug_info_start
+	.long LDIFF_SYM1786
+LTDIE_135_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1497=LTDIE_129 - Ldebug_info_start
-	.long LDIFF_SYM1497
+LDIFF_SYM1787=LTDIE_135 - Ldebug_info_start
+	.long LDIFF_SYM1787
 	.byte 2
 	.asciz "System.Xml.Linq.NamespaceCache:Get"
 	.asciz "System_Xml_Linq_NamespaceCache_Get_string"
 
 	.byte 14,189,1
 	.quad System_Xml_Linq_NamespaceCache_Get_string
-	.quad Lme_5a
+	.quad Lme_95
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1498=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1498
+LDIFF_SYM1788=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1788
 	.byte 1,105,3
 	.asciz "namespaceName"
 
-LDIFF_SYM1499=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1499
+LDIFF_SYM1789=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1789
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1500=Lfde86_end - Lfde86_start
-	.long LDIFF_SYM1500
-Lfde86_start:
+LDIFF_SYM1790=Lfde145_end - Lfde145_start
+	.long LDIFF_SYM1790
+Lfde145_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_NamespaceCache_Get_string
 
-LDIFF_SYM1501=Lme_5a - System_Xml_Linq_NamespaceCache_Get_string
-	.long LDIFF_SYM1501
+LDIFF_SYM1791=Lme_95 - System_Xml_Linq_NamespaceCache_Get_string
+	.long LDIFF_SYM1791
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
 	.align 3
-Lfde86_end:
+Lfde145_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_130:
+LTDIE_136:
 
 	.byte 5
 	.asciz "System_Xml_Linq_ElementWriter"
 
 	.byte 48,16
-LDIFF_SYM1502=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM1502
+LDIFF_SYM1792=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM1792
 	.byte 2,35,0,6
 	.asciz "_writer"
 
-LDIFF_SYM1503=LTDIE_41_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1503
+LDIFF_SYM1793=LTDIE_41_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1793
 	.byte 2,35,0,6
 	.asciz "_resolver"
 
-LDIFF_SYM1504=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1504
+LDIFF_SYM1794=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1794
 	.byte 2,35,8,0,7
 	.asciz "System_Xml_Linq_ElementWriter"
 
-LDIFF_SYM1505=LTDIE_130 - Ldebug_info_start
-	.long LDIFF_SYM1505
-LTDIE_130_POINTER:
+LDIFF_SYM1795=LTDIE_136 - Ldebug_info_start
+	.long LDIFF_SYM1795
+LTDIE_136_POINTER:
 
 	.byte 13
-LDIFF_SYM1506=LTDIE_130 - Ldebug_info_start
-	.long LDIFF_SYM1506
-LTDIE_130_REFERENCE:
+LDIFF_SYM1796=LTDIE_136 - Ldebug_info_start
+	.long LDIFF_SYM1796
+LTDIE_136_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1507=LTDIE_130 - Ldebug_info_start
-	.long LDIFF_SYM1507
+LDIFF_SYM1797=LTDIE_136 - Ldebug_info_start
+	.long LDIFF_SYM1797
 	.byte 2
 	.asciz "System.Xml.Linq.ElementWriter:.ctor"
 	.asciz "System_Xml_Linq_ElementWriter__ctor_System_Xml_XmlWriter"
 
 	.byte 14,203,1
 	.quad System_Xml_Linq_ElementWriter__ctor_System_Xml_XmlWriter
-	.quad Lme_5b
+	.quad Lme_96
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1508=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1508
+LDIFF_SYM1798=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1798
 	.byte 1,105,3
 	.asciz "writer"
 
-LDIFF_SYM1509=LTDIE_41_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1509
+LDIFF_SYM1799=LTDIE_41_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1799
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1510=Lfde87_end - Lfde87_start
-	.long LDIFF_SYM1510
-Lfde87_start:
+LDIFF_SYM1800=Lfde146_end - Lfde146_start
+	.long LDIFF_SYM1800
+Lfde146_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_ElementWriter__ctor_System_Xml_XmlWriter
 
-LDIFF_SYM1511=Lme_5b - System_Xml_Linq_ElementWriter__ctor_System_Xml_XmlWriter
-	.long LDIFF_SYM1511
+LDIFF_SYM1801=Lme_96 - System_Xml_Linq_ElementWriter__ctor_System_Xml_XmlWriter
+	.long LDIFF_SYM1801
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
 	.align 3
-Lfde87_end:
+Lfde146_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25126,51 +32163,51 @@ Lfde87_end:
 
 	.byte 14,209,1
 	.quad System_Xml_Linq_ElementWriter_WriteElement_System_Xml_Linq_XElement
-	.quad Lme_5c
+	.quad Lme_97
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1512=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1512
+LDIFF_SYM1802=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1802
 	.byte 1,105,3
 	.asciz "e"
 
-LDIFF_SYM1513=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1513
+LDIFF_SYM1803=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1803
 	.byte 1,106,11
 	.asciz "root"
 
-LDIFF_SYM1514=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1514
+LDIFF_SYM1804=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1804
 	.byte 1,104,11
 	.asciz "n"
 
-LDIFF_SYM1515=LTDIE_9_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1515
+LDIFF_SYM1805=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1805
 	.byte 1,103,11
 	.asciz "s"
 
-LDIFF_SYM1516=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1516
+LDIFF_SYM1806=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1806
 	.byte 1,102,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1517=Lfde88_end - Lfde88_start
-	.long LDIFF_SYM1517
-Lfde88_start:
+LDIFF_SYM1807=Lfde147_end - Lfde147_start
+	.long LDIFF_SYM1807
+Lfde147_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_ElementWriter_WriteElement_System_Xml_Linq_XElement
 
-LDIFF_SYM1518=Lme_5c - System_Xml_Linq_ElementWriter_WriteElement_System_Xml_Linq_XElement
-	.long LDIFF_SYM1518
+LDIFF_SYM1808=Lme_97 - System_Xml_Linq_ElementWriter_WriteElement_System_Xml_Linq_XElement
+	.long LDIFF_SYM1808
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,149,6,150,5,68,151,4,152,3,68,153,2,154,1
 	.align 3
-Lfde88_end:
+Lfde147_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25180,51 +32217,51 @@ Lfde88_end:
 
 	.byte 14,170,2
 	.quad System_Xml_Linq_ElementWriter_GetPrefixOfNamespace_System_Xml_Linq_XNamespace_bool
-	.quad Lme_5d
+	.quad Lme_98
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1519=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1519
+LDIFF_SYM1809=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1809
 	.byte 2,141,40,3
 	.asciz "ns"
 
-LDIFF_SYM1520=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1520
+LDIFF_SYM1810=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1810
 	.byte 1,105,3
 	.asciz "allowDefaultNamespace"
 
-LDIFF_SYM1521=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1521
+LDIFF_SYM1811=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1811
 	.byte 1,106,11
 	.asciz "namespaceName"
 
-LDIFF_SYM1522=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1522
+LDIFF_SYM1812=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1812
 	.byte 1,103,11
 	.asciz "prefix"
 
-LDIFF_SYM1523=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1523
+LDIFF_SYM1813=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1813
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1524=Lfde89_end - Lfde89_start
-	.long LDIFF_SYM1524
-Lfde89_start:
+LDIFF_SYM1814=Lfde148_end - Lfde148_start
+	.long LDIFF_SYM1814
+Lfde148_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_ElementWriter_GetPrefixOfNamespace_System_Xml_Linq_XNamespace_bool
 
-LDIFF_SYM1525=Lme_5d - System_Xml_Linq_ElementWriter_GetPrefixOfNamespace_System_Xml_Linq_XNamespace_bool
-	.long LDIFF_SYM1525
+LDIFF_SYM1815=Lme_98 - System_Xml_Linq_ElementWriter_GetPrefixOfNamespace_System_Xml_Linq_XNamespace_bool
+	.long LDIFF_SYM1815
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,68,153,3,154,2
 	.align 3
-Lfde89_end:
+Lfde148_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25234,41 +32271,41 @@ Lfde89_end:
 
 	.byte 14,183,2
 	.quad System_Xml_Linq_ElementWriter_PushAncestors_System_Xml_Linq_XElement
-	.quad Lme_5e
+	.quad Lme_99
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1526=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1526
+LDIFF_SYM1816=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1816
 	.byte 1,105,3
 	.asciz "e"
 
-LDIFF_SYM1527=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1527
+LDIFF_SYM1817=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1817
 	.byte 1,106,11
 	.asciz "a"
 
-LDIFF_SYM1528=LTDIE_6_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1528
+LDIFF_SYM1818=LTDIE_6_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1818
 	.byte 1,104,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1529=Lfde90_end - Lfde90_start
-	.long LDIFF_SYM1529
-Lfde90_start:
+LDIFF_SYM1819=Lfde149_end - Lfde149_start
+	.long LDIFF_SYM1819
+Lfde149_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_ElementWriter_PushAncestors_System_Xml_Linq_XElement
 
-LDIFF_SYM1530=Lme_5e - System_Xml_Linq_ElementWriter_PushAncestors_System_Xml_Linq_XElement
-	.long LDIFF_SYM1530
+LDIFF_SYM1820=Lme_99 - System_Xml_Linq_ElementWriter_PushAncestors_System_Xml_Linq_XElement
+	.long LDIFF_SYM1820
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,153,3,68,154,2
 	.align 3
-Lfde90_end:
+Lfde149_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25278,41 +32315,41 @@ Lfde90_end:
 
 	.byte 14,202,2
 	.quad System_Xml_Linq_ElementWriter_PushElement_System_Xml_Linq_XElement
-	.quad Lme_5f
+	.quad Lme_9a
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1531=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1531
+LDIFF_SYM1821=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1821
 	.byte 1,105,3
 	.asciz "e"
 
-LDIFF_SYM1532=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1532
+LDIFF_SYM1822=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1822
 	.byte 1,106,11
 	.asciz "a"
 
-LDIFF_SYM1533=LTDIE_6_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1533
+LDIFF_SYM1823=LTDIE_6_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1823
 	.byte 1,104,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1534=Lfde91_end - Lfde91_start
-	.long LDIFF_SYM1534
-Lfde91_start:
+LDIFF_SYM1824=Lfde150_end - Lfde150_start
+	.long LDIFF_SYM1824
+Lfde150_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_ElementWriter_PushElement_System_Xml_Linq_XElement
 
-LDIFF_SYM1535=Lme_5f - System_Xml_Linq_ElementWriter_PushElement_System_Xml_Linq_XElement
-	.long LDIFF_SYM1535
+LDIFF_SYM1825=Lme_9a - System_Xml_Linq_ElementWriter_PushElement_System_Xml_Linq_XElement
+	.long LDIFF_SYM1825
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,153,3,68,154,2
 	.align 3
-Lfde91_end:
+Lfde150_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25322,31 +32359,31 @@ Lfde91_end:
 
 	.byte 14,219,2
 	.quad System_Xml_Linq_ElementWriter_WriteEndElement
-	.quad Lme_60
+	.quad Lme_9b
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1536=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1536
+LDIFF_SYM1826=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1826
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1537=Lfde92_end - Lfde92_start
-	.long LDIFF_SYM1537
-Lfde92_start:
+LDIFF_SYM1827=Lfde151_end - Lfde151_start
+	.long LDIFF_SYM1827
+Lfde151_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_ElementWriter_WriteEndElement
 
-LDIFF_SYM1538=Lme_60 - System_Xml_Linq_ElementWriter_WriteEndElement
-	.long LDIFF_SYM1538
+LDIFF_SYM1828=Lme_9b - System_Xml_Linq_ElementWriter_WriteEndElement
+	.long LDIFF_SYM1828
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde92_end:
+Lfde151_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25356,31 +32393,31 @@ Lfde92_end:
 
 	.byte 14,232,2
 	.quad System_Xml_Linq_ElementWriter_WriteFullEndElement
-	.quad Lme_61
+	.quad Lme_9c
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1539=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1539
+LDIFF_SYM1829=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1829
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1540=Lfde93_end - Lfde93_start
-	.long LDIFF_SYM1540
-Lfde93_start:
+LDIFF_SYM1830=Lfde152_end - Lfde152_start
+	.long LDIFF_SYM1830
+Lfde152_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_ElementWriter_WriteFullEndElement
 
-LDIFF_SYM1541=Lme_61 - System_Xml_Linq_ElementWriter_WriteFullEndElement
-	.long LDIFF_SYM1541
+LDIFF_SYM1831=Lme_9c - System_Xml_Linq_ElementWriter_WriteFullEndElement
+	.long LDIFF_SYM1831
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde93_end:
+Lfde152_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25390,171 +32427,171 @@ Lfde93_end:
 
 	.byte 14,245,2
 	.quad System_Xml_Linq_ElementWriter_WriteStartElement_System_Xml_Linq_XElement
-	.quad Lme_62
+	.quad Lme_9d
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1542=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1542
+LDIFF_SYM1832=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1832
 	.byte 1,105,3
 	.asciz "e"
 
-LDIFF_SYM1543=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1543
+LDIFF_SYM1833=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1833
 	.byte 1,106,11
 	.asciz "ns"
 
-LDIFF_SYM1544=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1544
+LDIFF_SYM1834=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1834
 	.byte 1,104,11
 	.asciz "a"
 
-LDIFF_SYM1545=LTDIE_6_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1545
+LDIFF_SYM1835=LTDIE_6_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1835
 	.byte 1,103,11
 	.asciz "localName"
 
-LDIFF_SYM1546=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1546
+LDIFF_SYM1836=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1836
 	.byte 1,102,11
 	.asciz "namespaceName"
 
-LDIFF_SYM1547=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1547
+LDIFF_SYM1837=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1837
 	.byte 1,101,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1548=Lfde94_end - Lfde94_start
-	.long LDIFF_SYM1548
-Lfde94_start:
+LDIFF_SYM1838=Lfde153_end - Lfde153_start
+	.long LDIFF_SYM1838
+Lfde153_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_ElementWriter_WriteStartElement_System_Xml_Linq_XElement
 
-LDIFF_SYM1549=Lme_62 - System_Xml_Linq_ElementWriter_WriteStartElement_System_Xml_Linq_XElement
-	.long LDIFF_SYM1549
+LDIFF_SYM1839=Lme_9d - System_Xml_Linq_ElementWriter_WriteStartElement_System_Xml_Linq_XElement
+	.long LDIFF_SYM1839
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,147,10,148,9,68,149,8,150,7,68,151,6,152,5,68,153,4,154
 	.byte 3
 	.align 3
-Lfde94_end:
+Lfde153_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_132:
+LTDIE_138:
 
 	.byte 5
 	.asciz "_NamespaceDeclaration"
 
 	.byte 48,16
-LDIFF_SYM1550=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1550
+LDIFF_SYM1840=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1840
 	.byte 2,35,0,6
 	.asciz "prefix"
 
-LDIFF_SYM1551=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1551
+LDIFF_SYM1841=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1841
 	.byte 2,35,16,6
 	.asciz "ns"
 
-LDIFF_SYM1552=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1552
+LDIFF_SYM1842=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1842
 	.byte 2,35,24,6
 	.asciz "scope"
 
-LDIFF_SYM1553=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1553
+LDIFF_SYM1843=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1843
 	.byte 2,35,40,6
 	.asciz "prev"
 
-LDIFF_SYM1554=LTDIE_132_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1554
+LDIFF_SYM1844=LTDIE_138_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1844
 	.byte 2,35,32,0,7
 	.asciz "_NamespaceDeclaration"
 
-LDIFF_SYM1555=LTDIE_132 - Ldebug_info_start
-	.long LDIFF_SYM1555
-LTDIE_132_POINTER:
+LDIFF_SYM1845=LTDIE_138 - Ldebug_info_start
+	.long LDIFF_SYM1845
+LTDIE_138_POINTER:
 
 	.byte 13
-LDIFF_SYM1556=LTDIE_132 - Ldebug_info_start
-	.long LDIFF_SYM1556
-LTDIE_132_REFERENCE:
+LDIFF_SYM1846=LTDIE_138 - Ldebug_info_start
+	.long LDIFF_SYM1846
+LTDIE_138_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1557=LTDIE_132 - Ldebug_info_start
-	.long LDIFF_SYM1557
-LTDIE_131:
+LDIFF_SYM1847=LTDIE_138 - Ldebug_info_start
+	.long LDIFF_SYM1847
+LTDIE_137:
 
 	.byte 5
 	.asciz "System_Xml_Linq_NamespaceResolver"
 
 	.byte 40,16
-LDIFF_SYM1558=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM1558
+LDIFF_SYM1848=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM1848
 	.byte 2,35,0,6
 	.asciz "_scope"
 
-LDIFF_SYM1559=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1559
+LDIFF_SYM1849=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1849
 	.byte 2,35,0,6
 	.asciz "_declaration"
 
-LDIFF_SYM1560=LTDIE_132_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1560
+LDIFF_SYM1850=LTDIE_138_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1850
 	.byte 2,35,8,6
 	.asciz "_rover"
 
-LDIFF_SYM1561=LTDIE_132_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1561
+LDIFF_SYM1851=LTDIE_138_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1851
 	.byte 2,35,16,0,7
 	.asciz "System_Xml_Linq_NamespaceResolver"
 
-LDIFF_SYM1562=LTDIE_131 - Ldebug_info_start
-	.long LDIFF_SYM1562
-LTDIE_131_POINTER:
+LDIFF_SYM1852=LTDIE_137 - Ldebug_info_start
+	.long LDIFF_SYM1852
+LTDIE_137_POINTER:
 
 	.byte 13
-LDIFF_SYM1563=LTDIE_131 - Ldebug_info_start
-	.long LDIFF_SYM1563
-LTDIE_131_REFERENCE:
+LDIFF_SYM1853=LTDIE_137 - Ldebug_info_start
+	.long LDIFF_SYM1853
+LTDIE_137_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1564=LTDIE_131 - Ldebug_info_start
-	.long LDIFF_SYM1564
+LDIFF_SYM1854=LTDIE_137 - Ldebug_info_start
+	.long LDIFF_SYM1854
 	.byte 2
 	.asciz "System.Xml.Linq.NamespaceResolver:PushScope"
 	.asciz "System_Xml_Linq_NamespaceResolver_PushScope"
 
 	.byte 14,170,3
 	.quad System_Xml_Linq_NamespaceResolver_PushScope
-	.quad Lme_63
+	.quad Lme_9e
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1565=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1565
+LDIFF_SYM1855=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1855
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1566=Lfde95_end - Lfde95_start
-	.long LDIFF_SYM1566
-Lfde95_start:
+LDIFF_SYM1856=Lfde154_end - Lfde154_start
+	.long LDIFF_SYM1856
+Lfde154_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_NamespaceResolver_PushScope
 
-LDIFF_SYM1567=Lme_63 - System_Xml_Linq_NamespaceResolver_PushScope
-	.long LDIFF_SYM1567
+LDIFF_SYM1857=Lme_9e - System_Xml_Linq_NamespaceResolver_PushScope
+	.long LDIFF_SYM1857
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde95_end:
+Lfde154_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25564,36 +32601,36 @@ Lfde95_end:
 
 	.byte 14,175,3
 	.quad System_Xml_Linq_NamespaceResolver_PopScope
-	.quad Lme_64
+	.quad Lme_9f
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1568=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1568
+LDIFF_SYM1858=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1858
 	.byte 1,106,11
 	.asciz "d"
 
-LDIFF_SYM1569=LTDIE_132_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1569
+LDIFF_SYM1859=LTDIE_138_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1859
 	.byte 1,105,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1570=Lfde96_end - Lfde96_start
-	.long LDIFF_SYM1570
-Lfde96_start:
+LDIFF_SYM1860=Lfde155_end - Lfde155_start
+	.long LDIFF_SYM1860
+Lfde155_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_NamespaceResolver_PopScope
 
-LDIFF_SYM1571=Lme_64 - System_Xml_Linq_NamespaceResolver_PopScope
-	.long LDIFF_SYM1571
+LDIFF_SYM1861=Lme_9f - System_Xml_Linq_NamespaceResolver_PopScope
+	.long LDIFF_SYM1861
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
 	.align 3
-Lfde96_end:
+Lfde155_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25603,46 +32640,46 @@ Lfde96_end:
 
 	.byte 14,198,3
 	.quad System_Xml_Linq_NamespaceResolver_Add_string_System_Xml_Linq_XNamespace
-	.quad Lme_65
+	.quad Lme_a0
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1572=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1572
+LDIFF_SYM1862=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1862
 	.byte 1,104,3
 	.asciz "prefix"
 
-LDIFF_SYM1573=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1573
+LDIFF_SYM1863=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1863
 	.byte 2,141,32,3
 	.asciz "ns"
 
-LDIFF_SYM1574=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1574
+LDIFF_SYM1864=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1864
 	.byte 2,141,40,11
 	.asciz "d"
 
-LDIFF_SYM1575=LTDIE_132_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1575
+LDIFF_SYM1865=LTDIE_138_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1865
 	.byte 1,103,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1576=Lfde97_end - Lfde97_start
-	.long LDIFF_SYM1576
-Lfde97_start:
+LDIFF_SYM1866=Lfde156_end - Lfde156_start
+	.long LDIFF_SYM1866
+Lfde156_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_NamespaceResolver_Add_string_System_Xml_Linq_XNamespace
 
-LDIFF_SYM1577=Lme_65 - System_Xml_Linq_NamespaceResolver_Add_string_System_Xml_Linq_XNamespace
-	.long LDIFF_SYM1577
+LDIFF_SYM1867=Lme_a0 - System_Xml_Linq_NamespaceResolver_Add_string_System_Xml_Linq_XNamespace
+	.long LDIFF_SYM1867
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,152,3
 	.align 3
-Lfde97_end:
+Lfde156_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25652,46 +32689,46 @@ Lfde97_end:
 
 	.byte 14,216,3
 	.quad System_Xml_Linq_NamespaceResolver_AddFirst_string_System_Xml_Linq_XNamespace
-	.quad Lme_66
+	.quad Lme_a1
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1578=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1578
+LDIFF_SYM1868=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1868
 	.byte 1,104,3
 	.asciz "prefix"
 
-LDIFF_SYM1579=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1579
+LDIFF_SYM1869=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1869
 	.byte 2,141,32,3
 	.asciz "ns"
 
-LDIFF_SYM1580=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1580
+LDIFF_SYM1870=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1870
 	.byte 2,141,40,11
 	.asciz "d"
 
-LDIFF_SYM1581=LTDIE_132_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1581
+LDIFF_SYM1871=LTDIE_138_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1871
 	.byte 1,103,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1582=Lfde98_end - Lfde98_start
-	.long LDIFF_SYM1582
-Lfde98_start:
+LDIFF_SYM1872=Lfde157_end - Lfde157_start
+	.long LDIFF_SYM1872
+Lfde157_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_NamespaceResolver_AddFirst_string_System_Xml_Linq_XNamespace
 
-LDIFF_SYM1583=Lme_66 - System_Xml_Linq_NamespaceResolver_AddFirst_string_System_Xml_Linq_XNamespace
-	.long LDIFF_SYM1583
+LDIFF_SYM1873=Lme_a1 - System_Xml_Linq_NamespaceResolver_AddFirst_string_System_Xml_Linq_XNamespace
+	.long LDIFF_SYM1873
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,152,3
 	.align 3
-Lfde98_end:
+Lfde157_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25701,51 +32738,51 @@ Lfde98_end:
 
 	.byte 14,237,3
 	.quad System_Xml_Linq_NamespaceResolver_GetPrefixOfNamespace_System_Xml_Linq_XNamespace_bool
-	.quad Lme_67
+	.quad Lme_a2
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1584=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1584
+LDIFF_SYM1874=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1874
 	.byte 1,104,3
 	.asciz "ns"
 
-LDIFF_SYM1585=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1585
+LDIFF_SYM1875=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1875
 	.byte 1,105,3
 	.asciz "allowDefaultNamespace"
 
-LDIFF_SYM1586=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1586
+LDIFF_SYM1876=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1876
 	.byte 1,106,11
 	.asciz "d"
 
-LDIFF_SYM1587=LTDIE_132_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1587
+LDIFF_SYM1877=LTDIE_138_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1877
 	.byte 1,103,11
 	.asciz "x"
 
-LDIFF_SYM1588=LTDIE_132_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1588
+LDIFF_SYM1878=LTDIE_138_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1878
 	.byte 1,102,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1589=Lfde99_end - Lfde99_start
-	.long LDIFF_SYM1589
-Lfde99_start:
+LDIFF_SYM1879=Lfde158_end - Lfde158_start
+	.long LDIFF_SYM1879
+Lfde158_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_NamespaceResolver_GetPrefixOfNamespace_System_Xml_Linq_XNamespace_bool
 
-LDIFF_SYM1590=Lme_67 - System_Xml_Linq_NamespaceResolver_GetPrefixOfNamespace_System_Xml_Linq_XNamespace_bool
-	.long LDIFF_SYM1590
+LDIFF_SYM1880=Lme_a2 - System_Xml_Linq_NamespaceResolver_GetPrefixOfNamespace_System_Xml_Linq_XNamespace_bool
+	.long LDIFF_SYM1880
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,153,3,68,154,2
 	.align 3
-Lfde99_end:
+Lfde158_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25755,31 +32792,31 @@ Lfde99_end:
 
 	.byte 0,0
 	.quad System_Xml_Linq_NamespaceResolver_NamespaceDeclaration__ctor
-	.quad Lme_68
+	.quad Lme_a3
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1591=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1591
+LDIFF_SYM1881=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1881
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1592=Lfde100_end - Lfde100_start
-	.long LDIFF_SYM1592
-Lfde100_start:
+LDIFF_SYM1882=Lfde159_end - Lfde159_start
+	.long LDIFF_SYM1882
+Lfde159_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_NamespaceResolver_NamespaceDeclaration__ctor
 
-LDIFF_SYM1593=Lme_68 - System_Xml_Linq_NamespaceResolver_NamespaceDeclaration__ctor
-	.long LDIFF_SYM1593
+LDIFF_SYM1883=Lme_a3 - System_Xml_Linq_NamespaceResolver_NamespaceDeclaration__ctor
+	.long LDIFF_SYM1883
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde100_end:
+Lfde159_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25789,41 +32826,41 @@ Lfde100_end:
 
 	.byte 15,24
 	.quad System_Xml_Linq_XName__ctor_System_Xml_Linq_XNamespace_string
-	.quad Lme_69
+	.quad Lme_a4
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1594=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1594
+LDIFF_SYM1884=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1884
 	.byte 1,104,3
 	.asciz "ns"
 
-LDIFF_SYM1595=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1595
+LDIFF_SYM1885=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1885
 	.byte 1,105,3
 	.asciz "localName"
 
-LDIFF_SYM1596=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1596
+LDIFF_SYM1886=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1886
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1597=Lfde101_end - Lfde101_start
-	.long LDIFF_SYM1597
-Lfde101_start:
+LDIFF_SYM1887=Lfde160_end - Lfde160_start
+	.long LDIFF_SYM1887
+Lfde160_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XName__ctor_System_Xml_Linq_XNamespace_string
 
-LDIFF_SYM1598=Lme_69 - System_Xml_Linq_XName__ctor_System_Xml_Linq_XNamespace_string
-	.long LDIFF_SYM1598
+LDIFF_SYM1888=Lme_a4 - System_Xml_Linq_XName__ctor_System_Xml_Linq_XNamespace_string
+	.long LDIFF_SYM1888
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5,68,154,4
 	.align 3
-Lfde101_end:
+Lfde160_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25833,31 +32870,31 @@ Lfde101_end:
 
 	.byte 15,37
 	.quad System_Xml_Linq_XName_get_LocalName
-	.quad Lme_6a
+	.quad Lme_a5
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1599=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1599
+LDIFF_SYM1889=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1889
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1600=Lfde102_end - Lfde102_start
-	.long LDIFF_SYM1600
-Lfde102_start:
+LDIFF_SYM1890=Lfde161_end - Lfde161_start
+	.long LDIFF_SYM1890
+Lfde161_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XName_get_LocalName
 
-LDIFF_SYM1601=Lme_6a - System_Xml_Linq_XName_get_LocalName
-	.long LDIFF_SYM1601
+LDIFF_SYM1891=Lme_a5 - System_Xml_Linq_XName_get_LocalName
+	.long LDIFF_SYM1891
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde102_end:
+Lfde161_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25867,31 +32904,31 @@ Lfde102_end:
 
 	.byte 15,45
 	.quad System_Xml_Linq_XName_get_Namespace
-	.quad Lme_6b
+	.quad Lme_a6
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1602=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1602
+LDIFF_SYM1892=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1892
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1603=Lfde103_end - Lfde103_start
-	.long LDIFF_SYM1603
-Lfde103_start:
+LDIFF_SYM1893=Lfde162_end - Lfde162_start
+	.long LDIFF_SYM1893
+Lfde162_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XName_get_Namespace
 
-LDIFF_SYM1604=Lme_6b - System_Xml_Linq_XName_get_Namespace
-	.long LDIFF_SYM1604
+LDIFF_SYM1894=Lme_a6 - System_Xml_Linq_XName_get_Namespace
+	.long LDIFF_SYM1894
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde103_end:
+Lfde162_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25901,31 +32938,31 @@ Lfde103_end:
 
 	.byte 15,53
 	.quad System_Xml_Linq_XName_get_NamespaceName
-	.quad Lme_6c
+	.quad Lme_a7
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1605=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1605
+LDIFF_SYM1895=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1895
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1606=Lfde104_end - Lfde104_start
-	.long LDIFF_SYM1606
-Lfde104_start:
+LDIFF_SYM1896=Lfde163_end - Lfde163_start
+	.long LDIFF_SYM1896
+Lfde163_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XName_get_NamespaceName
 
-LDIFF_SYM1607=Lme_6c - System_Xml_Linq_XName_get_NamespaceName
-	.long LDIFF_SYM1607
+LDIFF_SYM1897=Lme_a7 - System_Xml_Linq_XName_get_NamespaceName
+	.long LDIFF_SYM1897
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde104_end:
+Lfde163_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25935,31 +32972,143 @@ Lfde104_end:
 
 	.byte 15,61
 	.quad System_Xml_Linq_XName_ToString
-	.quad Lme_6d
+	.quad Lme_a8
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1608=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1608
+LDIFF_SYM1898=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1898
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1609=Lfde105_end - Lfde105_start
-	.long LDIFF_SYM1609
-Lfde105_start:
+LDIFF_SYM1899=Lfde164_end - Lfde164_start
+	.long LDIFF_SYM1899
+Lfde164_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XName_ToString
 
-LDIFF_SYM1610=Lme_6d - System_Xml_Linq_XName_ToString
-	.long LDIFF_SYM1610
+LDIFF_SYM1900=Lme_a8 - System_Xml_Linq_XName_ToString
+	.long LDIFF_SYM1900
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde105_end:
+Lfde164_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XName:Get"
+	.asciz "System_Xml_Linq_XName_Get_string"
+
+	.byte 15,76
+	.quad System_Xml_Linq_XName_Get_string
+	.quad Lme_a9
+
+	.byte 2,118,16,3
+	.asciz "expandedName"
+
+LDIFF_SYM1901=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1901
+	.byte 1,106,11
+	.asciz "i"
+
+LDIFF_SYM1902=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1902
+	.byte 1,105,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1903=Lfde165_end - Lfde165_start
+	.long LDIFF_SYM1903
+Lfde165_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XName_Get_string
+
+LDIFF_SYM1904=Lme_a9 - System_Xml_Linq_XName_Get_string
+	.long LDIFF_SYM1904
+	.long 0
+	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,153,10,154,9
+	.align 3
+Lfde165_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XName:Get"
+	.asciz "System_Xml_Linq_XName_Get_string_string"
+
+	.byte 15,98
+	.quad System_Xml_Linq_XName_Get_string_string
+	.quad Lme_aa
+
+	.byte 2,118,16,3
+	.asciz "localName"
+
+LDIFF_SYM1905=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1905
+	.byte 2,141,16,3
+	.asciz "namespaceName"
+
+LDIFF_SYM1906=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1906
+	.byte 2,141,24,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1907=Lfde166_end - Lfde166_start
+	.long LDIFF_SYM1907
+Lfde166_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XName_Get_string_string
+
+LDIFF_SYM1908=Lme_aa - System_Xml_Linq_XName_Get_string_string
+	.long LDIFF_SYM1908
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde166_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XName:op_Implicit"
+	.asciz "System_Xml_Linq_XName_op_Implicit_string"
+
+	.byte 15,109
+	.quad System_Xml_Linq_XName_op_Implicit_string
+	.quad Lme_ab
+
+	.byte 2,118,16,3
+	.asciz "expandedName"
+
+LDIFF_SYM1909=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1909
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1910=Lfde167_end - Lfde167_start
+	.long LDIFF_SYM1910
+Lfde167_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XName_op_Implicit_string
+
+LDIFF_SYM1911=Lme_ab - System_Xml_Linq_XName_op_Implicit_string
+	.long LDIFF_SYM1911
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde167_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -25969,36 +33118,36 @@ Lfde105_end:
 
 	.byte 15,124
 	.quad System_Xml_Linq_XName_Equals_object
-	.quad Lme_6e
+	.quad Lme_ac
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1611=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1611
+LDIFF_SYM1912=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1912
 	.byte 2,141,16,3
 	.asciz "obj"
 
-LDIFF_SYM1612=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1612
+LDIFF_SYM1913=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1913
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1613=Lfde106_end - Lfde106_start
-	.long LDIFF_SYM1613
-Lfde106_start:
+LDIFF_SYM1914=Lfde168_end - Lfde168_start
+	.long LDIFF_SYM1914
+Lfde168_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XName_Equals_object
 
-LDIFF_SYM1614=Lme_6e - System_Xml_Linq_XName_Equals_object
-	.long LDIFF_SYM1614
+LDIFF_SYM1915=Lme_ac - System_Xml_Linq_XName_Equals_object
+	.long LDIFF_SYM1915
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde106_end:
+Lfde168_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26008,31 +33157,31 @@ Lfde106_end:
 
 	.byte 15,133,1
 	.quad System_Xml_Linq_XName_GetHashCode
-	.quad Lme_6f
+	.quad Lme_ad
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1615=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1615
+LDIFF_SYM1916=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1916
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1616=Lfde107_end - Lfde107_start
-	.long LDIFF_SYM1616
-Lfde107_start:
+LDIFF_SYM1917=Lfde169_end - Lfde169_start
+	.long LDIFF_SYM1917
+Lfde169_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XName_GetHashCode
 
-LDIFF_SYM1617=Lme_6f - System_Xml_Linq_XName_GetHashCode
-	.long LDIFF_SYM1617
+LDIFF_SYM1918=Lme_ad - System_Xml_Linq_XName_GetHashCode
+	.long LDIFF_SYM1918
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde107_end:
+Lfde169_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26042,36 +33191,36 @@ Lfde107_end:
 
 	.byte 15,154,1
 	.quad System_Xml_Linq_XName_op_Equality_System_Xml_Linq_XName_System_Xml_Linq_XName
-	.quad Lme_70
+	.quad Lme_ae
 
 	.byte 2,118,16,3
 	.asciz "left"
 
-LDIFF_SYM1618=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1618
+LDIFF_SYM1919=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1919
 	.byte 2,141,16,3
 	.asciz "right"
 
-LDIFF_SYM1619=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1619
+LDIFF_SYM1920=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1920
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1620=Lfde108_end - Lfde108_start
-	.long LDIFF_SYM1620
-Lfde108_start:
+LDIFF_SYM1921=Lfde170_end - Lfde170_start
+	.long LDIFF_SYM1921
+Lfde170_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XName_op_Equality_System_Xml_Linq_XName_System_Xml_Linq_XName
 
-LDIFF_SYM1621=Lme_70 - System_Xml_Linq_XName_op_Equality_System_Xml_Linq_XName_System_Xml_Linq_XName
-	.long LDIFF_SYM1621
+LDIFF_SYM1922=Lme_ae - System_Xml_Linq_XName_op_Equality_System_Xml_Linq_XName_System_Xml_Linq_XName
+	.long LDIFF_SYM1922
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde108_end:
+Lfde170_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26081,168 +33230,168 @@ Lfde108_end:
 
 	.byte 15,184,1
 	.quad System_Xml_Linq_XName_System_IEquatable_System_Xml_Linq_XName_Equals_System_Xml_Linq_XName
-	.quad Lme_71
+	.quad Lme_af
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1622=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1622
+LDIFF_SYM1923=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1923
 	.byte 2,141,16,3
 	.asciz "other"
 
-LDIFF_SYM1623=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1623
+LDIFF_SYM1924=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1924
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1624=Lfde109_end - Lfde109_start
-	.long LDIFF_SYM1624
-Lfde109_start:
+LDIFF_SYM1925=Lfde171_end - Lfde171_start
+	.long LDIFF_SYM1925
+Lfde171_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XName_System_IEquatable_System_Xml_Linq_XName_Equals_System_Xml_Linq_XName
 
-LDIFF_SYM1625=Lme_71 - System_Xml_Linq_XName_System_IEquatable_System_Xml_Linq_XName_Equals_System_Xml_Linq_XName
-	.long LDIFF_SYM1625
+LDIFF_SYM1926=Lme_af - System_Xml_Linq_XName_System_IEquatable_System_Xml_Linq_XName_Equals_System_Xml_Linq_XName
+	.long LDIFF_SYM1926
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde109_end:
+Lfde171_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_135:
+LTDIE_141:
 
 	.byte 5
 	.asciz "_KeyCollection"
 
 	.byte 24,16
-LDIFF_SYM1626=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1626
+LDIFF_SYM1927=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1927
 	.byte 2,35,0,6
 	.asciz "_dictionary"
 
-LDIFF_SYM1627=LTDIE_134_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1627
+LDIFF_SYM1928=LTDIE_140_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1928
 	.byte 2,35,16,0,7
 	.asciz "_KeyCollection"
 
-LDIFF_SYM1628=LTDIE_135 - Ldebug_info_start
-	.long LDIFF_SYM1628
-LTDIE_135_POINTER:
+LDIFF_SYM1929=LTDIE_141 - Ldebug_info_start
+	.long LDIFF_SYM1929
+LTDIE_141_POINTER:
 
 	.byte 13
-LDIFF_SYM1629=LTDIE_135 - Ldebug_info_start
-	.long LDIFF_SYM1629
-LTDIE_135_REFERENCE:
+LDIFF_SYM1930=LTDIE_141 - Ldebug_info_start
+	.long LDIFF_SYM1930
+LTDIE_141_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1630=LTDIE_135 - Ldebug_info_start
-	.long LDIFF_SYM1630
-LTDIE_136:
+LDIFF_SYM1931=LTDIE_141 - Ldebug_info_start
+	.long LDIFF_SYM1931
+LTDIE_142:
 
 	.byte 5
 	.asciz "_ValueCollection"
 
 	.byte 24,16
-LDIFF_SYM1631=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1631
+LDIFF_SYM1932=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1932
 	.byte 2,35,0,6
 	.asciz "_dictionary"
 
-LDIFF_SYM1632=LTDIE_134_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1632
+LDIFF_SYM1933=LTDIE_140_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1933
 	.byte 2,35,16,0,7
 	.asciz "_ValueCollection"
 
-LDIFF_SYM1633=LTDIE_136 - Ldebug_info_start
-	.long LDIFF_SYM1633
-LTDIE_136_POINTER:
+LDIFF_SYM1934=LTDIE_142 - Ldebug_info_start
+	.long LDIFF_SYM1934
+LTDIE_142_POINTER:
 
 	.byte 13
-LDIFF_SYM1634=LTDIE_136 - Ldebug_info_start
-	.long LDIFF_SYM1634
-LTDIE_136_REFERENCE:
+LDIFF_SYM1935=LTDIE_142 - Ldebug_info_start
+	.long LDIFF_SYM1935
+LTDIE_142_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1635=LTDIE_136 - Ldebug_info_start
-	.long LDIFF_SYM1635
-LTDIE_134:
+LDIFF_SYM1936=LTDIE_142 - Ldebug_info_start
+	.long LDIFF_SYM1936
+LTDIE_140:
 
 	.byte 5
 	.asciz "System_Collections_Generic_Dictionary`2"
 
 	.byte 80,16
-LDIFF_SYM1636=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1636
+LDIFF_SYM1937=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1937
 	.byte 2,35,0,6
 	.asciz "_buckets"
 
-LDIFF_SYM1637=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1637
+LDIFF_SYM1938=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1938
 	.byte 2,35,16,6
 	.asciz "_entries"
 
-LDIFF_SYM1638=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1638
+LDIFF_SYM1939=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1939
 	.byte 2,35,24,6
 	.asciz "_count"
 
-LDIFF_SYM1639=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1639
+LDIFF_SYM1940=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1940
 	.byte 2,35,64,6
 	.asciz "_freeList"
 
-LDIFF_SYM1640=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1640
+LDIFF_SYM1941=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1941
 	.byte 2,35,68,6
 	.asciz "_freeCount"
 
-LDIFF_SYM1641=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1641
+LDIFF_SYM1942=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1942
 	.byte 2,35,72,6
 	.asciz "_version"
 
-LDIFF_SYM1642=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1642
+LDIFF_SYM1943=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1943
 	.byte 2,35,76,6
 	.asciz "_comparer"
 
-LDIFF_SYM1643=LTDIE_85_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1643
+LDIFF_SYM1944=LTDIE_90_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1944
 	.byte 2,35,32,6
 	.asciz "_keys"
 
-LDIFF_SYM1644=LTDIE_135_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1644
+LDIFF_SYM1945=LTDIE_141_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1945
 	.byte 2,35,40,6
 	.asciz "_values"
 
-LDIFF_SYM1645=LTDIE_136_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1645
+LDIFF_SYM1946=LTDIE_142_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1946
 	.byte 2,35,48,6
 	.asciz "_syncRoot"
 
-LDIFF_SYM1646=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1646
+LDIFF_SYM1947=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1947
 	.byte 2,35,56,0,7
 	.asciz "System_Collections_Generic_Dictionary`2"
 
-LDIFF_SYM1647=LTDIE_134 - Ldebug_info_start
-	.long LDIFF_SYM1647
-LTDIE_134_POINTER:
+LDIFF_SYM1948=LTDIE_140 - Ldebug_info_start
+	.long LDIFF_SYM1948
+LTDIE_140_POINTER:
 
 	.byte 13
-LDIFF_SYM1648=LTDIE_134 - Ldebug_info_start
-	.long LDIFF_SYM1648
-LTDIE_134_REFERENCE:
+LDIFF_SYM1949=LTDIE_140 - Ldebug_info_start
+	.long LDIFF_SYM1949
+LTDIE_140_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1649=LTDIE_134 - Ldebug_info_start
-	.long LDIFF_SYM1649
-LTDIE_137:
+LDIFF_SYM1950=LTDIE_140 - Ldebug_info_start
+	.long LDIFF_SYM1950
+LTDIE_143:
 
 	.byte 17
 	.asciz "System_Runtime_Serialization_IFormatterConverter"
@@ -26250,142 +33399,142 @@ LTDIE_137:
 	.byte 16,7
 	.asciz "System_Runtime_Serialization_IFormatterConverter"
 
-LDIFF_SYM1650=LTDIE_137 - Ldebug_info_start
-	.long LDIFF_SYM1650
-LTDIE_137_POINTER:
+LDIFF_SYM1951=LTDIE_143 - Ldebug_info_start
+	.long LDIFF_SYM1951
+LTDIE_143_POINTER:
 
 	.byte 13
-LDIFF_SYM1651=LTDIE_137 - Ldebug_info_start
-	.long LDIFF_SYM1651
-LTDIE_137_REFERENCE:
+LDIFF_SYM1952=LTDIE_143 - Ldebug_info_start
+	.long LDIFF_SYM1952
+LTDIE_143_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1652=LTDIE_137 - Ldebug_info_start
-	.long LDIFF_SYM1652
-LTDIE_133:
+LDIFF_SYM1953=LTDIE_143 - Ldebug_info_start
+	.long LDIFF_SYM1953
+LTDIE_139:
 
 	.byte 5
 	.asciz "System_Runtime_Serialization_SerializationInfo"
 
 	.byte 88,16
-LDIFF_SYM1653=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1653
+LDIFF_SYM1954=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM1954
 	.byte 2,35,0,6
 	.asciz "m_members"
 
-LDIFF_SYM1654=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1654
+LDIFF_SYM1955=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1955
 	.byte 2,35,16,6
 	.asciz "m_data"
 
-LDIFF_SYM1655=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1655
+LDIFF_SYM1956=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1956
 	.byte 2,35,24,6
 	.asciz "m_types"
 
-LDIFF_SYM1656=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1656
+LDIFF_SYM1957=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1957
 	.byte 2,35,32,6
 	.asciz "m_nameToIndex"
 
-LDIFF_SYM1657=LTDIE_134_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1657
+LDIFF_SYM1958=LTDIE_140_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1958
 	.byte 2,35,40,6
 	.asciz "m_currMember"
 
-LDIFF_SYM1658=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1658
+LDIFF_SYM1959=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1959
 	.byte 2,35,80,6
 	.asciz "m_converter"
 
-LDIFF_SYM1659=LTDIE_137_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1659
+LDIFF_SYM1960=LTDIE_143_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1960
 	.byte 2,35,48,6
 	.asciz "m_fullTypeName"
 
-LDIFF_SYM1660=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1660
+LDIFF_SYM1961=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1961
 	.byte 2,35,56,6
 	.asciz "m_assemName"
 
-LDIFF_SYM1661=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1661
+LDIFF_SYM1962=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1962
 	.byte 2,35,64,6
 	.asciz "objectType"
 
-LDIFF_SYM1662=LTDIE_21_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1662
+LDIFF_SYM1963=LTDIE_21_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1963
 	.byte 2,35,72,6
 	.asciz "isFullTypeNameSetExplicit"
 
-LDIFF_SYM1663=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1663
+LDIFF_SYM1964=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1964
 	.byte 2,35,84,6
 	.asciz "isAssemblyNameSetExplicit"
 
-LDIFF_SYM1664=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1664
+LDIFF_SYM1965=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1965
 	.byte 2,35,85,6
 	.asciz "requireSameTokenInPartialTrust"
 
-LDIFF_SYM1665=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1665
+LDIFF_SYM1966=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1966
 	.byte 2,35,86,0,7
 	.asciz "System_Runtime_Serialization_SerializationInfo"
 
-LDIFF_SYM1666=LTDIE_133 - Ldebug_info_start
-	.long LDIFF_SYM1666
-LTDIE_133_POINTER:
+LDIFF_SYM1967=LTDIE_139 - Ldebug_info_start
+	.long LDIFF_SYM1967
+LTDIE_139_POINTER:
 
 	.byte 13
-LDIFF_SYM1667=LTDIE_133 - Ldebug_info_start
-	.long LDIFF_SYM1667
-LTDIE_133_REFERENCE:
+LDIFF_SYM1968=LTDIE_139 - Ldebug_info_start
+	.long LDIFF_SYM1968
+LTDIE_139_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1668=LTDIE_133 - Ldebug_info_start
-	.long LDIFF_SYM1668
+LDIFF_SYM1969=LTDIE_139 - Ldebug_info_start
+	.long LDIFF_SYM1969
 	.byte 2
 	.asciz "System.Xml.Linq.XName:System.Runtime.Serialization.ISerializable.GetObjectData"
 	.asciz "System_Xml_Linq_XName_System_Runtime_Serialization_ISerializable_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext"
 
 	.byte 15,195,1
 	.quad System_Xml_Linq_XName_System_Runtime_Serialization_ISerializable_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext
-	.quad Lme_72
+	.quad Lme_b0
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1669=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1669
+LDIFF_SYM1970=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1970
 	.byte 0,3
 	.asciz "info"
 
-LDIFF_SYM1670=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1670
+LDIFF_SYM1971=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1971
 	.byte 0,3
 	.asciz "context"
 
-LDIFF_SYM1671=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1671
+LDIFF_SYM1972=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1972
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1672=Lfde110_end - Lfde110_start
-	.long LDIFF_SYM1672
-Lfde110_start:
+LDIFF_SYM1973=Lfde172_end - Lfde172_start
+	.long LDIFF_SYM1973
+Lfde172_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XName_System_Runtime_Serialization_ISerializable_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext
 
-LDIFF_SYM1673=Lme_72 - System_Xml_Linq_XName_System_Runtime_Serialization_ISerializable_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext
-	.long LDIFF_SYM1673
+LDIFF_SYM1974=Lme_b0 - System_Xml_Linq_XName_System_Runtime_Serialization_ISerializable_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext
+	.long LDIFF_SYM1974
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde110_end:
+Lfde172_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26395,36 +33544,36 @@ Lfde110_end:
 
 	.byte 16,34
 	.quad System_Xml_Linq_XNamespace__ctor_string
-	.quad Lme_73
+	.quad Lme_b1
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1674=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1674
+LDIFF_SYM1975=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1975
 	.byte 1,105,3
 	.asciz "namespaceName"
 
-LDIFF_SYM1675=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1675
+LDIFF_SYM1976=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1976
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1676=Lfde111_end - Lfde111_start
-	.long LDIFF_SYM1676
-Lfde111_start:
+LDIFF_SYM1977=Lfde173_end - Lfde173_start
+	.long LDIFF_SYM1977
+Lfde173_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XNamespace__ctor_string
 
-LDIFF_SYM1677=Lme_73 - System_Xml_Linq_XNamespace__ctor_string
-	.long LDIFF_SYM1677
+LDIFF_SYM1978=Lme_b1 - System_Xml_Linq_XNamespace__ctor_string
+	.long LDIFF_SYM1978
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3
 	.align 3
-Lfde111_end:
+Lfde173_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26434,31 +33583,31 @@ Lfde111_end:
 
 	.byte 16,46
 	.quad System_Xml_Linq_XNamespace_get_NamespaceName
-	.quad Lme_74
+	.quad Lme_b2
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1678=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1678
+LDIFF_SYM1979=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1979
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1679=Lfde112_end - Lfde112_start
-	.long LDIFF_SYM1679
-Lfde112_start:
+LDIFF_SYM1980=Lfde174_end - Lfde174_start
+	.long LDIFF_SYM1980
+Lfde174_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XNamespace_get_NamespaceName
 
-LDIFF_SYM1680=Lme_74 - System_Xml_Linq_XNamespace_get_NamespaceName
-	.long LDIFF_SYM1680
+LDIFF_SYM1981=Lme_b2 - System_Xml_Linq_XNamespace_get_NamespaceName
+	.long LDIFF_SYM1981
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde112_end:
+Lfde174_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26468,36 +33617,36 @@ Lfde112_end:
 
 	.byte 16,58
 	.quad System_Xml_Linq_XNamespace_GetName_string
-	.quad Lme_75
+	.quad Lme_b3
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1681=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1681
+LDIFF_SYM1982=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1982
 	.byte 2,141,24,3
 	.asciz "localName"
 
-LDIFF_SYM1682=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1682
+LDIFF_SYM1983=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1983
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1683=Lfde113_end - Lfde113_start
-	.long LDIFF_SYM1683
-Lfde113_start:
+LDIFF_SYM1984=Lfde175_end - Lfde175_start
+	.long LDIFF_SYM1984
+Lfde175_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XNamespace_GetName_string
 
-LDIFF_SYM1684=Lme_75 - System_Xml_Linq_XNamespace_GetName_string
-	.long LDIFF_SYM1684
+LDIFF_SYM1985=Lme_b3 - System_Xml_Linq_XNamespace_GetName_string
+	.long LDIFF_SYM1985
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde113_end:
+Lfde175_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26507,31 +33656,31 @@ Lfde113_end:
 
 	.byte 16,68
 	.quad System_Xml_Linq_XNamespace_ToString
-	.quad Lme_76
+	.quad Lme_b4
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1685=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1685
+LDIFF_SYM1986=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1986
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1686=Lfde114_end - Lfde114_start
-	.long LDIFF_SYM1686
-Lfde114_start:
+LDIFF_SYM1987=Lfde176_end - Lfde176_start
+	.long LDIFF_SYM1987
+Lfde176_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XNamespace_ToString
 
-LDIFF_SYM1687=Lme_76 - System_Xml_Linq_XNamespace_ToString
-	.long LDIFF_SYM1687
+LDIFF_SYM1988=Lme_b4 - System_Xml_Linq_XNamespace_ToString
+	.long LDIFF_SYM1988
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde114_end:
+Lfde176_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26541,26 +33690,26 @@ Lfde114_end:
 
 	.byte 16,82
 	.quad System_Xml_Linq_XNamespace_get_None
-	.quad Lme_77
+	.quad Lme_b5
 
 	.byte 2,118,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1688=Lfde115_end - Lfde115_start
-	.long LDIFF_SYM1688
-Lfde115_start:
+LDIFF_SYM1989=Lfde177_end - Lfde177_start
+	.long LDIFF_SYM1989
+Lfde177_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XNamespace_get_None
 
-LDIFF_SYM1689=Lme_77 - System_Xml_Linq_XNamespace_get_None
-	.long LDIFF_SYM1689
+LDIFF_SYM1990=Lme_b5 - System_Xml_Linq_XNamespace_get_None
+	.long LDIFF_SYM1990
 	.long 0
 	.byte 12,31,0,68,14,16,157,2,158,1,68,13,29
 	.align 3
-Lfde115_end:
+Lfde177_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26570,26 +33719,26 @@ Lfde115_end:
 
 	.byte 16,93
 	.quad System_Xml_Linq_XNamespace_get_Xml
-	.quad Lme_78
+	.quad Lme_b6
 
 	.byte 2,118,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1690=Lfde116_end - Lfde116_start
-	.long LDIFF_SYM1690
-Lfde116_start:
+LDIFF_SYM1991=Lfde178_end - Lfde178_start
+	.long LDIFF_SYM1991
+Lfde178_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XNamespace_get_Xml
 
-LDIFF_SYM1691=Lme_78 - System_Xml_Linq_XNamespace_get_Xml
-	.long LDIFF_SYM1691
+LDIFF_SYM1992=Lme_b6 - System_Xml_Linq_XNamespace_get_Xml
+	.long LDIFF_SYM1992
 	.long 0
 	.byte 12,31,0,68,14,16,157,2,158,1,68,13,29
 	.align 3
-Lfde116_end:
+Lfde178_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26599,26 +33748,26 @@ Lfde116_end:
 
 	.byte 16,104
 	.quad System_Xml_Linq_XNamespace_get_Xmlns
-	.quad Lme_79
+	.quad Lme_b7
 
 	.byte 2,118,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1692=Lfde117_end - Lfde117_start
-	.long LDIFF_SYM1692
-Lfde117_start:
+LDIFF_SYM1993=Lfde179_end - Lfde179_start
+	.long LDIFF_SYM1993
+Lfde179_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XNamespace_get_Xmlns
 
-LDIFF_SYM1693=Lme_79 - System_Xml_Linq_XNamespace_get_Xmlns
-	.long LDIFF_SYM1693
+LDIFF_SYM1994=Lme_b7 - System_Xml_Linq_XNamespace_get_Xmlns
+	.long LDIFF_SYM1994
 	.long 0
 	.byte 12,31,0,68,14,16,157,2,158,1,68,13,29
 	.align 3
-Lfde117_end:
+Lfde179_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26628,31 +33777,65 @@ Lfde117_end:
 
 	.byte 16,117
 	.quad System_Xml_Linq_XNamespace_Get_string
-	.quad Lme_7a
+	.quad Lme_b8
 
 	.byte 2,118,16,3
 	.asciz "namespaceName"
 
-LDIFF_SYM1694=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1694
+LDIFF_SYM1995=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1995
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1695=Lfde118_end - Lfde118_start
-	.long LDIFF_SYM1695
-Lfde118_start:
+LDIFF_SYM1996=Lfde180_end - Lfde180_start
+	.long LDIFF_SYM1996
+Lfde180_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XNamespace_Get_string
 
-LDIFF_SYM1696=Lme_7a - System_Xml_Linq_XNamespace_Get_string
-	.long LDIFF_SYM1696
+LDIFF_SYM1997=Lme_b8 - System_Xml_Linq_XNamespace_Get_string
+	.long LDIFF_SYM1997
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde118_end:
+Lfde180_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XNamespace:op_Implicit"
+	.asciz "System_Xml_Linq_XNamespace_op_Implicit_string"
+
+	.byte 16,129,1
+	.quad System_Xml_Linq_XNamespace_op_Implicit_string
+	.quad Lme_b9
+
+	.byte 2,118,16,3
+	.asciz "namespaceName"
+
+LDIFF_SYM1998=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM1998
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1999=Lfde181_end - Lfde181_start
+	.long LDIFF_SYM1999
+Lfde181_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XNamespace_op_Implicit_string
+
+LDIFF_SYM2000=Lme_b9 - System_Xml_Linq_XNamespace_op_Implicit_string
+	.long LDIFF_SYM2000
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde181_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26662,36 +33845,36 @@ Lfde118_end:
 
 	.byte 16,158,1
 	.quad System_Xml_Linq_XNamespace_Equals_object
-	.quad Lme_7b
+	.quad Lme_ba
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1697=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1697
+LDIFF_SYM2001=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2001
 	.byte 2,141,16,3
 	.asciz "obj"
 
-LDIFF_SYM1698=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1698
+LDIFF_SYM2002=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2002
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1699=Lfde119_end - Lfde119_start
-	.long LDIFF_SYM1699
-Lfde119_start:
+LDIFF_SYM2003=Lfde182_end - Lfde182_start
+	.long LDIFF_SYM2003
+Lfde182_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XNamespace_Equals_object
 
-LDIFF_SYM1700=Lme_7b - System_Xml_Linq_XNamespace_Equals_object
-	.long LDIFF_SYM1700
+LDIFF_SYM2004=Lme_ba - System_Xml_Linq_XNamespace_Equals_object
+	.long LDIFF_SYM2004
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde119_end:
+Lfde182_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26701,31 +33884,31 @@ Lfde119_end:
 
 	.byte 16,167,1
 	.quad System_Xml_Linq_XNamespace_GetHashCode
-	.quad Lme_7c
+	.quad Lme_bb
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1701=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1701
+LDIFF_SYM2005=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2005
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1702=Lfde120_end - Lfde120_start
-	.long LDIFF_SYM1702
-Lfde120_start:
+LDIFF_SYM2006=Lfde183_end - Lfde183_start
+	.long LDIFF_SYM2006
+Lfde183_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XNamespace_GetHashCode
 
-LDIFF_SYM1703=Lme_7c - System_Xml_Linq_XNamespace_GetHashCode
-	.long LDIFF_SYM1703
+LDIFF_SYM2007=Lme_bb - System_Xml_Linq_XNamespace_GetHashCode
+	.long LDIFF_SYM2007
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde120_end:
+Lfde183_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26735,36 +33918,36 @@ Lfde120_end:
 
 	.byte 16,189,1
 	.quad System_Xml_Linq_XNamespace_op_Equality_System_Xml_Linq_XNamespace_System_Xml_Linq_XNamespace
-	.quad Lme_7d
+	.quad Lme_bc
 
 	.byte 2,118,16,3
 	.asciz "left"
 
-LDIFF_SYM1704=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1704
+LDIFF_SYM2008=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2008
 	.byte 2,141,16,3
 	.asciz "right"
 
-LDIFF_SYM1705=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1705
+LDIFF_SYM2009=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2009
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1706=Lfde121_end - Lfde121_start
-	.long LDIFF_SYM1706
-Lfde121_start:
+LDIFF_SYM2010=Lfde184_end - Lfde184_start
+	.long LDIFF_SYM2010
+Lfde184_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XNamespace_op_Equality_System_Xml_Linq_XNamespace_System_Xml_Linq_XNamespace
 
-LDIFF_SYM1707=Lme_7d - System_Xml_Linq_XNamespace_op_Equality_System_Xml_Linq_XNamespace_System_Xml_Linq_XNamespace
-	.long LDIFF_SYM1707
+LDIFF_SYM2011=Lme_bc - System_Xml_Linq_XNamespace_op_Equality_System_Xml_Linq_XNamespace_System_Xml_Linq_XNamespace
+	.long LDIFF_SYM2011
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde121_end:
+Lfde184_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26774,36 +33957,36 @@ Lfde121_end:
 
 	.byte 16,204,1
 	.quad System_Xml_Linq_XNamespace_op_Inequality_System_Xml_Linq_XNamespace_System_Xml_Linq_XNamespace
-	.quad Lme_7e
+	.quad Lme_bd
 
 	.byte 2,118,16,3
 	.asciz "left"
 
-LDIFF_SYM1708=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1708
+LDIFF_SYM2012=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2012
 	.byte 2,141,16,3
 	.asciz "right"
 
-LDIFF_SYM1709=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1709
+LDIFF_SYM2013=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2013
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1710=Lfde122_end - Lfde122_start
-	.long LDIFF_SYM1710
-Lfde122_start:
+LDIFF_SYM2014=Lfde185_end - Lfde185_start
+	.long LDIFF_SYM2014
+Lfde185_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XNamespace_op_Inequality_System_Xml_Linq_XNamespace_System_Xml_Linq_XNamespace
 
-LDIFF_SYM1711=Lme_7e - System_Xml_Linq_XNamespace_op_Inequality_System_Xml_Linq_XNamespace_System_Xml_Linq_XNamespace
-	.long LDIFF_SYM1711
+LDIFF_SYM2015=Lme_bd - System_Xml_Linq_XNamespace_op_Inequality_System_Xml_Linq_XNamespace_System_Xml_Linq_XNamespace
+	.long LDIFF_SYM2015
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde122_end:
+Lfde185_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26813,137 +33996,137 @@ Lfde122_end:
 
 	.byte 16,219,1
 	.quad System_Xml_Linq_XNamespace_GetName_string_int_int
-	.quad Lme_7f
+	.quad Lme_be
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1712=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1712
+LDIFF_SYM2016=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2016
 	.byte 1,103,3
 	.asciz "localName"
 
-LDIFF_SYM1713=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1713
+LDIFF_SYM2017=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM2017
 	.byte 1,104,3
 	.asciz "index"
 
-LDIFF_SYM1714=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1714
+LDIFF_SYM2018=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2018
 	.byte 2,141,32,3
 	.asciz "count"
 
-LDIFF_SYM1715=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1715
+LDIFF_SYM2019=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2019
 	.byte 2,141,40,11
 	.asciz "name"
 
-LDIFF_SYM1716=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1716
+LDIFF_SYM2020=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2020
 	.byte 2,141,48,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1717=Lfde123_end - Lfde123_start
-	.long LDIFF_SYM1717
-Lfde123_start:
+LDIFF_SYM2021=Lfde186_end - Lfde186_start
+	.long LDIFF_SYM2021
+Lfde186_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XNamespace_GetName_string_int_int
 
-LDIFF_SYM1718=Lme_7f - System_Xml_Linq_XNamespace_GetName_string_int_int
-	.long LDIFF_SYM1718
+LDIFF_SYM2022=Lme_be - System_Xml_Linq_XNamespace_GetName_string_int_int
+	.long LDIFF_SYM2022
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,151,10,152,9
 	.align 3
-Lfde123_end:
+Lfde186_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_138:
+LTDIE_144:
 
 	.byte 5
 	.asciz "System_WeakReference"
 
 	.byte 24,16
-LDIFF_SYM1719=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1719
+LDIFF_SYM2023=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM2023
 	.byte 2,35,0,6
 	.asciz "isLongReference"
 
-LDIFF_SYM1720=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1720
+LDIFF_SYM2024=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM2024
 	.byte 2,35,16,6
 	.asciz "gcHandle"
 
-LDIFF_SYM1721=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1721
+LDIFF_SYM2025=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2025
 	.byte 2,35,20,0,7
 	.asciz "System_WeakReference"
 
-LDIFF_SYM1722=LTDIE_138 - Ldebug_info_start
-	.long LDIFF_SYM1722
-LTDIE_138_POINTER:
+LDIFF_SYM2026=LTDIE_144 - Ldebug_info_start
+	.long LDIFF_SYM2026
+LTDIE_144_POINTER:
 
 	.byte 13
-LDIFF_SYM1723=LTDIE_138 - Ldebug_info_start
-	.long LDIFF_SYM1723
-LTDIE_138_REFERENCE:
+LDIFF_SYM2027=LTDIE_144 - Ldebug_info_start
+	.long LDIFF_SYM2027
+LTDIE_144_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1724=LTDIE_138 - Ldebug_info_start
-	.long LDIFF_SYM1724
+LDIFF_SYM2028=LTDIE_144 - Ldebug_info_start
+	.long LDIFF_SYM2028
 	.byte 2
 	.asciz "System.Xml.Linq.XNamespace:Get"
 	.asciz "System_Xml_Linq_XNamespace_Get_string_int_int"
 
 	.byte 16,235,1
 	.quad System_Xml_Linq_XNamespace_Get_string_int_int
-	.quad Lme_80
+	.quad Lme_bf
 
 	.byte 2,118,16,3
 	.asciz "namespaceName"
 
-LDIFF_SYM1725=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1725
+LDIFF_SYM2029=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM2029
 	.byte 1,104,3
 	.asciz "index"
 
-LDIFF_SYM1726=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1726
+LDIFF_SYM2030=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2030
 	.byte 1,105,3
 	.asciz "count"
 
-LDIFF_SYM1727=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1727
+LDIFF_SYM2031=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2031
 	.byte 1,106,11
 	.asciz "refNamespace"
 
-LDIFF_SYM1728=LTDIE_138_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1728
+LDIFF_SYM2032=LTDIE_144_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2032
 	.byte 2,141,56,11
 	.asciz "ns"
 
-LDIFF_SYM1729=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1729
+LDIFF_SYM2033=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2033
 	.byte 1,103,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1730=Lfde124_end - Lfde124_start
-	.long LDIFF_SYM1730
-Lfde124_start:
+LDIFF_SYM2034=Lfde187_end - Lfde187_start
+	.long LDIFF_SYM2034
+Lfde187_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XNamespace_Get_string_int_int
 
-LDIFF_SYM1731=Lme_80 - System_Xml_Linq_XNamespace_Get_string_int_int
-	.long LDIFF_SYM1731
+LDIFF_SYM2035=Lme_bf - System_Xml_Linq_XNamespace_Get_string_int_int
+	.long LDIFF_SYM2035
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,150,10,151,9,68,152,8,153,7,68,154,6
 	.align 3
-Lfde124_end:
+Lfde187_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26953,31 +34136,31 @@ Lfde124_end:
 
 	.byte 16,144,2
 	.quad System_Xml_Linq_XNamespace_ExtractLocalName_System_Xml_Linq_XName
-	.quad Lme_81
+	.quad Lme_c0
 
 	.byte 2,118,16,3
 	.asciz "n"
 
-LDIFF_SYM1732=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1732
+LDIFF_SYM2036=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2036
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1733=Lfde125_end - Lfde125_start
-	.long LDIFF_SYM1733
-Lfde125_start:
+LDIFF_SYM2037=Lfde188_end - Lfde188_start
+	.long LDIFF_SYM2037
+Lfde188_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XNamespace_ExtractLocalName_System_Xml_Linq_XName
 
-LDIFF_SYM1734=Lme_81 - System_Xml_Linq_XNamespace_ExtractLocalName_System_Xml_Linq_XName
-	.long LDIFF_SYM1734
+LDIFF_SYM2038=Lme_c0 - System_Xml_Linq_XNamespace_ExtractLocalName_System_Xml_Linq_XName
+	.long LDIFF_SYM2038
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde125_end:
+Lfde188_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26987,36 +34170,36 @@ Lfde125_end:
 
 	.byte 16,155,2
 	.quad System_Xml_Linq_XNamespace_ExtractNamespace_System_WeakReference
-	.quad Lme_82
+	.quad Lme_c1
 
 	.byte 2,118,16,3
 	.asciz "r"
 
-LDIFF_SYM1735=LTDIE_138_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1735
+LDIFF_SYM2039=LTDIE_144_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2039
 	.byte 1,106,11
 	.asciz "ns"
 
-LDIFF_SYM1736=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1736
+LDIFF_SYM2040=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2040
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1737=Lfde126_end - Lfde126_start
-	.long LDIFF_SYM1737
-Lfde126_start:
+LDIFF_SYM2041=Lfde189_end - Lfde189_start
+	.long LDIFF_SYM2041
+Lfde189_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XNamespace_ExtractNamespace_System_WeakReference
 
-LDIFF_SYM1738=Lme_82 - System_Xml_Linq_XNamespace_ExtractNamespace_System_WeakReference
-	.long LDIFF_SYM1738
+LDIFF_SYM2042=Lme_c1 - System_Xml_Linq_XNamespace_ExtractNamespace_System_WeakReference
+	.long LDIFF_SYM2042
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde126_end:
+Lfde189_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27026,46 +34209,46 @@ Lfde126_end:
 
 	.byte 16,175,2
 	.quad System_Xml_Linq_XNamespace_EnsureNamespace_System_WeakReference__string
-	.quad Lme_83
+	.quad Lme_c2
 
 	.byte 2,118,16,3
 	.asciz "refNmsp"
 
-LDIFF_SYM1739=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1739
+LDIFF_SYM2043=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM2043
 	.byte 1,105,3
 	.asciz "namespaceName"
 
-LDIFF_SYM1740=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1740
+LDIFF_SYM2044=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM2044
 	.byte 1,106,11
 	.asciz "refOld"
 
-LDIFF_SYM1741=LTDIE_138_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1741
+LDIFF_SYM2045=LTDIE_144_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2045
 	.byte 1,104,11
 	.asciz "ns"
 
-LDIFF_SYM1742=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1742
+LDIFF_SYM2046=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2046
 	.byte 1,102,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1743=Lfde127_end - Lfde127_start
-	.long LDIFF_SYM1743
-Lfde127_start:
+LDIFF_SYM2047=Lfde190_end - Lfde190_start
+	.long LDIFF_SYM2047
+Lfde190_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XNamespace_EnsureNamespace_System_WeakReference__string
 
-LDIFF_SYM1744=Lme_83 - System_Xml_Linq_XNamespace_EnsureNamespace_System_WeakReference__string
-	.long LDIFF_SYM1744
+LDIFF_SYM2048=Lme_c2 - System_Xml_Linq_XNamespace_EnsureNamespace_System_WeakReference__string
+	.long LDIFF_SYM2048
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4
 	.align 3
-Lfde127_end:
+Lfde190_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27075,31 +34258,65 @@ Lfde127_end:
 
 	.byte 17,37
 	.quad System_Xml_Linq_XNode__ctor
-	.quad Lme_84
+	.quad Lme_c3
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1745=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1745
+LDIFF_SYM2049=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2049
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1746=Lfde128_end - Lfde128_start
-	.long LDIFF_SYM1746
-Lfde128_start:
+LDIFF_SYM2050=Lfde191_end - Lfde191_start
+	.long LDIFF_SYM2050
+Lfde191_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XNode__ctor
 
-LDIFF_SYM1747=Lme_84 - System_Xml_Linq_XNode__ctor
-	.long LDIFF_SYM1747
+LDIFF_SYM2051=Lme_c3 - System_Xml_Linq_XNode__ctor
+	.long LDIFF_SYM2051
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde128_end:
+Lfde191_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XNode:Remove"
+	.asciz "System_Xml_Linq_XNode_Remove"
+
+	.byte 17,156,4
+	.quad System_Xml_Linq_XNode_Remove
+	.quad Lme_c4
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM2052=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2052
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM2053=Lfde192_end - Lfde192_start
+	.long LDIFF_SYM2053
+Lfde192_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XNode_Remove
+
+LDIFF_SYM2054=Lme_c4 - System_Xml_Linq_XNode_Remove
+	.long LDIFF_SYM2054
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
+	.align 3
+Lfde192_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27109,31 +34326,70 @@ Lfde128_end:
 
 	.byte 17,198,4
 	.quad System_Xml_Linq_XNode_ToString
-	.quad Lme_85
+	.quad Lme_c5
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1748=LTDIE_9_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1748
+LDIFF_SYM2055=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2055
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1749=Lfde129_end - Lfde129_start
-	.long LDIFF_SYM1749
-Lfde129_start:
+LDIFF_SYM2056=Lfde193_end - Lfde193_start
+	.long LDIFF_SYM2056
+Lfde193_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XNode_ToString
 
-LDIFF_SYM1750=Lme_85 - System_Xml_Linq_XNode_ToString
-	.long LDIFF_SYM1750
+LDIFF_SYM2057=Lme_c5 - System_Xml_Linq_XNode_ToString
+	.long LDIFF_SYM2057
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde129_end:
+Lfde193_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XNode:AppendText"
+	.asciz "System_Xml_Linq_XNode_AppendText_System_Text_StringBuilder"
+
+	.byte 17,255,4
+	.quad System_Xml_Linq_XNode_AppendText_System_Text_StringBuilder
+	.quad Lme_c7
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM2058=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2058
+	.byte 0,3
+	.asciz "sb"
+
+LDIFF_SYM2059=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2059
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM2060=Lfde194_end - Lfde194_start
+	.long LDIFF_SYM2060
+Lfde194_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XNode_AppendText_System_Text_StringBuilder
+
+LDIFF_SYM2061=Lme_c7 - System_Xml_Linq_XNode_AppendText_System_Text_StringBuilder
+	.long LDIFF_SYM2061
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde194_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27143,46 +34399,46 @@ Lfde129_end:
 
 	.byte 17,177,5
 	.quad System_Xml_Linq_XNode_GetXmlReaderSettings_System_Xml_Linq_LoadOptions
-	.quad Lme_88
+	.quad Lme_c9
 
 	.byte 2,118,16,3
 	.asciz "o"
 
-LDIFF_SYM1751=LTDIE_48 - Ldebug_info_start
-	.long LDIFF_SYM1751
+LDIFF_SYM2062=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM2062
 	.byte 2,141,24,11
 	.asciz "rs"
 
-LDIFF_SYM1752=LTDIE_57_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1752
+LDIFF_SYM2063=LTDIE_62_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2063
 	.byte 1,105,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1753=Lfde130_end - Lfde130_start
-	.long LDIFF_SYM1753
-Lfde130_start:
+LDIFF_SYM2064=Lfde195_end - Lfde195_start
+	.long LDIFF_SYM2064
+Lfde195_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XNode_GetXmlReaderSettings_System_Xml_Linq_LoadOptions
 
-LDIFF_SYM1754=Lme_88 - System_Xml_Linq_XNode_GetXmlReaderSettings_System_Xml_Linq_LoadOptions
-	.long LDIFF_SYM1754
+LDIFF_SYM2065=Lme_c9 - System_Xml_Linq_XNode_GetXmlReaderSettings_System_Xml_Linq_LoadOptions
+	.long LDIFF_SYM2065
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4
 	.align 3
-Lfde130_end:
+Lfde195_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_139:
+LTDIE_145:
 
 	.byte 8
 	.asciz "System_Xml_Linq_SaveOptions"
 
 	.byte 4
-LDIFF_SYM1755=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1755
+LDIFF_SYM2066=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2066
 	.byte 9
 	.asciz "None"
 
@@ -27195,79 +34451,79 @@ LDIFF_SYM1755=LDIE_I4 - Ldebug_info_start
 	.byte 2,0,7
 	.asciz "System_Xml_Linq_SaveOptions"
 
-LDIFF_SYM1756=LTDIE_139 - Ldebug_info_start
-	.long LDIFF_SYM1756
-LTDIE_139_POINTER:
+LDIFF_SYM2067=LTDIE_145 - Ldebug_info_start
+	.long LDIFF_SYM2067
+LTDIE_145_POINTER:
 
 	.byte 13
-LDIFF_SYM1757=LTDIE_139 - Ldebug_info_start
-	.long LDIFF_SYM1757
-LTDIE_139_REFERENCE:
+LDIFF_SYM2068=LTDIE_145 - Ldebug_info_start
+	.long LDIFF_SYM2068
+LTDIE_145_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1758=LTDIE_139 - Ldebug_info_start
-	.long LDIFF_SYM1758
+LDIFF_SYM2069=LTDIE_145 - Ldebug_info_start
+	.long LDIFF_SYM2069
 	.byte 2
 	.asciz "System.Xml.Linq.XNode:GetXmlString"
 	.asciz "System_Xml_Linq_XNode_GetXmlString_System_Xml_Linq_SaveOptions"
 
 	.byte 17,197,5
 	.quad System_Xml_Linq_XNode_GetXmlString_System_Xml_Linq_SaveOptions
-	.quad Lme_89
+	.quad Lme_ca
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1759=LTDIE_9_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1759
+LDIFF_SYM2070=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2070
 	.byte 1,105,3
 	.asciz "o"
 
-LDIFF_SYM1760=LTDIE_139 - Ldebug_info_start
-	.long LDIFF_SYM1760
+LDIFF_SYM2071=LTDIE_145 - Ldebug_info_start
+	.long LDIFF_SYM2071
 	.byte 1,106,11
 	.asciz "sw"
 
-LDIFF_SYM1761=LTDIE_23_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1761
+LDIFF_SYM2072=LTDIE_23_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2072
 	.byte 2,141,40,11
 	.asciz "ws"
 
-LDIFF_SYM1762=LTDIE_28_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1762
+LDIFF_SYM2073=LTDIE_28_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2073
 	.byte 1,104,11
 	.asciz "w"
 
-LDIFF_SYM1763=LTDIE_41_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1763
+LDIFF_SYM2074=LTDIE_41_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2074
 	.byte 2,141,48,11
 	.asciz "n"
 
-LDIFF_SYM1764=LTDIE_52_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1764
+LDIFF_SYM2075=LTDIE_57_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2075
 	.byte 1,104,11
 	.asciz "V_4"
 
-LDIFF_SYM1765=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1765
+LDIFF_SYM2076=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM2076
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1766=Lfde131_end - Lfde131_start
-	.long LDIFF_SYM1766
-Lfde131_start:
+LDIFF_SYM2077=Lfde196_end - Lfde196_start
+	.long LDIFF_SYM2077
+Lfde196_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XNode_GetXmlString_System_Xml_Linq_SaveOptions
 
-LDIFF_SYM1767=Lme_89 - System_Xml_Linq_XNode_GetXmlString_System_Xml_Linq_SaveOptions
-	.long LDIFF_SYM1767
+LDIFF_SYM2078=Lme_ca - System_Xml_Linq_XNode_GetXmlString_System_Xml_Linq_SaveOptions
+	.long LDIFF_SYM2078
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,152,16,153,15,68,154,14
 	.align 3
-Lfde131_end:
+Lfde196_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27277,31 +34533,31 @@ Lfde131_end:
 
 	.byte 18,20
 	.quad System_Xml_Linq_XObject__ctor
-	.quad Lme_8a
+	.quad Lme_cb
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1768=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1768
+LDIFF_SYM2079=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2079
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1769=Lfde132_end - Lfde132_start
-	.long LDIFF_SYM1769
-Lfde132_start:
+LDIFF_SYM2080=Lfde197_end - Lfde197_start
+	.long LDIFF_SYM2080
+Lfde197_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XObject__ctor
 
-LDIFF_SYM1770=Lme_8a - System_Xml_Linq_XObject__ctor
-	.long LDIFF_SYM1770
+LDIFF_SYM2081=Lme_cb - System_Xml_Linq_XObject__ctor
+	.long LDIFF_SYM2081
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde132_end:
+Lfde197_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27311,41 +34567,75 @@ Lfde132_end:
 
 	.byte 18,30
 	.quad System_Xml_Linq_XObject_get_BaseUri
-	.quad Lme_8b
+	.quad Lme_cc
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1771=LTDIE_7_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1771
+LDIFF_SYM2082=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2082
 	.byte 1,106,11
 	.asciz "o"
 
-LDIFF_SYM1772=LTDIE_7_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1772
+LDIFF_SYM2083=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2083
 	.byte 1,105,11
 	.asciz "a"
 
-LDIFF_SYM1773=LTDIE_1_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1773
+LDIFF_SYM2084=LTDIE_1_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2084
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1774=Lfde133_end - Lfde133_start
-	.long LDIFF_SYM1774
-Lfde133_start:
+LDIFF_SYM2085=Lfde198_end - Lfde198_start
+	.long LDIFF_SYM2085
+Lfde198_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XObject_get_BaseUri
 
-LDIFF_SYM1775=Lme_8b - System_Xml_Linq_XObject_get_BaseUri
-	.long LDIFF_SYM1775
+LDIFF_SYM2086=Lme_cc - System_Xml_Linq_XObject_get_BaseUri
+	.long LDIFF_SYM2086
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
 	.align 3
-Lfde133_end:
+Lfde198_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XObject:get_Parent"
+	.asciz "System_Xml_Linq_XObject_get_Parent"
+
+	.byte 18,72
+	.quad System_Xml_Linq_XObject_get_Parent
+	.quad Lme_ce
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM2087=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2087
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM2088=Lfde199_end - Lfde199_start
+	.long LDIFF_SYM2088
+Lfde199_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XObject_get_Parent
+
+LDIFF_SYM2089=Lme_ce - System_Xml_Linq_XObject_get_Parent
+	.long LDIFF_SYM2089
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
+	.align 3
+Lfde199_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27355,46 +34645,46 @@ Lfde133_end:
 
 	.byte 18,81
 	.quad System_Xml_Linq_XObject_AddAnnotation_object
-	.quad Lme_8d
+	.quad Lme_cf
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1776=LTDIE_7_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1776
+LDIFF_SYM2090=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2090
 	.byte 1,105,3
 	.asciz "annotation"
 
-LDIFF_SYM1777=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1777
+LDIFF_SYM2091=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2091
 	.byte 1,106,11
 	.asciz "a"
 
-LDIFF_SYM1778=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1778
+LDIFF_SYM2092=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM2092
 	.byte 2,141,56,11
 	.asciz "i"
 
-LDIFF_SYM1779=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1779
+LDIFF_SYM2093=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2093
 	.byte 1,104,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1780=Lfde134_end - Lfde134_start
-	.long LDIFF_SYM1780
-Lfde134_start:
+LDIFF_SYM2094=Lfde200_end - Lfde200_start
+	.long LDIFF_SYM2094
+Lfde200_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XObject_AddAnnotation_object
 
-LDIFF_SYM1781=Lme_8d - System_Xml_Linq_XObject_AddAnnotation_object
-	.long LDIFF_SYM1781
+LDIFF_SYM2095=Lme_cf - System_Xml_Linq_XObject_AddAnnotation_object
+	.long LDIFF_SYM2095
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4
 	.align 3
-Lfde134_end:
+Lfde200_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27404,51 +34694,51 @@ Lfde134_end:
 
 	.byte 18,143,1
 	.quad System_Xml_Linq_XObject_AnnotationForSealedType_System_Type
-	.quad Lme_8e
+	.quad Lme_d0
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1782=LTDIE_7_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1782
+LDIFF_SYM2096=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2096
 	.byte 1,105,3
 	.asciz "type"
 
-LDIFF_SYM1783=LTDIE_21_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1783
+LDIFF_SYM2097=LTDIE_21_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2097
 	.byte 1,106,11
 	.asciz "a"
 
-LDIFF_SYM1784=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1784
+LDIFF_SYM2098=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM2098
 	.byte 1,104,11
 	.asciz "i"
 
-LDIFF_SYM1785=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1785
+LDIFF_SYM2099=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2099
 	.byte 1,105,11
 	.asciz "obj"
 
-LDIFF_SYM1786=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1786
+LDIFF_SYM2100=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2100
 	.byte 1,103,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1787=Lfde135_end - Lfde135_start
-	.long LDIFF_SYM1787
-Lfde135_start:
+LDIFF_SYM2101=Lfde201_end - Lfde201_start
+	.long LDIFF_SYM2101
+Lfde201_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XObject_AnnotationForSealedType_System_Type
 
-LDIFF_SYM1788=Lme_8e - System_Xml_Linq_XObject_AnnotationForSealedType_System_Type
-	.long LDIFF_SYM1788
+LDIFF_SYM2102=Lme_d0 - System_Xml_Linq_XObject_AnnotationForSealedType_System_Type
+	.long LDIFF_SYM2102
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,153,3,68,154,2
 	.align 3
-Lfde135_end:
+Lfde201_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27458,56 +34748,56 @@ Lfde135_end:
 
 	.byte 18,174,1
 	.quad System_Xml_Linq_XObject_Annotation_T_REF
-	.quad Lme_8f
+	.quad Lme_d1
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1789=LTDIE_7_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1789
+LDIFF_SYM2103=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2103
 	.byte 1,106,11
 	.asciz "a"
 
-LDIFF_SYM1790=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1790
+LDIFF_SYM2104=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM2104
 	.byte 1,105,11
 	.asciz "i"
 
-LDIFF_SYM1791=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1791
+LDIFF_SYM2105=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2105
 	.byte 1,106,11
 	.asciz "obj"
 
-LDIFF_SYM1792=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1792
+LDIFF_SYM2106=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2106
 	.byte 1,104,11
 	.asciz "result"
 
-LDIFF_SYM1793=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1793
+LDIFF_SYM2107=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2107
 	.byte 1,104,11
 	.asciz "V_4"
 
-LDIFF_SYM1794=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1794
+LDIFF_SYM2108=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2108
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1795=Lfde136_end - Lfde136_start
-	.long LDIFF_SYM1795
-Lfde136_start:
+LDIFF_SYM2109=Lfde202_end - Lfde202_start
+	.long LDIFF_SYM2109
+Lfde202_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XObject_Annotation_T_REF
 
-LDIFF_SYM1796=Lme_8f - System_Xml_Linq_XObject_Annotation_T_REF
-	.long LDIFF_SYM1796
+LDIFF_SYM2110=Lme_d1 - System_Xml_Linq_XObject_Annotation_T_REF
+	.long LDIFF_SYM2110
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,151,8,152,7,68,153,6,154,5
 	.align 3
-Lfde136_end:
+Lfde202_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27517,31 +34807,31 @@ Lfde136_end:
 
 	.byte 18,254,2
 	.quad System_Xml_Linq_XObject_System_Xml_IXmlLineInfo_HasLineInfo
-	.quad Lme_90
+	.quad Lme_d2
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1797=LTDIE_7_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1797
+LDIFF_SYM2111=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2111
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1798=Lfde137_end - Lfde137_start
-	.long LDIFF_SYM1798
-Lfde137_start:
+LDIFF_SYM2112=Lfde203_end - Lfde203_start
+	.long LDIFF_SYM2112
+Lfde203_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XObject_System_Xml_IXmlLineInfo_HasLineInfo
 
-LDIFF_SYM1799=Lme_90 - System_Xml_Linq_XObject_System_Xml_IXmlLineInfo_HasLineInfo
-	.long LDIFF_SYM1799
+LDIFF_SYM2113=Lme_d2 - System_Xml_Linq_XObject_System_Xml_IXmlLineInfo_HasLineInfo
+	.long LDIFF_SYM2113
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde137_end:
+Lfde203_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27551,36 +34841,36 @@ Lfde137_end:
 
 	.byte 18,133,3
 	.quad System_Xml_Linq_XObject_System_Xml_IXmlLineInfo_get_LineNumber
-	.quad Lme_91
+	.quad Lme_d3
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1800=LTDIE_7_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1800
+LDIFF_SYM2114=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2114
 	.byte 1,106,11
 	.asciz "a"
 
-LDIFF_SYM1801=LTDIE_2_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1801
+LDIFF_SYM2115=LTDIE_2_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2115
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1802=Lfde138_end - Lfde138_start
-	.long LDIFF_SYM1802
-Lfde138_start:
+LDIFF_SYM2116=Lfde204_end - Lfde204_start
+	.long LDIFF_SYM2116
+Lfde204_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XObject_System_Xml_IXmlLineInfo_get_LineNumber
 
-LDIFF_SYM1803=Lme_91 - System_Xml_Linq_XObject_System_Xml_IXmlLineInfo_get_LineNumber
-	.long LDIFF_SYM1803
+LDIFF_SYM2117=Lme_d3 - System_Xml_Linq_XObject_System_Xml_IXmlLineInfo_get_LineNumber
+	.long LDIFF_SYM2117
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde138_end:
+Lfde204_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27590,36 +34880,36 @@ Lfde138_end:
 
 	.byte 18,143,3
 	.quad System_Xml_Linq_XObject_System_Xml_IXmlLineInfo_get_LinePosition
-	.quad Lme_92
+	.quad Lme_d4
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1804=LTDIE_7_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1804
+LDIFF_SYM2118=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2118
 	.byte 1,106,11
 	.asciz "a"
 
-LDIFF_SYM1805=LTDIE_2_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1805
+LDIFF_SYM2119=LTDIE_2_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2119
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1806=Lfde139_end - Lfde139_start
-	.long LDIFF_SYM1806
-Lfde139_start:
+LDIFF_SYM2120=Lfde205_end - Lfde205_start
+	.long LDIFF_SYM2120
+Lfde205_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XObject_System_Xml_IXmlLineInfo_get_LinePosition
 
-LDIFF_SYM1807=Lme_92 - System_Xml_Linq_XObject_System_Xml_IXmlLineInfo_get_LinePosition
-	.long LDIFF_SYM1807
+LDIFF_SYM2121=Lme_d4 - System_Xml_Linq_XObject_System_Xml_IXmlLineInfo_get_LinePosition
+	.long LDIFF_SYM2121
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde139_end:
+Lfde205_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27629,31 +34919,290 @@ Lfde139_end:
 
 	.byte 18,153,3
 	.quad System_Xml_Linq_XObject_get_HasBaseUri
-	.quad Lme_93
+	.quad Lme_d5
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1808=LTDIE_7_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1808
+LDIFF_SYM2122=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2122
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1809=Lfde140_end - Lfde140_start
-	.long LDIFF_SYM1809
-Lfde140_start:
+LDIFF_SYM2123=Lfde206_end - Lfde206_start
+	.long LDIFF_SYM2123
+Lfde206_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XObject_get_HasBaseUri
 
-LDIFF_SYM1810=Lme_93 - System_Xml_Linq_XObject_get_HasBaseUri
-	.long LDIFF_SYM1810
+LDIFF_SYM2124=Lme_d5 - System_Xml_Linq_XObject_get_HasBaseUri
+	.long LDIFF_SYM2124
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde140_end:
+Lfde206_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_147:
+
+	.byte 5
+	.asciz "System_EventArgs"
+
+	.byte 16,16
+LDIFF_SYM2125=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM2125
+	.byte 2,35,0,0,7
+	.asciz "System_EventArgs"
+
+LDIFF_SYM2126=LTDIE_147 - Ldebug_info_start
+	.long LDIFF_SYM2126
+LTDIE_147_POINTER:
+
+	.byte 13
+LDIFF_SYM2127=LTDIE_147 - Ldebug_info_start
+	.long LDIFF_SYM2127
+LTDIE_147_REFERENCE:
+
+	.byte 14
+LDIFF_SYM2128=LTDIE_147 - Ldebug_info_start
+	.long LDIFF_SYM2128
+LTDIE_148:
+
+	.byte 8
+	.asciz "System_Xml_Linq_XObjectChange"
+
+	.byte 4
+LDIFF_SYM2129=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2129
+	.byte 9
+	.asciz "Add"
+
+	.byte 0,9
+	.asciz "Remove"
+
+	.byte 1,9
+	.asciz "Name"
+
+	.byte 2,9
+	.asciz "Value"
+
+	.byte 3,0,7
+	.asciz "System_Xml_Linq_XObjectChange"
+
+LDIFF_SYM2130=LTDIE_148 - Ldebug_info_start
+	.long LDIFF_SYM2130
+LTDIE_148_POINTER:
+
+	.byte 13
+LDIFF_SYM2131=LTDIE_148 - Ldebug_info_start
+	.long LDIFF_SYM2131
+LTDIE_148_REFERENCE:
+
+	.byte 14
+LDIFF_SYM2132=LTDIE_148 - Ldebug_info_start
+	.long LDIFF_SYM2132
+LTDIE_146:
+
+	.byte 5
+	.asciz "System_Xml_Linq_XObjectChangeEventArgs"
+
+	.byte 20,16
+LDIFF_SYM2133=LTDIE_147 - Ldebug_info_start
+	.long LDIFF_SYM2133
+	.byte 2,35,0,6
+	.asciz "_objectChange"
+
+LDIFF_SYM2134=LTDIE_148 - Ldebug_info_start
+	.long LDIFF_SYM2134
+	.byte 2,35,16,0,7
+	.asciz "System_Xml_Linq_XObjectChangeEventArgs"
+
+LDIFF_SYM2135=LTDIE_146 - Ldebug_info_start
+	.long LDIFF_SYM2135
+LTDIE_146_POINTER:
+
+	.byte 13
+LDIFF_SYM2136=LTDIE_146 - Ldebug_info_start
+	.long LDIFF_SYM2136
+LTDIE_146_REFERENCE:
+
+	.byte 14
+LDIFF_SYM2137=LTDIE_146 - Ldebug_info_start
+	.long LDIFF_SYM2137
+LTDIE_150:
+
+	.byte 5
+	.asciz "System_EventHandler`1"
+
+	.byte 128,1,16
+LDIFF_SYM2138=LTDIE_15 - Ldebug_info_start
+	.long LDIFF_SYM2138
+	.byte 2,35,0,0,7
+	.asciz "System_EventHandler`1"
+
+LDIFF_SYM2139=LTDIE_150 - Ldebug_info_start
+	.long LDIFF_SYM2139
+LTDIE_150_POINTER:
+
+	.byte 13
+LDIFF_SYM2140=LTDIE_150 - Ldebug_info_start
+	.long LDIFF_SYM2140
+LTDIE_150_REFERENCE:
+
+	.byte 14
+LDIFF_SYM2141=LTDIE_150 - Ldebug_info_start
+	.long LDIFF_SYM2141
+LTDIE_149:
+
+	.byte 5
+	.asciz "System_Xml_Linq_XObjectChangeAnnotation"
+
+	.byte 32,16
+LDIFF_SYM2142=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM2142
+	.byte 2,35,0,6
+	.asciz "changing"
+
+LDIFF_SYM2143=LTDIE_150_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2143
+	.byte 2,35,16,6
+	.asciz "changed"
+
+LDIFF_SYM2144=LTDIE_150_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2144
+	.byte 2,35,24,0,7
+	.asciz "System_Xml_Linq_XObjectChangeAnnotation"
+
+LDIFF_SYM2145=LTDIE_149 - Ldebug_info_start
+	.long LDIFF_SYM2145
+LTDIE_149_POINTER:
+
+	.byte 13
+LDIFF_SYM2146=LTDIE_149 - Ldebug_info_start
+	.long LDIFF_SYM2146
+LTDIE_149_REFERENCE:
+
+	.byte 14
+LDIFF_SYM2147=LTDIE_149 - Ldebug_info_start
+	.long LDIFF_SYM2147
+	.byte 2
+	.asciz "System.Xml.Linq.XObject:NotifyChanged"
+	.asciz "System_Xml_Linq_XObject_NotifyChanged_object_System_Xml_Linq_XObjectChangeEventArgs"
+
+	.byte 18,159,3
+	.quad System_Xml_Linq_XObject_NotifyChanged_object_System_Xml_Linq_XObjectChangeEventArgs
+	.quad Lme_d6
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM2148=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2148
+	.byte 1,104,3
+	.asciz "sender"
+
+LDIFF_SYM2149=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2149
+	.byte 1,105,3
+	.asciz "e"
+
+LDIFF_SYM2150=LTDIE_146_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2150
+	.byte 1,106,11
+	.asciz "notify"
+
+LDIFF_SYM2151=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM2151
+	.byte 1,103,11
+	.asciz "o"
+
+LDIFF_SYM2152=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2152
+	.byte 1,102,11
+	.asciz "a"
+
+LDIFF_SYM2153=LTDIE_149_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2153
+	.byte 1,104,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM2154=Lfde207_end - Lfde207_start
+	.long LDIFF_SYM2154
+Lfde207_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XObject_NotifyChanged_object_System_Xml_Linq_XObjectChangeEventArgs
+
+LDIFF_SYM2155=Lme_d6 - System_Xml_Linq_XObject_NotifyChanged_object_System_Xml_Linq_XObjectChangeEventArgs
+	.long LDIFF_SYM2155
+	.long 0
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4
+	.align 3
+Lfde207_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XObject:NotifyChanging"
+	.asciz "System_Xml_Linq_XObject_NotifyChanging_object_System_Xml_Linq_XObjectChangeEventArgs"
+
+	.byte 18,184,3
+	.quad System_Xml_Linq_XObject_NotifyChanging_object_System_Xml_Linq_XObjectChangeEventArgs
+	.quad Lme_d7
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM2156=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2156
+	.byte 1,104,3
+	.asciz "sender"
+
+LDIFF_SYM2157=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2157
+	.byte 1,105,3
+	.asciz "e"
+
+LDIFF_SYM2158=LTDIE_146_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2158
+	.byte 1,106,11
+	.asciz "notify"
+
+LDIFF_SYM2159=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM2159
+	.byte 1,103,11
+	.asciz "o"
+
+LDIFF_SYM2160=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2160
+	.byte 1,102,11
+	.asciz "a"
+
+LDIFF_SYM2161=LTDIE_149_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2161
+	.byte 1,104,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM2162=Lfde208_end - Lfde208_start
+	.long LDIFF_SYM2162
+Lfde208_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XObject_NotifyChanging_object_System_Xml_Linq_XObjectChangeEventArgs
+
+LDIFF_SYM2163=Lme_d7 - System_Xml_Linq_XObject_NotifyChanging_object_System_Xml_Linq_XObjectChangeEventArgs
+	.long LDIFF_SYM2163
+	.long 0
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4
+	.align 3
+Lfde208_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27663,36 +35212,36 @@ Lfde140_end:
 
 	.byte 18,209,3
 	.quad System_Xml_Linq_XObject_SetBaseUri_string
-	.quad Lme_94
+	.quad Lme_d8
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1811=LTDIE_7_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1811
+LDIFF_SYM2164=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2164
 	.byte 2,141,16,3
 	.asciz "baseUri"
 
-LDIFF_SYM1812=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1812
+LDIFF_SYM2165=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM2165
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1813=Lfde141_end - Lfde141_start
-	.long LDIFF_SYM1813
-Lfde141_start:
+LDIFF_SYM2166=Lfde209_end - Lfde209_start
+	.long LDIFF_SYM2166
+Lfde209_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XObject_SetBaseUri_string
 
-LDIFF_SYM1814=Lme_94 - System_Xml_Linq_XObject_SetBaseUri_string
-	.long LDIFF_SYM1814
+LDIFF_SYM2167=Lme_d8 - System_Xml_Linq_XObject_SetBaseUri_string
+	.long LDIFF_SYM2167
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde141_end:
+Lfde209_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27702,41 +35251,80 @@ Lfde141_end:
 
 	.byte 18,214,3
 	.quad System_Xml_Linq_XObject_SetLineInfo_int_int
-	.quad Lme_95
+	.quad Lme_d9
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1815=LTDIE_7_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1815
+LDIFF_SYM2168=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2168
 	.byte 2,141,16,3
 	.asciz "lineNumber"
 
-LDIFF_SYM1816=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1816
+LDIFF_SYM2169=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2169
 	.byte 2,141,24,3
 	.asciz "linePosition"
 
-LDIFF_SYM1817=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1817
+LDIFF_SYM2170=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2170
 	.byte 2,141,32,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1818=Lfde142_end - Lfde142_start
-	.long LDIFF_SYM1818
-Lfde142_start:
+LDIFF_SYM2171=Lfde210_end - Lfde210_start
+	.long LDIFF_SYM2171
+Lfde210_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XObject_SetLineInfo_int_int
 
-LDIFF_SYM1819=Lme_95 - System_Xml_Linq_XObject_SetLineInfo_int_int
-	.long LDIFF_SYM1819
+LDIFF_SYM2172=Lme_d9 - System_Xml_Linq_XObject_SetLineInfo_int_int
+	.long LDIFF_SYM2172
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
-Lfde142_end:
+Lfde210_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XObject:SkipNotify"
+	.asciz "System_Xml_Linq_XObject_SkipNotify"
+
+	.byte 18,219,3
+	.quad System_Xml_Linq_XObject_SkipNotify
+	.quad Lme_da
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM2173=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2173
+	.byte 2,141,24,11
+	.asciz "o"
+
+LDIFF_SYM2174=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2174
+	.byte 1,105,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM2175=Lfde211_end - Lfde211_start
+	.long LDIFF_SYM2175
+Lfde211_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XObject_SkipNotify
+
+LDIFF_SYM2176=Lme_da - System_Xml_Linq_XObject_SkipNotify
+	.long LDIFF_SYM2176
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
+	.align 3
+Lfde211_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27746,117 +35334,185 @@ Lfde142_end:
 
 	.byte 18,239,3
 	.quad System_Xml_Linq_XObject_GetSaveOptionsFromAnnotations
-	.quad Lme_96
+	.quad Lme_db
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1820=LTDIE_7_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1820
+LDIFF_SYM2177=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2177
 	.byte 1,106,11
 	.asciz "o"
 
-LDIFF_SYM1821=LTDIE_7_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1821
+LDIFF_SYM2178=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2178
 	.byte 1,105,11
 	.asciz "saveOptions"
 
-LDIFF_SYM1822=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1822
+LDIFF_SYM2179=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2179
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1823=Lfde143_end - Lfde143_start
-	.long LDIFF_SYM1823
-Lfde143_start:
+LDIFF_SYM2180=Lfde212_end - Lfde212_start
+	.long LDIFF_SYM2180
+Lfde212_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XObject_GetSaveOptionsFromAnnotations
 
-LDIFF_SYM1824=Lme_96 - System_Xml_Linq_XObject_GetSaveOptionsFromAnnotations
-	.long LDIFF_SYM1824
+LDIFF_SYM2181=Lme_db - System_Xml_Linq_XObject_GetSaveOptionsFromAnnotations
+	.long LDIFF_SYM2181
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
 	.align 3
-Lfde143_end:
+Lfde212_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_140:
+
+	.byte 2
+	.asciz "System.Xml.Linq.XObjectChangeEventArgs:.ctor"
+	.asciz "System_Xml_Linq_XObjectChangeEventArgs__ctor_System_Xml_Linq_XObjectChange"
+
+	.byte 19,43
+	.quad System_Xml_Linq_XObjectChangeEventArgs__ctor_System_Xml_Linq_XObjectChange
+	.quad Lme_dc
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM2182=LTDIE_146_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2182
+	.byte 2,141,16,3
+	.asciz "objectChange"
+
+LDIFF_SYM2183=LTDIE_148 - Ldebug_info_start
+	.long LDIFF_SYM2183
+	.byte 2,141,24,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM2184=Lfde213_end - Lfde213_start
+	.long LDIFF_SYM2184
+Lfde213_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XObjectChangeEventArgs__ctor_System_Xml_Linq_XObjectChange
+
+LDIFF_SYM2185=Lme_dc - System_Xml_Linq_XObjectChangeEventArgs__ctor_System_Xml_Linq_XObjectChange
+	.long LDIFF_SYM2185
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde213_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XObjectChangeEventArgs:.cctor"
+	.asciz "System_Xml_Linq_XObjectChangeEventArgs__cctor"
+
+	.byte 19,20
+	.quad System_Xml_Linq_XObjectChangeEventArgs__cctor
+	.quad Lme_dd
+
+	.byte 2,118,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM2186=Lfde214_end - Lfde214_start
+	.long LDIFF_SYM2186
+Lfde214_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XObjectChangeEventArgs__cctor
+
+LDIFF_SYM2187=Lme_dd - System_Xml_Linq_XObjectChangeEventArgs__cctor
+	.long LDIFF_SYM2187
+	.long 0
+	.byte 12,31,0,68,14,16,157,2,158,1,68,13,29
+	.align 3
+Lfde214_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_151:
 
 	.byte 5
 	.asciz "System_Xml_Linq_XProcessingInstruction"
 
 	.byte 56,16
-LDIFF_SYM1825=LTDIE_9 - Ldebug_info_start
-	.long LDIFF_SYM1825
+LDIFF_SYM2188=LTDIE_9 - Ldebug_info_start
+	.long LDIFF_SYM2188
 	.byte 2,35,0,6
 	.asciz "target"
 
-LDIFF_SYM1826=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1826
+LDIFF_SYM2189=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM2189
 	.byte 2,35,40,6
 	.asciz "data"
 
-LDIFF_SYM1827=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1827
+LDIFF_SYM2190=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM2190
 	.byte 2,35,48,0,7
 	.asciz "System_Xml_Linq_XProcessingInstruction"
 
-LDIFF_SYM1828=LTDIE_140 - Ldebug_info_start
-	.long LDIFF_SYM1828
-LTDIE_140_POINTER:
+LDIFF_SYM2191=LTDIE_151 - Ldebug_info_start
+	.long LDIFF_SYM2191
+LTDIE_151_POINTER:
 
 	.byte 13
-LDIFF_SYM1829=LTDIE_140 - Ldebug_info_start
-	.long LDIFF_SYM1829
-LTDIE_140_REFERENCE:
+LDIFF_SYM2192=LTDIE_151 - Ldebug_info_start
+	.long LDIFF_SYM2192
+LTDIE_151_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1830=LTDIE_140 - Ldebug_info_start
-	.long LDIFF_SYM1830
+LDIFF_SYM2193=LTDIE_151 - Ldebug_info_start
+	.long LDIFF_SYM2193
 	.byte 2
 	.asciz "System.Xml.Linq.XProcessingInstruction:.ctor"
 	.asciz "System_Xml_Linq_XProcessingInstruction__ctor_string_string"
 
-	.byte 19,30
+	.byte 20,30
 	.quad System_Xml_Linq_XProcessingInstruction__ctor_string_string
-	.quad Lme_97
+	.quad Lme_de
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1831=LTDIE_140_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1831
+LDIFF_SYM2194=LTDIE_151_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2194
 	.byte 1,104,3
 	.asciz "target"
 
-LDIFF_SYM1832=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1832
+LDIFF_SYM2195=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM2195
 	.byte 2,141,24,3
 	.asciz "data"
 
-LDIFF_SYM1833=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1833
+LDIFF_SYM2196=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM2196
 	.byte 2,141,32,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1834=Lfde144_end - Lfde144_start
-	.long LDIFF_SYM1834
-Lfde144_start:
+LDIFF_SYM2197=Lfde215_end - Lfde215_start
+	.long LDIFF_SYM2197
+Lfde215_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XProcessingInstruction__ctor_string_string
 
-LDIFF_SYM1835=Lme_97 - System_Xml_Linq_XProcessingInstruction__ctor_string_string
-	.long LDIFF_SYM1835
+LDIFF_SYM2198=Lme_de - System_Xml_Linq_XProcessingInstruction__ctor_string_string
+	.long LDIFF_SYM2198
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4
 	.align 3
-Lfde144_end:
+Lfde215_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27864,38 +35520,111 @@ Lfde144_end:
 	.asciz "System.Xml.Linq.XProcessingInstruction:.ctor"
 	.asciz "System_Xml_Linq_XProcessingInstruction__ctor_System_Xml_Linq_XProcessingInstruction"
 
-	.byte 19,43
+	.byte 20,43
 	.quad System_Xml_Linq_XProcessingInstruction__ctor_System_Xml_Linq_XProcessingInstruction
-	.quad Lme_98
+	.quad Lme_df
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1836=LTDIE_140_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1836
+LDIFF_SYM2199=LTDIE_151_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2199
 	.byte 1,105,3
 	.asciz "other"
 
-LDIFF_SYM1837=LTDIE_140_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1837
+LDIFF_SYM2200=LTDIE_151_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2200
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1838=Lfde145_end - Lfde145_start
-	.long LDIFF_SYM1838
-Lfde145_start:
+LDIFF_SYM2201=Lfde216_end - Lfde216_start
+	.long LDIFF_SYM2201
+Lfde216_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XProcessingInstruction__ctor_System_Xml_Linq_XProcessingInstruction
 
-LDIFF_SYM1839=Lme_98 - System_Xml_Linq_XProcessingInstruction__ctor_System_Xml_Linq_XProcessingInstruction
-	.long LDIFF_SYM1839
+LDIFF_SYM2202=Lme_df - System_Xml_Linq_XProcessingInstruction__ctor_System_Xml_Linq_XProcessingInstruction
+	.long LDIFF_SYM2202
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
 	.align 3
-Lfde145_end:
+Lfde216_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XProcessingInstruction:get_Data"
+	.asciz "System_Xml_Linq_XProcessingInstruction_get_Data"
+
+	.byte 20,67
+	.quad System_Xml_Linq_XProcessingInstruction_get_Data
+	.quad Lme_e0
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM2203=LTDIE_151_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2203
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM2204=Lfde217_end - Lfde217_start
+	.long LDIFF_SYM2204
+Lfde217_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XProcessingInstruction_get_Data
+
+LDIFF_SYM2205=Lme_e0 - System_Xml_Linq_XProcessingInstruction_get_Data
+	.long LDIFF_SYM2205
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde217_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XProcessingInstruction:set_Data"
+	.asciz "System_Xml_Linq_XProcessingInstruction_set_Data_string"
+
+	.byte 20,71
+	.quad System_Xml_Linq_XProcessingInstruction_set_Data_string
+	.quad Lme_e1
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM2206=LTDIE_151_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2206
+	.byte 1,105,3
+	.asciz "value"
+
+LDIFF_SYM2207=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM2207
+	.byte 2,141,24,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM2208=Lfde218_end - Lfde218_start
+	.long LDIFF_SYM2208
+Lfde218_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XProcessingInstruction_set_Data_string
+
+LDIFF_SYM2209=Lme_e1 - System_Xml_Linq_XProcessingInstruction_set_Data_string
+	.long LDIFF_SYM2209
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
+	.align 3
+Lfde218_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27903,33 +35632,67 @@ Lfde145_end:
 	.asciz "System.Xml.Linq.XProcessingInstruction:get_NodeType"
 	.asciz "System_Xml_Linq_XProcessingInstruction_get_NodeType"
 
-	.byte 19,88
+	.byte 20,88
 	.quad System_Xml_Linq_XProcessingInstruction_get_NodeType
-	.quad Lme_99
+	.quad Lme_e2
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1840=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1840
+LDIFF_SYM2210=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2210
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1841=Lfde146_end - Lfde146_start
-	.long LDIFF_SYM1841
-Lfde146_start:
+LDIFF_SYM2211=Lfde219_end - Lfde219_start
+	.long LDIFF_SYM2211
+Lfde219_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XProcessingInstruction_get_NodeType
 
-LDIFF_SYM1842=Lme_99 - System_Xml_Linq_XProcessingInstruction_get_NodeType
-	.long LDIFF_SYM1842
+LDIFF_SYM2212=Lme_e2 - System_Xml_Linq_XProcessingInstruction_get_NodeType
+	.long LDIFF_SYM2212
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde146_end:
+Lfde219_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XProcessingInstruction:get_Target"
+	.asciz "System_Xml_Linq_XProcessingInstruction_get_Target"
+
+	.byte 20,102
+	.quad System_Xml_Linq_XProcessingInstruction_get_Target
+	.quad Lme_e3
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM2213=LTDIE_151_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2213
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM2214=Lfde220_end - Lfde220_start
+	.long LDIFF_SYM2214
+Lfde220_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XProcessingInstruction_get_Target
+
+LDIFF_SYM2215=Lme_e3 - System_Xml_Linq_XProcessingInstruction_get_Target
+	.long LDIFF_SYM2215
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde220_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27937,38 +35700,38 @@ Lfde146_end:
 	.asciz "System.Xml.Linq.XProcessingInstruction:WriteTo"
 	.asciz "System_Xml_Linq_XProcessingInstruction_WriteTo_System_Xml_XmlWriter"
 
-	.byte 19,121
+	.byte 20,121
 	.quad System_Xml_Linq_XProcessingInstruction_WriteTo_System_Xml_XmlWriter
-	.quad Lme_9a
+	.quad Lme_e4
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1843=LTDIE_140_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1843
+LDIFF_SYM2216=LTDIE_151_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2216
 	.byte 1,105,3
 	.asciz "writer"
 
-LDIFF_SYM1844=LTDIE_41_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1844
+LDIFF_SYM2217=LTDIE_41_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2217
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1845=Lfde147_end - Lfde147_start
-	.long LDIFF_SYM1845
-Lfde147_start:
+LDIFF_SYM2218=Lfde221_end - Lfde221_start
+	.long LDIFF_SYM2218
+Lfde221_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XProcessingInstruction_WriteTo_System_Xml_XmlWriter
 
-LDIFF_SYM1846=Lme_9a - System_Xml_Linq_XProcessingInstruction_WriteTo_System_Xml_XmlWriter
-	.long LDIFF_SYM1846
+LDIFF_SYM2219=Lme_e4 - System_Xml_Linq_XProcessingInstruction_WriteTo_System_Xml_XmlWriter
+	.long LDIFF_SYM2219
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1
 	.align 3
-Lfde147_end:
+Lfde221_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27976,33 +35739,33 @@ Lfde147_end:
 	.asciz "System.Xml.Linq.XProcessingInstruction:CloneNode"
 	.asciz "System_Xml_Linq_XProcessingInstruction_CloneNode"
 
-	.byte 19,143,1
+	.byte 20,143,1
 	.quad System_Xml_Linq_XProcessingInstruction_CloneNode
-	.quad Lme_9b
+	.quad Lme_e5
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1847=LTDIE_140_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1847
+LDIFF_SYM2220=LTDIE_151_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2220
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1848=Lfde148_end - Lfde148_start
-	.long LDIFF_SYM1848
-Lfde148_start:
+LDIFF_SYM2221=Lfde222_end - Lfde222_start
+	.long LDIFF_SYM2221
+Lfde222_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XProcessingInstruction_CloneNode
 
-LDIFF_SYM1849=Lme_9b - System_Xml_Linq_XProcessingInstruction_CloneNode
-	.long LDIFF_SYM1849
+LDIFF_SYM2222=Lme_e5 - System_Xml_Linq_XProcessingInstruction_CloneNode
+	.long LDIFF_SYM2222
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde148_end:
+Lfde222_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28010,33 +35773,33 @@ Lfde148_end:
 	.asciz "System.Xml.Linq.XProcessingInstruction:ValidateName"
 	.asciz "System_Xml_Linq_XProcessingInstruction_ValidateName_string"
 
-	.byte 19,159,1
+	.byte 20,159,1
 	.quad System_Xml_Linq_XProcessingInstruction_ValidateName_string
-	.quad Lme_9c
+	.quad Lme_e6
 
 	.byte 2,118,16,3
 	.asciz "name"
 
-LDIFF_SYM1850=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1850
+LDIFF_SYM2223=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM2223
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1851=Lfde149_end - Lfde149_start
-	.long LDIFF_SYM1851
-Lfde149_start:
+LDIFF_SYM2224=Lfde223_end - Lfde223_start
+	.long LDIFF_SYM2224
+Lfde223_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XProcessingInstruction_ValidateName_string
 
-LDIFF_SYM1852=Lme_9c - System_Xml_Linq_XProcessingInstruction_ValidateName_string
-	.long LDIFF_SYM1852
+LDIFF_SYM2225=Lme_e6 - System_Xml_Linq_XProcessingInstruction_ValidateName_string
+	.long LDIFF_SYM2225
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
-Lfde149_end:
+Lfde223_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28044,38 +35807,38 @@ Lfde149_end:
 	.asciz "System.Xml.Linq.XText:.ctor"
 	.asciz "System_Xml_Linq_XText__ctor_string"
 
-	.byte 20,22
+	.byte 21,22
 	.quad System_Xml_Linq_XText__ctor_string
-	.quad Lme_9d
+	.quad Lme_e7
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1853=LTDIE_43_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1853
+LDIFF_SYM2226=LTDIE_43_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2226
 	.byte 2,141,16,3
 	.asciz "value"
 
-LDIFF_SYM1854=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1854
+LDIFF_SYM2227=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM2227
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1855=Lfde150_end - Lfde150_start
-	.long LDIFF_SYM1855
-Lfde150_start:
+LDIFF_SYM2228=Lfde224_end - Lfde224_start
+	.long LDIFF_SYM2228
+Lfde224_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XText__ctor_string
 
-LDIFF_SYM1856=Lme_9d - System_Xml_Linq_XText__ctor_string
-	.long LDIFF_SYM1856
+LDIFF_SYM2229=Lme_e7 - System_Xml_Linq_XText__ctor_string
+	.long LDIFF_SYM2229
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde150_end:
+Lfde224_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28083,38 +35846,38 @@ Lfde150_end:
 	.asciz "System.Xml.Linq.XText:.ctor"
 	.asciz "System_Xml_Linq_XText__ctor_System_Xml_Linq_XText"
 
-	.byte 20,32
+	.byte 21,32
 	.quad System_Xml_Linq_XText__ctor_System_Xml_Linq_XText
-	.quad Lme_9e
+	.quad Lme_e8
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1857=LTDIE_43_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1857
+LDIFF_SYM2230=LTDIE_43_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2230
 	.byte 2,141,16,3
 	.asciz "other"
 
-LDIFF_SYM1858=LTDIE_43_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1858
+LDIFF_SYM2231=LTDIE_43_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2231
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1859=Lfde151_end - Lfde151_start
-	.long LDIFF_SYM1859
-Lfde151_start:
+LDIFF_SYM2232=Lfde225_end - Lfde225_start
+	.long LDIFF_SYM2232
+Lfde225_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XText__ctor_System_Xml_Linq_XText
 
-LDIFF_SYM1860=Lme_9e - System_Xml_Linq_XText__ctor_System_Xml_Linq_XText
-	.long LDIFF_SYM1860
+LDIFF_SYM2233=Lme_e8 - System_Xml_Linq_XText__ctor_System_Xml_Linq_XText
+	.long LDIFF_SYM2233
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde151_end:
+Lfde225_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28122,33 +35885,33 @@ Lfde151_end:
 	.asciz "System.Xml.Linq.XText:get_NodeType"
 	.asciz "System_Xml_Linq_XText_get_NodeType"
 
-	.byte 20,54
+	.byte 21,54
 	.quad System_Xml_Linq_XText_get_NodeType
-	.quad Lme_9f
+	.quad Lme_e9
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1861=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1861
+LDIFF_SYM2234=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2234
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1862=Lfde152_end - Lfde152_start
-	.long LDIFF_SYM1862
-Lfde152_start:
+LDIFF_SYM2235=Lfde226_end - Lfde226_start
+	.long LDIFF_SYM2235
+Lfde226_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XText_get_NodeType
 
-LDIFF_SYM1863=Lme_9f - System_Xml_Linq_XText_get_NodeType
-	.long LDIFF_SYM1863
+LDIFF_SYM2236=Lme_e9 - System_Xml_Linq_XText_get_NodeType
+	.long LDIFF_SYM2236
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde152_end:
+Lfde226_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28156,33 +35919,72 @@ Lfde152_end:
 	.asciz "System.Xml.Linq.XText:get_Value"
 	.asciz "System_Xml_Linq_XText_get_Value"
 
-	.byte 20,65
+	.byte 21,65
 	.quad System_Xml_Linq_XText_get_Value
-	.quad Lme_a0
+	.quad Lme_ea
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1864=LTDIE_43_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1864
+LDIFF_SYM2237=LTDIE_43_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2237
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1865=Lfde153_end - Lfde153_start
-	.long LDIFF_SYM1865
-Lfde153_start:
+LDIFF_SYM2238=Lfde227_end - Lfde227_start
+	.long LDIFF_SYM2238
+Lfde227_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XText_get_Value
 
-LDIFF_SYM1866=Lme_a0 - System_Xml_Linq_XText_get_Value
-	.long LDIFF_SYM1866
+LDIFF_SYM2239=Lme_ea - System_Xml_Linq_XText_get_Value
+	.long LDIFF_SYM2239
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
-Lfde153_end:
+Lfde227_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XText:set_Value"
+	.asciz "System_Xml_Linq_XText_set_Value_string"
+
+	.byte 21,69
+	.quad System_Xml_Linq_XText_set_Value_string
+	.quad Lme_eb
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM2240=LTDIE_43_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2240
+	.byte 1,105,3
+	.asciz "value"
+
+LDIFF_SYM2241=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM2241
+	.byte 2,141,24,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM2242=Lfde228_end - Lfde228_start
+	.long LDIFF_SYM2242
+Lfde228_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XText_set_Value_string
+
+LDIFF_SYM2243=Lme_eb - System_Xml_Linq_XText_set_Value_string
+	.long LDIFF_SYM2243
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2
+	.align 3
+Lfde228_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28190,38 +35992,77 @@ Lfde153_end:
 	.asciz "System.Xml.Linq.XText:WriteTo"
 	.asciz "System_Xml_Linq_XText_WriteTo_System_Xml_XmlWriter"
 
-	.byte 20,84
+	.byte 21,84
 	.quad System_Xml_Linq_XText_WriteTo_System_Xml_XmlWriter
-	.quad Lme_a1
+	.quad Lme_ec
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1867=LTDIE_43_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1867
+LDIFF_SYM2244=LTDIE_43_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2244
 	.byte 1,105,3
 	.asciz "writer"
 
-LDIFF_SYM1868=LTDIE_41_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1868
+LDIFF_SYM2245=LTDIE_41_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2245
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1869=Lfde154_end - Lfde154_start
-	.long LDIFF_SYM1869
-Lfde154_start:
+LDIFF_SYM2246=Lfde229_end - Lfde229_start
+	.long LDIFF_SYM2246
+Lfde229_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XText_WriteTo_System_Xml_XmlWriter
 
-LDIFF_SYM1870=Lme_a1 - System_Xml_Linq_XText_WriteTo_System_Xml_XmlWriter
-	.long LDIFF_SYM1870
+LDIFF_SYM2247=Lme_ec - System_Xml_Linq_XText_WriteTo_System_Xml_XmlWriter
+	.long LDIFF_SYM2247
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,152,3,68,153,2,154,1
 	.align 3
-Lfde154_end:
+Lfde229_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Xml.Linq.XText:AppendText"
+	.asciz "System_Xml_Linq_XText_AppendText_System_Text_StringBuilder"
+
+	.byte 21,118
+	.quad System_Xml_Linq_XText_AppendText_System_Text_StringBuilder
+	.quad Lme_ed
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM2248=LTDIE_43_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2248
+	.byte 2,141,16,3
+	.asciz "sb"
+
+LDIFF_SYM2249=LTDIE_27_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2249
+	.byte 2,141,24,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM2250=Lfde230_end - Lfde230_start
+	.long LDIFF_SYM2250
+Lfde230_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XText_AppendText_System_Text_StringBuilder
+
+LDIFF_SYM2251=Lme_ed - System_Xml_Linq_XText_AppendText_System_Text_StringBuilder
+	.long LDIFF_SYM2251
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde230_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28229,33 +36070,33 @@ Lfde154_end:
 	.asciz "System.Xml.Linq.XText:CloneNode"
 	.asciz "System_Xml_Linq_XText_CloneNode"
 
-	.byte 20,123
+	.byte 21,123
 	.quad System_Xml_Linq_XText_CloneNode
-	.quad Lme_a2
+	.quad Lme_ee
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1871=LTDIE_43_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1871
+LDIFF_SYM2252=LTDIE_43_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2252
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1872=Lfde155_end - Lfde155_start
-	.long LDIFF_SYM1872
-Lfde155_start:
+LDIFF_SYM2253=Lfde231_end - Lfde231_start
+	.long LDIFF_SYM2253
+Lfde231_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XText_CloneNode
 
-LDIFF_SYM1873=Lme_a2 - System_Xml_Linq_XText_CloneNode
-	.long LDIFF_SYM1873
+LDIFF_SYM2254=Lme_ee - System_Xml_Linq_XText_CloneNode
+	.long LDIFF_SYM2254
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde155_end:
+Lfde231_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28263,38 +36104,38 @@ Lfde155_end:
 	.asciz "System.Text.StringBuilderCache:Acquire"
 	.asciz "System_Text_StringBuilderCache_Acquire_int"
 
-	.byte 21,27
+	.byte 22,27
 	.quad System_Text_StringBuilderCache_Acquire_int
-	.quad Lme_a3
+	.quad Lme_ef
 
 	.byte 2,118,16,3
 	.asciz "capacity"
 
-LDIFF_SYM1874=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1874
+LDIFF_SYM2255=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2255
 	.byte 2,141,24,11
 	.asciz "sb"
 
-LDIFF_SYM1875=LTDIE_27_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1875
+LDIFF_SYM2256=LTDIE_27_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2256
 	.byte 1,105,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1876=Lfde156_end - Lfde156_start
-	.long LDIFF_SYM1876
-Lfde156_start:
+LDIFF_SYM2257=Lfde232_end - Lfde232_start
+	.long LDIFF_SYM2257
+Lfde232_start:
 
 	.long 0
 	.align 3
 	.quad System_Text_StringBuilderCache_Acquire_int
 
-LDIFF_SYM1877=Lme_a3 - System_Text_StringBuilderCache_Acquire_int
-	.long LDIFF_SYM1877
+LDIFF_SYM2258=Lme_ef - System_Text_StringBuilderCache_Acquire_int
+	.long LDIFF_SYM2258
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4
 	.align 3
-Lfde156_end:
+Lfde232_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28302,33 +36143,33 @@ Lfde156_end:
 	.asciz "System.Text.StringBuilderCache:Release"
 	.asciz "System_Text_StringBuilderCache_Release_System_Text_StringBuilder"
 
-	.byte 21,48
+	.byte 22,48
 	.quad System_Text_StringBuilderCache_Release_System_Text_StringBuilder
-	.quad Lme_a4
+	.quad Lme_f0
 
 	.byte 2,118,16,3
 	.asciz "sb"
 
-LDIFF_SYM1878=LTDIE_27_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1878
+LDIFF_SYM2259=LTDIE_27_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2259
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1879=Lfde157_end - Lfde157_start
-	.long LDIFF_SYM1879
-Lfde157_start:
+LDIFF_SYM2260=Lfde233_end - Lfde233_start
+	.long LDIFF_SYM2260
+Lfde233_start:
 
 	.long 0
 	.align 3
 	.quad System_Text_StringBuilderCache_Release_System_Text_StringBuilder
 
-LDIFF_SYM1880=Lme_a4 - System_Text_StringBuilderCache_Release_System_Text_StringBuilder
-	.long LDIFF_SYM1880
+LDIFF_SYM2261=Lme_f0 - System_Text_StringBuilderCache_Release_System_Text_StringBuilder
+	.long LDIFF_SYM2261
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
 	.align 3
-Lfde157_end:
+Lfde233_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28336,170 +36177,219 @@ Lfde157_end:
 	.asciz "System.Text.StringBuilderCache:GetStringAndRelease"
 	.asciz "System_Text_StringBuilderCache_GetStringAndRelease_System_Text_StringBuilder"
 
-	.byte 21,57
+	.byte 22,57
 	.quad System_Text_StringBuilderCache_GetStringAndRelease_System_Text_StringBuilder
-	.quad Lme_a5
+	.quad Lme_f1
 
 	.byte 2,118,16,3
 	.asciz "sb"
 
-LDIFF_SYM1881=LTDIE_27_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1881
+LDIFF_SYM2262=LTDIE_27_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2262
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1882=Lfde158_end - Lfde158_start
-	.long LDIFF_SYM1882
-Lfde158_start:
+LDIFF_SYM2263=Lfde234_end - Lfde234_start
+	.long LDIFF_SYM2263
+Lfde234_start:
 
 	.long 0
 	.align 3
 	.quad System_Text_StringBuilderCache_GetStringAndRelease_System_Text_StringBuilder
 
-LDIFF_SYM1883=Lme_a5 - System_Text_StringBuilderCache_GetStringAndRelease_System_Text_StringBuilder
-	.long LDIFF_SYM1883
+LDIFF_SYM2264=Lme_f1 - System_Text_StringBuilderCache_GetStringAndRelease_System_Text_StringBuilder
+	.long LDIFF_SYM2264
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
-Lfde158_end:
+Lfde234_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_143:
+
+	.byte 2
+	.asciz "System.Xml.Linq.XDocument:GetFirstNode<T_GSHAREDVT>"
+	.asciz "System_Xml_Linq_XDocument_GetFirstNode_T_GSHAREDVT"
+
+	.byte 10,240,6
+	.quad System_Xml_Linq_XDocument_GetFirstNode_T_GSHAREDVT
+	.quad Lme_f3
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM2265=LTDIE_57_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2265
+	.byte 1,106,11
+	.asciz "n"
+
+LDIFF_SYM2266=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2266
+	.byte 1,103,11
+	.asciz "e"
+
+LDIFF_SYM2267=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2267
+	.byte 1,80,11
+	.asciz "V_2"
+
+LDIFF_SYM2268=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2268
+	.byte 1,80,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM2269=Lfde235_end - Lfde235_start
+	.long LDIFF_SYM2269
+Lfde235_start:
+
+	.long 0
+	.align 3
+	.quad System_Xml_Linq_XDocument_GetFirstNode_T_GSHAREDVT
+
+LDIFF_SYM2270=Lme_f3 - System_Xml_Linq_XDocument_GetFirstNode_T_GSHAREDVT
+	.long LDIFF_SYM2270
+	.long 0
+	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,149,12,150,11,68,151,10,152,9,68,153,8,154,7
+	.align 3
+Lfde235_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_154:
 
 	.byte 5
 	.asciz "_ExtractKeyDelegate"
 
 	.byte 128,1,16
-LDIFF_SYM1884=LTDIE_15 - Ldebug_info_start
-	.long LDIFF_SYM1884
+LDIFF_SYM2271=LTDIE_15 - Ldebug_info_start
+	.long LDIFF_SYM2271
 	.byte 2,35,0,0,7
 	.asciz "_ExtractKeyDelegate"
 
-LDIFF_SYM1885=LTDIE_143 - Ldebug_info_start
-	.long LDIFF_SYM1885
-LTDIE_143_POINTER:
+LDIFF_SYM2272=LTDIE_154 - Ldebug_info_start
+	.long LDIFF_SYM2272
+LTDIE_154_POINTER:
 
 	.byte 13
-LDIFF_SYM1886=LTDIE_143 - Ldebug_info_start
-	.long LDIFF_SYM1886
-LTDIE_143_REFERENCE:
+LDIFF_SYM2273=LTDIE_154 - Ldebug_info_start
+	.long LDIFF_SYM2273
+LTDIE_154_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1887=LTDIE_143 - Ldebug_info_start
-	.long LDIFF_SYM1887
-LTDIE_142:
+LDIFF_SYM2274=LTDIE_154 - Ldebug_info_start
+	.long LDIFF_SYM2274
+LTDIE_153:
 
 	.byte 5
 	.asciz "_XHashtableState"
 
 	.byte 48,16
-LDIFF_SYM1888=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1888
+LDIFF_SYM2275=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM2275
 	.byte 2,35,0,6
 	.asciz "_buckets"
 
-LDIFF_SYM1889=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1889
+LDIFF_SYM2276=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM2276
 	.byte 2,35,16,6
 	.asciz "_entries"
 
-LDIFF_SYM1890=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1890
+LDIFF_SYM2277=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM2277
 	.byte 2,35,24,6
 	.asciz "_numEntries"
 
-LDIFF_SYM1891=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1891
+LDIFF_SYM2278=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2278
 	.byte 2,35,40,6
 	.asciz "_extractKey"
 
-LDIFF_SYM1892=LTDIE_143_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1892
+LDIFF_SYM2279=LTDIE_154_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2279
 	.byte 2,35,32,0,7
 	.asciz "_XHashtableState"
 
-LDIFF_SYM1893=LTDIE_142 - Ldebug_info_start
-	.long LDIFF_SYM1893
-LTDIE_142_POINTER:
+LDIFF_SYM2280=LTDIE_153 - Ldebug_info_start
+	.long LDIFF_SYM2280
+LTDIE_153_POINTER:
 
 	.byte 13
-LDIFF_SYM1894=LTDIE_142 - Ldebug_info_start
-	.long LDIFF_SYM1894
-LTDIE_142_REFERENCE:
+LDIFF_SYM2281=LTDIE_153 - Ldebug_info_start
+	.long LDIFF_SYM2281
+LTDIE_153_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1895=LTDIE_142 - Ldebug_info_start
-	.long LDIFF_SYM1895
-LTDIE_141:
+LDIFF_SYM2282=LTDIE_153 - Ldebug_info_start
+	.long LDIFF_SYM2282
+LTDIE_152:
 
 	.byte 5
 	.asciz "System_Xml_Linq_XHashtable`1"
 
 	.byte 24,16
-LDIFF_SYM1896=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1896
+LDIFF_SYM2283=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM2283
 	.byte 2,35,0,6
 	.asciz "_state"
 
-LDIFF_SYM1897=LTDIE_142_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1897
+LDIFF_SYM2284=LTDIE_153_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2284
 	.byte 2,35,16,0,7
 	.asciz "System_Xml_Linq_XHashtable`1"
 
-LDIFF_SYM1898=LTDIE_141 - Ldebug_info_start
-	.long LDIFF_SYM1898
-LTDIE_141_POINTER:
+LDIFF_SYM2285=LTDIE_152 - Ldebug_info_start
+	.long LDIFF_SYM2285
+LTDIE_152_POINTER:
 
 	.byte 13
-LDIFF_SYM1899=LTDIE_141 - Ldebug_info_start
-	.long LDIFF_SYM1899
-LTDIE_141_REFERENCE:
+LDIFF_SYM2286=LTDIE_152 - Ldebug_info_start
+	.long LDIFF_SYM2286
+LTDIE_152_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1900=LTDIE_141 - Ldebug_info_start
-	.long LDIFF_SYM1900
+LDIFF_SYM2287=LTDIE_152 - Ldebug_info_start
+	.long LDIFF_SYM2287
 	.byte 2
 	.asciz "System.Xml.Linq.XHashtable`1<TValue_GSHAREDVT>:.ctor"
 	.asciz "System_Xml_Linq_XHashtable_1_TValue_GSHAREDVT__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_int"
 
 	.byte 13,77
 	.quad System_Xml_Linq_XHashtable_1_TValue_GSHAREDVT__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_int
-	.quad Lme_a7
+	.quad Lme_f4
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1901=LTDIE_141_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1901
+LDIFF_SYM2288=LTDIE_152_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2288
 	.byte 2,141,24,3
 	.asciz "extractKey"
 
-LDIFF_SYM1902=LTDIE_143_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1902
+LDIFF_SYM2289=LTDIE_154_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2289
 	.byte 2,141,32,3
 	.asciz "capacity"
 
-LDIFF_SYM1903=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1903
+LDIFF_SYM2290=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2290
 	.byte 2,141,40,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1904=Lfde159_end - Lfde159_start
-	.long LDIFF_SYM1904
-Lfde159_start:
+LDIFF_SYM2291=Lfde236_end - Lfde236_start
+	.long LDIFF_SYM2291
+Lfde236_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XHashtable_1_TValue_GSHAREDVT__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_int
 
-LDIFF_SYM1905=Lme_a7 - System_Xml_Linq_XHashtable_1_TValue_GSHAREDVT__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_int
-	.long LDIFF_SYM1905
+LDIFF_SYM2292=Lme_f4 - System_Xml_Linq_XHashtable_1_TValue_GSHAREDVT__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_int
+	.long LDIFF_SYM2292
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10
 	.align 3
-Lfde159_end:
+Lfde236_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28509,51 +36399,51 @@ Lfde159_end:
 
 	.byte 13,87
 	.quad System_Xml_Linq_XHashtable_1_TValue_GSHAREDVT_TryGetValue_string_int_int_TValue_GSHAREDVT_
-	.quad Lme_a8
+	.quad Lme_f5
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1906=LTDIE_141_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1906
+LDIFF_SYM2293=LTDIE_152_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2293
 	.byte 2,141,24,3
 	.asciz "key"
 
-LDIFF_SYM1907=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1907
+LDIFF_SYM2294=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM2294
 	.byte 2,141,32,3
 	.asciz "index"
 
-LDIFF_SYM1908=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1908
+LDIFF_SYM2295=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2295
 	.byte 2,141,40,3
 	.asciz "count"
 
-LDIFF_SYM1909=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1909
+LDIFF_SYM2296=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2296
 	.byte 2,141,48,3
 	.asciz "value"
 
-LDIFF_SYM1910=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1910
+LDIFF_SYM2297=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM2297
 	.byte 2,141,56,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1911=Lfde160_end - Lfde160_start
-	.long LDIFF_SYM1911
-Lfde160_start:
+LDIFF_SYM2298=Lfde237_end - Lfde237_start
+	.long LDIFF_SYM2298
+Lfde237_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XHashtable_1_TValue_GSHAREDVT_TryGetValue_string_int_int_TValue_GSHAREDVT_
 
-LDIFF_SYM1912=Lme_a8 - System_Xml_Linq_XHashtable_1_TValue_GSHAREDVT_TryGetValue_string_int_int_TValue_GSHAREDVT_
-	.long LDIFF_SYM1912
+LDIFF_SYM2299=Lme_f5 - System_Xml_Linq_XHashtable_1_TValue_GSHAREDVT_TryGetValue_string_int_int_TValue_GSHAREDVT_
+	.long LDIFF_SYM2299
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,150,10
 	.align 3
-Lfde160_end:
+Lfde237_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28563,165 +36453,165 @@ Lfde160_end:
 
 	.byte 13,102
 	.quad System_Xml_Linq_XHashtable_1_TValue_GSHAREDVT_Add_TValue_GSHAREDVT
-	.quad Lme_a9
+	.quad Lme_f6
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1913=LTDIE_141_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1913
+LDIFF_SYM2300=LTDIE_152_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2300
 	.byte 2,141,56,3
 	.asciz "value"
 
-LDIFF_SYM1914=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1914
+LDIFF_SYM2301=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2301
 	.byte 1,80,11
 	.asciz "newValue"
 
-LDIFF_SYM1915=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1915
+LDIFF_SYM2302=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2302
 	.byte 1,80,11
 	.asciz "V_1"
 
-LDIFF_SYM1916=LTDIE_141_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1916
+LDIFF_SYM2303=LTDIE_152_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2303
 	.byte 3,141,200,0,11
 	.asciz "V_2"
 
-LDIFF_SYM1917=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1917
+LDIFF_SYM2304=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM2304
 	.byte 3,141,208,0,11
 	.asciz "newState"
 
-LDIFF_SYM1918=LTDIE_142_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1918
+LDIFF_SYM2305=LTDIE_153_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2305
 	.byte 1,104,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1919=Lfde161_end - Lfde161_start
-	.long LDIFF_SYM1919
-Lfde161_start:
+LDIFF_SYM2306=Lfde238_end - Lfde238_start
+	.long LDIFF_SYM2306
+Lfde238_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XHashtable_1_TValue_GSHAREDVT_Add_TValue_GSHAREDVT
 
-LDIFF_SYM1920=Lme_a9 - System_Xml_Linq_XHashtable_1_TValue_GSHAREDVT_Add_TValue_GSHAREDVT
-	.long LDIFF_SYM1920
+LDIFF_SYM2307=Lme_f6 - System_Xml_Linq_XHashtable_1_TValue_GSHAREDVT_Add_TValue_GSHAREDVT
+	.long LDIFF_SYM2307
 	.long 0
 	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,151,14,152,13,68,153,12,154,11
 	.align 3
-Lfde161_end:
+Lfde238_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_145:
+LTDIE_156:
 
 	.byte 5
 	.asciz "_ExtractKeyDelegate"
 
 	.byte 128,1,16
-LDIFF_SYM1921=LTDIE_15 - Ldebug_info_start
-	.long LDIFF_SYM1921
+LDIFF_SYM2308=LTDIE_15 - Ldebug_info_start
+	.long LDIFF_SYM2308
 	.byte 2,35,0,0,7
 	.asciz "_ExtractKeyDelegate"
 
-LDIFF_SYM1922=LTDIE_145 - Ldebug_info_start
-	.long LDIFF_SYM1922
-LTDIE_145_POINTER:
+LDIFF_SYM2309=LTDIE_156 - Ldebug_info_start
+	.long LDIFF_SYM2309
+LTDIE_156_POINTER:
 
 	.byte 13
-LDIFF_SYM1923=LTDIE_145 - Ldebug_info_start
-	.long LDIFF_SYM1923
-LTDIE_145_REFERENCE:
+LDIFF_SYM2310=LTDIE_156 - Ldebug_info_start
+	.long LDIFF_SYM2310
+LTDIE_156_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1924=LTDIE_145 - Ldebug_info_start
-	.long LDIFF_SYM1924
-LTDIE_144:
+LDIFF_SYM2311=LTDIE_156 - Ldebug_info_start
+	.long LDIFF_SYM2311
+LTDIE_155:
 
 	.byte 5
 	.asciz "_XHashtableState"
 
 	.byte 48,16
-LDIFF_SYM1925=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1925
+LDIFF_SYM2312=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM2312
 	.byte 2,35,0,6
 	.asciz "_buckets"
 
-LDIFF_SYM1926=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1926
+LDIFF_SYM2313=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM2313
 	.byte 2,35,16,6
 	.asciz "_entries"
 
-LDIFF_SYM1927=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1927
+LDIFF_SYM2314=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM2314
 	.byte 2,35,24,6
 	.asciz "_numEntries"
 
-LDIFF_SYM1928=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1928
+LDIFF_SYM2315=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2315
 	.byte 2,35,40,6
 	.asciz "_extractKey"
 
-LDIFF_SYM1929=LTDIE_145_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1929
+LDIFF_SYM2316=LTDIE_156_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2316
 	.byte 2,35,32,0,7
 	.asciz "_XHashtableState"
 
-LDIFF_SYM1930=LTDIE_144 - Ldebug_info_start
-	.long LDIFF_SYM1930
-LTDIE_144_POINTER:
+LDIFF_SYM2317=LTDIE_155 - Ldebug_info_start
+	.long LDIFF_SYM2317
+LTDIE_155_POINTER:
 
 	.byte 13
-LDIFF_SYM1931=LTDIE_144 - Ldebug_info_start
-	.long LDIFF_SYM1931
-LTDIE_144_REFERENCE:
+LDIFF_SYM2318=LTDIE_155 - Ldebug_info_start
+	.long LDIFF_SYM2318
+LTDIE_155_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1932=LTDIE_144 - Ldebug_info_start
-	.long LDIFF_SYM1932
+LDIFF_SYM2319=LTDIE_155 - Ldebug_info_start
+	.long LDIFF_SYM2319
 	.byte 2
 	.asciz "System.Xml.Linq.XHashtable`1/XHashtableState<TValue_GSHAREDVT>:.ctor"
 	.asciz "System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_int"
 
 	.byte 13,146,1
 	.quad System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_int
-	.quad Lme_ae
+	.quad Lme_fb
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1933=LTDIE_144_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1933
+LDIFF_SYM2320=LTDIE_155_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2320
 	.byte 2,141,24,3
 	.asciz "extractKey"
 
-LDIFF_SYM1934=LTDIE_145_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1934
+LDIFF_SYM2321=LTDIE_156_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2321
 	.byte 2,141,32,3
 	.asciz "capacity"
 
-LDIFF_SYM1935=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1935
+LDIFF_SYM2322=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2322
 	.byte 2,141,40,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1936=Lfde162_end - Lfde162_start
-	.long LDIFF_SYM1936
-Lfde162_start:
+LDIFF_SYM2323=Lfde239_end - Lfde239_start
+	.long LDIFF_SYM2323
+Lfde239_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_int
 
-LDIFF_SYM1937=Lme_ae - System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_int
-	.long LDIFF_SYM1937
+LDIFF_SYM2324=Lme_fb - System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT__ctor_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_int
+	.long LDIFF_SYM2324
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8
 	.align 3
-Lfde162_end:
+Lfde239_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28731,66 +36621,66 @@ Lfde162_end:
 
 	.byte 13,166,1
 	.quad System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_Resize
-	.quad Lme_af
+	.quad Lme_fc
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1938=LTDIE_144_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1938
+LDIFF_SYM2325=LTDIE_155_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2325
 	.byte 2,141,56,11
 	.asciz "newSize"
 
-LDIFF_SYM1939=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1939
+LDIFF_SYM2326=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2326
 	.byte 1,104,11
 	.asciz "newHashtable"
 
-LDIFF_SYM1940=LTDIE_144_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1940
+LDIFF_SYM2327=LTDIE_155_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2327
 	.byte 1,104,11
 	.asciz "bucketIdx"
 
-LDIFF_SYM1941=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1941
+LDIFF_SYM2328=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2328
 	.byte 1,103,11
 	.asciz "entryIdx"
 
-LDIFF_SYM1942=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1942
+LDIFF_SYM2329=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2329
 	.byte 1,102,11
 	.asciz "bucketIdx"
 
-LDIFF_SYM1943=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1943
+LDIFF_SYM2330=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2330
 	.byte 1,103,11
 	.asciz "entryIdx"
 
-LDIFF_SYM1944=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1944
+LDIFF_SYM2331=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2331
 	.byte 1,102,11
 	.asciz "newValue"
 
-LDIFF_SYM1945=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1945
+LDIFF_SYM2332=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2332
 	.byte 1,80,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1946=Lfde163_end - Lfde163_start
-	.long LDIFF_SYM1946
-Lfde163_start:
+LDIFF_SYM2333=Lfde240_end - Lfde240_start
+	.long LDIFF_SYM2333
+Lfde240_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_Resize
 
-LDIFF_SYM1947=Lme_af - System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_Resize
-	.long LDIFF_SYM1947
+LDIFF_SYM2334=Lme_fc - System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_Resize
+	.long LDIFF_SYM2334
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,150,10,151,9,68,152,8,153,7,68,154,6
 	.align 3
-Lfde163_end:
+Lfde240_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28800,61 +36690,61 @@ Lfde163_end:
 
 	.byte 13,246,1
 	.quad System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_TryGetValue_string_int_int_TValue_GSHAREDVT_
-	.quad Lme_b0
+	.quad Lme_fd
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1948=LTDIE_144_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1948
+LDIFF_SYM2335=LTDIE_155_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2335
 	.byte 2,141,32,3
 	.asciz "key"
 
-LDIFF_SYM1949=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1949
+LDIFF_SYM2336=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM2336
 	.byte 2,141,40,3
 	.asciz "index"
 
-LDIFF_SYM1950=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1950
+LDIFF_SYM2337=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2337
 	.byte 2,141,48,3
 	.asciz "count"
 
-LDIFF_SYM1951=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1951
+LDIFF_SYM2338=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2338
 	.byte 2,141,56,3
 	.asciz "value"
 
-LDIFF_SYM1952=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1952
+LDIFF_SYM2339=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM2339
 	.byte 3,141,192,0,11
 	.asciz "hashCode"
 
-LDIFF_SYM1953=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1953
+LDIFF_SYM2340=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2340
 	.byte 0,11
 	.asciz "entryIndex"
 
-LDIFF_SYM1954=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1954
+LDIFF_SYM2341=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2341
 	.byte 3,141,200,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1955=Lfde164_end - Lfde164_start
-	.long LDIFF_SYM1955
-Lfde164_start:
+LDIFF_SYM2342=Lfde241_end - Lfde241_start
+	.long LDIFF_SYM2342
+Lfde241_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_TryGetValue_string_int_int_TValue_GSHAREDVT_
 
-LDIFF_SYM1956=Lme_b0 - System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_TryGetValue_string_int_int_TValue_GSHAREDVT_
-	.long LDIFF_SYM1956
+LDIFF_SYM2343=Lme_fd - System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_TryGetValue_string_int_int_TValue_GSHAREDVT_
+	.long LDIFF_SYM2343
 	.long 0
 	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,149,12,150,11
 	.align 3
-Lfde164_end:
+Lfde241_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28864,61 +36754,61 @@ Lfde164_end:
 
 	.byte 13,146,2
 	.quad System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_TryAdd_TValue_GSHAREDVT_TValue_GSHAREDVT_
-	.quad Lme_b1
+	.quad Lme_fe
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1957=LTDIE_144_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1957
+LDIFF_SYM2344=LTDIE_155_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2344
 	.byte 2,141,56,3
 	.asciz "value"
 
-LDIFF_SYM1958=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1958
+LDIFF_SYM2345=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2345
 	.byte 1,80,3
 	.asciz "newValue"
 
-LDIFF_SYM1959=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1959
+LDIFF_SYM2346=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM2346
 	.byte 3,141,200,0,11
 	.asciz "newEntry"
 
-LDIFF_SYM1960=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1960
+LDIFF_SYM2347=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2347
 	.byte 1,101,11
 	.asciz "entryIndex"
 
-LDIFF_SYM1961=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1961
+LDIFF_SYM2348=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2348
 	.byte 3,141,208,0,11
 	.asciz "key"
 
-LDIFF_SYM1962=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1962
+LDIFF_SYM2349=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM2349
 	.byte 1,103,11
 	.asciz "hashCode"
 
-LDIFF_SYM1963=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1963
+LDIFF_SYM2350=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2350
 	.byte 1,102,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1964=Lfde165_end - Lfde165_start
-	.long LDIFF_SYM1964
-Lfde165_start:
+LDIFF_SYM2351=Lfde242_end - Lfde242_start
+	.long LDIFF_SYM2351
+Lfde242_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_TryAdd_TValue_GSHAREDVT_TValue_GSHAREDVT_
 
-LDIFF_SYM1965=Lme_b1 - System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_TryAdd_TValue_GSHAREDVT_TValue_GSHAREDVT_
-	.long LDIFF_SYM1965
+LDIFF_SYM2352=Lme_fe - System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_TryAdd_TValue_GSHAREDVT_TValue_GSHAREDVT_
+	.long LDIFF_SYM2352
 	.long 0
 	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,149,14,150,13,68,151,12,152,11,68,153,10
 	.align 3
-Lfde165_end:
+Lfde242_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28928,72 +36818,72 @@ Lfde165_end:
 
 	.byte 13,208,2
 	.quad System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_FindEntry_int_string_int_int_int_
-	.quad Lme_b2
+	.quad Lme_ff
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1966=LTDIE_144_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1966
+LDIFF_SYM2353=LTDIE_155_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2353
 	.byte 3,141,208,0,3
 	.asciz "hashCode"
 
-LDIFF_SYM1967=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1967
+LDIFF_SYM2354=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2354
 	.byte 1,102,3
 	.asciz "key"
 
-LDIFF_SYM1968=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1968
+LDIFF_SYM2355=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM2355
 	.byte 1,103,3
 	.asciz "index"
 
-LDIFF_SYM1969=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1969
+LDIFF_SYM2356=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2356
 	.byte 1,104,3
 	.asciz "count"
 
-LDIFF_SYM1970=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1970
+LDIFF_SYM2357=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2357
 	.byte 1,105,3
 	.asciz "entryIndex"
 
-LDIFF_SYM1971=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1971
+LDIFF_SYM2358=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM2358
 	.byte 3,141,216,0,11
 	.asciz "previousIndex"
 
-LDIFF_SYM1972=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1972
+LDIFF_SYM2359=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2359
 	.byte 1,99,11
 	.asciz "currentIndex"
 
-LDIFF_SYM1973=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1973
+LDIFF_SYM2360=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2360
 	.byte 3,141,224,0,11
 	.asciz "keyCompare"
 
-LDIFF_SYM1974=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1974
+LDIFF_SYM2361=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM2361
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1975=Lfde166_end - Lfde166_start
-	.long LDIFF_SYM1975
-Lfde166_start:
+LDIFF_SYM2362=Lfde243_end - Lfde243_start
+	.long LDIFF_SYM2362
+Lfde243_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_FindEntry_int_string_int_int_int_
 
-LDIFF_SYM1976=Lme_b2 - System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_FindEntry_int_string_int_int_int_
-	.long LDIFF_SYM1976
+LDIFF_SYM2363=Lme_ff - System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_FindEntry_int_string_int_int_int_
+	.long LDIFF_SYM2363
 	.long 0
 	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
 	.byte 154,7
 	.align 3
-Lfde166_end:
+Lfde243_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -29003,56 +36893,56 @@ Lfde166_end:
 
 	.byte 13,144,3
 	.quad System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_ComputeHashCode_string_int_int
-	.quad Lme_b3
+	.quad Lme_100
 
 	.byte 2,118,16,3
 	.asciz "key"
 
-LDIFF_SYM1977=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM1977
+LDIFF_SYM2364=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM2364
 	.byte 1,104,3
 	.asciz "index"
 
-LDIFF_SYM1978=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1978
+LDIFF_SYM2365=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2365
 	.byte 2,141,48,3
 	.asciz "count"
 
-LDIFF_SYM1979=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1979
+LDIFF_SYM2366=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2366
 	.byte 1,106,11
 	.asciz "hashCode"
 
-LDIFF_SYM1980=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1980
+LDIFF_SYM2367=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2367
 	.byte 1,103,11
 	.asciz "end"
 
-LDIFF_SYM1981=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1981
+LDIFF_SYM2368=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2368
 	.byte 1,102,11
 	.asciz "i"
 
-LDIFF_SYM1982=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1982
+LDIFF_SYM2369=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2369
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1983=Lfde167_end - Lfde167_start
-	.long LDIFF_SYM1983
-Lfde167_start:
+LDIFF_SYM2370=Lfde244_end - Lfde244_start
+	.long LDIFF_SYM2370
+Lfde244_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_ComputeHashCode_string_int_int
 
-LDIFF_SYM1984=Lme_b3 - System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_ComputeHashCode_string_int_int
-	.long LDIFF_SYM1984
+LDIFF_SYM2371=Lme_100 - System_Xml_Linq_XHashtable_1_XHashtableState_TValue_GSHAREDVT_ComputeHashCode_string_int_int
+	.long LDIFF_SYM2371
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,68,154,5
 	.align 3
-Lfde167_end:
+Lfde244_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -29062,413 +36952,482 @@ Lfde167_end:
 
 	.byte 18,174,1
 	.quad System_Xml_Linq_XObject_Annotation_T_GSHAREDVT
-	.quad Lme_b4
+	.quad Lme_101
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1985=LTDIE_7_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1985
+LDIFF_SYM2372=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2372
 	.byte 1,106,11
 	.asciz "a"
 
-LDIFF_SYM1986=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1986
+LDIFF_SYM2373=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM2373
 	.byte 1,103,11
 	.asciz "i"
 
-LDIFF_SYM1987=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1987
+LDIFF_SYM2374=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2374
 	.byte 1,106,11
 	.asciz "obj"
 
-LDIFF_SYM1988=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1988
+LDIFF_SYM2375=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2375
 	.byte 1,102,11
 	.asciz "result"
 
-LDIFF_SYM1989=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1989
+LDIFF_SYM2376=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2376
 	.byte 1,80,11
 	.asciz "V_4"
 
-LDIFF_SYM1990=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1990
+LDIFF_SYM2377=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2377
 	.byte 1,80,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1991=Lfde168_end - Lfde168_start
-	.long LDIFF_SYM1991
-Lfde168_start:
+LDIFF_SYM2378=Lfde245_end - Lfde245_start
+	.long LDIFF_SYM2378
+Lfde245_start:
 
 	.long 0
 	.align 3
 	.quad System_Xml_Linq_XObject_Annotation_T_GSHAREDVT
 
-LDIFF_SYM1992=Lme_b4 - System_Xml_Linq_XObject_Annotation_T_GSHAREDVT
-	.long LDIFF_SYM1992
+LDIFF_SYM2379=Lme_101 - System_Xml_Linq_XObject_Annotation_T_GSHAREDVT
+	.long LDIFF_SYM2379
 	.long 0
 	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,149,12,150,11,68,151,10,152,9,68,153,8,154,7
 	.align 3
-Lfde168_end:
+Lfde245_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_146:
+LTDIE_157:
 
 	.byte 5
 	.asciz "System_Array"
 
 	.byte 16,16
-LDIFF_SYM1993=LTDIE_0 - Ldebug_info_start
-	.long LDIFF_SYM1993
+LDIFF_SYM2380=LTDIE_0 - Ldebug_info_start
+	.long LDIFF_SYM2380
 	.byte 2,35,0,0,7
 	.asciz "System_Array"
 
-LDIFF_SYM1994=LTDIE_146 - Ldebug_info_start
-	.long LDIFF_SYM1994
-LTDIE_146_POINTER:
+LDIFF_SYM2381=LTDIE_157 - Ldebug_info_start
+	.long LDIFF_SYM2381
+LTDIE_157_POINTER:
 
 	.byte 13
-LDIFF_SYM1995=LTDIE_146 - Ldebug_info_start
-	.long LDIFF_SYM1995
-LTDIE_146_REFERENCE:
+LDIFF_SYM2382=LTDIE_157 - Ldebug_info_start
+	.long LDIFF_SYM2382
+LTDIE_157_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1996=LTDIE_146 - Ldebug_info_start
-	.long LDIFF_SYM1996
+LDIFF_SYM2383=LTDIE_157 - Ldebug_info_start
+	.long LDIFF_SYM2383
 	.byte 2
 	.asciz "(wrapper_delegate-invoke)_System.Xml.Linq.XHashtable`1/ExtractKeyDelegate<System.Xml.Linq.XName>:invoke_string_TValue"
 	.asciz "wrapper_delegate_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_System_Xml_Linq_XName_invoke_string_TValue_System_Xml_Linq_XName"
 
 	.byte 0,0
 	.quad wrapper_delegate_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_System_Xml_Linq_XName_invoke_string_TValue_System_Xml_Linq_XName
-	.quad Lme_b5
+	.quad Lme_102
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1997=LTDIE_14_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1997
+LDIFF_SYM2384=LTDIE_14_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2384
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM1998=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1998
+LDIFF_SYM2385=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2385
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1999=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1999
+LDIFF_SYM2386=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2386
 	.byte 1,103,11
 	.asciz "V_1"
 
-LDIFF_SYM2000=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2000
+LDIFF_SYM2387=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2387
 	.byte 1,105,11
 	.asciz "V_2"
 
-LDIFF_SYM2001=LTDIE_146_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2001
+LDIFF_SYM2388=LTDIE_157_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2388
 	.byte 1,104,11
 	.asciz "V_3"
 
-LDIFF_SYM2002=LTDIE_15_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2002
+LDIFF_SYM2389=LTDIE_15_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2389
 	.byte 1,102,11
 	.asciz "V_4"
 
-LDIFF_SYM2003=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM2003
+LDIFF_SYM2390=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2390
 	.byte 1,104,11
 	.asciz "V_5"
 
-LDIFF_SYM2004=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM2004
+LDIFF_SYM2391=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM2391
 	.byte 1,102,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM2005=Lfde169_end - Lfde169_start
-	.long LDIFF_SYM2005
-Lfde169_start:
+LDIFF_SYM2392=Lfde246_end - Lfde246_start
+	.long LDIFF_SYM2392
+Lfde246_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_delegate_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_System_Xml_Linq_XName_invoke_string_TValue_System_Xml_Linq_XName
 
-LDIFF_SYM2006=Lme_b5 - wrapper_delegate_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_System_Xml_Linq_XName_invoke_string_TValue_System_Xml_Linq_XName
-	.long LDIFF_SYM2006
+LDIFF_SYM2393=Lme_102 - wrapper_delegate_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_System_Xml_Linq_XName_invoke_string_TValue_System_Xml_Linq_XName
+	.long LDIFF_SYM2393
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4
 	.align 3
-Lfde169_end:
+Lfde246_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_147:
+LTDIE_158:
 
 	.byte 5
 	.asciz "_ExtractKeyDelegate"
 
 	.byte 128,1,16
-LDIFF_SYM2007=LTDIE_15 - Ldebug_info_start
-	.long LDIFF_SYM2007
+LDIFF_SYM2394=LTDIE_15 - Ldebug_info_start
+	.long LDIFF_SYM2394
 	.byte 2,35,0,0,7
 	.asciz "_ExtractKeyDelegate"
 
-LDIFF_SYM2008=LTDIE_147 - Ldebug_info_start
-	.long LDIFF_SYM2008
-LTDIE_147_POINTER:
+LDIFF_SYM2395=LTDIE_158 - Ldebug_info_start
+	.long LDIFF_SYM2395
+LTDIE_158_POINTER:
 
 	.byte 13
-LDIFF_SYM2009=LTDIE_147 - Ldebug_info_start
-	.long LDIFF_SYM2009
-LTDIE_147_REFERENCE:
+LDIFF_SYM2396=LTDIE_158 - Ldebug_info_start
+	.long LDIFF_SYM2396
+LTDIE_158_REFERENCE:
 
 	.byte 14
-LDIFF_SYM2010=LTDIE_147 - Ldebug_info_start
-	.long LDIFF_SYM2010
+LDIFF_SYM2397=LTDIE_158 - Ldebug_info_start
+	.long LDIFF_SYM2397
 	.byte 2
 	.asciz "(wrapper_delegate-invoke)_System.Xml.Linq.XHashtable`1/ExtractKeyDelegate<System.WeakReference>:invoke_string_TValue"
 	.asciz "wrapper_delegate_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_System_WeakReference_invoke_string_TValue_System_WeakReference"
 
 	.byte 0,0
 	.quad wrapper_delegate_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_System_WeakReference_invoke_string_TValue_System_WeakReference
-	.quad Lme_b6
+	.quad Lme_103
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM2011=LTDIE_147_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2011
+LDIFF_SYM2398=LTDIE_158_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2398
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM2012=LTDIE_138_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2012
+LDIFF_SYM2399=LTDIE_144_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2399
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM2013=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2013
+LDIFF_SYM2400=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2400
 	.byte 1,103,11
 	.asciz "V_1"
 
-LDIFF_SYM2014=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2014
+LDIFF_SYM2401=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2401
 	.byte 1,105,11
 	.asciz "V_2"
 
-LDIFF_SYM2015=LTDIE_146_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2015
+LDIFF_SYM2402=LTDIE_157_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2402
 	.byte 1,104,11
 	.asciz "V_3"
 
-LDIFF_SYM2016=LTDIE_15_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2016
+LDIFF_SYM2403=LTDIE_15_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2403
 	.byte 1,102,11
 	.asciz "V_4"
 
-LDIFF_SYM2017=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM2017
+LDIFF_SYM2404=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2404
 	.byte 1,104,11
 	.asciz "V_5"
 
-LDIFF_SYM2018=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM2018
+LDIFF_SYM2405=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM2405
 	.byte 1,102,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM2019=Lfde170_end - Lfde170_start
-	.long LDIFF_SYM2019
-Lfde170_start:
+LDIFF_SYM2406=Lfde247_end - Lfde247_start
+	.long LDIFF_SYM2406
+Lfde247_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_delegate_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_System_WeakReference_invoke_string_TValue_System_WeakReference
 
-LDIFF_SYM2020=Lme_b6 - wrapper_delegate_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_System_WeakReference_invoke_string_TValue_System_WeakReference
-	.long LDIFF_SYM2020
+LDIFF_SYM2407=Lme_103 - wrapper_delegate_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_System_WeakReference_invoke_string_TValue_System_WeakReference
+	.long LDIFF_SYM2407
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4
 	.align 3
-Lfde170_end:
+Lfde247_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_148:
+
+	.byte 2
+	.asciz "(wrapper_delegate-invoke)_System.EventHandler`1<System.Xml.Linq.XObjectChangeEventArgs>:invoke_void_object_TEventArgs"
+	.asciz "wrapper_delegate_invoke_System_EventHandler_1_System_Xml_Linq_XObjectChangeEventArgs_invoke_void_object_TEventArgs_object_System_Xml_Linq_XObjectChangeEventArgs"
+
+	.byte 0,0
+	.quad wrapper_delegate_invoke_System_EventHandler_1_System_Xml_Linq_XObjectChangeEventArgs_invoke_void_object_TEventArgs_object_System_Xml_Linq_XObjectChangeEventArgs
+	.quad Lme_104
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM2408=LTDIE_150_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2408
+	.byte 1,104,3
+	.asciz "param0"
+
+LDIFF_SYM2409=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2409
+	.byte 1,105,3
+	.asciz "param1"
+
+LDIFF_SYM2410=LTDIE_146_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2410
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM2411=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2411
+	.byte 1,102,11
+	.asciz "V_1"
+
+LDIFF_SYM2412=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2412
+	.byte 1,104,11
+	.asciz "V_2"
+
+LDIFF_SYM2413=LTDIE_157_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2413
+	.byte 1,103,11
+	.asciz "V_3"
+
+LDIFF_SYM2414=LTDIE_15_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2414
+	.byte 1,101,11
+	.asciz "V_4"
+
+LDIFF_SYM2415=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2415
+	.byte 1,103,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM2416=Lfde248_end - Lfde248_start
+	.long LDIFF_SYM2416
+Lfde248_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_delegate_invoke_System_EventHandler_1_System_Xml_Linq_XObjectChangeEventArgs_invoke_void_object_TEventArgs_object_System_Xml_Linq_XObjectChangeEventArgs
+
+LDIFF_SYM2417=Lme_104 - wrapper_delegate_invoke_System_EventHandler_1_System_Xml_Linq_XObjectChangeEventArgs_invoke_void_object_TEventArgs_object_System_Xml_Linq_XObjectChangeEventArgs
+	.long LDIFF_SYM2417
+	.long 0
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3
+	.align 3
+Lfde248_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_159:
 
 	.byte 5
 	.asciz "_ExtractKeyDelegate"
 
 	.byte 128,1,16
-LDIFF_SYM2021=LTDIE_15 - Ldebug_info_start
-	.long LDIFF_SYM2021
+LDIFF_SYM2418=LTDIE_15 - Ldebug_info_start
+	.long LDIFF_SYM2418
 	.byte 2,35,0,0,7
 	.asciz "_ExtractKeyDelegate"
 
-LDIFF_SYM2022=LTDIE_148 - Ldebug_info_start
-	.long LDIFF_SYM2022
-LTDIE_148_POINTER:
+LDIFF_SYM2419=LTDIE_159 - Ldebug_info_start
+	.long LDIFF_SYM2419
+LTDIE_159_POINTER:
 
 	.byte 13
-LDIFF_SYM2023=LTDIE_148 - Ldebug_info_start
-	.long LDIFF_SYM2023
-LTDIE_148_REFERENCE:
+LDIFF_SYM2420=LTDIE_159 - Ldebug_info_start
+	.long LDIFF_SYM2420
+LTDIE_159_REFERENCE:
 
 	.byte 14
-LDIFF_SYM2024=LTDIE_148 - Ldebug_info_start
-	.long LDIFF_SYM2024
+LDIFF_SYM2421=LTDIE_159 - Ldebug_info_start
+	.long LDIFF_SYM2421
 	.byte 2
 	.asciz "(wrapper_delegate-invoke)_System.Xml.Linq.XHashtable`1/ExtractKeyDelegate<TValue_GSHAREDVT>:invoke_string_TValue"
 	.asciz "wrapper_delegate_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_invoke_string_TValue_TValue_GSHAREDVT"
 
 	.byte 0,0
 	.quad wrapper_delegate_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_invoke_string_TValue_TValue_GSHAREDVT
-	.quad Lme_b7
+	.quad Lme_105
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM2025=LTDIE_148_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2025
+LDIFF_SYM2422=LTDIE_159_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2422
 	.byte 3,141,192,0,3
 	.asciz "param0"
 
-LDIFF_SYM2026=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2026
+LDIFF_SYM2423=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2423
 	.byte 1,80,11
 	.asciz "V_0"
 
-LDIFF_SYM2027=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2027
+LDIFF_SYM2424=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2424
 	.byte 1,102,11
 	.asciz "V_1"
 
-LDIFF_SYM2028=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2028
+LDIFF_SYM2425=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2425
 	.byte 1,103,11
 	.asciz "V_2"
 
-LDIFF_SYM2029=LTDIE_146_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2029
+LDIFF_SYM2426=LTDIE_157_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2426
 	.byte 1,104,11
 	.asciz "V_3"
 
-LDIFF_SYM2030=LTDIE_15_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2030
+LDIFF_SYM2427=LTDIE_15_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2427
 	.byte 1,101,11
 	.asciz "V_4"
 
-LDIFF_SYM2031=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM2031
+LDIFF_SYM2428=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2428
 	.byte 1,104,11
 	.asciz "V_5"
 
-LDIFF_SYM2032=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM2032
+LDIFF_SYM2429=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM2429
 	.byte 1,101,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM2033=Lfde171_end - Lfde171_start
-	.long LDIFF_SYM2033
-Lfde171_start:
+LDIFF_SYM2430=Lfde249_end - Lfde249_start
+	.long LDIFF_SYM2430
+Lfde249_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_delegate_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_invoke_string_TValue_TValue_GSHAREDVT
 
-LDIFF_SYM2034=Lme_b7 - wrapper_delegate_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_invoke_string_TValue_TValue_GSHAREDVT
-	.long LDIFF_SYM2034
+LDIFF_SYM2431=Lme_105 - wrapper_delegate_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_invoke_string_TValue_TValue_GSHAREDVT
+	.long LDIFF_SYM2431
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,149,10,150,9,68,151,8,152,7,68,153,6,154,5
 	.align 3
-Lfde171_end:
+Lfde249_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_149:
+LTDIE_160:
 
 	.byte 5
 	.asciz "System_AsyncCallback"
 
 	.byte 128,1,16
-LDIFF_SYM2035=LTDIE_15 - Ldebug_info_start
-	.long LDIFF_SYM2035
+LDIFF_SYM2432=LTDIE_15 - Ldebug_info_start
+	.long LDIFF_SYM2432
 	.byte 2,35,0,0,7
 	.asciz "System_AsyncCallback"
 
-LDIFF_SYM2036=LTDIE_149 - Ldebug_info_start
-	.long LDIFF_SYM2036
-LTDIE_149_POINTER:
+LDIFF_SYM2433=LTDIE_160 - Ldebug_info_start
+	.long LDIFF_SYM2433
+LTDIE_160_POINTER:
 
 	.byte 13
-LDIFF_SYM2037=LTDIE_149 - Ldebug_info_start
-	.long LDIFF_SYM2037
-LTDIE_149_REFERENCE:
+LDIFF_SYM2434=LTDIE_160 - Ldebug_info_start
+	.long LDIFF_SYM2434
+LTDIE_160_REFERENCE:
 
 	.byte 14
-LDIFF_SYM2038=LTDIE_149 - Ldebug_info_start
-	.long LDIFF_SYM2038
+LDIFF_SYM2435=LTDIE_160 - Ldebug_info_start
+	.long LDIFF_SYM2435
 	.byte 2
 	.asciz "(wrapper_delegate-begin-invoke)_System.Xml.Linq.XHashtable`1/ExtractKeyDelegate<TValue_GSHAREDVT>:begin_invoke_IAsyncResult__this___TValue_AsyncCallback_object"
 	.asciz "wrapper_delegate_begin_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_begin_invoke_IAsyncResult__this___TValue_AsyncCallback_object_TValue_GSHAREDVT_System_AsyncCallback_object"
 
 	.byte 0,0
 	.quad wrapper_delegate_begin_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_begin_invoke_IAsyncResult__this___TValue_AsyncCallback_object_TValue_GSHAREDVT_System_AsyncCallback_object
-	.quad Lme_b8
+	.quad Lme_106
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM2039=LTDIE_148_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2039
+LDIFF_SYM2436=LTDIE_159_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2436
 	.byte 2,141,40,3
 	.asciz "param0"
 
-LDIFF_SYM2040=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2040
+LDIFF_SYM2437=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2437
 	.byte 1,80,3
 	.asciz "param1"
 
-LDIFF_SYM2041=LTDIE_149_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2041
+LDIFF_SYM2438=LTDIE_160_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2438
 	.byte 2,141,56,3
 	.asciz "param2"
 
-LDIFF_SYM2042=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM2042
+LDIFF_SYM2439=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2439
 	.byte 3,141,192,0,11
 	.asciz "V_0"
 
-LDIFF_SYM2043=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM2043
+LDIFF_SYM2440=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM2440
 	.byte 1,104,11
 	.asciz "V_1"
 
-LDIFF_SYM2044=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM2044
+LDIFF_SYM2441=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM2441
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM2045=Lfde172_end - Lfde172_start
-	.long LDIFF_SYM2045
-Lfde172_start:
+LDIFF_SYM2442=Lfde250_end - Lfde250_start
+	.long LDIFF_SYM2442
+Lfde250_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_delegate_begin_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_begin_invoke_IAsyncResult__this___TValue_AsyncCallback_object_TValue_GSHAREDVT_System_AsyncCallback_object
 
-LDIFF_SYM2046=Lme_b8 - wrapper_delegate_begin_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_begin_invoke_IAsyncResult__this___TValue_AsyncCallback_object_TValue_GSHAREDVT_System_AsyncCallback_object
-	.long LDIFF_SYM2046
+LDIFF_SYM2443=Lme_106 - wrapper_delegate_begin_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_begin_invoke_IAsyncResult__this___TValue_AsyncCallback_object_TValue_GSHAREDVT_System_AsyncCallback_object
+	.long LDIFF_SYM2443
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,151,8,152,7,68,154,6
 	.align 3
-Lfde172_end:
+Lfde250_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_150:
+LTDIE_161:
 
 	.byte 17
 	.asciz "System_IAsyncResult"
@@ -29476,64 +37435,64 @@ LTDIE_150:
 	.byte 16,7
 	.asciz "System_IAsyncResult"
 
-LDIFF_SYM2047=LTDIE_150 - Ldebug_info_start
-	.long LDIFF_SYM2047
-LTDIE_150_POINTER:
+LDIFF_SYM2444=LTDIE_161 - Ldebug_info_start
+	.long LDIFF_SYM2444
+LTDIE_161_POINTER:
 
 	.byte 13
-LDIFF_SYM2048=LTDIE_150 - Ldebug_info_start
-	.long LDIFF_SYM2048
-LTDIE_150_REFERENCE:
+LDIFF_SYM2445=LTDIE_161 - Ldebug_info_start
+	.long LDIFF_SYM2445
+LTDIE_161_REFERENCE:
 
 	.byte 14
-LDIFF_SYM2049=LTDIE_150 - Ldebug_info_start
-	.long LDIFF_SYM2049
+LDIFF_SYM2446=LTDIE_161 - Ldebug_info_start
+	.long LDIFF_SYM2446
 	.byte 2
 	.asciz "(wrapper_delegate-end-invoke)_System.Xml.Linq.XHashtable`1/ExtractKeyDelegate<TValue_GSHAREDVT>:end_invoke_string__this___IAsyncResult"
 	.asciz "wrapper_delegate_end_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_end_invoke_string__this___IAsyncResult_System_IAsyncResult"
 
 	.byte 0,0
 	.quad wrapper_delegate_end_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_end_invoke_string__this___IAsyncResult_System_IAsyncResult
-	.quad Lme_b9
+	.quad Lme_107
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM2050=LTDIE_148_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2050
+LDIFF_SYM2447=LTDIE_159_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2447
 	.byte 2,141,32,3
 	.asciz "param0"
 
-LDIFF_SYM2051=LTDIE_150_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2051
+LDIFF_SYM2448=LTDIE_161_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2448
 	.byte 2,141,40,11
 	.asciz "V_0"
 
-LDIFF_SYM2052=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM2052
+LDIFF_SYM2449=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM2449
 	.byte 1,106,11
 	.asciz "V_1"
 
-LDIFF_SYM2053=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM2053
+LDIFF_SYM2450=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM2450
 	.byte 2,141,48,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM2054=Lfde173_end - Lfde173_start
-	.long LDIFF_SYM2054
-Lfde173_start:
+LDIFF_SYM2451=Lfde251_end - Lfde251_start
+	.long LDIFF_SYM2451
+Lfde251_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_delegate_end_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_end_invoke_string__this___IAsyncResult_System_IAsyncResult
 
-LDIFF_SYM2055=Lme_b9 - wrapper_delegate_end_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_end_invoke_string__this___IAsyncResult_System_IAsyncResult
-	.long LDIFF_SYM2055
+LDIFF_SYM2452=Lme_107 - wrapper_delegate_end_invoke_System_Xml_Linq_XHashtable_1_ExtractKeyDelegate_TValue_GSHAREDVT_end_invoke_string__this___IAsyncResult_System_IAsyncResult
+	.long LDIFF_SYM2452
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6,154,5
 	.align 3
-Lfde173_end:
+Lfde251_end:
 
 .section __DWARF, __debug_info,regular,debug
 

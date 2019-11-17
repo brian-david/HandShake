@@ -1,31 +1,25 @@
 ﻿<Properties StartupConfiguration="{7899EEE1-B546-4A5E-8EE2-FA35E5C52792}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HandShake.iOS/SharedServices/FirebaseAuthenticator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HandShake/Controls/contactCard.xaml">
     <Files>
-      <File FileName="HandShake/Interfaces/IAuth.cs" Line="1" Column="1" />
-      <File FileName="HandShake/LoginPage.xaml.cs" />
-      <File FileName="HandShake.iOS/SharedServices/FirebaseAuthenticator.cs" Line="16" Column="10" />
-      <File FileName="HandShake.Android/SharedServices/FirebaseAuthenticator.cs" />
+      <File FileName="HandShake/CustomControls/contactCard.xaml" Line="9" Column="1" />
+      <File FileName="HandShake/Controls/contactCard.xaml.cs" Line="15" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HandShake" expanded="True">
             <Node name="HandShake" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-                <Node name="SdkDependencies" expanded="True" />
+              <Node name="Controls" expanded="True">
+                <Node name="contactCard.xaml" expanded="True" selected="True" />
               </Node>
-              <Node name="Interfaces" expanded="True" />
-              <Node name="LoginPage.xaml" expanded="True" />
-            </Node>
-            <Node name="HandShake.Android" expanded="True">
-              <Node name="SharedServices" expanded="True" />
-            </Node>
-            <Node name="HandShake.iOS" expanded="True">
-              <Node name="SharedServices" expanded="True">
-                <Node name="FirebaseAuthenticator.cs" selected="True" />
+              <Node name="Firebase" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="ChatsPage.xaml" expanded="True" />
               </Node>
             </Node>
+            <Node name="HandShake.Android" expanded="True" />
+            <Node name="HandShake.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -33,10 +27,10 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.HandShake.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" PreferredExecutionTarget="Android.pixel_3_marshmallow_6_0_api_23" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.HandShake.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.8593A883-18B2-49A7-A9CB-0B78F3DD406A" />
+  <MonoDevelop.Ide.ItemProperties.HandShake.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.b39a1b509fa4f69e9c9f899da53272c113cf3726" />
 </Properties>

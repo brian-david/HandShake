@@ -57,8 +57,6 @@
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/HandShake.iOS.exe
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/HandShake.iOS.pdb
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/bin/iPhone/Debug/Firebase.Auth.dll
-/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/bin/iPhone/Debug/Firebase.Core.dll
-/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/obj/iPhone/Debug/device-builds/iphone8.1-13.2/optimized/GoogleService-Info.plist
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/bin/iPhone/Debug/FirebaseAuth.dll
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/bin/iPhone/Debug/jose-jwt.dll
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/bin/iPhone/Debug/System.Net.Http.Formatting.dll
@@ -108,3 +106,7 @@
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/bin/iPhone/Debug/System.Security.Cryptography.X509Certificates.dll
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/bin/iPhone/Debug/System.Security.Cryptography.Xml.dll
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/bin/iPhone/Debug/System.Text.Encodings.Web.dll
+/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/bin/iPhone/Debug/Firebase.dll
+/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/bin/iPhone/Debug/LiteDB.dll
+/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/bin/iPhone/Debug/System.Reactive.dll
+/Users/brianirons/PORTFOLIO/HandShake/HandShake.iOS/bin/iPhone/Debug/Xamarin.Forms.PancakeView.dll
