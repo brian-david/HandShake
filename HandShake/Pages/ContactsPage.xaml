@@ -10,7 +10,10 @@
                      >
             <CustomControls:ContactCard LabelText="Jerry">
             </CustomControls:ContactCard>
-            <Label Text="THIS IS THE CONTACTS PAGE"/>
+            <ListView x:Name="contactsList"
+                      ItemsSource="{Binding .}">
+
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

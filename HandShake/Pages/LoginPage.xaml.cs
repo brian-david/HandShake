@@ -4,8 +4,11 @@ using System.Threading.Tasks;
 using Firebase.Database;
 using Firebase.Database.Query;
 using Firebase.Auth;
+using HandShake.Models;
 
 using Xamarin.Forms;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace HandShake
 {
@@ -45,9 +48,31 @@ namespace HandShake
                 Console.WriteLine("authID -> " + auth.User.LocalId);
                 Console.WriteLine("HEY!");
 
-                //User x = await App.authProvider.GetUserAsync(auth.FirebaseToken);
+                var users = await App.firebase.Child("users").OnceAsync<Member>();
 
-                //Console.WriteLine(x.);
+                foreach (var person in users)
+                {
+                    if (person.Object.email == email)
+                    {
+                        App.currentUser = person.Key;
+                        App.currentMember = person.Object;
+                        //Console.WriteLine(App.currentMember.contacts);
+                        break;
+                    }
+                }
+                //var users = GetAllMembers();
+                //foreach (var user in users)
+                //{
+                //    if (user.Object.email == email)
+                //    {
+                //        App.currentUser = user.Key;
+                //        App.currentMember = user.Object;
+                //        Console.WriteLine(App.currentMember.name);
+                //    }
+                //    //Console.WriteLine(user.Key + " -> " + user.Object.name);
+                //}
+
+                //Console.WriteLine("THE LOGGED IN USER -> KEY=" + App.currentUser + " NAME -> "+App.currentMember.name);
 
                 await Navigation.PushAsync(new MainPage());
 
@@ -75,15 +100,8 @@ namespace HandShake
             }
             
         }
-
-        public async Task<List<User>> GetAllMembers ()
-        {
-
-            return (await firebase.Child("Persons").OnceAsync<Person>()).Select(item => new Person{
-                                                                                                    Name = item.Object.Name,
-                                                                                                    PersonId = item.Object.PersonId
-                                                                                                  }).ToList();
-        }
     }
 }
+
+
 

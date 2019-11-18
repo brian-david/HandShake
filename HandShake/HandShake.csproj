@@ -12,6 +12,7 @@
     <PackageReference Include="FirebaseDatabase.net" Version="4.0.4" />
     <PackageReference Include="FirebaseAuthentication.net" Version="3.3.0" />
     <PackageReference Include="Xamarin.Forms.PancakeView" Version="1.3.6" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Interfaces\" />
@@ -25,5 +26,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Controls\ContactCard.xaml.cs" />
+    <Compile Remove="Models\Contact.cs" />
   </ItemGroup>
 </Project>

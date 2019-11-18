@@ -4,7 +4,6 @@ using System.Threading.Tasks;
 using Firebase.Database;
 using Xamarin.Forms;
 using Firebase.Database.Query;
-using HandShake.Models;
 
 namespace HandShake
 {
@@ -39,9 +38,12 @@ namespace HandShake
                 App.userID = usr;
 
                 //Add the new user to the database
-                var newUser = await App.firebase.Child("users").PostAsync(new Models.User(userName, usr, App.authID));
+                var newUser = await App.firebase.Child("users").PostAsync(new Models.Member(userName, usr, App.authID));
+                //App.firebase.Child("user").Child(Key)
                 App.currentUser = newUser.Key;
                 Console.WriteLine(App.firebase.Child("users").Child(newUser.Key).Child("userID").OnceAsync<string>() + " = " + App.firebase.Child("users").Child(newUser.Key).Child("userID").OnceAsync<string>());
+
+
 
                 await Navigation.PushAsync(new MainPage());
             }

@@ -1,9 +1,7 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 using Firebase.Auth;
 using Firebase.Database;
-using Firebase.Database.Query;
+using HandShake.Models;
 
 namespace HandShake
 {
@@ -15,6 +13,7 @@ namespace HandShake
         public static string authID;
         public static string userID;
         public static string currentUser;
+        public static Member currentMember;
 
         public App()
         {

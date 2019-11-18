@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{7899EEE1-B546-4A5E-8EE2-FA35E5C52792}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HandShake/MainPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HandShake/Pages/ContactsPage.xaml.cs">
     <Files>
-      <File FileName="HandShake/Pages/RegisterPage.xaml" Line="1" Column="1" />
-      <File FileName="HandShake/Pages/RegisterPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="HandShake/Pages/LoginPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="HandShake/MainPage.xaml.cs" Line="20" Column="15" />
+      <File FileName="HandShake/Models/Member.cs" Line="12" Column="23" />
+      <File FileName="HandShake/Pages/LoginPage.xaml.cs" Line="59" Column="27" />
+      <File FileName="HandShake/Pages/RegisterPage.xaml.cs" Line="6" Column="31" />
+      <File FileName="HandShake/App.xaml.cs" Line="6" Column="20" />
+      <File FileName="HandShake/MainPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="HandShake/Pages/ContactsPage.xaml.cs" Line="18" Column="59" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,26 +18,36 @@
               </Node>
               <Node name="Models" expanded="True" />
               <Node name="Pages" expanded="True">
-                <Node name="ContactsPage.xaml" expanded="True" />
+                <Node name="ContactsPage.xaml" expanded="True">
+                  <Node name="ContactsPage.xaml.cs" selected="True" />
+                </Node>
                 <Node name="LoginPage.xaml" expanded="True" />
                 <Node name="RegisterPage.xaml" expanded="True" />
               </Node>
               <Node name="App.xaml" expanded="True" />
-              <Node name="MainPage.xaml" expanded="True">
-                <Node name="MainPage.xaml.cs" selected="True" />
-              </Node>
+              <Node name="MainPage.xaml" expanded="True" />
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>email</Value>
+          <Value>person.Key</Value>
+          <Value>person.Object</Value>
+          <Value>users</Value>
+          <Value>person</Value>
+          <Value>App.currentMember</Value>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.HandShake.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" PreferredExecutionTarget="Android.pixel_3_marshmallow_6_0_api_23" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.HandShake.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.b39a1b509fa4f69e9c9f899da53272c113cf3726" />
+  <MonoDevelop.Ide.ItemProperties.HandShake.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.8593A883-18B2-49A7-A9CB-0B78F3DD406A" />
 </Properties>
