@@ -202,7 +202,7 @@
 -r=/Users/brianirons/.nuget/packages/microsoft.identitymodel.logging/5.2.2/lib/netstandard1.4/Microsoft.IdentityModel.Logging.dll
 -r=/Users/brianirons/.nuget/packages/microsoft.identitymodel.tokens/5.2.2/lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll
 -r=/Users/brianirons/.nuget/packages/microsoft.net.http.headers/2.0.3/lib/netstandard2.0/Microsoft.Net.Http.Headers.dll
--r=/Users/brianirons/.nuget/packages/newtonsoft.json/11.0.2/lib/netstandard2.0/Newtonsoft.Json.dll
+-r=/Users/brianirons/.nuget/packages/newtonsoft.json/12.0.3/lib/netstandard2.0/Newtonsoft.Json.dll
 -r=/Users/brianirons/.nuget/packages/newtonsoft.json.bson/1.0.1/lib/netstandard1.3/Newtonsoft.Json.Bson.dll
 -r=/Users/brianirons/.nuget/packages/portable.bouncycastle/1.8.5/lib/netstandard2.0/BouncyCastle.Crypto.dll
 -r=/Users/brianirons/.nuget/packages/system.identitymodel.tokens.jwt/5.2.2/lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.dll

@@ -23660,7 +23660,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0
-	.byte 9,79,231,243,145,128,126,127,174,19,74,86,36,100,211,33
+	.byte 46,144,128,157,56,156,135,99,123,199,73,108,89,2,227,249
 	.globl _mono_aot_module_Xamarin_Forms_PancakeView_info
 	.align 3
 _mono_aot_module_Xamarin_Forms_PancakeView_info:

@@ -559,7 +559,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0
-	.byte 185,48,147,223,74,147,66,167,133,115,57,160,86,236,162,170
+	.byte 79,56,213,143,61,236,44,30,25,224,207,14,233,217,191,77
 	.globl _mono_aot_module_HandShake_iOS_info
 	.align 3
 _mono_aot_module_HandShake_iOS_info:

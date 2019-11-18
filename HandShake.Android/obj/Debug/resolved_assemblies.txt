@@ -103,6 +103,7 @@
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/android/assets/Xamarin.Firebase.Auth.Interop.dll
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/android/assets/Xamarin.Firebase.Common.dll
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/android/assets/Xamarin.Forms.Core.dll
+/Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/android/assets/Xamarin.Forms.PancakeView.dll
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/android/assets/Xamarin.Forms.Platform.Android.dll
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/android/assets/Xamarin.Forms.Platform.dll
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/android/assets/Xamarin.Forms.Xaml.dll

@@ -7,13 +7,11 @@
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/MonoAndroid,Version=v9.0.AssemblyAttributes.cs
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/build.props
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/adb.props
-/Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/googsvcsjson/values/goog_svcs_json.xml
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/HandShake.Android.csprojAssemblyReference.cache
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/_VerifyXamarinAndroidSupportVersions.stamp
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/stamp/_BuildLibraryImportsCache.stamp
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/resourcepaths.cache
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/res.flag
-/Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/flata/3705293e616237613d9c5478074f0184ee90ca52.stamp
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/flata/49358a7a5e962966951fa0c73484239335139883.stamp
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/flata/0990aff8caaec859cc1b2c12fe76e98ff33808fb.stamp
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/flata/da7f04b9fc7de8d60d9d9c6579a3d79f2b165bdd.stamp
@@ -24,7 +22,6 @@
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/flata/55c62265e17c1f5cbb6ac9d531294e070ff1b4d7.stamp
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/flata/10b51ec6b2d7c1608c86e5ef112d591f1a4a0ec3.stamp
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/flata/3de71e86b57bf10c80e181c4324d548131e5da80.stamp
-/Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/flata/3705293e616237613d9c5478074f0184ee90ca52.flata
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/flata/49358a7a5e962966951fa0c73484239335139883.flata
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/flata/0990aff8caaec859cc1b2c12fe76e98ff33808fb.flata
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/flata/da7f04b9fc7de8d60d9d9c6579a3d79f2b165bdd.flata
@@ -695,11 +692,7 @@
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/android/assets/System.Threading.dll
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/android/assets/System.Threading.Tasks.dll
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/android/assets/System.Xml.ReaderWriter.dll
-/Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/flata/44fa6b9b5caad58c973e1a10eda355f9bb827b90.stamp
-/Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/flata/d56cc2c4f5324b0875deef122463f1578939b2c2.stamp
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/flata/edbf9faf82a46b3fe306c6236c1ced7d5f5a9f84.stamp
-/Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/flata/44fa6b9b5caad58c973e1a10eda355f9bb827b90.flata
-/Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/flata/d56cc2c4f5324b0875deef122463f1578939b2c2.flata
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/flata/edbf9faf82a46b3fe306c6236c1ced7d5f5a9f84.flata
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/linksrc/Firebase.Auth.dll
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/linksrc/Firebase.dll
@@ -711,3 +704,12 @@
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/android/assets/LiteDB.dll
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/android/assets/System.Reactive.dll
 /Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/android/assets/System.Runtime.InteropServices.WindowsRuntime.dll
+/Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/flata/9335aeb19ba22c05a28ad0e07f6535aa0a5ee786.stamp
+/Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/flata/f48b3e40af55f5b5269c079613d4b7ead0c8a412.stamp
+/Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/flata/9335aeb19ba22c05a28ad0e07f6535aa0a5ee786.flata
+/Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/flata/f48b3e40af55f5b5269c079613d4b7ead0c8a412.flata
+/Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/linksrc/Xamarin.Forms.PancakeView.dll
+/Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/android/assets/Xamarin.Forms.PancakeView.dll
+/Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/android/src/md5e02e588e02ca00741473d9324f2c83cb/PancakeViewRenderer.java
+/Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/android/src/md5e02e588e02ca00741473d9324f2c83cb/RoundedCornerOutlineProvider.java
+/Users/brianirons/PORTFOLIO/HandShake/HandShake.Android/obj/Debug/android/src/md5e02e588e02ca00741473d9324f2c83cb/PancakeDrawable.java

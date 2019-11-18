@@ -5,15 +5,18 @@
              xmlns:CustomControls="clr-namespace:HandShake.CustomControls"
              Title="CONTACTS">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="CenterAndExpand"
-                     VerticalOptions="CenterAndExpand"
-                     >
-            <CustomControls:ContactCard LabelText="Jerry">
-            </CustomControls:ContactCard>
-            <ListView x:Name="contactsList"
-                      ItemsSource="{Binding .}">
-
-            </ListView>
+        <StackLayout HorizontalOptions="CenterAndExpand">
+            <ListView x:Name="contactsList" RowHeight="60">
+			    <ListView.ItemTemplate>
+				    <DataTemplate>
+					    <ViewCell>
+						    <StackLayout>
+						        <Label Text = "{Binding name}"/>
+						    </StackLayout>
+					    </ViewCell>
+				    </DataTemplate>
+			    </ListView.ItemTemplate>
+		    </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

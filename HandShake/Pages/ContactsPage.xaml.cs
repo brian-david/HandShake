@@ -9,22 +9,20 @@ namespace HandShake.Pages
 {
     public partial class ContactsPage : ContentPage
     {
-        //public ObservableCollection<Member> contacts { get; set; }
+        public ObservableCollection<Member> contacts { get; set; }
 
         public ContactsPage()
         {
             InitializeComponent();
+            contacts = new ObservableCollection<Member>();
 
-            foreach(var con in App.currentMember.contacts)
+            foreach (var con in App.currentMember.contacts)
             {
-                Console.WriteLine("PERSON -> "+ con.Value["name"]);
+                Console.WriteLine("PERSON -> " + con.Value["name"]);
+                contacts.Add(new Member { name = (string)con.Value["name"]});
             }
-            //contacts = new ObservableCollection<Member>();
-            //var x = 1;
-            //foreach( var person in App.currentMember.contacts)
-            //{
-            //    Console.WriteLine("Contact " + x++ + person);
-            //}
+
+            contactsList.ItemsSource = contacts;
         }
     }
 }
