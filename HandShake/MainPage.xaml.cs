@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HandShake.Models;
 using Xamarin.Forms;
 
 namespace HandShake
@@ -16,6 +17,9 @@ namespace HandShake
         public MainPage()
         {
             InitializeComponent();
+            Console.WriteLine("USER LOGGED IN "+App.userID);
         }
+
+
     }
 }

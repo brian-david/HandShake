@@ -2,8 +2,9 @@
 /Users/brianirons/PORTFOLIO/HandShake/HandShake/bin/Debug/netstandard2.0/HandShake.dll
 /Users/brianirons/PORTFOLIO/HandShake/HandShake/bin/Debug/netstandard2.0/ref/HandShake.dll
 /Users/brianirons/PORTFOLIO/HandShake/HandShake/bin/Debug/netstandard2.0/HandShake.pdb
+/Users/brianirons/PORTFOLIO/HandShake/HandShake/obj/Debug/netstandard2.0/HandShake.csprojAssemblyReference.cache
 /Users/brianirons/PORTFOLIO/HandShake/HandShake/obj/Debug/netstandard2.0/App.xaml.g.cs
-/Users/brianirons/PORTFOLIO/HandShake/HandShake/obj/Debug/netstandard2.0/CustomControls/contactCard.xaml.g.cs
+/Users/brianirons/PORTFOLIO/HandShake/HandShake/obj/Debug/netstandard2.0/CustomControls/ContactCard.xaml.g.cs
 /Users/brianirons/PORTFOLIO/HandShake/HandShake/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
 /Users/brianirons/PORTFOLIO/HandShake/HandShake/obj/Debug/netstandard2.0/Pages/ChatsPage.xaml.g.cs
 /Users/brianirons/PORTFOLIO/HandShake/HandShake/obj/Debug/netstandard2.0/Pages/ContactsPage.xaml.g.cs

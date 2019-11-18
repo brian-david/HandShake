@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-
+using Firebase.Auth;
 using Xamarin.Forms;
 
 namespace HandShake.Pages
@@ -11,5 +11,7 @@ namespace HandShake.Pages
         {
             InitializeComponent();
         }
+
+
     }
 }

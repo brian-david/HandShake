@@ -18,6 +18,12 @@
     <Folder Include="Firebase\" />
     <Folder Include="Pages\" />
     <Folder Include="Models\" />
-    <Folder Include="Controls\" />
+    <Folder Include="CustomControls\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Controls\ContactCard.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Controls\ContactCard.xaml.cs" />
   </ItemGroup>
 </Project>

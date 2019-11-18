@@ -21,6 +21,7 @@ namespace HandShake
             await Navigation.PushAsync(new RegisterPage());
         }
 
+
         public async void LoginMethod(object sender, EventArgs e)
         {
             try
@@ -37,11 +38,16 @@ namespace HandShake
                     }
                 );
 
+                
                 App.authID = auth.User.LocalId;
                 App.userID = email;
 
                 Console.WriteLine("authID -> " + auth.User.LocalId);
                 Console.WriteLine("HEY!");
+
+                //User x = await App.authProvider.GetUserAsync(auth.FirebaseToken);
+
+                //Console.WriteLine(x.);
 
                 await Navigation.PushAsync(new MainPage());
 
@@ -67,19 +73,17 @@ namespace HandShake
                 Console.WriteLine(ex);
                 await DisplayAlert("Login Faied", "Sorry, we think you got you're username or password wrong. Why dont you try that again", "OK");
             }
+            
+        }
+
+        public async Task<List<User>> GetAllMembers ()
+        {
+
+            return (await firebase.Child("Persons").OnceAsync<Person>()).Select(item => new Person{
+                                                                                                    Name = item.Object.Name,
+                                                                                                    PersonId = item.Object.PersonId
+                                                                                                  }).ToList();
         }
     }
 }
 
-
-//await authProvider.SignInWithEmailAndPasswordAsync(emailField.Text, scrambledPassword).ContinueWith(async auth => {
-//    if (auth.IsCanceled)
-//    {
-//        Debug.Write("CreateUserWithEmailAndPasswordAsync was canceled.");
-//        return;
-//    }
-//    if (auth.IsFaulted)
-//    {
-//        Debug.Write("CreateUserWithEmailAndPasswordAsync encountered an error: " + auth.Exception.GetBaseException());
-//        return;
-//    }

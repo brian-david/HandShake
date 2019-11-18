@@ -8,17 +8,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("HandShake.CustomControls.contactCard.xaml", "CustomControls/contactCard.xaml", typeof(global::HandShake.contactCard))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("HandShake.CustomControls.ContactCard.xaml", "CustomControls/ContactCard.xaml", typeof(global::HandShake.CustomControls.ContactCard))]
 
-namespace HandShake {
+namespace HandShake.CustomControls {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("CustomControls/contactCard.xaml")]
-    public partial class contactCard : global::Xamarin.Forms.ContentView {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("CustomControls/ContactCard.xaml")]
+    public partial class ContactCard : global::Xamarin.Forms.ContentView {
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Label ContactNameLabel;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(contactCard));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ContactCard));
+            ContactNameLabel = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "ContactNameLabel");
         }
     }
 }

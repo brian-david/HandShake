@@ -2,16 +2,13 @@ using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
 
-namespace HandShake
+namespace HandShake.Controls
 {
-    public partial class contactCard : ContentView
+    public partial class ContactCard : ContentView
     {
-        public contactCard()
+        public ContactCard()
         {
             InitializeComponent();
         }
-
-        public static readonly BindableProperty ContactNameProperty =
-            BindableProperty.Create()
     }
 }

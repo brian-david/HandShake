@@ -14,6 +14,7 @@ namespace HandShake
         public static FirebaseClient firebase;
         public static string authID;
         public static string userID;
+        public static string currentUser;
 
         public App()
         {

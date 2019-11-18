@@ -38,11 +38,10 @@ namespace HandShake
                 App.authID = auth.User.LocalId;
                 App.userID = usr;
 
-                Console.WriteLine("authID -> " + auth.User.LocalId);
-                Console.WriteLine("HEY!");
-
                 //Add the new user to the database
-                await App.firebase.Child("users").PostAsync(new Models.User(userName, usr, App.authID));
+                var newUser = await App.firebase.Child("users").PostAsync(new Models.User(userName, usr, App.authID));
+                App.currentUser = newUser.Key;
+                Console.WriteLine(App.firebase.Child("users").Child(newUser.Key).Child("userID").OnceAsync<string>() + " = " + App.firebase.Child("users").Child(newUser.Key).Child("userID").OnceAsync<string>());
 
                 await Navigation.PushAsync(new MainPage());
             }

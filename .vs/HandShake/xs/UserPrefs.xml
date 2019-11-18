@@ -1,25 +1,30 @@
 ﻿<Properties StartupConfiguration="{7899EEE1-B546-4A5E-8EE2-FA35E5C52792}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HandShake/Controls/contactCard.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HandShake/MainPage.xaml.cs">
     <Files>
-      <File FileName="HandShake/CustomControls/contactCard.xaml" Line="9" Column="1" />
-      <File FileName="HandShake/Controls/contactCard.xaml.cs" Line="15" Column="1" />
+      <File FileName="HandShake/Pages/RegisterPage.xaml" Line="1" Column="1" />
+      <File FileName="HandShake/Pages/RegisterPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="HandShake/Pages/LoginPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="HandShake/MainPage.xaml.cs" Line="20" Column="15" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HandShake" expanded="True">
             <Node name="HandShake" expanded="True">
-              <Node name="Controls" expanded="True">
-                <Node name="contactCard.xaml" expanded="True" selected="True" />
+              <Node name="CustomControls" expanded="True">
+                <Node name="ContactCard.xaml" expanded="True" />
               </Node>
-              <Node name="Firebase" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Pages" expanded="True">
-                <Node name="ChatsPage.xaml" expanded="True" />
+                <Node name="ContactsPage.xaml" expanded="True" />
+                <Node name="LoginPage.xaml" expanded="True" />
+                <Node name="RegisterPage.xaml" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True">
+                <Node name="MainPage.xaml.cs" selected="True" />
               </Node>
             </Node>
-            <Node name="HandShake.Android" expanded="True" />
-            <Node name="HandShake.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>

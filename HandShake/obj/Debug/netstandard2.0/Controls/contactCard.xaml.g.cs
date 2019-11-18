@@ -8,17 +8,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("HandShake.Controls.contactCard.xaml", "Controls/contactCard.xaml", typeof(global::HandShake.contactCard))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("HandShake.Controls.ContactCard.xaml", "Controls/ContactCard.xaml", typeof(global::HandShake.ContactCard))]
 
 namespace HandShake {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Controls/contactCard.xaml")]
-    public partial class contactCard : global::Xamarin.Forms.ContentView {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Controls/ContactCard.xaml")]
+    public partial class ContactCard : global::Xamarin.Forms.ContentView {
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Label UserNameLabel;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(contactCard));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ContactCard));
+            UserNameLabel = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "UserNameLabel");
         }
     }
 }
